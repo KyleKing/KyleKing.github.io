@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: auto;" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="favico.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2C3E50">
+    <link rel="apple-touch-icon" href="img/guide/4K-BACthumb.gif">
+    <link rel="image_src" href="img/guide/4K-BACthumb.gif">
+    <title>Kyle King | Biking Against Cancer</title>
+    <meta name="author" content="Kyle King">
+    <meta name="description" content="Help me reach my goal of $6,000 for the Ulman Cancer Fund as I prepare to cycle from Baltimore, MD to Seattle, WA with 4K for Cancer.">
+    <link rel="stylesheet" href="assets//css/app.css">
+    <script src="assets//js/modernizr.js"></script>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script>//- Mio
+function mioMouseRollover(MyImage) {
+    MyImage.src = "img/icon_mioHRF.png";
+}
+function mioMouseOut(MyImage) {
+    MyImage.src = "img/icon_mioHRD.png";
+}
+//- Microduino
+function micMouseRollover(MyImage) {
+    MyImage.src = "img/icon_microF.png";
+}
+function micMouseOut(MyImage) {
+    MyImage.src = "img/icon_microD.png";
+}
+//- Infinity Cycles
+function infMouseRollover(MyImage) {
+    MyImage.src = "img/icon_infinF.png";
+}
+function infMouseOut(MyImage) {
+    MyImage.src = "img/icon_infinD.png";
+}
+//- Siva Atom
+function sivMouseRollover(MyImage) {
+    MyImage.src = "img/icon_sivaCF.png";
+}
+function sivMouseOut(MyImage) {
+    MyImage.src = "img/icon_sivaCD.png";
+}
+    </script>
+  </head>
+  <body>
+    <div class="contain-to-grid sticky"><nav class="top-bar" data-topbar data-options="sticky_on: large">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="index.html">Biking Against Cancer &nbsp&nbsp<img src="img/logo_bikeW.png"></a><!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone --></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="index.html"><span>Menu</span></a></li>
+      </ul><!-- Right Nav Section -->
+      <div class="top-bar-section">
+        <ul class="right">
+          <li class="show-for-small-only"><a href="02_preGuide.html">Pre-Ride Blog</a></li>
+          <li class="has-dropdown show-for-medium-up"><a href="02_preMay.html" class="has-dropdown">Pre-Ride Blog</a>
+            <ul class="dropdown">
+              <li><a href="02_preJan.html">January</a></li>
+              <li><a href="02_preFeb.html">February</a></li>
+              <li><a href="02_preMar.html">March</a></li>
+              <li><a href="02_preApr.html">April</a></li>
+              <li><a href="02_preMay.html">May</a></li>
+            </ul>
+          </li>
+          <li class="hide-for-large-up"><a href="03_theRideIndex.html">Ride Blog</a></li>
+          <li class="show-for-large-up"><a href="03_theRide.html">Ride Blog</a></li>
+          <li><a href="04_donate.html">Donate</a></li>
+        </ul><!-- Left Nav Section -->
+      </div></nav>
+    </div>
+<div class="row">
+  <div class="large-12 columns">
+    <h1>Welcome to Foundation</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <div class="panel">
+      <h3>We&rsquo;re stoked you want to try Foundation!</h3>
+      <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
+      <p>Once you've exhausted the fun in this document, you should check out:</p>
+      <div class="row">
+        <div class="large-4 medium-4 columns">
+          <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br /> Everything you need to know about using the framework.</p>
+        </div>
+        <div class="large-4 medium-4 columns">
+          <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br /> Latest code, issue reports, feature requests and more.</p>
+        </div>
+        <div class="large-4 medium-4 columns">
+          <p><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br /> Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-8 medium-8 columns">
+    <h5>Here&rsquo;s your basic grid:</h5><!-- Grid Example -->
+    <div class="row">
+      <div class="large-12 columns">
+        <div class="callout panel">
+          <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-6 medium-6 columns">
+        <div class="callout panel">
+          <p>Six columns</p>
+        </div>
+      </div>
+      <div class="large-6 medium-6 columns">
+        <div class="callout panel">
+          <p>Six columns</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-4 medium-4 small-4 columns">
+        <div class="callout panel">
+          <p>Four columns</p>
+        </div>
+      </div>
+      <div class="large-4 medium-4 small-4 columns">
+        <div class="callout panel">
+          <p>Four columns</p>
+        </div>
+      </div>
+      <div class="large-4 medium-4 small-4 columns">
+        <div class="callout panel">
+          <p>Four columns</p>
+        </div>
+      </div>
+    </div>
+    <hr/>
+    <h5>We bet you&rsquo;ll need a form somewhere:</h5>
+    <form>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Input Label</label>
+          <input type="text" placeholder="large-12.columns"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-4 medium-4 columns">
+          <label>Input Label</label>
+          <input type="text" placeholder="large-4.columns"/>
+        </div>
+        <div class="large-4 medium-4 columns">
+          <label>Input Label</label>
+          <input type="text" placeholder="large-4.columns"/>
+        </div>
+        <div class="large-4 medium-4 columns">
+          <div class="row collapse">
+            <label>Input Label</label>
+            <div class="small-9 columns">
+              <input type="text" placeholder="small-9.columns"/>
+            </div>
+            <div class="small-3 columns"><span class="postfix">.com</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Select Box</label>
+          <select>
+            <option value="husker">Husker</option>
+            <option value="starbuck">Starbuck</option>
+            <option value="hotdog">Hot Dog</option>
+            <option value="apollo">Apollo</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 medium-6 columns">
+          <label>Choose Your Favorite</label>
+          <input type="radio" name="pokemon" value="Red" id="pokemonRed"/>
+          <label for="pokemonRed">Radio 1</label>
+          <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"/>
+          <label for="pokemonBlue">Radio 2</label>
+        </div>
+        <div class="large-6 medium-6 columns">
+          <label>Check these out</label>
+          <input id="checkbox1" type="checkbox"/>
+          <label for="checkbox1">Checkbox 1</label>
+          <input id="checkbox2" type="checkbox"/>
+          <label for="checkbox2">Checkbox 2</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Textarea Label</label>
+          <textarea placeholder="small-12.columns"></textarea>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="large-4 medium-4 columns">
+    <h5>Try one of these buttons:</h5>
+    <p><a href="#" class="small button">Simple Button</a><br/><a href="#" class="small radius button">Radius Button</a><br/><a href="#" class="small round button">Round Button</a><br/><a href="#" class="medium success button">Success Btn</a><br/><a href="#" class="medium alert button">Alert Btn</a><br/><a href="#" class="medium secondary button">Secondary Btn</a></p>
+    <div class="panel">
+      <h5>So many components, girl!</h5>
+      <p>A whole kitchen sink of goodies comes with Foundation. Checkout the docs to see them all, along with details on making them your own.</p><a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>
+    </div>
+  </div>
+</div>
+<form>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Input Label
+        <input type="text" placeholder="large-12.columns"/>
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-4 columns">
+      <label>Input Label
+        <input type="text" placeholder="large-4.columns"/>
+      </label>
+    </div>
+    <div class="large-4 columns">
+      <label>Input Label
+        <input type="text" placeholder="large-4.columns"/>
+      </label>
+    </div>
+    <div class="large-4 columns">
+      <div class="row collapse">
+        <label>Input Label</label>
+        <div class="small-9 columns">
+          <input type="text" placeholder="small-9.columns"/>
+        </div>
+        <div class="small-3 columns"><span class="postfix.com"></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Select Box
+        <select>
+          <option value="husker">Husker</option>
+          <option value="starbuck">Starbuck</option>
+          <option value="hotdog">Hot Dog</option>
+          <option value="apollo">Apollo</option>
+        </select>
+      </label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-6 columns">
+      <label>Choose Your Favorite</label>
+      <input type="radio" name="pokemon" value="Red" id="pokemonRed"/>
+      <label for="pokemonRed">Red</label>
+      <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"/>
+      <label for="pokemonBlue">Blue</label>
+    </div>
+    <div class="large-6 columns">
+      <label>Check these out</label>
+      <input id="checkbox1" type="checkbox"/>
+      <label for="checkbox1">Checkbox 1</label>
+      <input id="checkbox2" type="checkbox"/>
+      <label for="checkbox2">Checkbox 2</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <label>Textarea Label</label>
+      <textarea placeholder="small-12.columns"></textarea>
+    </div>
+  </div>
+</form>
+    <hr class="dark">
+    <div class="row">
+      <div class="large-4 columns show-for-large-only">
+        <h3>&nbsp</h3>
+      </div>
+      <div class="small-8 medium-8 large-4 columns"><a href="http://www.microduino.cc/"><img src="img/icon_microD.png" height="64px" width="auto" onMouseOver="micMouseRollover(this)" onMouseOut="micMouseOut(this)"></a></div>
+      <div class="small-4 medium-4 large-4 columns">
+        <ul class="inline-list">
+          <li><a href="mailto:?subject=College%20Sophomore%20Biking%20Against%20Cancer&amp;Body=Kyle%20King%20and%2023%20other%20college%20age%20students%20will%20be%20biking%20across%20the%20country%20to%20offer%20hope%2C%20inspiration%2C%20and%20support%20to%20young%20adults%20overcoming%20cancer.%20The%20ride%20directly%20benefits%20the%20Ulman%20Cancer%20Fund.%0A%0ASee%20where%20in%20the%20country%20they%20are%20now%20at%3A%20http%3A//bikingagainstcancer.com/."><img src="img/icon_emailD.png" height="64px" width="auto"></a></li>
+          <li>
+            <p class="show-for-large-only">Share by email</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-3 medium-4 large-4 columns"><a href="http://www.infinitycycling.us/"><img src="img/icon_infinD.png" height="64px" width="auto" onMouseOver="infMouseRollover(this)" onMouseOut="infMouseOut(this)"></a></div>
+      <div class="small-5 medium-4 large-4 columns"><a href="http://www.mioglobal.com/Default.aspx"><img src="img/icon_mioHRD.png" height="64px" width="auto" onMouseOver="mioMouseRollover(this)" onMouseOut="mioMouseOut(this)"></a></div>
+      <div class="small-4 medium-4 large-4 columns">
+        <ul class="inline-list">
+          <li><a href="https://www.facebook.com/bikingagainstcancer?ref=hl"><img src="img/icon_facebD.png" height="64px" width="auto"></a></li>
+          <li class="show-for-large-only"><a href="http://instagram.com/kylelikesbikes"><img src="img/icon_instaD.png" height="64px" width="auto"></a></li>
+          <li class="show-for-large-only"><a href="https://twitter.com/Kyle4Miles"><img src="img/icon_twittD.png" height="64px" width="auto"></a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="assets//js/all.js"></script>
+  </body>
+</html>
