@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow: auto;" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="favico.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#2C3E50">
+    <link rel="apple-touch-icon" href="img/guide/4K-BACthumb.gif">
+    <link rel="image_src" href="img/guide/4K-BACthumb.gif">
+    <title>Kyle King | Biking Against Cancer</title>
+    <meta name="author" content="Kyle King">
+    <meta name="description" content="Help me reach my goal of $6,000 for the Ulman Cancer Fund as I prepare to cycle from Baltimore, MD to Seattle, WA with 4K for Cancer.">
+    <link rel="stylesheet" href="assets//css/app.css">
+    <script src="assets//js/modernizr.js"></script>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script>//- Mio
+function mioMouseRollover(MyImage) {
+    MyImage.src = "img/icon_mioHRF.png";
+}
+function mioMouseOut(MyImage) {
+    MyImage.src = "img/icon_mioHRD.png";
+}
+//- Microduino
+function micMouseRollover(MyImage) {
+    MyImage.src = "img/icon_microF.png";
+}
+function micMouseOut(MyImage) {
+    MyImage.src = "img/icon_microD.png";
+}
+//- Infinity Cycles
+function infMouseRollover(MyImage) {
+    MyImage.src = "img/icon_infinF.png";
+}
+function infMouseOut(MyImage) {
+    MyImage.src = "img/icon_infinD.png";
+}
+//- Siva Atom
+function sivMouseRollover(MyImage) {
+    MyImage.src = "img/icon_sivaCF.png";
+}
+function sivMouseOut(MyImage) {
+    MyImage.src = "img/icon_sivaCD.png";
+}
+    </script>
+  </head>
+  <body>
+    <div class="contain-to-grid sticky"><nav class="top-bar" data-topbar data-options="sticky_on: large">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="index.html">Biking Against Cancer &nbsp&nbsp<img src="img/logo_bikeW.png"></a><!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone --></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="index.html"><span>Menu</span></a></li>
+      </ul><!-- Right Nav Section -->
+      <div class="top-bar-section">
+        <ul class="right">
+          <li class="show-for-small-only"><a href="02_preGuide.html">Pre-Ride Blog</a></li>
+          <li class="has-dropdown show-for-medium-up"><a href="02_preMay.html" class="has-dropdown">Pre-Ride Blog</a>
+            <ul class="dropdown">
+              <li><a href="02_preJan.html">January</a></li>
+              <li><a href="02_preFeb.html">February</a></li>
+              <li><a href="02_preMar.html">March</a></li>
+              <li><a href="02_preApr.html">April</a></li>
+              <li><a href="02_preMay.html">May</a></li>
+            </ul>
+          </li>
+          <li class="hide-for-large-up"><a href="03_theRideIndex.html">Ride Blog</a></li>
+          <li class="show-for-large-up"><a href="03_theRide.html">Ride Blog</a></li>
+          <li><a href="04_donate.html">Donate</a></li>
+        </ul><!-- Left Nav Section -->
+      </div></nav>
+    </div>
+<div class="row">
+  <div class="large-12 columns text-center">
+    <h1>May Pre-Ride Newsfeed</h1>
+    <h3>Website overhaul, Corporate Sponsors, T-Shirts, and Hardware galore! Busiest month so far!</h3>
+  </div>
+</div>
+<div class="row">
+  <div class="small-6 large-6 columns"><a href="02_preApr.html">Previous Month: April</a></div>
+  <div class="small-6 large-6 columns text-right"><a href="03_theRide.html">The Ride Blog</a></div>
+</div>
+<hr class="dark"/>
+<div class="row">
+  <div class="large-12 columns">
+    <h3>&nbsp</h3>
+    <h3>Design-Based Reboot of the Site</h3>
+    <h5 class="subheader">May 10th</h5>
+    <hr class="blue"/>
+  </div>
+  <div class="large-6 columns">
+    <p>This week, I started working on the fourth iteration of the website. So far it started from a very rough wireframe on paper and built in ... Then the website progressed into a hard-coded design with several iterations and a couple weekends of coding, which could probably be summer up into two iterations.</p>
+    <p>The next one is probably the most-focused on design. As a new member of startup shell, I've been exposed to flat design and have caught up on the past ten years of popular design. Pretty much every app and most new websites feature the shadowless, minimalistic, and trendy color schemes iconic of flat design.</p>
+    <p>Simple things like the don't color to the type of font weren't considered in the last version of the site, so this one will feature big improvements in those accords.</p>
+    <p>On a less software side, my bike is nearly functioning and ready for some rides this week. Just put a BikeUMD sticker to take across the country with me!</p>
+  </div>
+  <div class="large-6 columns"><img src="img/02_May20.jpg"/>
+    <div class="imgCapt">
+      <p>BikeUMD across the Country!</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <h3>&nbsp</h3>
+    <h3>New wireframe for the next iteration!</h3>
+    <h5 class="subheader">May 11th</h5>
+    <hr class="blue"/>
+  </div>
+  <div class="large-8 columns">
+    <p>I've been looking to see what other websites do well. Recently many websites have added animation and created a Parallax single page website. I think this sort of animation is too extreme for my website, but I've picked up many ideas from other sites like sonos.com, sobi.com, and paper. The clean, flat user interface has muted colors that only add accents and guide the user through the site. The elements are laid out in a narrative, with clear headings.</p>
+  </div>
+  <div class="large-4 columns"><img src="img/02_May12.jpg"/>
+    <div class="imgCapt">
+      <p>New Site Design</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <h3>&nbsp</h3>
+    <h3>Designing the Electronics Housing</h3>
+    <h5 class="subheader">May 13th</h5>
+    <hr class="blue"/>
+  </div>
+  <div class="large-6 columns">
+    <p>Drafting up designs for the waterproof housing to hold all of the components for this summer. I think this design might work, but I imagine it might pool water inside the plexiglass slit. So the plexiglass might be easier to pinch onto the surface of the box.</p>
+  </div>
+  <div class="large-6 columns"><img src="img/02_MayHousing.jpg"/>
+    <div class="imgCapt">
+      <p>The Housing Initial Design Drawings</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <h3>&nbsp</h3>
+    <h3>THE INFINITY SADDLE</h3>
+    <h5 class="subheader">May 15th</h5>
+    <hr class="blue"/>
+    <p>The infinity saddle came today!!! I have two very important exams tomorrow, but as soon as I am done I will be out riding on them.</p>
+    <p>I am still very curious about how these will work. They seem like they should work, but the design is crazy. The bioengineer in me is just so excited to take these out for a spin.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="large-4 columns"><img src="img/02_May25.jpg"/>
+    <div class="imgCapt">
+      <p>They have arrived!!!</p>
+    </div>
+  </div>
+  <div class="large-4 columns"><img src="img/02_May24.jpg"/>
+    <div class="imgCapt">
+      <p>The much-hyped Infinity Saddle</p>
+    </div>
+  </div>
+  <div class="large-4 columns"><img src="img/02_May33.jpg"/>
+    <div class="imgCapt">
+      <p>This is the plastic version</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <h3>&nbsp</h3>
+    <h3>22 Miles in the Saddle</h3>
+    <h5 class="subheader">May 17</h5>
+    <hr class="blue"/>
+    <p>First ride on the infinity saddle for 22 miles. It was very comfortable from the get go. I could get used to a saddle that is actually a joy to ride.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="large-6 columns"><img src="img/02_May35.jpg"/>
+    <div class="imgCapt">
+      <p>Here is the rubber, with a bit more padding</p>
+    </div>
+  </div>
+  <div class="large-6 columns"><img src="img/02_May36.jpg"/>
+    <div class="imgCapt">
+      <p>About to ride the hamster cage</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <h3>&nbsp</h3>
+    <h3>Building the Backend</h3>
+    <h5 class="subheader">May 18th</h5>
+    <hr class="blue"/>
+    <p>Building a website has two sides. One is the front-end, which is a loosely defined term that refers to the look of the website. The colors, the navigation and the layout all are important to this. Three main languages make up the front end experience. HTML is used to create the content (I use Jade, which generates an HTML file, but is more efficient to type and edit). CSS is used to make the visual layout work from the color palette, font choices, to the actions when you click or hover. JQuery and JS are the animation and more technical parts of the site.</p>
+    <p>The past few months have focused on building this part of the website as I was learning it all as I worked. From today I am beginning to learn the back-end, which will help collect, sort, and display all the data, such as GPS Coordinates, speed and more. I'm learning how to use MySQL and PHP to improve the site's maintenance.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <h3>&nbsp</h3>
+    <h3>Putting the "Micro" in Microelectronics</h3>
+    <h5 class="subheader">May 20th</h5>
+    <hr class="blue"/>
+    <p>Working on the hardware for this summer is so exciting. I really couldn't thank Microduino enough for providing one of the coolest sensor kits that somehow is smaller than my mobile tool. The size and power of this device blows my mind. I'm excited to see such innovation being so open to interested people.</p>
+    <p>The kit Microduino sent has a core+ as the main processing device. This is controlled by a computer connected to the FT202R module. The core then controls the bottom weather station, OLED display, 10DoF module, GPS receiver, and an SD card for storage.</p>
+    <p>All of this is tiny. Like really tiny. Smaller than an Arduino Uno (which is equivalent to only two of the modules).</p>
+  </div>
+</div>
+<div class="row">
+  <div class="large-6 columns"><img src="img/02_May30.jpg"/>
+    <div class="imgCapt">
+      <p>Microduino Unpacking</p>
+    </div>
+  </div>
+  <div class="large-6 columns"><img src="img/02_May31.jpg"/>
+    <div class="imgCapt">
+      <p>Up and Running out of the box, thanks Microduino Team!</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-6 columns"><img src="img/02_May39.jpg"/>
+    <div class="imgCapt">
+      <p>The parts for a full GPS Unit built on the weatherstation module</p>
+    </div>
+  </div>
+  <div class="large-6 columns"><img src="img/02_May40.jpg"/>
+    <div class="imgCapt">
+      <p>Compared to an UNO, the microduino packs much more power into a smaller chasis</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <h3>&nbsp</h3>
+    <h3>Finishing Sophomore Year</h3>
+    <h5 class="subheader">May 21st</h5>
+    <hr class="blue"/>
+  </div>
+  <div class="large-6 columns">
+    <p>It's going to be a whirlwind trip back home. I finished up all my finals within twelve hours on Friday, the second day of finals week, but stayed until the very last moments to spend time with friends and push my independent study as far as I could take it this semester. Heading home Wednesday meant that I only have a week and a half home until send off in just 11 days! I'm going to need to make the most of this time to get the website, database, and hardware all in harmony and functioning. I am bringing my laptop and will likely still be doing maintenance and improvements, but I would like to be able to focus on the ride as much as possible.</p>
+    <p>I can't believe my sophomore year has come to a close. I feel like I've been in college for years. So much has happened in just two years. I've met so many new friends, yet disconnected and lost many. Others I have built stronger bonds with and will spend the next two years struggling through the hardest classes UMD has to throw at us. I couldn't be more happy with the Gemstone team that I was placed on or the QUEST team who just demolished the other competition this semester. After a full semester of recruiting, the medical device team I started last year finally has the right mix of talent and dedicated members. I can't wait to see what problems we overcome as a team.</p>
+  </div>
+  <div class="large-6 columns"><img src="img/02_May41.jpg"/>
+    <div class="imgCapt">
+      <p>Moving out</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <h3>&nbsp</h3>
+    <h3>80 More Miles of Testing</h3>
+    <h5 class="subheader">May 24th</h5>
+    <hr class="blue"/>
+    <p>On my first 80 mile training ride! Going to bike the entire NCR trail and back again. Left my house at 6:50, hoping to get to the trailhead by 7:30. Thankfully we made it traffic-free and now have plenty of time!</p>
+    <p>The ride started off nice and slow staying together as a group. We but the Mason-Dixon Line around noon and all took selfies to commemorate the distance. This was my first time ever biking into PA on the NCR. I had always given up much earlier in the route.</p>
+    <p>After the PA line, we took a break to eat lunch in New Freedom. The trail was packed with people outside walking their dogs, on their bikes, or just out for a hike. We all couldn't have had nicer weather or a more pleasant day.</p>
+    <p>From here we headed to York at full speed. Splitting up as a group, Santi and I continued on at a brisk pace keeping almost 20 MPH as we rushed to finish the NCR before we both had to go at 4 pm. The first fifteen miles went without incident, but with five miles to go we both began burning out.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="large-4 columns"><img src="img/02_May42.jpg"/>
+    <div class="imgCapt">
+      <p>Starting the ride at mile 0</p>
+    </div>
+  </div>
+  <div class="large-4 columns"><img src="img/02_May43.jpg"/>
+    <div class="imgCapt">
+      <p>The view across the Mason Dixon Line</p>
+    </div>
+  </div>
+  <div class="large-4 columns"><img src="img/02_May48.jpg"/>
+    <div class="imgCapt">
+      <p>We made it to York Pennsylvania</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-12 columns">
+    <h3>&nbsp</h3>
+    <h3>The Rest of the Pictures from an exciting month:</h3>
+    <h5 class="subheader">May 20th</h5>
+    <hr class="blue"/>
+  </div>
+</div>
+<div class="row">
+  <div class="large-6 columns"><img src="img/02_May03.jpg"/>
+    <div class="imgCapt">
+      <p>Out for an early morning ride</p>
+    </div>
+  </div>
+  <div class="large-6 columns"><img src="img/02_May04.jpg"/>
+    <div class="imgCapt">
+      <p>only to be stuck on the wrong side of the fence</p>
+    </div>
+  </div>
+  <div class="large-6 columns"><img src="img/02_May05.jpg"/>
+    <div class="imgCapt">
+      <p>But rode the trail and had an incredible view of the sunrise through the trees anyway</p>
+    </div>
+  </div>
+  <div class="large-6 columns"><img src="img/02_May06.jpg"/>
+    <div class="imgCapt">
+      <p>and the sunrise coming over the construction on the south side of campus</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-4 columns"><img src="img/02_May13.jpg"/>
+    <div class="imgCapt">
+      <p>This is the Nutter! A clever kickstarted tool that I hope to get some use out of this summer</p>
+    </div>
+  </div>
+  <div class="large-4 columns"><img src="img/02_May15.jpg"/>
+    <div class="imgCapt">
+      <p>Here it is creatively thrown over the desk</p>
+    </div>
+  </div>
+  <div class="large-4 columns"><img src="img/02_May17.jpg"/>
+    <div class="imgCapt">
+      <p>and here it is being used as a bike shop tool</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-4 columns"><img src="img/02_May08.jpg"/>
+    <div class="imgCapt">
+      <p>Went out for a weekend of on the water training</p>
+    </div>
+  </div>
+  <div class="large-4 columns"><img src="img/02_May16.jpg"/>
+    <div class="imgCapt">
+      <p>I'm starting a bike shop redesign to move around the physical space in the shop to improve our workflow and make it easier to teach</p>
+    </div>
+  </div>
+  <div class="large-4 columns"><img src="img/02_May38.jpg"/>
+    <div class="imgCapt">
+      <p>Fixing flats to get back out and ride. I am going to miss a full shop this summer</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-4 columns"><img src="img/02_May21.jpg"/>
+    <div class="imgCapt">
+      <p>Rebuilding the BB</p>
+    </div>
+  </div>
+  <div class="large-4 columns"><img src="img/02_May22.jpg"/>
+    <div class="imgCapTextt">
+      <p>Cleaning #spotless</p>
+    </div>
+  </div>
+  <div class="large-4 columns"><img src="img/02_May23.jpg"/>
+    <div class="imgCapt">
+      <p>Reinstalling</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-6 columns">
+    <div class="flex-video">
+      <iframe width="560" height="315" src="//www.youtube.com/embed/kZvoCK4ASwo" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+    </div>
+    <div class="imgCapt">
+      <p>Printing with the Makerbot</p>
+    </div>
+  </div>
+  <div class="large-6 columns">
+    <div class="flex-video">
+      <iframe width="420" height="315" src="//www.youtube.com/embed/1bWdc8exhLg" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+    </div>
+    <div class="imgCapt">
+      <p>Their is a bird in the Shell!</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-6 columns"><img src="img/02_May11.jpg"/>
+    <div class="imgCapt">
+      <p>Borrowing Jeff's Arduino to prototype with the accelerometer</p>
+    </div>
+  </div>
+  <div class="large-6 columns"><img src="img/02_May29.jpg"/>
+    <div class="imgCapt">
+      <p>This is some Serious Rain</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="large-6 columns"><img src="img/02_May49.jpg"/>
+    <div class="imgCapt">
+      <p>Tesla cars are so cool!</p>
+    </div>
+  </div>
+  <div class="large-6 columns"><img src="img/02_May50.jpg"/>
+    <div class="imgCapt">
+      <p>New iconography</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="small-6 large-6 columns"><a href="02_preFeb.html">Previous Month: February</a></div>
+  <div class="small-6 large-6 columns text-right"><a href="02_preApr.html">Next Month: April</a></div>
+</div>
+    <hr class="dark">
+    <div class="row">
+      <div class="large-4 columns show-for-large-only">
+        <h3>&nbsp</h3>
+      </div>
+      <div class="small-8 medium-8 large-4 columns"><a href="http://www.microduino.cc/"><img src="img/icon_microD.png" height="64px" width="auto" onMouseOver="micMouseRollover(this)" onMouseOut="micMouseOut(this)"></a></div>
+      <div class="small-4 medium-4 large-4 columns">
+        <ul class="inline-list">
+          <li><a href="mailto:?subject=College%20Sophomore%20Biking%20Against%20Cancer&amp;Body=Kyle%20King%20and%2023%20other%20college%20age%20students%20will%20be%20biking%20across%20the%20country%20to%20offer%20hope%2C%20inspiration%2C%20and%20support%20to%20young%20adults%20overcoming%20cancer.%20The%20ride%20directly%20benefits%20the%20Ulman%20Cancer%20Fund.%0A%0ASee%20where%20in%20the%20country%20they%20are%20now%20at%3A%20http%3A//bikingagainstcancer.com/."><img src="img/icon_emailD.png" height="64px" width="auto"></a></li>
+          <li>
+            <p class="show-for-large-only">Share by email</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-3 medium-4 large-4 columns"><a href="http://www.infinitycycling.us/"><img src="img/icon_infinD.png" height="64px" width="auto" onMouseOver="infMouseRollover(this)" onMouseOut="infMouseOut(this)"></a></div>
+      <div class="small-5 medium-4 large-4 columns"><a href="http://www.mioglobal.com/Default.aspx"><img src="img/icon_mioHRD.png" height="64px" width="auto" onMouseOver="mioMouseRollover(this)" onMouseOut="mioMouseOut(this)"></a></div>
+      <div class="small-4 medium-4 large-4 columns">
+        <ul class="inline-list">
+          <li><a href="https://www.facebook.com/bikingagainstcancer?ref=hl"><img src="img/icon_facebD.png" height="64px" width="auto"></a></li>
+          <li class="show-for-large-only"><a href="http://instagram.com/kylelikesbikes"><img src="img/icon_instaD.png" height="64px" width="auto"></a></li>
+          <li class="show-for-large-only"><a href="https://twitter.com/Kyle4Miles"><img src="img/icon_twittD.png" height="64px" width="auto"></a></li>
+        </ul>
+      </div>
+    </div>
+    <script src="assets//js/all.js"></script>
+  </body>
+</html>
