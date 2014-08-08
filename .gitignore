@@ -1,3 +1,4 @@
+# Note sure if I did this correctly: http://git-scm.com/docs/gitignore
 _site
 Gemfile.lock
 Gemfile
