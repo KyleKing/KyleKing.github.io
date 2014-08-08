@@ -11,6 +11,8 @@ layout: default
       <li>
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <!-- Uses first paragraph of post or takes excerpt from YAML header -->
+        {{ post.excerpt }}
       </li>
     {% endfor %}
   </ul>
