@@ -1,10 +1,12 @@
 # Site settings
 title: The Bioengineering Life
+author: Kyle King
 email: king.kyle@ymail.com
 description: "Making the future one step at a time #loftyGoals"
 baseurl: ""
 url: "http://KyleKing.github.io"
 twitter_username: Kyle4Miles
+instagram_username: KyleLikesBikes #not configured
 github_username:  KyleKing
 
 # Build settings

@@ -6,7 +6,7 @@ categories: test
 excerpt: <p>List of improvements to be worked on in later improvements</p>
 ---
 
-* Add Foundation 5 (SASS)
+* Add Foundation 5 (SASS) and/or Bourbon
 * Migrate Biking Against Cancer Blog
 * Improve UI (sort by category)
 * Add home page
