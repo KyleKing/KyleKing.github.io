@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Test Post and Image"
+title:  "Test Image"
 date:   2014-08-07 12:30:05
 categories: test
 ---

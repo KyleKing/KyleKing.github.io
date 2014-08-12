@@ -12,3 +12,14 @@ github_username:  KyleKing
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# Jekyll Suported plugins: https://help.github.com/articles/using-jekyll-plugins-with-github-pages
+gems:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  # ---
+  # redirect_from: "/foo"
+  # ---
+  - jekyll-mentions
+  # Type @repositoryName inside content body
+  - jemoji

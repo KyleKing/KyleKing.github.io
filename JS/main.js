@@ -1,14 +1,15 @@
-$(document).ready(function() {
-  var menu = $('.centered-navigation-menu');
-  var menuToggle = $('.centered-navigation-menu-button');
-  var signUp = $('.sign-up');
+console.log("step 1");
 
-  $(menuToggle).on('click', function(e) {
+$(document).ready(function(){
+  $('.js-menu-trigger').on('click touchstart', function(e){
+    $('.js-menu').toggleClass('is-visible');
+    $('.js-menu-screen').toggleClass('is-visible');
     e.preventDefault();
-    menu.slideToggle(function(){
-      if(menu.is(':hidden')) {
-        menu.removeAttr('style');
-      }
-    });
+  });
+
+  $('.js-menu-screen').on('click touchstart', function(e){
+    $('.js-menu').toggleClass('is-visible');
+    $('.js-menu-screen').toggleClass('is-visible');
+    e.preventDefault();
   });
 });
