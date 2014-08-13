@@ -19,9 +19,10 @@ excerpt: <p>List of improvements to be worked on in later improvements</p>
 
 
 Done:
+* Add basic deliniation between posts on home page
 * Add home page
-* Bourbon
-* Added all four supported plugins
+* Bourbon, Neat and the other one added
+* Added all four supported Jekyll plugins
 
 Other Options
- Add Foundation 5 (SASS)
+* Add Foundation 5 (SASS)
