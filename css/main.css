@@ -218,6 +218,13 @@ input[type="submit"] {
   white-space: nowrap; }
 
 /* Custom stylization */
+/* CSS for the content of page. I am giving top and bottom padding of 80px to make sure the header and footer do not overlap the content.*/
+#content_container {
+  margin: 0 auto;
+  overflow: auto;
+  padding: 50px 0;
+  max-width: 960px; }
+
 /* In your newly created _grid-settings.scss, import neat-helpers if you are planning to use new-breakpoint(), then define your new variables: */
 /* Next, include the outer-container mixin in the topmost container (to which the max-width setting will be applied): */
 div.container {
@@ -284,6 +291,15 @@ div.container {
 /* By setting \$visual-grid to true, you can display the base grid in the background (default) or as an overlay. You can even change the color and opacity of the grid-lines by overriding the default settings as detailed in the section below. Keep in mind that on Webkit, rounding errors in the fluid grid might result in the overlay being few pixels off.
 
 The visual grid reflects the changes applied to the grid via the new-breakpoint() mixin, as long as the media contexts are defined before importing Neat. */
+.header_container {
+  background: #eee;
+  border: 1px solid #666;
+  height: 45px;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  top: 0; }
+
 .sliding-menu-button {
   border: 1px solid #dbdbdb;
   border-radius: 3px;

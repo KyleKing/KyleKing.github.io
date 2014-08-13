@@ -5,9 +5,18 @@ $sliding-menu-border: 1px solid $sliding-menu-border-color;
 $sliding-menu-background-hover: $base-accent-color;
 $sliding-menu-color-hover: #fff;
 
+.header_container {
+  background:#eee; border:1px solid #666;
+  height:45px;
+  left:0;
+  position:fixed;
+  width:100%;
+  top:0;
+}
+
 .sliding-menu-button {
   @include button(simple, $base-background-color);
-  // @include inline-block;
+  // @include inline-block; depreceated and removed from Bourbon
   cursor: pointer;
   font-size: $base-font-size;
   margin-bottom: $base-line-height;
