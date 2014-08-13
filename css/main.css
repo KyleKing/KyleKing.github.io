@@ -292,8 +292,6 @@ div.container {
 
 The visual grid reflects the changes applied to the grid via the new-breakpoint() mixin, as long as the media contexts are defined before importing Neat. */
 .header_container {
-  background: #eee;
-  border: 1px solid #666;
   height: 45px;
   left: 0;
   position: fixed;

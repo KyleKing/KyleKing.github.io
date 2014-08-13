@@ -6,12 +6,14 @@ categories: test
 excerpt: <p>List of improvements to be worked on in later improvements</p>
 ---
 
+* Sort by Category
+* Add ___________ x __________ line between posts
 * Migrate Biking Against Cancer Blog
-* https://github.com/barryclark/jekyll-now Try out the lanyon theme
-* Improve UI (sort by category)
 * Make home page cool
+* https://github.com/barryclark/jekyll-now Try out the lanyon theme
 * Improve post excerpt meta tag in header
 * Add "Read more..." link in index.html
+* Improve UI
 * Improve code snippets look and feel (Add lineno class to css)
 * try out collections for hosting coffeescript
 

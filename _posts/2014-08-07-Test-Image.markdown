@@ -6,4 +6,5 @@ categories: test
 ---
 
 Just for fun to try out Jekyll ... which is shown in the screenshot below:
+
 ![My helpful screenshot]({{ site.url }}/assets/test/gemsgear.png)

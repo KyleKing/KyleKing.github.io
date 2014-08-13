@@ -6,4 +6,4 @@ This is a work in progress blog. I want to share interesting scientific news and
 
 #Thank You to Everyone Who Posts Tutorials to the Internet
 Especially these guys as their tutorials helped build a different part of my site:
-@virendrachandak - the sticky header (Sticky Header and Footer Using CSS http://techtalk.virendrachandak.com/sticky-header-and-footer-using-css/#ixzz3AHgIeW3t)
+@virendrachandak - [Sticky Header and Footer Using CSS](http://techtalk.virendrachandak.com/sticky-header-and-footer-using-css/#ixzz3AHgIeW3t)
