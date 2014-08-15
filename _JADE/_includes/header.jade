@@ -5,9 +5,12 @@
 nav.js-menu.sliding-menu-content
   ul
     li
-      a(href="javascript:void(0)") Item 1
-      a(href="javascript:void(0)") Item 2
-      a(href="javascript:void(0)") Item 3
+      p
+        {{ site.title }}
+      a(href="{{ site.baseurl }}/") Home
+      a(href="{{ site.baseurl }}/about/") About
+      a(href="{{ site.baseurl }}/archive/") Archive
+      a(href="{{ site.baseurl }}/categories/") Categories
 
 .js-menu-screen.menu-screen
 

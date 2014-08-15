@@ -21,7 +21,7 @@ excerpt: <p>List of improvements to be worked on in later improvements</p>
 Done:
 * Add basic deliniation between posts on home page
 * Add home page
-* Bourbon, Neat and the other one added
+* Bourbon, Neat and Bitters added
 * Added all four supported Jekyll plugins
 
 Other Options

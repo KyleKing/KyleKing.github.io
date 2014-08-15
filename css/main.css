@@ -385,6 +385,15 @@ The visual grid reflects the changes applied to the grid via the new-breakpoint(
     .sliding-menu-content li a:hover {
       background-color: #477dca;
       color: white; }
+  .sliding-menu-content li p {
+    border-bottom: 1px solid #333333;
+    color: white;
+    display: block;
+    font-weight: bold;
+    padding: 1em; }
+    .sliding-menu-content li p:hover {
+      background-color: #477dca;
+      color: white; }
   .sliding-menu-content.is-visible {
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);

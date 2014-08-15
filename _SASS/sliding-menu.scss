@@ -38,7 +38,22 @@ $sliding-menu-color-hover: #fff;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 
+  // For the navigation links
   li a {
+    border-bottom: $sliding-menu-border;
+    color: $sliding-menu-color;
+    display: block;
+    font-weight: bold;
+    padding: 1em;
+
+    &:hover {
+      background-color: $sliding-menu-background-hover;
+      color: $sliding-menu-color-hover;
+    }
+  }
+
+  // For the page title
+  li p {
     border-bottom: $sliding-menu-border;
     color: $sliding-menu-color;
     display: block;
