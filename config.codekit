@@ -2086,6 +2086,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/assets\/Icons\/BlockBike.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10421,
+		"inputAbbreviatedPath": "\/assets\/Icons\/BlockBike.png",
+		"outputAbbreviatedPath": "\/assets\/Icons\/BlockBike.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/test\/gemsgear.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2180,6 +2191,17 @@
 		"outputAbbreviatedPath": "\/README.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/testyaml.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/testyaml.jade",
+		"outputAbbreviatedPath": "\/testyaml.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0
 		}
 	},
 "hooks": [
