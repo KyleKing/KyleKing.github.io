@@ -73,7 +73,8 @@ Metalsmith(__dirname)
         outputStyle: 'compressed'
     }))
     .use(coffee())
-    .destination('./build')
+    // .destination('./build')
+    .destination('/')
     // .use(watch({
     //     pattern : '**/*',
     //     livereload: true
