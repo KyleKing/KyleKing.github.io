@@ -1,11 +1,41 @@
-KyleKing.github.io
-==================
+# Get Started with [Metalsmith](http://www.metalsmith.io) ![Build Status][Build Success!!!]
+> Forked from [RobinThrift](https://github.com/RobinThrift/metalsmith-tutorial). To learn more about using Metalsmith, visit his [blog](http://robinthrift.com) (See specific links below).
 
-This is a work in progress blog. I want to share interesting scientific news and tutorials for matlab and other coding projects. Feel free to follow me on twitter and let me know if you like an article or want to see certain things added!
+A fresh replacement for Jekyll Pages
+
+## Usage
+#### First
+Make sure you have `NPM` and `Gulp-Cli`
+
+1. Get NPM and NodeJS
+    * Go to: [nodejs.org](http://nodejs.org)
+    * Click install
+    * Open the package
+        - For help click [here](http://blog.nodeknockout.com/post/65463770933/how-to-install-node-js-and-npm)
+
+2. Then install [git local package management](http://git-scm.com/downloads)
+
+#### Afterward
+
+1. clone the repo
+
+        git clone https://github.com/KyleKing/Metalsmith-Boilerplate
+        cd Metalsmith-Boilerplate
+
+2. Run `npm install` to install dependencies
+
+3. Run `node index` to buld output file
 
 
-#Thank You to Everyone Who Posts Tutorials to the Internet
-Especially these tutorials that helped build a different part of this site:
+#### Attribution
+Modified from @RobinThrift by @kyleking
+Github icons built with [Buckler](http://b.repl.ca)
 
-1. @virendrachandak - [Sticky Header and Footer Using CSS](http://techtalk.virendrachandak.com/sticky-header-and-footer-using-css/#ixzz3AHgIeW3t)
-2. Stacksocial Question: [Jekyll display posts by category](http://stackoverflow.com/questions/20872861/jekyll-display-posts-by-category)
+###### Blog Parts
+- [Part 1: Setting Up the Forge](http://robinthrift.com/posts/metalsmith-part-1-setting-up-the-forge)
+- [Part 2: Shaping The Metal](http://www.robinthrift.com/posts/metalsmith-part-2-shaping-the-metal/)
+- [Part 3: Refining Our Tools](http://www.robinthrift.com/posts/metalsmith-part-3-refining-our-tools/)
+
+[Build Success!!!]: http://b.repl.ca/v1/Build-Success%21%21%21-brightgreen.png
+[Build Passing]: http://b.repl.ca/v1/Build-Passing-lightgrey.png
+[Build Failing]: http://b.repl.ca/v1/Build-Failing-red.png
