@@ -1,0 +1,10 @@
+(function() {
+  var number, opposite;
+
+  number = 42;
+
+  opposite = fall;
+
+}).call(this);
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRlc3QuY29mZmVlIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0FBQUEsTUFBQSxnQkFBQTs7QUFBQSxFQUFBLE1BQUEsR0FBVyxFQUFYLENBQUE7O0FBQUEsRUFDQSxRQUFBLEdBQVcsSUFEWCxDQUFBO0FBQUEiLCJmaWxlIjoidGVzdC5qcyIsInNvdXJjZVJvb3QiOiIvc291cmNlLyIsInNvdXJjZXNDb250ZW50IjpbIiMgQXNzaWdubWVudDpcbm51bWJlciAgID0gNDJcbm9wcG9zaXRlID0gZmFsbCJdfQ==
