@@ -53,12 +53,12 @@ gulp.task('clean', function() {
 // Jade conversion with index.jade moved into main folder
 gulp.task('jade', function () {
   // Convert supporting Jade files
-  gulp.src('src/**/*.jade', '!src/index.jade')
+  gulp.src('src/content/**/*.jade', '!src/content/index.jade')
     .pipe(jade())
     .pipe(gulp.dest('tmp/'));
 
     // Convert index file for easy loading by Github Pages
-  gulp.src('src/index.jade')
+  gulp.src('src/content/index.jade')
     .pipe(jade())
     .pipe(gulp.dest(''));
 });
