@@ -1,15 +1,12 @@
 extends layout-blocks/layout
 block content
-  ul
-    li
-      a(href="src/public/2014_10 Resume.pdf")
-        h1 Resume
-    li
-      a(href="https://github.com/KyleKing")
-        h2 github
-    li
-      a(href="https://www.linkedin.com/pub/kyle-king/57/4/8b7")
-        h2 LinkedIn
+  ul.linkItems
+    li.left
+      a(href="src/public/2014_10 Resume.pdf") Resume
+    li.left
+      a(href="https://github.com/KyleKing") github
+    li.left
+      a(href="https://www.linkedin.com/pub/kyle-king/57/4/8b7") LinkedIn
   //- Example
   include refills_examples/hero_unit
   //- Example

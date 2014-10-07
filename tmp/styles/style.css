@@ -205,6 +205,19 @@ button, input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
 
+.linkItems {
+  list-style-type: none; }
+  .linkItems li {
+    font-size: 1.5em; }
+    .linkItems li a {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      padding: 15px; }
+      .linkItems li a.left {
+        margin-left: 10px;
+        float: left; }
+
 /* ------------------------------------------------------------
                Custom stylization
 ------------------------------------------------------------*/
