@@ -14,6 +14,7 @@ var sass = require('gulp-sass');
 var coffeelint = require('gulp-coffeelint');
 var coffee = require('gulp-coffee');
 var sourcemaps = require('gulp-sourcemaps');
+var connect = require('gulp-connect');
 
 // For publishing
 var minifyCSS = require('gulp-minify-css');
@@ -82,7 +83,8 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('tmp/styles'))
     .pipe(notify({
         message: "succSASS!"
-      }));
+      }))
+    console.log('Hello world!');
 });
 
 // Lint coffee for errors
@@ -105,7 +107,10 @@ gulp.task('coffee', function () {
       }));
 });
 
-
+// Load the page to a localhost address at http://localhost:8080
+gulp.task('connect', function() {
+  connect.server();
+});
 
 //
 //
@@ -139,7 +144,8 @@ gulp.task('uglify', function () {
 //
 //
 
-gulp.task('default', ['jade', 'sasslint', 'sass', 'coffeelint', 'coffee']);
+// gulp.task('default', ['jade', 'sasslint', 'sass', 'coffeelint', 'coffee']);
+gulp.task('default', ['jade', 'sass', 'coffee', 'connect']);
 gulp.task('order', ['clean']);
 gulp.task('publish', ['default', 'minifyCSS', 'uglify']);
 
@@ -153,6 +159,12 @@ gulp.task('publish', ['default', 'minifyCSS', 'uglify']);
 
 var watching = gulp.watch('gulpfile.js', ['default']);
 watching.on('change', function(event) {
+  console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
+});
+
+// Watch for changes in Jade
+var watcherJade = gulp.watch('src/content/**/*.jade', ['jade']);
+watcherJade.on('change', function(event) {
   console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
 });
 
