@@ -205,6 +205,10 @@ button, input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
 
+html, body {
+  margin: 2px;
+  padding: 2px; }
+
 .linkItems {
   list-style-type: none; }
   .linkItems li {
