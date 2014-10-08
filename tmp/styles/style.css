@@ -205,11 +205,6 @@ button, input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
 
-html, body {
-  max-width: 900px;
-  margin-right: auto;
-  margin-left: auto; }
-
 #Container {
   margin-top: 40px;
   max-width: 68em;
@@ -221,9 +216,9 @@ html, body {
     clear: both; }
 
 .gray {
+  width: 100%;
   padding: 30px;
-  border-radius: 15px;
-  background-color: #e5e5e5; }
+  background-color: #f2f2f2; }
 
 .navItems {
   float: left;

@@ -1,7 +1,7 @@
 html, body {
-    max-width: 900px;
-    margin-right: auto;
-    margin-left: auto;
+    // max-width: 900px;
+    // margin-right: auto;
+    // margin-left: auto;
 }
 
 #Container {
@@ -10,9 +10,10 @@ html, body {
 }
 
 .gray {
+  width: 100%;
   padding: 30px;
-  border-radius: 15px;
-  background-color: tint(black, 90%);
+  // border-radius: 15px;
+  background-color: tint(black, 95%);
 }
 
 
