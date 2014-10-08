@@ -460,7 +460,7 @@ button, input[type="submit"] {
     .browser:nth-child(1) {
       display: inline-block; } }
   .browser:nth-child(1) .browser-content {
-    background: url(https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/refills-screenshot1.png);
+    background: url(https://raw.githubusercontent.com/KyleKing/KyleKing.github.io/master/src/public/bikesAbout.png);
     background-color: #F0F0F0;
     background-position: top;
     background-repeat: no-repeat;
@@ -483,7 +483,7 @@ button, input[type="submit"] {
       transform: scale(1.2);
       width: 40%; } }
   .browser:nth-child(2) .browser-content {
-    background: url(https://raw.githubusercontent.com/thoughtbot/refills/9c16f8b69d857c296c85f2d8c434e825f813a566/source/images/refills-screenshot2.jpg);
+    background: url(https://raw.githubusercontent.com/KyleKing/KyleKing.github.io/master/src/public/bikesMap.png);
     background-color: white;
     background-position: top;
     background-repeat: no-repeat;
