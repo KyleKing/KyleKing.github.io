@@ -1,8 +1,12 @@
 extends layout-blocks/layout
 block homePage
+
   //- Hero Image
-  include refills_examples/hero_unit
   #Container
+    include refills_examples/hero_unit
+
+  //- Quick Links
+  #Container.spacingTop
     ul.navItems
       li
         a(href="src/public/2014_10 Resume.pdf") Resume
@@ -12,13 +16,51 @@ block homePage
       li
         a(href="https://www.linkedin.com/pub/kyle-king/57/4/8b7")
           img(src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/linkedin-4096-black.png")
-  //- Example
-  .gray
+
+
+  .gray.spacingTop
     #Container
+      //- Three current resume bullets
       include refills_examples/iconbulletpoints
-  //- Example
-  #Container
+
+  #Container.spacingTop.spacingBottom
+    //- Project images in browser view
     include refills_examples/browser
-  .gray
-    #Container
-      img(src="src/public/skills.png")
+
+  //- Only visible on large screen and up
+  .spacingTop.skillVenn
+    .gray
+      #Container
+        //- Venn Diagram of Learning
+        img(src="src/public/skills.png")
+
+  //- Only visible on small - medium screens
+  .spacingTop.skillWords
+    .gray
+      #Container
+        ul.skillItems
+          //- MeteorJS
+          li
+            a(href="https://www.meteor.com")
+              img(src="src/public/meteor.png")
+          //- HTML5
+          li
+            a(href="http://www.html5rocks.com/en/")
+              img(src="http://kawandesign.com/wp-content/uploads/2014/09/html5.png")
+          //- CSS3
+          li
+            a(href="http://beta.theexpressiveweb.com")
+              img(src="http://kawandesign.com/wp-content/uploads/2014/09/css3.png")
+          //- JS
+          li
+            a(href="http://jstherightway.org")
+              img(src="http://kawandesign.com/wp-content/uploads/2014/09/js.png")
+          //- Jquery
+          li
+            a(href="http://jquery.com")
+              img(src="http://kawandesign.com/wp-content/uploads/2014/09/jqueryui-256-black.png")
+
+          //- Matlab
+          li
+            a(href="http://weknowmemes.com/generator/uploads/generated/g1361506840939929731.jpg")
+              img(src="http://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png")

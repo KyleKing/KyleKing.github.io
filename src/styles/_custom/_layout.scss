@@ -4,9 +4,29 @@ html, body {
     // margin-left: auto;
 }
 
-#Container {
-  margin-top: 40px;
-  @include outer-container;
+@include media($large-screen-down) {
+    .skillVenn {
+        display: none;
+    }
+    .skillWords {
+        display: block;
+        background-color: purple;
+    }
+}
+
+@include media($large-screen-up) {
+    .skillVenn {
+        display: block;
+    }
+    .skillWords {
+        display: none;
+    }
+}
+
+.spacingTop { margin-top: 40px; }
+.spacingBottom {
+  margin: 40px;
+  padding: 40px;
 }
 
 .gray {
@@ -14,6 +34,15 @@ html, body {
   padding: 30px;
   // border-radius: 15px;
   background-color: tint(black, 95%);
+}
+
+#Container {
+  max-width: 900px;
+  @include outer-container;
+}
+
+.cntr {
+  text-align: center;
 }
 
 
@@ -45,6 +74,44 @@ html, body {
       float: left;
       height: 1.5em;
       width: 1.5em;
+    }
+  }
+}
+
+
+.skillItems {
+  // @include span-columns(4);
+  // @include shift(4);
+  list-style-type: none;
+  padding: 30px;
+  li {
+    font-size: 1.5em;
+    a {
+      display: inline-block; // Keep it all inline, get it?
+      cursor: pointer;
+      // Mess with Text
+      font-weight: bold;
+      color: tint(black, 30%);
+      text-decoration: none;
+      margin-right: 10px;
+      float: left;
+    }
+    img {
+      display: inline-block; // Keep it all inline, get it?
+      cursor: pointer;
+      // Mess with Text
+      font-weight: bold;
+      color: tint(black, 30%);
+      text-decoration: none;
+      margin-right: 10px;
+      float: left;
+      height: 2.5em;
+      width: 2.5em;
+      margin-top: 20px;
+      &:hover {
+        margin-top: 10px;
+        height: 3.5em;
+      }
     }
   }
 }

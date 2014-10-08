@@ -205,8 +205,33 @@ button, input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
 
+@media screen and (max-width: 53.75em)  {
+  .skillVenn {
+    display: none; }
+  .skillWords {
+    display: block;
+    background-color: purple; } }
+
+@media screen and (min-width: 53.75em)  {
+  .skillVenn {
+    display: block; }
+  .skillWords {
+    display: none; } }
+
+.spacingTop {
+  margin-top: 40px; }
+
+.spacingBottom {
+  margin: 40px;
+  padding: 40px; }
+
+.gray {
+  width: 100%;
+  padding: 30px;
+  background-color: #f2f2f2; }
+
 #Container {
-  margin-top: 40px;
+  max-width: 900px;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
@@ -215,10 +240,8 @@ button, input[type="submit"] {
     display: table;
     clear: both; }
 
-.gray {
-  width: 100%;
-  padding: 30px;
-  background-color: #f2f2f2; }
+.cntr {
+  text-align: center; }
 
 .navItems {
   float: left;
@@ -250,6 +273,34 @@ button, input[type="submit"] {
       float: left;
       height: 1.5em;
       width: 1.5em; }
+
+.skillItems {
+  list-style-type: none;
+  padding: 30px; }
+  .skillItems li {
+    font-size: 1.5em; }
+    .skillItems li a {
+      display: inline-block;
+      cursor: pointer;
+      font-weight: bold;
+      color: #4c4c4c;
+      text-decoration: none;
+      margin-right: 10px;
+      float: left; }
+    .skillItems li img {
+      display: inline-block;
+      cursor: pointer;
+      font-weight: bold;
+      color: #4c4c4c;
+      text-decoration: none;
+      margin-right: 10px;
+      float: left;
+      height: 2.5em;
+      width: 2.5em;
+      margin-top: 20px; }
+      .skillItems li img:hover {
+        margin-top: 10px;
+        height: 3.5em; }
 
 /* ------------------------------------------------------------
                Custom stylization
