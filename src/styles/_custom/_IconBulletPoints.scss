@@ -1,5 +1,5 @@
 .bullets {
-  $icon-bullet-size: 3.5em;
+  $icon-bullet-size: 4em;
 
   overflow: auto;
   margin-bottom: $base-line-height;
@@ -29,23 +29,23 @@
 
   .bullet-icon {
     float: left;
-    background: $base-accent-color;
-    padding: $icon-bullet-size /4;
-    border-radius: 50%;
+    // background: $base-accent-color;
+    padding: $icon-bullet-size/20;
+    // border-radius: 50%;
     width: $icon-bullet-size;
     height: $icon-bullet-size;
   }
 
   .bullet-icon-1 {
-    background: $base-accent-color;
+    // background: $base-accent-color;
   }
 
   .bullet-icon-2 {
-    background: adjust-hue($base-accent-color, -50);
+    // background: adjust-hue($base-accent-color, -50);
   }
 
   .bullet-icon-3 {
-    background: adjust-hue($base-accent-color, -140);
+    // background: adjust-hue($base-accent-color, -140);
   }
 
   .bullet-content {

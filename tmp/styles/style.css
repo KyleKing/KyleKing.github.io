@@ -266,7 +266,8 @@ html, body {
   background-position: top;
   background-size: cover;
   padding-bottom: 40em;
-  border-bottom-radius: 15px; }
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; }
 
 .hero-inner {
   max-width: 68em;
@@ -345,24 +346,16 @@ html, body {
         clear: left; } }
   .bullets .bullet-icon {
     float: left;
-    background: #477DCA;
-    padding: 0.875em;
-    border-radius: 50%;
-    width: 3.5em;
-    height: 3.5em; }
-  .bullets .bullet-icon-1 {
-    background: #477DCA; }
-  .bullets .bullet-icon-2 {
-    background: #47caa9; }
-  .bullets .bullet-icon-3 {
-    background: #a9ca47; }
+    padding: 0.2em;
+    width: 4em;
+    height: 4em; }
   .bullets .bullet-content {
-    margin-left: 4.9em;
+    margin-left: 5.6em;
     margin-bottom: 2em; }
   .bullets h2 {
-    font-size: 1.4em;
-    padding-top: 0.5em;
-    margin-bottom: 0.58333em;
+    font-size: 1.6em;
+    padding-top: 0.57143em;
+    margin-bottom: 0.66667em;
     border-bottom: 1px solid rgba(51, 51, 51, 0.2);
     display: inline-block; }
 
