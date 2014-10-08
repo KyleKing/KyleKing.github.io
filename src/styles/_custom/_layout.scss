@@ -21,6 +21,11 @@ html, body {
     .skillWords {
         display: none;
     }
+    .navItems {
+      @include shift(2);
+      @include omega(3n);
+      // @include span-columns(4);
+    }
 }
 
 .spacingTop { margin-top: 40px; }
@@ -47,8 +52,6 @@ html, body {
 
 
 .navItems {
-  @include span-columns(4);
-  @include shift(4);
   list-style-type: none;
   padding: 30px;
   li {

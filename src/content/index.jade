@@ -1,22 +1,9 @@
 extends layout-blocks/layout
 block homePage
 
-  //- Hero Image
-  #Container
-    include refills_examples/hero_unit
-
-  //- Quick Links
-  #Container.spacingTop
-    ul.navItems
-      li
-        a(href="src/public/2014_10 Resume.pdf") Resume
-      li
-        a(href="https://github.com/KyleKing")
-          img(src="http://digitalservices.directory/logo/337-256.png")
-      li
-        a(href="https://www.linkedin.com/pub/kyle-king/57/4/8b7")
-          img(src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/linkedin-4096-black.png")
-
+  .spacingTop
+    #Container
+      h1 Get to know me
 
   .gray.spacingTop
     #Container
@@ -64,3 +51,19 @@ block homePage
           li
             a(href="http://weknowmemes.com/generator/uploads/generated/g1361506840939929731.jpg")
               img(src="http://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png")
+
+  //- Quick Links
+  #Container.spacingTop
+    ul.navItems
+      li
+        a(href="src/public/2014_10 Resume.pdf") Resume
+      li
+        a(href="https://github.com/KyleKing")
+          img(src="http://digitalservices.directory/logo/337-256.png")
+      li
+        a(href="https://www.linkedin.com/pub/kyle-king/57/4/8b7")
+          img(src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/linkedin-4096-black.png")
+
+  //- Hero Image
+  #Container
+    include refills_examples/hero_unit
