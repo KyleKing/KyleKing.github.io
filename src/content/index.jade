@@ -1,16 +1,17 @@
 extends layout-blocks/layout
 block homePage
-
-  .spacingTop
-    #Container
-      h1 Get to know me
+  .leadSection
+    h1 What do I do as a Bioengineer?
+    img(src="src/public/whiteboardFiller.png")
 
   .gray.spacingTop
     #Container
+      h1 Code, Build, and Innovate
       //- Three current resume bullets
       include refills_examples/iconbulletpoints
 
   #Container.spacingTop.spacingBottom
+    h1 Design
     //- Project images in browser view
     include refills_examples/browser
 
@@ -54,7 +55,7 @@ block homePage
 
   //- Quick Links
   #Container.spacingTop
-    ul.navItems
+    ul.quickLinks
       li
         a(href="src/public/2014_10 Resume.pdf") Resume
       li

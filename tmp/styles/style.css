@@ -249,12 +249,12 @@ button, input[type="submit"] {
 .cntr {
   text-align: center; }
 
-.navItems {
+.quickLinks {
   list-style-type: none;
   padding: 30px; }
-  .navItems li {
+  .quickLinks li {
     font-size: 1.5em; }
-    .navItems li a {
+    .quickLinks li a {
       display: inline-block;
       cursor: pointer;
       font-weight: bold;
@@ -262,7 +262,7 @@ button, input[type="submit"] {
       text-decoration: none;
       margin-right: 10px;
       float: left; }
-    .navItems li img {
+    .quickLinks li img {
       display: inline-block;
       cursor: pointer;
       font-weight: bold;
