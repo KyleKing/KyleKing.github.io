@@ -210,13 +210,51 @@ html, body {
   margin-right: auto;
   margin-left: auto; }
 
-.linkItems ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none; }
-  .linkItems ul li a {
-    display: inline;
-    cursor: pointer; }
+#Container {
+  margin-top: 40px;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  #Container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.gray {
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #e5e5e5; }
+
+.navItems {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-left: 34.11922%;
+  list-style-type: none;
+  padding: 30px; }
+  .navItems:last-child {
+    margin-right: 0; }
+  .navItems li {
+    font-size: 1.5em; }
+    .navItems li a {
+      display: inline-block;
+      cursor: pointer;
+      font-weight: bold;
+      color: #4c4c4c;
+      text-decoration: none;
+      margin-right: 10px;
+      float: left; }
+    .navItems li img {
+      display: inline-block;
+      cursor: pointer;
+      font-weight: bold;
+      color: #4c4c4c;
+      text-decoration: none;
+      margin-right: 10px;
+      float: left;
+      height: 1.5em;
+      width: 1.5em; }
 
 /* ------------------------------------------------------------
                Custom stylization
@@ -228,8 +266,7 @@ html, body {
   background-position: top;
   background-size: cover;
   padding-bottom: 40em;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px; }
+  border-bottom-radius: 15px; }
 
 .hero-inner {
   max-width: 68em;

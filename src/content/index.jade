@@ -1,18 +1,20 @@
 extends layout-blocks/layout
 block homePage
-  //- Example
+  //- Hero Image
   include refills_examples/hero_unit
-  h1 &nbsp;
-  ul.linkItems
-    li
-      a(href="src/public/2014_10 Resume.pdf") Resume
-    li
-      a(href="https://github.com/KyleKing") github
-    li
-      a(href="https://www.linkedin.com/pub/kyle-king/57/4/8b7") LinkedIn
-  h1 &nbsp;
+  #Container
+    ul.navItems
+      li
+        a(href="src/public/2014_10 Resume.pdf") Resume
+      li
+        a(href="https://github.com/KyleKing")
+          img(src="http://digitalservices.directory/logo/337-256.png")
+      li
+        a(href="https://www.linkedin.com/pub/kyle-king/57/4/8b7")
+          img(src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/linkedin-4096-black.png")
   //- Example
-  include refills_examples/iconbulletpoints
-  h1 &nbsp;
+  #Container.gray
+    include refills_examples/iconbulletpoints
   //- Example
-  include refills_examples/browser
+  #Container
+    include refills_examples/browser

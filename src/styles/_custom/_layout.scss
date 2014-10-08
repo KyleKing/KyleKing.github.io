@@ -4,13 +4,46 @@ html, body {
     margin-left: auto;
 }
 
-.linkItems ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+#Container {
+  margin-top: 40px;
+  @include outer-container;
+}
 
-  li a {
-      display: inline;
+.gray {
+  padding: 30px;
+  border-radius: 15px;
+  background-color: tint(black, 90%);
+}
+
+
+.navItems {
+  @include span-columns(4);
+  @include shift(4);
+  list-style-type: none;
+  padding: 30px;
+  li {
+    font-size: 1.5em;
+    a {
+      display: inline-block; // Keep it all inline, get it?
       cursor: pointer;
+      // Mess with Text
+      font-weight: bold;
+      color: tint(black, 30%);
+      text-decoration: none;
+      margin-right: 10px;
+      float: left;
+    }
+    img {
+      display: inline-block; // Keep it all inline, get it?
+      cursor: pointer;
+      // Mess with Text
+      font-weight: bold;
+      color: tint(black, 30%);
+      text-decoration: none;
+      margin-right: 10px;
+      float: left;
+      height: 1.5em;
+      width: 1.5em;
+    }
   }
 }
