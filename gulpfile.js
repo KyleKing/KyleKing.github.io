@@ -82,6 +82,17 @@ gulp.task('front-matter-to-json', function(){
 })
 
 
+
+
+
+//
+//
+// https://www.npmjs.org/package/gulp-tpl
+//
+//
+
+
+
 // Compile Handlebars Templates
 gulp.task('templates', function(){
   gulp.src('src/templates/*.hbs')
