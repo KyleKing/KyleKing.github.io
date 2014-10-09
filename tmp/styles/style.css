@@ -205,6 +205,9 @@ button, input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
 
+.hide {
+  display: none; }
+
 @media screen and (max-width: 53.75em)  {
   .skillVenn {
     display: none; }
@@ -217,12 +220,8 @@ button, input[type="submit"] {
     display: block; }
   .skillWords {
     display: none; }
-  .navItems {
-    margin-left: 17.05961%; }
-    .navItems:nth-child(3n) {
-      margin-right: 0; }
-    .navItems:nth-child(3n+1) {
-      clear: left; } }
+  .quickLinks {
+    margin-left: 25.58941%; } }
 
 .spacingTop {
   margin-top: 40px; }
@@ -250,8 +249,14 @@ button, input[type="submit"] {
   text-align: center; }
 
 .quickLinks {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
   list-style-type: none;
   padding: 30px; }
+  .quickLinks:last-child {
+    margin-right: 0; }
   .quickLinks li {
     font-size: 1.5em; }
     .quickLinks li a {
@@ -340,6 +345,9 @@ button, input[type="submit"] {
         .hero-inner .hero-copy p {
           font-size: 1.1em;
           max-width: 40%; } }
+
+.big {
+  font-size: 4em !important; }
 
 .bullets {
   overflow: auto;

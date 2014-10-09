@@ -1,7 +1,5 @@
-html, body {
-    // max-width: 900px;
-    // margin-right: auto;
-    // margin-left: auto;
+.hide {
+  display: none;
 }
 
 @include media($large-screen-down) {
@@ -21,10 +19,8 @@ html, body {
     .skillWords {
         display: none;
     }
-    .navItems {
-      @include shift(2);
-      @include omega(3n);
-      // @include span-columns(4);
+    .quickLinks {
+      @include shift(3);
     }
 }
 
@@ -52,6 +48,8 @@ html, body {
 
 
 .quickLinks {
+  @include span-columns(4);
+  // @include shift(4);
   list-style-type: none;
   padding: 30px;
   li {
@@ -83,8 +81,6 @@ html, body {
 
 
 .skillItems {
-  // @include span-columns(4);
-  // @include shift(4);
   list-style-type: none;
   padding: 30px;
   li {
