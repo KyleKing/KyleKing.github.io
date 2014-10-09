@@ -28,28 +28,21 @@ var uglify = require('gulp-uglify');
 // var imagemin = require('gulp-imagemin');
 // var sourcemaps = require('gulp-sourcemaps');
 
+// Image Minimization
+// https://www.npmjs.org/package/gulp-imagemin
+// https://www.npmjs.org/package/gulp-svgmin
+
+// May need this: https://www.npmjs.org/package/gulp-markdown
+
 // To handle YAML and .md files
 var data = require('gulp-data');
 var pluck = require('gulp-pluck');
 var frontMatter = require('gulp-front-matter');
 
-
-// Tale YAML into usable JSON file format
-gulp.task('front-matter-to-json', function(){
-  return gulp.src('src/content/posts/*.md')
-  .pipe(frontMatter({property: 'meta'}))
-  .pipe(data(function(file){
-    file.meta.path = file.path
-  }))
-  .pipe(pluck('meta', 'posts-metadata.json'))
-  .pipe(data(function(file){
-    file.contents = new Buffer(JSON.stringify(file.meta))
-  }))
-  .pipe(gulp.dest('tmp'))
-})
-
-
-
+// To turn that YAML and Handlebar templates into HTML...
+var handlebars = require('gulp-handlebars');
+var wrap = require('gulp-wrap');
+var declare = require('gulp-declare');
 
 //
 //
@@ -71,6 +64,38 @@ gulp.task('clean', function() {
 // Default
 //
 //
+
+
+// Tale YAML into usable JSON file format
+// https://www.npmjs.org/package/gulp-pluck
+gulp.task('front-matter-to-json', function(){
+  return gulp.src('src/content/posts/*.md')
+  .pipe(frontMatter({property: 'meta'}))
+  .pipe(data(function(file){
+    file.meta.path = file.path
+  }))
+  .pipe(pluck('meta', 'posts-metadata.json'))
+  .pipe(data(function(file){
+    file.contents = new Buffer(JSON.stringify(file.meta))
+  }))
+  .pipe(gulp.dest('tmp'))
+})
+
+
+// Compile Handlebars Templates
+gulp.task('templates', function(){
+  gulp.src('src/templates/*.hbs')
+    .pipe(handlebars())
+    .pipe(wrap('Handlebars.template(<%= contents %>)'))
+    .pipe(declare({
+      namespace: 'MyApp.templates',
+      noRedeclare: true, // Avoid duplicate declarations
+    }))
+    .pipe(concat('templates.js'))
+    .pipe(gulp.dest('tmp/js/'));
+});
+
+
 
 // Jade conversion with index.jade moved into main folder
 gulp.task('jade', function () {
@@ -177,11 +202,6 @@ gulp.task('publish', ['default', 'minifyCSS', 'uglify']);
 // Always Watching
 //
 //
-
-var watching = gulp.watch('gulpfile.js', ['default']);
-watching.on('change', function(event) {
-  console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
-});
 
 // Watch for changes in Jade
 var watcherJade = gulp.watch('src/content/**/*.jade', ['jade']);
