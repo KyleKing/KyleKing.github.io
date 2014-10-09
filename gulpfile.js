@@ -166,7 +166,7 @@ gulp.task('uglify', function () {
 //
 
 // gulp.task('default', ['jade', 'sasslint', 'sass', 'coffeelint', 'coffee']);
-gulp.task('default', ['jade', 'sass', 'coffee', 'connect']);
+gulp.task('default', ['front-matter-to-json', 'jade', 'sass', 'coffee', 'connect']);
 gulp.task('order', ['clean']);
 gulp.task('publish', ['default', 'minifyCSS', 'uglify']);
 
