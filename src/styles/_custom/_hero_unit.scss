@@ -7,12 +7,10 @@
   background-position: top;
   background-size: cover;
   padding-bottom: 40em;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
 }
 
 .hero-inner {
-  @include outer-container;
+  // @include outer-container;
   @include clearfix;
   padding: 3em;
   margin: auto;

@@ -1,17 +1,22 @@
 extends layout-blocks/layout
 block homePage
-  .leadSection
-    h1 What do I do as a Bioengineer?
-    img(src="src/public/whiteboardFiller.png")
+
+  //- Hero Image
+  //- #Container
+  include refills_examples/hero_unit
+
+  //- .leadSection
+  //-   h1 What do I do as a Bioengineer?
+  //-   img(src="src/public/whiteboardFiller.png")
 
   .gray.spacingTop
     #Container
-      h1 Code, Build, and Innovate
+      h1  Construct Systems, Develop Diagnostics, and Build Quality
       //- Three current resume bullets
       include refills_examples/iconbulletpoints
 
   #Container.spacingTop.spacingBottom
-    h1 Design
+    h1 Design UX and Code for Fun
     //- Project images in browser view
     include refills_examples/browser
 
@@ -64,7 +69,3 @@ block homePage
       li
         a(href="https://www.linkedin.com/pub/kyle-king/57/4/8b7")
           img(src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/linkedin-4096-black.png")
-
-  //- Hero Image
-  #Container
-    include refills_examples/hero_unit

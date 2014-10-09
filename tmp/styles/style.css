@@ -310,23 +310,14 @@ button, input[type="submit"] {
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  padding-bottom: 40em;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px; }
+  padding-bottom: 40em; }
 
 .hero-inner {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   padding: 3em;
   margin: auto;
   text-align: center;
   color: #4c4c4c;
   background-color: #f8fefa; }
-  .hero-inner:after {
-    content: "";
-    display: table;
-    clear: both; }
   .hero-inner:after {
     content: "";
     display: table;
