@@ -28,6 +28,27 @@ var uglify = require('gulp-uglify');
 // var imagemin = require('gulp-imagemin');
 // var sourcemaps = require('gulp-sourcemaps');
 
+// To handle YAML and .md files
+var data = require('gulp-data');
+var pluck = require('gulp-pluck');
+var frontMatter = require('gulp-front-matter');
+
+
+// Tale YAML into usable JSON file format
+gulp.task('front-matter-to-json', function(){
+  return gulp.src('src/content/posts/*.md')
+  .pipe(frontMatter({property: 'meta'}))
+  .pipe(data(function(file){
+    file.meta.path = file.path
+  }))
+  .pipe(pluck('meta', 'posts-metadata.json'))
+  .pipe(data(function(file){
+    file.contents = new Buffer(JSON.stringify(file.meta))
+  }))
+  .pipe(gulp.dest('tmp'))
+})
+
+
 
 
 //
