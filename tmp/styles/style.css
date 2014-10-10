@@ -215,9 +215,7 @@ button, input[type="submit"] {
   .skillVenn {
     display: block; }
   .skillWords {
-    display: none; }
-  .quickLinks {
-    margin-left: 25.58941%; } }
+    display: none; } }
 
 .hide {
   display: none; }
@@ -247,39 +245,20 @@ button, input[type="submit"] {
 .cntr {
   text-align: center; }
 
+.half {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .half:last-child {
+    margin-right: 0; }
+
 .small {
   display: inline-block;
   margin-right: 10px;
   float: right;
   height: 1.5em;
   width: auto; }
-
-.quickLinks {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%;
-  list-style-type: none;
-  padding: 30px; }
-  .quickLinks:last-child {
-    margin-right: 0; }
-  .quickLinks li {
-    font-size: 1.5em; }
-    .quickLinks li a {
-      display: inline-block;
-      cursor: pointer;
-      font-weight: bold;
-      color: #4c4c4c;
-      text-decoration: none;
-      margin-right: 10px;
-      float: left; }
-    .quickLinks li img {
-      display: inline-block;
-      cursor: pointer;
-      margin-right: 10px;
-      float: left;
-      height: 1.5em;
-      width: 1.5em; }
 
 .skillItems {
   list-style-type: none;
