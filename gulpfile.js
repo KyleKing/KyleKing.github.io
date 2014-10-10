@@ -16,6 +16,9 @@ var coffee = require('gulp-coffee');
 var sourcemaps = require('gulp-sourcemaps');
 var connect = require('gulp-connect');
 
+var savefile = require('gulp-savefile');
+var tpl = require('gulp-tpl');
+
 // For publishing
 var minifyCSS = require('gulp-minify-css');
 var concat = require('gulp-concat');
@@ -82,6 +85,15 @@ gulp.task('front-matter-to-json', function(){
 })
 
 
+//
+// DEMO TPL
+//
+
+gulp.task('default', function() {
+  return gulp.src('demo.hbs') // or demo.ejs/demo.filter.js/demo.yaml/demo.json
+        .pipe(tpl.html())
+        .pipe(savefile());
+});
 
 
 
