@@ -247,6 +247,13 @@ button, input[type="submit"] {
 .cntr {
   text-align: center; }
 
+.small {
+  display: inline-block;
+  margin-right: 10px;
+  float: right;
+  height: 1.5em;
+  width: auto; }
+
 .quickLinks {
   float: left;
   display: block;
@@ -269,9 +276,6 @@ button, input[type="submit"] {
     .quickLinks li img {
       display: inline-block;
       cursor: pointer;
-      font-weight: bold;
-      color: #4c4c4c;
-      text-decoration: none;
       margin-right: 10px;
       float: left;
       height: 1.5em;

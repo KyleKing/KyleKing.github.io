@@ -53,6 +53,14 @@
 // Need to be better centered...
 //
 
+.small {
+  display: inline-block; // Keep it all inline, get it?
+  margin-right: 10px;
+  float: right;
+  height: 1.5em;
+  width: auto;
+}
+
 
 .quickLinks {
   @include span-columns(4);
@@ -75,9 +83,9 @@
       display: inline-block; // Keep it all inline, get it?
       cursor: pointer;
       // Mess with Text
-      font-weight: bold;
-      color: tint(black, 30%);
-      text-decoration: none;
+      // font-weight: bold;
+      // color: tint(black, 30%);
+      // text-decoration: none;
       margin-right: 10px;
       float: left;
       height: 1.5em;
