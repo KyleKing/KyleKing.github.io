@@ -143,6 +143,7 @@
 //
 
 $base-link-background: rgb(71, 202, 169);
+$monochrome: rgb(242, 242, 242);
 // http://www.colorhexa.com
 
 .articleLinks {
@@ -151,12 +152,21 @@ $base-link-background: rgb(71, 202, 169);
     padding: 20px;
   }
   li.one {
-    background: tint($base-link-background, 10%);
+    background: tint($monochrome, 10%);
+    &:hover {
+      background: tint($base-link-background, 10%);
+    }
   }
   li.two {
-    background: tint($base-link-background, 30%);
+    background: tint($monochrome, 10%);
+    &:hover {
+      background: tint($base-link-background, 35%);
+    }
   }
   li.three {
-    background: tint($base-link-background, 50%);
+    background: tint($monochrome, 10%);
+    &:hover {
+      background: tint($base-link-background, 60%);
+    }
   }
 }

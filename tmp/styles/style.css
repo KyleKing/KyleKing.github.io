@@ -293,11 +293,17 @@ button, input[type="submit"] {
   .articleLinks li {
     padding: 20px; }
   .articleLinks li.one {
-    background: #59cfb1; }
+    background: #f3f3f3; }
+    .articleLinks li.one:hover {
+      background: #59cfb1; }
   .articleLinks li.two {
-    background: #7ed9c2; }
+    background: #f3f3f3; }
+    .articleLinks li.two:hover {
+      background: #87dcc7; }
   .articleLinks li.three {
-    background: #a3e4d4; }
+    background: #f3f3f3; }
+    .articleLinks li.three:hover {
+      background: #b5e9dc; }
 
 /* ------------------------------------------------------------
                Custom stylization
