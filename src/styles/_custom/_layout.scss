@@ -13,8 +13,6 @@
 @include media($large-screen-up) {
     .skillVenn { display: block; }
     .skillWords { display: none; }
-    // Move quicklinks to center of large screen
-    .quickLinks { @include shift(3); }
 }
 
 //
@@ -47,6 +45,8 @@
 
 .cntr {  text-align: center; }
 
+.half { @include span-columns(6); }
+
 //
 //
 // List the links to my resume, CV, etc.
@@ -61,38 +61,38 @@
   width: auto;
 }
 
-
-.quickLinks {
-  @include span-columns(4);
-  // @include shift(4);
-  list-style-type: none;
-  padding: 30px;
-  li {
-    font-size: 1.5em;
-    a {
-      display: inline-block; // Keep it all inline, get it?
-      cursor: pointer;
-      // Mess with Text
-      font-weight: bold;
-      color: tint(black, 30%);
-      text-decoration: none;
-      margin-right: 10px;
-      float: left;
-    }
-    img {
-      display: inline-block; // Keep it all inline, get it?
-      cursor: pointer;
-      // Mess with Text
-      // font-weight: bold;
-      // color: tint(black, 30%);
-      // text-decoration: none;
-      margin-right: 10px;
-      float: left;
-      height: 1.5em;
-      width: 1.5em;
-    }
-  }
-}
+// // Went with simpler approach
+// .quickLinks {
+//   @include span-columns(4);
+//   // @include shift(4);
+//   list-style-type: none;
+//   padding: 30px;
+//   li {
+//     font-size: 1.5em;
+//     a {
+//       display: inline-block; // Keep it all inline, get it?
+//       cursor: pointer;
+//       // Mess with Text
+//       font-weight: bold;
+//       color: tint(black, 30%);
+//       text-decoration: none;
+//       margin-right: 10px;
+//       float: left;
+//     }
+//     img {
+//       display: inline-block; // Keep it all inline, get it?
+//       cursor: pointer;
+//       // Mess with Text
+//       // font-weight: bold;
+//       // color: tint(black, 30%);
+//       // text-decoration: none;
+//       margin-right: 10px;
+//       float: left;
+//       height: 1.5em;
+//       width: 1.5em;
+//     }
+//   }
+// }
 
 //
 //
