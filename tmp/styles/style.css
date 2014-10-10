@@ -205,15 +205,11 @@ button, input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
 
-.hide {
-  display: none; }
-
 @media screen and (max-width: 53.75em)  {
   .skillVenn {
     display: none; }
   .skillWords {
-    display: block;
-    background-color: purple; } }
+    display: block; } }
 
 @media screen and (min-width: 53.75em)  {
   .skillVenn {
@@ -223,17 +219,20 @@ button, input[type="submit"] {
   .quickLinks {
     margin-left: 25.58941%; } }
 
+.hide {
+  display: none; }
+
+.gray {
+  width: 100%;
+  padding: 30px;
+  background-color: #f2f2f2; }
+
 .spacingTop {
   margin-top: 40px; }
 
 .spacingBottom {
   margin: 40px;
   padding: 40px; }
-
-.gray {
-  width: 100%;
-  padding: 30px;
-  background-color: #f2f2f2; }
 
 #Container {
   max-width: 900px;
@@ -305,6 +304,17 @@ button, input[type="submit"] {
       .skillItems li img:hover {
         margin-top: 10px;
         height: 3.5em; }
+
+.articleLinks {
+  border-radius: 4px; }
+  .articleLinks li {
+    padding: 20px; }
+  .articleLinks li.one {
+    background: #59cfb1; }
+  .articleLinks li.two {
+    background: #7ed9c2; }
+  .articleLinks li.three {
+    background: #a3e4d4; }
 
 /* ------------------------------------------------------------
                Custom stylization

@@ -74,7 +74,7 @@ gulp.task('front-matter-to-json', function(){
   .pipe(data(function(file){
     file.meta.path = file.path
   }))
-  .pipe(pluck('meta', 'posts-metadata.json'))
+  .pipe(pluck('meta', 'demo.json'))
   .pipe(data(function(file){
     file.contents = new Buffer(JSON.stringify(file.meta))
   }))
