@@ -2,7 +2,6 @@ extends layout-blocks/layout
 block homePage
 
   //- Hero Image
-  //- #Container
   include refills_examples/hero_unit
 
   //- .leadSection
@@ -51,7 +50,6 @@ block homePage
           li
             a(href="http://jquery.com")
               img(src="http://kawandesign.com/wp-content/uploads/2014/09/jqueryui-256-black.png")
-
           //- Matlab
           li
             a(href="http://weknowmemes.com/generator/uploads/generated/g1361506840939929731.jpg")
@@ -70,9 +68,11 @@ block homePage
         a(href="") The Graphical Explanation of Public Speaking that You Are Missing -- October 15, 2014
 
   //- Quick Links
-  .gray.spacingTop
+  .gray.spacingTop#connect
     #Container.spacingBottom
       h1 What are you waiting for? Get to know me:
+        a(href="mailto:kyleking.me.contact@gmail.com" target="_blank")
+          img(src="https://cdn3.iconfinder.com/data/icons/linecons-free-vector-icons-pack/32/mail-512.png").small
         a(href="https://github.com/KyleKing")
             img(src="http://digitalservices.directory/logo/337-256.png").small
         a(href="https://www.linkedin.com/pub/kyle-king/57/4/8b7")
@@ -85,7 +85,7 @@ block homePage
     #Container.spacingBottom
       .half
         h1 I'm Currently Working on...
-        ul
+        ul.default
           li Bringing wearable technology to the people who need it but can't afford it
           li Making Matlab more fun and easier for all students
           li Building a Gulp boilerplate to make resume sites like these easier
