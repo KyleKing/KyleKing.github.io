@@ -22,65 +22,59 @@ block homePage
 
   //- Only visible on large screen and up
   .spacingTop.skillVenn
-    .gray
-      #Container
-        //- Venn Diagram of Learning
-        img(src="src/public/skills.png")
+    #Container
+      //- Venn Diagram of Learning
+      img(src="src/public/skills.png")
 
   //- Only visible on small - medium screens
   .spacingTop.skillWords
-    .gray
-      #Container
-        ul.skillItems
-          //- MeteorJS
-          li
-            a(href="https://www.meteor.com")
-              img(src="src/public/meteor.png")
-          //- HTML5
-          li
-            a(href="http://www.html5rocks.com/en/")
-              img(src="http://kawandesign.com/wp-content/uploads/2014/09/html5.png")
-          //- CSS3
-          li
-            a(href="http://beta.theexpressiveweb.com")
-              img(src="http://kawandesign.com/wp-content/uploads/2014/09/css3.png")
-          //- JS
-          li
-            a(href="http://jstherightway.org")
-              img(src="http://kawandesign.com/wp-content/uploads/2014/09/js.png")
-          //- Jquery
-          li
-            a(href="http://jquery.com")
-              img(src="http://kawandesign.com/wp-content/uploads/2014/09/jqueryui-256-black.png")
+    #Container
+      ul.skillItems
+        //- MeteorJS
+        li
+          a(href="https://www.meteor.com")
+            img(src="src/public/meteor.png")
+        //- HTML5
+        li
+          a(href="http://www.html5rocks.com/en/")
+            img(src="http://kawandesign.com/wp-content/uploads/2014/09/html5.png")
+        //- CSS3
+        li
+          a(href="http://beta.theexpressiveweb.com")
+            img(src="http://kawandesign.com/wp-content/uploads/2014/09/css3.png")
+        //- JS
+        li
+          a(href="http://jstherightway.org")
+            img(src="http://kawandesign.com/wp-content/uploads/2014/09/js.png")
+        //- Jquery
+        li
+          a(href="http://jquery.com")
+            img(src="http://kawandesign.com/wp-content/uploads/2014/09/jqueryui-256-black.png")
 
-          //- Matlab
-          li
-            a(href="http://weknowmemes.com/generator/uploads/generated/g1361506840939929731.jpg")
-              img(src="http://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png")
+        //- Matlab
+        li
+          a(href="http://weknowmemes.com/generator/uploads/generated/g1361506840939929731.jpg")
+            img(src="http://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png")
 
   //- Quick Links
-  #Container.spacingTop.spacingBottom
-    h1 What are you waiting for? Get to know me:
-    ul.quickLinks
-      li
-        a(href="src/public/2014_10 Resume.pdf") Resume
-      li
+  .gray.spacingTop
+    #Container.spacingBottom
+      h1 What are you waiting for? Get to know me:
         a(href="https://github.com/KyleKing")
-          img(src="http://digitalservices.directory/logo/337-256.png")
-      li
+            img(src="http://digitalservices.directory/logo/337-256.png").small
         a(href="https://www.linkedin.com/pub/kyle-king/57/4/8b7")
-          img(src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/linkedin-4096-black.png")
+            img(src="https://cdn1.iconfinder.com/data/icons/simple-icons/4096/linkedin-4096-black.png").small
+        a(href="src/public/2014_10 Resume.pdf")
+          img(src="src/public/resume.png").small
 
   //- Outside Links
-  .gray.hide
-    #Container.spacingTop.spacingBottom
-      h1 Oh and sometimes I can be funny. Check out the free content I'm sharing!
-      p (none of it written of course - check back in a month!)
-      ul
-        li
-          a(href="") What if I told you that you would be a ~Subject~ System Matter Expert?
-            p What they don't tell you as a Bioengineer
-            p October 20, 2014
-        li
-          a(href="") The Graphical Explanation of Public Speaking that You Are Missing
-            p October 15, 2014
+  #Container.spacingTop.spacingBottom
+    h1 And sometimes even humorous
+    p (none of it written of course - check back in a month!)
+    ul.articleLinks
+      li.one
+        a(href="") What if I told you that you would be a ~Subject~ System Matter Expert? What they don't tell you as a Bioengineer  -- October 20, 2014
+      li.two
+        a(href="") The Graphical Explanation of Public Speaking that You Are Missing  -- October 15, 2014
+      li.three
+        a(href="") The Graphical Explanation of Public Speaking that You Are Missing -- October 15, 2014

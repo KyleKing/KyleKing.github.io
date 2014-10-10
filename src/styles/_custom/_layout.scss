@@ -1,33 +1,30 @@
-.hide {
-  display: none;
-}
+//
+//
+// Add cut off points for variations between dekstop and mobile
+// Hides venn diagram and displays icons
+//
+//
 
 @include media($large-screen-down) {
-    .skillVenn {
-        display: none;
-    }
-    .skillWords {
-        display: block;
-        background-color: purple;
-    }
+    .skillVenn { display: none; }
+    .skillWords { display: block; }
 }
 
 @include media($large-screen-up) {
-    .skillVenn {
-        display: block;
-    }
-    .skillWords {
-        display: none;
-    }
-    .quickLinks {
-      @include shift(3);
-    }
+    .skillVenn { display: block; }
+    .skillWords { display: none; }
+    // Move quicklinks to center of large screen
+    .quickLinks { @include shift(3); }
 }
 
-.spacingTop { margin-top: 40px; }
-.spacingBottom {
-  margin: 40px;
-  padding: 40px;
+//
+//
+// Tools for general repeated patterns
+//
+//
+
+.hide {
+  display: none;
 }
 
 .gray {
@@ -37,13 +34,31 @@
   background-color: tint(black, 95%);
 }
 
+.spacingTop { margin-top: 40px; }
+.spacingBottom {
+  margin: 40px;
+  padding: 40px;
+}
+
 #Container {
   max-width: 900px;
   @include outer-container;
 }
 
-.cntr {
-  text-align: center;
+.cntr {  text-align: center; }
+
+//
+//
+// List the links to my resume, CV, etc.
+// Need to be better centered...
+//
+
+.small {
+  display: inline-block; // Keep it all inline, get it?
+  margin-right: 10px;
+  float: right;
+  height: 1.5em;
+  width: auto;
 }
 
 
@@ -68,9 +83,9 @@
       display: inline-block; // Keep it all inline, get it?
       cursor: pointer;
       // Mess with Text
-      font-weight: bold;
-      color: tint(black, 30%);
-      text-decoration: none;
+      // font-weight: bold;
+      // color: tint(black, 30%);
+      // text-decoration: none;
       margin-right: 10px;
       float: left;
       height: 1.5em;
@@ -79,6 +94,12 @@
   }
 }
 
+//
+//
+// For mobile, lists the coding I can do with images with a small hover affect and links
+//
+//
+
 
 .skillItems {
   list-style-type: none;
@@ -86,7 +107,7 @@
   li {
     font-size: 1.5em;
     a {
-      display: inline-block; // Keep it all inline, get it?
+      display: inline-block;
       cursor: pointer;
       // Mess with Text
       font-weight: bold;
@@ -96,7 +117,7 @@
       float: left;
     }
     img {
-      display: inline-block; // Keep it all inline, get it?
+      display: inline-block;
       cursor: pointer;
       // Mess with Text
       font-weight: bold;
@@ -112,5 +133,30 @@
         height: 3.5em;
       }
     }
+  }
+}
+
+//
+//
+// Creates horizontal lines for links to my writing
+//
+//
+
+$base-link-background: rgb(71, 202, 169);
+// http://www.colorhexa.com
+
+.articleLinks {
+  border-radius: 4px;
+  li {
+    padding: 20px;
+  }
+  li.one {
+    background: tint($base-link-background, 10%);
+  }
+  li.two {
+    background: tint($base-link-background, 30%);
+  }
+  li.three {
+    background: tint($base-link-background, 50%);
   }
 }
