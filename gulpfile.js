@@ -106,16 +106,22 @@ gulp.task('default', function() {
 
 
 // Compile Handlebars Templates
-gulp.task('templates', function(){
-  gulp.src('src/templates/*.hbs')
-    .pipe(handlebars())
-    .pipe(wrap('Handlebars.template(<%= contents %>)'))
-    .pipe(declare({
-      namespace: 'MyApp.templates',
-      noRedeclare: true, // Avoid duplicate declarations
-    }))
-    .pipe(concat('templates.js'))
-    .pipe(gulp.dest('tmp/js/'));
+// gulp.task('templates', function(){
+//   gulp.src('src/templates/*.hbs')
+//     .pipe(handlebars())
+//     .pipe(wrap('Handlebars.template(<%= contents %>)'))
+//     .pipe(declare({
+//       namespace: 'MyApp.templates',
+//       noRedeclare: true, // Avoid duplicate declarations
+//     }))
+//     .pipe(concat('templates.js'))
+//     .pipe(gulp.dest('tmp/js/'));
+// });
+
+gulp.task('templates', function() {
+  return gulp.src('src/templates/test.hbs') // or demo.ejs/demo.filter.js/demo.yaml/demo.json
+        .pipe(tpl.html())
+        .pipe(savefile());
 });
 
 
