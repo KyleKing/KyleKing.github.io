@@ -86,18 +86,6 @@ gulp.task('front-matter-to-json', function(){
 
 
 //
-// DEMO TPL
-//
-
-gulp.task('default', function() {
-  return gulp.src('demo.hbs') // or demo.ejs/demo.filter.js/demo.yaml/demo.json
-        .pipe(tpl.html())
-        .pipe(savefile());
-});
-
-
-
-//
 //
 // https://www.npmjs.org/package/gulp-tpl
 //
@@ -117,13 +105,6 @@ gulp.task('default', function() {
 //     .pipe(concat('templates.js'))
 //     .pipe(gulp.dest('tmp/js/'));
 // });
-
-gulp.task('templates', function() {
-  return gulp.src('src/templates/test.hbs') // or demo.ejs/demo.filter.js/demo.yaml/demo.json
-        .pipe(tpl.html())
-        .pipe(savefile());
-});
-
 
 
 // Jade conversion with index.jade moved into main folder
