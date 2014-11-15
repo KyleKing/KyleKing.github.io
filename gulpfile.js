@@ -16,9 +16,6 @@ var coffee = require('gulp-coffee');
 var sourcemaps = require('gulp-sourcemaps');
 var connect = require('gulp-connect');
 
-var savefile = require('gulp-savefile');
-var tpl = require('gulp-tpl');
-
 // For publishing
 var minifyCSS = require('gulp-minify-css');
 var concat = require('gulp-concat');
@@ -48,13 +45,12 @@ gulp.task('clean', function() {
 //
 //
 
-
 // Jade conversion with index.jade moved into main folder
 gulp.task('jade', function () {
-  // Convert supporting Jade files
-  gulp.src('src/content/**/*.jade', '!src/content/index.jade')
-    .pipe(jade())
-    .pipe(gulp.dest('tmp/'));
+  // Convert supporting Jade files if other than index
+  // gulp.src('src/content/**/*.jade', '!src/content/index.jade')
+  //   .pipe(jade())
+  //   .pipe(gulp.dest('tmp/'));
 
     // Convert index file for easy loading by Github Pages
   gulp.src('src/content/index.jade')
@@ -82,28 +78,28 @@ gulp.task('sass', function () {
     .pipe(notify({
         message: "succSASS!"
       }))
-    console.log('Hello world!');
+    // console.log('Hello world!');
 });
 
-// Lint coffee for errors
-gulp.task('coffeelint', function () {
-  gulp.src('src/scripts/**/*.coffee')
-    .pipe(coffeelint())
-    .pipe(coffeelint.reporter());
-});
+// // Lint coffee for errors
+// gulp.task('coffeelint', function () {
+//   gulp.src('src/scripts/**/*.coffee')
+//     .pipe(coffeelint())
+//     .pipe(coffeelint.reporter());
+// });
 
-// Compile Coffee files into ./scripts
-gulp.task('coffee', function () {
-  gulp.src('src/scripts/**/*.coffee')
-    // Writes sourcemaps inline in JS file
-    .pipe(sourcemaps.init())
-    .pipe(coffee())
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('tmp/scripts'))
-    .pipe(notify({
-        message: "One more cup!"
-      }));
-});
+// // Compile Coffee files into ./scripts
+// gulp.task('coffee', function () {
+//   gulp.src('src/scripts/**/*.coffee')
+//     // Writes sourcemaps inline in JS file
+//     .pipe(sourcemaps.init())
+//     .pipe(coffee())
+//     .pipe(sourcemaps.write())
+//     .pipe(gulp.dest('tmp/scripts'))
+//     .pipe(notify({
+//         message: "One more cup!"
+//       }));
+// });
 
 // Load the page to a localhost address at http://localhost:8080
 gulp.task('connect', function() {
@@ -142,7 +138,7 @@ gulp.task('uglify', function () {
 //
 
 // gulp.task('default', ['jade', 'sasslint', 'sass', 'coffeelint', 'coffee']);
-gulp.task('default', ['jade', 'sass', 'coffee', 'connect']);
+gulp.task('default', ['jade', 'sass', 'connect']);
 gulp.task('order', ['clean']);
 gulp.task('publish', ['default', 'minifyCSS', 'uglify']);
 
