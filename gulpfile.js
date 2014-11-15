@@ -42,7 +42,6 @@ gulp.task('clean', function() {
 });
 
 
-
 //
 //
 // Default
@@ -134,7 +133,6 @@ gulp.task('uglify', function () {
     .pipe(concat("app.min.js"))
     .pipe(gulp.dest('tmp/scripts'));
 });
-
 
 
 //
