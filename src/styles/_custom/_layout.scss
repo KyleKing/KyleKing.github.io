@@ -1,18 +1,13 @@
 //
 //
 // Add cut off points for variations between dekstop and mobile
-// Hides venn diagram and displays icons
 //
 //
 
 @include media($large-screen-down) {
-    .skillVenn { display: none; }
-    .skillWords { display: block; }
 }
 
 @include media($large-screen-up) {
-    .skillVenn { display: block; }
-    .skillWords { display: none; }
 }
 
 //
@@ -59,81 +54,6 @@
   float: right;
   height: 1.5em;
   width: auto;
-}
-
-// // Went with simpler approach
-// .quickLinks {
-//   @include span-columns(4);
-//   // @include shift(4);
-//   list-style-type: none;
-//   padding: 30px;
-//   li {
-//     font-size: 1.5em;
-//     a {
-//       display: inline-block; // Keep it all inline, get it?
-//       cursor: pointer;
-//       // Mess with Text
-//       font-weight: bold;
-//       color: tint(black, 30%);
-//       text-decoration: none;
-//       margin-right: 10px;
-//       float: left;
-//     }
-//     img {
-//       display: inline-block; // Keep it all inline, get it?
-//       cursor: pointer;
-//       // Mess with Text
-//       // font-weight: bold;
-//       // color: tint(black, 30%);
-//       // text-decoration: none;
-//       margin-right: 10px;
-//       float: left;
-//       height: 1.5em;
-//       width: 1.5em;
-//     }
-//   }
-// }
-
-//
-//
-// For mobile, lists the coding I can do with images with a small hover affect and links
-//
-//
-
-
-.skillItems {
-  list-style-type: none;
-  padding: 30px;
-  li {
-    font-size: 1.5em;
-    a {
-      display: inline-block;
-      cursor: pointer;
-      // Mess with Text
-      font-weight: bold;
-      color: tint(black, 30%);
-      text-decoration: none;
-      margin-right: 10px;
-      float: left;
-    }
-    img {
-      display: inline-block;
-      cursor: pointer;
-      // Mess with Text
-      font-weight: bold;
-      color: tint(black, 30%);
-      text-decoration: none;
-      margin-right: 10px;
-      float: left;
-      height: 2.5em;
-      width: 2.5em;
-      margin-top: 20px;
-      &:hover {
-        margin-top: 10px;
-        height: 3.5em;
-      }
-    }
-  }
 }
 
 //
