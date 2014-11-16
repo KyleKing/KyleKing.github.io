@@ -324,36 +324,44 @@ button, input[type="submit"] {
             max-width: 40%; } }
 
 /* Common style */
-.grid {
+.projectPics {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  .grid:after {
+  .projectPics:after {
     content: "";
     display: table;
     clear: both; }
-  .grid a {
+  .projectPics a {
     float: left;
     display: block;
     margin-right: 0%;
     width: 25%; }
-    .grid a:last-child {
+    .projectPics a:last-child {
       margin-right: 0; }
-  .grid figure {
+  .projectPics figure {
     position: relative;
     overflow: hidden;
     margin: 5px;
     background: #333; }
+    .projectPics figure img {
+      position: relative;
+      display: block;
+      width: 100%;
+      opacity: 0.7;
+      -webkit-transition: opacity 0.3s;
+      transition: opacity 0.3s; }
+    .projectPics figure button {
+      position: absolute;
+      padding: 4px 20px;
+      border: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+      transition: opacity 0.3s, transform 0.3s; }
 
-.grid figure img {
-  position: relative;
-  display: block;
-  width: 100%;
-  opacity: 0.7;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s; }
-
-.grid figcaption {
+.projectPics figcaption {
   position: absolute;
   top: 0;
   z-index: 11;
@@ -361,44 +369,31 @@ button, input[type="submit"] {
   width: 100%;
   height: 100%;
   text-align: center; }
+  .projectPics figcaption h2 {
+    margin: 0 0 20px 0;
+    color: #3498db;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 130%;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s; }
+  .projectPics figcaption p {
+    padding: 0 20px;
+    color: #aaa;
+    font-weight: 300;
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s; }
+  .projectPics figcaption h2, .projectPics figcaption p {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px); }
 
-.grid figcaption h2 {
-  margin: 0 0 20px 0;
-  color: #3498db;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 300;
-  font-size: 130%;
-  -webkit-transition: -webkit-transform 0.3s;
-  transition: transform 0.3s; }
-
-.grid figcaption p {
-  padding: 0 20px;
-  color: #aaa;
-  font-weight: 300;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, transform 0.3s; }
-
-.grid figcaption h2, .grid figcaption p {
-  -webkit-transform: translateY(50px);
-  transform: translateY(50px); }
-
-.grid figure button {
-  position: absolute;
-  padding: 4px 20px;
-  border: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-  transition: opacity 0.3s, transform 0.3s; }
-
-.grid figcaption, .grid figcaption h2, .grid figcaption p, .grid figure button {
+.projectPics figcaption, .projectPics figcaption h2, .projectPics figcaption p, .projectPics figure button {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
 /* Style for SVG */
-.grid svg {
+.projectPics svg {
   position: absolute;
   top: -1px;
   /* fixes rendering issue in FF */
@@ -406,22 +401,22 @@ button, input[type="submit"] {
   width: 100%;
   height: 100%; }
 
-.grid svg path {
+.projectPics svg path {
   fill: #fff; }
 
 /* Hover effects */
-.grid a:hover figure img {
+.projectPics a:hover figure img {
   opacity: 1; }
 
-.grid a:hover figcaption h2, .grid a:hover figcaption p {
+.projectPics a:hover figcaption h2, .projectPics a:hover figcaption p {
   -webkit-transform: translateY(0);
   transform: translateY(0); }
 
-.grid a:hover figcaption p {
+.projectPics a:hover figcaption p {
   opacity: 0; }
 
 /* Individual styles */
-.grid figure button {
+.projectPics figure button {
   top: 50%;
   left: 50%;
   border: 3px solid #fff;
@@ -431,7 +426,31 @@ button, input[type="submit"] {
   -webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
   transform: translateY(-50%) translateX(-50%) scale(0.25); }
 
-.grid a:hover figure button {
+.projectPics a:hover figure button {
   opacity: 1;
   -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
   transform: translateY(-50%) translateX(-50%) scale(1); }
+
+.FacebookIMG {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 33.33333%; }
+  .FacebookIMG:last-child {
+    margin-right: 0; }
+
+.GithubIMG {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 33.33333%; }
+  .GithubIMG:last-child {
+    margin-right: 0; }
+
+.LinkedInIMG {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 33.33333%; }
+  .LinkedInIMG:last-child {
+    margin-right: 0; }

@@ -1,0 +1,9 @@
+.FacebookIMG {
+  @include span-columns(4);
+}
+.GithubIMG {
+  @include span-columns(4);
+}
+.LinkedInIMG {
+  @include span-columns(4);
+}
