@@ -332,31 +332,18 @@ button, input[type="submit"] {
     content: "";
     display: table;
     clear: both; }
-
-@media screen and (min-width: 53.75em)  {
   .grid a {
     float: left;
     display: block;
     margin-right: 0%;
-    width: 100%;
-    margin-left: 0.625em;
-    margin-right: 0.625em; }
+    width: 25%; }
     .grid a:last-child {
-      margin-right: 0; } }
-@media screen and (min-width: 53.75em)  {
-  .grid a {
-    float: left;
-    display: block;
-    margin-right: 0%;
-    width: 37.5%; }
-    .grid a:last-child {
-      margin-right: 0; } }
-
-.grid figure {
-  position: relative;
-  overflow: hidden;
-  margin: 5px;
-  background: #333; }
+      margin-right: 0; }
+  .grid figure {
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    background: #333; }
 
 .grid figure img {
   position: relative;

@@ -1,24 +1,15 @@
 /* Common style */
 .grid {
   @include outer-container;
-}
-
-.grid a {
-  @include media($large-screen-up) {
-    @include span-columns(8);
-    margin-left: em(10);
-    margin-right: em(10);
+  a {
+      @include span-columns(3);
   }
-  @include media($large-screen-up) {
-    @include span-columns(3);
+  figure {
+    position: relative;
+    overflow: hidden;
+    margin: 5px;
+    background: #333;
   }
-}
-
-.grid figure {
-  position: relative;
-  overflow: hidden;
-  margin: 5px;
-  background: #333;
 }
 
 .grid figure img {
