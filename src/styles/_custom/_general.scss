@@ -34,8 +34,8 @@
 }
 
 #Container {
-  max-width: 900px;
   @include outer-container;
+  margin-top: em(200);
 }
 
 .cntr {  text-align: center; }

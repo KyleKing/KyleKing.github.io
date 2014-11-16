@@ -228,10 +228,10 @@ button, input[type="submit"] {
   padding: 40px; }
 
 #Container {
-  max-width: 900px;
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-top: 12.5em; }
   #Container:after {
     content: "";
     display: table;
@@ -431,26 +431,52 @@ button, input[type="submit"] {
   -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
   transform: translateY(-50%) translateX(-50%) scale(1); }
 
-.FacebookIMG {
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 33.33333%; }
-  .FacebookIMG:last-child {
-    margin-right: 0; }
-
-.GithubIMG {
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 33.33333%; }
-  .GithubIMG:last-child {
-    margin-right: 0; }
-
-.LinkedInIMG {
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 33.33333%; }
-  .LinkedInIMG:last-child {
-    margin-right: 0; }
+#contact_container {
+  margin-top: 15.625em;
+  margin-bottom: 15.625em;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  #contact_container:after {
+    content: "";
+    display: table;
+    clear: both; }
+  #contact_container p {
+    font-weight: bold;
+    padding: 0.625em;
+    text-align: center; }
+  #contact_container img {
+    max-height: 18.75em;
+    max-width: 31.25em;
+    overflow: auto;
+    margin: 0.625em; }
+  #contact_container .FacebookIMG {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 33.33333%; }
+    #contact_container .FacebookIMG:last-child {
+      margin-right: 0; }
+    #contact_container .FacebookIMG p {
+      background-color: #3498db;
+      color: #ecf0f1; }
+  #contact_container .GithubIMG {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 33.33333%; }
+    #contact_container .GithubIMG:last-child {
+      margin-right: 0; }
+    #contact_container .GithubIMG p {
+      background-color: #bdc3c7;
+      color: #2c3e50; }
+  #contact_container .LinkedInIMG {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 33.33333%; }
+    #contact_container .LinkedInIMG:last-child {
+      margin-right: 0; }
+    #contact_container .LinkedInIMG p {
+      background-color: #2980b9;
+      color: #ecf0f1; }
