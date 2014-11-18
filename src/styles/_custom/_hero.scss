@@ -1,8 +1,8 @@
 .hero {
-  $hero-background-top: #7F99BE;
-  $hero-background-bottom: #20392B;
+  // $hero-background-top: #7F99BE;
+  // $hero-background-bottom: #20392B;
   $hero-color: #34495e;
-  $gradient-angle: 10deg;
+  // $gradient-angle: 10deg;
   $hero-image: '/src/public/color1.png';
 
   // @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
@@ -17,20 +17,20 @@
   }
 
   @include media($desktop) {
-    height: em(700);
+    height: em(100);
   }
   padding-bottom: 4em;
 
   .hero-inner {
     @include outer-container;
     @include clearfix;
-    padding-top: 7em;
+    // padding-top: 7em;
     margin: auto;
     text-align: center;
     color: $hero-color;
 
     @include media($desktop) {
-      padding-top: 10em;
+      // padding-top: 10em;
     }
 
     .hero-copy {
