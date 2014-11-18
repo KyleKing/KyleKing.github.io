@@ -4,7 +4,7 @@ body {
 }
 
 
-#Container {
+.projectPics {
   @include outer-container;
   a {
       @include media($mobile) {
