@@ -12,11 +12,11 @@
   background-position: top;
   background-size: cover;
 
-  @include media($large-screen-down) {
+  @include media($mobile) {
     min-height: em(300);
   }
 
-  @include media($large-screen-up) {
+  @include media($desktop) {
     height: em(700);
   }
   padding-bottom: 4em;
@@ -29,7 +29,7 @@
     text-align: center;
     color: $hero-color;
 
-    @include media($large-screen) {
+    @include media($desktop) {
       padding-top: 10em;
     }
 
@@ -40,7 +40,7 @@
         font-size: em(40);
         margin-bottom: .5em;
 
-        @include media($large-screen) {
+        @include media($desktop) {
           font-size: em(100);
         }
       }
@@ -52,7 +52,7 @@
         font-weight: 200;
         line-height: 1.4em;
 
-        @include media($large-screen) {
+        @include media($desktop) {
           font-size: em(25);
           max-width: 40%;
         }

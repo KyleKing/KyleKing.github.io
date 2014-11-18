@@ -1,9 +1,19 @@
 /* Common style */
-.projectPics {
+body {
+  background-color: $flat-gray-1;
+}
+
+
+#Container {
   @include outer-container;
   a {
-      @include span-columns(3);
-  }
+      @include media($mobile) {
+        @include span-columns(4);
+      }
+      @include media($desktop) {
+        @include span-columns(4);
+      }
+    }
   figure {
     position: relative;
     overflow: hidden;

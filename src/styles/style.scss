@@ -8,6 +8,8 @@
 // Normalize.css File
 // @@import 'normalize';
 
+@import '_custom/flat-colors';
+
 // Import files for Bourbon
 @import 'bourbon/bourbon';
 @import 'base/grid-settings';
@@ -22,3 +24,4 @@
 @import '_custom/_hero';
 @import '_custom/_projects';
 @import '_custom/_contact';
+@import '_custom/_video';
