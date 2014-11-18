@@ -13,19 +13,16 @@ section.video {
     padding: 0;
     margin: 0;
     background-repeat: no-repeat;
-    @include media($desktop) {
-      // skrollr.js
-    }
   }
-  .color_overlay {
-    z-index: 10;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: rgba(52, 152, 219, 0.3);
-    width: 100%;
-    height: em(600);
-  }
+  // .color_overlay {
+  //   z-index: 10;
+  //   position: absolute;
+  //   top: 0px;
+  //   left: 0px;
+  //   // background:
+  //   // @include linear-gradient(rgba(52, 152, 219, 0.3), rgba(52, 152, 219, 0.01));
+  //   width: 100%;
+  // }
   .video-txt {
     text-align: center;
     z-index: 15;
