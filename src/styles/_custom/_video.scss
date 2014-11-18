@@ -23,6 +23,7 @@ section.video {
     height: 100%;
   }
   .video-txt {
+    text-align: center;
     z-index: 15;
     position: absolute;
     top: 0;
@@ -30,9 +31,11 @@ section.video {
     transform: translate(-50%, 0);
     color: white;
     h1 {
-      margin-top: em(50);
+      margin-top: em(10);
+      @include media($desktop) {
+        margin-top: em(50);
+      }
       margin-bottom: 0px;
-      text-align: center;
       font-size: em(40);
       @include media($desktop) {
         font-size: em(100);
