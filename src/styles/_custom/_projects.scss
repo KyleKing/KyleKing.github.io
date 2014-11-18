@@ -1,10 +1,6 @@
 /* Common style */
-body {
-  background-color: $flat-gray-1;
-}
-
-
 .projectPics {
+  z-index: 50;
   @include outer-container;
   a {
       @include media($mobile) {
