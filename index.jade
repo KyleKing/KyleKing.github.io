@@ -1,4 +1,4 @@
-!!! 5
+doctype html
 html(lang='en')
 head
 	meta(charset='UTF-8')
@@ -13,32 +13,23 @@ head
 	link(rel='stylesheet', type='text/css', href='css/demo.css')
 	link(rel='stylesheet', type='text/css', href='css/style.css')
 	script(type='text/javascript', src='js/modernizr.custom.08464.js')
-	script#pageTmpl(type='text/x-jquery-tmpl')
-	<div class="${theClass}" style="${theStyle}">
+	script#pageTmpl(type='text/x-jquery-tmpl').
+		<div class="${theClass}" style="${theStyle}">
 		<div class="front">
-			<div class="outer">
-				<div class="content" style="${theContentStyleFront}">
-					<div class="inner">{{html theContentFront}}</div>
-				</div>
-			</div>
+		<div class="outer">
+		<div class="content" style="${theContentStyleFront}">
+		<div class="inner">{{html theContentFront}}</div>
+		</div>
+		</div>
 		</div>
 		<div class="back">
-			<div class="outer">
-				<div class="content" style="${theContentStyleBack}">
-					<div class="inner">{{html theContentBack}}</div>
-				</div>
-			</div>
+		<div class="outer">
+		<div class="content" style="${theContentStyleBack}">
+		<div class="inner">{{html theContentBack}}</div>
 		</div>
-	</div>
-	//- .${theClass}(style="${theStyle}")
-	//- 	.front
-	//- 		.outer
-	//- 			.content(style="${theContentStyleFront}")
-	//- 				.inner {{html theContentFront}}
-	//- 	.back
-	//-       	.outer
-	//-       		.content(style="${theContentStyleBack}")
-	//-       			.inner {{html theContentBack}}
+		</div>
+		</div>
+		</div>
 body
 	header.main-title
 		h1
@@ -171,19 +162,18 @@ body
 		.f-page.f-cover-back
 			#codrops-ad-wrapper
 	script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
-	script(type='text/javascript')
-		var $container 	= $( '#flip' ),
-		$pages		= $container.children().hide();
+	script(type='text/javascript').
+		var $container 	= $( '#flip' ), $pages = $container.children().hide();
 		Modernizr.load({
-		test: Modernizr.csstransforms3d && Modernizr.csstransitions,
-		yep : ['js/jquery.tmpl.min.js','js/jquery.history.js','js/core.string.js','js/jquery.touchSwipe-1.2.5.js','js/jquery.flips.js'],
-		nope: 'css/fallback.css',
-		callback : function( url, result, key ) {
-		if( url === 'css/fallback.css' ) {
-		$pages.show();
-		}
-		else if( url === 'js/jquery.flips.js' ) {
-		$container.flips();
-		}
-		}
+			test: Modernizr.csstransforms3d && Modernizr.csstransitions,
+			yep : ['js/jquery.tmpl.min.js','js/jquery.history.js','js/core.string.js','js/jquery.touchSwipe-1.2.5.js','js/jquery.flips.js'],
+			nope: 'css/fallback.css',
+			callback : function( url, result, key ) {
+				if( url === 'css/fallback.css' ) {
+					$pages.show();
+				}
+				else if( url === 'js/jquery.flips.js' ) {
+					$container.flips();
+				}
+			}
 		});
