@@ -1,43 +1,12 @@
-doctype html
-html(lang='en')
-head
-	meta(charset='UTF-8')
-	meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-	title Experimental Page Layout Inspired by Flipboard
-	meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
-	meta(name='description', content='Experimental Page Layout Inspired by Flipboard')
-	meta(name='keywords', content='flip, pages, flipboard, layout, responsive, web, web design, grid, ipad, jquery, css3, 3d, perspective, transitions, transform')
-	meta(name='author', content='')
-	link(rel='shortcut icon', href='../favicon.ico')
-	link(href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300,300italic', rel='stylesheet', type='text/css')
-	//- link(rel='stylesheet', type='text/css', href='css/demo.css')
-	link(rel='stylesheet', type='text/css', href='tmp/styles/style.css')
-	//- link(rel='stylesheet', type='text/css', href='css/style.css')
-	script(type='text/javascript', src='js/modernizr.custom.08464.js')
-	script#pageTmpl(type='text/x-jquery-tmpl').
-		<div class="${theClass}" style="${theStyle}">
-		<div class="front">
-		<div class="outer">
-		<div class="content" style="${theContentStyleFront}">
-		<div class="inner">{{html theContentFront}}</div>
-		</div>
-		</div>
-		</div>
-		<div class="back">
-		<div class="outer">
-		<div class="content" style="${theContentStyleBack}">
-		<div class="inner">{{html theContentBack}}</div>
-		</div>
-		</div>
-		</div>
-		</div>
+include layout-blocks/header
 body
 	header.main-title
 		h1
-			| Experimental Page Layout
-			strong Inspired by Flipboard
+			| Kyle King 
+			strong Bioengineer/Nerd
 		p Swipe or drag to flip the pages, click to open items
-		p strong Best viewed in a Webkit browser (Safari, Chrome)
+		p
+			strong Best viewed in a Webkit browser (Safari, Chrome)
 	#flip.container
 		.f-page.f-cover
 			.cover-elements
