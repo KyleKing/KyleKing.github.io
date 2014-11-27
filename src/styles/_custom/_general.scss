@@ -1,0 +1,80 @@
+//
+//
+// Tools for general repeated patterns
+//
+//
+
+.hide {
+  display: none;
+}
+
+.gray {
+  width: 100%;
+  padding: 30px;
+  // border-radius: 15px;
+  background-color: tint(black, 95%);
+}
+
+.spacingTop { margin-top: 40px; }
+.spacingBottom {
+  margin: 40px;
+  padding: 40px;
+}
+
+#Container {
+  @include outer-container;
+  margin-top: em(200);
+}
+
+.cntr {  text-align: center; }
+
+.half { @include span-columns(6); }
+
+//
+//
+// List the links to my resume, CV, etc.
+// Need to be better centered...
+//
+
+.small {
+  display: inline-block; // Keep it all inline, get it?
+  margin-right: 10px;
+  float: right;
+  height: 1.5em;
+  width: auto;
+}
+
+//
+//
+// Creates horizontal lines for links to my writing
+//
+//
+
+$base-link-background: rgb(71, 202, 169);
+$monochrome: rgb(242, 242, 242);
+// http://www.colorhexa.com
+
+.articleLinks {
+  border-radius: 4px;
+  li {
+    padding: 20px;
+  }
+  li.one {
+    background: tint($monochrome, 10%);
+    &:hover {
+      background: tint($base-link-background, 10%);
+    }
+  }
+  li.two {
+    background: tint($monochrome, 10%);
+    &:hover {
+      background: tint($base-link-background, 35%);
+    }
+  }
+  li.three {
+    background: tint($monochrome, 10%);
+    &:hover {
+      background: tint($base-link-background, 60%);
+    }
+  }
+}
