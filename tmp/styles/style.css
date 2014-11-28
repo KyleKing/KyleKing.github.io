@@ -124,9 +124,9 @@ button.CTA {
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 3s;
-  -moz-animation-delay: 3s;
-  animation-delay: 3s; }
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  animation-delay: 4s; }
   button.CTA:hover:not(:disabled) {
     box-shadow: inset 0 1px 0 0 #64717d;
     cursor: pointer;
@@ -192,27 +192,11 @@ a.facebook {
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-delay: 4s;
-  -moz-animation-delay: 4s;
-  animation-delay: 4s; }
-
-a.github {
-  opacity: 0;
-  margin: 0.625em;
-  -webkit-animation: fadeIn 0.75s ease-in-out;
-  -moz-animation: fadeIn 0.75s ease-in-out;
-  animation: fadeIn 0.75s ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  -moz-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
   -webkit-animation-delay: 5s;
   -moz-animation-delay: 5s;
   animation-delay: 5s; }
 
-a.linkedin {
+a.github {
   opacity: 0;
   margin: 0.625em;
   -webkit-animation: fadeIn 0.75s ease-in-out;
@@ -227,3 +211,36 @@ a.linkedin {
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
   animation-delay: 6s; }
+
+a.linkedin {
+  opacity: 0;
+  margin: 0.625em;
+  -webkit-animation: fadeIn 0.75s ease-in-out;
+  -moz-animation: fadeIn 0.75s ease-in-out;
+  animation: fadeIn 0.75s ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 7s;
+  -moz-animation-delay: 7s;
+  animation-delay: 7s; }
+
+.keepScrollling {
+  padding-top: 5em;
+  opacity: 0;
+  margin: 0.625em;
+  -webkit-animation: fadeIn 2s ease-in-out;
+  -moz-animation: fadeIn 2s ease-in-out;
+  animation: fadeIn 2s ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 13s;
+  -moz-animation-delay: 13s;
+  animation-delay: 13s; }
