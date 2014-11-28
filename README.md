@@ -1,4 +1,4 @@
-Gulp-GH-Pages-Boilerplate
+Personal Website
 =========================
 
-Gulp for integration with Github Pages, SCSS, Coffee, and Jade. Outputs files that can be hosted by Github at a custom domain name without Jekyll
+Gulp(Jade, Scss), Bourbon SCSS Family, and Particle JS
