@@ -14,10 +14,11 @@
 @import 'bourbon/bourbon';
 @import 'base/grid-settings';
 @import 'neat/neat';
-// @import 'base/base';
+@import 'base/base';
 
 /* ------------------------------------------------------------
                Custom stylization
 ------------------------------------------------------------*/
 
 @import '_custom/_general';
+@import '_custom/_info';
