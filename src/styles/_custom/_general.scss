@@ -32,7 +32,7 @@ body {
   // @include outer-container;
 }
 
-.bioe {
+#bioe {
   color: white;
   padding-top: em(400);
   background-color: $flat-green-1;
@@ -40,13 +40,21 @@ body {
   text-align: center;
   @include span-columns(4);
   &:hover {
-    @include span-columns(7);
+    @include span-columns(8);
     text-decoration: underline;
     background: shade($flat-green-1, 20%);
   }
 }
 
-.dvlp {
+#bioe:hover + #dvlp {
+  @include span-columns(2);
+}
+
+#bioe:hover + #lead {
+  @include span-columns(2);
+}
+
+#dvlp {
   color: white;
   padding-top: em(400);
   background-color: $flat-green-3;
@@ -60,7 +68,7 @@ body {
   }
 }
 
-.lead {
+#lead {
   color: white;
   padding-top: em(400);
   background-color: $flat-blue-1;

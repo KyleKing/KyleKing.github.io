@@ -2,15 +2,9 @@ extends layout-blocks/layout
 block homePage
    a(data-scroll href='#contact')#Logo Kyle King
    .nav
-      a(href='/')
-         .bioe
-            h1 Bioengineer
-      a(href='/')
-         .dvlp
-            h1 Developer
-      a(href='/')
-         .lead
-            h1 Leader
+      a(href='/')#bioe Bioengineer
+      a(href='/')#dvlp Developer
+      a(href='/')#lead Leader
    //- .bioe_selected
    //-    h1 &nbsp;
    #content
@@ -189,4 +183,4 @@ block homePage
             .con_lead
       .chunk
          span#contact Contact
-            a(href='email') email
+            a(href='/') email

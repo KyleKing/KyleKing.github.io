@@ -232,7 +232,7 @@ body {
   background-color: #2C3E50;
   font-size: 2.8125em; }
 
-.bioe {
+#bioe {
   color: white;
   padding-top: 25em;
   background-color: #1ABC9C;
@@ -242,19 +242,35 @@ body {
   display: block;
   margin-right: 0%;
   width: 33.33333%; }
-  .bioe:last-child {
+  #bioe:last-child {
     margin-right: 0; }
-  .bioe:hover {
+  #bioe:hover {
     float: left;
     display: block;
     margin-right: 0%;
-    width: 58.33333%;
+    width: 66.66667%;
     text-decoration: underline;
     background: #14967c; }
-    .bioe:hover:last-child {
+    #bioe:hover:last-child {
       margin-right: 0; }
 
-.dvlp {
+#bioe:hover + #dvlp {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 16.66667%; }
+  #bioe:hover + #dvlp:last-child {
+    margin-right: 0; }
+
+#bioe:hover + #lead {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 16.66667%; }
+  #bioe:hover + #lead:last-child {
+    margin-right: 0; }
+
+#dvlp {
   color: white;
   padding-top: 25em;
   background-color: #2ECC71;
@@ -264,13 +280,13 @@ body {
   display: block;
   margin-right: 0%;
   width: 33.33333%; }
-  .dvlp:last-child {
+  #dvlp:last-child {
     margin-right: 0; }
-  .dvlp:hover {
+  #dvlp:hover {
     text-decoration: underline;
     background: #24a35a; }
 
-.lead {
+#lead {
   color: white;
   padding-top: 25em;
   background-color: #3498DB;
@@ -280,9 +296,9 @@ body {
   display: block;
   margin-right: 0%;
   width: 33.33333%; }
-  .lead:last-child {
+  #lead:last-child {
     margin-right: 0; }
-  .lead:hover {
+  #lead:hover {
     text-decoration: underline;
     background: #2979af; }
 

@@ -6,3 +6,12 @@ body
      //- script(src="src/scripts/particles.js")
    script.
       smoothScroll.init();
+   script.
+      $(document).ready(function () {
+          $(".foo").hover(function () {
+              $(".bar").css("border", "5px red solid");
+          });
+          $(".foo").mouseleave(function () {
+              $(".bar").css("border", "none");
+          });
+      });
