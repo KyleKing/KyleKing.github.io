@@ -6,12 +6,45 @@ body
      //- script(src="src/scripts/particles.js")
    script.
       smoothScroll.init();
+   script(src="http://code.jquery.com/jquery-1.11.1.min.js")
    script.
       $(document).ready(function () {
-          $(".foo").hover(function () {
-              $(".bar").css("border", "5px red solid");
+          //- $("#bioe").hover(function () {
+          //-     $("#bioe").toggleClass("max");
+          //-     $("#dvlp").toggleClass("min");
+          //-     $("#lead").toggleClass("min");
+          //- });
+          $("#bioe").click(function () {
+              $("#bioe").removeClass("equal");
+              $("#bioe").removeClass("min");
+              $("#bioe").addClass("max");
+              $("#dvlp").removeClass("equal");
+              $("#dvlp").removeClass("max");
+              $("#dvlp").addClass("min");
+              $("#lead").removeClass("equal");
+              $("#lead").removeClass("max");
+              $("#lead").addClass("min");
           });
-          $(".foo").mouseleave(function () {
-              $(".bar").css("border", "none");
+          $("#lead").click(function () {
+              $("#lead").removeClass("equal");
+              $("#lead").removeClass("min");
+              $("#lead").addClass("max");
+              $("#dvlp").removeClass("equal");
+              $("#dvlp").removeClass("max");
+              $("#dvlp").addClass("min");
+              $("#bioe").removeClass("equal");
+              $("#bioe").removeClass("max");
+              $("#bioe").addClass("min");
+          });
+          $("#dvlp").click(function () {
+              $("#dvlp").removeClass("equal");
+              $("#dvlp").removeClass("min");
+              $("#dvlp").addClass("max");
+              $("#bioe").removeClass("equal");
+              $("#bioe").removeClass("max");
+              $("#bioe").addClass("min");
+              $("#lead").removeClass("equal");
+              $("#lead").removeClass("max");
+              $("#lead").addClass("min");
           });
       });

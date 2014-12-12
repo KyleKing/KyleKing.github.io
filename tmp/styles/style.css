@@ -232,72 +232,56 @@ body {
   background-color: #2C3E50;
   font-size: 2.8125em; }
 
-#bioe {
-  color: white;
-  padding-top: 25em;
-  background-color: #1ABC9C;
-  height: 31.25em;
-  text-align: center;
+.equal {
   float: left;
   display: block;
   margin-right: 0%;
   width: 33.33333%; }
-  #bioe:last-child {
+  .equal:last-child {
     margin-right: 0; }
+
+.max {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 66.66667%; }
+  .max:last-child {
+    margin-right: 0; }
+
+.min {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 16.66667%; }
+  .min:last-child {
+    margin-right: 0; }
+
+#bioe {
+  color: white;
+  padding-top: 15.625em;
+  background-color: #1ABC9C;
+  height: 18.75em;
+  text-align: center; }
   #bioe:hover {
-    float: left;
-    display: block;
-    margin-right: 0%;
-    width: 66.66667%;
     text-decoration: underline;
     background: #14967c; }
-    #bioe:hover:last-child {
-      margin-right: 0; }
-
-#bioe:hover + #dvlp {
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 16.66667%; }
-  #bioe:hover + #dvlp:last-child {
-    margin-right: 0; }
-
-#bioe:hover + #lead {
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 16.66667%; }
-  #bioe:hover + #lead:last-child {
-    margin-right: 0; }
 
 #dvlp {
   color: white;
-  padding-top: 25em;
+  padding-top: 15.625em;
   background-color: #2ECC71;
-  height: 31.25em;
-  text-align: center;
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 33.33333%; }
-  #dvlp:last-child {
-    margin-right: 0; }
+  height: 18.75em;
+  text-align: center; }
   #dvlp:hover {
     text-decoration: underline;
     background: #24a35a; }
 
 #lead {
   color: white;
-  padding-top: 25em;
+  padding-top: 15.625em;
   background-color: #3498DB;
-  height: 31.25em;
-  text-align: center;
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 33.33333%; }
-  #lead:last-child {
-    margin-right: 0; }
+  height: 18.75em;
+  text-align: center; }
   #lead:hover {
     text-decoration: underline;
     background: #2979af; }
