@@ -212,55 +212,72 @@ button, input[type="submit"] {
 body {
   background-color: white;
   
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  overflow: auto; }
 
 #Logo {
-  color: white;
   position: absolute;
+  margin: auto;
   top: 25%;
   left: 50%;
-  margin-left: auto;
-  margin-right: auto; }
+  /* bring your own prefixes */
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  #Logo h1 {
+    color: white;
+    text-align: center;
+    padding: 1.875em;
+    background-color: #2C3E50; }
 
 .bioe {
   color: white;
   padding-top: 25em;
-  background-color: #F39C12;
+  background-color: #1ABC9C;
   height: 31.25em;
   text-align: center;
   float: left;
   display: block;
   margin-right: 0%;
-  width: 41.66667%; }
+  width: 58.33333%; }
+  .bioe:hover {
+    text-decoration: underline;
+    background: #14967c; }
   .bioe:last-child {
-    margin-right: 0; }
-
-.lead {
-  color: white;
-  padding-top: 25em;
-  background-color: #E74C3C;
-  height: 31.25em;
-  text-align: center;
-  border-left: 3px solid white;
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 16.66667%; }
-  .lead:last-child {
     margin-right: 0; }
 
 .dvlp {
   color: white;
   padding-top: 25em;
-  background-color: #3498DB;
+  background-color: #2ECC71;
   height: 31.25em;
   text-align: center;
-  border-left: 3px solid white;
   float: left;
   display: block;
   margin-right: 0%;
-  width: 41.66667%; }
+  width: 25%; }
+  .dvlp:hover {
+    text-decoration: underline;
+    background: #24a35a; }
   .dvlp:last-child {
+    margin-right: 0; }
+
+.lead {
+  color: white;
+  padding-top: 25em;
+  background-color: #3498DB;
+  height: 31.25em;
+  text-align: center;
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 16.66667%; }
+  .lead:hover {
+    text-decoration: underline;
+    background: #2979af; }
+  .lead:last-child {
     margin-right: 0; }
 
 #content {
@@ -271,23 +288,53 @@ body {
     content: "";
     display: table;
     clear: both; }
-  #content .timeline {
-    margin-top: 1.875em;
-    border-left: 3px solid white;
-    float: left;
-    display: block;
-    margin-right: 0%;
-    width: 16.66667%; }
-    #content .timeline:last-child {
-      margin-right: 0; }
-  #content .content {
-    margin-top: 1.875em;
-    float: left;
-    display: block;
-    margin-right: 0%;
-    width: 83.33333%; }
-    #content .content:last-child {
-      margin-right: 0; }
+  #content .chunk {
+    width: 100%; }
+    #content .chunk .timeline {
+      margin-top: 1.875em;
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 16.66667%;
+      padding: 0%; }
+      #content .chunk .timeline:last-child {
+        margin-right: 0; }
+    #content .chunk .con {
+      margin-top: 1.875em;
+      float: left;
+      display: block;
+      margin-right: 0%;
+      width: 83.33333%;
+      padding: 0%; }
+      #content .chunk .con:last-child {
+        margin-right: 0; }
+
+.con_bioe {
+  border-top: 7px solid #1ABC9C;
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 33.33333%; }
+  .con_bioe:last-child {
+    margin-right: 0; }
+
+.con_dvlp {
+  border-top: 7px solid #abeac6;
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 33.33333%; }
+  .con_dvlp:last-child {
+    margin-right: 0; }
+
+.con_lead {
+  border-top: 7px solid #3498DB;
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 33.33333%; }
+  .con_lead:last-child {
+    margin-right: 0; }
 
 #description-sections {
   float: left;
