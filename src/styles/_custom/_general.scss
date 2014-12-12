@@ -1,89 +1,60 @@
-// Set color styles
-$background: white;
-// Set width of hero
-$width-hero: 550;
+// Declare global variables
+$dark: $flat-blue-4;
+$bioe-color: $flat-green-1;
+$dvlp-color: $flat-blue-1;
+$lead-color: $flat-purple-1;
 
+// Set font
 body {
-  background-color: $background;
-  // Set fonts
   @import url(http://fonts.googleapis.com/css?family=Raleway:500);
   font-family: 'Raleway', sans-serif;
   overflow: auto;
 }
 
+// Create absolutely positioned CTA element
 #Logo {
-  // position: fixed;
   position: absolute;
   margin: auto;
-  top: 25%;
+  top: em(200);
   left: 50%;
-  /* bring your own prefixes */
+  // Center
   @include transform(translate(-50%, -50%));
+  // Create dark box and white text
   color: white;
   text-align: center;
   padding: em(30);
-  // border-radius: 50%;
-  background-color: $flat-blue-4;
-  // border: 3px solid white;
-  font-size: em(45);
-}
-
-.nav {
-  // @include outer-container;
-}
-
-.equal {
-  @include span-columns(4);
-}
-.max {
-  @include span-columns(8);
-}
-.min {
-  @include span-columns(2);
-}
-
-#bioe {
-  color: white;
-  padding-top: em(250);
-  background-color: $flat-green-1;
-  height: em(300);
-  text-align: center;
-  // @include span-columns(4);
+  background: $dark;
+  // Hover effect
   &:hover {
-    text-decoration: underline;
-    background: shade($flat-green-1, 20%);
+    background: tint($dark, 15%);
   }
 }
 
-#dvlp {
+// Modifiy width of content based on set number of elements
+$set: 3;
+$columns: 12;
+.min { @include span-columns( 12/6 ); }
+.equal { @include span-columns( 12/3 ); }
+.max { @include span-columns( 2*12/3 ); }
+.full { @include span-columns( 12 ); }
+
+// Set standard for each vertical element
+@mixin blocky-color($color) {
   color: white;
   padding-top: em(250);
-  background-color: $flat-green-3;
+  background-color: $color;
   height: em(300);
   text-align: center;
-  // border-left: 3px solid white;
-  // @include span-columns(4);
   &:hover {
-    text-decoration: underline;
-    background: shade($flat-green-3, 20%);
+    background: shade($color, 20%);
   }
 }
+#bioe { @include blocky-color($bioe-color); }
+#dvlp { @include blocky-color($dvlp-color); }
+#lead { @include blocky-color($lead-color); }
 
-#lead {
-  color: white;
-  padding-top: em(250);
-  background-color: $flat-blue-1;
-  height: em(300);
-  text-align: center;
-  // border-left: 3px solid white;
-  // @include span-columns(4);
-  &:hover {
-    text-decoration: underline;
-    background: shade($flat-blue-1, 20%);
-  }
-}
-
-#content {
+// Modify Resume content
+.content {
   @include outer-container;
   .chunk {
     @include fill-parent();
@@ -102,36 +73,39 @@ body {
   }
 }
 
-.con_bioe {
-  border-top: 7px solid $flat-green-1;
-  @include span-columns(4);
+// Create Tags
+.con_bioe { border-top: 7px solid $bioe-color; }
+.con_dvlp { border-top: 7px solid $dvlp-color; }
+.con_lead { border-top: 7px solid $lead-color; }
+
+.color_fill {
+  margin-top: em(30);
+  width: 100%;
+  background-color: $bioe-color;
+  color: white;
 }
-.con_dvlp {
-  border-top: 7px solid tint($flat-green-3, 60%);
-  @include span-columns(4);
-}
-.con_lead {
-  border-top: 7px solid $flat-blue-1;
-  @include span-columns(4);
+
+.cntr {
+  text-align: center;
 }
 
+.container {
+  @include outer-container;
+}
 
+#contact {
+  padding-top: em(20);
+}
 
+h2.cntr {
+  padding: em(10);
+  padding-bottom: em(40);
+  a {
+    padding: em(20);
+    color: white;
+  }
+}
 
-
-// // Set particle background
-// #particles-js {
-//   height: 80%;
-// }
-
-// #fixedHero {
-//   position: absolute;
-//   top: 25%;
-//   left: 50%;
-//   max-width: em($width-hero);
-//   margin-left: em(-$width-hero/2);
-//   text-align: center;
-// }
 
 // // Set motion direction for slide in of text
 // @include keyframes(slideIn) {

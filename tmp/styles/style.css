@@ -210,7 +210,6 @@ button, input[type="submit"] {
                Custom stylization
 ------------------------------------------------------------*/
 body {
-  background-color: white;
   
   font-family: 'Raleway', sans-serif;
   overflow: auto; }
@@ -218,9 +217,8 @@ body {
 #Logo {
   position: absolute;
   margin: auto;
-  top: 25%;
+  top: 12.5em;
   left: 50%;
-  /* bring your own prefixes */
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -229,8 +227,17 @@ body {
   color: white;
   text-align: center;
   padding: 1.875em;
-  background-color: #2C3E50;
-  font-size: 2.8125em; }
+  background: #2C3E50; }
+  #Logo:hover {
+    background: #4b5a6a; }
+
+.min {
+  float: left;
+  display: block;
+  margin-right: 0%;
+  width: 16.66667%; }
+  .min:last-child {
+    margin-right: 0; }
 
 .equal {
   float: left;
@@ -248,12 +255,12 @@ body {
   .max:last-child {
     margin-right: 0; }
 
-.min {
+.full {
   float: left;
   display: block;
   margin-right: 0%;
-  width: 16.66667%; }
-  .min:last-child {
+  width: 100%; }
+  .full:last-child {
     margin-right: 0; }
 
 #bioe {
@@ -263,84 +270,91 @@ body {
   height: 18.75em;
   text-align: center; }
   #bioe:hover {
-    text-decoration: underline;
     background: #14967c; }
 
 #dvlp {
   color: white;
   padding-top: 15.625em;
-  background-color: #2ECC71;
+  background-color: #3498DB;
   height: 18.75em;
   text-align: center; }
   #dvlp:hover {
-    text-decoration: underline;
-    background: #24a35a; }
+    background: #2979af; }
 
 #lead {
   color: white;
   padding-top: 15.625em;
-  background-color: #3498DB;
+  background-color: #9B59B6;
   height: 18.75em;
   text-align: center; }
   #lead:hover {
-    text-decoration: underline;
-    background: #2979af; }
+    background: #7c4791; }
 
-#content {
+.content {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
-  #content:after {
+  .content:after {
     content: "";
     display: table;
     clear: both; }
-  #content .chunk {
+  .content .chunk {
     width: 100%; }
-    #content .chunk .timeline {
+    .content .chunk .timeline {
       margin-top: 1.875em;
       float: left;
       display: block;
       margin-right: 0%;
       width: 16.66667%;
       padding: 0%; }
-      #content .chunk .timeline:last-child {
+      .content .chunk .timeline:last-child {
         margin-right: 0; }
-    #content .chunk .con {
+    .content .chunk .con {
       margin-top: 1.875em;
       float: left;
       display: block;
       margin-right: 0%;
       width: 83.33333%;
       padding: 0%; }
-      #content .chunk .con:last-child {
+      .content .chunk .con:last-child {
         margin-right: 0; }
 
 .con_bioe {
-  border-top: 7px solid #1ABC9C;
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 33.33333%; }
-  .con_bioe:last-child {
-    margin-right: 0; }
+  border-top: 7px solid #1ABC9C; }
 
 .con_dvlp {
-  border-top: 7px solid #abeac6;
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 33.33333%; }
-  .con_dvlp:last-child {
-    margin-right: 0; }
+  border-top: 7px solid #3498DB; }
 
 .con_lead {
-  border-top: 7px solid #3498DB;
-  float: left;
-  display: block;
-  margin-right: 0%;
-  width: 33.33333%; }
-  .con_lead:last-child {
-    margin-right: 0; }
+  border-top: 7px solid #9B59B6; }
+
+.color_fill {
+  margin-top: 1.875em;
+  width: 100%;
+  background-color: #1ABC9C;
+  color: white; }
+
+.cntr {
+  text-align: center; }
+
+.container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+#contact {
+  padding-top: 1.25em; }
+
+h2.cntr {
+  padding: 0.625em;
+  padding-bottom: 2.5em; }
+  h2.cntr a {
+    padding: 1.25em;
+    color: white; }
 
 #description-sections {
   float: left;

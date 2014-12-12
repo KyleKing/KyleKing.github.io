@@ -1,11 +1,12 @@
 extends layout-blocks/layout
 block homePage
-   a(data-scroll href='#contact')#Logo Kyle King
-   .nav
-      h3#bioe.equal Bioengineer
-      h3#dvlp.equal Developer
-      h3#lead.equal Leader
-   #content
+   //- Header Elements
+   a(data-scroll href='#contact')#Logo Contact
+      h3 Kyle King
+   h3#bioe.equal Bioengineer
+   h3#dvlp.equal Developer
+   h3#lead.equal Leader
+   .content
       .chunk
          .timeline
             h6 2012 - Present
@@ -23,9 +24,9 @@ block homePage
             p This class challenged me to better understand myself in order to lead others. We worked as a class through three outdoor expeditions to build stronger communication, peer awareness, and leadership skills in order to prepare for employment as a Adventure Program Trip Leader.
             h6 BIOE241: Biocomputational Methods
             p This class was my first introduction to the application of computer technology to solve problems. I became proficient in Matlab and C along with building a better understanding of positional numerical systems.
-            .con_bioe
-            .con_dvlp
-            .con_lead
+            .con_bioe.equal.equal
+            .con_dvlp.equal
+            .con_lead.equal
 
       .chunk
          .timeline
@@ -37,9 +38,9 @@ block homePage
                li Prototyped the design and function of a Meteor web application using the MeteorJS framework for a scheduled alpha trial: http://teambikes.me
                li Proposed alternative method to bike tracking with estimated cost reduction of 50%+ per bike
                li Invented bike lock concept meeting both BikeUMD optimal outcomes, while improving ease of use
-            .con_dvlp
-            .con_dvlp
-            .con_lead
+            .con_dvlp.equal
+            .con_dvlp.equal
+            .con_lead.equal
 
       .chunk
          .timeline
@@ -51,9 +52,9 @@ block homePage
                li Presented at the Fall QUEST Showcase for BMGT390H Project VitaLink: http://kyleking.me
                li Made recommendations to improve process flow for the Academic Computers for Terps to remove 10-20% of wasted time during customer visits and to reduce customer confusion
                li Created two business models and concepts each in under 4 weeks from prompt to pitch
-            .con_bioe
-            .con_dvlp
-            .con_lead
+            .con_bioe.equal
+            .con_dvlp.equal
+            .con_lead.equal
 
       .chunk
          .timeline
@@ -67,9 +68,9 @@ block homePage
                li Pioneered selective swelling optic enhancement technique for on-chip immunoassays
                li Researched and tested acoustofluidic sorting of cancer cell-targeted liposomes using MEMS
                li SEEDS Research Fellowship: University of Maryland        October 2014 - May 2015
-            .con_bioe
-            .con_bioe
-            .con_bioe
+            .con_bioe.equal
+            .con_bioe.equal
+            .con_bioe.equal
 
       .chunk
          .timeline
@@ -81,9 +82,9 @@ block homePage
             ul
                li Raised $5,450 to bike across the United States for the Ulman Cancer Fund
                li Self-taught HTML/Jade, CSS/SASS, JavaScript/CoffeeScript, JQuery, and Grunt/Gulp for front-end development of personal website: BikingAgainstCancer.com
-            .con_dvlp
-            .con_dvlp
-            .con_lead
+            .con_dvlp.equal
+            .con_dvlp.equal
+            .con_lead.equal
 
       .chunk
          .timeline
@@ -93,9 +94,9 @@ block homePage
             h6 &nbsp;
             h5 Medical Device Design Team
             p Recruited 12+ multidisciplinary students to design a low-cost surgical lamp
-            .con_bioe
-            .con_dvlp
-            .con_lead
+            .con_bioe.equal
+            .con_dvlp.equal
+            .con_lead.equal
 
       .chunk
          .timeline
@@ -105,9 +106,9 @@ block homePage
             h6 &nbsp;
             h5 Maryland Adventure Program
             p Directed 8 trips to varying environments with strong regards for participant safety, group development, and experiential learning with participants between ages of 18 to 65
-            .con_lead
-            .con_lead
-            .con_lead
+            .con_lead.equal
+            .con_lead.equal
+            .con_lead.equal
 
       .chunk
          .timeline
@@ -118,9 +119,9 @@ block homePage
             h5 The DasSarma Laboratory
             h5 IMET
             p Used PCR, Restriction Enzymes, DNA sequencing,  synthetic DNA, bacteria cell culturing and sterile technique to design and produce 6 mutant plasmids for Halobacterium expression and study
-            .con_bioe
-            .con_bioe
-            .con_dvlp
+            .con_bioe.equal
+            .con_bioe.equal
+            .con_dvlp.equal
 
       .chunk
          .timeline
@@ -132,9 +133,9 @@ block homePage
             ul
                li Filed 3 due-diligence briefings and collected key events into a timeline for the consulting process
                li Coauthored two publications optimizing Coastal Zone Management with NOAA
-            .con_dvlp
-            .con_lead
-            .con_lead
+            .con_dvlp.equal
+            .con_lead.equal
+            .con_lead.equal
 
       .chunk
          .timeline
@@ -143,9 +144,9 @@ block homePage
             h2 SEEDS Research Fellowship
             h5 University of Maryland
             h6 &nbsp;
-            .con_bioe
-            .con_lead
-            .con_lead
+            .con_bioe.equal
+            .con_lead.equal
+            .con_lead.equal
 
       .chunk
          .timeline
@@ -154,9 +155,9 @@ block homePage
             h2 Eagle Scout Award
             h5 Troop 792
             h6 &nbsp;
-            .con_lead
-            .con_lead
-            .con_lead
+            .con_lead.equal
+            .con_lead.equal
+            .con_lead.equal
 
       .chunk
          .timeline
@@ -165,9 +166,9 @@ block homePage
             h2 Dean’s List
             h5 University of Maryland
             p Awarded for orchestrating a 100+ man-hour volunteer project for the Maryland Zoo in Baltimore, along with 2 years as Patrol leader, and service from 2006-2012
-            .con_bioe
-            .con_bioe
-            .con_bioe
+            .con_bioe.equal
+            .con_bioe.equal
+            .con_bioe.equal
 
       .chunk
          .timeline
@@ -176,9 +177,14 @@ block homePage
             h2 Junior Keeper of the Year
             h5 Maryland Zoo in Baltimore
             p Contributed 630 volunteer hours as a Volunteer Junior Keeper
-            .con_lead
-            .con_lead
-            .con_lead
-      .chunk
-         span#contact Contact
-            a(href='/') email
+            .con_lead.equal
+            .con_lead.equal
+            .con_lead.equal
+   .color_fill
+      .container
+         .full
+            h1#contact.cntr Contact Me
+            h2.equals.cntr
+               a(href='mailto:kyleking.me.contact@gmail.com?subject=Website Contact&body=Kyle, ') Email
+               a(href='https://www.linkedin.com/pub/kyle-king/57/4/8b7') LinkedIn
+               a(href='https://github.com/KyleKing?tab=repositories') Github
