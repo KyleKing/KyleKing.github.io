@@ -1,99 +1,182 @@
-// Set color styles
-$background: $flat-gray-1;
-$text: $flat-blue-3;
-// Set width of hero
-$width-hero: 550;
+// Declare global variables
+$dark: $flat-blue-4;
+$bioe-color: $flat-green-1;
+$dvlp-color: $flat-blue-1;
+$lead-color: $flat-purple-1;
 
+// Set font
 body {
-  background-color: $background;
-  // Set fonts
   @import url(http://fonts.googleapis.com/css?family=Raleway:500);
-  color: $text;
   font-family: 'Raleway', sans-serif;
+  overflow: auto;
 }
 
-// Set particle background
-#particles-js {
-  height: 80%;
-}
+// Global Items
+.cntr { text-align: center; }
+.container { @include outer-container; }
 
-#fixedHero {
+// Create absolutely positioned CTA element
+#Logo {
   position: absolute;
-  top: 25%;
+  margin: auto;
+  top: em(200);
   left: 50%;
-  max-width: em($width-hero);
-  margin-left: em(-$width-hero/2);
+  // Center
+  @include transform(translate(-50%, -50%));
+  // Create dark box and white text
+  color: white;
   text-align: center;
-}
-
-// Set motion direction for slide in of text
-@include keyframes(slideIn) {
-  from {
-    @include transform(translateX(em(-80)));
-    opacity: 0;
-  }
-  to {
-    @include transform(translateX(0));
-    opacity: 1;
+  padding: em(30);
+  background: $dark;
+  // Hover effect
+  &:hover {
+    background: tint($dark, 15%);
   }
 }
 
-// Animate text
-@mixin animation--slideIn($time, $delay) {
-  opacity: 0;
-  @include animation(slideIn #{$time}s ease-in-out);
-  @include animation-iteration-count(1);
-  @include animation-fill-mode(forwards);
-  @include animation-delay(#{$delay}s);
+// Modifiy width of content based on set number of elements
+$set: 3;
+$columns: 12;
+.min { @include span-columns( 12/6 ); }
+.equal { @include span-columns( 12/3 ); }
+.max { @include span-columns( 2*12/3 ); }
+.full { @include span-columns( 12 ); }
+
+// Set standard for each vertical element
+@mixin blocky-color($color) {
+  color: white;
+  padding-top: em(250);
+  background-color: $color;
+  height: em(300);
+  text-align: center;
+  &:hover {
+    background: shade($color, 20%);
+  }
 }
+#bioe { @include blocky-color($bioe-color); }
+#dvlp { @include blocky-color($dvlp-color); }
+#lead { @include blocky-color($lead-color); }
 
-h1.name { @include animation--slideIn(1, 1); }
-h3.pitch { @include animation--slideIn(1.5, 2); }
-
-a.strong { color: tint($text, 10%); }
-
-// Style Button and animate
-button.CTA {
-  @include button(tint($text, 15%));
-  @include animation--slideIn(1.1, 4);
-}
-
-// Curb social icon size
-section.social {
-  img {
-    margin-top: em(40);
-    height: em(40);
-    width: auto;
+// Modify Resume content
+.content {
+  @include outer-container;
+  .chunk {
+    @include fill-parent();
+    .timeline {
+      margin-top: em(30);
+      // border-left: 3px solid white;
+      @include span-columns(2);
+      @include pad();
+    }
+    .con {
+      margin-top: em(30);
+      @include span-columns(10);
+      @include reset-display;
+      @include pad();
+    }
   }
 }
 
-// Set motion direction for fade in of social icons
-@include keyframes(fadeIn) {
-  from {
-    @include transform(translateY(-20px));
-    opacity: 0;
+// Create Tags
+.con_bioe { border-top: 7px solid $bioe-color; }
+.con_dvlp { border-top: 7px solid $dvlp-color; }
+.con_lead { border-top: 7px solid $lead-color; }
+
+.color_fill {
+  margin-top: em(30);
+  width: 100%;
+  background-color: $bioe-color;
+  color: white;
+}
+
+#contact {
+  padding-top: em(20);
+}
+
+h2.cntr {
+  padding: em(10);
+  padding-bottom: em(40);
+  a {
+    padding: em(20);
+    color: white;
+    &:hover {
+      color: $dark;
+    }
   }
-  to {
-    @include transform(translateY(0));
-    opacity: 1;
-  }
 }
 
-// Animate social icons
-@mixin animation--fadedown($time, $delay) {
-  opacity: 0;
-  margin: em(10);
-  @include animation(fadeIn #{$time}s ease-in-out);
-  @include animation-iteration-count(1);
-  @include animation-fill-mode(forwards);
-  @include animation-delay(#{$delay}s);
+.show {
+  display: block;
 }
 
-a.facebook { @include animation--fadedown(0.75, 5); }
-a.github { @include animation--fadedown(0.75, 6); }
-a.linkedin { @include animation--fadedown(0.75, 7); }
-
-.keepScrollling {
-  padding-top: em(80);
-  @include animation--fadedown(2, 13);
+.hide {
+  display: none;
 }
+
+
+// // Set motion direction for slide in of text
+// @include keyframes(slideIn) {
+//   from {
+//     @include transform(translateX(em(-80)));
+//     opacity: 0;
+//   }
+//   to {
+//     @include transform(translateX(0));
+//     opacity: 1;
+//   }
+// }
+
+// // Animate text
+// @mixin animation--slideIn($time, $delay) {
+//   opacity: 0;
+//   @include animation(slideIn #{$time}s ease-in-out);
+//   @include animation-iteration-count(1);
+//   @include animation-fill-mode(forwards);
+//   @include animation-delay(#{$delay}s);
+// }
+
+// h1.name { @include animation--slideIn(1, 1); }
+// h3.pitch { @include animation--slideIn(1.5, 2); }
+
+// a.strong { color: tint($text, 10%); }
+
+// // Style Button and animate
+// button.CTA {
+//   @include button(tint($text, 15%));
+//   @include animation--slideIn(1.1, 3);
+// }
+
+// // Curb social icon size
+// section.social {
+//   img {
+//     margin-top: em(40);
+//     height: em(40);
+//     width: auto;
+//   }
+// }
+
+// // Set motion direction for fade in of social icons
+// @include keyframes(fadeIn) {
+//   from {
+//     @include transform(translateY(-20px));
+//     opacity: 0;
+//   }
+//   to {
+//     @include transform(translateY(0));
+//     opacity: 1;
+//   }
+// }
+
+// // Animate social icons
+// @mixin animation--fadedown($time, $delay) {
+//   opacity: 0;
+//   margin: em(10);
+//   @include animation(fadeIn #{$time}s ease-in-out);
+//   @include animation-iteration-count(1);
+//   @include animation-fill-mode(forwards);
+//   @include animation-delay(#{$delay}s);
+// }
+
+// a.facebook { @include animation--fadedown(0.75, 4); }
+// a.github { @include animation--fadedown(0.75, 5); }
+// a.linkedin { @include animation--fadedown(0.75, 6); }

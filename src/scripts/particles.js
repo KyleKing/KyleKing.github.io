@@ -1,6 +1,6 @@
 particlesJS('particles-js', {
     particles: {
-      color: '#2c3e50',
+      color: '#fff',
       shape: 'circle',
       opacity: 1,
       size: 2.5,
@@ -9,7 +9,7 @@ particlesJS('particles-js', {
       line_linked: {
         enable_auto: true,
         distance: 250,
-        color: '#2c3e50',
+        color: '#fff',
         opacity: 0.5,
         width: 1,
         condensed_mode: {

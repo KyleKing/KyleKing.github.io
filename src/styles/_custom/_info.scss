@@ -1,0 +1,23 @@
+#description-sections {
+  @include span-columns(12);
+  .descriptor {
+    @include span-columns(2);
+    transform: rotate(90deg);
+    transform-origin: left top 0;
+    float: left;
+  }
+  ul.cards {
+    li:first-child {
+      // @include shift(2);
+    }
+    li {
+      @include span-columns(3);
+      display: inline-block;
+      background-color: white;
+      padding: em(20);
+      border-radius: em(10);
+      box-shadow: 100px;
+      margin: em(10);
+    }
+  }
+}
