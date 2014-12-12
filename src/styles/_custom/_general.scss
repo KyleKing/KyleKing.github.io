@@ -1,6 +1,5 @@
 // Set color styles
-$background: $flat-gray-2;
-$text: $flat-blue-3;
+$background: white;
 // Set width of hero
 $width-hero: 550;
 
@@ -8,87 +7,144 @@ body {
   background-color: $background;
   // Set fonts
   @import url(http://fonts.googleapis.com/css?family=Raleway:500);
-  color: $text;
   font-family: 'Raleway', sans-serif;
 }
 
-// Set particle background
-#particles-js {
-  height: 80%;
-}
-
-#fixedHero {
+#Logo {
+  color: white;
   position: absolute;
   top: 25%;
   left: 50%;
-  max-width: em($width-hero);
-  margin-left: em(-$width-hero/2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  // @include outer-container;
+}
+
+.bioe {
+  color: white;
+  padding-top: em(400);
+  background-color: $flat-orange-1;
+  height: em(500);
   text-align: center;
+  @include span-columns(5);
+}
+.lead {
+  color: white;
+  padding-top: em(400);
+  background-color: $flat-red-1;
+  height: em(500);
+  text-align: center;
+  border-left: 3px solid white;
+  @include span-columns(2);
 }
 
-// Set motion direction for slide in of text
-@include keyframes(slideIn) {
-  from {
-    @include transform(translateX(em(-80)));
-    opacity: 0;
+.dvlp {
+  color: white;
+  padding-top: em(400);
+  background-color: $flat-blue-1;
+  height: em(500);
+  text-align: center;
+  border-left: 3px solid white;
+  @include span-columns(5);
+}
+
+#content {
+  @include outer-container;
+  .timeline {
+    margin-top: em(30);
+    border-left: 3px solid white;
+    @include span-columns(2);
   }
-  to {
-    @include transform(translateX(0));
-    opacity: 1;
-  }
-}
-
-// Animate text
-@mixin animation--slideIn($time, $delay) {
-  opacity: 0;
-  @include animation(slideIn #{$time}s ease-in-out);
-  @include animation-iteration-count(1);
-  @include animation-fill-mode(forwards);
-  @include animation-delay(#{$delay}s);
-}
-
-h1.name { @include animation--slideIn(1, 1); }
-h3.pitch { @include animation--slideIn(1.5, 2); }
-
-a.strong { color: tint($text, 10%); }
-
-// Style Button and animate
-button.CTA {
-  @include button(tint($text, 15%));
-  @include animation--slideIn(1.1, 3);
-}
-
-// Curb social icon size
-section.social {
-  img {
-    margin-top: em(40);
-    height: em(40);
-    width: auto;
+  .content {
+    margin-top: em(30);
+    @include span-columns(10);
   }
 }
 
-// Set motion direction for fade in of social icons
-@include keyframes(fadeIn) {
-  from {
-    @include transform(translateY(-20px));
-    opacity: 0;
-  }
-  to {
-    @include transform(translateY(0));
-    opacity: 1;
-  }
-}
 
-// Animate social icons
-@mixin animation--fadedown($time, $delay) {
-  opacity: 0;
-  margin: em(10);
-  @include animation(fadeIn #{$time}s ease-in-out);
-  @include animation-iteration-count(1);
-  @include animation-fill-mode(forwards);
-  @include animation-delay(#{$delay}s);
-}
 
-a.facebook { @include animation--fadedown(0.75, 4); }
-a.github { @include animation--fadedown(0.75, 5); }
-a.linkedin { @include animation--fadedown(0.75, 6); }
+
+
+// // Set particle background
+// #particles-js {
+//   height: 80%;
+// }
+
+// #fixedHero {
+//   position: absolute;
+//   top: 25%;
+//   left: 50%;
+//   max-width: em($width-hero);
+//   margin-left: em(-$width-hero/2);
+//   text-align: center;
+// }
+
+// // Set motion direction for slide in of text
+// @include keyframes(slideIn) {
+//   from {
+//     @include transform(translateX(em(-80)));
+//     opacity: 0;
+//   }
+//   to {
+//     @include transform(translateX(0));
+//     opacity: 1;
+//   }
+// }
+
+// // Animate text
+// @mixin animation--slideIn($time, $delay) {
+//   opacity: 0;
+//   @include animation(slideIn #{$time}s ease-in-out);
+//   @include animation-iteration-count(1);
+//   @include animation-fill-mode(forwards);
+//   @include animation-delay(#{$delay}s);
+// }
+
+// h1.name { @include animation--slideIn(1, 1); }
+// h3.pitch { @include animation--slideIn(1.5, 2); }
+
+// a.strong { color: tint($text, 10%); }
+
+// // Style Button and animate
+// button.CTA {
+//   @include button(tint($text, 15%));
+//   @include animation--slideIn(1.1, 3);
+// }
+
+// // Curb social icon size
+// section.social {
+//   img {
+//     margin-top: em(40);
+//     height: em(40);
+//     width: auto;
+//   }
+// }
+
+// // Set motion direction for fade in of social icons
+// @include keyframes(fadeIn) {
+//   from {
+//     @include transform(translateY(-20px));
+//     opacity: 0;
+//   }
+//   to {
+//     @include transform(translateY(0));
+//     opacity: 1;
+//   }
+// }
+
+// // Animate social icons
+// @mixin animation--fadedown($time, $delay) {
+//   opacity: 0;
+//   margin: em(10);
+//   @include animation(fadeIn #{$time}s ease-in-out);
+//   @include animation-iteration-count(1);
+//   @include animation-fill-mode(forwards);
+//   @include animation-delay(#{$delay}s);
+// }
+
+// a.facebook { @include animation--fadedown(0.75, 4); }
+// a.github { @include animation--fadedown(0.75, 5); }
+// a.linkedin { @include animation--fadedown(0.75, 6); }
