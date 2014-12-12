@@ -11,6 +11,10 @@ body {
   overflow: auto;
 }
 
+// Global Items
+.cntr { text-align: center; }
+.container { @include outer-container; }
+
 // Create absolutely positioned CTA element
 #Logo {
   position: absolute;
@@ -85,14 +89,6 @@ $columns: 12;
   color: white;
 }
 
-.cntr {
-  text-align: center;
-}
-
-.container {
-  @include outer-container;
-}
-
 #contact {
   padding-top: em(20);
 }
@@ -103,7 +99,18 @@ h2.cntr {
   a {
     padding: em(20);
     color: white;
+    &:hover {
+      color: $dark;
+    }
   }
+}
+
+.show {
+  display: inline-block;
+}
+
+.hide {
+  display: none;
 }
 
 

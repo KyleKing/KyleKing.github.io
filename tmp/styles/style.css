@@ -214,6 +214,18 @@ body {
   font-family: 'Raleway', sans-serif;
   overflow: auto; }
 
+.cntr {
+  text-align: center; }
+
+.container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 #Logo {
   position: absolute;
   margin: auto;
@@ -334,18 +346,6 @@ body {
   background-color: #1ABC9C;
   color: white; }
 
-.cntr {
-  text-align: center; }
-
-.container {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto; }
-  .container:after {
-    content: "";
-    display: table;
-    clear: both; }
-
 #contact {
   padding-top: 1.25em; }
 
@@ -355,6 +355,14 @@ h2.cntr {
   h2.cntr a {
     padding: 1.25em;
     color: white; }
+    h2.cntr a:hover {
+      color: #2C3E50; }
+
+.show {
+  display: inline-block; }
+
+.hide {
+  display: none; }
 
 #description-sections {
   float: left;
