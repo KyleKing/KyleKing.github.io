@@ -19,14 +19,13 @@ body {
   left: 50%;
   /* bring your own prefixes */
   @include transform(translate(-50%, -50%));
-  h1 {
-    color: white;
-    text-align: center;
-    padding: em(30);
-    // border-radius: 50%;
-    background-color: $flat-blue-4;
-    // border: 3px solid white;
-  }
+  color: white;
+  text-align: center;
+  padding: em(30);
+  // border-radius: 50%;
+  background-color: $flat-blue-4;
+  // border: 3px solid white;
+  font-size: em(45);
 }
 
 .nav {
@@ -39,11 +38,12 @@ body {
   background-color: $flat-green-1;
   height: em(500);
   text-align: center;
+  @include span-columns(4);
   &:hover {
+    @include span-columns(7);
     text-decoration: underline;
     background: shade($flat-green-1, 20%);
   }
-  @include span-columns(7);
 }
 
 .dvlp {
@@ -53,11 +53,11 @@ body {
   height: em(500);
   text-align: center;
   // border-left: 3px solid white;
+  @include span-columns(4);
   &:hover {
     text-decoration: underline;
     background: shade($flat-green-3, 20%);
   }
-  @include span-columns(3);
 }
 
 .lead {
@@ -67,11 +67,11 @@ body {
   height: em(500);
   text-align: center;
   // border-left: 3px solid white;
+  @include span-columns(4);
   &:hover {
     text-decoration: underline;
     background: shade($flat-blue-1, 20%);
   }
-  @include span-columns(2);
 }
 
 // .bioe_selected {

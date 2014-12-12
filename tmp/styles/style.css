@@ -225,12 +225,12 @@ body {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-  #Logo h1 {
-    color: white;
-    text-align: center;
-    padding: 1.875em;
-    background-color: #2C3E50; }
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 1.875em;
+  background-color: #2C3E50;
+  font-size: 2.8125em; }
 
 .bioe {
   color: white;
@@ -241,12 +241,18 @@ body {
   float: left;
   display: block;
   margin-right: 0%;
-  width: 58.33333%; }
-  .bioe:hover {
-    text-decoration: underline;
-    background: #14967c; }
+  width: 33.33333%; }
   .bioe:last-child {
     margin-right: 0; }
+  .bioe:hover {
+    float: left;
+    display: block;
+    margin-right: 0%;
+    width: 58.33333%;
+    text-decoration: underline;
+    background: #14967c; }
+    .bioe:hover:last-child {
+      margin-right: 0; }
 
 .dvlp {
   color: white;
@@ -257,12 +263,12 @@ body {
   float: left;
   display: block;
   margin-right: 0%;
-  width: 25%; }
+  width: 33.33333%; }
+  .dvlp:last-child {
+    margin-right: 0; }
   .dvlp:hover {
     text-decoration: underline;
     background: #24a35a; }
-  .dvlp:last-child {
-    margin-right: 0; }
 
 .lead {
   color: white;
@@ -273,12 +279,12 @@ body {
   float: left;
   display: block;
   margin-right: 0%;
-  width: 16.66667%; }
+  width: 33.33333%; }
+  .lead:last-child {
+    margin-right: 0; }
   .lead:hover {
     text-decoration: underline;
     background: #2979af; }
-  .lead:last-child {
-    margin-right: 0; }
 
 #content {
   max-width: 68em;

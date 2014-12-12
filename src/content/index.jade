@@ -1,14 +1,16 @@
 extends layout-blocks/layout
 block homePage
-   #Logo
-      h1 Kyle King
+   a(data-scroll href='#contact')#Logo Kyle King
    .nav
-      .bioe
-         h1 Bioengineer
-      .dvlp
-         h1 Developer
-      .lead
-         h1 Leader
+      a(href='/')
+         .bioe
+            h1 Bioengineer
+      a(href='/')
+         .dvlp
+            h1 Developer
+      a(href='/')
+         .lead
+            h1 Leader
    //- .bioe_selected
    //-    h1 &nbsp;
    #content
@@ -74,8 +76,8 @@ block homePage
                li Researched and tested acoustofluidic sorting of cancer cell-targeted liposomes using MEMS
                li SEEDS Research Fellowship: University of Maryland        October 2014 - May 2015
             .con_bioe
-            .con_dvlp
-            .con_lead
+            .con_bioe
+            .con_bioe
 
       .chunk
          .timeline
@@ -87,10 +89,9 @@ block homePage
             ul
                li Raised $5,450 to bike across the United States for the Ulman Cancer Fund
                li Self-taught HTML/Jade, CSS/SASS, JavaScript/CoffeeScript, JQuery, and Grunt/Gulp for front-end development of personal website: BikingAgainstCancer.com
-            .con_bioe
+            .con_dvlp
             .con_dvlp
             .con_lead
-            h1 &nbsp;
 
       .chunk
          .timeline
@@ -103,7 +104,6 @@ block homePage
             .con_bioe
             .con_dvlp
             .con_lead
-            h1 &nbsp;
 
       .chunk
          .timeline
@@ -113,10 +113,9 @@ block homePage
             h6 &nbsp;
             h5 Maryland Adventure Program
             p Directed 8 trips to varying environments with strong regards for participant safety, group development, and experiential learning with participants between ages of 18 to 65
-            .con_bioe
-            .con_dvlp
             .con_lead
-            h1 &nbsp;
+            .con_lead
+            .con_lead
 
       .chunk
          .timeline
@@ -128,8 +127,8 @@ block homePage
             h5 IMET
             p Used PCR, Restriction Enzymes, DNA sequencing,  synthetic DNA, bacteria cell culturing and sterile technique to design and produce 6 mutant plasmids for Halobacterium expression and study
             .con_bioe
+            .con_bioe
             .con_dvlp
-            .con_lead
 
       .chunk
          .timeline
@@ -141,8 +140,8 @@ block homePage
             ul
                li Filed 3 due-diligence briefings and collected key events into a timeline for the consulting process
                li Coauthored two publications optimizing Coastal Zone Management with NOAA
-            .con_bioe
             .con_dvlp
+            .con_lead
             .con_lead
 
       .chunk
@@ -150,47 +149,44 @@ block homePage
             h6 October 2014 - May 2015
          .con
             h2 SEEDS Research Fellowship
-            h6 &nbsp;
             h5 University of Maryland
+            h6 &nbsp;
             .con_bioe
-            .con_dvlp
             .con_lead
-            h1 &nbsp;
+            .con_lead
 
       .chunk
          .timeline
             h6 December 2010
          .con
             h2 Eagle Scout Award
-            h6 &nbsp;
             h5 Troop 792
-            .con_bioe
-            .con_dvlp
+            h6 &nbsp;
             .con_lead
-            h1 &nbsp;
+            .con_lead
+            .con_lead
 
       .chunk
          .timeline
             h6 August 2012 - Present
          .con
             h2 Dean’s List
-            h6 &nbsp;
             h5 University of Maryland
             p Awarded for orchestrating a 100+ man-hour volunteer project for the Maryland Zoo in Baltimore, along with 2 years as Patrol leader, and service from 2006-2012
             .con_bioe
-            .con_dvlp
-            .con_lead
-            h1 &nbsp;
+            .con_bioe
+            .con_bioe
 
       .chunk
          .timeline
             h6 September 2010
          .con
             h2 Junior Keeper of the Year
-            h6 &nbsp;
             h5 Maryland Zoo in Baltimore
             p Contributed 630 volunteer hours as a Volunteer Junior Keeper
-            .con_bioe
-            .con_dvlp
             .con_lead
-            h1 &nbsp;
+            .con_lead
+            .con_lead
+      .chunk
+         span#contact Contact
+            a(href='email') email
