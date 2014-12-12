@@ -359,7 +359,7 @@ h2.cntr {
       color: #2C3E50; }
 
 .show {
-  display: inline-block; }
+  display: block; }
 
 .hide {
   display: none; }
