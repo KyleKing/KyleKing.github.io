@@ -275,31 +275,46 @@ body {
   .full:last-child {
     margin-right: 0; }
 
-#bioe {
+.tall_block {
   color: white;
   padding-top: 15.625em;
-  background-color: #1ABC9C;
   height: 18.75em;
   text-align: center; }
+
+.short_block {
+  color: white;
+  padding-top: 3.125em;
+  height: 6.25em;
+  text-align: center; }
+
+#bioe {
+  background-color: #1ABC9C; }
   #bioe:hover {
     background: #14967c; }
 
 #dvlp {
-  color: white;
-  padding-top: 15.625em;
-  background-color: #3498DB;
-  height: 18.75em;
-  text-align: center; }
+  background-color: #3498DB; }
   #dvlp:hover {
     background: #2979af; }
 
 #lead {
-  color: white;
-  padding-top: 15.625em;
-  background-color: #9B59B6;
-  height: 18.75em;
-  text-align: center; }
+  background-color: #9B59B6; }
   #lead:hover {
+    background: #7c4791; }
+
+.bioe {
+  background-color: #1ABC9C; }
+  .bioe:hover {
+    background: #14967c; }
+
+.dvlp {
+  background-color: #3498DB; }
+  .dvlp:hover {
+    background: #2979af; }
+
+.lead {
+  background-color: #9B59B6; }
+  .lead:hover {
     background: #7c4791; }
 
 .content {
@@ -340,10 +355,12 @@ body {
 .con_lead {
   border-top: 7px solid #9B59B6; }
 
+.con_break {
+  border-top: 7px solid #2C3E50; }
+
 .color_fill {
   margin-top: 1.875em;
   width: 100%;
-  background-color: #1ABC9C;
   color: white; }
 
 #contact {
@@ -357,9 +374,6 @@ h2.cntr {
     color: white; }
     h2.cntr a:hover {
       color: #2C3E50; }
-
-.show {
-  display: block; }
 
 .hide {
   display: none; }

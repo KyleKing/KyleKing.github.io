@@ -43,19 +43,46 @@ $columns: 12;
 .full { @include span-columns( 12 ); }
 
 // Set standard for each vertical element
-@mixin blocky-color($color) {
+@mixin blocky($height) {
   color: white;
-  padding-top: em(250);
-  background-color: $color;
-  height: em(300);
+  padding-top: em($height);
+  height: em($height+50);
   text-align: center;
+}
+@mixin color($color) {
+  background-color: $color;
   &:hover {
     background: shade($color, 20%);
   }
 }
-#bioe { @include blocky-color($bioe-color); }
-#dvlp { @include blocky-color($dvlp-color); }
-#lead { @include blocky-color($lead-color); }
+
+.tall_block {
+  @include blocky(250);
+}
+
+.short_block {
+  @include blocky(50);
+}
+
+#bioe {
+  @include color($bioe-color);
+}
+#dvlp {
+  @include color($dvlp-color);
+}
+#lead {
+  @include color($lead-color);
+}
+
+.bioe {
+  @include color($bioe-color);
+}
+.dvlp {
+  @include color($dvlp-color);
+}
+.lead {
+  @include color($lead-color);
+}
 
 // Modify Resume content
 .content {
@@ -81,11 +108,11 @@ $columns: 12;
 .con_bioe { border-top: 7px solid $bioe-color; }
 .con_dvlp { border-top: 7px solid $dvlp-color; }
 .con_lead { border-top: 7px solid $lead-color; }
+.con_break { border-top: 7px solid $dark; }
 
 .color_fill {
   margin-top: em(30);
   width: 100%;
-  background-color: $bioe-color;
   color: white;
 }
 
@@ -104,14 +131,7 @@ h2.cntr {
     }
   }
 }
-
-.show {
-  display: block;
-}
-
-.hide {
-  display: none;
-}
+.hide { display: none; }
 
 
 // // Set motion direction for slide in of text
