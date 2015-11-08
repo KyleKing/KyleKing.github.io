@@ -18,3 +18,23 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
+
+
+meteortoys:allthings@2.2.0 # Pres ctrl-m to activate
+
+kyleking:customizable-bootstrap-stylus
+fortawesome:fontawesome
+
+stolinski:stylus-multi # with postCSS support! but somewhat outdated elsewhere
+coffeescript
+mquandalle:jade
+
+kadira:flow-router
+philippspo:momentum-flow-router # page-transitions
+kadira:blaze-layout # for page Rendering
+arillo:flow-router-helpers # for pathFor
+zimme:active-route # for isActiveRoute
+
+# HTTP
+spiderable
+
