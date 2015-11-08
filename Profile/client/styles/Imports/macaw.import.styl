@@ -1,9 +1,5 @@
-body
-  // background-color: rgb(38, 102, 135)
-  background-color #1F618D
-  font: 400 1em/1.38 Helvetica
-  color: dark
 
+// Big Image for Hero Element
 .callout-box
   position: relative
   float: left
@@ -26,7 +22,6 @@ body
   background-size: cover
   background-position: 50% 30%
 
-
 @media (max-width: 1000px)
   .callout-box
     position: relative
@@ -37,3 +32,42 @@ body
     position: relative
     z-index: 0
     height: 427px
+
+// Project Cards
+img_cover_mixin(url, top_spacing)
+  background-image url("../imgs/" + url)
+  background-repeat no-repeat
+  background-size cover
+  background-position 50% top_spacing
+
+.project-image-bs
+  height 200px
+  width auto
+
+.project-bikeshare-image
+  img_cover_mixin("bikeshare-4.jpg", 0%)
+.project-extensions-image
+  img_cover_mixin("extensions-1.png", 0%)
+.project-microfluidics-image
+  img_cover_mixin("microfluidics-2.jpg", 50%)
+.project-3D_printing-image
+  img_cover_mixin("3d_printing-1.jpg", 50%)
+
+.card-container
+  padding-right 15px
+  padding-left 15px
+  padding-bottom 20px
+
+.description-container
+  height 150px
+  padding-top 35px
+  padding-right 15px
+  padding-left 15px
+
+// Other Misc
+.row.section-spacing
+  height 40px
+.inverse
+  color light
+.secondary-bg
+  background-color light
