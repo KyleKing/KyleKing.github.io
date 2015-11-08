@@ -68,9 +68,17 @@ img_cover_mixin(url, top_spacing)
 
 .description-container
   height 150px
-  padding-top 35px
   padding-right 15px
   padding-left 15px
+  // Begin centering based on guide: http://www.w3.org/Style/Examples/007/center.en.html#block
+  position relative
+// Vertically center content
+.description-container .content
+   position absolute
+   top 50%
+   left 50%
+   margin-right -50%
+   transform translate(-50%, -50%)
 
 // Other Misc
 .row.section-spacing
