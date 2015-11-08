@@ -8,7 +8,7 @@
 		"glyphicons": false,
 
 		"scaffolding": false,
-		"utilities": false,
+		"utilities": true,
 		"type": true,
 		"code": false,
 		"grid": true,
@@ -39,7 +39,7 @@
 		"close": false,
 
 		"modals": false,
-		"tooltip": false,
+		"tooltip": true,
 		"popovers": false,
 		"carousel": false,
 
