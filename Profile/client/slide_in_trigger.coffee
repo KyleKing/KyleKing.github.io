@@ -15,7 +15,7 @@ Template.layout.events
       event.preventDefault()
 
 Template.about.events
-  'click .project-card': (event) ->
+  'click .card-container': (event) ->
     # FlowRouter.go('/AdminCompilation/ManageMechanicNotes_Form/' + rowData._id)
     $('.cd-panel').addClass 'is-visible'
     $('body').addClass 'noscroll'

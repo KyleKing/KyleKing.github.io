@@ -1,7 +1,7 @@
 {
 	"modules" : {
-		"variables": false,
-		"mixins": false,
+		"variables": true,
+		"mixins": true,
 
 		"normalize": true,
 		"print": true,
@@ -9,7 +9,7 @@
 
 		"scaffolding": false,
 		"utilities": false,
-		"type": false,
+		"type": true,
 		"code": false,
 		"grid": true,
 		"tables": false,
@@ -43,6 +43,6 @@
 		"popovers": false,
 		"carousel": false,
 
-		"responsive-utilities": false
+		"responsive-utilities": true
 	}
 }
