@@ -9,6 +9,9 @@
 // @import "CustomBootstrap/custom.bootstrap.import.styl"
 @import 'Imports/CustomSettings.import.styl'
 
+dark = #212F3D
+light = #FBFCFC
+
 
 // Tools
 // Namely mixins and functions. Any mixin or function that does not need accessing globally should belong in the partial to which it relates. The Tools layer comes after the Settings layer because a mixin may require one of the global settings as a default parameter.
@@ -32,9 +35,9 @@
 .row.section-spacing
 	height 40px
 .inverse
-	color white
+	color light
 .secondary-bg
-	background-color white
+	background-color light
 ul
 	list-style-type none
 
@@ -42,10 +45,10 @@ ul
 	height 200px
 	width auto
 .project-bikeshare-image
-	background-image url("../images/IMG_1144.jpg")
+	background-image url("../imgs/bikeshare-4.jpg")
 	background-repeat no-repeat
 	background-size cover
-	background-position 50% 25%
+	background-position 50% 0%
 .project-extensions-image
 	background-image url("../images/Web Clock UX - Chrome Web Store Google Chrome, Today at 7.18.37 PM.png")
 	background-repeat no-repeat
@@ -91,21 +94,20 @@ a.unstyled
 
 
 button
-	color white
-	color: white
+	color light
 	// font-weight: bold
-	border: none
-	margin: 0px
-	padding: 10px
+	border none
+	margin 0px
+	padding 10px
 	/*Flat Button styles*/
 	text-shadow: 0 1px rgba(0, 0, 0, 0.3)
 	cursor: pointer
-	transition: background 0.1s ease-in-out
+	transition: background 0.2s ease-in-out
 	border-radius: 4px
-	background-color: #3fb8e8
-	box-shadow: 0px 2px 0px 0px #3293ba
+	background-color: #5499C7
+	box-shadow: 0px 2px 0px 0px #154360
 button:hover
-	background-color: #1baae3
+	background-color: #154360
 
 
 
