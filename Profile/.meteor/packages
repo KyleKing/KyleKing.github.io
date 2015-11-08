@@ -29,6 +29,8 @@ stolinski:stylus-multi # with postCSS support! but somewhat outdated elsewhere
 coffeescript
 mquandalle:jade
 
+mrt:underscore-string-latest # Lots of functions
+
 kadira:flow-router
 philippspo:momentum-flow-router # page-transitions
 kadira:blaze-layout # for page Rendering
