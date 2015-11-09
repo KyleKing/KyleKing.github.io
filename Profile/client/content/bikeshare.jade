@@ -24,5 +24,5 @@ template(name="bikeshare")
 		| . The website includes several functions including login roles, real time maps, an admin panel with charts and tables, and many more. I've learned how to use Meteor-Up and host the website behind an SSL certificate on one Digital Ocean's servers.
 
 	h4.cd Deliverables
-	p.cd Arduino - Zigbee > < Zigbee - raspberry pi > (DDP) < Meteor Database
+	p.cd Arduino - Zigbee → (XBee Protocol) ← Zigbee - raspberry pi → (DDP) ← Meteor Database
 	p.cd One of the most interesting components of this website was the challenge of integrating a communication network with real time updates to the website's database. I solved this by building a minimalistic Node.JS application that communicates over Meteor's default Distributed Document Protocol (DDP). The Node application is run on an equally minimalist raspberry pi, which collects information over serial directly from a XBee module (our communications network). Through this process we can allow for two way communication and allow for a high throughput of information from our end-IOT devices.
