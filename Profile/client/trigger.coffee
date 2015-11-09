@@ -2,14 +2,30 @@
 
 # Open up slide in panel
 Template.about.events
-  'click .description-container button': (event) ->
+  'click .description-container': (event) ->
     id = event.toElement.id
     if id
       FlowRouter.go('/' + id)
       $('.cd-panel').addClass 'is-visible'
       $('body').addClass 'noscroll'
     else
-      console.log 'Could not find ID: ' + id
+      path = event.originalEvent.path
+      # console.log path
+      foundIDs = []
+      _.each path, (element) ->
+        id = $(element).attr 'id'
+        if id
+          # console.log id
+          foundIDs.push id
+      id = foundIDs[0]
+      if id
+        FlowRouter.go('/' + id)
+        $('.cd-panel').addClass 'is-visible'
+        $('body').addClass 'noscroll'
+      else
+        console.log 'Could not find ID: ' + foundIDs
+
+
 
 # Close panel either with esc key or with click event
 Template.layout.events
