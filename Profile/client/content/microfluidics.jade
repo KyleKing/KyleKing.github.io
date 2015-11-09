@@ -2,11 +2,13 @@ template(name='microfluidics_title')
 	h1.cd Microfluidics Researcher
 
 template(name='microfluidics')
-	p.cd As an undergraduate researcher, I have been working on a novel microfluidic immunosensor. Utilizing agarose beads, the matrix can be melted! Melted I say!
-	figure.figure
-		img(src="imgs/microfluidics-2.jpg").small-cd
-		figcaption.figure-caption.text-left Artistic shot of a PMMA microfluidic chip while inserting needle ports
+	h4.cd Summary
+	p.cd Modern medical diagnostics are vital for resource-poor regions at high risk for disease transmission.  However current diagnostic methods require reliable, well developed infrastructure and trained personnel not available in these regions. To address this issue, many researchers have developed low-cost and efficient microfluidic diagnostics to detect a variety of biomarkers. However many of these tests use two-dimensional surfaces to immobilize target biomarkers, which limits detection performance and the number of possible diagnostic tests. With a three-dimensional biomarker capture matrix, the amount of sample fluid in contact with an activated surface is dramatically increased. This increased contact can lead to a faster, more accurate diagnostic test because of the increased target capture efficiency. However, a three dimensional matrix makes it much more difficult to detect the amount of captured material. The most common and cheapest detection method is an optical test, but a three-dimensional matrix scatters light and reduces visibility. Introducing a unique approach, I will improve optical performance by leveraging the material properties of low melting point (LMP) agarose beads as a three-dimensional matrix. Once biomarkers have been immobilized on the bead matrix, the beads can be melted into a solid mass, reducing light scattering and improving optical clarity.
 
+	p.cd Last semester, this idea was prototyped with a macro-scale test (1-2 mm particles), which verified  the potential detection improvement offered by melting LMP agarose beads; however, to effectively capture target biomarkers, the beads must be much smaller on the scale of 10-30 μm. With the smaller size, we hypothesize that it may be possible to detect nano-volumes of biomarkers, which would prove the viability of this novel design as a cost-effective diagnostic tool for resource-poor areas. In summary, melting an agarose bead matrix for enhanced optical detection of target biomarkers is a simple solution for rapid, low-cost, and effective diagnostic tools in the developing world.
+
+	p.cd ...
+	p.cd For reference, below is a video of one my droplet generators in action:
 	figure.figure
 		//- converted using the Miro Video Converter
 		//- video(autoplay, loop, muted, preload='auto', poster='imgs/microfluidics-1-placeholder.png').small-cd
@@ -16,3 +18,14 @@ template(name='microfluidics')
 			source(src='imgs/microfluidics-1.ogv', type='video/ogv')
 			img(src='imgs/microfluidics-1-placeholder.png')
 		figcaption.figure-caption.text-left Water in oil droplet generation. Filmed on iPhone for higher frame rate
+
+	h4.cd Challenges
+	p.cd Agarose is a highly temperature-sensitive fluid and when it begins to cool its becomes much more viscous. The temperature range is.... at room temp...
+
+	h4.cd Progress
+	p.cd Using a custom-designed heated and cooled peltier-tile platform, the microfluidic chip can be run in a controlled environment to create many beads...
+	p.cd raspberry pi-controlled peltier tiles....
+
+	figure.figure
+		img(src="imgs/microfluidics-2.jpg").small-cd
+		figcaption.figure-caption.text-left Artistic shot of a PMMA microfluidic chip while inserting needle ports

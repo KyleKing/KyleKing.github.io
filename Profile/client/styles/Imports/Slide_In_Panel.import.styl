@@ -7,7 +7,7 @@ $color-5 = #89ba2c
 
 $panel-width-S = 100%
 $panel-width-M = 100%
-$panel-width-L = 95%
+$panel-width-L = 100%
 $title-panel-height = 75px
 $title-panel-offset = 0px
 base-index = 100
@@ -237,26 +237,57 @@ html
   -webkit-overflow-scrolling: touch
   p.cd
     font-size(14px)
-    color: $color-1
-    line-height: 1.4
-    margin: 2em 0
-    &:first-of-type
-      margin-top: 0
   +MQ(M)
     p.cd
       font-size(16px)
-      line-height: 1.6
+
 
 // Based on Medium's style sheet
-p.cd
-  display block
+h4.cd
   width 100%
   max-width 700px
+
+  font-family: medium-content-sans-serif-font, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: bold;
+  height: 41px;
+  letter-spacing: -0.72px;
+  line-height: 41.4px;
+
+  // Center content
+  display block
+  margin-left auto
+  margin-right auto
+
+p.cd
+  width 100%
+  max-width 700px
+
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: medium-content-serif-font, Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: normal;
+  // height: 132px;
+  letter-spacing: -0.063px;
+  line-height: 33.18px;
+  word-wrap: break-word
+
+  // Center content
+  display block
   margin-left auto
   margin-right auto
 
 
-// Style the tool tip for the escape button feature
+
+/* --------------------------------
+
+        Style the tool tip for the escape button feature
+
+-------------------------------- */
+
 .cd-panel-tooltip
   position absolute
   display: block
