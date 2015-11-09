@@ -18,13 +18,21 @@ Template.layout.events
     if $(event.target).is('.cd-panel') or $(event.target).is('.cd-panel-close')
       $('.cd-panel').removeClass 'is-visible'
       $('body').removeClass 'noscroll'
+      # Remove tool tip as well
+      $('.cd-panel-tooltip').removeClass 'visible'
+      $('.tooltip-arrow-right').removeClass 'visible'
       event.preventDefault()
   # Tell user of esc button functionality
   # dblclick, focus, blur, mouseover, and change
   'mouseover .cd-panel-close': (event) ->
-    console.log 'hover'
     $('.cd-panel-tooltip').addClass 'visible'
-    # data-tooltip="Or press ESC" data-tooltip-direction="w"
+    $('.tooltip-arrow-right').addClass 'visible'
+    setTimeout (->
+      # Remove tool tip as well
+      $('.cd-panel-tooltip').removeClass 'visible'
+      $('.tooltip-arrow-right').removeClass 'visible'
+    ), 2000
+
 
 document.onkeydown = (evt) ->
   evt = evt or window.event
@@ -32,3 +40,6 @@ document.onkeydown = (evt) ->
     console.log 'Escape key was pressed'
     $('.cd-panel').removeClass 'is-visible'
     $('body').removeClass 'noscroll'
+    # Remove tool tip as well
+    $('.cd-panel-tooltip').removeClass 'visible'
+    $('.tooltip-arrow-right').removeClass 'visible'
