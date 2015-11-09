@@ -255,13 +255,13 @@ html
   font-size: 14px
   text-align: center
   text-decoration: none
-  background-color rgba(0, 0, 0, 0.9)
-  border-radius: 4px
-  top (($title-panel-height - 29) / 2)
+  background-color dark
+  border-radius: 5px
+  top (($title-panel-height - 39) / 2)
   right 110px
   +MQ(L)
     right 125px
-  padding: 5px
+  padding: 10px
 
   // Make only visible on md or larger screens
   opacity 0
@@ -273,10 +273,10 @@ html
 .tooltip-arrow-right
   // Place the arrow
   position absolute
-  top (($title-panel-height - 24) / 2)
-  right 98.75px
+  top (($title-panel-height - 18) / 2)
+  right 101px
   +MQ(L)
-    right 98.75px + 15px
+    right 101px + 15px
   z-index 1010
 
   // Make only visible on md or larger screens
@@ -289,6 +289,6 @@ html
   // Not the Trippy part
   width 0px
   height 0px
-  border-top: 12px solid transparent
-  border-bottom: 12px solid transparent
-  border-left: 12px solid rgba(0, 0, 0, 0.9);
+  border-top: 9px solid transparent
+  border-bottom: 9px solid transparent
+  border-left: 9px solid dark
