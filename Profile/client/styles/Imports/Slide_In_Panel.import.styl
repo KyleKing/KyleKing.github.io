@@ -183,8 +183,7 @@ html
     height: 3px
     width: 20px
     background-color: $color-1
-    /* this fixes a bug where pseudo elements are slighty off position */
-    -webkit-backface-visibility: hidden
+    /* this fixes a bug where pseudo elements are slightly off position */
     backface-visibility: hidden
   &::before
     transform(rotate(45deg))
@@ -247,3 +246,49 @@ html
     p.cd
       font-size(16px)
       line-height: 1.6
+
+.cd-panel-tooltip
+  position absolute
+  display: block
+  z-index: 1020
+  color light
+  font-size: 14px
+  text-align: center
+  text-decoration: none
+  background-color rgba(0, 0, 0, 0.9)
+  border-radius: 4px
+  top (($title-panel-height - 29) / 2)
+  right 110px
+  +MQ(L)
+    right 125px
+  padding: 5px
+
+  // Make only visible on md or larger screens
+  opacity 0
+  +MQ(M)
+    &.visible
+      opacity 1
+  transition all 0.1s
+
+.tooltip-arrow-right
+  // Place the arrow
+  position absolute
+  top (($title-panel-height - 24) / 2)
+  right 98.75px
+  +MQ(L)
+    right 98.75px + 15px
+  z-index 1010
+
+  // Make only visible on md or larger screens
+  opacity 0
+  +MQ(M)
+    &.visible
+      opacity 1
+  transition all 0.1s
+
+  // Not the Trippy part
+  width 0px
+  height 0px
+  border-top: 12px solid transparent
+  border-bottom: 12px solid transparent
+  border-left: 12px solid rgba(0, 0, 0, 0.9);

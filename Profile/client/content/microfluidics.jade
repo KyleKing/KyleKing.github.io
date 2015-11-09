@@ -9,7 +9,8 @@ template(name='microfluidics')
 
 	figure.figure
 		//- converted using the Miro Video Converter
-		video(autoplay='', loop='', preload='auto', poster='imgs/microfluidics-1-placeholder.png').small-cd
+		//- video(autoplay, loop, muted, preload='auto', poster='imgs/microfluidics-1-placeholder.png').small-cd
+		video(controls, loop, muted, preload='auto', poster='imgs/microfluidics-1-placeholder.png').small-cd
 			source(src='imgs/microfluidics-1.webm', type='video/webm')
 			source(src='imgs/microfluidics-1.mp4', type='video/mp4')
 			source(src='imgs/microfluidics-1.ogv', type='video/ogv')
