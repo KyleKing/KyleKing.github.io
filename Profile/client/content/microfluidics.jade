@@ -3,11 +3,44 @@ template(name='microfluidics_title')
 
 template(name='microfluidics')
 	h4.cd Summary
-	p.cd Modern medical diagnostics are vital for resource-poor regions at high risk for disease transmission.  However current diagnostic methods require reliable, well developed infrastructure and trained personnel not available in these regions. To address this issue, many researchers have developed low-cost and efficient microfluidic diagnostics to detect a variety of biomarkers. However many of these tests use two-dimensional surfaces to immobilize target biomarkers, which limits detection performance and the number of possible diagnostic tests. With a three-dimensional biomarker capture matrix, the amount of sample fluid in contact with an activated surface is dramatically increased. This increased contact can lead to a faster, more accurate diagnostic test because of the increased target capture efficiency. However, a three dimensional matrix makes it much more difficult to detect the amount of captured material. The most common and cheapest detection method is an optical test, but a three-dimensional matrix scatters light and reduces visibility. Introducing a unique approach, I will improve optical performance by leveraging the material properties of low melting point (LMP) agarose beads as a three-dimensional matrix. Once biomarkers have been immobilized on the bead matrix, the beads can be melted into a solid mass, reducing light scattering and improving optical clarity.
+	p.cd Diagnosing diseases quickly and precisely takes new technology and innovation. Current diagnostic tests are done manually in a lab and can sometimes take a day or two for results. Knowing the result can influence treatment plans and avoid unnecessary follow up appointments. As an undergraduate researcher in the MML, I am working on one such technology that simplifies the process of making the diagnosis from a prepared sample. The final concept is a technology that can be integrated into a sample preparation device and could be placed in any primary care clinic or in the developing world.
 
-	p.cd Last semester, this idea was prototyped with a macro-scale test (1-2 mm particles), which verified  the potential detection improvement offered by melting LMP agarose beads; however, to effectively capture target biomarkers, the beads must be much smaller on the scale of 10-30 μm. With the smaller size, we hypothesize that it may be possible to detect nano-volumes of biomarkers, which would prove the viability of this novel design as a cost-effective diagnostic tool for resource-poor areas. In summary, melting an agarose bead matrix for enhanced optical detection of target biomarkers is a simple solution for rapid, low-cost, and effective diagnostic tools in the developing world.
+	h4.cd The Technology
+	p.cd Over a large fluid volume there may be only a few µliters of analyte, or the material that would identify the diseases or condition. Traditionally methods would continually mix and wait the sample to interact with a an activated surface. Our solution is a matrix of activated Low Melting Point (LMP) agarose beads. The large amount of surface area means that there is little to no delay to wait for diffusion, instead any binding reactions happen quickly and allows for a very small amount of analyte to be identified. The next step is the innovation. There are many tricks to determine how much analyte is captured, but they an additional fluid or expensive microscopes to determine the result of the diagnostic. To overcome the light scattering of the LMP agarose bead matrix, we can simply melt the beads into a single conglomerate that becomes transparent from the shape change. Using a simple integrated light detector, a clear diagnostic can be made.
 
-	p.cd ...
+	h4.cd Challenges
+	ul
+		li Quickly assess the validity of our assumption that melting agarose beads is feasible and has an optical improvement
+		li Determine an effective chemical reaction to activate the agarose surface and detect the target analyte
+		li Create tiny, ~30 µm diameter LMP agarose beads in large quantities without clogging and with high consistency in size distribution (i.e. avoid the beads coalescing and combining with each other)
+		li Demonstrate the assay in a sample end device
+
+	h4.cd Progress
+	p.cd This an ongoing project that I will be working on for the winter of 2015 and the spring of 2016 thanks to two fellowships through The University of Maryland SEEDS program and the Maryland Technology ASPIRE grant.
+
+	h5.cd Quickly assess the validity of our assumption that melting agarose beads is feasible and has an optical improvement
+	p.cd Using a macro-scale experiment, I showed that melting beads inside a chip is feasible within our temperature constraints (the water inside the chip can't boil) and that an optical improvement was noticeable.
+
+	figure.figure
+		img(src="imgs/microfluidics-packed bead.jpg").small-cd
+		figcaption.figure-caption.text-left Bead bed packed into a COC chip
+	figure.figure
+		img(src="imgs/microfluidics-?.jpg").small-cd
+		figcaption.figure-caption.text-left The same chip heated with before and after pictures [pic... + knightlab...]
+
+
+	h5.cd Determine an effective chemical reaction to activate the agarose surface and detect the target analyte
+	p.cd Developing a chemical interaction was likewise difficult. I needed a reaction that is temperature stable under 100℃ and that would be easily hybridized onto agarose, a typically inert surface. I researched and found a ____ paper (citation) that I replicated in lab with a demonstrated experiment inside a custom ___ well plate.
+
+	figure.figure
+		img(src="imgs/microfluidics-?.jpg").small-cd
+		figcaption.figure-caption.text-left Activated and control beads with before and after pictures when heated [pic... + knightlab...]
+
+
+
+	h5.cd Create tiny, ~30 µm diameter LMP agarose beads in large quantities without clogging and with high consistency in size distribution
+	p.cd Agarose is a highly temperature-sensitive fluid and when it begins to cool its becomes much more viscous. The temperature range is.... at room temp...
+
 	p.cd For reference, below is a video of one my droplet generators in action:
 	figure.figure
 		//- converted using the Miro Video Converter
@@ -19,13 +52,25 @@ template(name='microfluidics')
 			img(src='imgs/microfluidics-1-placeholder.png')
 		figcaption.figure-caption.text-left Water in oil droplet generation. Filmed on iPhone for higher frame rate
 
-	h4.cd Challenges
-	p.cd Agarose is a highly temperature-sensitive fluid and when it begins to cool its becomes much more viscous. The temperature range is.... at room temp...
-
-	h4.cd Progress
+	h5.cd Determine an effective chemical reaction to activate the agarose surface and detect the target analyte
+	p.cd Developing a chemical interaction was likewise difficult. I needed a reaction that is temperature stable under 100℃ and that would be easily hybridized onto agarose, a typically inert surface. I researched and found a ____ paper (citation) that I replicated in lab with a demonstrated experiment inside a custom ___ well plate.
 	p.cd Using a custom-designed heated and cooled peltier-tile platform, the microfluidic chip can be run in a controlled environment to create many beads...
 	p.cd raspberry pi-controlled peltier tiles....
+
 
 	figure.figure
 		img(src="imgs/microfluidics-2.jpg").small-cd
 		figcaption.figure-caption.text-left Artistic shot of a PMMA microfluidic chip while inserting needle ports
+	figure.figure
+		img(src="imgs/microfluidics-2.jpg").small-cd
+		figcaption.figure-caption.text-left Artistic shot of a PMMA microfluidic chip while inserting needle ports
+	figure.figure
+		img(src="imgs/microfluidics-2.jpg").small-cd
+		figcaption.figure-caption.text-left Artistic shot of a PMMA microfluidic chip while inserting needle ports
+	figure.figure
+		img(src="imgs/microfluidics-2.jpg").small-cd
+		figcaption.figure-caption.text-left Artistic shot of a PMMA microfluidic chip while inserting needle ports
+
+	h4.cd Demonstrate the assay in a sample end device
+	p.cd This is my current challenge. I have a quick demonstration that proved...
+

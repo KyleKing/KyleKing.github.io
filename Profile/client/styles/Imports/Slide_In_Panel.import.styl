@@ -23,10 +23,10 @@ font-smoothing()
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
-// breakpoints
-$S = 480px
-$M = 768px
-$L = 1170px
+// breakpoints - from Bootstrap
+$S = $screen-xs
+$M = $screen-sm
+$L = $screen-md
 
 // media queries
 MQ($canvas)
@@ -265,6 +265,22 @@ h4.cd
   margin-left auto
   margin-right auto
 
+
+h5.cd
+  width 100%
+  max-width 700px
+
+  font-family: medium-content-sans-serif-font, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -0.72px;
+
+  // Center content
+  display block
+  margin-left auto
+  margin-right auto
+
 p.cd
   width 100%
   max-width 700px
@@ -284,6 +300,21 @@ p.cd
   display block
   margin-left auto
   margin-right auto
+
+
+ul li
+  width 100%
+  max-width 700px
+
+  color: rgba(0, 0, 0, 0.8);
+  font-family: medium-content-serif-font, Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-style: normal;
+  font-weight: normal;
+
+  // // Center content
+  // display block
+  // margin-left auto
+  // margin-right auto
 
 
 
