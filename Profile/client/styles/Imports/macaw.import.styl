@@ -1,4 +1,15 @@
 // Big Image for Hero Element
+.header-image
+  position: relative
+  float: left
+  z-index: 0
+  height: 429px
+  width: 100%
+  background: url("../imgs/microfluidics-1.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: 50% 30%
+
 .callout-box
   position: relative
   float: left
@@ -8,20 +19,9 @@
   margin: -120px 0 0 23.6%
   padding-top: 50px
   padding-bottom: 50px
-  padding-right 20px
-  padding-left 20px
+  // padding-right 20px
+  // padding-left 20px
   background-color: rgba(255, 255, 255, 0.95)
-
-.header-image
-  position: relative
-  float: left
-  z-index: 0
-  width: 100%
-  height: 429px
-  background: url("../imgs/microfluidics-1.jpg")
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: 50% 30%
 
 @media (max-width: 1200px)
   .callout-box
@@ -40,7 +40,6 @@
     z-index: 3
     margin-left: 10%
     width: 80%
-
 
 // Project Cards
 img_cover_mixin(url, top_spacing)
@@ -98,8 +97,10 @@ img_cover_mixin(url, top_spacing)
    transform translate(-50%, -50%)
 
 // Other Misc
-.row.section-spacing
+.section-spacing
   height 50px
+  width 100%
+  margin none !important
 .inverse
   color light
 .secondary-bg
