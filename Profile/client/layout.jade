@@ -15,7 +15,7 @@ template(name='layout')
 	//- 		.cd-panel-content
 	//- 			+Template.dynamic template=Slide_In_Panel_Content_Left
 
-	.cd-panel.from-right
+	.cd-panel.from-right#cd-panel-toggle
 		header.cd-panel-header
 			+Template.dynamic template=Slide_In_Panel_Title
 			a.cd-panel-close(href='#0') Close
@@ -23,5 +23,5 @@ template(name='layout')
 		.tooltip-arrow-right
 
 		.cd-panel-container
-			.cd-panel-content
+			.cd-panel-content#Slide-In-Panel-Content
 				+Template.dynamic template=Slide_In_Panel_Content

@@ -37,13 +37,23 @@ _.each IDs, (ID) ->
       }
 
 
-# # Scroll to the top of every page
-# ScrollToTop = ->
-#   # Gotta love a mature programming language: http://stackoverflow.com/questions/9316415/the-same-old-issue-scrolltop0-not-working-in-chrome-safari
-#   # $(window).scrollTop 0
-#   # Not so fast: http://stackoverflow.com/a/5580456/3219667
-#   $('.cd-panel.from-right').animate { scrollTop: 0 }, 'slow'
+# Scroll to the top of every page
+ScrollToTop = ->
+  # Gotta love a mature programming language: http://stackoverflow.com/questions/9316415/the-same-old-issue-scrolltop0-not-working-in-chrome-safari
+  # $(window).scrollTop 0
+  # Not so fast: http://stackoverflow.com/a/5580456/3219667
+  $('#Slide-In-Panel-Content').animate { scrollTop: 0 }, 'slow'
 
-# FlowRouter.triggers.enter ScrollToTop, except: [
-#   'about'
-# ]
+FlowRouter.triggers.enter ScrollToTop, except: [
+  'about'
+]
+
+# Make sure panel is open when go to specific link (i.e. someone shares a link)
+OpenPanel = ->
+  console.log 'attempting to open panel'
+  $('#cd-panel-toggle').addClass 'is-visible'
+  # $('body').addClass 'noscroll'
+
+FlowRouter.triggers.enter OpenPanel, except: [
+  'about'
+]
