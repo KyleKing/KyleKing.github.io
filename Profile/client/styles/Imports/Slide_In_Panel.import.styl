@@ -141,6 +141,10 @@ html
   background: rgba($color-4, 0.96)
   z-index: (2 + base-index)
   box-shadow: 0 1px 1px rgba(black, 0.08)
+
+  // On small screens, runs way over allotted space - sort of a very forced workaround
+  overflow: hidden
+
   h1.cd
     font-weight: bold
     color: $color-1
@@ -256,14 +260,16 @@ h4.cd
   font-size: 28px;
   font-style: normal;
   font-weight: bold;
-  height: 41px;
   letter-spacing: -0.72px;
-  line-height: 41.4px;
 
   // Center content
   display block
   margin-left auto
   margin-right auto
+  +MQ(M)
+    height: 41px;
+    line-height: 41.4px;
+
 
 
 h5.cd
@@ -292,13 +298,15 @@ p.cd
   font-style: normal;
   font-weight: normal;
   letter-spacing: -0.063px;
-  line-height: 33.18px;
   word-wrap: break-word
 
   // Center content
   display block
   margin-left auto
   margin-right auto
+  +MQ(M)
+    line-height: 33.18px;
+
 
 ul
   width 100%
