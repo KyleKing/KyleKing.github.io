@@ -19,8 +19,8 @@
   margin: -120px 0 0 23.6%
   padding-top: 50px
   padding-bottom: 50px
-  // padding-right 20px
-  // padding-left 20px
+  padding-right 20px
+  padding-left 20px
   background-color: rgba(255, 255, 255, 0.95)
 
 @media (max-width: 1200px)
@@ -73,21 +73,27 @@ img_cover_mixin(url, top_spacing)
 
 
 .card-container
-  padding-right 20px
-  padding-left 20px
-  padding-bottom 40px
-  cursor pointer
-
-.card-container
   padding-top 0
+  padding-bottom 40px
   margin 0px
+  cursor pointer
+  // When in same row, add spacing around cards
+  @media (min-width: 768px)
+    padding-right 20px
+    padding-left 20px
 
 .description-container
   height 180px
   padding-right 15px
   padding-left 15px
+  @media (max-width: 768px)
+    height 210px
+    padding-right 5px
+    padding-left 5px
+
   // Begin centering based on guide: http://www.w3.org/Style/Examples/007/center.en.html#block
   position relative
+
 // Vertically center content
 .description-container .content
    position absolute

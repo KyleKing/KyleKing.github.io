@@ -5,10 +5,13 @@ template(name='about')
 			h1.text-center Kyle King
 			h3.text-center Bioengineer, Programmer, Cyclist, Inventor
 
-		.section-spacing
 		.container
-			.row
-				h2.inverse.text-center Highlighted Projects
+			.row.section-spacing
+		.container
+			.row.section-spacing
+
+		.container
+			h2.inverse.section-header.text-center Highlighted Projects
 			.section-spacing
 
 			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
@@ -110,9 +113,11 @@ template(name='about')
 							.content
 								h3 What's Next?
 								p.button I'm in the process of adding more content to this site
-								a.button See what's coming next
+								a.button.hidden-xs See what's coming next
+								a.button.hidden-sm.hidden-md.hidden-lg Read More
 
-		.section-spacing
+		.container
+			.row.section-spacing
 
 		.secondary-bg
 			.container
@@ -131,4 +136,4 @@ template(name='about')
 								i.fa.fa-github-square.fa-3x
 							a(href="https://soundcloud.com/kyle-king-11").unstyled
 								i.fa.fa-soundcloud.fa-3x
-				.footer.section-spacing
+				.row.footer.section-spacing
