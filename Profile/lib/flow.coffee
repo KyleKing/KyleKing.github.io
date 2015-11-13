@@ -50,9 +50,11 @@ FlowRouter.triggers.enter ScrollToTop, except: [
 
 # Make sure panel is open when go to specific link (i.e. someone shares a link)
 OpenPanel = ->
-  console.log 'attempting to open panel'
-  $('#cd-panel-toggle').addClass 'is-visible'
-  # $('body').addClass 'noscroll'
+  Template.layout.rendered = ->
+    console.log 'attempting to open panel'
+    $('#cd-panel-toggle').addClass 'is-visible'
+    console.log $('.cd-panel').attr 'id'
+    $('body').addClass 'noscroll'
 
 FlowRouter.triggers.enter OpenPanel, except: [
   'about'

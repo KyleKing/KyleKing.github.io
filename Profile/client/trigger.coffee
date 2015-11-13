@@ -6,6 +6,7 @@ Template.about.events
     console.log event.originalEvent.path
     if id
       FlowRouter.go('/' + id)
+      # Now done with router event
       $('.cd-panel').addClass 'is-visible'
       $('body').addClass 'noscroll'
     else
@@ -20,6 +21,7 @@ Template.about.events
       id = foundIDs[0]
       if id
         FlowRouter.go('/' + id)
+        # Now done with router event
         $('.cd-panel').addClass 'is-visible'
         $('body').addClass 'noscroll'
       else
@@ -31,6 +33,7 @@ Template.about.events
     # console.log event.originalEvent.path
     if id
       FlowRouter.go('/' + id)
+      # Now done with router event
       $('.cd-panel').addClass 'is-visible'
       $('body').addClass 'noscroll'
     else
@@ -45,6 +48,7 @@ Template.about.events
       id = foundIDs[0]
       if id
         FlowRouter.go('/' + id)
+        # Now done with router event
         $('.cd-panel').addClass 'is-visible'
         $('body').addClass 'noscroll'
       else
