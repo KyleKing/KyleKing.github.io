@@ -22,6 +22,7 @@ IDs = [
   'alumni_cup'
   'class_projects'
   'microduino'
+  'NEXT'
 ]
 
 _.each IDs, (ID) ->
