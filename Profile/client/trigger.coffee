@@ -1,9 +1,32 @@
-
-
 # Open up slide in panel
 Template.about.events
-  'click .description-container': (event) ->
+  # 'click .description-container': (event) ->
+  #   id = event.toElement.id
+  #   if id
+  #     FlowRouter.go('/' + id)
+  #     $('.cd-panel').addClass 'is-visible'
+  #     $('body').addClass 'noscroll'
+  #   else
+  #     path = event.originalEvent.path
+  #     # console.log path
+  #     foundIDs = []
+  #     _.each path, (element) ->
+  #       id = $(element).attr 'id'
+  #       if id
+  #         # console.log id
+  #         foundIDs.push id
+  #     id = foundIDs[0]
+  #     if id
+  #       FlowRouter.go('/' + id)
+  #       $('.cd-panel').addClass 'is-visible'
+  #       $('body').addClass 'noscroll'
+  #     else
+  #       console.log 'Could not find ID: ' + foundIDs
+
+  'click button': (event) ->
     id = event.toElement.id
+    console.log 'Test me on mobile...maybe touch event has different object?'
+    console.log event.originalEvent.path
     if id
       FlowRouter.go('/' + id)
       $('.cd-panel').addClass 'is-visible'

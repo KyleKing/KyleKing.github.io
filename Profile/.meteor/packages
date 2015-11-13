@@ -40,3 +40,4 @@ zimme:active-route # for isActiveRoute
 # HTTP
 spiderable
 
+fastclick
