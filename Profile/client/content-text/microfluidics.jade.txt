@@ -1,0 +1,70 @@
+template(name='microfluidics_title')
+	h1.cd.hidden-xs Microfluidic Researcher
+	h1.cd.hidden-sm.hidden-md.hidden-lg Microfluidics
+
+template(name='microfluidics')
+	h4.cd Summary
+	p.cd Diagnosing diseases quickly and precisely takes new technology and innovation. Current diagnostic tests are done manually in a lab and can sometimes take a day or two for results. Knowing the result can influence treatment plans and avoid unnecessary follow up appointments. As an undergraduate researcher in the MML, I am working on one such technology that simplifies the process of making the diagnosis from a prepared sample. The final concept is a technology that can be integrated into a sample preparation device and could be placed in any primary care clinic or in the developing world.
+
+	h4.cd The Technology
+	p.cd Over a large fluid volume there may be only a few µliters of analyte, or the material that would identify the diseases or condition. Traditionally methods would continually mix and wait the sample to interact with a an activated surface. Our solution is a matrix of activated Low Melting Point (LMP) agarose beads. The large amount of surface area means that there is little to no delay to wait for diffusion, instead any binding reactions happen quickly and allows for a very small amount of analyte to be identified. The next step is the innovation. There are many tricks to determine how much analyte is captured, but they an additional fluid or expensive microscopes to determine the result of the diagnostic. To overcome the light scattering of the LMP agarose bead matrix, we can simply melt the beads into a single conglomerate that becomes transparent from the shape change. Using a simple integrated light detector, a clear diagnostic can be made.
+
+	h4.cd Challenges
+	ul
+		li Quickly assess the validity of our assumption that melting agarose beads is feasible and has an optical improvement
+		li Determine an effective chemical reaction to activate the agarose surface and detect the target analyte
+		li Create tiny, ~30 µm diameter LMP agarose beads in large quantities without clogging and with high consistency in size distribution (i.e. avoid the beads coalescing and combining with each other)
+		li Demonstrate the assay in a sample end device
+
+	h4.cd Progress
+	p.cd This an ongoing project that I will be working on for the winter of 2015 and the spring of 2016 thanks to two fellowships through The University of Maryland SEEDS program and the Maryland Technology ASPIRE grant.
+
+	h5.cd Conducting a "Sanity Check"
+	p.cd Using a macro-scale experiment, I showed that melting beads inside a chip is feasible within our temperature constraints (the water inside the chip can't boil) and that an optical improvement was noticeable.
+
+	figure.figure
+		img(src="imgs/microfluidics-packed bead.jpg").small-cd
+		figcaption.figure-caption.text-left Bead bed packed into a COC chip
+	figure.figure
+		img(src="imgs/microfluidics-?.jpg").small-cd
+		figcaption.figure-caption.text-left The same chip heated with before and after pictures [pic... + knightlab...]
+
+
+	h5.cd Selecting the Chemical Reaction
+	p.cd Developing a chemical interaction was likewise difficult. I needed a reaction that is temperature stable under 100℃ and that would be easily hybridized onto agarose, a typically inert surface. I researched and found a ____ paper (citation) that I replicated in lab with a demonstrated experiment inside a custom ___ well plate.
+
+	figure.figure
+		img(src="imgs/microfluidics-?.jpg").small-cd
+		figcaption.figure-caption.text-left Activated and control beads with before and after pictures when heated [pic... + knightlab...]
+
+	h5.cd Producing Agarose Beads
+	p.cd To produce beads at my ideal size scale, I've designed a coflow droplet generator. By flowing in an immiscible fluid, silicone oil alongside agarose..[need better explanation].. Below is a video of one my droplet generators in action:
+	figure.figure
+		//- converted using the Miro Video Converter
+		//- video(autoplay, loop, muted, preload='auto', poster='imgs/microfluidics-1-placeholder.png').small-cd
+		video(controls, loop, muted, preload='auto', poster='imgs/microfluidics-1-placeholder.png').small-cd
+			source(src='imgs/microfluidics-1.webm', type='video/webm')
+			source(src='imgs/microfluidics-1.mp4', type='video/mp4')
+			source(src='imgs/microfluidics-1.ogv', type='video/ogv')
+			img(src='imgs/microfluidics-1-placeholder.png')
+		figcaption.figure-caption.text-left Water in oil droplet generation. Filmed on iPhone for higher frame rate
+
+	p.cd The size of the droplets can be controlled by varying the flow rate and changing the dimensions of the channel. We originally worked with PDMS, but settled on PMMA as the material would perform better under the high pressure of agarose droplet generation. The largest challenge came from integrating agarose, as it is very temperature sensitive. I attempted to design a pressure driven flow that would allow me to heat and mix the dead volume inside a container. Other solutions included using vacuum pressure to reduce the amount of dead volume and operating the chip on top of a hot plate. Ultimately we discovered a much more elegant solution by conducting failure analysis.
+	p.cd The first problem to overcome was maintaining the temperature of the syringe without heating the expensive syringe pump. Using felt, electrical tape, tin foil, and heat tape, I designed a reusable and insulated design that would maintain a constant temperature of 60℃ inside the syringe (pictured below). If the agarose became too cold the viscosity would increase causing the chip to rupture under the additional pressure and stress. Adding an additional tweak to maintain the temperature onto the chip, I wrapped the tubing from the agarose syringe to the chip in heat shrink tubing for additional insulation (red wrap pictured in later images).
+
+	figure.figure
+		img(src="imgs/microfluidics-?.jpg").small-cd
+		figcaption.figure-caption.text-left Prototyping syringe heater [pic... + knightlab...]
+
+	p.cd The second problem to overcome was both heating and cooling the chip. When the beads were separating they needed to be heated to maintain a low viscosity and create regularly sized beads. To accomplish this, I designed a PID controller based on the raspberry pi that could control two independent peltier tiles and associated heat sinks. To ensure tight contact between the fan, heat sink, peltier tile, chip, and droplet collector I additionally designed a laser cut and 3D printed enclosure nicknamed the "Turtle Bot" (pictured below).
+
+	figure.figure
+		img(src="imgs/microfluidics-?.jpg").small-cd
+		figcaption.figure-caption.text-left Prototyping syringe heater [pic... + knightlab...]
+
+	figure.figure
+		img(src="imgs/microfluidics-?.jpg").small-cd
+		figcaption.figure-caption.text-left Turtle Bot and Original Prototype [pic... + knightlab...]
+
+	h5.cd Next Steps
+	p.cd In the next few months, I will be working on an integrated demo that combines my progress with bead production and chemical diagnostic experiments inside a COC chip. Once completed, I hope to publish a paper and discuss the advantages of this approach for microfluidic diagnostics.

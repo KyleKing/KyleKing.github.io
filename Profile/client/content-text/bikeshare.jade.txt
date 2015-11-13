@@ -1,0 +1,29 @@
+template(name="bikeshare_title")
+	h1.cd.hidden-xs Stationless Bikeshare
+	h1.cd.hidden-sm.hidden-md.hidden-lg Bikeshare
+
+template(name="bikeshare")
+	h4.cd Summary
+	p.cd As part of a four-year honors research program, Gemstone, I've been working with 13 other undergraduate students on building a university bikeshare. My primary role has been the full stack web development of our website, but I have contributed to other facets of the team including sensor selection and the smart-lock design.
+
+	figure.figure
+		img(src="imgs/bikeshare-3.jpg").small-cd
+		figcaption.figure-caption.text-left Caption
+
+	h4.cd Challenges
+	p.cd Over the past two years, I had to rapidly teach myself how to build a website. I had some prior experience in MatLab and C, but had never tried to build a website before. I likewise had to narrow down and select a website framework, learn a back-end db structure, learn git, and pickup some website design skills.
+
+	p.cd ...
+
+	figure.figure
+		img(src="imgs/bikeshare-4.jpg").small-cd
+		figcaption.figure-caption.text-left Caption
+
+	h4.cd Progress
+	p.cd All of this hard work has paid off in the progress I've made towards building
+		a(href="https://redbarbikes.com") redbarbikes.com
+		| . The website includes several functions including login roles, real time maps, an admin panel with charts and tables, and many more. I've learned how to use Meteor-Up and host the website behind an SSL certificate on one Digital Ocean's servers.
+
+	h4.cd Deliverables
+	p.cd Arduino - Zigbee → (XBee Protocol) ← Zigbee - raspberry pi → (DDP) ← Meteor Database
+	p.cd One of the most interesting components of this website was the challenge of integrating a communication network with real time updates to the website's database. I solved this by building a minimalistic Node.JS application that communicates over Meteor's default Distributed Document Protocol (DDP). The Node application is run on an equally minimalist raspberry pi, which collects information over serial directly from a XBee module (our communications network). Through this process we can allow for two way communication and allow for a high throughput of information from our end-IOT devices.

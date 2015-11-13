@@ -1,0 +1,23 @@
+template(name="class_projects_title")
+	h1.cd.hidden-xs Class Projects
+	h1.cd.hidden-sm.hidden-md.hidden-lg Class Projects
+
+template(name="class_projects")
+	h4.cd Not updated / currently not visible
+
+
+
+
+	h4.cd Summary
+	p.cd The bioengineering curriculum is really interesting and we have many opportunities to explore new concepts including imaging, genetic analysis, and electronics.
+	p.cd ....I need a way to display sample code? ... PLus what code do I want to highlight?
+
+	h4.cd Challenges
+
+	h4.cd Progress
+
+	h4.cd Deliverables
+
+	figure.figure
+		img(src="imgs/microfluidics-2.jpg").small-cd
+		figcaption.figure-caption.text-left Caption
