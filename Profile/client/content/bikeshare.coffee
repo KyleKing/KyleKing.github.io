@@ -76,3 +76,13 @@ Template.bikeshare.rendered = ->
       window.DemoMap.removeLayer MapMarkers[oldBike._id]
       # Remove the reference to this marker instance
       delete MapMarkers[oldBike._id]
+
+
+Template.bikeshare.events
+  # 'click #DeleteRFID': ->
+  #   console.log @_id + ' will be deleted'
+  #   # Only able to delete by id
+  #   RFIDdata.remove @_id
+  'click #DeleteOldBikes': ->
+    # Not allowed to call mongo remove query from client, so call method
+    Meteor.call 'DeleteOldBikes'

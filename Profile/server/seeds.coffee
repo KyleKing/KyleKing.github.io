@@ -1,6 +1,6 @@
 [today, now] = CurrentDay()
 
-CreateDailyBikeData = () ->
+@CreateDailyBikeData = () ->
 
   randNames = [
     'Anastasia Romanoff'
@@ -67,11 +67,9 @@ CreateDailyBikeData = () ->
     i = 1
     while i <= 50
       # create template for each DailyBikeData data stored
-      Position = []
       randomNow = NaN
-      blank = {}
       countTime = 0
-      while countTime < 30
+      while countTime < 1
         # For 60 minutes in an hour
         randomNow = now - (10000000 * Math.random())
         namePoint = Math.round((randNames.length - 1) * Math.random())
@@ -83,26 +81,15 @@ CreateDailyBikeData = () ->
             RandTag = 'Available'
         else
           RandTag = 'RepairInProgress'
-        blank =
-          Tag: RandTag
-          Rider: randNames[namePoint]
-          Timestamp: randomNow
-          Coordinates: randGPS()
-        # console.log('name = ' + blank.User);
-        Position.push blank
         countTime++
       DailyBikeData.insert
         Bike: i
         Day: today
         # simplified version
         Tag: RandTag
-        Coordinates: Position[0].Coordinates
-        CoordinatesNew: randGPS()
-        Positions: Position
+        Coordinates: randGPS()
       i++
   console.log 'Done creating DailyBikeData data schema'
-
-
 
 # Init
 CreateDailyBikeData()

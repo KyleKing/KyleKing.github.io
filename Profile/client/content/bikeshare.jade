@@ -3,10 +3,6 @@ template(name="bikeshare_title")
 	h1.cd.hidden-sm.hidden-md.hidden-lg Bikeshare
 
 template(name="bikeshare")
-
-	h4.cd Temp Real Time Map Demo
-	#DemoMap.cd.cd-map
-
 	h4.cd Summary
 	p.cd At the University of Maryland, I am actively working with 13 undergraduate students to build a stationless bikeshare system as part of a four year honors research program. I am the full stack web developer of our website and have contributed to other facets of the project including sensor selection, smart-lock design, and to help with rapid prototyping.
 
@@ -41,8 +37,15 @@ template(name="bikeshare")
 	h5.cd Real Time Mapping
 	p.cd To quickly iterate and develop my skills, I set my first priority to build a real time map. Having a map will be crucial to the core function of the website, as most of the data will be geographic coordinates. I tapped into the Meteor's '.observe' query to fire events on database updates. Take a look at the code behind the application and a demo of the functionality.
 
-	//- h4.cd Real Time Map Demo
-	//- #DemoMap.cd.cd-map
+	h4.cd#RealTimeDemo Real Time Map Demo
+	row.cd
+		button#DeleteOldBikes.map Randomize all bike locations
+		//- button#DeleteOldBikes Randomize All Bike Statuses (Icons)
+	#DemoMap.cd.cd-map
+	//- row.cd
+	//- 	span #{BikeNume}
+	//- 	button(id="{{BikeID}}") Delete Me
+	//- 	button(id="{{BikeID}}") Generate a New Random Status
 
 	.cd
 		+bikeshare_map
