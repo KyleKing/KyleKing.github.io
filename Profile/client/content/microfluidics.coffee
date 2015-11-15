@@ -5,12 +5,12 @@ Template.microfluidics.onRendered ->
       label: 'Prior to Heating'
     }
     {
-      src: 'imgs/microfluidics-20.jpg'
+      src: 'imgs/microfluidics-22.jpg'
       label: 'After Heating'
     }
   ],
     animate: true
     showLabels: true
     showCredits: false
-    startingPosition: '90%%'
+    startingPosition: '75%%'
     makeResponsive: true)
