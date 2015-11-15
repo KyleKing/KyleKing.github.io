@@ -36,6 +36,7 @@ kadira:blaze-layout@2.2.0
 kadira:flow-router@2.8.0
 kyleking:customizable-bootstrap-stylus@3.5.0_1
 kyleking:customizable-bootstrap-stylus-data@4.0.4
+kyleking:juxtapose-js@0.0.1
 launch-screen@1.0.4
 livedata@1.0.15
 logging@1.0.8
