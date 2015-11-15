@@ -22,6 +22,17 @@ template(name='microfluidics')
 	h5.cd Conducting a "Sanity Check"
 	p.cd Using a macro-scale experiment, I proved the feasibility and optical improvements of melting beads inside a chip within specific temperature constraints. I ran both a test to measure LMP agarose's melting point and a second test to estimate optical improvement as you can see in the photos and video below:
 
+	figure.figure
+		//- converted using the Miro Video Converter
+		//- video(autoplay, loop, muted, preload='auto', poster='videos/microfluidics-1.png').small-cd
+		video(controls, loop, muted, preload='auto', poster='videos/microfluidics-03.png').small-cd
+			source(src='videos/microfluidics-03.webm', type='video/webm')
+			source(src='videos/microfluidics-03.mp4', type='video/mp4')
+			source(src='videos/microfluidics-03.ogv', type='video/ogv')
+			img(src='videos/microfluidics-03.png')
+		figcaption.figure-caption.text-left LMP agarose melting point demonstration on glass slide
+
+	p.cd Optical improvement test with a packed bead bed inside a COC chip. First at room temperature then after being placed inside an oven at 80°C for one minute.
 	.small-juxtapose
 		+juxtapose(id='bead-bed')
 
@@ -34,8 +45,8 @@ template(name='microfluidics')
 	p.cd Through my research, I found several options for activating agarose. I selected for a reaction that was stable between 0-100°C and could be modified for many different end applications (CITATION). After synthesizing my research I set out to test the chemical reaction with a macro-scale experiment. I activated several millimeter width agarose beads and demonstrated positive and negative controls with both before and after melting. The results were very promising and supported my assumptions to move forward with the reaction.
 
 	figure.figure
-		img(src="imgs/microfluidics-?.jpg").small-cd
-		figcaption.figure-caption.text-left Activated and control beads with before and after pictures when heated [pic... + knightlab...]
+		img(src="imgs/microfluidics-23.png").small-cd
+		figcaption.figure-caption.text-left Large agarose beads used to demonstrate chemical reaction
 
 	h5.cd Producing Agarose Beads
 	p.cd  I used a well-studied co-flow droplet generator to produce the agarose beads. Liquid agarose is pumped into an intersection with an immiscible fluid, silicone oil. Due to the shear stress of this intersection, droplets of agarose bead off at a steady rate. Below is a video of one of my generators in action:
@@ -48,7 +59,7 @@ template(name='microfluidics')
 			source(src='videos/microfluidics-02.mp4', type='video/mp4')
 			source(src='videos/microfluidics-02.ogv', type='video/ogv')
 			img(src='videos/microfluidics-02.png')
-		figcaption.figure-caption.text-left Water in oil droplet generation
+
 	//- figure.figure
 	//- 	//- converted using the Miro Video Converter
 	//- 	//- video(autoplay, loop, muted, preload='auto', poster='videos/microfluidics-1.png').small-cd
@@ -61,11 +72,16 @@ template(name='microfluidics')
 
 	p.cd Producing agarose beads has proven to be the most difficult component. Agarose is a finicky material because at room temperature it quickly gels and a gelling solution inside a microfluidic chip can alter internal pressures and flow rates or simply clog the device. However when I want the beads to gel into distinct beads, I need the beads to quickly cool.
 	p.cd Finding a solution that met both needs is tricky, but I have made signifiant progress. Currently, I have built a platform nicknamed “Turtle-Bot” for its acrylic legs. The microfluidic chip is placed on top of peltier tiles, one around 40°C and the second around 5-10°C. Each tile is controlled by a raspberry pi with a PI controller. The combination of the 3D printed parts and laser cut supports allowed for rapid prototyping of this approach with a very fast turnaround.
-	p.cd While a flashy solution helped solve the issue of heating and cooling the microfluidic chip, I needed a simple solution for heating the dead volume inside the syringe. Using felt, electrical tape, tin foil, and heat tape, I designed a reusable and insulated design that would maintain a constant temperature of 60℃ inside the syringe (pictured below).
+	p.cd While a flashy solution helped solve the issue of heating and cooling the microfluidic chip, I needed a simple solution for heating the dead volume inside the syringe. Using felt, electrical tape, tin foil, and heat tape, I designed a reusable and insulated design that would maintain a constant temperature of 60°C inside the syringe (pictured below).
 
+	.small-juxtapose
+		+juxtapose(id='Syring-heater')
+	//- figure.figure
+	//- 	img(src="imgs/microfluidics-25.jpg").small-cd
+	//- 	figcaption.figure-caption.text-left Prototype syringe heater
 	figure.figure
-		img(src="imgs/microfluidics-?.jpg").small-cd
-		figcaption.figure-caption.text-left Prototyping syringe heater [pic... + knightlab...]
+		img(src="imgs/microfluidics-24.jpg").small-cd
+		figcaption.figure-caption.text-left Turtle Bot
 
 	h5.cd Next Steps
 	p.cd In the next few months, I will be working on an integrated demo that combines my progress with bead production and chemical diagnostic experiments inside a COC chip. Once completed, I hope to publish a paper and discuss the advantages of this approach for microfluidic diagnostics.
