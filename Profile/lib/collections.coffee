@@ -1,0 +1,1 @@
+@DailyBikeData = new Mongo.Collection 'dailyBikeData'
