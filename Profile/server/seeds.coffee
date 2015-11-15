@@ -57,8 +57,8 @@ CreateDailyBikeData = () ->
       randLng.push _.random(bottomLng * skew, topLng * skew) / skew
     # Save in object to return
     randCoordinates =
-      Lat: randLat
-      Lng: randLng
+      Lat: Number(randLat)
+      Lng: Number(randLng)
     randCoordinates
 
   # Insert database of bikes if no data for today
@@ -97,6 +97,7 @@ CreateDailyBikeData = () ->
         # simplified version
         Tag: RandTag
         Coordinates: Position[0].Coordinates
+        CoordinatesNew: randGPS()
         Positions: Position
       i++
   console.log 'Done creating DailyBikeData data schema'
