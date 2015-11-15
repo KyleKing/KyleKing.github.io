@@ -1,5 +1,5 @@
 Template.bikeshare.onRendered ->
-  slider = new (juxtapose.JXSlider)('#foo', [
+  slider = new (juxtapose.JXSlider)('#bikeshare-1', [
     {
       src: 'imgs/bikeshare-3.jpg'
       label: '2009'
