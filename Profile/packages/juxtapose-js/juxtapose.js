@@ -6,12 +6,9 @@
  */
 
 if (Meteor.isClient) {
-
-  // Template.layout.onRendered(function () {
+  Template.juxtapose.onRendered(function () {
 
     (function (document, window) {
-    // Template.layout.onRendered(function () {
-
       var juxtapose = {
         sliders: [],
         OPTIMIZATION_ACCEPTED: 1,
@@ -741,8 +738,7 @@ if (Meteor.isClient) {
         docHijack('createElement');
         addListen(doc.all);
       }
-    // });
     })(window, document);
 
-  // });
+  });
 }
