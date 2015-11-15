@@ -14,3 +14,19 @@ Template.microfluidics.onRendered ->
     showCredits: false
     startingPosition: '75%%'
     makeResponsive: true)
+
+  slider = new (juxtapose.JXSlider)('#Syring-heater', [
+    {
+      src: 'imgs/microfluidics-04.jpg'
+      label: 'Prior to Heating'
+    }
+    {
+      src: 'imgs/microfluidics-03.jpg'
+      label: 'After Heating'
+    }
+  ],
+    animate: true
+    showLabels: true
+    showCredits: false
+    startingPosition: '75%%'
+    makeResponsive: true)
