@@ -4,37 +4,31 @@ template(name="bikeshare_title")
 
 template(name="bikeshare")
 	h4.cd Summary
-	p.cd I am actively working with 13 undergraduate students to build a bikeshare system at the University of Maryland as part of a four year honors research program. I am the full stack web developer of our website and have contributed to other facets of the project including sensor selection and the smart-lock design.
-
-	#juxtapose-wrapper.juxtapose(data-startingposition="35%" data-showlabels="true" data-showcredits="false" data-animate="true")
-		img(src="imgs/bikeshare-3.jpg" data-label="2009" data-credit="MakerBots Everywhere")
-		img(src="imgs/bikeshare-4.jpg" data-label="2012" data-credit="Will Poh")
-
-	.small-juxtapose
-		+juxtapose(id='bikeshare-1')
+	p.cd At the University of Maryland, I am actively working with 13 undergraduate students to build a stationless bikeshare system as part of a four year honors research program. I am the full stack web developer of our website and have contributed to other facets of the project including sensor selection, smart-lock design, and to help with rapid prototyping.
 
 	figure.figure
-		img(src="imgs/bikeshare-3.jpg").small-cd
-		figcaption.figure-caption.text-left Caption
+		img(src="imgs/bikeshare-04.png").small-cd
+		figcaption.figure-caption.text-left The Completed Map with several interactive features
 
 	figure.figure
-		img(src="imgs/bikeshare-4.jpg").small-cd
-		figcaption.figure-caption.text-left Caption
+		img(src="imgs/bikeshare-03.jpg").small-cd
+		figcaption.figure-caption.text-left A teammate's printed lock components
 
 	h4.cd The Technology
-	p.cd TO best explain the system, let me walk through a typical users' experience and integrate the technical components. First a user can check our app or website and see available bikes displayed on a map, select the nearest one with a tap and reserve that bike for five minutes. When they arrive at the bike rack they reserved a bike from they can tap their NFC ID card onto the smart lock reader. The lock process the tag and requests the database to unlock the bike thus clearing the users reservation. The lock communicates with the website/database over a network of Zigbee routers (explained in more detail below). Upon confirmation from the database, the lock powers a smaller linear actuator for a second and the lock spins open on a spring. The user can then lock the bike into a riding position and ride to any bike rack on campus. once finished, the user moves the lock back into a locking position and the bike locks automatically. The bike sends a confirmation of a completed trip and the rider can go on his way.
+	p.cd To use our system, a user can load our website and look for the nearest available bike. To reserve the bike, the user only has to tap the icon and will receive a success message confirming the reservation. When the user arrive at the bike rack, they can tap any available bike with their RedBars NFC card. Their encrypted ID is then sent to the database to request access. The website recognizes the user and clears their reservation, while returning a code to unlock the bike. Using a small linear actuator, the locking pin is released, so the user may now ride the bike. When done with their ride, the user can return their bike to any rack on campus. When the user locks the bike the electronics send a ping to the website and confirm the new location and the successful locking event. Both messages from the bike-mounted smart lock to the website are sent over a distributed Zigbee routing system and collected by a raspberry pi to be sent to the database.
 
 	h4.cd Challenges
 	ul
 		li Learn Web Development, Select a Platform, and Design Content
-		li Manage a Database and display information in real time (Mapping demo)
+		li Manage a Database and display information on a map in real time
 		li Iterate over user feedback
 		li Begin Integrating Security features
 		li Systems Integration and Multi-Disciplinary Contributions
 
 	h4.cd Progress
 	h5.cd Self-Taught Web Development
-	p.cd I never thought I could code. It wasn't until my first semester in Calculus III, when I wrote my first MatLab code. One introductory class on C/MatLab later, I gained a much better depth of knowledge and threw myself into my first web development project, I built a blog for a bike trip across the country. Returning from the trip, I had a new tool that I was eager to apply to my gemstone team to fill a technological void.
+	p.cd I built my first website in December of 2013 with static HTML and CSS files. A few months later, I began teaching myself more advanced website development
+	Realizing the value and the need of our bikeshare
 	p.cd Over the following semester, I tested out different frameworks involving Node/MEAN, Firebase, Native iOS, and more, but selected Meteor for its cross-platform support, integrated real-time support, and extensive package library. I took courses on Treehouse to learn the basics then began learning as problems arose or returning to the Meteor documentation for support. To help plan out the website I researched other bikeshare websites and opened up the web inspector to understand how pages I liked worked.
 
 	h5.cd Real Time Mapping
