@@ -3,8 +3,6 @@ template(name='NEXT_title')
 	h1.cd.hidden-sm.hidden-md.hidden-lg Next
 
 template(name='NEXT')
-	p.cd All of this content will be eventually included into its own card in the next few weeks, but to get a preview, check out some of the links below.
-
 	h4.cd Whats I'm Working on Now
 	ul.cd
 		li Side-Projects: Raspberry Pi alarm clock/stereo system
@@ -14,36 +12,64 @@ template(name='NEXT')
 		li Open Source Software: Popclip add-on to quickly link content in a Google document
 		li Class Project: Ecological Analysis of the Black-Footed Penguin
 
-	h4.cd What I've Worked On
+	h4.cd Previous Projects
+	p.cd These will be updated over the next few weeks, so feel free to check back
 	ul.cd
 		li Open Source Software
 			ul.cd
 				li
-					a(href="https://atmospherejs.com/kyleking/juxtapose-js") Juxtapose Meteor package built for this website
+					a(href="https://atmospherejs.com/kyleking/juxtapose-js") Juxtapose.JS Meteor package
+					|  built to make the slider images on this site easier for other Meteor developers
 				li
 					a(href="https://atmospherejs.com/kyleking/customizable-bootstrap-stylus") Customizable Bootstrap Stylus Meteor package
+					|  which allows for users to on the fly select Bootstrap components
 				li
-					a(href="https://github.com/aldeed/meteor-tabular/issues/162") Tabular Tables PR to support multi-column sort
+					a(href="https://github.com/aldeed/meteor-tabular/issues/162") Tabular Tables PR
+					|  to share example code for multi-column sort
 				li
-					a(href="https://github.com/PhilippSpo/momentum-flow-router/pull/7") Momentum Router PR to reduce redundancy and ensure consistent animations
+					a(href="https://github.com/PhilippSpo/momentum-flow-router/pull/7") Momentum Router PR
+					|  that offered reduced redundancy and simple configuration for navigation animations
 
 		li Class Projects (Bioengineering is very cool)
 			ul.cd
 				li Built a pulse oximeter and 3D-printed finger clamp
-				li MatLab-based genetic analysis
-				li MatLab for imaging analysis
+				li MatLab-based bioinformatics projects and genetic analysis
+				li MatLab for bioimaging
 
 		li Chrome Extensions
 			ul.cd
-				li
-					a(href="https://chrome.google.com/webstore/detail/web-clock-ux/bemigfbpfihgefbnbncjddfbgknchfaf") User Experience improvement for hour-logging software
-				li
-					a(href="https://chrome.google.com/webstore/detail/elms-and-crocodoc-fullscr/plmlhafmgopajgbdobknemohlcnohbgb?utm_source=gmail") Full screen improvement for reviewing paper feedback
+				li After making a few mistakes while clocking in and out, I created a
+					a(href="https://chrome.google.com/webstore/detail/web-clock-ux/bemigfbpfihgefbnbncjddfbgknchfaf") simple improvement to the WebClock software
+					|  and released the change as a chrome extension that was used by all four interns this summer
 
-		li Microduino Tracker Partially Used During 4K for Cancer Trip
+				li While taking a professional writing course, we would need to read feedback within an iframe on our schools education portal. After noticing other student's concerns, I wrote an
+					a(href="https://chrome.google.com/webstore/detail/elms-and-crocodoc-fullscr/plmlhafmgopajgbdobknemohlcnohbgb?utm_source=gmail") extension that made the frame full screen
+					|  and shared it with the class.
+
+		li I designed waterproof and secure housing for a Microduino GPS Tracker, which was partially used during my ride with the 4K for Cancer Trip
 		li Alumni Cup Team Leader - Rube Goldberg Style Engineering Competition
 
-	//- h4.cd And don't miss the photos!
-	//- figure.figure
-	//- 	img(src="imgs/next.jpg").small-cd
-	//- 	figcaption.figure-caption.text-left Next Photos
+	h4.cd Some Pictures
+
+	figure.figure
+		img(src="imgs/3d_printing-1.jpg").small-cd
+		figcaption.figure-caption.text-left 3D printing to the rescue!
+
+	figure.figure
+		img(src="imgs/alarm_clock-1.jpg").small-cd
+		figcaption.figure-caption.text-left Planning my own alarm clock with a little bit of primary research
+
+	figure.figure
+		img(src="imgs/microfluidics-15.jpg").small-cd
+		figcaption.figure-caption.text-left Fresh PMMA chips off of the CNC
+
+	figure.figure
+		img(src="imgs/microfluidics-17.jpg").small-cd
+		figcaption.figure-caption.text-left Preparing to press a COC plaque
+
+	+juxtapose(id='next-1')
+	figcaption.figure-caption.text-left A late night work session on the Alumni Cup Rube Goldberg machine
+
+	figure.figure
+		img(src="imgs/alumni_cup-7.jpg").small-cd
+		figcaption.figure-caption.text-left The final creation for the Alumni Cup
