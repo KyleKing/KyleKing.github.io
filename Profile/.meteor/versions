@@ -33,10 +33,10 @@ http@1.1.1
 id-map@1.0.4
 jquery@1.11.4
 kadira:blaze-layout@2.2.0
-kadira:flow-router@2.8.0
+kadira:flow-router@2.9.0
 kyleking:customizable-bootstrap-stylus@3.5.0_1
 kyleking:customizable-bootstrap-stylus-data@4.0.4
-kyleking:juxtapose-js@0.0.3
+kyleking:juxtapose-js@0.1.0
 launch-screen@1.0.4
 livedata@1.0.15
 logging@1.0.8
