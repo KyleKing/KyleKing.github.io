@@ -1,0 +1,46 @@
+<template name="bikeshare_map">
+  {{#prism language="coffeescript" class="line-numbers"}}
+		window.MapObserveHandle = DailyBikeData.find({ Day: today }).observe
+		  added: (bike) ->
+		    latlng = bike.Coordinates
+		    BikeIcon = IconLogic(bike.Tag)
+		    MapMarkers[bike._id] = L.marker(latlng,
+		      title: bike.Bike
+		      opacity: 0.75
+		      icon: BikeIcon).on("click", (e) ->
+		        # Important Vars
+		        [today, now] = CurrentDay()
+		        SelectedBike = e.target.options.title
+		        Session.set
+		          'selectedBike': SelectedBike
+		          'available': false
+		        # Find bike info
+		        coords = DailyBikeData.findOne({Bike: SelectedBike}).Coordinates
+		        window.BikeMap.panTo coords, 18
+		        ).addTo(window.BikeMap)
+
+		  changed: (bike, oldBike) ->
+		    if oldBike.Tag is bike.Tag
+		      latlng = bike.Coordinates
+		      MapMarkers[bike._id].setLatLng(latlng).update()
+		    else if bike.Tag is Meteor.userId()
+		      MapMarkers[bike._id].setIcon window.Reserved
+		      console.log 'Changed to green icon color for # ' + bike.Bike
+		    else if bike.Tag is "Available"
+		      MapMarkers[bike._id].setIcon window.Available
+		      console.log 'Changed to gray icon color for # ' + bike.Bike
+
+		  removed: (oldBike) ->
+		    if oldBike.Tag isnt Meteor.userId() and Session.get 'available'
+		      # If removed bike is currently selected bike...
+		      if Session.get("selectedBike") is oldBike.Bike
+		        # Updated reserve bike text
+		        Session.set "available": false
+		        # And alert user
+		        sAlert.error('Bike reserved by different user. Select new bike')
+		    # Remove the marker from the map
+		    window.BikeMap.removeLayer MapMarkers[oldBike._id]
+		    # Remove the reference to this marker instance
+    		delete MapMarkers[oldBike._id]
+  {{/prism}}
+</template>

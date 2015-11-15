@@ -24,6 +24,7 @@ standard-minifiers      # JS/CSS minifiers run for production mode
 # Style
 kyleking:customizable-bootstrap-stylus
 fortawesome:fontawesome
+gadicohen:prism
 
 # PreProcessors
 stolinski:stylus-multi # with postCSS support! but somewhat outdated elsewhere

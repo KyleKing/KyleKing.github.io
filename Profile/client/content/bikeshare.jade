@@ -7,18 +7,23 @@ template(name="bikeshare")
 	p.cd At the University of Maryland, I am actively working with 13 undergraduate students to build a stationless bikeshare system as part of a four year honors research program. I am the full stack web developer of our website and have contributed to other facets of the project including sensor selection, smart-lock design, and to help with rapid prototyping.
 
 	figure.figure
-		img(src="imgs/bikeshare-04.png").small-cd
-		figcaption.figure-caption.text-left The Completed Map with several interactive features
-
-	figure.figure
-		img(src="imgs/bikeshare-03.jpg").small-cd
-		figcaption.figure-caption.text-left A teammate's printed lock components
+		img(src="imgs/bikeshare-06.jpg").small-cd
+		figcaption.figure-caption.text-left Our team
 
 	h4.cd The Technology
 	p.cd To use our system, a user can load our website and look for the nearest available bike. To reserve the bike, the user only has to tap the icon and will receive a success message confirming the reservation. When the user arrive at the bike rack, they can tap any available bike with their RedBars NFC card. Their encrypted ID is then sent to the database to request access. The website recognizes the user and clears their reservation, while returning a code to unlock the bike. Using a small linear actuator, the locking pin is released, so the user may now ride the bike. When done with their ride, the user can return their bike to any rack on campus. When the user locks the bike the electronics send a ping to the website and confirm the new location and the successful locking event. Both messages from the bike-mounted smart lock to the website are sent over a distributed Zigbee routing system and collected by a raspberry pi to be sent to the database.
 
+	figure.figure
+		+juxtapose(id='bikeshare-1')
+		figcaption.figure-caption.text-left Our Smart Lock Concept
+
+	figure.figure
+		img(src="imgs/bikeshare-04.png").small-cd
+		figcaption.figure-caption.text-left The Completed Map with several interactive features
+
 	h4.cd Challenges
-	ul
+	ul.cd
+
 		li Learn Web Development, Select a Platform, and Design Content
 		li Manage a Database and display information on a map in real time
 		li Iterate over user feedback
@@ -27,15 +32,26 @@ template(name="bikeshare")
 
 	h4.cd Progress
 	h5.cd Self-Taught Web Development
-	p.cd I built my first website in December of 2013 with static HTML and CSS files. A few months later, I began teaching myself more advanced website development
-	Realizing the value and the need of our bikeshare
-	p.cd Over the following semester, I tested out different frameworks involving Node/MEAN, Firebase, Native iOS, and more, but selected Meteor for its cross-platform support, integrated real-time support, and extensive package library. I took courses on Treehouse to learn the basics then began learning as problems arose or returning to the Meteor documentation for support. To help plan out the website I researched other bikeshare websites and opened up the web inspector to understand how pages I liked worked.
+	p.cd I built my first website in December of 2013 with static HTML and CSS files. A few months later, I began teaching myself more advanced website development with the goal of solving one of our leading issues, inventory management and system coordination. I researched many different frameworks, such as Node/MEAN, Firebase, Native iOS, and more, but selected Meteor for its cross-platform support, optimistic user interface, and growing package library. I was equally excited to be part of a up and coming platform and contribute to an equally growing community.
+	h1.cd Much of what I learned was from a variety of resources including the Meteor documentation, exploring with the web inspector, stack overflow, and many blog posts.
 
 	h5.cd Real Time Mapping
-	p.cd One of the most crucial steps of the website was to manage a map screen to allow the user to see the nearest available bike. I created a database structure to store bike information inside the database (shown below) then tapped into Meteor's .observe query to fire events on database updates. This functionality became even more important when I added the reserve feature and needed to quickly prevent the same bike being reserved twice as we anticipate heavy usage when classes end. I wrote up a sample application for my professional writing class and have released a demo application to make .... Test out the demo map at... and see some of the other things.
+	p.cd To quickly iterate and develop my skills, I set my first priority to build a real time map. Having a map will be crucial to the core function of the website, as most of the data will be geographic coordinates. I tapped into the Meteor's '.observe' query to fire events on database updates. Take a look at the code behind the application and a demo of the functionality.
+
+	h1.cd Map DEMO (TBD)
+	//- #map
+	.cd
+		+bikeshare_map
+
+	//- p.cd The next challenge was to optimize the database structure and reduce the load time for an anticipated 80-100 bikes for a complete bikeshare. Additionally, I knew that we would have two updates per bike ride with an estimated 10 rides per day.
 
 	h5.cd Iterate over user feedback
-	p.cd We ran a focus group early on in the website's development and I have received constant feedback from friends, coworkers, and classmates on the design, operation, and look of the website. I have released three major user interface overhauls and removed many navigational pages to simplify the entire experience.
+	p.cd We ran a focus group midway through our development to receive feedback on our business model, website, and lock design. We received feedback on all aspects of our project that helped guide our development
+
+	the website's development and I have received constant feedback from friends, coworkers, and classmates on the design, operation, and look of the website. I have released three major user interface overhauls and removed many navigational pages to simplify the entire experience.
+
+
+
 	p.cd A new feature that we hadn't considered was the reserve feature. From roughly 20 customer interviews we conducted, the reserve feature was mentioned in some way with positive feedback, so I moved forward with developing the extension to our database. Additionally on the map page, we received feedback on locating the user, but this feedback turned out to be much more complex. Some users preferred to find their own position on the map, while a majority preferred to have the map automatically locate them each time. To build a workaround, I added a toggle button to turn on/off the location feature and the ability to remember this state for each user. Learning from users has proved highly effective and an excellent experience while still a student.
 
 	h5.cd Begin Integrating Security features
