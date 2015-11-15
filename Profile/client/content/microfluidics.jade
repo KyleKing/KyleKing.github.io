@@ -72,6 +72,15 @@ template(name='microfluidics')
 
 	p.cd Producing agarose beads has proven to be the most difficult component. Agarose is a finicky material because at room temperature it quickly gels and a gelling solution inside a microfluidic chip can alter internal pressures and flow rates or simply clog the device. However when I want the beads to gel into distinct beads, I need the beads to quickly cool.
 	p.cd Finding a solution that met both needs is tricky, but I have made signifiant progress. Currently, I have built a platform nicknamed “Turtle-Bot” for its acrylic legs. The microfluidic chip is placed on top of peltier tiles, one around 40°C and the second around 5-10°C. Each tile is controlled by a raspberry pi with a PI controller. The combination of the 3D printed parts and laser cut supports allowed for rapid prototyping of this approach with a very fast turnaround.
+
+	figure.figure
+		img(src="imgs/microfluidics-26.jpg").small-cd
+		figcaption.figure-caption.text-left Turtle Bot
+
+	figure.figure
+		img(src="imgs/microfluidics-25.jpg").small-cd
+		figcaption.figure-caption.text-left Temporarily mounted raspberry pi PI controller
+
 	p.cd While a flashy solution helped solve the issue of heating and cooling the microfluidic chip, I needed a simple solution for heating the dead volume inside the syringe. Using felt, electrical tape, tin foil, and heat tape, I designed a reusable and insulated design that would maintain a constant temperature of 60°C inside the syringe (pictured below).
 
 	.small-juxtapose
@@ -79,9 +88,6 @@ template(name='microfluidics')
 	//- figure.figure
 	//- 	img(src="imgs/microfluidics-25.jpg").small-cd
 	//- 	figcaption.figure-caption.text-left Prototype syringe heater
-	figure.figure
-		img(src="imgs/microfluidics-24.jpg").small-cd
-		figcaption.figure-caption.text-left Turtle Bot
 
 	h5.cd Next Steps
 	p.cd In the next few months, I will be working on an integrated demo that combines my progress with bead production and chemical diagnostic experiments inside a COC chip. Once completed, I hope to publish a paper and discuss the advantages of this approach for microfluidic diagnostics.
