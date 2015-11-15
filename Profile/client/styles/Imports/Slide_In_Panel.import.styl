@@ -244,15 +244,12 @@ html
   z-index: base-index
   /* smooth scrolling on touch devices */
   -webkit-overflow-scrolling: touch
-  p.cd
-    font-size(14px)
-  +MQ(M)
-    p.cd
-      font-size(16px)
 
 
 // Based on Medium's style sheet
 h4.cd
+  margin-top 30px
+
   width 100%
   max-width 700px
 
@@ -273,6 +270,8 @@ h4.cd
 
 
 h5.cd
+  margin-top 20px
+
   width 100%
   max-width 700px
 
@@ -294,7 +293,7 @@ p.cd
   -webkit-font-smoothing: antialiased;
   color: rgba(0, 0, 0, 0.8);
   font-family: medium-content-serif-font, Georgia, Cambria, 'Times New Roman', Times, serif;
-  // font-size 14px // set elsewhere in this doc
+  font-size(16px) // set elsewhere in this doc
   font-style: normal;
   font-weight: normal;
   letter-spacing: -0.063px;
@@ -304,8 +303,14 @@ p.cd
   display block
   margin-left auto
   margin-right auto
-  +MQ(M)
-    line-height: 33.18px;
+  line-height: 25px
+  // +MQ(M)
+  //   line-height: 33.18px;
+
+  // font-size(16px)
+  // +MQ(M)
+  //   p.cd
+  //     font-size(16px)
 
 
 ul
@@ -336,38 +341,38 @@ ul
   display: block
   z-index: 1020
   color light
-  font-size: 14px
+  font-size: 16px
   text-align: center
   text-decoration: none
   background-color dark
   border-radius: 5px
   top (($title-panel-height - 39) / 2)
-  right 110px
+  right 120px
   +MQ(L)
     right 125px
   padding: 10px
 
   // Make only visible on md or larger screens
   opacity 0
-  +MQ(M)
-    &.visible
-      opacity 1
+  // +MQ(M)
+  &.visible
+    opacity 1
   transition all 0.1s
 
 .tooltip-arrow-right
   // Place the arrow
   position absolute
   top (($title-panel-height - 18) / 2)
-  right 101px
+  right 110px + 1px
   +MQ(L)
-    right 101px + 15px
+    right 125px + 1px
   z-index 1010
 
   // Make only visible on md or larger screens
   opacity 0
-  +MQ(M)
-    &.visible
-      opacity 1
+  // +MQ(M)
+  &.visible
+    opacity 1
   transition all 0.1s
 
   // Now the Trippy part
