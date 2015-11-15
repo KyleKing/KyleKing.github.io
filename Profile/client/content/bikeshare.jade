@@ -4,26 +4,51 @@ template(name="bikeshare_title")
 
 template(name="bikeshare")
 	h4.cd Summary
-	p.cd As part of a four-year honors research program, Gemstone, I've been working with 13 other undergraduate students on building a university bikeshare. My primary role has been the full stack web development of our website, but I have contributed to other facets of the team including sensor selection and the smart-lock design.
+	p.cd I am actively working with 13 undergraduate students to build a bikeshare system at the University of Maryland as part of a four year honors research program. I am the full stack web developer of our website and have contributed to other facets of the project including sensor selection and the smart-lock design.
 
 	figure.figure
 		img(src="imgs/bikeshare-3.jpg").small-cd
 		figcaption.figure-caption.text-left Caption
 
-	h4.cd Challenges
-	p.cd Over the past two years, I had to rapidly teach myself how to build a website. I had some prior experience in MatLab and C, but had never tried to build a website before. I likewise had to narrow down and select a website framework, learn a back-end db structure, learn git, and pickup some website design skills.
-
-	p.cd ...
-
 	figure.figure
 		img(src="imgs/bikeshare-4.jpg").small-cd
 		figcaption.figure-caption.text-left Caption
 
+	h4.cd The Technology
+	p.cd TO best explain the system, let me walk through a typical users' experience and integrate the technical components. First a user can check our app or website and see available bikes displayed on a map, select the nearest one with a tap and reserve that bike for five minutes. When they arrive at the bike rack they reserved a bike from they can tap their NFC ID card onto the smart lock reader. The lock process the tag and requests the database to unlock the bike thus clearing the users reservation. The lock communicates with the website/database over a network of Zigbee routers (explained in more detail below). Upon confirmation from the database, the lock powers a smaller linear actuator for a second and the lock spins open on a spring. The user can then lock the bike into a riding position and ride to any bike rack on campus. once finished, the user moves the lock back into a locking position and the bike locks automatically. The bike sends a confirmation of a completed trip and the rider can go on his way.
+
+	h4.cd Challenges
+	ul
+		li Learn Web Development, Select a Platform, and Design Content
+		li Manage a Database and display information in real time (Mapping demo)
+		li Iterate over user feedback
+		li Begin Integrating Security features
+		li Systems Integration and Multi-Disciplinary Contributions
+
 	h4.cd Progress
+	h5.cd Self-Taught Web Development
+	p.cd I never thought I could code. It wasn't until my first semester in Calculus III, when I wrote my first MatLab code. One introductory class on C/MatLab later, I gained a much better depth of knowledge and threw myself into my first web development project, I built a blog for a bike trip across the country. Returning from the trip, I had a new tool that I was eager to apply to my gemstone team to fill a technological void.
+	p.cd Over the following semester, I tested out different frameworks involving Node/MEAN, Firebase, Native iOS, and more, but selected Meteor for its cross-platform support, integrated real-time support, and extensive package library. I took courses on Treehouse to learn the basics then began learning as problems arose or returning to the Meteor documentation for support. To help plan out the website I researched other bikeshare websites and opened up the web inspector to understand how pages I liked worked.
+
+	h5.cd Real Time Mapping
+	p.cd One of the most crucial steps of the website was to manage a map screen to allow the user to see the nearest available bike. I created a database structure to store bike information inside the database (shown below) then tapped into Meteor's .observe query to fire events on database updates. This functionality became even more important when I added the reserve feature and needed to quickly prevent the same bike being reserved twice as we anticipate heavy usage when classes end. I wrote up a sample application for my professional writing class and have released a demo application to make .... Test out the demo map at... and see some of the other things.
+
+	h5.cd Iterate over user feedback
+	p.cd We ran a focus group early on in the website's development and I have received constant feedback from friends, coworkers, and classmates on the design, operation, and look of the website. I have released three major user interface overhauls and removed many navigational pages to simplify the entire experience.
+	p.cd A new feature that we hadn't considered was the reserve feature. From roughly 20 customer interviews we conducted, the reserve feature was mentioned in some way with positive feedback, so I moved forward with developing the extension to our database. Additionally on the map page, we received feedback on locating the user, but this feedback turned out to be much more complex. Some users preferred to find their own position on the map, while a majority preferred to have the map automatically locate them each time. To build a workaround, I added a toggle button to turn on/off the location feature and the ability to remember this state for each user. Learning from users has proved highly effective and an excellent experience while still a student.
+
+	h5.cd Begin Integrating Security features
+	p.cd Securing the user information has always been a priority and one that I picked up early when starting developing with Meteor. Luckily user accounts and roles are very easy to create within the Meteor ecosystem. ....
+
+	h5.cd Systems Integration and Multi-Disciplinary Contributions
+
+	p.cd Arduino - Zigbee → (XBee Protocol) ← Zigbee - raspberry pi → (DDP) ← Meteor Database
+	p.cd One of the most interesting components of this website was the challenge of integrating a communication network with real time updates to the website's database. I solved this by building a minimalistic Node.JS application that communicates over Meteor's default Distributed Document Protocol (DDP). The Node application is run on an equally minimalist raspberry pi, which collects information over serial directly from a XBee module (our communications network). Through this process we can allow for two way communication and allow for a high throughput of information from our end-IOT devices.
+
+
 	p.cd All of this hard work has paid off in the progress I've made towards building
 		a(href="https://redbarbikes.com") redbarbikes.com
 		| . The website includes several functions including login roles, real time maps, an admin panel with charts and tables, and many more. I've learned how to use Meteor-Up and host the website behind an SSL certificate on one Digital Ocean's servers.
 
-	h4.cd Deliverables
-	p.cd Arduino - Zigbee → (XBee Protocol) ← Zigbee - raspberry pi → (DDP) ← Meteor Database
-	p.cd One of the most interesting components of this website was the challenge of integrating a communication network with real time updates to the website's database. I solved this by building a minimalistic Node.JS application that communicates over Meteor's default Distributed Document Protocol (DDP). The Node application is run on an equally minimalist raspberry pi, which collects information over serial directly from a XBee module (our communications network). Through this process we can allow for two way communication and allow for a high throughput of information from our end-IOT devices.
+	h5.cd Next Steps
+	p.cd As of November 15th, we have exactly five months left to finish our Thesis paper and complete each of our subteam's goals. For me this means that I will need to finish the general user interface, fix the last few bugs, integrate tests to make sure the demo day proceeds smoothly, and a whole litany of features.
