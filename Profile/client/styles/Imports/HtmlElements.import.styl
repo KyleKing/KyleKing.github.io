@@ -1,6 +1,7 @@
 body
-  // background-color: rgb(38, 102, 135)
-  background-color #1F618D
+  // background-color #1F618D
+  // background-color #2B3E51
+  background-color darken(#227FBB, 30%)
   // font: 400 1em/1.38 Helvetica
   font-family: medium-content-sans-serif-font, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
   color: dark
@@ -73,3 +74,9 @@ button
   box-shadow: 0px 2px 0px 0px #154360
 button:hover
   background-color: #154360
+
+// box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];
+.card
+  box-shadow 5px 5px 5px 0px #2B3E51  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+.card-image
+  box-shadow 5px 0px 5px 0px #2B3E51  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
