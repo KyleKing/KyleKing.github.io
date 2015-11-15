@@ -4,7 +4,9 @@ template(name="bikeshare_title")
 
 template(name="bikeshare")
 	h4.cd Summary
-	p.cd At the University of Maryland, I am actively working with 13 undergraduate students to build a stationless bikeshare system as part of a four year honors research program. I am the full stack web developer of our website and have contributed to other facets of the project including sensor selection, smart-lock design, and to help with rapid prototyping.
+	p.cd At the University of Maryland, I am actively working with 13 undergraduate students to build a stationless bikeshare system as part of a four year honors research program. I am the full stack web developer of our website (
+		a(href='https://redbarbikes.com') RedbarBikes.com
+		| ) and have contributed to other facets of the project including sensor selection, smart-lock design, and help with rapid prototyping.
 
 	figure.figure
 		img(src="imgs/bikeshare-06.jpg").small-cd
@@ -17,9 +19,9 @@ template(name="bikeshare")
 		+juxtapose(id='bikeshare-1')
 		figcaption.figure-caption.text-left Our Smart Lock Concept
 
-	figure.figure
-		img(src="imgs/bikeshare-04.png").small-cd
-		figcaption.figure-caption.text-left The Completed Map with several interactive features
+	//- figure.figure
+	//- 	img(src="imgs/bikeshare-04.png").small-cd
+	//- 	figcaption.figure-caption.text-left The Completed Map with several interactive features
 
 	h4.cd Challenges
 	ul.cd
@@ -34,10 +36,10 @@ template(name="bikeshare")
 	h5.cd Self-Taught Web Development
 	p.cd I built my first website in December of 2013 with static HTML and CSS files. A few months later, I began teaching myself more advanced website development with the goal of solving one of our leading issues, inventory management and system coordination. I researched many different frameworks, such as Node/MEAN, Firebase, Native iOS, and more, but selected Meteor for its cross-platform support, optimistic user interface, and growing package library. I was equally excited to be part of a up and coming platform and contribute to an equally growing community.
 
-	h5.cd Real Time Mapping
+	h5.cd#RealTimeDemo Real Time Mapping
 	p.cd To quickly iterate and develop my skills, I set my first priority to build a real time map. Having a map will be crucial to the core function of the website, as most of the data will be geographic coordinates. I tapped into the Meteor's '.observe' query to fire events on database updates. Take a look at the code behind the application and a demo of the functionality.
 
-	h4.cd#RealTimeDemo Real Time Map Demo
+	h4.cd Real Time Map Demo
 	row.cd
 		button#DeleteOldBikes.map Randomize all bike locations
 		//- button#DeleteOldBikes Randomize All Bike Statuses (Icons)
@@ -47,7 +49,7 @@ template(name="bikeshare")
 	//- 	button(id="{{BikeID}}") Delete Me
 	//- 	button(id="{{BikeID}}") Generate a New Random Status
 
-	.cd
+	.cd.hidden-xs
 		+bikeshare_map
 
 	//- p.cd The next challenge was to optimize the database structure and reduce the load time for an anticipated 80-100 bikes for a complete bikeshare. Additionally, I knew that we would have two updates per bike ride with an estimated 10 rides per day.
@@ -65,7 +67,7 @@ template(name="bikeshare")
 	h5.cd Systems Integration and Multi-Disciplinary Contributions
 	p.cd As our communication network, on-bike electronics, mechanical housing and lock, and the website progressed independently, the next challenge became integrating our diverse system. The smart lock will trigger based on a user's swipe and send a csv string to the Zigbee end device. That string is then sent to the nearest router and eventually progresses to the coordinator device. I worked on converting the string from the coordinator to inserting the information into the website's database. Researching how Meteor communicated with the client, I chose to create a DDP connection from a Node.js application. First prototyping the action with an Arduino directly connected to a laptop, I shifted the application to a raspberry pi connected to a Zigbee over USB. With the newest version of Meteor, 1.2, the meteor packages were split into individual packages. Taking advantage of the minimalistic version of Meteor, I converted the Node.js application into a meteor application with easier support for Coffeescript and simple transfer of Node packages.
 
-	.cd
+	.cd.hidden-xs
 		+bikeshare_rpi
 
 	h5.cd Next Steps

@@ -1,46 +1,62 @@
 <template name="bikeshare_map">
   {{#prism language="coffeescript" class="line-numbers"}}
-		window.MapObserveHandle = DailyBikeData.find({ Day: today }).observe
-		  added: (bike) ->
-		    latlng = bike.Coordinates
-		    BikeIcon = IconLogic(bike.Tag)
-		    MapMarkers[bike._id] = L.marker(latlng,
-		      title: bike.Bike
-		      opacity: 0.75
-		      icon: BikeIcon).on("click", (e) ->
-		        # Important Vars
-		        [today, now] = CurrentDay()
-		        SelectedBike = e.target.options.title
-		        Session.set
-		          'selectedBike': SelectedBike
-		          'available': false
-		        # Find bike info
-		        coords = DailyBikeData.findOne({Bike: SelectedBike}).Coordinates
-		        window.BikeMap.panTo coords, 18
-		        ).addTo(window.BikeMap)
+	Template.bikeshare.rendered = ->
+	  @subscribe("DailyBikeDataPub")
 
-		  changed: (bike, oldBike) ->
-		    if oldBike.Tag is bike.Tag
-		      latlng = bike.Coordinates
-		      MapMarkers[bike._id].setLatLng(latlng).update()
-		    else if bike.Tag is Meteor.userId()
-		      MapMarkers[bike._id].setIcon window.Reserved
-		      console.log 'Changed to green icon color for # ' + bike.Bike
-		    else if bike.Tag is "Available"
-		      MapMarkers[bike._id].setIcon window.Available
-		      console.log 'Changed to gray icon color for # ' + bike.Bike
+	  # Call MapInit function from s_Helpers
+	  MapInit
+	    MapName: 'DemoMap'
+	    LocateUser: false
+	    DrawOutline: false
+	    Center: [38.987701, -76.940989]
+	    ShowClosestBikes: false
+	    FullScreenButton: false
+	    PopupGuide: "I'm a bike!"
+	    ShowBikeRacksMarkerToggle: false
 
-		  removed: (oldBike) ->
-		    if oldBike.Tag isnt Meteor.userId() and Session.get 'available'
-		      # If removed bike is currently selected bike...
-		      if Session.get("selectedBike") is oldBike.Bike
-		        # Updated reserve bike text
-		        Session.set "available": false
-		        # And alert user
-		        sAlert.error('Bike reserved by different user. Select new bike')
-		    # Remove the marker from the map
-		    window.BikeMap.removeLayer MapMarkers[oldBike._id]
-		    # Remove the reference to this marker instance
-    		delete MapMarkers[oldBike._id]
+	  # Inspiration: http://meteorcapture.com/how-to-create-a-reactive-google-map/
+	  MapMarkers = []
+
+	  [today, now] = CurrentDay()
+	  window.MapObserveHandle = DailyBikeData.find({}).observe
+	    added: (bike) ->
+	      latlng = [Number(bike.Coordinates.Lat), bike.Coordinates.Lng]
+	      BikeIcon = IconLogic(bike.Tag)
+	      MapMarkers[bike._id] = L.marker(latlng,
+	        title: bike.Bike
+	        opacity: 0.75
+	        icon: BikeIcon).on("click", (e) ->
+	          # Important Vars
+	          [today, now] = CurrentDay()
+	          SelectedBike = e.target.options.title
+	          Session.set
+	            'selectedBike': SelectedBike
+	            'available': false
+	          # Find bike info
+	          coords = DailyBikeData.findOne({Bike: SelectedBike}).Coordinates
+	          latlng = [Number(coords.Lat), Number(coords.Lng)]
+	          window.DemoMap.panTo latlng, 18
+	          ).addTo(window.DemoMap)
+
+	    changed: (bike, oldBike) ->
+	      latlng = [Number(bike.Coordinates.Lat), Number(bike.Coordinates.Lng)]
+	      MapMarkers[bike._id].setLatLng(latlng).update()
+	      if bike.Tag is 'Reserved'
+	        MapMarkers[bike._id].setIcon window.Reserved
+	        console.log 'Changed to reserved icon for # ' + bike.Bike
+	       else if bike.Tag is 'RepairInProgress'
+	        MapMarkers[bike._id].setIcon window.Damaged
+	        console.log 'Changed to damaged icon for # ' + bike.Bike
+	      else if bike.Tag is "Available"
+	        MapMarkers[bike._id].setIcon window.Available
+	        console.log 'Changed to gray icon color for # ' + bike.Bike
+	      else
+	        console.log bike.Tag
+
+	    removed: (oldBike) ->
+	      # Remove the marker from the map
+	      window.DemoMap.removeLayer MapMarkers[oldBike._id]
+	      # Remove the reference to this marker instance
+	      delete MapMarkers[oldBike._id]
   {{/prism}}
 </template>
