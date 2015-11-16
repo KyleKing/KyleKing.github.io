@@ -12,7 +12,7 @@ Template.microfluidics.onRendered ->
     animate: true
     showLabels: true
     showCredits: false
-    startingPosition: '75%%'
+    startingPosition: '60%'
     makeResponsive: true)
 
   # # Note: aspect ratio of 5:7 in portrait
