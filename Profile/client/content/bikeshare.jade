@@ -3,10 +3,11 @@ template(name="bikeshare_title")
 	h1.cd.hidden-sm.hidden-md.hidden-lg Bikeshare
 
 template(name="bikeshare")
-	h4.cd Summary
-	p.cd At the University of Maryland, I am actively working with 13 undergraduate students to build a stationless bikeshare system as part of a four year honors research program. I am the full stack web developer of our website (
-		a(href='https://redbarbikes.com') RedbarBikes.com
-		| ) and have contributed to other facets of the project including sensor selection, smart-lock design, and help with rapid prototyping.
+	.summary
+		h4.cd Summary
+		p.cd At the University of Maryland, I am actively working with 13 undergraduate students to build a stationless bikeshare system as part of a four year honors research program. I am the full stack web developer of our website (
+			a(href='https://redbarbikes.com') RedbarBikes.com
+			| ) and have contributed to other facets of the project including sensor selection, smart-lock design, and help with rapid prototyping.
 
 	figure.figure
 		img(src="imgs/bikeshare-06.jpg").small-cd
@@ -16,12 +17,12 @@ template(name="bikeshare")
 	p.cd To use our system, a user can load our website and look for the nearest available bike. To reserve the bike, the user only has to tap the icon and will receive a success message confirming the reservation. When the user arrive at the bike rack, they can tap any available bike with their RedBars NFC card. Their encrypted ID is then sent to the database to request access. The website recognizes the user and clears their reservation, while returning a code to unlock the bike. Using a small linear actuator, the locking pin is released, so the user may now ride the bike. When done with their ride, the user can return their bike to any rack on campus. When the user locks the bike the electronics send a ping to the website and confirm the new location and the successful locking event. Both messages from the bike-mounted smart lock to the website are sent over a distributed Zigbee routing system and collected by a raspberry pi to be sent to the database.
 
 	figure.figure
-		+juxtapose(id='bikeshare-1')
-		figcaption.figure-caption.text-left Our Smart Lock Concept
+		img(src="imgs/bikeshare-05.jpg").small-cd
+		figcaption.figure-caption.text-left Our Smart Lock Concept Sketch
 
-	//- figure.figure
-	//- 	img(src="imgs/bikeshare-04.png").small-cd
-	//- 	figcaption.figure-caption.text-left The Completed Map with several interactive features
+	figure.figure
+		img(src="imgs/bikeshare-07.jpg").small-cd
+		figcaption.figure-caption.text-left Completed Smart Lock Design
 
 	h4.cd Challenges
 	ul.cd

@@ -3,8 +3,9 @@ template(name='microfluidics_title')
 	h1.cd.hidden-sm.hidden-md.hidden-lg Microfluidics
 
 template(name='microfluidics')
-	h4.cd Summary
-	p.cd Quick and efficient disease diagnostics require percision, innovation, and ingenuity. Current diagnostic tests are often performed by lab technicians and can take 24 to 48 hours to heed results. Accurate and reliable results can influence treatment plans to avoid unnecessary follow up appointments. As an undergraduate researcher in the MML, I am developing technology that simplifies the diagnostic process. The final product is a tool that can be integrated into a sample preparation device to be used by a variety of audiences including primary care physicians and doctors in developing countries.
+	.summary.cd
+		h4.cd Summary
+		p.cd Quick and efficient disease diagnostics require percision, innovation, and ingenuity. Current diagnostic tests are often performed by lab technicians and can take 24 to 48 hours to heed results. Accurate and reliable results can influence treatment plans to avoid unnecessary follow up appointments. As an undergraduate researcher in the MML, I am developing technology that simplifies the diagnostic process. The final product is a tool that can be integrated into a sample preparation device to be used by a variety of audiences including primary care physicians and doctors in developing countries.
 
 	h4.cd The Technology
 	p.cd Rather than waiting for an analyte sample to interact with an activated surface, our solution involves an efficient matrix of activated low melting point (LMP) agarose beads. The large surface area results in little to no delays in diffusion time, allowing for rapid binding reactions and the identification of small concentrations of analyte. Quantifying the amount of analyte requires a specific technique to overcome the opaque nature of the capture matrix. LMP agarose beads can be melted by an external heater to create a solid and transparent mass, overcoming light scatter and limited optical detection caused by silicon beads, monoliths, and agarose.
@@ -83,11 +84,11 @@ template(name='microfluidics')
 
 	p.cd. To overcome the heating and cooling challenges, I used felt, electrical tape, tin foil, and heat tape to create a reusable and insulated material that maintains a constant temperature of 60°C within the syringe (pictured below).
 
-	.small-juxtapose
-		+juxtapose(id='Syring-heater')
-	//- figure.figure
-	//- 	img(src="imgs/microfluidics-25.jpg").small-cd
-	//- 	figcaption.figure-caption.text-left Prototype syringe heater
+	//- .small-juxtapose
+	//- 	+juxtapose(id='Syring-heater')
+	figure.figure
+		img(src="imgs/microfluidics-04.jpg").small-cd
+		figcaption.figure-caption.text-left Prototype syringe heater
 
 	h5.cd Key Takeaways
 	ul.cd

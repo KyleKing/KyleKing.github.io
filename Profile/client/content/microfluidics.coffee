@@ -15,19 +15,19 @@ Template.microfluidics.onRendered ->
     startingPosition: '75%%'
     makeResponsive: true)
 
-  # Note: aspect ratio of 5:7 in portrait
-  slider = new (juxtapose.JXSlider)('#Syring-heater', [
-    {
-      src: 'imgs/microfluidics-04.jpg'
-      label: 'With insulation'
-    }
-    {
-      src: 'imgs/microfluidics-03.jpg'
-      label: 'Testing'
-    }
-  ],
-    animate: true
-    showLabels: true
-    showCredits: false
-    startingPosition: '60%'
-    makeResponsive: true)
+  # # Note: aspect ratio of 5:7 in portrait
+  # slider = new (juxtapose.JXSlider)('#Syring-heater', [
+  #   {
+  #     src: 'imgs/microfluidics-04.jpg'
+  #     label: 'With insulation'
+  #   }
+  #   {
+  #     src: 'imgs/microfluidics-03.jpg'
+  #     label: 'Testing'
+  #   }
+  # ],
+  #   animate: true
+  #   showLabels: true
+  #   showCredits: false
+  #   startingPosition: '60%'
+  #   makeResponsive: true)
