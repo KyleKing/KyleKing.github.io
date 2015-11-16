@@ -1,15 +1,17 @@
-FlowRouter.notFound = action: ->
-  BlazeLayout.render 'layout', {
-    body: '404'
-  }
+# FlowRouter.notFound = action: ->
+#   BlazeLayout.render 'layout', {
+#     body: 'about'
+#     Slide_In_Panel_Title: '404_title'
+#     Slide_In_Panel_Content: '404'
+#   }
 
 FlowRouter.route '/',
   name: 'about',
   action: ->
     BlazeLayout.render 'layout', {
       body: 'about'
-      Slide_In_Panel_Title: 'Slide_In_Panel_Placeholder_Title'
-      Slide_In_Panel_Content: 'Slide_In_Panel_Placeholder'
+      Slide_In_Panel_Title: '404_title'
+      Slide_In_Panel_Content: '404'
     }
 
 IDs = [

@@ -1,4 +1,26 @@
+template(name="404_title")
+	h1.cd.hidden-xs Route Not Found
+	h1.cd.hidden-sm.hidden-md.hidden-lg 404
+
 template(name="404")
+	.cd
+		h2.text-center Wow! You found my top secret project. If you can guess what it is, 404 points!
+		.row
+			a(href="mailto:dev.act.kyle@gmail.com").unstyled.poster-container
+				button.poster
+					i.fa.fa-envelope.fa-1x
+					| Email me your guess
+		.row
+			a(href="/").unstyled.poster-container
+				button.poster
+					i.fa.fa-undo.fa-1x
+					| Return Home
+
+	figure.figure
+		img(src="imgs/side-project-1.jpg").small-cd
+		figcaption.figure-caption.text-left.inverse A laser cut 3-axis microscope stage
+
+template(name="404_dark")
 	.cd
 		h1 &nbsp;
 		h2.text-center.inverse Wow! You found my top secret project. If you can guess what it is, 404 points!
