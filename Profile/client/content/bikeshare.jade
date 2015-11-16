@@ -8,19 +8,10 @@ template(name="bikeshare")
 		p.cd At the University of Maryland, I am actively working with 13 undergraduate students to build a stationless bikeshare system as part of a four year honors research program. I am the full stack web developer of our website (
 			a(href='https://redbarbikes.com') RedbarBikes.com
 			| ) and have contributed to other facets of the project including sensor selection, smart-lock design, and help with rapid prototyping.
-		p.cd
-			a(href="/pdf/BIKES-Poster.pdf" target="_blank").unstyled.wrap-icon
-				i.fa.fa-file-pdf-o.fa-3x
-			| See our summary poster presented at Undergraduate Research Day, spring 2015.
-
-		p.cd
-			a(href="/pdf/1.png" target="_blank").unstyled.wrap-icon
-				i.fa.fa-photo.fa-3x
-			| Website screen shot (no style yet) [old]
-		p.cd
-			a(href="/pdf/1-macaw.png" target="_blank").unstyled.wrap-icon
-				i.fa.fa-photo.fa-3x
-			| Website screen shot (no style yet) [new]
+		button(href="/pdf/BIKES-Poster.pdf" target="_blank").poster
+			a.unstyled.wrap-icon
+				i.fa.fa-file-pdf-o.fa-1x
+			| Undergraduate Research Day Poster
 
 	figure.figure
 		img(src="imgs/bikeshare-06.jpg").small-cd
@@ -86,3 +77,17 @@ template(name="bikeshare")
 
 	h5.cd Next Steps
 	p.cd As of November 15th, we have exactly five months left to finish our thesis paper and complete each of our subteam's goals. For me this means that I will need to finish the general user interface, finish the system integration, and fix the last few bugs.
+
+	h5.cd Website Screen Shots
+	.small-juxtapose
+		+juxtapose(id='website')
+
+	//- p.cd
+	//- 	a(href="/pdf/1.png" target="_blank").unstyled.wrap-icon
+	//- 		i.fa.fa-photo.fa-3x
+	//- 	| Website screen shot (no style yet) [old]
+	//- p.cd
+	//- 	a(href="/pdf/1-macaw.png" target="_blank").unstyled.wrap-icon
+	//- 		i.fa.fa-photo.fa-3x
+	//- 	| Website screen shot (no style yet) [new]
+

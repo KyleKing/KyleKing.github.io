@@ -16,6 +16,48 @@
 // enable cross-browser mixins such as linear-gradient and border-radius from Stylus Meteor package
 @import "nib"
 
+$color-1 = #333333
+$color-4 = white
+$color-5 = #89ba2c
+
+// $primary-font: 'Droid Sans', sans-serif;
+// $secondary-font: 'Droid Serif', serif;
+
+$panel-width-S = 100%
+$panel-width-M = 100%
+$panel-width-L = 100%
+$title-panel-height = 75px
+$title-panel-offset = 0px
+base-index = 100
+
+// rem fallback - credits: http://zerosixthree.se/
+calculateRem($size)
+  unit($size/16, 'rem')
+font-size($size)
+  font-size: $size
+  font-size: calculateRem($size)
+// anti-aliasing mode font rendering
+font-smoothing()
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+// breakpoints - from Bootstrap
+$S = $screen-xs
+$M = $screen-sm
+$L = $screen-md
+
+// media queries
+MQ($canvas)
+  if $canvas == S
+    @media only screen and (min-width: $S)
+      {block}
+  else if $canvas == M
+    @media only screen and (min-width: $M)
+      {block}
+  else if $canvas == L
+    @media only screen and (min-width: $L)
+      {block}
+
 
 // Generic
 // The Generic layer is the first one that actually produces any CSS. It houses very high-level, far reaching styles. This layer is seldom modified, and is usually the same across any projects you work on. It contains things like Normalize. css, global box-sizing rules, CSS resets and so on. The Generic layer affects a lot of the DOM, hence it being nice and wide in the Triangle model, and occurring very early on.

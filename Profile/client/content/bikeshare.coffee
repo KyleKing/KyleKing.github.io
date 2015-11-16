@@ -1,3 +1,20 @@
+Template.bikeshare.onRendered ->
+  slider = new (juxtapose.JXSlider)('#website', [
+    {
+      src: 'pdf/1.png'
+      label: 'Second Iteration'
+    }
+    {
+      src: 'pdf/1-macaw.png'
+      label: 'Third Iteration'
+    }
+  ],
+    animate: true
+    showLabels: true
+    showCredits: false
+    startingPosition: '50%'
+    makeResponsive: true)
+
 Template.bikeshare.rendered = ->
   @subscribe("DailyBikeDataPub")
 

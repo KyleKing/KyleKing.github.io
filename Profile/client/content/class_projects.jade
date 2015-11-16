@@ -3,21 +3,40 @@ template(name="class_projects_title")
 	h1.cd.hidden-sm.hidden-md.hidden-lg Class Projects
 
 template(name="class_projects")
-	h4.cd Not updated / currently not visible
+	h4.cd BIOE340 Modeling Physiological Systems
+	p.cd We covered a broad array of topics from cell and general physiology, circulation, metabolism, and the nervous system. In lab, we analyze muscle contractions in a frog leg to understand the refractory period and conducted an ECG analysis on a classmate with Matlab.
 
+	h5.cd ECG Signals Analysis Lab
+	p.cd
+		strong Challenges:
+		|  The ECG data captured in lab was noisy and realistic, which made determining the relevant peaks for analysis difficult
 
-
-
-	h4.cd Summary
-	p.cd The bioengineering curriculum is really interesting and we have many opportunities to explore new concepts including imaging, genetic analysis, and electronics.
-	p.cd ....I need a way to display sample code? ... PLus what code do I want to highlight?
-
-	h4.cd Challenges
-
-	h4.cd Progress
-
-	h4.cd Deliverables
-
+	p.cd Using Matlab, we first had to de-trend the data to establish a clear baseline. We then applied a Savitzky-Golay transform to smooth out the graph and eliminate oscillation and noise around the peaks. With a cleaner signal, we could collect an array of all of the local maxima and minima. Filtering out any points not following the P-QRS-T pattern, the final dataset is ready for diagnosis.
 	figure.figure
-		img(src="imgs/microfluidics-2.jpg").small-cd
-		figcaption.figure-caption.text-left Caption
+		img(src="imgs/mathematica_01.png").small-cd
+		figcaption.figure-caption.text-left Combined ECG leads with highlighted peaks
+
+	p.cd For the last step of diagnosis, we needed to capture the mean electrical axis of the heart. The axis pointing down and to the right suggests normal heart depolarization and a diagnosis of no Bradycardia.
+	figure.figure
+		img(src="imgs/mathematica_02.png").small-cd
+		figcaption.figure-caption.text-left Mean Electrical Axis
+
+
+
+	h4.cd BIOE340 Modeling Physiological Systems
+	p.cd We covered a broad array
+
+	h5.cd ECG Signals Analysis Lab
+	p.cd
+		strong Challenges:
+		|  asd
+
+	p.cd Using Matl
+	figure.figure
+		img(src="imgs/mathematica_01.png").small-cd
+		figcaption.figure-caption.text-left C
+
+	p.cd For the
+	figure.figure
+		img(src="imgs/mathematica_02.png").small-cd
+		figcaption.figure-caption.text-left M
