@@ -1,3 +1,19 @@
 template(name="404")
-	h1.text-center.inverse You seem lost, but lets fix that:
-		a(href="{{ pathFor 'about' }}").inverse return home.
+	.cd
+		h1 &nbsp;
+		h2.text-center.inverse Wow! You found my top secret project. If you can guess what it is, 404 points!
+		.row
+			a(href="mailto:dev.act.kyle@gmail.com").unstyled.poster-container
+				button.poster
+					i.fa.fa-envelope.fa-1x
+					| Email me your guess
+		.row
+			a(href="/").unstyled.poster-container
+				button.poster
+					i.fa.fa-undo.fa-1x
+					| Return Home
+
+	figure.figure
+		img(src="imgs/side-project-1.jpg").small-cd
+		figcaption.figure-caption.text-left.inverse Secret Project
+
