@@ -14,6 +14,15 @@ FlowRouter.route '/',
       Slide_In_Panel_Content: '404'
     }
 
+FlowRouter.route '/pumpyouup',
+  name: 'Eric',
+  action: ->
+    BlazeLayout.render 'layout', {
+      body: 'Eric'
+      Slide_In_Panel_Title: 'Eric_title'
+      Slide_In_Panel_Content: 'Eric'
+    }
+
 IDs = [
   'microfluidics'
   'bikeshare'
