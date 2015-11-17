@@ -11,7 +11,12 @@ template(name="extensions")
 		strong Challenges:
 		|  Syncing data across Chrome browsers and the initial setup
 
-	p.cd To get rid of one of the buttons, I needed a way to guarantee that the user could over-ride the automatic state and that the automatic state would be reliable when users signed in and out from different computers. I found that the chrome local storage was the best solution as it could be synced across browsers and would reliably hold the information. Additionally, I built a small dropdown for the extension that allowed users to manually toggle the state, which proved useful for first time users.
+	p.cd Removing one of the two most important buttons meant that the application had to work seamlessly across different browsers and with a high degree of accuracy. I listened to fellow interns to make the extension as easy as possible to use and based on the feedback, changed the dropdown text to be more clear. To ensure a high level of reliability, I utilized the chrome local storage feature and stored the user state, which could be quickly synced across browsers without any additional backend.
+
+	.mini-cd
+		figure.figure
+			img(src="imgs/extensions-02.png").cd
+			figcaption.figure-caption.text-left WebClock UX dropdown for initial configuration
 
 	.small-juxtapose
 		+juxtapose(id='web-clock')
@@ -28,4 +33,4 @@ template(name="extensions")
 		strong Challenges:
 		|  Properly parsing Bootstrap Stylus into customizable components
 
-	p.cd This package uses a git submodule of the bootstrap-stylus repository. Users can select true and false on a loaded configuration file to selectively incorporate parts of the Bootstrap library. The package then updates the files within your meteor project to show which code has been altered. This is particularly useful when checking for a mixin or variable and defining a distinct user interface. Building all of this functionality took an afternoon of focused development to work out the major kinks and create a reliable application. Although I missed one bug with inaccessible mixins, I was able to promptly close the issue when a user reported the shortcoming.
+	p.cd This package uses a git submodule of the bootstrap-stylus repository. Users can select true and false on a loaded configuration file to selectively incorporate parts of the Bootstrap library. The package then updates the files within your meteor project to show which code has been altered. This is particularly useful when checking for a mixin or variable and defining a distinct user interface. Building all of this functionality took a full day of focused development to work out the major kinks and create a reliable package. Although I missed one bug with inaccessible mixins, I was able to promptly close the issue when a user reported the shortcoming.
