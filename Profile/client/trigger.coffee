@@ -1,7 +1,22 @@
+# Useful for overcoming back button issue in flow.coffee
+# Template.layout.onRendered ->
+#   if Session.equals("NewVisitor", false)
+#     console.log 'Prevent open panel from running on route change'
+#   else
+#     console.log 'attempting to open panel'
+#     $('#cd-panel-toggle').addClass 'is-visible'
+#     # console.log $('.cd-panel').attr 'id'
+#     $('body').addClass 'noscroll'
+#   Session.set "NewVisitor", false
+#   console.log 'Set session to false'
+
+
+
 # Open up slide in panel
 Template.about.events
   'click .card-container': (event) ->
-    id = event.toElement.id
+    # id = event.toElement.id
+    id = event.currentTarget.id
     console.log 'Test me on mobile...maybe touch event has different object?'
     console.log event.originalEvent.path
     if id

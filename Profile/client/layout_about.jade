@@ -1,4 +1,4 @@
-template(name='layout')
+template(name='layout_about')
 	//- .container
 	+Template.dynamic template=body
 
@@ -15,13 +15,13 @@ template(name='layout')
 	//- 		.cd-panel-content
 	//- 			+Template.dynamic template=Slide_In_Panel_Content_Left
 
-	.cd-panel.from-right#cd-panel-toggle
-		header.cd-panel-header
-			+Template.dynamic template=Slide_In_Panel_Title
-			a.cd-panel-close(href='#0') Close
-		.cd-panel-tooltip Or press ESC to close
-		.tooltip-arrow-right
+	//- .cd-panel.from-right#cd-panel-toggle
+	//- 	header.cd-panel-header
+	//- 		+Template.dynamic template=Slide_In_Panel_Title
+	//- 		a.cd-panel-close(href='#0') Close
+	//- 	.cd-panel-tooltip Or press ESC to close
+	//- 	.tooltip-arrow-right
 
-		.cd-panel-container
-			.cd-panel-content#Slide-In-Panel-Content
-				+Template.dynamic template=Slide_In_Panel_Content
+	//- 	.cd-panel-container
+	//- 		.cd-panel-content#Slide-In-Panel-Content
+	//- 			+Template.dynamic template=Slide_In_Panel_Content
