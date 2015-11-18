@@ -28,7 +28,10 @@ Template.about.events
         console.log 'Could not find ID: ' + foundIDs
 
   'click button': (event) ->
-    id = event.toElement.id
+    # console.log event
+    # if event.toElement is undefined
+    #   console.log 'toElement is undefined'
+    id = event.currentTarget.id
     # console.log 'Test me on mobile...maybe touch event has different object?'
     # console.log event.originalEvent.path
     if id

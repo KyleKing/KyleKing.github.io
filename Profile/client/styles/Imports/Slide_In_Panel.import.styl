@@ -104,11 +104,16 @@ html
   overflow: hidden
 
   h1.cd
+    // just to keep text off of left edge on small screen
+    padding-left 10px
+    +MQ(M)
+      padding-left 0px
+
     font-weight: bold
     color: $color-1
 
     // This should be vertically centered (possibly flexbox with Lost grid?):
-    margin-top: (($title-panel-height - 50) / 2)
+    margin-top: (($title-panel-height - 39.6) / 2)
   .from-right &, .from-left &
     top: ($title-panel-offset - $title-panel-height)
     transition: top .3s 0s
@@ -251,7 +256,11 @@ html
   border-left: 9px solid dark
 
 .summary
-  background-color #BDC3C7
+  // Darkest to lightest
+  // background-color #94A5A6
+  // background-color #BDC3C7
+  background-color darken(#ECF0F1, 5%)
+
   padding-right 20px
   padding-left 20px
   padding-bottom 30px
