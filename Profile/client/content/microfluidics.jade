@@ -86,20 +86,20 @@ template(name='microfluidics')
 	//- 		img(src='videos/microfluidics-01.png')
 	//- 	figcaption.figure-caption.text-left Water in oil droplet generation. Filmed on iPhone for higher frame rate
 
-	p.cd Maintaining optimal temperature within the microfluidic chip serves a critical and challenging role in agarose bead prouduction. At room temperature, agarose solidifies into a gel that can alter internal pressures and flow rates or clog the microfluidic chip.
-	p.cd To maintain temperature control, I built Turtle-Bot, a rapidly protopyed platform nicknamed for its 4 acrylic legs. The microfluidic chip is placed on two peltier tiles, one around 40°C and the second around 5-10°C. A raspberry pi with a PID controller controls each peltier tile based on the thermocouple temperature readings and modulates the fans for the active heatsinks.
+	p.cd Maintaining optimal temperature within the microfluidic chip serves a critical and challenging role in agarose bead production. At room temperature, agarose solidifies into a gel that can alter internal pressures and flow rates or clog the microfluidic chip.
+	p.cd To maintain temperature control, I built Turtle-Bot, a rapidly prototyped platform nicknamed for its 4 acrylic legs. The microfluidic chip is placed on two peltier tiles, one around 40°C and the second around 5-10°C. A raspberry pi with a PID controller controls each peltier tile based on the thermocouple temperature readings and modulates the fans for the active heat-sinks. While I am currently working on soldering the components onto a protoboard, the cardboard-based prototype was an innovative approach that was sufficient for the meantime and transferable between projects.
 
 	figure.figure
 		img(src="imgs/microfluidics-26.jpg").small-cd
 		figcaption.figure-caption.text-left Turtle Bot
 	figure.figure
 		img(src="imgs/microfluidics-25.jpg").small-cd
-		figcaption.figure-caption.text-left Temporarily mounted raspberry pi PI controller
+		figcaption.figure-caption.text-left Temporarily mounted raspberry pi PID controller
 	figure.figure
 		img(src="imgs/microfluidics-27.jpg").small-cd
 		figcaption.figure-caption.text-left All neatly stored out of the way in-between uses
 
-	p.cd. To overcome the heating and cooling challenges, I used felt, electrical tape, tin foil, and heat tape to create a reusable and insulated material that maintains a constant temperature of 60°C within the syringe (pictured below). The tin foil creates a low friction surface to slide the syringe in and out, while serving as a mount for the heat tape and insulation.
+	p.cd To overcome the heating and cooling challenges, I used felt, electrical tape, tin foil, and heat tape to create a reusable and insulated material that maintains a constant temperature of 60°C within the syringe (pictured below). The tin foil creates a low friction surface to slide the syringe in and out, while serving as a mount for the heat tape and insulation.
 
 	//- .small-juxtapose
 	//- 	+juxtapose(id='Syring-heater')
