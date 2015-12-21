@@ -1,0 +1,75 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-base             # Packages every Meteor app needs to have
+mobile-experience       # Packages for a great mobile UX
+mongo                   # The database Meteor supports right now
+blaze-html-templates    # Compile .html files into Meteor Blaze views
+session                 # Client-side reactive dictionary for your app
+jquery                  # Helpful client-side library
+tracker                 # Meteor's client-side reactive programming library
+
+standard-minifiers      # JS/CSS minifiers run for production mode
+# es5-shim                # ECMAScript 5 compatibility for older browsers.
+# ecmascript              # Enable ECMAScript2015+ syntax in app code
+
+# autopublish             # Publish all data to the clients (for prototyping)
+# insecure                # Allow all DB writes from clients (for prototyping)
+
+meteortoys:allthings@2.2.0 # Pres ctrl-m to activate
+
+# Style
+kyleking:customizable-bootstrap-stylus
+fortawesome:fontawesome
+gadicohen:prism
+kyleking:juxtapose-js
+
+# PreProcessors
+stolinski:stylus-multi # with postCSS support! but somewhat outdated elsewhere
+coffeescript
+mquandalle:jade
+mrt:underscore-string-latest # Lots of functions
+
+# Routing
+kadira:flow-router
+philippspo:momentum-flow-router # page-transitions
+kadira:blaze-layout # for page Rendering
+arillo:flow-router-helpers # for pathFor
+zimme:active-route # for isActiveRoute
+
+# HTTP
+spiderable
+
+# Map Demo
+bevanhunt:leaflet
+appshore:leaflet-awesome-markers
+herrhelms:meteor-leaflet-locatecontrol
+
+# email
+# // In your server code: define a method that the client can call
+# Meteor.methods({
+#   sendEmail: function (to, from, subject, text) {
+#     check([to, from, subject, text], [String]);
+
+#     // Let other method calls from the same client start running,
+#     // without waiting for the email sending to complete.
+#     this.unblock();
+
+#     Email.send({
+#       to: to,
+#       from: from,
+#       subject: subject,
+#       text: text
+#     });
+#   }
+# });
+
+# // In your client code: asynchronously send an email
+# Meteor.call('sendEmail',
+#             'alice@example.com',
+#             'bob@example.com',
+#             'Hello from Meteor!',
+#             'This is a test of Email.send.');

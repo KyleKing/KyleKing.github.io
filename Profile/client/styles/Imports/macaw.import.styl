@@ -1,0 +1,113 @@
+// Big Image for Hero Element
+.header-image
+  position: relative
+  float: left
+  z-index: 0
+  height: 429px
+  width: 100%
+  background: url("../imgs/microfluidics-01.jpg")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: 50% 30%
+
+.callout-box
+  position: relative
+  float: left
+  clear: both
+  z-index: 3
+  width: 52.8010416666%
+  margin: -120px 0 0 23.6%
+  padding-top: 50px
+  padding-bottom: 50px
+  padding-right 20px
+  padding-left 20px
+  background-color: rgba(255, 255, 255, 0.95)
+
+@media (max-width: 1200px)
+  .callout-box
+    position: relative
+    z-index: 3
+    margin-left: 23.59844%
+
+  .header-image
+    position: relative
+    z-index: 0
+    height: 427px
+
+@media (max-width: 992px)
+  .callout-box
+    position: relative
+    z-index: 3
+    margin-left: 10%
+    width: 80%
+
+// Project Cards
+img_cover_mixin(url, top_spacing)
+  background-image url("../imgs/" + url)
+  background-repeat no-repeat
+  background-size cover
+  background-position 50% top_spacing
+  height 280px
+  width auto
+
+.project-microfluidics-image
+  img_cover_mixin("microfluidics-02.jpg", 50%)
+.project-bikeshare-image
+  img_cover_mixin("bikeshare-01-square.jpg", 25%)
+.project-side-project-image
+  img_cover_mixin("side-project-1.jpg", 50%)
+.project-Canon-image
+  img_cover_mixin("canon.jpg", 15%)
+.project-extensions-image
+  img_cover_mixin("extensions-01.png", 0%)
+.project-3D_printing-image
+  img_cover_mixin("3d_printing-1.jpg", 20%)
+.project-alumni_cup-image
+  img_cover_mixin("alumni_cup-1.jpg", 50%)
+.project-class_projects-image
+  img_cover_mixin("mathematica_01.png", 50%)
+.project-microduino-image
+  img_cover_mixin("microduino.jpg", 50%)
+.project-NEXT-image
+  img_cover_mixin("microduino.jpg", 70%)
+
+
+.card-container
+  padding-top 0
+  padding-bottom 40px
+  margin 0px
+  cursor pointer
+  // When in same row, add spacing around cards
+  @media (min-width: 768px)
+    padding-right 20px
+    padding-left 20px
+
+.description-container
+  height 180px
+  padding-right 15px
+  padding-left 15px
+  @media (max-width: 768px)
+    height 210px
+    padding-right 5px
+    padding-left 5px
+
+  // Begin centering based on guide: http://www.w3.org/Style/Examples/007/center.en.html#block
+  position relative
+
+// Vertically center content
+.description-container .content
+   position absolute
+   top 50%
+   left 50%
+   margin-right -50%
+   transform translate(-50%, -50%)
+
+// Other Misc
+.section-spacing
+  height 50px
+  width 100%
+  margin none !important
+.inverse
+  color light
+.secondary-bg
+  background-color light

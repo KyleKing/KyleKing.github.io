@@ -1,0 +1,107 @@
+template(name="bikeshare_title")
+	h1.cd.hidden-xs Stationless Bikeshare
+	h1.cd.hidden-sm.hidden-md.hidden-lg Bikeshare
+
+template(name="bikeshare")
+	.summary.cd
+		h4.cd Summary
+		p.cd At the University of Maryland, I am actively working with 13 undergraduate students to build a stationless bikeshare system as part of a four year honors research program. I am the full stack web developer of our website (
+			a(href='https://redbarbikes.com') RedbarBikes.com
+			| ) and have contributed to other facets of the project including sensor selection, smart-lock design, and help with rapid prototyping.
+		a(href="/pdf/BIKES-Poster.pdf" target="_blank").unstyled.poster-container
+			button.poster
+				i.fa.fa-file-pdf-o.fa-1x
+				| Undergraduate Research Day Poster
+
+	figure.figure
+		img(src="imgs/bikeshare-06.jpg").small-cd
+		figcaption.figure-caption.text-left Our team
+
+	h4.cd.no-padding The Technology
+	p.cd To use our system, a user can load our website and look for the nearest available bike. To reserve the bike, the user only has to tap the icon and will receive a success message confirming the reservation. When the user arrive at the bike rack, they can tap any available bike with their RedBars NFC card. Their encrypted ID is then sent to the database to request access. The website recognizes the user and clears their reservation, while returning a code to unlock the bike. Using a small linear actuator, the locking pin is released, so the user may now ride the bike. When done with their ride, the user can return their bike to any rack on campus. When the user locks the bike the electronics send a ping to the website and confirm the new location and the successful locking event. Both messages from the bike-mounted smart lock to the website are sent over a distributed Zigbee routing system and collected by a raspberry pi to be sent to the database.
+
+	figure.figure
+		img(src="imgs/bikeshare-10.png").small-cd
+		figcaption.figure-caption.text-left Smartlock components that are placed on each bike
+	figure.figure
+		img(src="imgs/bikeshare-12.png").small-cd
+		figcaption.figure-caption.text-left Communication pathway from smartlock to website
+	figure.figure
+		img(src="imgs/bikeshare-11.png").small-cd
+		figcaption.figure-caption.text-left System diagram of router system to handle multiple smartlock-equipped bikes
+
+	p.cd The bike lock was designed to be locked only to proper bike hoops, the standard bike rack on campus. The lock sits on the seat post and although not shown, is now designed to be rotated away from the bike to lock. There is additionally a pin inside the lock box that immobilizes one of the cuffs. Through paper sketching, CAD design, and 3D printed parts, we've been able to gain rapid feedback on the design and make many iterations.
+	figure.figure
+		img(src="imgs/bikeshare-07.jpg").small-cd
+		figcaption.figure-caption.text-left Our Smart Lock Concept Sketch
+	figure.figure
+		img(src="imgs/bikeshare-08.png").small-cd
+		figcaption.figure-caption.text-left Completed Smart Lock Design
+	figure.figure
+		img(src="imgs/bikeshare-09.png").small-cd
+		figcaption.figure-caption.text-left Printed Prototype
+
+
+	h4.cd Challenges
+	ul.cd
+
+		li Learn Web Development, Select a Platform, and Design Content
+		li Manage a Database and display information on a map in real time
+		li Iterate over user feedback
+		//- li Begin Integrating Security features
+		li Systems Integration and Multi-Disciplinary Contributions
+
+	h4.cd Progress
+	h5.cd Self-Taught Web Development
+	p.cd I built my first website in December of 2013 with static HTML and CSS files. A few months later, I began teaching myself more advanced website development with the goal of solving one of our leading issues, inventory management and system coordination. I researched many different frameworks, such as Node/MEAN, Firebase, Native iOS, and more, but selected Meteor for its cross-platform support, optimistic user interface, and growing package library. I was equally excited to be part of a up and coming platform and contribute to an equally growing community.
+
+	h5.cd#RealTimeDemo Real Time Mapping
+	p.cd To quickly iterate and develop my skills, I set my first priority to build a real time map. Having a map will be crucial to the core function of the website, as most of the data will be geographic coordinates. I tapped into the Meteor's '.observe' query to fire events on database updates. Take a look at the code behind the application and a demo of the functionality.
+
+	h4.cd Real Time Map Demo
+	row.cd
+		button#DeleteOldBikes.map Randomize all bike locations
+		//- button#DeleteOldBikes Randomize All Bike Statuses (Icons)
+	#DemoMap.cd.cd-map
+	//- row.cd
+	//- 	span #{BikeNume}
+	//- 	button(id="{{BikeID}}") Delete Me
+	//- 	button(id="{{BikeID}}") Generate a New Random Status
+
+	.cd.hidden-xs
+		+bikeshare_map
+
+	//- p.cd The next challenge was to optimize the database structure and reduce the load time for an anticipated 80-100 bikes for a complete bikeshare. Additionally, I knew that we would have two updates per bike ride with an estimated 10 rides per day.
+
+	h5.cd Iterate over user feedback
+	p.cd We ran a focus group midway through our development to receive feedback on our business model, website, and lock design. We received feedback on all aspects of our project that helped guide our development. This focus group and the constant feedback from friends, coworkers, and classmates have helped push through three major user interface overhauls, prioritize feature requests, and reduce bloat.
+
+	p.cd From all the feedback, several new features emerged to meet user needs. One such feature was for bike reservations that would guarantee a bike's position when a user was leaving class. Extending the real time map, I designed a simple user experience that any available bike icon could be tapped to request a reservation. Adding a cron task, the reservation can thus be timed out reliably freeing up a bike if the user decides against renting. Create a fake account and try out the live feature at
+		a(href='https://redbarbikes.com') RedbarBikes.com
+		|.
+
+	//- h5.cd Security features
+	//- p.cd Securing the user information has always been a priority and one that I picked up early when starting developing with Meteor. Luckily user accounts and roles are very easy to create within the Meteor ecosystem. ....
+
+	h5.cd Systems Integration and Multi-Disciplinary Contributions
+	p.cd As our communication network, on-bike electronics, mechanical housing and lock, and the website progressed independently, the next challenge became integrating our diverse system. The smart lock will trigger based on a user's swipe and send a csv string to the Zigbee end device. That string is then sent to the nearest router and eventually progresses to the coordinator device. I worked on converting the string from the coordinator to inserting the information into the website's database. Researching how Meteor communicated with the client, I chose to create a DDP connection from a Node.js application. First prototyping the action with an Arduino directly connected to a laptop, I shifted the application to a raspberry pi connected to a Zigbee over USB. With the newest version of Meteor, 1.2, the meteor packages were split into individual packages. Taking advantage of the minimalistic version of Meteor, I converted the Node.js application into a meteor application with easier support for Coffeescript and simple transfer of Node packages.
+
+	.cd.hidden-xs
+		+bikeshare_rpi
+
+	h5.cd Next Steps
+	p.cd As of November 15th, we have exactly five months left to finish our thesis paper and complete each of our subteam's goals. For me this means that I will need to finish the general user interface, finish the system integration, and fix the last few bugs.
+
+	h5.cd Website Screen Shots
+	.small-juxtapose
+		+juxtapose(id='website')
+
+	//- p.cd
+	//- 	a(href="/pdf/1.png" target="_blank").unstyled.wrap-icon
+	//- 		i.fa.fa-photo.fa-3x
+	//- 	| Website screen shot (no style yet) [old]
+	//- p.cd
+	//- 	a(href="/pdf/1-macaw.png" target="_blank").unstyled.wrap-icon
+	//- 		i.fa.fa-photo.fa-3x
+	//- 	| Website screen shot (no style yet) [new]
+

@@ -1,0 +1,36 @@
+template(name="extensions_title")
+	h1.cd.hidden-xs Open Source Software
+	h1.cd.hidden-sm.hidden-md.hidden-lg Open Source
+
+template(name="extensions")
+	h4.cd Chrome Extension -
+		a(href="https://github.com/KyleKing/My-Programming-Sketchbook/tree/master/Chrome%20Extensions/A%20Better%20WebClock") WebClockUX
+	p.cd Over a summer internship, I often would make mistakes when recording my hours as the Workforce WebClock had two small buttons that had little visual distinction. Realizing myself and other interns likewise struggled, I built a small chrome extension that made both buttons as large as possible and remembered the user's clock in status across Chrome accounts.
+
+	p.cd
+		strong Challenges:
+		|  Syncing data across Chrome browsers and the initial setup
+
+	p.cd Removing one of the two most important buttons meant that the application had to work seamlessly across different browsers and with a high degree of accuracy. I listened to fellow interns to make the extension as easy as possible to use and based on the feedback, changed the dropdown text to be more clear. To ensure a high level of reliability, I utilized the chrome local storage feature and stored the user state, which could be quickly synced across browsers without any additional backend.
+
+	.mini-cd
+		figure.figure
+			img(src="imgs/extensions-02.png").cd
+			figcaption.figure-caption.text-left WebClock UX dropdown for initial configuration
+
+	.small-juxtapose
+		+juxtapose(id='web-clock')
+
+	//- figure.figure
+	//- 	img(src="imgs/microfluidics-2.jpg").small-cd
+	//- 	figcaption.figure-caption.text-left Side by side comparison of the two user interfaces
+
+	h4.cd Meteor Package -
+		a(href="https://github.com/KyleKing/Customizable-Bootstrap-Stylus") Customizable Bootstrap Stylus
+	p.cd Over the summer, I began using Stylus as it was faster to develop and write new code. Eager to write my first Meteor package and excited by a similar package built for Bootstrap and Less, I reverse-engineered a Stylus version. It has been my most successful open source contribution with an average of 92 users.
+
+	p.cd
+		strong Challenges:
+		|  Properly parsing Bootstrap Stylus into customizable components
+
+	p.cd This package uses a git submodule of the bootstrap-stylus repository. Users can select true and false on a loaded configuration file to selectively incorporate parts of the Bootstrap library. The package then updates the files within your meteor project to show which code has been altered. This is particularly useful when checking for a mixin or variable and defining a distinct user interface. Building all of this functionality took a full day of focused development to work out the major kinks and create a reliable package. Although I missed one bug with inaccessible mixins, I was able to promptly close the issue when a user reported the shortcoming.

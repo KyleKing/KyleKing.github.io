@@ -1,0 +1,226 @@
+body
+  // background-color #1F618D
+  // background-color #2B3E51
+  background-color darken(#227FBB, 30%)
+  // font: 400 1em/1.38 Helvetica
+  font-family: medium-content-sans-serif-font, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+  color: dark
+
+footer
+  padding-top 50px
+  // padding-bottom 100px
+
+h2
+  padding-bottom 10px
+  font-size: 28px;
+  font-style: normal;
+  font-weight: bold;
+  // letter-spacing: -0.72px;
+  // text-decoration underline
+
+@media (max-width: 375px)
+  h2.inverse.section-header
+    max-width: 280px
+    // Center text manually
+    display block
+    margin-left auto
+    margin-right auto
+
+center-content(width_per)
+  width width_per
+  height auto
+  display block
+  margin-left auto
+  margin-right auto
+  max-width 700px
+
+img.cd
+  center-content(100%)
+
+.small-juxtapose
+  width 100%
+  max-width 700px
+  margin-left auto
+  margin-right auto
+  margin-top: 40px
+  margin-bottom: 40px
+
+figure.figure
+  margin-top: 40px
+  margin-bottom: 40px
+
+.figure
+  center-content(100%)
+
+  @media (max-width: 750px)
+    width 100%
+.small-cd
+  width 100%
+
+// video
+//   center-content(50%)
+
+// For contact icons
+// ul
+  // list-style-type none
+
+a.unstyled
+  padding-right 10px
+  padding-left 10px
+  color black
+  text-decoration none
+
+
+// Materialistic Buttons that can be clicked on mobile
+p.button
+  padding-bottom 10px
+
+button
+  color light
+  // font-weight: bold
+  border none
+  margin 0px
+  padding 10px
+  /*Flat Button styles*/
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3)
+  cursor: pointer
+  transition: background 0.2s ease-in-out
+  border-radius: 4px
+  background-color: #5499C7
+  box-shadow: 0px 2px 0px 0px #154360
+  & a i
+    color light
+button:hover
+  background-color: #154360
+
+button.poster
+  display block
+  margin-left auto
+  margin-right auto
+a.poster-container
+  padding 0px !important
+
+
+// box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];
+.callout
+  box-shadow 5px 5px 20px 0px lighten(black, 10%)  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+.card
+  // box-shadow 5px 5px 5px 0px #2B3E51  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  box-shadow 10px 10px 20px 0px #344B61  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+.card-image
+  box-shadow 10px 10px 20px 0px #344B61  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  // box-shadow 5px 0px 5px 0px #2B3E51  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+
+
+
+// Centering for cody panel
+.mini-cd
+  width 50%
+  max-width 400px
+
+  // Aligned title with main content of body text
+  display block
+  margin-right auto
+  margin-left auto
+
+.cd
+  width 100%
+  max-width 700px
+
+  // Aligned title with main content of body text
+  display block
+  margin-right auto
+  margin-left auto
+
+// Based on Medium's style sheet
+h4.cd
+  padding-top 30px
+
+  font-family: medium-content-sans-serif-font, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -0.72px;
+
+  +MQ(M)
+    height: 41px;
+    line-height: 41.4px;
+
+.no-padding
+  padding-top 0px !important
+
+h5.cd
+  margin-top 20px
+
+  font-family: medium-content-sans-serif-font, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -0.72px;
+
+p.cd
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: medium-content-serif-font, Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-size(17px) // set elsewhere in this doc
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.063px;
+  word-wrap: break-word
+  line-height: 25px
+
+  // +MQ(M)
+  //   line-height: 33.18px;
+
+  // font-size(16px)
+  // +MQ(M)
+  //   p.cd
+  //     font-size(16px)
+
+
+ul
+  & li
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: medium-content-serif-font, Georgia, Cambria, 'Times New Roman', Times, serif;
+    font-size 17px
+    font-style: normal;
+    font-weight: normal;
+    // letter-spacing: -0.063px;
+    word-wrap: break-word
+    line-height: 25px
+  & li a
+    -webkit-font-smoothing: antialiased;
+    // color: rgba(0, 0, 0, 0.8);
+    font-family: medium-content-serif-font, Georgia, Cambria, 'Times New Roman', Times, serif;
+    font-size 17px
+    font-style: normal;
+    font-weight: normal;
+    // letter-spacing: -0.063px;
+    word-wrap: break-word
+    line-height: 25px
+
+a.Eric_Pump
+  padding 100%
+.gif-text
+  margin-top 120px
+  padding 20px
+  background-color darken(#227FBB, 30%)
+  text-decoration none
+.gif
+  padding-top 25px
+
+
+
+
+
+// %%%%%%%%%%%%%%%%%%%%%%%%%%
+// Callout box text styles
+h1.text-center
+  font-weight bold
+
+h4.text-center
+  padding-top 10px
+  font-size 20px
+  font-style normal
+  letter-spacing -0.9px
