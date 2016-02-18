@@ -90,14 +90,23 @@ template(name='microfluidics')
 	p.cd To maintain temperature control, I built Turtle-Bot, a rapidly prototyped platform nicknamed for its 4 acrylic legs. The microfluidic chip is placed on two peltier tiles, one around 40°C and the second around 5-10°C. A raspberry pi with a PID controller controls each peltier tile based on the thermocouple temperature readings and modulates the fans for the active heat-sinks. While I am currently working on soldering the components onto a protoboard, the cardboard-based prototype was an innovative approach that was sufficient for the meantime and transferable between projects.
 
 	figure.figure
+		img(src="imgs/microfluidics-32.jpg").small-cd
+		figcaption.figure-caption.text-left Closeup of version 2 of the heat sink adapter
+	figure.figure
 		img(src="imgs/microfluidics-26.jpg").small-cd
 		figcaption.figure-caption.text-left Turtle Bot
-	figure.figure
-		img(src="imgs/microfluidics-25.jpg").small-cd
-		figcaption.figure-caption.text-left Temporarily mounted raspberry pi PID controller
+	//- figure.figure
+	//- 	img(src="imgs/microfluidics-25.jpg").small-cd
+	//- 	figcaption.figure-caption.text-left Temporarily mounted Raspberry Pi PID controller
 	figure.figure
 		img(src="imgs/microfluidics-27.jpg").small-cd
 		figcaption.figure-caption.text-left Microfluidic Droplet generator in use
+
+	p.cd After having great success with the prototype Raspberry Pi PID controller, I finalized the circuit design and permanently attached all of the components onto a soldered perf-board. The perf boards were designed to stack to be highly reusable between projects and minimize the footprint.
+
+	figure.figure
+		img(src="imgs/microfluidics-31.jpg").small-cd
+		figcaption.figure-caption.text-left Raspberry Pi PID controller
 
 	p.cd To overcome the heating and cooling challenges, I used felt, electrical tape, tin foil, and heat tape to create a reusable and insulated material that maintains a constant temperature of 60°C within the syringe (pictured below). The tin foil creates a low friction surface to slide the syringe in and out, while serving as a mount for the heat tape and insulation.
 
