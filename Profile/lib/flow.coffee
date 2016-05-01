@@ -32,6 +32,7 @@ IDs = [
   'class_projects'
   'microduino'
   'NEXT'
+  'CAPSTONE'
 ]
 
 _.each IDs, (ID) ->
@@ -50,7 +51,8 @@ _.each IDs, (ID) ->
 ScrollToTop = ->
   # Template.layout.rendered = ->
   console.log 'Scrolling'
-  # Gotta love a mature programming language: http://stackoverflow.com/questions/9316415/the-same-old-issue-scrolltop0-not-working-in-chrome-safari
+  # Gotta love a mature programming language:
+  # http://stackoverflow.com/questions/9316415/the-same-old-issue-scrolltop0-not-working-in-chrome-safari
   # $(window).scrollTop 0
   # Not so fast: http://stackoverflow.com/a/5580456/3219667
   $('#Slide-In-Panel-Content').animate { scrollTop: 0 }, 'slow'

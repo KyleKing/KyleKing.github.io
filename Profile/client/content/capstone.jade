@@ -3,100 +3,52 @@ template(name='CAPSTONE_title')
 	h1.cd.hidden-sm.hidden-md.hidden-lg Capstone
 
 template(name='CAPSTONE')
-	h4.cd Senior Capstone
-
 	.summary.cd
 		h4.cd Summary
-		p.cd At the University of Maryland, I am actively working with 13 undergraduate students to build a stationless bikeshare system as part of a four year honors research program. I am the full stack web developer of our website (
-			a(href='https://redbarbikes.com') RedbarBikes.com
-			| ) and have contributed to other facets of the project including sensor selection, smart-lock design, and help with rapid prototyping.
-		br
-		p.cd In April 2016 we presented our thesis and have since released our
-			a(href='https://www.gitbook.com/book/kyleking/gemstone-team-bikes-2016-thesis/details')
-				|  complete thesis document
-			|  along with the
-			a(href='https://github.com/KyleKing/TeamBIKES')
-				|  annotated source code
-			|  behind our project.
-		br
-		a(href="/pdf/BIKES-Poster.pdf" target="_blank").unstyled.poster-container
-			button.poster
-				i.fa.fa-file-pdf-o.fa-1x
-				| Undergraduate Research Day Poster
+		p.cd At the University of Maryland, I am actively working with 4 fellow senior bioengineering students on an immersive experience device for pediatric patients. Currently, when an MRI is needed, pediatric patients are given anesthesia; however, there is a growing body of literature suggesting that this practice can lead to short term and possibly long term neurological deficits, along with additional cost, risks for respiratory issues, and other immediate concerns. Our approach is to create a device that follows the user from the hallway/waiting room to inside the MRI and all the way back out.
+		//- a(href="/pdf/BIKES-Poster.pdf" target="_blank").unstyled.poster-container
+		//- 	button.poster
+		//- 		i.fa.fa-file-pdf-o.fa-1x
+		//- 		| Capstone Presentation Day Poster
+
+	h4.cd The Experience
+	p.cd Since no magnetic materials can enter the MRI room, we designed a three step approach. The first is an iPod touch that establishes the story and allows for the child to make selections for the rest of their experience. Once ready to enter the MRI room, the iPod is removed and replaced with a the static transparency is visible. Without the iPod, the child can be moved to the MRI bed, but will still be entertained. Our static transparency is similar to the View-Master experience and could include a Where's Waldo game or a calming ocean scene to extend the story established by the iPod experience. THe third step is a projector system. Many MRI's have a long throw projector that is just outside the room and projects through a hole in the wall to a screen behind the MRI. By removing the screen, the projector can be extended directly onto a special white screen on the goggles. Once finished, the process can be reversed as the child is brought back out to the hallway.
 
 	figure.figure
-		img(src="imgs/bikeshare-06.jpg").small-cd
-		figcaption.figure-caption.text-left Our team
+		img(src="imgs/Capstone-ipod.png").small-cd
+		figcaption.figure-caption.text-left Step 1. iPod Touch
 
-	h4.cd.no-padding The Technology
-	p.cd To use our system, a user can load our website and look for the nearest available bike. To reserve the bike, the user only has to tap the icon and will receive a success message confirming the reservation. When the user arrive at the bike rack, they can tap any available bike with their RedBars NFC card. Their encrypted ID is then sent to the database to request access. The website recognizes the user and clears their reservation, while returning a code to unlock the bike. Using a small linear actuator, the locking pin is released, so the user may now ride the bike. When done with their ride, the user can return their bike to any rack on campus. When the user locks the bike the electronics send a ping to the website and confirm the new location and the successful locking event. Both messages from the bike-mounted smart lock to the website are sent over a distributed Zigbee routing system and collected by a raspberry pi to be sent to the database.
+	figure.figure
+		img(src="imgs/Capstone-transparency.png").small-cd
+		figcaption.figure-caption.text-left Step 2. Static Transparency
 
-	//- ul.cd
-	//- 	li Side-Projects: Raspberry Pi alarm clock/stereo system
-	//- 	li Open Source Software:
-	//- 		a(href="https://github.com/aldeed/meteor-tabular/issues/162")
-	//- 			|  Tabular Tables PR to support client-side collection helpers
-	//- 	li Open Source Software: Popclip add-on to quickly link content in a Google document
-	//- 	li Class Project: Ecological Analysis of the Black-Footed Penguin
+	figure.figure
+		img(src="imgs/Capstone-projector.png").small-cd
+		figcaption.figure-caption.text-left Step 3. Projector Surface
 
-	//- h4.cd Previous Projects
-	//- p.cd These will be updated over the next few weeks, so feel free to check back
-	//- ul.cd
-	//- 	li Open Source Software
-	//- 		ul.cd
-	//- 			li
-	//- 				a(href="https://atmospherejs.com/kyleking/juxtapose-js") Juxtapose.JS Meteor package
-	//- 				|  built to make the slider images on this site easier for other Meteor developers
-	//- 			li
-	//- 				a(href="https://atmospherejs.com/kyleking/customizable-bootstrap-stylus") Customizable Bootstrap Stylus Meteor package
-	//- 				|  which allows for users to on the fly select Bootstrap components
-	//- 			li
-	//- 				a(href="https://github.com/aldeed/meteor-tabular/issues/162") Tabular Tables PR
-	//- 				|  to share example code for multi-column sort
-	//- 			li
-	//- 				a(href="https://github.com/PhilippSpo/momentum-flow-router/pull/7") Momentum Router PR
-	//- 				|  that offered reduced redundancy and simple configuration for navigation animations
+	figure.figure
+		img(src="imgs/Capstone-mri.png").small-cd
+		figcaption.figure-caption.text-left Step 3. Shown inside the MRI with the projector
 
-	//- 	li Class Projects (Bioengineering is very cool)
-	//- 		ul.cd
-	//- 			li Built a pulse oximeter and 3D-printed finger clamp
-	//- 			li MatLab-based bioinformatics projects and genetic analysis
-	//- 			li MatLab for bioimaging
+	figure.figure
+		img(src="imgs/Capstone-side_profile.jpg").small-cd
+		figcaption.figure-caption.text-left Step 3. Shown on a real person
 
-	//- 	li Chrome Extensions
-	//- 		ul.cd
-	//- 			li I created a
-	//- 				a(href="https://chrome.google.com/webstore/detail/web-clock-ux/bemigfbpfihgefbnbncjddfbgknchfaf") simple improvement to the WebClock software
-	//- 				|  and released the change as a chrome extension that was used by all four interns this summer
+	h4.cd Step 3. The Projector
+	p.cd This step is very useful because it vastly improves the MRI experience for anyone. Instead of looking at a small screen through the mirror and seeing the claustrophobia-inducing tube in your peripheral vision, you see a view-filling stereoscopic image. Even for adults and older kids, this would be a much more relaxing and enjoyable experience.
 
-	//- 			li In a writing course, I noticed that we all had trouble viewing one of the modules, so I wrote an
-	//- 				a(href="https://chrome.google.com/webstore/detail/elms-and-crocodoc-fullscr/plmlhafmgopajgbdobknemohlcnohbgb?utm_source=gmail") extension that made the frame full screen
-	//- 				|  and shared it with the class.
+	h4.cd Engineering Constraints
+	p.cd There were many constraints in this design, such as designing a functional system without any electronic components, the tight space inside the MRI head coil, and patient comfort. To give a small sampling of how some of these constraints were overcome, here are a few design highlights:
 
-	//- 	li Designed waterproof and secure housing for a Microduino GPS Tracker, which was partially used during my ride with the 4K for Cancer Trip
-	//- 	li Alumni Cup Team Leader - Rube Goldberg Style Engineering Competition
+	h5.cd Multiple Width Paddle System
+	p.cd To prevent the phone or later projector screens from falling out, but to still fit within the tight constraints of the MRI head coil, I designed a paddle system using hidden rubber bands. The paddles are easy to press with one hand, while inserting the next part of the three step design. They quickly bounce back and even support the weight of an iPod when a user may vigorously shake their head from side to side.
 
-	//- h4.cd Some Pictures
+	h5.cd Snap Together Component Design
+	p.cd To make components interchangeable and to account for the limitations of 3D printing, I designed a piecewise method of designing, printing, and assembling the components. Using a round hole and a zero-tolerance octagon pin, each version of the design could be securely attached to the body and snap together.
+
+	h5.cd TBD
+	p.cd TBD
 
 	//- figure.figure
-	//- 	img(src="imgs/3d_printing-1.jpg").small-cd
-	//- 	figcaption.figure-caption.text-left 3D printing to the rescue!
-
-	//- figure.figure
-	//- 	img(src="imgs/alarm_clock-1.jpg").small-cd
-	//- 	figcaption.figure-caption.text-left Planning my own alarm clock with a little bit of primary research
-
-	//- figure.figure
-	//- 	img(src="imgs/microfluidics-15.jpg").small-cd
-	//- 	figcaption.figure-caption.text-left Fresh PMMA chips off of the CNC
-
-	//- figure.figure
-	//- 	img(src="imgs/microfluidics-17.jpg").small-cd
-	//- 	figcaption.figure-caption.text-left Preparing to press a COC plaque
-
-	//- +juxtapose(id='next-1')
-	//- figcaption.figure-caption.text-left A late night work session on the Alumni Cup Rube Goldberg machine
-
-	//- figure.figure
-	//- 	img(src="imgs/alumni_cup-7.jpg").small-cd
-	//- 	figcaption.figure-caption.text-left The final creation for the Alumni Cup
+	//- 	img(src="imgs/Capstone-mri.png").small-cd
+	//- 	figcaption.figure-caption.text-left Step 3. Shown inside the MRI with the projector
