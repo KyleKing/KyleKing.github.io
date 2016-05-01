@@ -1,0 +1,23 @@
+{
+  "servers": [
+    {
+      "host": "107.170.66.252",
+      "username": "root",
+      "pem": "~/.ssh/id_rsa"
+    }
+  ],
+  "setupMongo": true,
+
+  "appName": "PersonalWebsite",
+
+  "app": ".",
+
+  "env": {
+    "PORT": 80,
+    "ROOT_URL": "http://kyleking.me"
+  },
+
+  "deployCheckWaitTime": 15,
+
+  "enableUploadProgressBar": true
+}

@@ -59,7 +59,7 @@ img_cover_mixin(url, top_spacing)
 .project-Canon-image
   img_cover_mixin("canon.jpg", 15%)
 .project-extensions-image
-  img_cover_mixin("extensions-01.png", 0%)
+  img_cover_mixin("extensions-01.png", 0)
 .project-3D_printing-image
   img_cover_mixin("3d_printing-1.jpg", 20%)
 .project-alumni_cup-image
@@ -70,12 +70,13 @@ img_cover_mixin(url, top_spacing)
   img_cover_mixin("microduino.jpg", 50%)
 .project-NEXT-image
   img_cover_mixin("microduino.jpg", 70%)
-
+.project-CAPSTONE-image
+  img_cover_mixin("CAPSTONE.jpg", 70%)
 
 .card-container
   padding-top 0
   padding-bottom 40px
-  margin 0px
+  margin 0
   cursor pointer
   // When in same row, add spacing around cards
   @media (min-width: 768px)
