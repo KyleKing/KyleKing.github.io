@@ -17,7 +17,7 @@
     "ROOT_URL": "http://kyleking.me"
   },
 
-  "deployCheckWaitTime": 15,
+  "deployCheckWaitTime": 120,
 
   "enableUploadProgressBar": true
 }
