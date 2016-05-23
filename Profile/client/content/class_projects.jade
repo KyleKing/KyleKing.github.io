@@ -6,6 +6,19 @@ template(name="class_projects")
 	h4.cd BIOE340 Modeling Physiological Systems
 	p.cd We covered a broad array of topics from cell and general physiology, circulation, metabolism, and the nervous system. In lab, we analyze muscle contractions in a frog leg to understand the refractory period and conducted an ECG analysis on a classmate with Matlab.
 
+	//- p Only the formula should display in Katex: \(2+3=5\)
+
+	//- +katex
+	//- 	| c = \pm\sqrt{a^2 + b^2}
+	//- else
+	//- 	| There was a parsing error.
+
+	//- //- {{#katex}}
+	//- //-   c = \pm\sqrt{a^2 + b^2}
+	//- //- {{else}}
+	//- //-   There was a parsing error.
+	//- //- {{/katex}}
+
 	h5.cd ECG Signals Analysis Lab
 	p.cd
 		strong Challenges:
@@ -21,11 +34,9 @@ template(name="class_projects")
 		img(src="imgs/mathematica_02.png").small-cd
 		figcaption.figure-caption.text-left Mean Electrical Axis
 
+	//- h4.cd BIOE420 Bioimaging
+	//- p.cd We learned about the major biomedical imaging modalities including fluorescent and visible spectra imaging, X-Ray, CT, PET, MRI, and Ultrasound. Applying our understanding we had interesting homework assignments that walked us through the basic mathematics behind such systems. For one such assignment, we used a fourier transform on a basic square wave.
 
-
-	h4.cd BIOE420 Bioimaging
-	p.cd We learned about the major biomedical imaging modalities including fluorescent and visible spectra imaging, X-Ray, CT, PET, MRI, and Ultrasound. Applying our understanding we had interesting homework assignments that walked us through the basic mathematics behind such systems. For one such assignment, we used a fourier transform on a basic square wave.
-
-	figure.figure
-		img(src="imgs/HW2_03.png").small-cd
-		figcaption.figure-caption.text-left Fourier transform of a square wave
+	//- figure.figure
+	//-   img(src="imgs/HW2_03.png").small-cd
+	//-   figcaption.figure-caption.text-left Fourier transform of a square wave
