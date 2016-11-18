@@ -1,0 +1,56 @@
+<template name="bikeshare_rpi">
+  {{#prism language="coffeescript" class="line-numbers"}}
+		currentPort = '/dev/tty.usbserial-AH016D5G' # Direct left Zigbee
+
+		# Connect to Meteor
+		ddpclient.connect (error) ->
+		  if error
+		    throw error
+
+		  # Configure serial port
+		  serialPort = new SerialPort(currentPort,
+		    baudrate: 9600
+		    parser: xbeeAPI.rawParser())
+		  serialPort.on 'open', ->
+		    console.log 'SerialPort rate ' + serialPort.options.baudRate
+
+		  xbeeAPI.on 'frame_object', (frame) ->
+		    if frame.deliveryStatus == 0
+		      console.log '>> Data was delivered!'
+		      console.log frame
+		    else
+
+		      console.log '>> Serial: ' + data
+		      # CSV Data Parse:
+		      time = (new Date).getTime()
+		      array = frame.data.toString().split(',')
+		      dataSet =
+		        USER_ID: array[0]
+		        LATITUDE: array[1]
+		        LONGITUDE: array[2]
+		        LOCKSTATEE: array[3]
+		        Module_ID: array[4]
+		        TIMESTAMP: time
+
+		      ddpclient.call 'RFIDStreamData', [ dataSet ], (err, result) ->
+		        console.log '>> Sent to Meteor: ' + array
+		        if result isnt undefined
+		          if result.Address is undefined
+		            console.log "Warning: BROADCASTING TO ALL XBEE's"
+		          frame_obj =
+		            type: 0x10
+		            id: 0x01
+		            destination64: result.Address
+		            destination16: 'fffe'
+		            broadcastRadius: 0x00
+		            options: 0x00
+		            data: result.data
+		          serialPort.write xbeeAPI.buildFrame(frame_obj)
+
+		  serialPort.on 'close', ->
+		    console.log 'port closed.'
+
+		  serialPort.on 'error', (error) ->
+		    console.log 'Serial port error: ' + error
+  {{/prism}}
+</template>

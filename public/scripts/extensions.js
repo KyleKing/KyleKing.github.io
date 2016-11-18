@@ -1,0 +1,2 @@
+(function(){Template.extensions.onRendered(function(){var e;return e=new juxtapose.JXSlider("#web-clock",[{src:"imgs/extension-before.jpg",label:"Standard UI"},{src:"imgs/extension-after.jpg",label:"With Chrome Extension"}],{animate:!0,showLabels:!0,showCredits:!1,startingPosition:"50%",makeResponsive:!0})})}).call(this);
+//# sourceMappingURL=./extensions.js.map

@@ -1,0 +1,2 @@
+(function(){Template.NEXT.onRendered(function(){var e;return e=new juxtapose.JXSlider("#next-1",[{src:"imgs/alumni_cup-4.jpg",label:"6:00 pm"},{src:"imgs/alumni_cup-5.jpg",label:"11:59 pm"}],{animate:!0,showLabels:!0,showCredits:!1,startingPosition:"50%",makeResponsive:!0})})}).call(this);
+//# sourceMappingURL=./next.js.map

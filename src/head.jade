@@ -1,0 +1,54 @@
+- var path = "../../public/"
+
+//- Based on http://stackoverflow.com/a/30766041
+head
+  meta(charset="utf-8")
+  meta(http-equiv="X-UA-Compatible" content="IE=edge")
+  meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no")
+  //- meta(name="viewport" content="width=device-width, initial-scale=1.0")
+  meta(name="mobile-web-app-capable" content="yes")
+  meta(name="apple-mobile-web-app-capable" content="yes")
+  meta(name="apple-mobile-web-app-status-bar-style" content="default")
+  meta(name="robots" content="noindex, noimageindex, none, nofollow, noarchive, nocache, nosnippet, noodp, noydir, ")
+
+  title Kyle King's Portfolio
+
+  meta(name="description" content="My Personal Website")
+  meta(name="keywords" content="Profile, Kyle King, Developer, Hire, Engineer, Bioengineer, Systems Engineer")
+  meta(name="author" content="Kyle King")
+  link(rel="shortcut icon" href=path + "favicon.ico")
+
+  link(rel="stylesheet" href=path + "css/custom.bootstrap.css")
+  link(rel="stylesheet" href=path + "css/ITCSS.css")
+  link(rel="stylesheet" href=path + "css/font-awesome.min.css")
+  link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css")
+
+  script(src="http://www.google.com/jsapi" type="text/javascript")
+  script.
+    google.load("jquery", "1.3.2")
+  script(src=path + "scripts/layout.js" type="text/javascript")
+
+  //- //- Katex
+  //- script(src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.js")
+  //- //- link(rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/katex.min.css")
+  //- //- script(src="http://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/katex.min.js"></script)
+  //- script(src="http://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.3.0/contrib/auto-render.min.js")
+  //- //- http://realfavicongenerator.net/
+
+  //- Social Sharing Compatibility
+  meta(property="og:title" content="Kyle King's Portfolio")
+  meta(property="og:image" content=path + "imgs/bikeshare-01-square.jpg")
+  meta(property="og:description" content="Kyle's Personal Website")
+  meta(property="og:url" content="http://kyleking.me")
+  meta(property="og:site_name" content="Portfolio")
+  meta(property="og:type" content="website")
+  //- meta(property="fb:page_id" content="")
+
+  meta(name="twitter:card" content="summary_large_image")
+  meta(name="twitter:url" content="http://kyleking.me")
+  meta(name="twitter:title" content="Kyle King's Portfolio")
+  meta(name="twitter:description" content="Kyle's Personal Website")
+  meta(name="twitter:image" content=path + "imgs/bikeshare-01.jpg")
+  //- meta(name="twitter:site" content="")
+
+block body
