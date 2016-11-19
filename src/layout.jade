@@ -1,4 +1,4 @@
-extends ./index.jade
+extends ./base.jade
 
 block layout
 	//- main.cd-main-content
@@ -15,7 +15,7 @@ block layout
 	//- 			+Template.dynamic template=Slide_In_Panel_Content_Left
 
 	.cd-panel.from-right#cd-panel-toggle
-		header.cd-panel-header
+		header.cd-panel-header#Slide-In-Panel-Header
 			block title
 			a.cd-panel-close(href='#0') Close
 		.cd-panel-tooltip Or press ESC to close

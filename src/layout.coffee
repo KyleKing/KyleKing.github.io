@@ -1,6 +1,27 @@
 createFullURL = (id) ->
+  # Figure out the URL
   newURL = window.location.protocol + "//" + window.location.host + '/'
   fullURL = newURL + 'pages/' + id + '.html'
+  # Replace the current HTML content with the content corresponding to the desired state
+  targetContent = document.getElementById("Slide-In-Panel-Content")
+  targetHeader = document.getElementById("Slide-In-Panel-Header")
+  targetContent.innerHTML = ''
+  targetHeader.innerHTML = ''
+  $.get fullURL, (data) ->
+    targetContent.appendChild $(data).find("#Slide-In-Panel-Content")[0]
+    targetHeader.appendChild $(data).find("#Slide-In-Panel-Header")[0]
+
+  #   # # Not Applicable: Alternate to append the objects:
+  #   # # $(data).find('.post').appendTo '.post-list'
+  #   # i = 0
+  #   # results = ''
+  #   # targetContent.innerHTML = ''
+  #   # len = $(data).length
+  #   # while i < len
+  #   #   targetContent.appendChild $(data)[i]
+  #   #   i++
+
+  # Update the route, so a refresh opens the complete page
   document.title = id
   window.history.pushState({
     "html": 'response.html'
@@ -8,9 +29,9 @@ createFullURL = (id) ->
   }, "", fullURL)
   return fullURL
 
-$( document ).ready(->
-  console.log 'ready!'
 
+$( document ).ready(->
+  # TODO: Used to open up panel right away for shared links:
   # Useful for overcoming back button issue in flow.coffee
   # Template.layout.onRendered ->
   #   if Session.equals("NewVisitor", false)
@@ -23,8 +44,6 @@ $( document ).ready(->
   #   Session.set "NewVisitor", false
   #   console.log 'Set session to false'
 
-
-
   # Open up slide in panel
   $( ".card-container" ).click (event) ->
     console.log 'Clicked .card-container'
@@ -36,6 +55,7 @@ $( document ).ready(->
       $('.cd-panel').addClass 'is-visible'
       $('body').addClass 'noscroll'
     else
+      # FIXME:NOT YET BUILT for mobile!
       # path = event.originalEvent.path
       # console.log path
       # foundIDs = []
@@ -51,40 +71,10 @@ $( document ).ready(->
       #   $('body').addClass 'noscroll'
       # else
       #   console.log 'Could not find ID: ' + foundIDs
-      console.log 'NOT YET BUILT'
+      console.log 'FIXME: NOT YET BUILT for mobile!'
 
   $( "button" ).click (event) ->
     console.log 'Clicked button'
-    # # console.log event
-    # # if event.toElement is undefined
-    # #   console.log 'toElement is undefined'
-    # id = event.currentTarget.id
-    # # console.log 'Test me on mobile...maybe touch event has different object?'
-    # # console.log event.originalEvent.path
-    # if id
-    #   # FIXME: FlowRouter.go('/' + id)
-    #   # Now done with router event
-    #   $('.cd-panel').addClass 'is-visible'
-    #   $('body').addClass 'noscroll'
-    # else
-    #   path = event.originalEvent.path
-    #   # console.log path
-    #   foundIDs = []
-    #   _.each path, (element) ->
-    #     id = $(element).attr 'id'
-    #     if id
-    #       # console.log id
-    #       foundIDs.push id
-    #   id = foundIDs[0]
-    #   if id
-    #     # FIXME: FlowRouter.go('/' + id)
-    #     # Now done with router event
-    #     $('.cd-panel').addClass 'is-visible'
-    #     $('body').addClass 'noscroll'
-    #   else
-    #     console.log 'Could not find ID: ' + foundIDs
-
-
 
   # Close the lateral panel
   $( ".cd-panel" ).click (event) ->
@@ -110,7 +100,7 @@ $( document ).ready(->
 )
 
 
-
+# Support Keyboard Shortcuts
 document.onkeydown = (evt) ->
   evt = evt or window.event
   if evt.keyCode == 27
