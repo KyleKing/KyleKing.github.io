@@ -12,7 +12,7 @@ block Slide_In_Panel_Content
 		a(href=path + "pdf/URD2016_microfluidics.pdf" target="_blank").unstyled.poster-container
 			button.poster
 				i.fa.fa-file-pdf-o.fa-1x
-				| Undergraduate Research Day Poster
+				|  Undergraduate Research Day Poster
 
 	h4.cd The Technology
 	p.cd Rather than waiting for an analyte in a sample to interact with an activated surface, our solution involves an efficient matrix of activated low melting point (LMP) agarose beads. The large surface area results in little to no delays in diffusion time, allowing for rapid binding reactions and the identification of small concentrations of analyte. Quantifying the amount of analyte requires a specific technique to overcome the opaque nature of the capture matrix. Typically, an additional fluid would be introduced to reduce the effects of light scattering and improve clarity. Unfortunately, an index-matching solution must be very viscous to match the optical properties of the matrix material leading to air bubbles, clogging, and increased device complexity. Instead, LMP agarose beads can be melted by an external heater to create a solid and transparent mass. External heaters allow for greater control, speed, and reduced complexity.
@@ -46,7 +46,7 @@ block Slide_In_Panel_Content
 	//- 	+juxtapose(id='bead-bed')
 
 	figure.figure
-			img(src=path + "imgs/microfluidics-20.jpg").small-cd
+			img(src=path + "imgs/Microfluidics/microfluidics-20.jpg").small-cd
 			figcaption.figure-caption.text-left An separate view of the above COC chip prior to bead packing
 
 
@@ -54,7 +54,7 @@ block Slide_In_Panel_Content
 	p.cd Through my research, I found several viable options for activating agarose. I selected a reaction that was stable between 0-100°C and could be modified for various end applications (Spencer, Melo, Perez, & Weller, 2005). I then activated 2 mm diameter agarose beads and demonstrated positive and negative controls, both before and after melting. The results were encouraging and supported my assumptions to move forward with the reaction.
 
 	figure.figure
-		img(src=path + "imgs/microfluidics-23.png").small-cd
+		img(src=path + "imgs/Microfluidics/microfluidics-23.png").small-cd
 		figcaption.figure-caption.text-left Large agarose beads used to demonstrate chemical reaction
 
 	h5.cd Producing Agarose Beads
@@ -93,13 +93,13 @@ block Slide_In_Panel_Content
 	p.cd To maintain temperature control, I built Turtle-Bot, a rapidly prototyped platform nicknamed for its 4 acrylic legs. The microfluidic chip is placed on two peltier tiles, one around 40°C and the second around 5-10°C. A raspberry pi with a PID controller controls each peltier tile based on the thermocouple temperature readings and modulates the fans for the active heat-sinks. While I am currently working on soldering the components onto a protoboard, the cardboard-based prototype was an innovative approach that was sufficient for the meantime and transferable between projects.
 
 	figure.figure
-		img(src=path + "imgs/microfluidics-26.jpg").small-cd
+		img(src=path + "imgs/Microfluidics/microfluidics-26.jpg").small-cd
 		figcaption.figure-caption.text-left Turtle Bot
 	figure.figure
-		img(src=path + "imgs/microfluidics-25.jpg").small-cd
+		img(src=path + "imgs/Microfluidics/microfluidics-25.jpg").small-cd
 		figcaption.figure-caption.text-left Temporarily mounted raspberry pi PID controller
 	figure.figure
-		img(src=path + "imgs/microfluidics-27.jpg").small-cd
+		img(src=path + "imgs/Microfluidics/microfluidics-27.jpg").small-cd
 		figcaption.figure-caption.text-left Microfluidic Droplet generator in use
 
 	p.cd To overcome the heating and cooling challenges, I used felt, electrical tape, tin foil, and heat tape to create a reusable and insulated material that maintains a constant temperature of 60°C within the syringe (pictured below). The tin foil creates a low friction surface to slide the syringe in and out, while serving as a mount for the heat tape and insulation.
@@ -108,7 +108,7 @@ block Slide_In_Panel_Content
 	//- .small-juxtapose
 	//- 	+juxtapose(id='Syring-heater')
 	figure.figure
-		img(src=path + "imgs/microfluidics-30.png").small-cd
+		img(src=path + "imgs/Microfluidics/microfluidics-30.png").small-cd
 		figcaption.figure-caption.text-left Prototype syringe heater
 
 	h5.cd Key Takeaways

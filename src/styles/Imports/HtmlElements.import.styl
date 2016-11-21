@@ -1,7 +1,9 @@
+$color-bg = darken(#bdc3c7, 20%)
+
+
 body
-  // background-color #1F618D
-  // background-color #2B3E51
-  background-color darken(#227FBB, 30%)
+  // background-color darken(#227FBB, 30%)
+  background-color $color-bg
   // font: 400 1em/1.38 Helvetica
   font-family: medium-content-sans-serif-font, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
   color: dark
@@ -106,11 +108,13 @@ a.poster-container
   box-shadow 5px 5px 20px 0px lighten(black, 10%)  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 .card
   // box-shadow 5px 5px 5px 0px #2B3E51  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-  box-shadow 10px 10px 20px 0px #344B61  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  // box-shadow 10px 10px 20px 0px #344B61  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  box-shadow 10px 10px 20px 0px darken($color-bg, 40%)
 .card-image
-  box-shadow 10px 10px 20px 0px #344B61  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  background-color darken($color-bg, 15%)
+  // box-shadow 10px 10px 20px 0px #344B61  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
   // box-shadow 5px 0px 5px 0px #2B3E51  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
-
+  box-shadow 10px 10px 20px 0px darken($color-bg, 40%)
 
 
 // Centering for cody panel

@@ -1,11 +1,149 @@
+
+/* line 81 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/ITCSS.styl */
+
+/* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/stylus/lib/functions/index.styl */
+
+/* line 297 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/stylus/lib/functions/index.styl */
+
+/* line 2 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Variables.import.styl */
+
+/* line 3 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Variables.import.styl */
+
+/* line 14 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/index.styl */
+
+/* line 14 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/index.styl */
+
+/* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/border.styl */
+
+/* line 10 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/border.styl */
+
+/* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/clearfix.styl */
+
+/* line 28 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/clearfix.styl */
+
+/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/color-image.styl */
+
+/* line 4 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/color-image.styl */
+
+/* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/flex.styl */
+
+/* line 196 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/flex.styl */
+
+/* line 90 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/gradients.styl */
+
+/* line 90 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/gradients.styl */
+
+/* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/config.styl */
+
+/* line 11 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/config.styl */
+
+/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/iconic.styl */
+
+/* line 7 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/iconic.styl */
+
+/* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/image.styl */
+
+/* line 25 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/image.styl */
+
+/* line 19 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/index.styl */
+
+/* line 19 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/index.styl */
+
+/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/base.styl */
+
+/* line 8 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/base.styl */
+
+/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/html5.styl */
+
+/* line 19 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/html5.styl */
+
+/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/links.styl */
+
+/* line 6 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/links.styl */
+
+/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/text.styl */
+
+/* line 30 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/text.styl */
+
+/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/embed.styl */
+
+/* line 7 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/embed.styl */
+
+/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/groups.styl */
+
+/* line 17 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/groups.styl */
+
+/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/forms.styl */
+
+/* line 69 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/forms.styl */
+
+/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/tables.styl */
+
+/* line 7 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/tables.styl */
+
+/* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/overflow.styl */
+
+/* line 20 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/overflow.styl */
+
+/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/positions.styl */
+
+/* line 66 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/positions.styl */
+
+/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/reset.styl */
+
+/* line 78 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/reset.styl */
+
+/* line 5 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/text/index.styl */
+
+/* line 5 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/text/index.styl */
+
+/* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/text/aliases.styl */
+
+/* line 12 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/text/aliases.styl */
+
+/* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/text/ellipsis.styl */
+
+/* line 9 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/text/ellipsis.styl */
+
+/* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/text/hide-text.styl */
+
+/* line 8 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/text/hide-text.styl */
+
+/* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/text/replace-text.styl */
+
+/* line 9 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/text/replace-text.styl */
+
+/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/text/shadow-stroke.styl */
+
+/* line 2 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/text/shadow-stroke.styl */
+
+/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/vendor.styl */
+
+/* line 11 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/vendor.styl */
+
+/* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/config.styl */
+
+/* line 577 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/config.styl */
+
+/* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/size.styl */
+
+/* line 28 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/size.styl */
+
+/* line 1 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+
+/* line 4 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 body {
-  background-color: #185983;
+  background-color: #939da3;
   font-family: medium-content-sans-serif-font, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
   color: #212f3d;
 }
+
+/* line 11 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 footer {
   padding-top: 50px;
 }
+
+/* line 15 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 h2 {
   padding-bottom: 10px;
   font-size: 28px;
@@ -14,6 +152,8 @@ h2 {
   font-weight: bold;
 }
 @media (max-width: 375px) {
+
+/* line 24 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
   h2.inverse.section-header {
     max-width: 280px;
     display: block;
@@ -21,6 +161,8 @@ h2 {
     margin-right: auto;
   }
 }
+
+/* line 39 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 img.cd {
   width: 100%;
   height: auto;
@@ -29,6 +171,8 @@ img.cd {
   margin-right: auto;
   max-width: 700px;
 }
+
+/* line 42 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .small-juxtapose {
   width: 100%;
   max-width: 700px;
@@ -37,10 +181,14 @@ img.cd {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
+/* line 50 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 figure.figure {
   margin-top: 40px;
   margin-bottom: 40px;
 }
+
+/* line 54 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .figure {
   width: 100%;
   height: auto;
@@ -50,22 +198,32 @@ figure.figure {
   max-width: 700px;
 }
 @media (max-width: 750px) {
+
+/* line 57 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
   .figure {
     width: 100%;
   }
 }
+
+/* line 59 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .small-cd {
   width: 100%;
 }
+
+/* line 69 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 a.unstyled {
   padding-right: 10px;
   padding-left: 10px;
   color: #000;
   text-decoration: none;
 }
+
+/* line 77 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 p.button {
   padding-bottom: 10px;
 }
+
+/* line 80 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 button {
   color: #fbfcfc;
   border: none;
@@ -85,32 +243,49 @@ button {
   -webkit-box-shadow: 0px 2px 0px 0px #154360;
   box-shadow: 0px 2px 0px 0px #154360;
 }
+
+/* line 93 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 button a i {
   color: #fbfcfc;
 }
+
+/* line 95 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 button:hover {
   background-color: #154360;
 }
+
+/* line 98 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 button.poster {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
+/* line 102 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 a.poster-container {
   padding: 0px !important;
 }
+
+/* line 107 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .callout {
   -webkit-box-shadow: 5px 5px 20px 0px #1a1a1a /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */;
   box-shadow: 5px 5px 20px 0px #1a1a1a /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */;
 }
+
+/* line 109 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .card {
-  -webkit-box-shadow: 10px 10px 20px 0px #344b61 /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */;
-  box-shadow: 10px 10px 20px 0px #344b61 /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */;
+  -webkit-box-shadow: 10px 10px 20px 0px #565f64;
+  box-shadow: 10px 10px 20px 0px #565f64;
 }
+
+/* line 113 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .card-image {
-  -webkit-box-shadow: 10px 10px 20px 0px #344b61 /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */;
-  box-shadow: 10px 10px 20px 0px #344b61 /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */;
+  background-color: #7a868e;
+  -webkit-box-shadow: 10px 10px 20px 0px #565f64;
+  box-shadow: 10px 10px 20px 0px #565f64;
 }
+
+/* line 121 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .mini-cd {
   width: 50%;
   max-width: 400px;
@@ -118,6 +293,8 @@ a.poster-container {
   margin-right: auto;
   margin-left: auto;
 }
+
+/* line 130 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .cd {
   width: 100%;
   max-width: 700px;
@@ -125,6 +302,8 @@ a.poster-container {
   margin-right: auto;
   margin-left: auto;
 }
+
+/* line 140 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 h4.cd {
   padding-top: 30px;
   font-family: medium-content-sans-serif-font, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
@@ -135,14 +314,20 @@ h4.cd {
   letter-spacing: -0.72px;
 }
 @media only screen and (min-width: $screen-sm) {
+
+/* line 55 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/ITCSS.styl */
   h4.cd {
     height: 41px;
     line-height: 41.4px;
   }
 }
+
+/* line 153 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .no-padding {
   padding-top: 0px !important;
 }
+
+/* line 156 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 h5.cd {
   margin-top: 20px;
   font-family: medium-content-sans-serif-font, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Geneva, Verdana, sans-serif;
@@ -152,6 +337,8 @@ h5.cd {
   font-weight: bold;
   letter-spacing: -0.72px;
 }
+
+/* line 165 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 p.cd {
   -webkit-font-smoothing: antialiased;
   color: rgba(0,0,0,0.8);
@@ -164,6 +351,10 @@ p.cd {
   word-wrap: break-word;
   line-height: 25px;
 }
+
+/* line 185 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+
+/* line 186 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 ul li {
   -webkit-font-smoothing: antialiased;
   color: rgba(0,0,0,0.8);
@@ -175,6 +366,8 @@ ul li {
   word-wrap: break-word;
   line-height: 25px;
 }
+
+/* line 196 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 ul li a {
   -webkit-font-smoothing: antialiased;
   font-family: medium-content-serif-font, Georgia, Cambria, 'Times New Roman', Times, serif;
@@ -185,21 +378,31 @@ ul li a {
   word-wrap: break-word;
   line-height: 25px;
 }
+
+/* line 207 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 a.Eric_Pump {
   padding: 100%;
 }
+
+/* line 209 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .gif-text {
   margin-top: 120px;
   padding: 20px;
   background-color: #185983;
   text-decoration: none;
 }
+
+/* line 214 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .gif {
   padding-top: 25px;
 }
+
+/* line 223 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 h1.text-center {
   font-weight: bold;
 }
+
+/* line 226 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 h4.text-center {
   padding-top: 10px;
   font-size: 20px;
@@ -207,19 +410,27 @@ h4.text-center {
   font-style: normal;
   letter-spacing: -0.9px;
 }
+
+/* line 230 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+
+/* line 1 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+
+/* line 2 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .header-image {
   position: relative;
   float: left;
   z-index: 0;
-  height: 429px;
+  height: 650px;
   width: 100%;
-  background: url("../imgs/microfluidics-01.jpg");
+  background: url("../imgs/cover_capstone.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  background-position: 50% 30%;
+  background-position: 50% 10%;
 }
+
+/* line 14 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .callout-box {
   position: relative;
   float: left;
@@ -234,11 +445,15 @@ h4.text-center {
   background-color: rgba(255,255,255,0.95);
 }
 @media (max-width: 1200px) {
+
+/* line 28 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
   .callout-box {
     position: relative;
     z-index: 3;
     margin-left: 23.59844%;
   }
+
+/* line 33 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
   .header-image {
     position: relative;
     z-index: 0;
@@ -246,6 +461,8 @@ h4.text-center {
   }
 }
 @media (max-width: 992px) {
+
+/* line 39 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
   .callout-box {
     position: relative;
     z-index: 3;
@@ -253,8 +470,10 @@ h4.text-center {
     width: 80%;
   }
 }
-.project-microfluidics-image {
-  background-image: url("../imgs/microfluidics-02.jpg");
+
+/* line 57 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-PhotoFrame-image {
+  background-image: url("../imgs/PhotoFrame/cover.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -263,18 +482,10 @@ h4.text-center {
   height: 280px;
   width: auto;
 }
-.project-bikeshare-image {
-  background-image: url("../imgs/bikeshare-01-square.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: 50% 25%;
-  height: 280px;
-  width: auto;
-}
-.project-side-project-image {
-  background-image: url("../imgs/side-project-1.jpg");
+
+/* line 59 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-PiAlarm-image {
+  background-image: url("../imgs/PiAlarm/cover.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -283,28 +494,34 @@ h4.text-center {
   height: 280px;
   width: auto;
 }
-.project-Canon-image {
-  background-image: url("../imgs/canon.jpg");
+
+/* line 61 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-N1-image {
+  background-image: url("../imgs/N1/cover.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  background-position: 50% 15%;
+  background-position: 50% 50%;
   height: 280px;
   width: auto;
 }
-.project-extensions-image {
-  background-image: url("../imgs/extensions-01.png");
+
+/* line 63 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-SoundCloud-image {
+  background-image: url("../imgs/SoundCloud/cover.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  background-position: 50% 0;
+  background-position: 5% 5%;
   height: 280px;
   width: auto;
 }
-.project-3D_printing-image {
-  background-image: url("../imgs/3d_printing-1.jpg");
+
+/* line 65 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-3DPrints-image {
+  background-image: url("../imgs/3DPrints/cover.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -313,8 +530,22 @@ h4.text-center {
   height: 280px;
   width: auto;
 }
-.project-alumni_cup-image {
-  background-image: url("../imgs/alumni_cup-1.jpg");
+
+/* line 68 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-extensions-image {
+  background-image: url("../imgs/Extenstions/cover.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 50% 0%;
+  height: 280px;
+  width: auto;
+}
+
+/* line 70 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-MSD-image {
+  background-image: url("../imgs/MSD/cover.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -323,38 +554,10 @@ h4.text-center {
   height: 280px;
   width: auto;
 }
-.project-class_projects-image {
-  background-image: url("../imgs/mathematica_01.png");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: 50% 50%;
-  height: 280px;
-  width: auto;
-}
-.project-microduino-image {
-  background-image: url("../imgs/microduino.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: 50% 50%;
-  height: 280px;
-  width: auto;
-}
-.project-NEXT-image {
-  background-image: url("../imgs/microduino.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: 50% 70%;
-  height: 280px;
-  width: auto;
-}
+
+/* line 73 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-CAPSTONE-image {
-  background-image: url("../imgs/Capstone-transparency.png");
+  background-image: url("../imgs/Capstone/Capstone-transparency.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -363,6 +566,56 @@ h4.text-center {
   height: 280px;
   width: auto;
 }
+
+/* line 76 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-microfluidics-image {
+  background-image: url("../imgs/Microfluidics/microfluidics-02.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 280px;
+  width: auto;
+}
+
+/* line 78 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-bikeshare-image {
+  background-image: url("../imgs/Bikeshare/cover.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 50% 25%;
+  height: 280px;
+  width: auto;
+}
+
+/* line 80 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-Canon-image {
+  background-image: url("../imgs/Canon/cover.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 50% 15%;
+  height: 280px;
+  width: auto;
+}
+
+/* line 83 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-class_projects-image {
+  background-image: url("../imgs/ClassProjects/mathematica_01.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 280px;
+  width: auto;
+}
+
+/* line 93 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .card-container {
   padding-top: 0;
   padding-bottom: 40px;
@@ -370,11 +623,15 @@ h4.text-center {
   cursor: pointer;
 }
 @media (min-width: 768px) {
+
+/* line 99 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
   .card-container {
     padding-right: 20px;
     padding-left: 20px;
   }
 }
+
+/* line 103 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .description-container {
   height: 180px;
   padding-right: 15px;
@@ -382,12 +639,16 @@ h4.text-center {
   position: relative;
 }
 @media (max-width: 768px) {
+
+/* line 107 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
   .description-container {
     height: 210px;
     padding-right: 5px;
     padding-left: 5px;
   }
 }
+
+/* line 116 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .description-container .content {
   position: absolute;
   top: 50%;
@@ -399,22 +660,36 @@ h4.text-center {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+/* line 124 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .section-spacing {
   height: 50px;
   width: 100%;
   margin: none !important;
 }
+
+/* line 128 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .inverse {
   color: #fbfcfc;
 }
+
+/* line 130 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .secondary-bg {
   background-color: #fbfcfc;
 }
+
+/* line 131 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+
+/* line 1 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
+
+/* line 8 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+/* line 11 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 *,
 *:before,
 *:after {
@@ -422,9 +697,13 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
+
+/* line 45 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .noscroll {
   overflow: hidden;
 }
+
+/* line 48 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel {
   position: fixed;
   top: 0;
@@ -439,10 +718,14 @@ html {
   transition: visibility 0s 0.6s;
   z-index: 99;
 }
+
+/* line 49 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel::after,
 .cd-panel::before {
   content: '';
 }
+
+/* line 59 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel::after {
 /* overlay layer */
   position: absolute;
@@ -458,6 +741,8 @@ html {
   -ms-transition: background 0.3s 0.3s;
   transition: background 0.3s 0.3s;
 }
+
+/* line 69 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel.is-visible {
   visibility: visible;
   -webkit-transition: visibility 0s 0s;
@@ -466,6 +751,8 @@ html {
   -ms-transition: visibility 0s 0s;
   transition: visibility 0s 0s;
 }
+
+/* line 72 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel.is-visible::after {
   background: rgba(0,0,0,0.6);
   -webkit-transition: background 0.3s 0s;
@@ -474,6 +761,8 @@ html {
   -ms-transition: background 0.3s 0s;
   transition: background 0.3s 0s;
 }
+
+/* line 75 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel.is-visible .cd-panel-close::before {
   -webkit-animation: cd-close-1 0.6s 0.3s;
   -moz-animation: cd-close-1 0.6s 0.3s;
@@ -481,6 +770,8 @@ html {
   -ms-animation: cd-close-1 0.6s 0.3s;
   animation: cd-close-1 0.6s 0.3s;
 }
+
+/* line 77 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel.is-visible .cd-panel-close::after {
   -webkit-animation: cd-close-2 0.6s 0.3s;
   -moz-animation: cd-close-2 0.6s 0.3s;
@@ -488,6 +779,8 @@ html {
   -ms-animation: cd-close-2 0.6s 0.3s;
   animation: cd-close-2 0.6s 0.3s;
 }
+
+/* line 92 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel-header {
   position: fixed;
   width: 100%;
@@ -500,6 +793,8 @@ html {
   box-shadow: 0 1px 1px rgba(0,0,0,0.08);
   overflow: hidden;
 }
+
+/* line 106 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel-header h1.cd {
   padding-left: 10px;
   font-weight: bold;
@@ -507,10 +802,14 @@ html {
   margin-top: 17.7px;
 }
 @media only screen and (min-width: $screen-sm) {
+
+/* line 55 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/ITCSS.styl */
   .cd-panel-header h1.cd {
     padding-left: 0px;
   }
 }
+
+/* line 117 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .from-right .cd-panel-header,
 .from-left .cd-panel-header {
   top: -75px;
@@ -520,12 +819,18 @@ html {
   -ms-transition: top 0.3s 0s;
   transition: top 0.3s 0s;
 }
+
+/* line 120 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .from-right .cd-panel-header {
   right: 0;
 }
+
+/* line 122 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .from-left .cd-panel-header {
   left: 0;
 }
+
+/* line 124 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .is-visible .cd-panel-header {
   top: 0px;
   -webkit-transition: top 0.3s 0.3s;
@@ -535,15 +840,21 @@ html {
   transition: top 0.3s 0.3s;
 }
 @media only screen and (min-width: $screen-sm) {
+
+/* line 55 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/ITCSS.styl */
   .cd-panel-header {
     width: 100%;
   }
 }
 @media only screen and (min-width: $screen-md) {
+
+/* line 58 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/ITCSS.styl */
   .cd-panel-header {
     width: 100%;
   }
 }
+
+/* line 132 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel-close {
   position: absolute;
   top: 12.5px;
@@ -556,10 +867,14 @@ html {
   text-indent: 100%;
   white-space: nowrap;
 }
+
+/* line 133 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel-close::after,
 .cd-panel-close::before {
   content: '';
 }
+
+/* line 145 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel-close::before,
 .cd-panel-close::after {
 /* close icon created in CSS */
@@ -575,6 +890,8 @@ html {
   -ms-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
+/* line 155 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel-close::before {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
@@ -582,6 +899,8 @@ html {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+/* line 157 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel-close::after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
@@ -589,6 +908,10 @@ html {
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+
+/* line 159 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
+
+/* line 160 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .no-touch .cd-panel-close:hover::before,
 .no-touch .cd-panel-close:hover::after {
   background-color: #333;
@@ -603,6 +926,8 @@ html {
   -ms-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+
+/* line 164 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .no-touch .cd-panel-close:hover::before {
   -webkit-transform: rotate(220deg);
   -moz-transform: rotate(220deg);
@@ -610,6 +935,8 @@ html {
   -ms-transform: rotate(220deg);
   transform: rotate(220deg);
 }
+
+/* line 166 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .no-touch .cd-panel-close:hover::after {
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
@@ -617,6 +944,8 @@ html {
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
 }
+
+/* line 169 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel-container {
   position: fixed;
   width: 100%;
@@ -640,6 +969,8 @@ html {
   -ms-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
+
+/* line 179 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .from-right .cd-panel-container {
   right: 0;
   -webkit-transform: translate3d(100%, 0, 0);
@@ -648,6 +979,8 @@ html {
   -ms-transform: translate3d(100%, 0, 0);
   transform: translate3d(100%, 0, 0);
 }
+
+/* line 182 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .from-left .cd-panel-container {
   left: 0;
   -webkit-transform: translate3d(-100%, 0, 0);
@@ -656,6 +989,8 @@ html {
   -ms-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
 }
+
+/* line 185 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .is-visible .cd-panel-container {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
@@ -669,15 +1004,21 @@ html {
   transition-delay: 0s;
 }
 @media only screen and (min-width: $screen-sm) {
+
+/* line 55 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/ITCSS.styl */
   .cd-panel-container {
     width: 100%;
   }
 }
 @media only screen and (min-width: $screen-md) {
+
+/* line 58 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/ITCSS.styl */
   .cd-panel-container {
     width: 100%;
   }
 }
+
+/* line 193 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel-content {
   position: absolute;
   top: 0;
@@ -691,6 +1032,8 @@ html {
 /* smooth scrolling on touch devices */
   -webkit-overflow-scrolling: touch;
 }
+
+/* line 212 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel-tooltip {
   position: absolute;
   display: block;
@@ -716,15 +1059,21 @@ html {
   transition: all 0.1s;
 }
 @media only screen and (min-width: $screen-md) {
+
+/* line 58 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/ITCSS.styl */
   .cd-panel-tooltip {
     right: 125px;
   }
 }
+
+/* line 231 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel-tooltip.visible {
   opacity: 1;
   -ms-filter: none;
   filter: none;
 }
+
+/* line 235 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .tooltip-arrow-right {
   position: absolute;
   top: 28.5px;
@@ -745,15 +1094,21 @@ html {
   border-left: 9px solid #212f3d;
 }
 @media only screen and (min-width: $screen-md) {
+
+/* line 58 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/ITCSS.styl */
   .tooltip-arrow-right {
     right: 126px;
   }
 }
+
+/* line 247 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .tooltip-arrow-right.visible {
   opacity: 1;
   -ms-filter: none;
   filter: none;
 }
+
+/* line 258 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .summary {
   background-color: #dee5e7;
   padding-right: 20px;
@@ -763,13 +1118,19 @@ html {
   border-radius: 10px;
 }
 @media only screen and (min-width: $screen-xs) {
+
+/* line 52 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/ITCSS.styl */
   .summary {
     padding-right: 10px;
     padding-left: 10px;
     padding-bottom: 15px;
   }
 }
+
+/* line 80 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 @-moz-keyframes cd-close-1 {
+
+/* line 81 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
   0%, 50% {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -777,6 +1138,8 @@ html {
     -ms-transform: rotate(0);
     transform: rotate(0);
   }
+
+/* line 83 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
   100% {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -785,7 +1148,11 @@ html {
     transform: rotate(45deg);
   }
 }
+
+/* line 80 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 @-webkit-keyframes cd-close-1 {
+
+/* line 81 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
   0%, 50% {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -793,6 +1160,8 @@ html {
     -ms-transform: rotate(0);
     transform: rotate(0);
   }
+
+/* line 83 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
   100% {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -801,7 +1170,11 @@ html {
     transform: rotate(45deg);
   }
 }
+
+/* line 80 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 @-o-keyframes cd-close-1 {
+
+/* line 81 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
   0%, 50% {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -809,6 +1182,8 @@ html {
     -ms-transform: rotate(0);
     transform: rotate(0);
   }
+
+/* line 83 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
   100% {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -817,7 +1192,11 @@ html {
     transform: rotate(45deg);
   }
 }
+
+/* line 80 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 @keyframes cd-close-1 {
+
+/* line 81 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
   0%, 50% {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -825,6 +1204,8 @@ html {
     -ms-transform: rotate(0);
     transform: rotate(0);
   }
+
+/* line 83 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
   100% {
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -833,7 +1214,11 @@ html {
     transform: rotate(45deg);
   }
 }
+
+/* line 86 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 @-moz-keyframes cd-close-2 {
+
+/* line 87 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
   0%, 50% {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -841,6 +1226,8 @@ html {
     -ms-transform: rotate(0);
     transform: rotate(0);
   }
+
+/* line 89 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
   100% {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -849,7 +1236,11 @@ html {
     transform: rotate(-45deg);
   }
 }
+
+/* line 86 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 @-webkit-keyframes cd-close-2 {
+
+/* line 87 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
   0%, 50% {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -857,6 +1248,8 @@ html {
     -ms-transform: rotate(0);
     transform: rotate(0);
   }
+
+/* line 89 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
   100% {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -865,7 +1258,11 @@ html {
     transform: rotate(-45deg);
   }
 }
+
+/* line 86 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 @-o-keyframes cd-close-2 {
+
+/* line 87 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
   0%, 50% {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -873,6 +1270,8 @@ html {
     -ms-transform: rotate(0);
     transform: rotate(0);
   }
+
+/* line 89 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
   100% {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -881,7 +1280,11 @@ html {
     transform: rotate(-45deg);
   }
 }
+
+/* line 86 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 @keyframes cd-close-2 {
+
+/* line 87 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
   0%, 50% {
     -webkit-transform: rotate(0);
     -moz-transform: rotate(0);
@@ -889,6 +1292,8 @@ html {
     -ms-transform: rotate(0);
     transform: rotate(0);
   }
+
+/* line 89 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
   100% {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
@@ -897,11 +1302,20 @@ html {
     transform: rotate(-45deg);
   }
 }
+
+/* line 271 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
+
+/* line 271 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/map.import.styl */
+
+/* line 1 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/map.import.styl */
 .cd-map {
   width: 80%;
   height: 500px;
 }
+
+/* line 5 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/map.import.styl */
 button.map {
   margin-top: 10px;
   margin-bottom: 30px;
 }
+/*# sourceMappingURL=ITCSS.css.map */

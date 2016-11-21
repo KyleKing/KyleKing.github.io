@@ -3,12 +3,13 @@
   position: relative
   float: left
   z-index: 0
-  height: 429px
+  // height: 500px
+  height: 650px
   width: 100%
-  background: url("../imgs/microfluidics-01.jpg")
+  background: url("../imgs/cover_capstone.jpg")
   background-repeat: no-repeat
   background-size: cover
-  background-position: 50% 30%
+  background-position: 50% 10%
 
 .callout-box
   position: relative
@@ -42,36 +43,52 @@
     width: 80%
 
 // Project Cards
-img_cover_mixin(url, top_spacing)
+img_cover_mixin(url, left_spacing, top_spacing)
   background-image url("../imgs/" + url)
   background-repeat no-repeat
   background-size cover
-  background-position 50% top_spacing
+  background-position left_spacing top_spacing
   height 280px
   width auto
 
-.project-microfluidics-image
-  img_cover_mixin("microfluidics-02.jpg", 50%)
-.project-bikeshare-image
-  img_cover_mixin("bikeshare-01-square.jpg", 25%)
-.project-side-project-image
-  img_cover_mixin("side-project-1.jpg", 50%)
-.project-Canon-image
-  img_cover_mixin("canon.jpg", 15%)
+// .project-TITLE-image
+//   img_cover_mixin("TITLE.jpg", 50%)
+
+.project-PhotoFrame-image
+  img_cover_mixin("PhotoFrame/cover.jpg", 50%, 50%)
+.project-PiAlarm-image
+  img_cover_mixin("PiAlarm/cover.jpg", 50%, 50%)
+.project-N1-image
+  img_cover_mixin("N1/cover.png", 50%, 50%)
+.project-SoundCloud-image
+  img_cover_mixin("SoundCloud/cover.png", 5%, 5%)
+.project-3DPrints-image
+  img_cover_mixin("3DPrints/cover.jpg", 50%, 20%)
+  // img_cover_mixin("3DPrints.jpg", 50%, 50%)
 .project-extensions-image
-  img_cover_mixin("extensions-01.png", 0)
-.project-3D_printing-image
-  img_cover_mixin("3d_printing-1.jpg", 20%)
-.project-alumni_cup-image
-  img_cover_mixin("alumni_cup-1.jpg", 50%)
-.project-class_projects-image
-  img_cover_mixin("mathematica_01.png", 50%)
-.project-microduino-image
-  img_cover_mixin("microduino.jpg", 50%)
-.project-NEXT-image
-  img_cover_mixin("microduino.jpg", 70%)
+  img_cover_mixin("Extenstions/cover.png", 50%, 0%)
+.project-MSD-image
+  // Source: https://commons.wikimedia.org/wiki/File:96wells_glass_bottom_plate_1.jpg
+  img_cover_mixin("MSD/cover.jpg", 50%, 50%)
 .project-CAPSTONE-image
-  img_cover_mixin("Capstone-transparency.png", 70%)
+  img_cover_mixin("Capstone/Capstone-transparency.png", 50%, 70%)
+  // img_cover_mixin("CAPSTONE.jpg", 50%, 50%)
+.project-microfluidics-image
+  img_cover_mixin("Microfluidics/microfluidics-02.jpg", 50%, 50%)
+.project-bikeshare-image
+  img_cover_mixin("Bikeshare/cover.jpg", 50%, 25%)
+.project-Canon-image
+  // Source: https://vimeo.com/73998150
+  img_cover_mixin("Canon/cover.jpg", 50%, 15%)
+.project-class_projects-image
+  img_cover_mixin("ClassProjects/mathematica_01.png", 50%, 50%)
+  // img_cover_mixin("class_projects.jpg", 50%)
+
+// .project-side-project-image
+//   img_cover_mixin("side-project-1.jpg", 50%)
+// 4K...
+// .project-microduino-image
+//   img_cover_mixin("microduino.jpg", 50%)
 
 .card-container
   padding-top 0
