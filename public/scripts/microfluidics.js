@@ -1,2 +1,0 @@
-(function(){Template.microfluidics.onRendered(function(){var i;return i=new juxtapose.JXSlider("#bead-bed",[{src:"imgs/microfluidics-21.jpg",label:"Prior to Heating"},{src:"imgs/microfluidics-22.jpg",label:"After Heating"}],{animate:!0,showLabels:!0,showCredits:!1,startingPosition:"60%",makeResponsive:!0})})}).call(this);
-//# sourceMappingURL=./microfluidics.js.map

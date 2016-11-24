@@ -1,3 +1,42 @@
+startJuxtapose = () ->
+  console.log(window.location.pathname)
+  # console.log(window.location.pathname)
+
+  # # if (window.location.host == "macbook-pro.local:5757")
+  slider = new (juxtapose.JXSlider)('#bead-bed', [
+    {
+      src: '../public/imgs/Microfluidics/microfluidics-21.jpg'
+      label: 'Prior to Heating'
+    }
+    {
+      src: '../public/imgs/Microfluidics/microfluidics-22.jpg'
+      label: 'After Heating'
+    }
+  ], {
+    animate: true
+    showLabels: true
+    showCredits: false
+    startingPosition: '60%'
+    makeResponsive: true
+  })
+
+  sliderTwo = new (juxtapose.JXSlider)('#web-clock', [
+    {
+      src: '../public/imgs/Extensions/extension-before.jpg'
+      label: 'Standard UI'
+    }
+    {
+      src: '../public/imgs/Extensions/extension-after.jpg'
+      label: 'With Chrome Extension'
+    }
+  ], {
+    animate: true
+    showLabels: true
+    showCredits: false
+    startingPosition: '50%'
+    makeResponsive: true
+  })
+
 createFullURL = (id) ->
   # Figure out the URL
   newURL = window.location.protocol + "//" + window.location.host + '/'
@@ -27,6 +66,8 @@ createFullURL = (id) ->
     "html": 'response.html'
     "pageTitle": id
   }, "", fullURL)
+
+  startJuxtapose()
   return fullURL
 
 
@@ -34,6 +75,8 @@ $( document ).ready(->
   if (window.location.host == "macbook-pro.local:5757")
     $('.cd-panel').addClass 'is-visible'
     $('body').addClass 'noscroll'
+
+  startJuxtapose()
 
   # TODO: Used to open up panel right away for shared links:
   # Useful for overcoming back button issue in flow.coffee
