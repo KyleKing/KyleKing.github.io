@@ -1,16 +1,43 @@
 extends ../layout.jade
 
 block title
-	h1.cd.hidden-xs Side-Projects
-	h1.cd.hidden-sm.hidden-md.hidden-lg Projects
+	h1.cd.hidden-xs 3D PRINTING!
+	h1.cd.hidden-sm.hidden-md.hidden-lg 3D Prints!
 
 block Slide_In_Panel_Content
-	h4.cd Summary
-	p.cd 3D printing and rapid prototyping are amazing tools. Over the past two years I've had the opportunity to make many different prototypes using a variety of rapid prototyping techniques. Here is a collection of the things that I use daily and found worthwhile.
+	.summary.cd
+		h4.cd Summary
+		p.cd I really enjoy making things and 3D printing and rapid prototyping are really powerful tools. At the University of Maryland, I had access to the largest Makerbot Innovation center filled with 5th generation Makerbot Replicators, laser cutting, milling, and many other options. I've made things from a replacement stand for my lamp, a mount for a bike light, to a bike 4th hand tool, my&nbsp;
+			a(href="CAPSTONE.html")
+				| senior capstone project
+			| , and my&nbsp;
+			a(href="microfluidics.html")
+				| undergraduate research project
+			|.
 
-	h4.cd Challenges
-	p.cd ...tolerances and accounting for shrinkage in each 3D printed-part... Also strength, while optimizing for low cost and minimal mass
+	h4.cd Useful 3D Prints
+	figure.figure
+		img(src=path + "imgs/3DPrints/todo" style="max-width: 550px").small-cd.center-fig
+		figcaption.figure-caption.text-center A bike light adapter
 
-	h4.cd Progress
+	p.cd The cover photo of this section is of my IKEA lamp base, which shattered in half. I 3D printed a fixed version and have used it for over two years at this point:
+	figure.figure
+		img(src=path + "imgs/3DPrints/cover_lamp_base.jpg" style="max-width: 550px").small-cd.center-fig
+		figcaption.figure-caption.text-center The new lamp base
 
-	h4.cd Deliverables
+	p.cd This is probably one of my favorite prints because I picked a radius to match the 0.1 mm layer height profile and the curvature came out so cleanly on the first attempt. The design mounts to a leftover fan I had from a freshman project that a carbon filter is mounted to and a ventilation hose. An Arduino controller modulates the fan to help remove solder smoke while assembling perf boards
+	figure.figure
+		img(src=path + "imgs/3DPrints/todo" style="max-width: 550px").small-cd.center-fig
+		figcaption.figure-caption.text-center Solder sucker
+
+	figure.figure
+		img(src=path + "imgs/Capstone/3_projector.jpg" style="max-width: 550px").small-cd.center-fig
+		figcaption.figure-caption.text-center My capstone project prints.&nbsp;
+			a(href="CAPSTONE.html")
+				| Read more here
+
+	figure.figure
+		img(src=path + "imgs/3DPrints/todo" style="max-width: 550px").small-cd.center-fig
+		figcaption.figure-caption.text-center My undergraduate research project prints.&nbsp;
+			a(href="microfluidics.html")
+				| Read more here

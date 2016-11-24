@@ -1,22 +1,20 @@
 extends ../layout.jade
 
 block title
-	h1.cd.hidden-xs LONG
-	h1.cd.hidden-sm.hidden-md.hidden-lg SHORT
+	h1.cd.hidden-xs SoundCloud Generator
+	h1.cd.hidden-sm.hidden-md.hidden-lg SoundCloud
 
 block Slide_In_Panel_Content
 	.summary.cd
 		h4.cd Summary
-		p.cd At the University of Maryland, I am actively working with 13 undergraduate students to build a stationless bikeshare system as part of a four year honors research program. I am the full stack web developer of our website (asdf) and have contributed to other facets of the project including sensor selection, smart-lock design, and help with rapid prototyping.
-		br
-		a(href=path + "pdf/BIKES-Poster.pdf" target="_blank").unstyled.poster-container
-			button.poster
-				i.fa.fa-file-pdf-o.fa-1x
-				| Undergraduate Research Day Poster
+		p.cd I was bored of the music I listened to, but I really liked the music I've reposted on SoundCloud. I built a simple Python CLI tool that looks for all of your songs based on set parameters, then spits out a custom playlist for you to listen to whenever.
 
-	h4.cd.no-padding The Technology
-	p.cd To use our system, a user can.
+	h4.cd.no-padding TBD
+	p.cd See the&nbsp;
+		a(href="https://github.com/KyleKing/soundcloud_playlist_maker")
+			| Github repository
+		|  for up to date code and installation guide
 
-	figure.figure
-		img(src=path + "imgs/Bikeshare/bikeshare-10.png").small-cd
-		figcaption.figure-caption.text-left Smartlock components that are placed on each bike
+	//- figure.figure
+	//- 	img(src=path + "imgs/Bikeshare/bikeshare-10.png").small-cd
+	//- 	figcaption.figure-caption.text-left Smartlock components that are placed on each bike

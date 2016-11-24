@@ -1,22 +1,24 @@
 extends ../layout.jade
 
 block title
-	h1.cd.hidden-xs LONG
-	h1.cd.hidden-sm.hidden-md.hidden-lg SHORT
+	h1.cd.hidden-xs PiAlarm
+	h1.cd.hidden-sm.hidden-md.hidden-lg PiAlarm
 
 block Slide_In_Panel_Content
 	.summary.cd
 		h4.cd Summary
-		p.cd At the University of Maryland, I am actively working with 13 undergraduate students to build a stationless bikeshare system as part of a four year honors research program. I am the full stack web developer of our website (asdf) and have contributed to other facets of the project including sensor selection, smart-lock design, and help with rapid prototyping.
-		br
-		a(href=path + "pdf/BIKES-Poster.pdf" target="_blank").unstyled.poster-container
-			button.poster
-				i.fa.fa-file-pdf-o.fa-1x
-				| Undergraduate Research Day Poster
+		p.cd I wasn't happy with the alarm clock I had or the ones I found online, so I built an alarm clock to fit all the features I wanted. The core actions are:
+		ul
+			li Display updates, such as temperature, wind speed, and likelihood of rain, which is useful when I head out in the morning to bike commute to work (to be built)
+			li Display the time (to be built). My plan is to use a series of shift registers to power a series of RGB LEDs embedded into a milled/3D printed clock display
+			//- The structure of the display will be 3D printed and place behind a thinly milled piece of wood to create a cool effect
+			li Start a custom alarm sequence - start with a pleasant LED array, then move onto a buzzer + the led array, then if al that fails, initiate the LED array on the brightest setting, the loudest buzzer setting, and start the bed shaker motor
+			li Turn off when I'm away and back on when I return. Using IFTTT, when I leave my apartment, the alarm turns off and won't disturb my roommates if I forget to deactivate it
+			li Update the clock remotely through a web app. I built a react web app that can be controlled remotely or at home to adjust alarm clock schedules and settings
 
-	h4.cd.no-padding The Technology
-	p.cd To use our system, a user can.
+	h4.cd.no-padding Updates
+	p.cd The alarm clock is an ongoing project and I will return to update this section once I start milling the housing and make more progress
 
-	figure.figure
-		img(src=path + "imgs/Bikeshare/bikeshare-10.png").small-cd
-		figcaption.figure-caption.text-left Smartlock components that are placed on each bike
+	//- figure.figure
+	//- 	img(src=path + "imgs/Bikeshare/bikeshare-10.png").small-cd
+	//- 	figcaption.figure-caption.text-left Smartlock components that are placed on each bike
