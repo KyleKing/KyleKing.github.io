@@ -554,7 +554,7 @@ h4.text-center {
 
 /* line 68 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-extensions-image {
-  background-image: url("../imgs/Extenstions/cover.png");
+  background-image: url("../imgs/Extensions/cover.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;

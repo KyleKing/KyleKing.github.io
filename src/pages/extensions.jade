@@ -5,8 +5,9 @@ block title
 	h1.cd.hidden-sm.hidden-md.hidden-lg Open Source
 
 block Slide_In_Panel_Content
-	h4.cd Chrome Extension -
-		a(href="https://github.com/KyleKing/My-Programming-Sketchbook/tree/master/Chrome%20Extensions/A%20Better%20WebClock") WebClockUX
+	h4.cd Chrome Extension -&nbsp;
+		a(href="https://github.com/KyleKing/My-Programming-Sketchbook/tree/master/Chrome%20Extensions/A%20Better%20WebClock")
+			| WebClockUX
 	p.cd Over a summer internship, I often would make mistakes when recording my hours as the Workforce WebClock had two small buttons that had little visual distinction. Realizing myself and other interns likewise struggled, I built a small chrome extension that made both buttons as large as possible and remembered the user's clock in status across Chrome accounts.
 
 	p.cd
@@ -15,21 +16,16 @@ block Slide_In_Panel_Content
 
 	p.cd Removing one of the two most important buttons meant that the application had to work seamlessly across different browsers and with a high degree of accuracy. I listened to fellow interns to make the extension as easy as possible to use and based on the feedback, changed the dropdown text to be more clear. To ensure a high level of reliability, I utilized the chrome local storage feature and stored the user state, which could be quickly synced across browsers without any additional backend.
 
-	.mini-cd
-		figure.figure
-			img(src=path + "imgs/Extensions/extensions-02.png").cd
-			figcaption.figure-caption.text-left WebClock UX dropdown for initial configuration
+	.small-juxtapose#web-clock
 
-	//- FIXME: Not supported in non-Meteor Application
-	//- .small-juxtapose
-	//- 	+juxtapose(id='web-clock')
+	//- .mini-cd
+	//- 	figure.figure
+	//- 		img(src=path + "imgs/Extensions/extensions-02.png").small-cd
+	//- 		figcaption.figure-caption.text-left WebClock UX dropdown for initial configuration
 
-	//- figure.figure
-	//- 	img(src=path + "imgs/Extensions/microfluidics-2.jpg").small-cd
-	//- 	figcaption.figure-caption.text-left Side by side comparison of the two user interfaces
-
-	h4.cd Meteor Package -
-		a(href="https://github.com/KyleKing/Customizable-Bootstrap-Stylus") Customizable Bootstrap Stylus
+	h4.cd Meteor Package -&nbsp;
+		a(href="https://github.com/KyleKing/Customizable-Bootstrap-Stylus")
+			| Customizable Bootstrap Stylus
 	p.cd Over the summer, I began using Stylus as it was faster to develop and write new code. Eager to write my first Meteor package and excited by a similar package built for Bootstrap and Less, I reverse-engineered a Stylus version. It has been my most successful open source contribution with an average of 92 users.
 
 	p.cd

@@ -12,10 +12,30 @@ $( document ).ready(->
       src: '../public/imgs/Microfluidics/microfluidics-22.jpg'
       label: 'After Heating'
     }
-  ],
+  ], {
     animate: true
     showLabels: true
     showCredits: false
     startingPosition: '60%'
-    makeResponsive: true)
+    makeResponsive: true
+  })
+
+  slider = new (juxtapose.JXSlider)('#web-clock', [
+    {
+      src: '../public/imgs/Extensions/extension-before.jpg'
+      label: 'Standard UI'
+    }
+    {
+      src: '../public/imgs/Extensions/extension-after.jpg'
+      label: 'With Chrome Extension'
+    }
+  ], {
+    animate: true
+    showLabels: true
+    showCredits: false
+    startingPosition: '50%'
+    makeResponsive: true
+  })
 )
+
+

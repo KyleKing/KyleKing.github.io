@@ -38,11 +38,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/pages\/capstone.html": {
+	"\/pages\/CAPSTONE.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/pages\/capstone.html",
+		"inputAbbreviatedPath": "\/pages\/CAPSTONE.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -52,24 +52,6 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pages\/class_projects.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/pages\/extensions.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/pages\/extensions.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/pages\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/pages\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -483,6 +465,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/imgs\/Capstone\/1_phone.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.57852e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/Capstone\/1_phone.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/Capstone\/1_phone.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/Capstone\/2_transparency.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.71188e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/Capstone\/2_transparency.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/Capstone\/2_transparency.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/Capstone\/3_paper.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.4819e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/Capstone\/3_paper.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/Capstone\/3_paper.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/Capstone\/3_projector.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.44531e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/Capstone\/3_projector.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/Capstone\/3_projector.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/imgs\/Capstone\/Capstone-coolsideprofile.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -648,6 +674,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/imgs\/Capstone\/evolution.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.3339e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/Capstone\/evolution.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/Capstone\/evolution.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/imgs\/ClassProjects\/HW2_03.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -692,46 +729,46 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/imgs\/Extenstions\/cover.png": {
+	"\/public\/imgs\/Extensions\/cover.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 124475,
-		"inputAbbreviatedPath": "\/public\/imgs\/Extenstions\/cover.png",
-		"outputAbbreviatedPath": "\/public\/imgs\/Extenstions\/cover.png",
+		"inputAbbreviatedPath": "\/public\/imgs\/Extensions\/cover.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/Extensions\/cover.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/imgs\/Extenstions\/extension-after.jpg": {
+	"\/public\/imgs\/Extensions\/extension-after.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 69965,
-		"inputAbbreviatedPath": "\/public\/imgs\/Extenstions\/extension-after.jpg",
-		"outputAbbreviatedPath": "\/public\/imgs\/Extenstions\/extension-after.jpg",
+		"inputAbbreviatedPath": "\/public\/imgs\/Extensions\/extension-after.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/Extensions\/extension-after.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/imgs\/Extenstions\/extension-before.jpg": {
+	"\/public\/imgs\/Extensions\/extension-before.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 53039,
-		"inputAbbreviatedPath": "\/public\/imgs\/Extenstions\/extension-before.jpg",
-		"outputAbbreviatedPath": "\/public\/imgs\/Extenstions\/extension-before.jpg",
+		"inputAbbreviatedPath": "\/public\/imgs\/Extensions\/extension-before.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/Extensions\/extension-before.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/imgs\/Extenstions\/extensions-02.png": {
+	"\/public\/imgs\/Extensions\/extensions-02.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 32898,
-		"inputAbbreviatedPath": "\/public\/imgs\/Extenstions\/extensions-02.png",
-		"outputAbbreviatedPath": "\/public\/imgs\/Extenstions\/extensions-02.png",
+		"inputAbbreviatedPath": "\/public\/imgs\/Extensions\/extensions-02.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/Extensions\/extensions-02.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1638,6 +1675,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/public\/scripts\/juxtapose.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/scripts\/juxtapose.js",
+		"outputAbbreviatedPath": "\/public\/scripts\/min\/juxtapose-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/public\/scripts\/layout.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -1814,9 +1862,9 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/juxtapose.coffee",
 		"minifyOutput": 1,
-		"outputAbbreviatedPath": "\/Users\/kyleking\/Developer\/dist\/pages\/juxtapose.js",
+		"outputAbbreviatedPath": "\/public\/scripts\/juxtapose.js",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
 		},
@@ -1877,13 +1925,13 @@
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
-	"\/src\/pages\/capstone.jade": {
+	"\/src\/pages\/CAPSTONE.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/pages\/capstone.jade",
-		"outputAbbreviatedPath": "\/pages\/capstone.html",
+		"inputAbbreviatedPath": "\/src\/pages\/CAPSTONE.jade",
+		"outputAbbreviatedPath": "\/pages\/CAPSTONE.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
@@ -2243,556 +2291,6 @@
 		"resolveRelativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0
-		},
-	"\/unused\/capstone_other\/IMG_2383.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2.06834e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2383.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2383.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2384.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.25375e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2384.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2384.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2385.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.03678e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2385.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2385.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2386.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.18952e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2386.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2386.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2387.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.30776e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2387.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2387.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2388.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.3302e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2388.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2388.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2389.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.32476e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2389.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2389.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2565.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.3137e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2565.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2565.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2566.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.39177e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2566.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2566.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2567.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.47496e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2567.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2567.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2582.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.4388e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2582.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2582.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2584.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2.02401e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2584.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2584.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2585.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.87898e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2585.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2585.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2586.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.63408e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2586.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2586.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2602.JPG": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.47157e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2602.JPG",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2602.JPG",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2603.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2.12653e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2603.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2603.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2611.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.65079e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2611.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2611.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2612.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.54437e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2612.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2612.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2613.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2.17671e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2613.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2613.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2614.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.62774e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2614.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2614.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2615.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.38442e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2615.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2615.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2616.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.45026e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2616.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2616.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2617.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.77002e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2617.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2617.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2618.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.23163e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2618.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2618.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2621.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.06552e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2621.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2621.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2625.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.53442e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2625.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2625.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2626.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.58323e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2626.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2626.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2627.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2.09009e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2627.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2627.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2628.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.67915e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2628.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2628.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2637.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.43398e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2637.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2637.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2639.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.57852e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2639.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2639.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2640.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.71188e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2640.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2640.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2645.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.4819e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2645.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2645.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2646.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 859387,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2646.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2646.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2660.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.3339e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2660.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2660.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2661.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.41603e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2661.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2661.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2662.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.44763e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2662.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2662.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2667.JPG": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2.15665e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2667.JPG",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2667.JPG",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/IMG_2668.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1.44531e+06,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2668.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/IMG_2668.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_1f6.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 227047,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_1f6.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_1f6.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_1f7.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 195324,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_1f7.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_1f7.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_225.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 228758,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_225.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_225.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_226.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 250874,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_226.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_226.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_227.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 282506,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_227.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_227.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_228.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 285682,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_228.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_228.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_229.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 243109,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_229.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_229.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_22a.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 229299,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_22a.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_22a.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_22b.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 240252,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_22b.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_22b.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_22c.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 200756,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_22c.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_22c.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_22f.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 159769,
-		"inputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_22f.jpg",
-		"outputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_22f.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		}
 	},
 "hooks": [
