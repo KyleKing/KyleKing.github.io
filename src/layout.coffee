@@ -31,6 +31,10 @@ createFullURL = (id) ->
 
 
 $( document ).ready(->
+  if (window.location.host == "macbook-pro.local:5757")
+    $('.cd-panel').addClass 'is-visible'
+    $('body').addClass 'noscroll'
+
   # TODO: Used to open up panel right away for shared links:
   # Useful for overcoming back button issue in flow.coffee
   # Template.layout.onRendered ->

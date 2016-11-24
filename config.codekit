@@ -20,15 +20,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/pages\/bikeshare.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/pages\/bikeshare.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/pages\/Canon.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -47,15 +38,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/pages\/class_projects.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/pages\/class_projects.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/pages\/extensions.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -67,7 +49,7 @@
 		},
 	"\/pages\/index.html": {
 		"fileType": 8192,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pages\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -124,6 +106,15 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pages\/PiAlarm.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/pages\/SoundCloud.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/pages\/SoundCloud.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -298,39 +289,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/imgs\/Bikeshare\/bikeshare-07.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 140032,
-		"inputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/bikeshare-07.jpg",
-		"outputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/bikeshare-07.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/imgs\/Bikeshare\/bikeshare-08.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 147257,
-		"inputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/bikeshare-08.png",
-		"outputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/bikeshare-08.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/imgs\/Bikeshare\/bikeshare-09.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 574380,
-		"inputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/bikeshare-09.png",
-		"outputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/bikeshare-09.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/public\/imgs\/Bikeshare\/bikeshare-10.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -386,57 +344,101 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/imgs\/Bikeshare\/UNADJUSTEDNONRAW_thumb_1ef.jpg": {
-		"fileType": 16384,
+	"\/public\/imgs\/Bikeshare\/Lock_and_Electronics.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 253951,
-		"inputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/UNADJUSTEDNONRAW_thumb_1ef.jpg",
-		"outputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/UNADJUSTEDNONRAW_thumb_1ef.jpg",
+		"initialSize": 589877,
+		"inputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/Lock_and_Electronics.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/Lock_and_Electronics.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/imgs\/Bikeshare\/UNADJUSTEDNONRAW_thumb_1f0.jpg": {
-		"fileType": 16384,
+	"\/public\/imgs\/Bikeshare\/Mesh_Single.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 242439,
-		"inputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/UNADJUSTEDNONRAW_thumb_1f0.jpg",
-		"outputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/UNADJUSTEDNONRAW_thumb_1f0.jpg",
+		"initialSize": 479541,
+		"inputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/Mesh_Single.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/Mesh_Single.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/imgs\/Bikeshare\/UNADJUSTEDNONRAW_thumb_1f1.jpg": {
-		"fileType": 16384,
+	"\/public\/imgs\/Bikeshare\/Mesh_System.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 240993,
-		"inputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/UNADJUSTEDNONRAW_thumb_1f1.jpg",
-		"outputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/UNADJUSTEDNONRAW_thumb_1f1.jpg",
+		"initialSize": 307710,
+		"inputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/Mesh_System.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/Mesh_System.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/imgs\/Bikeshare\/UNADJUSTEDNONRAW_thumb_1f2.jpg": {
-		"fileType": 16384,
+	"\/public\/imgs\/Bikeshare\/Mobile_App_Preview.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 261506,
-		"inputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/UNADJUSTEDNONRAW_thumb_1f2.jpg",
-		"outputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/UNADJUSTEDNONRAW_thumb_1f2.jpg",
+		"initialSize": 294363,
+		"inputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/Mobile_App_Preview.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/Mobile_App_Preview.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/imgs\/Bikeshare\/UNADJUSTEDNONRAW_thumb_1f3.jpg": {
-		"fileType": 16384,
+	"\/public\/imgs\/Bikeshare\/RedBarBikesCommercial.png": {
+		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 242371,
-		"inputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/UNADJUSTEDNONRAW_thumb_1f3.jpg",
-		"outputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/UNADJUSTEDNONRAW_thumb_1f3.jpg",
+		"initialSize": 2.1869e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/RedBarBikesCommercial.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/RedBarBikesCommercial.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/Bikeshare\/WS_about.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.94382e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/WS_about.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/WS_about.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/Bikeshare\/WS_manager.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 893403,
+		"inputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/WS_manager.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/WS_manager.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/Bikeshare\/WS_map.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.38831e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/WS_map.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/WS_map.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/Bikeshare\/WS_user.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 517209,
+		"inputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/WS_user.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/Bikeshare\/WS_user.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1508,50 +1510,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/public\/pdf\/1 original.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3.04531e+06,
-		"inputAbbreviatedPath": "\/public\/pdf\/1 original.png",
-		"outputAbbreviatedPath": "\/public\/pdf\/1 original.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/pdf\/1-macaw original.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 2.14823e+06,
-		"inputAbbreviatedPath": "\/public\/pdf\/1-macaw original.png",
-		"outputAbbreviatedPath": "\/public\/pdf\/1-macaw original.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/pdf\/1-macaw.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 0,
-		"inputAbbreviatedPath": "\/public\/pdf\/1-macaw.png",
-		"outputAbbreviatedPath": "\/public\/pdf\/1-macaw.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/pdf\/1.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 3.31098e+06,
-		"inputAbbreviatedPath": "\/public\/pdf\/1.png",
-		"outputAbbreviatedPath": "\/public\/pdf\/1.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/public\/scripts\/bikeshare.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -1840,7 +1798,7 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/pages\/index.jade",
-		"outputAbbreviatedPath": "\/pages\/index.html",
+		"outputAbbreviatedPath": "\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0

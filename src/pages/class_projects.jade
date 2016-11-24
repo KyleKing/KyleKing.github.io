@@ -29,12 +29,12 @@ block Slide_In_Panel_Content
 	p.cd Using Matlab, we first had to de-trend the data to establish a clear baseline. We then applied a Savitzky-Golay transform to smooth out the graph and eliminate oscillation and noise around the peaks. With a cleaner signal, we could collect an array of all of the local maxima and minima. Filtering out any points not following the P-QRS-T pattern, the final dataset is ready for diagnosis. After calibrating the algorithm to a sample data set, we could now dynamically analyze new data sets in close to real time.
 	figure.figure
 		img(src=path + "imgs/ClassProjects/mathematica_01.png").small-cd
-		figcaption.figure-caption.text-left Combined ECG leads with highlighted peaks
+		figcaption.figure-caption.text-center Combined ECG leads with highlighted peaks
 
 	p.cd For the last step of diagnosis, we needed to capture the mean electrical axis of the heart. The axis pointing down and to the right suggests normal heart depolarization and a diagnosis of no Bradycardia.
 	figure.figure
 		img(src=path + "imgs/ClassProjects/mathematica_02.png").small-cd
-		figcaption.figure-caption.text-left Mean Electrical Axis
+		figcaption.figure-caption.text-center Mean Electrical Axis
 
 	//- FIXME: Add more content!
 
