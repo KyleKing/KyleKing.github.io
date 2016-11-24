@@ -7,8 +7,8 @@ block title
 block Slide_In_Panel_Content
 	.summary.cd
 		h4.cd Summary
-		p.cd I am an undergraduate researcher in the UMD MEMS and Microfluidics Lab (MML) run by Dr. Don DeVoe. Over the last year and a half, I have been pioneering a bead-based immunoassay for Ebola detection with a simple trick to improve optical clarity of an otherwise translucent matrix.
-		p.cd Quick and efficient disease diagnostics require precision, innovation, and ingenuity. Current diagnostic tests are often performed by lab technicians and can take 12 to 24 hours to heed results. Accurate and reliable results can influence treatment plans and avoid unnecessary follow up appointments. I am developing a rapid, microfluidic technology that simplifies the diagnostic process. The final product is a tool that can be integrated into a sample preparation device to be used by a variety of audiences including primary care physicians and doctors in developing countries.
+		p.cd As an undergraduate researcher in the UMD MEMS and Microfluidics Lab (MML), I pioneered a bead-based immunoassay for Ebola detection with a simple trick to improve optical clarity of an otherwise translucent matrix.
+		p.cd Quick and efficient disease diagnostics require precision, innovation, and ingenuity. Current diagnostic tests are often performed by lab technicians and can take 12 to 24 hours to heed results. Accurate and reliable results can influence treatment plans and avoid unnecessary follow up appointments. I developed a very-early prototype of a potentially rapid, microfluidic technology that simplifies the diagnostic process. The final product could be integrated into a sample preparation device to be used by a variety of audiences including primary care physicians and doctors in developing countries.
 		a(href=path + "pdf/URD2016_microfluidics.pdf" target="_blank").unstyled.poster-container
 			button.poster
 				i.fa.fa-file-pdf-o.fa-1x
@@ -24,30 +24,27 @@ block Slide_In_Panel_Content
 		li Create ~30 µm diameter LMP agarose beads in large quantities, eliminate clogging, and maintain high consistency in size distribution to avoid bead coalescing
 		li Verify the assay in a sample end device
 
-	h4.cd Progress
-	p.cd This is an ongoing project that I have the opportunity of working on throughout the remainder of the academic year thanks to the University of Maryland SEEDS fellowship program and the Maryland Technology ASPIRE grant.
-
 	h5.cd Conducting a "Sanity Check"
-	p.cd Using a macro-scale experiment, I proved the feasibility and optical improvements of melting beads inside a chip within specific temperature constraints. I ran a test to measure the LMP agarose's melting point and a second test to estimate optical improvement as shown in the photos and video below:
+	p.cd The core concept is that the agarose beads melt at a temperature below the glass transition temperature of the device and a temperature that is feasible to produce in a handheld device. Testing this concpet, I made a simple bead packing chip and loaded the chip with agarose beads to estimate both the LMP agarose's melting point and the optical improvement:
 
-	figure.figure
-		//- converted using the Miro Video Converter
-		//- video(autoplay, loop, muted, preload='auto', poster='videos/microfluidics-1.png').small-cd
-		video(controls, loop, muted, preload='auto', poster=path + 'videos/microfluidics-03.png').small-cd
-			source(src=path + 'videos/microfluidics-03.webm', type='video/webm')
-			source(src=path + 'videos/microfluidics-03.mp4', type='video/mp4')
-			source(src=path + 'videos/microfluidics-03.ogv', type='video/ogv')
-			img(src=path + 'videos/microfluidics-03.png')
-		figcaption.figure-caption.text-left LMP agarose melting point demonstration on glass slide
+	//- figure.figure
+	//- 	//- converted using the Miro Video Converter
+	//- 	//- video(autoplay, loop, muted, preload='auto', poster='videos/microfluidics-1.png').small-cd
+	//- 	video(controls, loop, muted, preload='auto', poster=path + 'videos/microfluidics-03.png').small-cd
+	//- 		source(src=path + 'videos/microfluidics-03.webm', type='video/webm')
+	//- 		source(src=path + 'videos/microfluidics-03.mp4', type='video/mp4')
+	//- 		source(src=path + 'videos/microfluidics-03.ogv', type='video/ogv')
+	//- 		img(src=path + 'videos/microfluidics-03.png')
+	//- 	figcaption.figure-caption.text-left LMP agarose melting point demonstration on glass slide
 
 	p.cd Optical improvement test with a packed bead bed inside a COC chip. First at room temperature then after being placed inside an oven at 80°C for one minute.
-	//- FIXME: Not supported in non-Meteor Application
-	//- .small-juxtapose
-	//- 	+juxtapose(id='bead-bed')
 
 	figure.figure
-			img(src=path + "imgs/Microfluidics/microfluidics-20.jpg").small-cd
-			figcaption.figure-caption.text-left An separate view of the above COC chip prior to bead packing
+		#bead-bed.small-juxtapose(style="padding-bottom:0px; margin-bottom:0px;")
+		figcaption.figure-caption.text-center A comparison of before and after heating LMP Agarose beads inside a COC microfluidic chip
+	figure.figure
+			img(src=path + "imgs/Microfluidics/microfluidics-20.jpg" style="max-width:300px;display: block;margin-left: auto;margin-right: auto").small-cd
+			figcaption.figure-caption.text-center An separate view of the above COC chip prior to bead packing. The region of interest from the prior image is marked with the orange arrow
 
 
 	h5.cd Selecting the Chemical Reaction
@@ -58,18 +55,37 @@ block Slide_In_Panel_Content
 		figcaption.figure-caption.text-left Large agarose beads used to demonstrate chemical reaction
 
 	h5.cd Producing Agarose Beads
-	p.cd  Using a well-studied co-flow droplet generator to produce the agarose beads, liquid agarose is pumped into an intersection with silicone oil, an immiscible fluid. The shear stress of the intersection allows for continual flow of agarose droplets at a steady rate. Below is a video of one of my generators in action:
+	p.cd  The beads were generated using a microfluidic co-flow droplet generator. Liquid agarose is pumped into an intersection with silicone oil, an immiscible fluid. The shear stress of the intersection allows for continual flow of agarose droplets at a steady rate. Below is a video of one of my generators in action:
 
 	figure.figure
 		//- converted using the Miro Video Converter
 		//- video(autoplay, loop, muted, preload='auto', poster='videos/microfluidics-1.png').small-cd
-		video(controls, loop, muted, preload='auto', poster=path + 'videos/microfluidics-02.png').small-cd
-			source(src=path + 'videos/microfluidics-02.webm', type='video/webm')
-			source(src=path + 'videos/microfluidics-02.mp4', type='video/mp4')
-			source(src=path + 'videos/microfluidics-02.ogv', type='video/ogv')
-			img(src=path + 'videos/microfluidics-02.png')
+		video(controls, loop, muted, preload='auto', poster=path + 'videos/microfluidics-01.png').small-cd
+			source(src=path + 'videos/microfluidics-01.webm', type='video/webm')
+			source(src=path + 'videos/microfluidics-01.mp4', type='video/mp4')
+			source(src=path + 'videos/microfluidics-01.ogv', type='video/ogv')
+			img(src=path + 'videos/microfluidics-01.png')
+		figcaption.figure-caption.text-left Water in oil droplet generation. Filmed on iPhone for higher frame rate
 
-	//- Pressing a needle port using precise...
+	//- figure.figure
+	//- 	//- converted using the Miro Video Converter
+	//- 	//- video(autoplay, loop, muted, preload='auto', poster='videos/microfluidics-1.png').small-cd
+	//- 	video(controls, loop, muted, preload='auto', poster=path + 'videos/microfluidics-02.png').small-cd
+	//- 		source(src=path + 'videos/microfluidics-02.webm', type='video/webm')
+	//- 		source(src=path + 'videos/microfluidics-02.mp4', type='video/mp4')
+	//- 		source(src=path + 'videos/microfluidics-02.ogv', type='video/ogv')
+	//- 		img(src=path + 'videos/microfluidics-02.png')
+	//- 	figcaption.figure-caption.text-left Microscope view of an agarose droplet generator in use
+
+	p.cd The device seen in the video is first milled from PC, bonded to a second, thinner layer of PC through heat and pressure. Brought slowly back to room temperature, the needle ports are pressed and attached to syringe pumps.
+
+	figure.figure
+		img(src=path + "imgs/Microfluidics/MilledChip.jpg" style="max-width: 400px").small-cd.center-fig
+		figcaption.figure-caption.text-center The microfluidic chip is about to milled before bonding
+	figure.figure
+		img(src=path + "imgs/Microfluidics/TurtleBot_Front.jpg" style="max-width: 500px").small-cd.center-fig
+		figcaption.figure-caption.text-center Once assembled, the chip was mounted onto the heat stage as shown above. The orange arrow is pointing to the microfluidic channel intersection
+
 	//- figure.figure
 	//- 	//- converted using the Miro Video Converter
 	//- 	//- video(autoplay, loop, muted, preload='auto', poster='videos/microfluidics-1.png').small-cd
@@ -78,38 +94,35 @@ block Slide_In_Panel_Content
 	//- 		source(src=path + 'videos/NeedlePress.mp4', type='video/mp4')
 	//- 		source(src=path + 'videos/NeedlePress.ogv', type='video/ogv')
 	//- 		img(src=path + 'videos/NeedlePress.png')
+	//- 	figcaption.figure-caption.text-left Pressing a needle port using precise...
 
-	//- figure.figure
-	//- 	//- converted using the Miro Video Converter
-	//- 	//- video(autoplay, loop, muted, preload='auto', poster='videos/microfluidics-1.png').small-cd
-	//- 	video(controls, loop, muted, preload='auto', poster='videos/microfluidics-1.png').small-cd
-	//- 		source(src=path + 'videos/microfluidics-01.webm', type='video/webm')
-	//- 		source(src=path + 'videos/microfluidics-01.mp4', type='video/mp4')
-	//- 		source(src=path + 'videos/microfluidics-01.ogv', type='video/ogv')
-	//- 		img(src=path + 'videos/microfluidics-01.png')
-	//- 	figcaption.figure-caption.text-left Water in oil droplet generation. Filmed on iPhone for higher frame rate
+
 
 	p.cd Maintaining optimal temperature within the microfluidic chip serves a critical and challenging role in agarose bead production. At room temperature, agarose solidifies into a gel that can alter internal pressures and flow rates or clog the microfluidic chip.
-	p.cd To maintain temperature control, I built Turtle-Bot, a rapidly prototyped platform nicknamed for its 4 acrylic legs. The microfluidic chip is placed on two peltier tiles, one around 40°C and the second around 5-10°C. A raspberry pi with a PID controller controls each peltier tile based on the thermocouple temperature readings and modulates the fans for the active heat-sinks. While I am currently working on soldering the components onto a protoboard, the cardboard-based prototype was an innovative approach that was sufficient for the meantime and transferable between projects.
+	p.cd To maintain temperature control, I built Turtle-Bot, a rapidly prototyped platform nicknamed for its 4 acrylic legs. The microfluidic chip is placed on two peltier tiles, one around 40°C and the second around 5-10°C. A raspberry pi with a PID controller controls each peltier tile based on the thermocouple temperature readings and modulates the fans for the active heat-sinks. The electronics were sldered onto perfboard and mounted onto the top of the Raspberry Pi to save space and condense the setup from the initial implementation to the more compact second generation.
 
-	figure.figure
-		img(src=path + "imgs/Microfluidics/microfluidics-26.jpg").small-cd
-		figcaption.figure-caption.text-left Turtle Bot
-	figure.figure
-		img(src=path + "imgs/Microfluidics/microfluidics-25.jpg").small-cd
-		figcaption.figure-caption.text-left Temporarily mounted raspberry pi PID controller
+	//- figure.figure
+	//- 	img(src=path + "imgs/Microfluidics/microfluidics-26.jpg").small-cd
+	//- 	figcaption.figure-caption.text-left Turtle Bot
+	//- figure.figure
+	//- 	img(src=path + "imgs/Microfluidics/microfluidics-25.jpg").small-cd
+	//- 	figcaption.figure-caption.text-left Temporarily mounted raspberry pi PID controller
 	figure.figure
 		img(src=path + "imgs/Microfluidics/microfluidics-27.jpg").small-cd
-		figcaption.figure-caption.text-left Microfluidic Droplet generator in use
-
-	p.cd To overcome the heating and cooling challenges, I used felt, electrical tape, tin foil, and heat tape to create a reusable and insulated material that maintains a constant temperature of 60°C within the syringe (pictured below). The tin foil creates a low friction surface to slide the syringe in and out, while serving as a mount for the heat tape and insulation.
-
-	//- FIXME: Not supported in non-Meteor Application
-	//- .small-juxtapose
-	//- 	+juxtapose(id='Syring-heater')
+		figcaption.figure-caption.text-left Microfluidic Droplet generator generation one
 	figure.figure
-		img(src=path + "imgs/Microfluidics/microfluidics-30.png").small-cd
-		figcaption.figure-caption.text-left Prototype syringe heater
+		//- img(src=path + "imgs/Microfluidics/TurtleBot_View.jpg").small-cd
+		img(src=path + "imgs/Microfluidics/TurtleBot_Setup.jpg").small-cd
+		figcaption.figure-caption.text-left Microfluidic Droplet generator generation two
+
+	//- p.cd To overcome the heating and cooling challenges, I used felt, electrical tape, tin foil, and heat tape to create a reusable and insulated material that maintains a constant temperature of 60°C within the syringe (pictured below). The tin foil creates a low friction surface to slide the syringe in and out, while serving as a mount for the heat tape and insulation.
+
+	//- //- FIXME: Not supported in non-Meteor Application
+	//- //- .small-juxtapose
+	//- //- 	+juxtapose(id='Syring-heater')
+	//- figure.figure
+	//- 	img(src=path + "imgs/Microfluidics/microfluidics-30.png").small-cd
+	//- 	figcaption.figure-caption.text-left Prototype syringe heater
 
 	h5.cd Key Takeaways
 	ul.cd
@@ -118,11 +131,8 @@ block Slide_In_Panel_Content
 		li Through selective heating and cooling, agarose droplets can be made with a diameter smaller than 30 µm
 		li Rapid prototyping is useful for customizing microfluidic setups for a quick turnaround
 
-	h5.cd Next Steps
-	p.cd In the coming months, I will be working on an integrated COC chip demo that combines my progress with bead production and chemical diagnostic experiments. Once completed, I plan on publishing a paper to discuss the advantages of this approach for microfluidic diagnostics.
-
 	h5.cd Works Cited
 	p.cd
-		a(href="http://www.ncbi.nlm.nih.gov/pubmed/15937360") Spencer, L., Melo, R., Perez, S., & Weller, P. (2005). A gel-based dual antibody capture and detection method for assaying of extracellular cytokine secretion: EliCell.
+		a(href="http://www.ncbi.nlm.nih.gov/pubmed/15937360" style="font-style: italic") Spencer, L., Melo, R., Perez, S., & Weller, P. (2005). A gel-based dual antibody capture and detection method for assaying of extracellular cytokine secretion: EliCell.
 			i Methods in Molecular Biology
 			| (Clifton, N.J.).

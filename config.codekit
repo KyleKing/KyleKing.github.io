@@ -20,6 +20,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/pages\/bikeshare.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/pages\/bikeshare.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/pages\/Canon.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -34,6 +43,15 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pages\/capstone.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/pages\/class_projects.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/pages\/class_projects.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -795,6 +813,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/imgs\/Microfluidics\/microfluidics-20 full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 177080,
+		"inputAbbreviatedPath": "\/public\/imgs\/Microfluidics\/microfluidics-20 full.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/Microfluidics\/microfluidics-20 full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/imgs\/Microfluidics\/microfluidics-20.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -912,6 +941,61 @@
 		"initialSize": 7.12031e+06,
 		"inputAbbreviatedPath": "\/public\/imgs\/Microfluidics\/microfluidics-30.png",
 		"outputAbbreviatedPath": "\/public\/imgs\/Microfluidics\/microfluidics-30.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/Microfluidics\/MilledChip.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 147867,
+		"inputAbbreviatedPath": "\/public\/imgs\/Microfluidics\/MilledChip.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/Microfluidics\/MilledChip.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/Microfluidics\/TurtleBot_Front Full.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 221102,
+		"inputAbbreviatedPath": "\/public\/imgs\/Microfluidics\/TurtleBot_Front Full.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/Microfluidics\/TurtleBot_Front Full.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/Microfluidics\/TurtleBot_Front.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 221102,
+		"inputAbbreviatedPath": "\/public\/imgs\/Microfluidics\/TurtleBot_Front.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/Microfluidics\/TurtleBot_Front.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/Microfluidics\/TurtleBot_Setup.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 188004,
+		"inputAbbreviatedPath": "\/public\/imgs\/Microfluidics\/TurtleBot_Setup.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/Microfluidics\/TurtleBot_Setup.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/Microfluidics\/TurtleBot_View.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 236444,
+		"inputAbbreviatedPath": "\/public\/imgs\/Microfluidics\/TurtleBot_View.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/Microfluidics\/TurtleBot_View.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1653,14 +1737,35 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/side-project.html": {
+	"\/README.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/side-project.html",
+		"inputAbbreviatedPath": "\/README.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/README.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 0,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/README.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/README.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
 		},
 	"\/src\/base.jade": {
 		"compileDebug": 1,
@@ -1701,6 +1806,19 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
+		},
+	"\/src\/juxtapose.coffee": {
+		"createSourceMap": 1,
+		"fileType": 32,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/juxtapose.coffee",
+		"minifyOutput": 1,
+		"outputAbbreviatedPath": "\/Users\/kyleking\/Developer\/dist\/pages\/juxtapose.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
 		},
 	"\/src\/layout.coffee": {
 		"createSourceMap": 1,
@@ -2116,7 +2234,7 @@
 		"fileType": 8,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"importCSS": 0,
+		"importCSS": 1,
 		"inputAbbreviatedPath": "\/src\/styles\/ITCSS.styl",
 		"outputAbbreviatedPath": "\/public\/css\/ITCSS.css",
 		"outputPathIsOutsideProject": 0,
@@ -2672,270 +2790,6 @@
 		"initialSize": 159769,
 		"inputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_22f.jpg",
 		"outputAbbreviatedPath": "\/unused\/capstone_other\/UNADJUSTEDNONRAW_thumb_22f.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/Gg7HgztlSnyrdpW5FLjg1Q_thumb_193.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 230367,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/Gg7HgztlSnyrdpW5FLjg1Q_thumb_193.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/Gg7HgztlSnyrdpW5FLjg1Q_thumb_193.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/Ikf7eOcoQ4yuqMG3BP4Xdw_thumb_185.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 228742,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/Ikf7eOcoQ4yuqMG3BP4Xdw_thumb_185.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/Ikf7eOcoQ4yuqMG3BP4Xdw_thumb_185.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_17c.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 217740,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_17c.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_17c.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_17d.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 220966,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_17d.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_17d.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_17e.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 225640,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_17e.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_17e.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_17f.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 223587,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_17f.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_17f.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_180.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 217111,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_180.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_180.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_181.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 218641,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_181.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_181.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_182.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 223649,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_182.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_182.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_183.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 236444,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_183.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_183.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_184.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 233753,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_184.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_184.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_186.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 223547,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_186.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_186.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_187.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 223354,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_187.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_187.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_188.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 214371,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_188.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_188.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_192.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 210725,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_192.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_192.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_194.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 238388,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_194.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_194.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_195.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 241232,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_195.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_195.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_196.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 236029,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_196.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_196.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_197.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 221680,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_197.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_197.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_198.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 252399,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_198.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_198.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_199.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 235539,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_199.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_199.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_19a.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 236896,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_19a.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_19a.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_19b.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 221102,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_19b.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_19b.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_1b0.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 147867,
-		"inputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_1b0.jpg",
-		"outputAbbreviatedPath": "\/unused\/Microfluidics_other\/UNADJUSTEDNONRAW_thumb_1b0.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

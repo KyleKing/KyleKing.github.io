@@ -134,7 +134,8 @@ html
     content: ''
   position: absolute
   top: (($title-panel-height - 50) / 2)
-  right: 5%
+  // right: 5%
+  right: 60px
   height: 100%
   width: 60px
   /* image replacement */
@@ -220,6 +221,7 @@ html
   background-color dark
   border-radius: 5px
   top (($title-panel-height - 39) / 2)
+  // FIXME: Updates since the spacing looked weird:
   right 120px
   +MQ(L)
     right 125px
@@ -238,7 +240,8 @@ html
   top (($title-panel-height - 18) / 2)
   right 110px + 1px
   +MQ(L)
-    right 125px + 1px
+    // right 125px + 1px
+    right 110px + 1px
   z-index 1010
 
   // Make only visible on md or larger screens
