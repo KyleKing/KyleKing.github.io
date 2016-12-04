@@ -260,8 +260,7 @@
           <li>Verify the assay in a sample end device</li>
         </ul>
         <h5 class="cd">Conducting a "Sanity Check"</h5>
-        <p class="cd">The core concept is that the agarose beads melt at a temperature below the glass transition temperature of the device and a temperature that is feasible to produce in a handheld device. Testing this concpet, I made a simple bead packing chip and loaded the chip with agarose beads to estimate both the LMP agarose's melting point and the optical improvement:</p>
-        <p class="cd">Optical improvement test with a packed bead bed inside a COC chip. First at room temperature then after being placed inside an oven at 80°C for one minute.</p>
+        <p class="cd">The assay relied on the idea that melting agarose would provide optical improvement and could be achieved inside a COC-plastic chip. Testing the theory, I packed an over-sized bead bed into a COC chip. The images show the bead bed at room temperature before melting, then after melting in an oven at 80°C for one minute.</p>
         <figure class="figure">
           <div id="bead-bed" style="padding-bottom:0px; margin-bottom:0px;" class="small-juxtapose"></div>
           <figcaption class="figure-caption text-center">A comparison of before and after heating LMP Agarose beads inside a COC microfluidic chip</figcaption>
@@ -270,12 +269,12 @@
           <figcaption class="figure-caption text-center">An separate view of the above COC chip prior to bead packing. The region of interest from the prior image is marked with the orange arrow</figcaption>
         </figure>
         <h5 class="cd">Selecting the Chemical Reaction</h5>
-        <p class="cd">Through my research, I found several viable options for activating agarose. I selected a reaction that was stable between 0-100°C and could be modified for various end applications (Spencer, Melo, Perez, & Weller, 2005). I then activated 2 mm diameter agarose beads and demonstrated positive and negative controls, both before and after melting. The results were encouraging and supported my assumptions to move forward with the reaction.</p>
+        <p class="cd">Through my research, I found several viable options for activating agarose. I selected a reaction that was stable between 0-100°C and could be modified for various end applications (Spencer, Melo, Perez, & Weller, 2005). I then activated 2 mm diameter agarose beads and demonstrated positive and negative controls, both before and after melting. The results were encouraging that the positive controls were visually discernible from the negative controls along with the demonstration that the optical improvement was possible while maintaining the stability of the chemical reaction.</p>
         <figure class="figure"><img src="../../public/imgs/Microfluidics/microfluidics-23.png" class="small-cd"/>
           <figcaption class="figure-caption text-left">Large agarose beads used to demonstrate chemical reaction</figcaption>
         </figure>
         <h5 class="cd">Producing Agarose Beads</h5>
-        <p class="cd"> The beads were generated using a microfluidic co-flow droplet generator. Liquid agarose is pumped into an intersection with silicone oil, an immiscible fluid. The shear stress of the intersection allows for continual flow of agarose droplets at a steady rate. Below is a video of one of my generators in action:</p>
+        <p class="cd"> The micro-scale agarose beads intended for the final device were generated using a microfluidic co-flow droplet generator. Liquid agarose is pumped into an intersection with silicone oil, an immiscible fluid. The shear stress of the intersection allows for continual flow of agarose droplets at a steady rate. Below is a video of one of my generators in action:</p>
         <figure class="figure">
           <video controls="controls" loop="loop" muted="muted" preload="auto" poster="../../public/videos/microfluidics-01.png" class="small-cd">
             <source src="../../public/videos/microfluidics-01.webm" type="video/webm"/>
@@ -284,7 +283,7 @@
           </video>
           <figcaption class="figure-caption text-left">Water in oil droplet generation. Filmed on iPhone for higher frame rate</figcaption>
         </figure>
-        <p class="cd">The device seen in the video is first milled from PC, bonded to a second, thinner layer of PC through heat and pressure. Brought slowly back to room temperature, the needle ports are pressed and attached to syringe pumps.</p>
+        <p class="cd">The device seen in the video is first milled from polycarbonate (PC), bonded to a second, thinner layer of PC through heat and pressure. Brought slowly back to room temperature, the needle ports are pressed and attached to syringe pumps.</p>
         <figure class="figure"><img src="../../public/imgs/Microfluidics/MilledChip.jpg" style="max-width: 400px" class="small-cd center-fig"/>
           <figcaption class="figure-caption text-center">The microfluidic chip is about to milled before bonding</figcaption>
         </figure>
@@ -294,7 +293,7 @@
         
         
         <p class="cd">Maintaining optimal temperature within the microfluidic chip serves a critical and challenging role in agarose bead production. At room temperature, agarose solidifies into a gel that can alter internal pressures and flow rates or clog the microfluidic chip.</p>
-        <p class="cd">To maintain temperature control, I built Turtle-Bot, a rapidly prototyped platform nicknamed for its 4 acrylic legs. The microfluidic chip is placed on two peltier tiles, one around 40°C and the second around 5-10°C. A raspberry pi with a PID controller controls each peltier tile based on the thermocouple temperature readings and modulates the fans for the active heat-sinks. The electronics were sldered onto perfboard and mounted onto the top of the Raspberry Pi to save space and condense the setup from the initial implementation to the more compact second generation.</p>
+        <p class="cd">To maintain temperature control, I built Turtle-Bot, a rapidly prototyped platform nicknamed for its 4 acrylic legs. The microfluidic chip is placed on two peltier tiles, one around 40°C and the second around 5-10°C. A raspberry pi with a PID controller controls each peltier tile based on the thermocouple temperature readings and modulates the fans for the active heat-sinks. The electronics were soldered onto perfboard and mounted onto the top of the Raspberry Pi to save space and condense the setup from the initial implementation to the more compact second generation.</p>
         <figure class="figure"><img src="../../public/imgs/Microfluidics/microfluidics-27.jpg" class="small-cd"/>
           <figcaption class="figure-caption text-left">Microfluidic Droplet generator generation one</figcaption>
         </figure>
@@ -304,9 +303,8 @@
         <h5 class="cd">Key Takeaways</h5>
         <ul class="cd">
           <li>LMP agarose melts between 70-85°C and can be melted inside a microfluidic chip</li>
-          <li>A hydrazide reaction can be used to functionalize agarose for a dual-antibody capture diagnostic</li>
+          <li>A hydrazide reaction can be used to functionalize agarose for antibody-based detection</li>
           <li>Through selective heating and cooling, agarose droplets can be made with a diameter smaller than 30 µm</li>
-          <li>Rapid prototyping is useful for customizing microfluidic setups for a quick turnaround</li>
         </ul>
         <h5 class="cd">Works Cited</h5>
         <p class="cd"><a href="http://www.ncbi.nlm.nih.gov/pubmed/15937360" style="font-style: italic">Spencer, L., Melo, R., Perez, S., & Weller, P. (2005). A gel-based dual antibody capture and detection method for assaying of extracellular cytokine secretion: EliCell.<i>Methods in Molecular Biology</i>(Clifton, N.J.).</a></p>

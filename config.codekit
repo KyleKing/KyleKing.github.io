@@ -20,15 +20,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/pages\/bikeshare.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/pages\/bikeshare.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/pages\/Canon.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -97,15 +88,6 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pages\/next.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/pages\/PhotoFrame.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/pages\/PhotoFrame.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -232,6 +214,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/imgs\/3DPrints\/bikelight_close.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.24383e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/3DPrints\/bikelight_close.JPG",
+		"outputAbbreviatedPath": "\/public\/imgs\/3DPrints\/bikelight_close.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/3DPrints\/bikelight_far.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.61068e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/3DPrints\/bikelight_far.JPG",
+		"outputAbbreviatedPath": "\/public\/imgs\/3DPrints\/bikelight_far.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/imgs\/3DPrints\/cover.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -250,6 +254,72 @@
 		"initialSize": 1.42152e+06,
 		"inputAbbreviatedPath": "\/public\/imgs\/3DPrints\/cover_lamp_base.jpg",
 		"outputAbbreviatedPath": "\/public\/imgs\/3DPrints\/cover_lamp_base.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/3DPrints\/Fan Controller.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.56417e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/3DPrints\/Fan Controller.JPG",
+		"outputAbbreviatedPath": "\/public\/imgs\/3DPrints\/Fan Controller.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/3DPrints\/Fan Mount.jpeg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 571339,
+		"inputAbbreviatedPath": "\/public\/imgs\/3DPrints\/Fan Mount.jpeg",
+		"outputAbbreviatedPath": "\/public\/imgs\/3DPrints\/Fan Mount.jpeg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/3DPrints\/Fan New Setup.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.64236e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/3DPrints\/Fan New Setup.JPG",
+		"outputAbbreviatedPath": "\/public\/imgs\/3DPrints\/Fan New Setup.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/3DPrints\/Fan Setup.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.37749e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/3DPrints\/Fan Setup.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/3DPrints\/Fan Setup.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/3DPrints\/IMG_4218.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.56736e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/3DPrints\/IMG_4218.JPG",
+		"outputAbbreviatedPath": "\/public\/imgs\/3DPrints\/IMG_4218.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/3DPrints\/IMG_4220.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.66482e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/3DPrints\/IMG_4220.JPG",
+		"outputAbbreviatedPath": "\/public\/imgs\/3DPrints\/IMG_4220.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1068,6 +1138,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/imgs\/N1\/how_actions.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 543816,
+		"inputAbbreviatedPath": "\/public\/imgs\/N1\/how_actions.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/N1\/how_actions.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/N1\/how_buttons.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 305275,
+		"inputAbbreviatedPath": "\/public\/imgs\/N1\/how_buttons.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/N1\/how_buttons.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/N1\/N1-Banner.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36835,
+		"inputAbbreviatedPath": "\/public\/imgs\/N1\/N1-Banner.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/N1\/N1-Banner.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/imgs\/Next\/alarm_clock-1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1134,13 +1237,35 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/imgs\/PhotoFrame\/cover.jpg": {
+	"\/public\/imgs\/PhotoFrame\/3D_printed_feet.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.51577e+06,
-		"inputAbbreviatedPath": "\/public\/imgs\/PhotoFrame\/cover.jpg",
-		"outputAbbreviatedPath": "\/public\/imgs\/PhotoFrame\/cover.jpg",
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/public\/imgs\/PhotoFrame\/3D_printed_feet.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/PhotoFrame\/3D_printed_feet.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/PhotoFrame\/balloon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/public\/imgs\/PhotoFrame\/balloon.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/PhotoFrame\/balloon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/PhotoFrame\/cover_alt.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/public\/imgs\/PhotoFrame\/cover_alt.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/PhotoFrame\/cover_alt.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1530,6 +1655,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/imgs\/PhotoFrame\/lc_base_layer.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/public\/imgs\/PhotoFrame\/lc_base_layer.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/PhotoFrame\/lc_base_layer.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/PhotoFrame\/the_guts.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 0,
+		"inputAbbreviatedPath": "\/public\/imgs\/PhotoFrame\/the_guts.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/PhotoFrame\/the_guts.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/imgs\/PhotoFrame\/UNADJUSTEDNONRAW_thumb_153.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1607,13 +1754,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/imgs\/PiAlarm\/IMG_4122.jpg": {
+	"\/public\/imgs\/PiAlarm\/Overview.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 1.62829e+06,
-		"inputAbbreviatedPath": "\/public\/imgs\/PiAlarm\/IMG_4122.jpg",
-		"outputAbbreviatedPath": "\/public\/imgs\/PiAlarm\/IMG_4122.jpg",
+		"inputAbbreviatedPath": "\/public\/imgs\/PiAlarm\/Overview.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/PiAlarm\/Overview.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/PiAlarm\/Webapp.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 186510,
+		"inputAbbreviatedPath": "\/public\/imgs\/PiAlarm\/Webapp.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/PiAlarm\/Webapp.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

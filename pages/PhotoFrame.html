@@ -246,12 +246,27 @@
       <div id="Slide-In-Panel-Content" class="cd-panel-content">
         <div class="summary cd">
           <h4 class="cd">Summary</h4>
-          <p class="cd">I wanted to build a photoframe for my girlfriend to easily update with photos as a Christmas gift. The project ended up taking far too long, but was fun to build and turned out fairly well.</p>
+          <p class="cd">A Raspberry Pi powered smart photo frame / slide show. Anyone can upload photos using Balloon.io, which are added to the display and cycled using FBI. The frame was a Christmas gift to my girlfriend that I've continued to improve and update.</p><a href="https://github.com/KyleKing/PiSlideshow" class="unstyled poster-container">
+            <button class="poster"><i class="fa fa-file-pdf-o fa-1x"></i> Github repository</button></a>
         </div>
-        <h4 class="cd no-padding">TBD</h4>
-        <p class="cd">I am in the process of creating a Github repository and uploading the code and guide.</p>
-        <figure class="figure"><img src="../../public/imgs/PhotoFrame/cover_fullsize.jpg" class="small-cd"/>
-          <figcaption class="figure-caption text-left">This is the PhotoFrame in use, while booting. A Raspberry Pi and TFT driver are hidden behind the modified frame</figcaption>
+        <figure class="figure"><img src="../../public/imgs/PhotoFrame/cover.jpg" class="small-cd"/>
+        </figure>
+        <figure class="figure"><img src="../../public/imgs/PhotoFrame/cover_alt.jpg" class="small-cd"/>
+        </figure>
+        <h4 class="cd">How it works</h4>
+        <p class="cd">Balloon.io allows you to setup a website where anyone can upload images that are placed into the Apps folder of the linked Dropbox account, which works on mobile and desktop. The app pulls all images from the set Dropbox folder and loads them locally. Once completely downloaded, the FBI task is started to update the image at short time intervals. There is additional logic to handle stopping and starting the FBI task to keep the display always up to date as new photos are downloaded and added to the cycle.</p>
+        <p class="cd">The photo frame can additionally be turned on and off. I wired a GPIO pin to the display controller that toggles the display state from on in the afternoon and off at night.</p>
+        <h4 class="cd">The hardware</h4>
+        <p class="cd">I modified an IKEA frame to hold a small TFT display with space for airflow and mounting point for the Raspberry Pi and driver board. I stacked a piece of thick white paper for a crisp edge around the display then three pieces of laser cut acrylic. The first piece holds the display, the second provides space for the ribbon cable, and the third has air holes for circulation and is the surface that the boards are mounted to with standoffs</p>
+        <figure class="figure"><img src="../../public/imgs/PhotoFrame/lc_base_layer.jpg" class="small-cd"/>
+        </figure>
+        <figure class="figure"><img src="../../public/imgs/PhotoFrame/stacked_lc_acrylic.jpg" class="small-cd"/>
+          
+        </figure>
+        <p class="cd">Three 3D printed feet hold everything sandwiched in place along with the original stand for support. Just on the inside surface of the stand is a small perf board with an indicator LED and pushbutton. The pushbutton allows for manual updates of the display</p>
+        <figure class="figure"><img src="../../public/imgs/PhotoFrame/3D_printed_feet.jpg" class="small-cd"/>
+        </figure>
+        <figure class="figure"><img src="../../public/imgs/PhotoFrame/the_guts.jpg" class="small-cd"/>
         </figure>
       </div>
     </div>

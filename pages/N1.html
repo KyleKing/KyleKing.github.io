@@ -246,10 +246,20 @@
       <div id="Slide-In-Panel-Content" class="cd-panel-content">
         <div class="summary cd">
           <h4 class="cd">Summary</h4>
-          <p class="cd">My brother and I were excited about the release of the email client, Nylas, by N1 and we wanted to build a plugin. We both didn't have React experience, but we dove in and made something that we've both used every day and hopefully a fair number of users.</p>
+          <p class="cd">When Nylas' email Client, N1 was released we were really excited at the opportunity to build something. While we had never built anything in React before and had a lot to learn about the Nylas API and structure, we dove in. Over Christmas break we hashed out the first version and have continually rolled out new features and closed over 50 issues. Recognized by the Nylas team, the plugin will be distributed as part of the N1 source.</p>
         </div>
-        <h4 class="cd no-padding">TBD</h4>
-        <p class="cd">See the&nbsp;<a href="https://github.com/colinking/n1-unsubscribe">Github repository</a> for up to date code and installation guide. We are currently in the process of moving the code base into Nylas source for distribution to every user!</p>
+        <h4 class="cd">What's it do?</h4>
+        <p class="cd">The plugin adds a small button to the UI, which when you can click triggers an unsubscribe from either the email in the thread view or the email you're currently reading.</p>
+        <figure class="figure"><img src="../../public/imgs/N1/how_buttons.png" class="small-cd"/>
+        </figure>
+        <p class="cd">N1-Unsubscribe acts in one of two ways. First, it looks if it can unsubscribe via email. If it can, the plugin will send an unsubscribe request email on your behalf. Second, if no email is available, the plugin looks for a link in the body of the email, such as "click to unsubscribe." The plugin can then open the link in a mini-browser to complete the unsubscription without leaving Nylas. When unsubscribed, the email is then trashed.</p>
+        <figure class="figure"><img src="../../public/imgs/N1/how_actions.png" class="small-cd"/>
+        </figure>
+        <p class="cd">We've responded to user requests to add configuration options to toggle between trashing or archiving the unsubscribed emails, added icon states from loading to errored, among many other changes. Since Nylas didn't have a native way to keep plugins up to date, I created a NPM module that displays a banner which links to the new release by querying the Github API.</p>
+        <figure class="figure"><img src="../../public/imgs/N1/N1-Banner.png" class="small-cd"/>
+        </figure>
+        <h4 class="cd no-padding">Interested?</h4>
+        <p class="cd">You can get the plugin and try clearing out your inbox by&nbsp;<a href="https://nylas.com/">downloading N1</a>. You can see our&nbsp;<a href="https://github.com/colinking/n1-unsubscribe">original plugin on Github</a>&nbsp;and you can check out the&nbsp;<a href="https://github.com/nylas/N1/tree/master/internal_packages/">current version included in the N1 repository</a>.</p>
       </div>
     </div>
   </div>

@@ -7,18 +7,34 @@ block title
 block Slide_In_Panel_Content
 	.summary.cd
 		h4.cd Summary
-		p.cd I wasn't happy with the alarm clock I had or the ones I found online, so I built an alarm clock to fit all the features I wanted. The core actions are:
-		ul
-			li Display updates, such as temperature, wind speed, and likelihood of rain, which is useful when I head out in the morning to bike commute to work (to be built)
-			li Display the time (to be built). My plan is to use a series of shift registers to power a series of RGB LEDs embedded into a milled/3D printed clock display
-			//- The structure of the display will be 3D printed and place behind a thinly milled piece of wood to create a cool effect
-			li Start a custom alarm sequence - start with a pleasant LED array, then move onto a buzzer + the led array, then if al that fails, initiate the LED array on the brightest setting, the loudest buzzer setting, and start the bed shaker motor
-			li Turn off when I'm away and back on when I return. Using IFTTT, when I leave my apartment, the alarm turns off and won't disturb my roommates if I forget to deactivate it
-			li Update the clock remotely through a web app. I built a react web app that can be controlled remotely or at home to adjust alarm clock schedules and settings
+		p.cd I wasn't happy with the alarm clock I had or the ones I found online, so I built an alarm clock to fit all the features I could dream up. I wanted to have no option but to wake up, bright lights, loud noises, and tons of smart features. For example, the alarm can be accessed via a web app and when I leave my apartment the alarm is dormant until I return. This way if I leave before my alarm, it won't go off and wake anyone else up.
+		a(href="https://github.com/KyleKing/PiAlarm").unstyled.poster-container
+			button.poster
+				i.fa.fa-file-pdf-o.fa-1x
+				|  Github repository
 
-	h4.cd.no-padding Updates
-	p.cd The alarm clock is an ongoing project and I will return to update this section once I start milling the housing and make more progress
+	h4.cd Wake up call
+	p.cd While still very much in progress, the alarm clock wakes me up every morning. I'm a heavy sleeper, so I designed the alarm clock around a cycle that goes from pleasant to effective. When the alarm starts, an RGB LED strip is activated that gently increases in brightness. The second stage adds a quiet buzzer and increase the LED strips brightness. The third stage initiates the bed shaker, buzzer, and fades the RGB LED strip at full brightness. At any point, I can press the off button to turn it all off.
 
-	//- figure.figure
-	//- 	img(src=path + "imgs/Bikeshare/bikeshare-10.png").small-cd
-	//- 	figcaption.figure-caption.text-left Smartlock components that are placed on each bike
+	figure.figure
+		img(src=path + "imgs/PiAlarm/Overview.jpg").small-cd
+		figcaption.figure-caption.text-left The breadboarded LED Strip, buzzer, bed shaker driver, and display
+
+	h5.cd Web App
+	p.cd I built a simple interface using react that displays the alarms and editable content. The alarms can be toggled on/off, deleted, given a title, or the cron scheduled can be updated. The app uses socket.io on the back-end to control the alarm clock in real time and a complicated Cron-scheduler to keep all the alarms running.
+
+	figure.figure
+		img(src=path + "imgs/PiAlarm/Webapp.png").small-cd
+		figcaption.figure-caption.text-left The web app user interface
+
+	h5.cd Geo-location Smarts
+	p.cd Using IFTTT, I made a recipe that sends a web request whenever I leave my apartment and whenever I return. To make sure the alarm clock is always working, there is a bright red LED to display when the alarm clock is dormant, in case something goes wrong.
+	//- p.cd Using If This Then That (IFTTT), I setup a recipe that makes a web request when I'm away to turn off the alarm and when I return to activate the alarm. This way, the alarm won't run unless I'm present.
+
+	//- h5.cd Display
+	//- p.cd The current display is a simple character LCD that I had lying around. I'm working on replacing it with a 4 custom RGB LED digits. I'm using shift registers to control the insane number of pins necessary to set each LED individually. I'll update the progress on the new display sometime soon.
+
+	//- 	li Display updates, such as temperature, wind speed, and likelihood of rain, which is useful when I head out in the morning to bike commute to work (to be built)
+
+	h4.cd Next Steps and Future Features
+	p.cd As ongoing project, the alarm clock doesn't yet have a shell and has only a temporary display. In the long run, I'm working on a complicated RGB 7-segment display that will have 1 RGB LED per segment. So to show all four numbers and the two dots, there will be 30 RGB LEDs and 90 analog pins. To control the LEDs individually, I'm setting up a series of shift registers driven by the shift PWM library and an Arduino that is instructed by the core Raspberry Pi. I will also display the weather predicted for when I bike commute to help me pack for the day. Along with the new features, I still need to make electronic updates to compress the circuit, reduce external power supplies, and secure the circuits down to perfboards.

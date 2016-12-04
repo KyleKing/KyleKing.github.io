@@ -1,8 +1,11 @@
 defaultID = "Kyle King's Portfolio"
 
-startJuxtapose = ->
+startJuxtapose = (id = null) ->
   microfluidics = document.getElementById('bead-bed')
-  if (microfluidics != null)
+  console.log('microfluidics')
+  console.log(microfluidics)
+  console.log(id)
+  if (microfluidics != null || id == 'microfluidics')
     slider = new (juxtapose.JXSlider)('#bead-bed', [
       {
         src: '../public/imgs/Microfluidics/microfluidics-21.jpg'
@@ -21,7 +24,7 @@ startJuxtapose = ->
     })
 
   extensions = document.getElementById('web-clock')
-  if (extensions != null)
+  if (extensions != null || id == 'extensions')
     sliderTwo = new (juxtapose.JXSlider)('#web-clock', [
       {
         src: '../public/imgs/Extensions/extension-before.jpg'
@@ -75,7 +78,7 @@ createFullURL = (id) ->
     "pageTitle": id
   }, "", fullURL)
 
-  startJuxtapose()
+  startJuxtapose(id)
   return fullURL
 
 
