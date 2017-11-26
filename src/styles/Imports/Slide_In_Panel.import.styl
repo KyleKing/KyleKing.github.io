@@ -214,11 +214,11 @@ html
   position absolute
   display: block
   z-index: 1020
-  color light
+  color $light
   font-size: 16px
   text-align: center
   text-decoration: none
-  background-color dark
+  background-color $dark
   border-radius: 5px
   top (($title-panel-height - 39) / 2)
   // FIXME: Updates since the spacing looked weird:
@@ -256,13 +256,14 @@ html
   height 0px
   border-top: 9px solid transparent
   border-bottom: 9px solid transparent
-  border-left: 9px solid dark
+  border-left: 9px solid $dark
 
 .summary
   // Darkest to lightest
   // background-color #94A5A6
   // background-color #BDC3C7
-  background-color darken(#ECF0F1, 5%)
+  // background-color darken(#ECF0F1, 5%)
+  // No background color and instead use a line break
 
   padding-right 20px
   padding-left 20px

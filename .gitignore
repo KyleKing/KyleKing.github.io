@@ -2,3 +2,4 @@
 node_modules
 /unused
 /job_descrip.txt
+src/markdown/*

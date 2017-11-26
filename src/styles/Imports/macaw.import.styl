@@ -10,37 +10,14 @@
   background-repeat: no-repeat
   background-size: cover
   background-position: 50% 10%
-
-.callout-box
-  position: relative
-  float: left
-  clear: both
-  z-index: 3
-  width: 52.8010416666%
-  margin: -120px 0 0 23.6%
-  padding-top: 50px
-  padding-bottom: 50px
-  padding-right 20px
-  padding-left 20px
-  background-color: rgba(255, 255, 255, 0.95)
+  margin-bottom: 50px
 
 @media (max-width: 1200px)
-  .callout-box
-    position: relative
-    z-index: 3
-    margin-left: 23.59844%
-
   .header-image
     position: relative
     z-index: 0
     height: 427px
-
-@media (max-width: 992px)
-  .callout-box
-    position: relative
-    z-index: 3
-    margin-left: 10%
-    width: 80%
+    margin-bottom: 30px
 
 // Project Cards
 img_cover_mixin(url, left_spacing, top_spacing)
@@ -126,6 +103,6 @@ img_cover_mixin(url, left_spacing, top_spacing)
   width 100%
   margin none !important
 .inverse
-  color light
+  color $light
 .secondary-bg
-  background-color light
+  background-color $light

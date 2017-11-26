@@ -3,43 +3,104 @@ extends ./head.jade
 block body
 	body.body.page-index.clearfix
 		.header-image
-		.callout-box.clearfix.callout
-			h1.text-center Kyle King
-			h4.text-center Bioengineer, Programmer, Maker, & Cyclist
 
-		.container
-			.row.section-spacing
-		.container
-			.row.section-spacing
+		.container.container-summary
+			.row
+				.col-lg-12
+					h1 Kyle King
+					p.extra-pad-top I am a&nbsp;
+						a(href="pages/MSD.html").stylized Systems Engineer
+						| &nbsp;at Meso Scale Discovery where I apply my broad skill set as a bioengineer, maker, and developer.
+					p.extra-pad-top Previously an&nbsp;
+						a(href="pages/microfluidics.html").stylized Undergraduate Research Fellow at the Maryland MEMS and Microfluidics Lab
+						| , a&nbsp;
+						a(href="pages/Canon.html").stylized Research and Development Intern at Canon US Life Sciences
+						| , and a&nbsp;
+						a(href="pages/bikeshare.html").stylized Full Stack Developer and Team Liaison for Team B.I.K.E.S.
+					p.extra-pad-top Feel free to&nbsp;
+						a(href="mailto:dev.act.kyle@gmail.com").stylized send me an email
+						| , connect on&nbsp;
+						a(href="https://www.linkedin.com/in/kylemorganking").stylized Linkedin
+						| , follow me on&nbsp;
+						a(href="https://github.com/KyleKing").stylized Github
+						| , or view my&nbsp;
+						a(href="public/pdf/King_Resume.pdf" target="_blank").stylized resume
+						| .
 
-		.container
-			h2.inverse.section-header.text-center Highlighted Projects
-			.section-spacing
+		.container.container-summary
+			.row
+				.col-lg-12
+					h1.container-header Work
 
-			//- .col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
-			//- 	.card-container#TEMPLATE
-			//- 		.row.project-TEMPLATE-image.card-image
-			//- 		.row.text-center.secondary-bg.card
-			//- 			.description-container
-			//- 				.content
-			//- 					h3 TITLE
-			//- 					p.button DESCRIPTOR
-			//- 					button(href="pages/TEMPLATE.html") Read More
+			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
+				.card-container#MSD
+					.row.project-MSD-image.card-image
+					.row.text-center.card
+						.description-container
+							.content
+								h3 Meso Scale Discovery
+								p.button Systems Engineer I
+								button(href="pages/MSD.html") Read More
 
-			//- .col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
-			//- 	.card-container#NEXT
-			//- 		.row.project-NEXT-image.card-image
-			//- 		.row.text-center.secondary-bg.card
-			//- 			.description-container
-			//- 				.content
-			//- 					h3 Current Projects
-			//- 					p.button See what I'm working on
-			//- 					button(href="pages/NEXT.html") Read More
+			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
+				.card-container#microfluidics
+					.row.project-microfluidics-image.card-image
+					.row.text-center.card
+						.description-container
+							.content
+								h3 Microfluidic Immunosensor
+								p.button Independent Undergraduate Research Project
+								button(href="pages/microfluidics.html") Read More
+
+			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
+				.card-container#Canon
+					.row.project-Canon-image.card-image
+					.row.text-center.card
+						.description-container
+							.content
+								h3 Canon US Life Sciences
+								p.button 2015 Summer Intern
+								button(href="pages/Canon.html") Read More
+
+		.container.container-summary
+			.row
+				.col-lg-12
+					h1.container-header Projects
+
+			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
+				.card-container#CAPSTONE
+					.row.project-CAPSTONE-image.card-image
+					.row.text-center.card
+						.description-container
+							.content
+								h3 Senior Capstone
+								p.button Pediatric MRI Distraction Device
+								button(href="pages/CAPSTONE.html") Read More
+
+			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
+				.card-container#bikeshare
+					.row.project-bikeshare-image.card-image
+					.row.text-center.card
+						.description-container
+							.content
+								h3 Stationless Bikeshare
+								p.button Gemstone Team Research Project
+								button(href="pages/bikeshare.html") Read More
+
+			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
+				.card-container#class_projects
+					.row.project-class_projects-image.card-image
+					.row.text-center.card
+						.description-container
+							.content
+								h3 Class Projects
+								p.button Highlighted Assignments
+								button(href="pages/class_projects.html") Read More
 
 			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
 				.card-container#PhotoFrame
 					.row.project-PhotoFrame-image.card-image
-					.row.text-center.secondary-bg.card
+					.row.text-center.card
 						.description-container
 							.content
 								h3 PiSlideshow
@@ -49,7 +110,7 @@ block body
 			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
 				.card-container#PiAlarm
 					.row.project-PiAlarm-image.card-image
-					.row.text-center.secondary-bg.card
+					.row.text-center.card
 						.description-container
 							.content
 								h3 PiAlarm
@@ -59,7 +120,7 @@ block body
 			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
 				.card-container#N1
 					.row.project-N1-image.card-image
-					.row.text-center.secondary-bg.card
+					.row.text-center.card
 						.description-container
 							.content
 								h3 N1-Unsubscribe
@@ -69,7 +130,7 @@ block body
 			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
 				.card-container#SoundCloud
 					.row.project-SoundCloud-image.card-image
-					.row.text-center.secondary-bg.card
+					.row.text-center.card
 						.description-container
 							.content
 								h3 SoundCloud Generator
@@ -79,7 +140,7 @@ block body
 			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
 				.card-container#3DPrints
 					.row.project-3DPrints-image.card-image
-					.row.text-center.secondary-bg.card
+					.row.text-center.card
 						.description-container
 							.content
 								h3 3D Printing
@@ -90,97 +151,42 @@ block body
 			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
 				.card-container#extensions
 					.row.project-extensions-image.card-image
-					.row.text-center.secondary-bg.card
+					.row.text-center.card
 						.description-container
 							.content
 								h3 Other Open Source
 								p.button Meteor Packages & Chrome Extensions
 								button(href="pages/extensions.html") Read More
 
-			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
-				.card-container#MSD
-					.row.project-MSD-image.card-image
-					.row.text-center.secondary-bg.card
-						.description-container
-							.content
-								h3 Meso Scale Discovery
-								p.button Systems Engineer I
-								button(href="pages/MSD.html") Read More
-
-			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
-				.card-container#CAPSTONE
-					.row.project-CAPSTONE-image.card-image
-					.row.text-center.secondary-bg.card
-						.description-container
-							.content
-								h3 Senior Capstone
-								p.button Pediatric MRI Distraction Device
-								button(href="pages/CAPSTONE.html") Read More
-
-			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
-				.card-container#microfluidics
-					.row.project-microfluidics-image.card-image
-					.row.text-center.secondary-bg.card
-						.description-container
-							.content
-								h3 Microfluidic Immunosensor
-								p.button Independent Undergraduate Research Project
-								button(href="pages/microfluidics.html") Read More
-
-			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
-				.card-container#bikeshare
-					.row.project-bikeshare-image.card-image
-					.row.text-center.secondary-bg.card
-						.description-container
-							.content
-								h3 Stationless Bikeshare
-								p.button Gemstone Team Research Project
-								button(href="pages/bikeshare.html") Read More
+		.container.container-summary
+			.row
+				.col-lg-12
+					h1.container-header Volunteering
 
 
-			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
-				.card-container#Canon
-					.row.project-Canon-image.card-image
-					.row.text-center.secondary-bg.card
-						.description-container
-							.content
-								h3 Canon US Life Sciences
-								p.button 2015 Summer Intern
-								button(href="pages/Canon.html") Read More
+		.container
 
-			.col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
-				.card-container#class_projects
-					.row.project-class_projects-image.card-image
-					.row.text-center.secondary-bg.card
-						.description-container
-							.content
-								h3 Class Projects
-								p.button Highlighted Assignments
-								button(href="pages/class_projects.html") Read More
+			//- .col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
+			//- 	.card-container#TEMPLATE
+			//- 		.row.project-TEMPLATE-image.card-image
+			//- 		.row.text-center.card
+			//- 			.description-container
+			//- 				.content
+			//- 					h3 TITLE
+			//- 					p.button DESCRIPTOR
+			//- 					button(href="pages/TEMPLATE.html") Read More
+
+			//- .col-lg-push-0.col-lg-4.col-md-push-0.col-md-6.col-xs-push-0.col-xs-12
+			//- 	.card-container#NEXT
+			//- 		.row.project-NEXT-image.card-image
+			//- 		.row.text-center.card
+			//- 			.description-container
+			//- 				.content
+			//- 					h3 Current Projects
+			//- 					p.button See what I'm working on
+			//- 					button(href="pages/NEXT.html") Read More
 
 		.container
 			.row.section-spacing
 
-		.secondary-bg
-			.container
-				footer
-					.row
-						h2.text-center Get In Touch
-					.row
-						p.col-md-push-0.col-lg-6.col-md-push-2.col-md-8.col-sm-12.text-center I love biking, coding, and rapid prototyping. Feel free to reach out to me on any platform. I'm always looking for contributors to my open source projects, feedback, and new ideas!
-						.clearfix.hidden-lg
-						.col-md-push-0.col-lg-6.col-md-12.text-center
-							a(href="mailto:dev.act.kyle@gmail.com").unstyled
-								i.fa.fa-envelope.fa-3x
-							a(href="public/pdf/King_Resume.pdf" target="_blank").unstyled
-								i.fa.fa-file-pdf-o.fa-3x
-							a(href="https://www.linkedin.com/in/kylemorganking").unstyled
-								i.fa.fa-linkedin-square.fa-3x
-							a(href="https://github.com/KyleKing").unstyled
-								i.fa.fa-github-square.fa-3x
-							a(href="https://soundcloud.com/kyle-king-11").unstyled
-								i.fa.fa-soundcloud.fa-3x
-				.row.footer.section-spacing
-
 		block layout
-
