@@ -12,7 +12,7 @@
   background-position: 50% 10%
   margin-bottom: 50px
 
-@media (max-width: 1200px)
+@media (max-width: $desktop)
   .header-image
     position: relative
     z-index: 0
@@ -21,12 +21,13 @@
 
 // Project Cards
 img_cover_mixin(url, left_spacing, top_spacing)
-  background-image url("../imgs/" + url)
-  background-repeat no-repeat
-  background-size cover
-  background-position left_spacing top_spacing
-  height 280px
-  width auto
+  background-image: url("../imgs/" + url)
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: left_spacing top_spacing
+  height: 180px
+  width: auto
+  overflow: hidden
 
 // .project-TITLE-image
 //   img_cover_mixin("TITLE.jpg", 50%)
@@ -67,21 +68,25 @@ img_cover_mixin(url, left_spacing, top_spacing)
 // .project-microduino-image
 //   img_cover_mixin("microduino.jpg", 50%)
 
+
 .card-container
   padding-top 0
   padding-bottom 40px
   margin 0
   cursor pointer
   // When in same row, add spacing around cards
-  @media (min-width: 768px)
-    padding-right 20px
-    padding-left 20px
+  @media (min-width: $tablet)
+    padding-right 5px
+    padding-left 5px
+  @media (max-width: $tablet)
+    padding-right 50px
+    padding-left 50px
 
 .description-container
   height 180px
   padding-right 15px
   padding-left 15px
-  @media (max-width: 768px)
+  @media (max-width: $tablet)
     height 210px
     padding-right 5px
     padding-left 5px

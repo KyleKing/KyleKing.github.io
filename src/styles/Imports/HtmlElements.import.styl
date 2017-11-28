@@ -28,6 +28,17 @@ h5
 h6
   font-family 'Cabin'
 
+button.poster
+  margin-top 20px
+
+hr.hr-padded
+  max-width 850px
+  margin-top 125px
+  margin-bottom 125px
+  +MQ(S)
+    margin-top 85px
+    margin-bottom 85px
+
 footer
   padding-top 50px
   // padding-bottom 100px
@@ -45,7 +56,7 @@ h2
   font-weight bold
   // letter-spacing -0.72px
   // text-decoration underline
-@media (max-width 375px)
+@media (max-width $phone)
   h2.inverse.section-header
     max-width 280px
     // Center text manually

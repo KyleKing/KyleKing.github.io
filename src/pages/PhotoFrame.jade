@@ -7,11 +7,13 @@ block title
 block Slide_In_Panel_Content
 	.summary.cd
 		h4.cd Summary
-		p.cd A Raspberry Pi powered smart photo frame / slide show. Anyone can upload photos using Balloon.io, which are added to the display and cycled using FBI. The frame was a Christmas gift to my girlfriend that I've continued to improve and update.
+		p.cd A Raspberry Pi powered smart photo frame using Balloon.io + Dropbox + Javascript + Frame Buffer ImageViewer (FBI). The Raspberry Pi is running a Node application that fetches the latest images from Dropbox and displays the images using FBI. Through Balloon.io, anyone with the password can upload photos to the pre-designated Dropbox folder, which will be synced and displayed on the photo frame. The frame was a Christmas gift to my girlfriend that I've continued to improve and update.
 		a(href="https://github.com/KyleKing/PiSlideshow").unstyled.poster-container
 			button.poster
 				i.fa.fa-file-pdf-o.fa-1x
 				| &nbsp;Github repository
+
+	hr.hr-padded
 
 	figure.figure
 		img(src=path + "imgs/PhotoFrame/cover.jpg").small-cd
@@ -23,9 +25,7 @@ block Slide_In_Panel_Content
 
 	h4.cd How it works
 
-	p.cd Balloon.io allows you to setup a website where anyone can upload images that are placed into the Apps folder of the linked Dropbox account, which works on mobile and desktop. The app pulls all images from the set Dropbox folder and loads them locally. Once completely downloaded, the FBI task is started to update the image at short time intervals. There is additional logic to handle stopping and starting the FBI task to keep the display always up to date as new photos are downloaded and added to the cycle.
-
-	p.cd The photo frame can additionally be turned on and off. I wired a GPIO pin to the display controller that toggles the display state from on in the afternoon and off at night.
+	p.cd Balloon.io allows you to setup a website where anyone can upload images that are placed into the Apps folder of the linked Dropbox account, which works on mobile and desktop. The app pulls all images from the set Dropbox folder and loads them locally. Once completely downloaded, the FBI task is started to update the image at short time intervals. There is additional logic to handle stopping and starting the FBI task to keep the display always up to date as new photos are downloaded and added to the cycle. The displays goes to sleep at various intervals so the displays is only on during the weekends and weekdays after work.
 
 	h4.cd The hardware
 
@@ -39,8 +39,7 @@ block Slide_In_Panel_Content
 		img(src=path + "imgs/PhotoFrame/stacked_lc_acrylic.jpg").small-cd
 		//- figcaption.figure-caption.text-left TODO
 
-
-	p.cd Three 3D printed feet hold everything sandwiched in place along with the original stand for support. Just on the inside surface of the stand is a small perf board with an indicator LED and pushbutton. The pushbutton allows for manual updates of the display
+	p.cd Three 3D printed feet hold everything sandwiched in place along with the original stand for support. Just on the inside surface of the stand is a small perf board with an indicator LED and pushbutton to cleanly power down the Raspberry Pi when needed.
 
 	figure.figure
 		img(src=path + "imgs/PhotoFrame/3D_printed_feet.jpg").small-cd
