@@ -1,13 +1,19 @@
 extends ../layout.jade
 
 block title
-	h1.cd.hidden-xs N1-Unsubscribe
-	h1.cd.hidden-sm.hidden-md.hidden-lg N1-Unsubscribe
+	h1.cd.hidden-xs Unsubscribe
+	h1.cd.hidden-sm.hidden-md.hidden-lg Unsubscribe
 
 block Slide_In_Panel_Content
 	.summary.cd
 		h4.cd Summary
-		p.cd When Nylas' email Client, N1 was released we were really excited at the opportunity to build something. While we had never built anything in React before and had a lot to learn about the Nylas API and structure, we dove in. Over Christmas break we hashed out the first version and have continually rolled out new features and closed over 50 issues. Recognized by the Nylas team, the plugin will be distributed as part of the N1 source.
+		p.cd When Nylas' email Client, N1 was released (now MailSpring) my brother and I were really excited at the opportunity to build something. While we had never built anything in React before and had a lot to learn about the Nylas API and structure, we dove in. Over Christmas break we hashed out the first version then continually rolled out new features and closed over 50 issues. Recognized by the Nylas team, the&nbsp;
+			a(href="https://github.com/nylas-mail-lives/nylas-mail/pull/49") plugin was added to the N1 source
+			| &nbsp;and the plugin will&nbsp;
+			a(href="https://github.com/Foundry376/Mailspring/pull/3") soon be part of MailSpring as well
+			| .
+
+	hr.hr-padded
 
 	h4.cd What's it do?
 	p.cd The plugin adds a small button to the UI, which when you can click triggers an unsubscribe from either the email in the thread view or the email you're currently reading.
@@ -16,26 +22,28 @@ block Slide_In_Panel_Content
 		img(src=path + "imgs/N1/how_buttons.png").small-cd
 		//- figcaption.figure-caption.text-left Smartlock components that are placed on each bike
 
-	p.cd N1-Unsubscribe acts in one of two ways. First, it looks if it can unsubscribe via email. If it can, the plugin will send an unsubscribe request email on your behalf. Second, if no email is available, the plugin looks for a link in the body of the email, such as "click to unsubscribe." The plugin can then open the link in a mini-browser to complete the unsubscription without leaving Nylas. When unsubscribed, the email is then trashed.
+	p.cd The unsubscribe extension acts in one of two ways. First, it looks if it can unsubscribe via email. If it can, the plugin will send an unsubscribe request email on your behalf. Second, if no email is available, the plugin looks for a link in the body of the email, such as "click to unsubscribe." The plugin can then open the link in a mini-browser to complete the unsubscription without leaving Nylas. When unsubscribed, the email is then trashed.
 
 	figure.figure
 		img(src=path + "imgs/N1/how_actions.png").small-cd
 		//- figcaption.figure-caption.text-left Smartlock components that are placed on each bike
 
-	p.cd We've responded to user requests to add configuration options to toggle between trashing or archiving the unsubscribed emails, added icon states from loading to errored, among many other changes. Since Nylas didn't have a native way to keep plugins up to date, I created a NPM module that displays a banner which links to the new release by querying the Github API.
+	p.cd My brother and I have responded to user requests to add configuration options to toggle between trashing or archiving the unsubscribed emails, added icon states from loading to errored, among many other changes. Since Nylas didn't have a native way to keep plugins up to date, I created a NPM module that displays a banner which links to the new release by querying the Github API.
 
 	figure.figure
 		img(src=path + "imgs/N1/N1-Banner.png").small-cd
 		//- figcaption.figure-caption.text-left Smartlock components that are placed on each bike
 
 	h4.cd.no-padding Interested?
-	p.cd You can get the plugin and try clearing out your inbox by&nbsp;
-		a(href="https://nylas.com/")
-			| downloading N1
-		| . You can see our&nbsp;
-		a(href="https://github.com/colinking/n1-unsubscribe")
-			| original plugin on Github
-		| &nbsp;and you can check out the&nbsp;
-		a(href="https://github.com/nylas/N1/tree/master/internal_packages/")
-			| current version included in the N1 repository
+	p.cd You can get the plugin and try clearing out your inbox by following our&nbsp;
+		a(href="https://colinking.co/n1-unsubscribe/") installation guide
+		| . Also, check out the&nbsp;
+		a(href="https://github.com/colinking/n1-unsubscribe") original plugin on Github
+		| , the&nbsp;
+		a(href="https://github.com/nylas-mail-lives/nylas-mail") most recent fork of Nylas Mail
+		| , or the current version of the client,&nbsp;
+		a(href="https://github.com/Foundry376/Mailspring") MailSpring
 		| .
+
+	h4.cd The Short History of "N1" > "Nylas Mail" > "MailSpring"
+	p.cd Originally, we started this project when the email client was called Nylas N1. Then, Nylas completely rebuilt the email client to be faster and more robust and renamed as Nylas Mail. Now, the email client is run by a former member of the Nylas team under the name MailSpring.

@@ -581,12 +581,12 @@ h4.text-center {
 
 /* line 43 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-3DPrints-image {
-  background-image: url("../imgs/3DPrints/cover.jpg");
+  background-image: url("../imgs/3DPrints/Fan Controller.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  background-position: 50% 20%;
+  background-position: 50% 50%;
   height: 180px;
   width: auto;
   overflow: hidden;
