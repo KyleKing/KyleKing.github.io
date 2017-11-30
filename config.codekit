@@ -20,6 +20,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/pages\/4K.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/pages\/4K.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/pages\/bikeshare.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -74,6 +83,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/pages\/MSD.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/pages\/MSD.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/pages\/N1.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -106,6 +124,15 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pages\/SoundCloud.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/pages\/zoo.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/pages\/zoo.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -320,6 +347,138 @@
 		"initialSize": 1.66482e+06,
 		"inputAbbreviatedPath": "\/public\/imgs\/3DPrints\/IMG_4220.JPG",
 		"outputAbbreviatedPath": "\/public\/imgs\/3DPrints\/IMG_4220.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/3DPrints\/speaker_box.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.38895e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/3DPrints\/speaker_box.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/3DPrints\/speaker_box.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/3DPrints\/speaker_box_and_sander.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.42732e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/3DPrints\/speaker_box_and_sander.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/3DPrints\/speaker_box_and_sander.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/4K\/02_Mar03_snowBike.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 53809,
+		"inputAbbreviatedPath": "\/public\/imgs\/4K\/02_Mar03_snowBike.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/4K\/02_Mar03_snowBike.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/4K\/D01_07.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 945452,
+		"inputAbbreviatedPath": "\/public\/imgs\/4K\/D01_07.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/4K\/D01_07.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/4K\/D01_10.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.33793e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/4K\/D01_10.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/4K\/D01_10.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/4K\/D01_12.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 299197,
+		"inputAbbreviatedPath": "\/public\/imgs\/4K\/D01_12.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/4K\/D01_12.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/4K\/D02_03.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.27602e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/4K\/D02_03.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/4K\/D02_03.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/4K\/D06_03.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.19064e+06,
+		"inputAbbreviatedPath": "\/public\/imgs\/4K\/D06_03.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/4K\/D06_03.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/4K\/D07_03.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 458461,
+		"inputAbbreviatedPath": "\/public\/imgs\/4K\/D07_03.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/4K\/D07_03.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/4K\/D08_15.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 88681,
+		"inputAbbreviatedPath": "\/public\/imgs\/4K\/D08_15.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/4K\/D08_15.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/4K\/D08_16.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 145385,
+		"inputAbbreviatedPath": "\/public\/imgs\/4K\/D08_16.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/4K\/D08_16.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/4K\/D10_03.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 84661,
+		"inputAbbreviatedPath": "\/public\/imgs\/4K\/D10_03.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/4K\/D10_03.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1831,6 +1990,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/imgs\/Zoo\/cormorant.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 56115,
+		"inputAbbreviatedPath": "\/public\/imgs\/Zoo\/cormorant.jpg",
+		"outputAbbreviatedPath": "\/public\/imgs\/Zoo\/cormorant.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/layout.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -2067,6 +2237,17 @@
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
+	"\/src\/pages\/4K.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/pages\/4K.jade",
+		"outputAbbreviatedPath": "\/pages\/4K.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0
+		},
 	"\/src\/pages\/bikeshare.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -2195,6 +2376,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/pages\/SoundCloud.jade",
 		"outputAbbreviatedPath": "\/pages\/SoundCloud.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0
+		},
+	"\/src\/pages\/zoo.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/pages\/zoo.jade",
+		"outputAbbreviatedPath": "\/pages\/zoo.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
