@@ -38,6 +38,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/pages\/bioe340.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/pages\/bioe340.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/pages\/Canon.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -52,15 +61,6 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pages\/CAPSTONE.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/pages\/class_projects.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/pages\/class_projects.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -124,6 +124,15 @@
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pages\/SoundCloud.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/pages\/sustainametrix.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/pages\/sustainametrix.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -681,6 +690,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/public\/imgs\/bioe340\/mathematica_01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 23997,
+		"inputAbbreviatedPath": "\/public\/imgs\/bioe340\/mathematica_01.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/bioe340\/mathematica_01.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/bioe340\/mathematica_02.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8631,
+		"inputAbbreviatedPath": "\/public\/imgs\/bioe340\/mathematica_02.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/bioe340\/mathematica_02.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/imgs\/bioe420\/HW2_03.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11821,
+		"inputAbbreviatedPath": "\/public\/imgs\/bioe420\/HW2_03.png",
+		"outputAbbreviatedPath": "\/public\/imgs\/bioe420\/HW2_03.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/imgs\/Canon\/cover.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -930,39 +972,6 @@
 		"initialSize": 1.06552e+06,
 		"inputAbbreviatedPath": "\/public\/imgs\/Capstone\/rubberband_clasp.jpg",
 		"outputAbbreviatedPath": "\/public\/imgs\/Capstone\/rubberband_clasp.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/imgs\/ClassProjects\/HW2_03.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 11821,
-		"inputAbbreviatedPath": "\/public\/imgs\/ClassProjects\/HW2_03.png",
-		"outputAbbreviatedPath": "\/public\/imgs\/ClassProjects\/HW2_03.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/imgs\/ClassProjects\/mathematica_01.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 23997,
-		"inputAbbreviatedPath": "\/public\/imgs\/ClassProjects\/mathematica_01.png",
-		"outputAbbreviatedPath": "\/public\/imgs\/ClassProjects\/mathematica_01.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/public\/imgs\/ClassProjects\/mathematica_02.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 8631,
-		"inputAbbreviatedPath": "\/public\/imgs\/ClassProjects\/mathematica_02.png",
-		"outputAbbreviatedPath": "\/public\/imgs\/ClassProjects\/mathematica_02.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2259,6 +2268,17 @@
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
+	"\/src\/pages\/bioe340.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/pages\/bioe340.jade",
+		"outputAbbreviatedPath": "\/pages\/bioe340.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0
+		},
 	"\/src\/pages\/Canon.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -2281,13 +2301,13 @@
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
-	"\/src\/pages\/class_projects.jade": {
+	"\/src\/pages\/dassarma.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/src\/pages\/class_projects.jade",
-		"outputAbbreviatedPath": "\/pages\/class_projects.html",
+		"inputAbbreviatedPath": "\/src\/pages\/dassarma.jade",
+		"outputAbbreviatedPath": "\/pages\/dassarma.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
@@ -2369,6 +2389,17 @@
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0
 		},
+	"\/src\/pages\/quest.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/pages\/quest.jade",
+		"outputAbbreviatedPath": "\/pages\/quest.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0
+		},
 	"\/src\/pages\/SoundCloud.jade": {
 		"compileDebug": 1,
 		"fileType": 512,
@@ -2376,6 +2407,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/pages\/SoundCloud.jade",
 		"outputAbbreviatedPath": "\/pages\/SoundCloud.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 1,
+		"outputStyle": 0
+		},
+	"\/src\/pages\/sustainametrix.jade": {
+		"compileDebug": 1,
+		"fileType": 512,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/src\/pages\/sustainametrix.jade",
+		"outputAbbreviatedPath": "\/pages\/sustainametrix.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
 		"outputStyle": 0

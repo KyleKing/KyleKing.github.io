@@ -1,0 +1,20 @@
+extends ../layout.jade
+
+block title
+    h1.cd.hidden-xs Maryland Zoo
+    h1.cd.hidden-sm.hidden-md.hidden-lg Zoo
+
+block Slide_In_Panel_Content
+    .summary.cd
+        h4.cd Summary
+        p.cd I started volunteering at the Maryland Zoo in Baltimore in the Junior Zoo Crew summer program, then advanced to the role of a Junior Keeper where I worked behind the scenes. I accumulated over 630 volunteer service hours during my free weekends over the school year and summer. I assisted in the cleaning, feeding, and enrichment of Black-Footed Penguins, Reticulated Giraffes, Leopards, Okapis, Sitatunga, Warthogs, and several other species.
+        a(href="http://www.marylandzoo.org/support-the-zoo/volunteer/youth-programs/").unstyled.poster-container
+            button.poster
+                i.fa.fa-file-pdf-o.fa-1x
+                | &nbsp;Junior Zoo Crew Program
+
+    hr.hr-padded
+
+    figure.figure
+        img(src=path + "imgs/Zoo/cormorant.jpg").small-cd
+        figcaption.figure-caption.text-left Double-crested Cormorant
