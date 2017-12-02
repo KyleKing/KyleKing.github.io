@@ -1980,6 +1980,74 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/public\/imgs\/quest\/flow_chart.png": {
+		"ft": 32768,
+		"iS": 419836,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/quest\/flow_chart.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/imgs\/quest\/paper3.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/quest\/paper3.pdf",
+		"oF": 0
+		},
+	"\/public\/imgs\/quest\/pres4final.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/quest\/pres4final.pdf",
+		"oF": 0
+		},
+	"\/public\/imgs\/quest\/pres4final.png": {
+		"ft": 32768,
+		"iS": 1982635,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/quest\/pres4final.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/imgs\/quest\/presentation3.pptx": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/quest\/presentation3.pptx",
+		"oF": 0
+		},
+	"\/public\/imgs\/quest\/spaghetti.png": {
+		"ft": 32768,
+		"iS": 663115,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/quest\/spaghetti.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/imgs\/quest\/VitaLink Presentation.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/quest\/VitaLink Presentation.pdf",
+		"oF": 0
+		},
+	"\/public\/imgs\/quest\/VitaLink Presentation.pptx": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/quest\/VitaLink Presentation.pptx",
+		"oF": 0
+		},
 	"\/public\/imgs\/SoundCloud\/cover.png": {
 		"ft": 32768,
 		"iS": 83612,
