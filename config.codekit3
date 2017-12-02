@@ -2191,15 +2191,14 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/public\/imgs\/SustainaMetrix\/AmSamTimeline.png": {
-		"ft": 32768,
-		"iS": 1117040,
+	"\/public\/imgs\/SustainaMetrix\/AmSam_Abbreviated_Timeline.jpeg": {
+		"ft": 16384,
+		"iS": 170390,
 		"oA": 0,
-		"oAP": "\/public\/imgs\/SustainaMetrix\/AmSamTimeline.png",
+		"oAP": "\/public\/imgs\/SustainaMetrix\/AmSam_Abbreviated_Timeline.jpg",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/public\/imgs\/SustainaMetrix\/Header.png": {
@@ -2604,24 +2603,6 @@
 		"oA": 1,
 		"oAP": "\/src\/markdown\/job_descrip.html",
 		"oF": 0,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/src\/markdown\/projects-other_open_source.md": {
-		"cB": 0,
-		"cS": 0,
-		"eF": 0,
-		"eL": 1,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 1,
-		"oAP": "\/src\/markdown\/projects-other_open_source.html",
-		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
