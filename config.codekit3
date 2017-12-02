@@ -342,7 +342,7 @@
 		"oAP": "\/public\/imgs\/3DPrints\/cover.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/3DPrints\/cover_lamp_base.jpg": {
@@ -372,7 +372,7 @@
 		"oAP": "\/public\/imgs\/3DPrints\/Fan Mount.jpeg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/3DPrints\/Fan New Setup.JPG": {
@@ -392,7 +392,7 @@
 		"oAP": "\/public\/imgs\/3DPrints\/Fan Setup.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/3DPrints\/IMG_4218.JPG": {
@@ -417,7 +417,7 @@
 		},
 	"\/public\/imgs\/3DPrints\/speaker_box.jpg": {
 		"ft": 16384,
-		"iS": 1388950,
+		"iS": 441980,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/3DPrints\/speaker_box.jpg",
 		"oF": 0,
@@ -442,7 +442,7 @@
 		"oAP": "\/public\/imgs\/4K\/02_Mar03_snowBike.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/4K\/D01_07.png": {
@@ -473,7 +473,7 @@
 		"oAP": "\/public\/imgs\/4K\/D01_12.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/4K\/D02_03.jpg": {
@@ -493,7 +493,7 @@
 		"oAP": "\/public\/imgs\/4K\/D06_03.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/4K\/D07_03.jpg": {
@@ -503,7 +503,7 @@
 		"oAP": "\/public\/imgs\/4K\/D07_03.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/4K\/D08_15.jpg": {
@@ -513,7 +513,7 @@
 		"oAP": "\/public\/imgs\/4K\/D08_15.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/4K\/D08_16.jpg": {
@@ -542,7 +542,7 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Bikeshare\/Access.gif",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/public\/imgs\/Bikeshare\/bikeshare-01.jpg": {
 		"ft": 16384,
@@ -551,7 +551,7 @@
 		"oAP": "\/public\/imgs\/Bikeshare\/bikeshare-01.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Bikeshare\/bikeshare-04.png": {
@@ -560,8 +560,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Bikeshare\/bikeshare-04.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -572,7 +572,7 @@
 		"oAP": "\/public\/imgs\/Bikeshare\/bikeshare-05.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Bikeshare\/bikeshare-06.jpg": {
@@ -602,8 +602,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Bikeshare\/bikeshare-11.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -644,8 +644,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Bikeshare\/Lock_and_Electronics.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -655,7 +655,7 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Bikeshare\/LockAnimation.gif",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/public\/imgs\/Bikeshare\/LockInUse.gif": {
 		"ft": 4194304,
@@ -663,7 +663,7 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Bikeshare\/LockInUse.gif",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/public\/imgs\/Bikeshare\/Mesh_Single.png": {
 		"ft": 32768,
@@ -671,8 +671,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Bikeshare\/Mesh_Single.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -682,8 +682,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Bikeshare\/Mesh_System.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -704,8 +704,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Bikeshare\/RedBarBikesCommercial.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -715,8 +715,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Bikeshare\/WS_about.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -726,8 +726,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Bikeshare\/WS_manager.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -737,8 +737,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Bikeshare\/WS_map.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -748,8 +748,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Bikeshare\/WS_user.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -781,8 +781,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/bioe420\/HW2_03.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -813,7 +813,7 @@
 		"oAP": "\/public\/imgs\/Capstone\/1_phone.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Capstone\/2_transparency.jpg": {
@@ -872,8 +872,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-ipod.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -884,7 +884,7 @@
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-Knex.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Capstone\/Capstone-lenses_handheld.jpg": {
@@ -894,7 +894,7 @@
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-lenses_handheld.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Capstone\/Capstone-lenses_headcoil.jpg": {
@@ -904,7 +904,7 @@
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-lenses_headcoil.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Capstone\/Capstone-lenses_headcoil_me.jpg": {
@@ -914,7 +914,7 @@
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-lenses_headcoil_me.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Capstone\/Capstone-mri.png": {
@@ -954,8 +954,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-projector.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -985,8 +985,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-transparency.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -997,7 +997,7 @@
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-work_session.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Capstone\/evolution.jpg": {
@@ -1017,7 +1017,7 @@
 		"oAP": "\/public\/imgs\/Capstone\/rubberband_clasp.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/cover_capstone.jpg": {
@@ -1028,6 +1028,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/public\/imgs\/DasSarma\/Mut234_digest.png": {
+		"ft": 32768,
+		"iS": 3157330,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/DasSarma\/Mut234_digest.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/DasSarma\/mut_1_gel.png": {
@@ -1047,8 +1058,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/DasSarma\/mut_1_map.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1058,8 +1069,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Extensions\/cover.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1070,7 +1081,7 @@
 		"oAP": "\/public\/imgs\/Extensions\/extension-after.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Extensions\/extension-before.jpg": {
@@ -1080,7 +1091,7 @@
 		"oAP": "\/public\/imgs\/Extensions\/extension-before.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Extensions\/extensions-02.png": {
@@ -1089,8 +1100,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Extensions\/extensions-02.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1121,7 +1132,7 @@
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-03.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Microfluidics\/microfluidics-04.jpg": {
@@ -1151,7 +1162,7 @@
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-15.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Microfluidics\/microfluidics-17.jpg": {
@@ -1171,7 +1182,7 @@
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-20 full.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Microfluidics\/microfluidics-20.jpg": {
@@ -1181,7 +1192,7 @@
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-20.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Microfluidics\/microfluidics-21.jpg": {
@@ -1191,7 +1202,7 @@
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-21.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Microfluidics\/microfluidics-22 full.jpg": {
@@ -1201,7 +1212,7 @@
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-22 full.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Microfluidics\/microfluidics-22.jpg": {
@@ -1211,7 +1222,7 @@
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-22.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Microfluidics\/microfluidics-23.png": {
@@ -1220,8 +1231,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-23.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1232,7 +1243,7 @@
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-25.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Microfluidics\/microfluidics-26.jpg": {
@@ -1242,7 +1253,7 @@
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-26.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Microfluidics\/microfluidics-27.jpg": {
@@ -1252,7 +1263,7 @@
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-27.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Microfluidics\/microfluidics-28.jpg": {
@@ -1262,7 +1273,7 @@
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-28.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Microfluidics\/microfluidics-29.jpg": {
@@ -1272,7 +1283,7 @@
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-29.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Microfluidics\/microfluidics-30.png": {
@@ -1293,7 +1304,7 @@
 		"oAP": "\/public\/imgs\/Microfluidics\/MilledChip.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Microfluidics\/TurtleBot_Front Full.jpg": {
@@ -1303,7 +1314,7 @@
 		"oAP": "\/public\/imgs\/Microfluidics\/TurtleBot_Front Full.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Microfluidics\/TurtleBot_Front.jpg": {
@@ -1313,7 +1324,7 @@
 		"oAP": "\/public\/imgs\/Microfluidics\/TurtleBot_Front.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Microfluidics\/TurtleBot_Setup.jpg": {
@@ -1323,7 +1334,7 @@
 		"oAP": "\/public\/imgs\/Microfluidics\/TurtleBot_Setup.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Microfluidics\/TurtleBot_View.jpg": {
@@ -1333,7 +1344,7 @@
 		"oAP": "\/public\/imgs\/Microfluidics\/TurtleBot_View.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/MSD\/cover.jpg": {
@@ -1343,7 +1354,7 @@
 		"oAP": "\/public\/imgs\/MSD\/cover.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/N1\/cover.png": {
@@ -1352,8 +1363,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/N1\/cover.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1385,8 +1396,8 @@
 		"oA": 0,
 		"oAP": "\/public\/imgs\/N1\/N1-Banner.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1437,7 +1448,7 @@
 		"oAP": "\/public\/imgs\/Next\/microduino.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/Next\/side-project-1.jpg": {
@@ -1447,7 +1458,7 @@
 		"oAP": "\/public\/imgs\/Next\/side-project-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/public\/imgs\/PhotoFrame\/3D_printed_feet.jpg": {
