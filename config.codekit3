@@ -1030,6 +1030,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/public\/imgs\/DasSarma\/mut_1_gel.png": {
+		"ft": 32768,
+		"iS": 466115,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/DasSarma\/mut_1_gel.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/public\/imgs\/DasSarma\/mut_1_map.png": {
+		"ft": 32768,
+		"iS": 353493,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/DasSarma\/mut_1_map.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/public\/imgs\/Extensions\/cover.png": {
 		"ft": 32768,
 		"iS": 124475,

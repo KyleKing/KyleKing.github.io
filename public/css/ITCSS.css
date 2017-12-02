@@ -9,19 +9,23 @@
 
 /* line 8 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Variables.import.styl */
 
-/* line 14 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/index.styl */
+/* line 15 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/index.styl */
 
-/* line 14 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/index.styl */
+/* line 15 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/index.styl */
 
 /* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/border.styl */
 
 /* line 10 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/border.styl */
 
+/* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/border-radius.styl */
+
+/* line 53 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/border-radius.styl */
+
 /* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/clearfix.styl */
 
 /* line 28 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/clearfix.styl */
 
-/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/color-image.styl */
+/* line 487 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/color-image.styl */
 
 /* line 4 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/color-image.styl */
 
@@ -37,7 +41,7 @@
 
 /* line 11 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/config.styl */
 
-/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/iconic.styl */
+/* line 487 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/iconic.styl */
 
 /* line 7 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/iconic.styl */
 
@@ -49,35 +53,35 @@
 
 /* line 19 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/index.styl */
 
-/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/base.styl */
+/* line 487 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/base.styl */
 
 /* line 8 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/base.styl */
 
-/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/html5.styl */
+/* line 487 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/html5.styl */
 
 /* line 19 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/html5.styl */
 
-/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/links.styl */
+/* line 487 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/links.styl */
 
 /* line 6 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/links.styl */
 
-/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/text.styl */
+/* line 487 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/text.styl */
 
 /* line 30 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/text.styl */
 
-/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/embed.styl */
+/* line 487 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/embed.styl */
 
 /* line 7 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/embed.styl */
 
-/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/groups.styl */
+/* line 487 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/groups.styl */
 
 /* line 17 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/groups.styl */
 
-/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/forms.styl */
+/* line 487 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/forms.styl */
 
 /* line 69 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/forms.styl */
 
-/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/tables.styl */
+/* line 487 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/tables.styl */
 
 /* line 7 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/normalize/tables.styl */
 
@@ -85,11 +89,11 @@
 
 /* line 20 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/overflow.styl */
 
-/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/positions.styl */
+/* line 487 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/positions.styl */
 
 /* line 66 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/positions.styl */
 
-/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/reset.styl */
+/* line 487 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/reset.styl */
 
 /* line 78 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/reset.styl */
 
@@ -113,17 +117,17 @@
 
 /* line 9 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/text/replace-text.styl */
 
-/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/text/shadow-stroke.styl */
+/* line 487 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/text/shadow-stroke.styl */
 
 /* line 2 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/text/shadow-stroke.styl */
 
-/* line 541 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/vendor.styl */
+/* line 487 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/vendor.styl */
 
 /* line 11 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/vendor.styl */
 
 /* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/config.styl */
 
-/* line 577 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/config.styl */
+/* line 523 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/config.styl */
 
 /* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/nib/lib/nib/size.styl */
 
@@ -312,17 +316,32 @@ ul li a {
   line-height: 25px;
 }
 
-/* line 146 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 144 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+
+/* line 145 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+ol li {
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0,0,0,0.8);
+  font-family: medium-content-serif-font, Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-size: 17px;
+  font-size: 1.0625rem;
+  font-style: normal;
+  font-weight: normal;
+  word-wrap: break-word;
+  line-height: 25px;
+}
+
+/* line 158 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .container-summary {
   padding-bottom: 50px;
 }
 
-/* line 148 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 160 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 h1.container-header {
   padding-bottom: 20px;
 }
 
-/* line 151 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 163 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .figure-caption {
   font-style: italic;
   padding-top: 15px;
@@ -331,7 +350,7 @@ h1.container-header {
   font-size: 0.875rem;
 }
 
-/* line 167 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 179 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 img.cd {
   width: 100%;
   height: auto;
@@ -341,7 +360,7 @@ img.cd {
   max-width: 700px;
 }
 
-/* line 170 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 182 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .small-juxtapose {
   width: 100%;
   max-width: 700px;
@@ -351,13 +370,13 @@ img.cd {
   margin-bottom: 40px;
 }
 
-/* line 178 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 190 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 figure.figure {
   margin-top: 40px;
   margin-bottom: 40px;
 }
 
-/* line 182 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 194 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .figure {
   width: 100%;
   height: auto;
@@ -368,35 +387,35 @@ figure.figure {
 }
 @media (max-width: 750px) {
 
-/* line 185 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 197 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
   .figure {
     width: 100%;
   }
 }
 
-/* line 187 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 199 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .small-cd {
   width: 100%;
 }
 
-/* line 190 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 202 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .narrow-cd {
   max-width: 300px;
 }
 
-/* line 193 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 205 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .center-fig {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 204 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 216 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 p.button {
   padding-bottom: 10px;
 }
 
-/* line 207 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 219 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 button {
   color: #fbfcfc;
   border: none;
@@ -410,44 +429,43 @@ button {
   -o-transition: background 0.2s ease-in-out;
   -ms-transition: background 0.2s ease-in-out;
   transition: background 0.2s ease-in-out;
-  -webkit-border-radius: 4px;
   border-radius: 4px;
   background-color: #5499c7;
 }
 
-/* line 220 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 232 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 button a i {
   color: #fbfcfc;
 }
 
-/* line 222 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 234 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 button:hover {
   background-color: #154360;
 }
 
-/* line 225 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 237 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 button.poster {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 229 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 241 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 a.poster-container {
   padding: 0px !important;
 }
 
-/* line 233 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 245 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .card-container:hover .card {
   background-color: #ebebeb;
 }
 
-/* line 235 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 247 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .card-container:hover .card-image {
   background-color: #ebebeb;
 }
 
-/* line 239 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 251 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .mini-cd {
   width: 50%;
   max-width: 400px;
@@ -456,7 +474,7 @@ a.poster-container {
   margin-left: auto;
 }
 
-/* line 247 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 259 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .cd {
   width: 100%;
   max-width: 700px;
@@ -465,12 +483,12 @@ a.poster-container {
   margin-left: auto;
 }
 
-/* line 257 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 269 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 a.Eric_Pump {
   padding: 100%;
 }
 
-/* line 259 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 271 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .gif-text {
   margin-top: 120px;
   padding: 20px;
@@ -478,17 +496,17 @@ a.Eric_Pump {
   text-decoration: none;
 }
 
-/* line 264 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 276 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 .gif {
   padding-top: 25px;
 }
 
-/* line 270 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 282 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 h1.text-center {
   font-weight: bold;
 }
 
-/* line 273 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 285 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 h4.text-center {
   padding-top: 10px;
   font-size: 20px;
@@ -497,7 +515,7 @@ h4.text-center {
   letter-spacing: -0.9px;
 }
 
-/* line 277 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 289 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 
 /* line 1 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 
@@ -1146,7 +1164,6 @@ html {
   text-align: center;
   text-decoration: none;
   background-color: #212f3d;
-  -webkit-border-radius: 5px;
   border-radius: 5px;
   top: 18px;
   right: 120px;
