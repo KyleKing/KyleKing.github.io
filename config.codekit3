@@ -1374,6 +1374,17 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/public\/imgs\/MSD\/instruments.png": {
+		"ft": 32768,
+		"iS": 43140,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/MSD\/instruments.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/public\/imgs\/N1\/cover.png": {
 		"ft": 32768,
 		"iS": 15765,
@@ -2340,13 +2351,6 @@
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
-		},
-	"\/public\/scripts\/layout.js.map": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/public\/scripts\/layout.js.map",
-		"oF": 0
 		},
 	"\/public\/videos\/microfluidics-01.mp4": {
 		"cB": 0,

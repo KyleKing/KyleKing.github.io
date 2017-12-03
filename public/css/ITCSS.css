@@ -550,87 +550,9 @@ h4.text-center {
   }
 }
 
-/* line 37 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
-.project-PhotoFrame-image {
-  background-image: url("../imgs/PhotoFrame/cover.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: 50% 50%;
-  height: 180px;
-  width: auto;
-  overflow: hidden;
-}
-
-/* line 39 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
-.project-PiAlarm-image {
-  background-image: url("../imgs/PiAlarm/cover.jpg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: 50% 50%;
-  height: 180px;
-  width: auto;
-  overflow: hidden;
-}
-
-/* line 41 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
-.project-N1-image {
-  background-image: url("../imgs/N1/cover.png");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: 50% 50%;
-  height: 180px;
-  width: auto;
-  overflow: hidden;
-}
-
-/* line 43 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
-.project-SoundCloud-image {
-  background-image: url("../imgs/SoundCloud/cover.png");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: 0% 0%;
-  height: 180px;
-  width: auto;
-  overflow: hidden;
-}
-
-/* line 45 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
-.project-3DPrints-image {
-  background-image: url("../imgs/3DPrints/Fan Mount.jpeg");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: 50% 40%;
-  height: 180px;
-  width: auto;
-  overflow: hidden;
-}
-
-/* line 47 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
-.project-extensions-image {
-  background-image: url("../imgs/Extensions/cover.png");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: 50% 0%;
-  height: 180px;
-  width: auto;
-  overflow: hidden;
-}
-
-/* line 49 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 38 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-MSD-image {
-  background-image: url("../imgs/MSD/cover.jpg");
+  background-image: url("../imgs/MSD/instruments.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -641,20 +563,7 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 52 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
-.project-CAPSTONE-image {
-  background-image: url("../imgs/Capstone/Capstone-transparency.png");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: 50% 40%;
-  height: 180px;
-  width: auto;
-  overflow: hidden;
-}
-
-/* line 55 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 42 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-microfluidics-image {
   background-image: url("../imgs/Microfluidics/microfluidics-02.jpg");
   background-repeat: no-repeat;
@@ -667,20 +576,7 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 57 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
-.project-bikeshare-image {
-  background-image: url("../imgs/Bikeshare/LockInUse.gif");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: 50% 25%;
-  height: 180px;
-  width: auto;
-  overflow: hidden;
-}
-
-/* line 59 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 44 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-Canon-image {
   background-image: url("../imgs/Canon/cover.jpg");
   background-repeat: no-repeat;
@@ -693,9 +589,22 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 62 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
-.project-bioe340-image {
-  background-image: url("../imgs/bioe340/mathematica_01.png");
+/* line 47 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-sustainametrix-image {
+  background-image: url("../imgs/SustainaMetrix/logo.gif");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 50% 25%;
+  height: 180px;
+  width: auto;
+  overflow: hidden;
+}
+
+/* line 49 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-dassarma-image {
+  background-image: url("../imgs/DasSarma/Mut234_digest.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -706,7 +615,72 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 64 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 52 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-PiAlarm-image {
+  background-image: url("../imgs/PiAlarm/cover.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 180px;
+  width: auto;
+  overflow: hidden;
+}
+
+/* line 54 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-bikeshare-image {
+  background-image: url("../imgs/Bikeshare/LockInUse.gif");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 50% 25%;
+  height: 180px;
+  width: auto;
+  overflow: hidden;
+}
+
+/* line 56 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-CAPSTONE-image {
+  background-image: url("../imgs/Capstone/1_phone.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 180px;
+  width: auto;
+  overflow: hidden;
+}
+
+/* line 58 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-PhotoFrame-image {
+  background-image: url("../imgs/PhotoFrame/cover.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 180px;
+  width: auto;
+  overflow: hidden;
+}
+
+/* line 60 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-3DPrints-image {
+  background-image: url("../imgs/3DPrints/Fan Mount.jpeg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 50% 40%;
+  height: 180px;
+  width: auto;
+  overflow: hidden;
+}
+
+/* line 63 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-4K-image {
   background-image: url("../imgs/4K/D01_12.jpg");
   background-repeat: no-repeat;
@@ -719,7 +693,7 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 66 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 65 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-Zoo-image {
   background-image: url("../imgs/Zoo/cormorant.jpg");
   background-repeat: no-repeat;
@@ -733,32 +707,6 @@ h4.text-center {
 }
 
 /* line 68 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
-.project-dassarma-image {
-  background-image: url("../imgs/DasSarma/Mut234_digest.png");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: 50% 50%;
-  height: 180px;
-  width: auto;
-  overflow: hidden;
-}
-
-/* line 70 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
-.project-sustainametrix-image {
-  background-image: url("../imgs/SustainaMetrix/logo.gif");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: 50% 25%;
-  height: 180px;
-  width: auto;
-  overflow: hidden;
-}
-
-/* line 72 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-quest-image {
   background-image: url("../imgs/quest/pres4final.png");
   background-repeat: no-repeat;
@@ -771,7 +719,59 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 76 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 70 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-bioe340-image {
+  background-image: url("../imgs/bioe340/mathematica_01.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 180px;
+  width: auto;
+  overflow: hidden;
+}
+
+/* line 73 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-N1-image {
+  background-image: url("../imgs/N1/cover.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 180px;
+  width: auto;
+  overflow: hidden;
+}
+
+/* line 75 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-SoundCloud-image {
+  background-image: url("../imgs/SoundCloud/cover.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 0% 0%;
+  height: 180px;
+  width: auto;
+  overflow: hidden;
+}
+
+/* line 77 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-extensions-image {
+  background-image: url("../imgs/Extensions/cover.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 50% 0%;
+  height: 180px;
+  width: auto;
+  overflow: hidden;
+}
+
+/* line 81 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .card-container {
   padding-top: 0;
   padding-bottom: 40px;
@@ -780,7 +780,7 @@ h4.text-center {
 }
 @media (min-width: 768px) {
 
-/* line 82 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 87 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
   .card-container {
     padding-right: 5px;
     padding-left: 5px;
@@ -788,14 +788,14 @@ h4.text-center {
 }
 @media (max-width: 768px) {
 
-/* line 85 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 90 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
   .card-container {
     padding-right: 50px;
     padding-left: 50px;
   }
 }
 
-/* line 89 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 94 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .description-container {
   height: 180px;
   padding-right: 15px;
@@ -804,7 +804,7 @@ h4.text-center {
 }
 @media (max-width: 768px) {
 
-/* line 93 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 98 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
   .description-container {
     height: 210px;
     padding-right: 5px;
@@ -812,7 +812,7 @@ h4.text-center {
   }
 }
 
-/* line 102 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 107 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .description-container .content {
   position: absolute;
   top: 50%;
@@ -825,24 +825,24 @@ h4.text-center {
   transform: translate(-50%, -50%);
 }
 
-/* line 110 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 115 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .section-spacing {
   height: 50px;
   width: 100%;
   margin: none !important;
 }
 
-/* line 114 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 119 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .inverse {
   color: #fbfcfc;
 }
 
-/* line 116 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 121 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .secondary-bg {
   background-color: #fbfcfc;
 }
 
-/* line 117 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 122 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 
 /* line 1 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 
@@ -963,7 +963,7 @@ html {
   padding-left: 10px;
   font-weight: bold;
   color: #333;
-  margin-top: 17.7px;
+  margin-top: 8px;
 }
 @media only screen and (min-width: $screen-sm) {
 
@@ -973,7 +973,7 @@ html {
   }
 }
 
-/* line 117 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
+/* line 118 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .from-right .cd-panel-header,
 .from-left .cd-panel-header {
   top: -75px;
@@ -984,17 +984,17 @@ html {
   transition: top 0.3s 0s;
 }
 
-/* line 120 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
+/* line 121 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .from-right .cd-panel-header {
   right: 0;
 }
 
-/* line 122 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
+/* line 123 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .from-left .cd-panel-header {
   left: 0;
 }
 
-/* line 124 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
+/* line 125 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .is-visible .cd-panel-header {
   top: 0px;
   -webkit-transition: top 0.3s 0.3s;
@@ -1018,13 +1018,13 @@ html {
   }
 }
 
-/* line 132 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
+/* line 133 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel-close {
   position: absolute;
+  height: 50px;
   top: 12.5px;
-  right: 60px;
-  height: 100%;
   width: 60px;
+  right: 35px /* If this changes, update tool tip math */;
 /* image replacement */
   display: inline-block;
   overflow: hidden;
@@ -1032,7 +1032,7 @@ html {
   white-space: nowrap;
 }
 
-/* line 133 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
+/* line 134 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel-close::after,
 .cd-panel-close::before {
   content: '';
@@ -1210,7 +1210,7 @@ html {
   background-color: #212f3d;
   border-radius: 5px;
   top: 18px;
-  right: 120px;
+  right: 95px /* From .cd-close */;
   padding: 10px;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1221,26 +1221,19 @@ html {
   -ms-transition: all 0.1s;
   transition: all 0.1s;
 }
-@media only screen and (min-width: $screen-md) {
 
-/* line 58 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/ITCSS.styl */
-  .cd-panel-tooltip {
-    right: 125px;
-  }
-}
-
-/* line 233 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
+/* line 229 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .cd-panel-tooltip.visible {
   opacity: 1;
   -ms-filter: none;
   filter: none;
 }
 
-/* line 237 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
+/* line 233 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .tooltip-arrow-right {
   position: absolute;
   top: 28.5px;
-  right: 111px;
+  right: 86px /* From .cd-close */;
   z-index: 1010;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -1256,22 +1249,15 @@ html {
   border-bottom: 9px solid transparent;
   border-left: 9px solid #212f3d;
 }
-@media only screen and (min-width: $screen-md) {
 
-/* line 58 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/ITCSS.styl */
-  .tooltip-arrow-right {
-    right: 111px;
-  }
-}
-
-/* line 250 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
+/* line 243 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .tooltip-arrow-right.visible {
   opacity: 1;
   -ms-filter: none;
   filter: none;
 }
 
-/* line 261 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
+/* line 254 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 .summary {
   padding-bottom: 10px;
 }
@@ -1452,9 +1438,9 @@ html {
   }
 }
 
-/* line 278 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
+/* line 271 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 
-/* line 278 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/map.import.styl */
+/* line 271 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/map.import.styl */
 
 /* line 1 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/map.import.styl */
 .cd-map {

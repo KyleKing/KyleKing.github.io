@@ -113,7 +113,8 @@ html
     color: $color-1
 
     // This should be vertically centered (possibly flexbox with Lost grid?):
-    margin-top: (($title-panel-height - 39.6) / 2)
+    // Currently - h1 is Cabin and is 39px tall + 2x10px padding = 59px
+    margin-top: (($title-panel-height - 59) / 2)
   .from-right &, .from-left &
     top: ($title-panel-offset - $title-panel-height)
     transition: top .3s 0s
@@ -133,11 +134,10 @@ html
   &::after, &::before
     content: ''
   position: absolute
+  height: 50px
   top: (($title-panel-height - 50) / 2)
-  // right: 5%
-  right: 60px
-  height: 100%
   width: 60px
+  right: 35px /* If this changes, update tool tip math */
   /* image replacement */
   display: inline-block
   overflow: hidden
@@ -221,12 +221,8 @@ html
   background-color $dark
   border-radius: 5px
   top (($title-panel-height - 39) / 2)
-  // FIXME: Updates since the spacing looked weird:
-  right 120px
-  +MQ(L)
-    right 125px
+  right 35px + 60px /* From .cd-close */
   padding: 10px
-
   // Make only visible on md or larger screens
   opacity 0
   // +MQ(M)
@@ -238,10 +234,7 @@ html
   // Place the arrow
   position absolute
   top (($title-panel-height - 18) / 2)
-  right 110px + 1px
-  +MQ(L)
-    // right 125px + 1px
-    right 110px + 1px
+  right 35px + 51px /* From .cd-close */
   z-index 1010
 
   // Make only visible on md or larger screens
