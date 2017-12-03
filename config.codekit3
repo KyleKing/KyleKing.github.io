@@ -93,6 +93,16 @@
 		"oAP": "\/pages\/microfluidics.html",
 		"oF": 0
 		},
+	"\/pages\/min\/email-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/pages\/min\/min\/email-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"\/pages\/MSD.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -2212,15 +2222,13 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/public\/imgs\/SustainaMetrix\/podcast_logo.jpg": {
-		"ft": 16384,
-		"iS": 46171,
+	"\/public\/imgs\/SustainaMetrix\/logo.gif": {
+		"ft": 4194304,
+		"iS": 25642,
 		"oA": 0,
-		"oAP": "\/public\/imgs\/SustainaMetrix\/podcast_logo.jpg",
+		"oAP": "\/public\/imgs\/SustainaMetrix\/logo.gif",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
+		"opt": 0
 		},
 	"\/public\/imgs\/SustainaMetrix\/podcast_logo_large_bg.png": {
 		"ft": 32768,
@@ -2268,7 +2276,7 @@
 		"oA": 0,
 		"oAP": "\/public\/min\/layout-min.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 0,
 		"tS": 0
 		},
 	"\/public\/layout.js.map": {
@@ -2313,6 +2321,16 @@
 		"oAP": "\/public\/pdf\/URD2016_microfluidics.pdf",
 		"oF": 0
 		},
+	"\/public\/scripts\/email.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/public\/scripts\/min\/email-min.js",
+		"oF": 1,
+		"sC": 0,
+		"tS": 0
+		},
 	"\/public\/scripts\/layout.js": {
 		"ft": 64,
 		"ma": 0,
@@ -2320,7 +2338,7 @@
 		"oA": 1,
 		"oAP": "\/public\/scripts\/min\/layout-min.js",
 		"oF": 0,
-		"sC": 1,
+		"sC": 0,
 		"tS": 0
 		},
 	"\/public\/scripts\/layout.js.map": {
@@ -2609,6 +2627,16 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
+		},
+	"\/src\/min\/email-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/src\/min\/min\/email-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
 		},
 	"\/src\/pages\/3DPrints.pug": {
 		"cB": 0,
@@ -4432,7 +4460,7 @@
 			"flagValue": -1
 			},
 		"elision": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"eqeqeq": {
@@ -4504,7 +4532,7 @@
 			"flagValue": -1
 			},
 		"latedef": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"laxbreak": {
@@ -4556,11 +4584,11 @@
 			"flagValue": -1
 			},
 		"newcap": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"noarg": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"nocomma": {
@@ -4580,7 +4608,7 @@
 			"flagValue": -1
 			},
 		"nonew": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"nonstandard": {
@@ -4620,7 +4648,7 @@
 			"flagValue": -1
 			},
 		"regexp": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"rhino": {
@@ -4660,7 +4688,7 @@
 			"flagValue": -1
 			},
 		"undef": {
-			"active": 1,
+			"active": 0,
 			"flagValue": -1
 			},
 		"unused": {
@@ -4801,7 +4829,7 @@
 		"autoOutputPathStyle": 2,
 		"createSourceMap": 0,
 		"minifyOutput": 1,
-		"syntaxCheckerStyle": 1,
+		"syntaxCheckerStyle": 0,
 		"transpilerStyle": 0
 		},
 	"languageDefaultsJSON": {

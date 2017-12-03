@@ -532,11 +532,16 @@ h4.text-center {
   -moz-background-size: cover;
   background-size: cover;
   background-position: 50% 10%;
-  margin-bottom: 50px;
+}
+
+/* line 13 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.header-image-spacing {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 @media (max-width: 1200px) {
 
-/* line 16 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 18 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
   .header-image {
     position: relative;
     z-index: 0;
@@ -545,7 +550,7 @@ h4.text-center {
   }
 }
 
-/* line 35 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 37 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-PhotoFrame-image {
   background-image: url("../imgs/PhotoFrame/cover.jpg");
   background-repeat: no-repeat;
@@ -558,7 +563,7 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 37 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 39 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-PiAlarm-image {
   background-image: url("../imgs/PiAlarm/cover.jpg");
   background-repeat: no-repeat;
@@ -571,7 +576,7 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 39 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 41 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-N1-image {
   background-image: url("../imgs/N1/cover.png");
   background-repeat: no-repeat;
@@ -584,7 +589,7 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 41 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 43 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-SoundCloud-image {
   background-image: url("../imgs/SoundCloud/cover.png");
   background-repeat: no-repeat;
@@ -597,20 +602,20 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 43 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 45 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-3DPrints-image {
-  background-image: url("../imgs/3DPrints/Fan Controller.JPG");
+  background-image: url("../imgs/3DPrints/Fan Mount.jpeg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50% 40%;
   height: 180px;
   width: auto;
   overflow: hidden;
 }
 
-/* line 46 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 47 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-extensions-image {
   background-image: url("../imgs/Extensions/cover.png");
   background-repeat: no-repeat;
@@ -623,7 +628,7 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 48 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 49 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-MSD-image {
   background-image: url("../imgs/MSD/cover.jpg");
   background-repeat: no-repeat;
@@ -636,7 +641,7 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 51 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 52 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-CAPSTONE-image {
   background-image: url("../imgs/Capstone/Capstone-transparency.png");
   background-repeat: no-repeat;
@@ -649,7 +654,7 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 54 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 55 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-microfluidics-image {
   background-image: url("../imgs/Microfluidics/microfluidics-02.jpg");
   background-repeat: no-repeat;
@@ -662,9 +667,9 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 56 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 57 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-bikeshare-image {
-  background-image: url("../imgs/Bikeshare/cover.jpg");
+  background-image: url("../imgs/Bikeshare/LockInUse.gif");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -675,7 +680,7 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 58 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 59 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-Canon-image {
   background-image: url("../imgs/Canon/cover.jpg");
   background-repeat: no-repeat;
@@ -688,7 +693,7 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 61 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 62 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-bioe340-image {
   background-image: url("../imgs/bioe340/mathematica_01.png");
   background-repeat: no-repeat;
@@ -701,7 +706,7 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 63 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 64 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-4K-image {
   background-image: url("../imgs/4K/D01_12.jpg");
   background-repeat: no-repeat;
@@ -714,7 +719,7 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 65 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 66 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-Zoo-image {
   background-image: url("../imgs/Zoo/cormorant.jpg");
   background-repeat: no-repeat;
@@ -727,7 +732,7 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 67 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 68 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-dassarma-image {
   background-image: url("../imgs/DasSarma/Mut234_digest.png");
   background-repeat: no-repeat;
@@ -740,20 +745,20 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 69 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 70 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-sustainametrix-image {
-  background-image: url("../imgs/SustainaMetrix/podcast_logo_large_bg.png");
+  background-image: url("../imgs/SustainaMetrix/logo.gif");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  background-position: 50% 35%;
+  background-position: 50% 25%;
   height: 180px;
   width: auto;
   overflow: hidden;
 }
 
-/* line 71 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 72 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-quest-image {
   background-image: url("../imgs/quest/pres4final.png");
   background-repeat: no-repeat;
@@ -766,7 +771,7 @@ h4.text-center {
   overflow: hidden;
 }
 
-/* line 75 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 76 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .card-container {
   padding-top: 0;
   padding-bottom: 40px;
@@ -775,7 +780,7 @@ h4.text-center {
 }
 @media (min-width: 768px) {
 
-/* line 81 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 82 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
   .card-container {
     padding-right: 5px;
     padding-left: 5px;
@@ -783,14 +788,14 @@ h4.text-center {
 }
 @media (max-width: 768px) {
 
-/* line 84 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 85 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
   .card-container {
     padding-right: 50px;
     padding-left: 50px;
   }
 }
 
-/* line 88 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 89 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .description-container {
   height: 180px;
   padding-right: 15px;
@@ -799,7 +804,7 @@ h4.text-center {
 }
 @media (max-width: 768px) {
 
-/* line 92 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 93 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
   .description-container {
     height: 210px;
     padding-right: 5px;
@@ -807,7 +812,7 @@ h4.text-center {
   }
 }
 
-/* line 101 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 102 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .description-container .content {
   position: absolute;
   top: 50%;
@@ -820,24 +825,24 @@ h4.text-center {
   transform: translate(-50%, -50%);
 }
 
-/* line 109 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 110 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .section-spacing {
   height: 50px;
   width: 100%;
   margin: none !important;
 }
 
-/* line 113 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 114 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .inverse {
   color: #fbfcfc;
 }
 
-/* line 115 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 116 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .secondary-bg {
   background-color: #fbfcfc;
 }
 
-/* line 116 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 117 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 
 /* line 1 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 

@@ -3,6 +3,11 @@ extends ./head.pug
 block body
 	body.body.page-index.clearfix
 		.header-image
+		.container
+			.row
+				.col-lg-12
+					p(style="text-align: right").header-image-spacing
+						i 1st Place Capstone Team: Kyle King, Dakota Katz, Patricia Barton, Kenny Ke, and Divya Jain
 
 		.container.container-summary
 			.row
@@ -17,8 +22,10 @@ block body
 						a(href="pages/Canon.html").stylized Research and Development Intern at Canon US Life Sciences
 						| , and a&nbsp;
 						a(href="pages/bikeshare.html").stylized Full Stack Developer and Team Liaison for Team B.I.K.E.S.
-					p.extra-pad-top Feel free to&nbsp;
-						a(href="mailto:dev.act.kyle@gmail.com").stylized send me an email
+					p.extra-pad-top I am always interested in expanding my skills and network. Please feel free to connect with me on
+						//- noscript (sorry, you need JavaScript enabled to email me)&nbsp;
+						| &nbsp;
+						a(href="mailto:dev.act.kyle@gmail.com" id="email-link").stylized email
 						| , connect on&nbsp;
 						a(href="https://www.linkedin.com/in/kylemorganking").stylized Linkedin
 						| , follow me on&nbsp;
