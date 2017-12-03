@@ -1080,6 +1080,36 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/public\/imgs\/Eagle\/DSC_0058.jpg": {
+		"ft": 16384,
+		"iS": 3585020,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Eagle\/DSC_0058.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/imgs\/Eagle\/DSC_0060.jpg": {
+		"ft": 16384,
+		"iS": 3420236,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Eagle\/DSC_0060.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/imgs\/Eagle\/photo_16.jpg": {
+		"ft": 16384,
+		"iS": 608438,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Eagle\/photo_16.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/public\/imgs\/Extensions\/cover.png": {
 		"ft": 32768,
 		"iS": 124475,
@@ -2270,6 +2300,27 @@
 		"oAP": "\/public\/imgs\/SustainaMetrix\/SustainaMetrix_Methodology_Cheat_Sheet.docx",
 		"oF": 0
 		},
+	"\/public\/imgs\/Zoo\/anulijuma.jpg": {
+		"ft": 16384,
+		"iS": 243452,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Zoo\/anulijuma.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/imgs\/Zoo\/BDF21316-video_still.png": {
+		"ft": 32768,
+		"iS": 2330394,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Zoo\/BDF21316-video_still.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/public\/imgs\/Zoo\/cormorant.jpg": {
 		"ft": 16384,
 		"iS": 56115,
@@ -2278,6 +2329,147 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/public\/imgs\/Zoo\/CSC_0053_maggie.jpg": {
+		"ft": 16384,
+		"iS": 3671052,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Zoo\/CSC_0053_maggie.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/imgs\/Zoo\/DSC_0005_badge.jpg": {
+		"ft": 16384,
+		"iS": 3531819,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Zoo\/DSC_0005_badge.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/imgs\/Zoo\/DSC_0040_pruning.jpg": {
+		"ft": 16384,
+		"iS": 3791072,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Zoo\/DSC_0040_pruning.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/imgs\/Zoo\/DSC_0050_closedeye.jpg": {
+		"ft": 16384,
+		"iS": 3079539,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Zoo\/DSC_0050_closedeye.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/imgs\/Zoo\/DSC_0051_close_eye.jpg": {
+		"ft": 16384,
+		"iS": 3177667,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Zoo\/DSC_0051_close_eye.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/imgs\/Zoo\/DSC_0062_swim1.jpg": {
+		"ft": 16384,
+		"iS": 3424113,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Zoo\/DSC_0062_swim1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/imgs\/Zoo\/DSC_0067_swim2.jpg": {
+		"ft": 16384,
+		"iS": 3588751,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Zoo\/DSC_0067_swim2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/imgs\/Zoo\/DSC_0082_feed_count.jpg": {
+		"ft": 16384,
+		"iS": 1002040,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Zoo\/DSC_0082_feed_count.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/imgs\/Zoo\/DSC_0097_bubbles.jpg": {
+		"ft": 16384,
+		"iS": 1180645,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Zoo\/DSC_0097_bubbles.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/imgs\/Zoo\/DSC_0249_swim3.jpg": {
+		"ft": 16384,
+		"iS": 4248306,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Zoo\/DSC_0249_swim3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/imgs\/Zoo\/DSC_0254_swim4.jpg": {
+		"ft": 16384,
+		"iS": 4695297,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Zoo\/DSC_0254_swim4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/imgs\/Zoo\/keeper_of_year.jpg": {
+		"ft": 16384,
+		"iS": 314259,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Zoo\/keeper_of_year.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/imgs\/Zoo\/keepers.jpg": {
+		"ft": 16384,
+		"iS": 489264,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Zoo\/keepers.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/public\/imgs\/Zoo\/penguin_chicks.png": {
+		"ft": 32768,
+		"iS": 1372834,
+		"oA": 0,
+		"oAP": "\/public\/imgs\/Zoo\/penguin_chicks.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/public\/layout.js": {
@@ -2351,6 +2543,13 @@
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
+		},
+	"\/public\/scripts\/layout.js.map": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/public\/scripts\/layout.js.map",
+		"oF": 0
 		},
 	"\/public\/videos\/microfluidics-01.mp4": {
 		"cB": 0,

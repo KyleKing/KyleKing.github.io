@@ -1,10 +1,10 @@
 defaultID = "Kyle King's Portfolio"
 
 startJuxtapose = (id = null) ->
-  console.log 'Checking StartJuxtapose'
+  console.log 'Checking Juxtapose id: ' + id
 
-  if (document.getElementById('web-clock') != null || id == 'microfluidics')
-    console.log 'Starting Juxtapose id: ' + id
+  if (document.getElementById('bead-bed') != null || id == 'microfluidics')
+    console.log 'Starting Microfluidics\' JS Slider'
     slider = new (juxtapose.JXSlider)('#bead-bed', [
       {
         src: '../public/imgs/Microfluidics/microfluidics-21.jpg'
@@ -23,7 +23,7 @@ startJuxtapose = (id = null) ->
     })
 
   if (document.getElementById('web-clock') != null || id == 'extensions')
-    console.log 'Starting Juxtapose id: ' + id
+    console.log 'Starting Extensions\' JS Slider'
     sliderTwo = new (juxtapose.JXSlider)('#web-clock', [
       {
         src: '../public/imgs/Extensions/extension-before.jpg'
@@ -100,11 +100,12 @@ $( document ).ready(->
   # Initialization
   if (window.location.pathname != '/')
     # If not on the home page, show the linked panel:
-    document.title = getIDFromURL()
+    id = getIDFromURL()
+    document.title = id
     $('.cd-panel').addClass 'is-visible'
     $('body').addClass 'noscroll'
     showESCTooltip()
-  startJuxtapose()
+    startJuxtapose(id)
 
   # Watch for card click to open corresponding panel
   $( ".card-container" ).click (event) ->
