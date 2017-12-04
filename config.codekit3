@@ -1080,31 +1080,31 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/public\/imgs\/Eagle\/DSC_0058.jpg": {
+	"\/public\/imgs\/eagle\/DSC_0058_trunk.jpg": {
 		"ft": 16384,
 		"iS": 3585020,
 		"oA": 0,
-		"oAP": "\/public\/imgs\/Eagle\/DSC_0058.jpg",
+		"oAP": "\/public\/imgs\/eagle\/DSC_0058_trunk.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/public\/imgs\/Eagle\/DSC_0060.jpg": {
+	"\/public\/imgs\/eagle\/DSC_0060_delivered.jpg": {
 		"ft": 16384,
 		"iS": 3420236,
 		"oA": 0,
-		"oAP": "\/public\/imgs\/Eagle\/DSC_0060.jpg",
+		"oAP": "\/public\/imgs\/eagle\/DSC_0060_delivered.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/public\/imgs\/Eagle\/photo_16.jpg": {
+	"\/public\/imgs\/eagle\/Group_Photo.jpg": {
 		"ft": 16384,
 		"iS": 608438,
 		"oA": 0,
-		"oAP": "\/public\/imgs\/Eagle\/photo_16.jpg",
+		"oAP": "\/public\/imgs\/eagle\/Group_Photo.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -2902,6 +2902,15 @@
 		"oA": 0,
 		"oAP": "\/pages\/dassarma.html",
 		"oF": 2,
+		"oS": 0
+		},
+	"\/src\/pages\/eagle.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "\/pages\/eagle.html",
+		"oF": 0,
 		"oS": 0
 		},
 	"\/src\/pages\/extensions.pug": {
