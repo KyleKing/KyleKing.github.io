@@ -515,7 +515,28 @@ h4.text-center {
   letter-spacing: -0.9px;
 }
 
-/* line 289 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+/* line 295 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+.footer-nav.cd {
+  padding-top: 30px;
+}
+
+/* line 299 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+a.footer-link:hover {
+  background-color: #ebebeb;
+}
+
+/* line 302 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+.footer-back {
+  padding: 10px;
+}
+
+/* line 305 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
+.footer-next {
+  padding: 10px;
+  text-align: right;
+}
+
+/* line 307 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/HtmlElements.import.styl */
 
 /* line 1 : /Users/kyleking/Developer/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 
