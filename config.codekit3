@@ -7,7 +7,7 @@
 		"uuidString": "FCD586C1-3115-4D47-AC4F-5827498A1ADA"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26330",
 "files": {
 	"\/.gitignore": {
 		"cB": 0,
@@ -441,7 +441,7 @@
 		},
 	"\/public\/imgs\/3DPrints\/speaker_box.jpg": {
 		"ft": 16384,
-		"iS": 441980,
+		"iS": 1388950,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/3DPrints\/speaker_box.jpg",
 		"oF": 0,
@@ -3247,6 +3247,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -3810,6 +3811,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
