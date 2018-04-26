@@ -7,7 +7,7 @@
 		"uuidString": "FCD586C1-3115-4D47-AC4F-5827498A1ADA"
 		}
 	],
-"creatorBuild": "26330",
+"creatorBuild": "26680",
 "files": {
 	"\/.gitignore": {
 		"cB": 0,
@@ -342,6 +342,7 @@
 	"\/public\/imgs\/3DPrints\/bikelight_close.JPG": {
 		"ft": 16384,
 		"iS": 1243830,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/3DPrints\/bikelight_close.JPG",
 		"oF": 0,
@@ -352,6 +353,7 @@
 	"\/public\/imgs\/3DPrints\/bikelight_far.JPG": {
 		"ft": 16384,
 		"iS": 1610680,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/3DPrints\/bikelight_far.JPG",
 		"oF": 0,
@@ -362,6 +364,7 @@
 	"\/public\/imgs\/3DPrints\/cover.jpg": {
 		"ft": 16384,
 		"iS": 60200,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/3DPrints\/cover.jpg",
 		"oF": 0,
@@ -372,6 +375,7 @@
 	"\/public\/imgs\/3DPrints\/cover_lamp_base.jpg": {
 		"ft": 16384,
 		"iS": 1421520,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/3DPrints\/cover_lamp_base.jpg",
 		"oF": 0,
@@ -382,6 +386,7 @@
 	"\/public\/imgs\/3DPrints\/Fan Controller.JPG": {
 		"ft": 16384,
 		"iS": 1564170,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/3DPrints\/Fan Controller.JPG",
 		"oF": 0,
@@ -392,6 +397,7 @@
 	"\/public\/imgs\/3DPrints\/Fan Mount.jpeg": {
 		"ft": 16384,
 		"iS": 571339,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/3DPrints\/Fan Mount.jpeg",
 		"oF": 0,
@@ -402,6 +408,7 @@
 	"\/public\/imgs\/3DPrints\/Fan New Setup.JPG": {
 		"ft": 16384,
 		"iS": 1642360,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/3DPrints\/Fan New Setup.JPG",
 		"oF": 0,
@@ -412,6 +419,7 @@
 	"\/public\/imgs\/3DPrints\/Fan Setup.jpg": {
 		"ft": 16384,
 		"iS": 1377490,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/3DPrints\/Fan Setup.jpg",
 		"oF": 0,
@@ -422,6 +430,7 @@
 	"\/public\/imgs\/3DPrints\/IMG_4218.JPG": {
 		"ft": 16384,
 		"iS": 1567360,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/3DPrints\/IMG_4218.JPG",
 		"oF": 0,
@@ -432,6 +441,7 @@
 	"\/public\/imgs\/3DPrints\/IMG_4220.JPG": {
 		"ft": 16384,
 		"iS": 1664820,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/3DPrints\/IMG_4220.JPG",
 		"oF": 0,
@@ -442,6 +452,7 @@
 	"\/public\/imgs\/3DPrints\/speaker_box.jpg": {
 		"ft": 16384,
 		"iS": 1388950,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/3DPrints\/speaker_box.jpg",
 		"oF": 0,
@@ -452,6 +463,7 @@
 	"\/public\/imgs\/3DPrints\/speaker_box_and_sander.jpg": {
 		"ft": 16384,
 		"iS": 1427320,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/3DPrints\/speaker_box_and_sander.jpg",
 		"oF": 0,
@@ -462,6 +474,7 @@
 	"\/public\/imgs\/4K\/02_Mar03_snowBike.jpg": {
 		"ft": 16384,
 		"iS": 53809,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/4K\/02_Mar03_snowBike.jpg",
 		"oF": 0,
@@ -483,6 +496,7 @@
 	"\/public\/imgs\/4K\/D01_10.jpg": {
 		"ft": 16384,
 		"iS": 2337930,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/4K\/D01_10.jpg",
 		"oF": 0,
@@ -493,6 +507,7 @@
 	"\/public\/imgs\/4K\/D01_12.jpg": {
 		"ft": 16384,
 		"iS": 299197,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/4K\/D01_12.jpg",
 		"oF": 0,
@@ -503,6 +518,7 @@
 	"\/public\/imgs\/4K\/D02_03.jpg": {
 		"ft": 16384,
 		"iS": 1276020,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/4K\/D02_03.jpg",
 		"oF": 0,
@@ -513,6 +529,7 @@
 	"\/public\/imgs\/4K\/D06_03.jpg": {
 		"ft": 16384,
 		"iS": 2190640,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/4K\/D06_03.jpg",
 		"oF": 0,
@@ -523,6 +540,7 @@
 	"\/public\/imgs\/4K\/D07_03.jpg": {
 		"ft": 16384,
 		"iS": 458461,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/4K\/D07_03.jpg",
 		"oF": 0,
@@ -533,6 +551,7 @@
 	"\/public\/imgs\/4K\/D08_15.jpg": {
 		"ft": 16384,
 		"iS": 88681,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/4K\/D08_15.jpg",
 		"oF": 0,
@@ -543,6 +562,7 @@
 	"\/public\/imgs\/4K\/D08_16.jpg": {
 		"ft": 16384,
 		"iS": 145385,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/4K\/D08_16.jpg",
 		"oF": 0,
@@ -553,6 +573,7 @@
 	"\/public\/imgs\/4K\/D10_03.jpg": {
 		"ft": 16384,
 		"iS": 84661,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/4K\/D10_03.jpg",
 		"oF": 0,
@@ -571,6 +592,7 @@
 	"\/public\/imgs\/Bikeshare\/bikeshare-01.jpg": {
 		"ft": 16384,
 		"iS": 101683,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Bikeshare\/bikeshare-01.jpg",
 		"oF": 0,
@@ -592,6 +614,7 @@
 	"\/public\/imgs\/Bikeshare\/bikeshare-05.jpg": {
 		"ft": 16384,
 		"iS": 21104,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Bikeshare\/bikeshare-05.jpg",
 		"oF": 0,
@@ -602,6 +625,7 @@
 	"\/public\/imgs\/Bikeshare\/bikeshare-06.jpg": {
 		"ft": 16384,
 		"iS": 55251,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Bikeshare\/bikeshare-06.jpg",
 		"oF": 0,
@@ -645,6 +669,7 @@
 	"\/public\/imgs\/Bikeshare\/cover.jpg": {
 		"ft": 16384,
 		"iS": 229870,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Bikeshare\/cover.jpg",
 		"oF": 0,
@@ -655,6 +680,7 @@
 	"\/public\/imgs\/Bikeshare\/cover_old.jpg": {
 		"ft": 16384,
 		"iS": 70955,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Bikeshare\/cover_old.jpg",
 		"oF": 0,
@@ -813,6 +839,7 @@
 	"\/public\/imgs\/Canon\/cover.jpg": {
 		"ft": 16384,
 		"iS": 71149,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Canon\/cover.jpg",
 		"oF": 0,
@@ -823,6 +850,7 @@
 	"\/public\/imgs\/Canon\/cover_old.jpg": {
 		"ft": 16384,
 		"iS": 29458,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Canon\/cover_old.jpg",
 		"oF": 0,
@@ -833,6 +861,7 @@
 	"\/public\/imgs\/Capstone\/1_phone.jpg": {
 		"ft": 16384,
 		"iS": 1578520,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/1_phone.jpg",
 		"oF": 0,
@@ -843,6 +872,7 @@
 	"\/public\/imgs\/Capstone\/2_transparency.jpg": {
 		"ft": 16384,
 		"iS": 1711880,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/2_transparency.jpg",
 		"oF": 0,
@@ -853,6 +883,7 @@
 	"\/public\/imgs\/Capstone\/3_paper.jpg": {
 		"ft": 16384,
 		"iS": 1481900,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/3_paper.jpg",
 		"oF": 0,
@@ -863,6 +894,7 @@
 	"\/public\/imgs\/Capstone\/3_projector.jpg": {
 		"ft": 16384,
 		"iS": 1445310,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/3_projector.jpg",
 		"oF": 0,
@@ -873,6 +905,7 @@
 	"\/public\/imgs\/Capstone\/Capstone-coolsideprofile.jpg": {
 		"ft": 16384,
 		"iS": 92025,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-coolsideprofile.jpg",
 		"oF": 0,
@@ -883,6 +916,7 @@
 	"\/public\/imgs\/Capstone\/Capstone-fron_profile.jpg": {
 		"ft": 16384,
 		"iS": 63663,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-fron_profile.jpg",
 		"oF": 0,
@@ -904,6 +938,7 @@
 	"\/public\/imgs\/Capstone\/Capstone-Knex.jpg": {
 		"ft": 16384,
 		"iS": 103702,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-Knex.jpg",
 		"oF": 0,
@@ -914,6 +949,7 @@
 	"\/public\/imgs\/Capstone\/Capstone-lenses_handheld.jpg": {
 		"ft": 16384,
 		"iS": 65172,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-lenses_handheld.jpg",
 		"oF": 0,
@@ -924,6 +960,7 @@
 	"\/public\/imgs\/Capstone\/Capstone-lenses_headcoil.jpg": {
 		"ft": 16384,
 		"iS": 107703,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-lenses_headcoil.jpg",
 		"oF": 0,
@@ -934,6 +971,7 @@
 	"\/public\/imgs\/Capstone\/Capstone-lenses_headcoil_me.jpg": {
 		"ft": 16384,
 		"iS": 105359,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-lenses_headcoil_me.jpg",
 		"oF": 0,
@@ -955,6 +993,7 @@
 	"\/public\/imgs\/Capstone\/Capstone-projection.jpg": {
 		"ft": 16384,
 		"iS": 53299,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-projection.jpg",
 		"oF": 0,
@@ -965,6 +1004,7 @@
 	"\/public\/imgs\/Capstone\/Capstone-projection_me.jpg": {
 		"ft": 16384,
 		"iS": 91365,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-projection_me.jpg",
 		"oF": 0,
@@ -986,6 +1026,7 @@
 	"\/public\/imgs\/Capstone\/Capstone-side_profile.jpg": {
 		"ft": 16384,
 		"iS": 82476,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-side_profile.jpg",
 		"oF": 0,
@@ -996,6 +1037,7 @@
 	"\/public\/imgs\/Capstone\/Capstone-top_profile.jpg": {
 		"ft": 16384,
 		"iS": 101708,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-top_profile.jpg",
 		"oF": 0,
@@ -1017,6 +1059,7 @@
 	"\/public\/imgs\/Capstone\/Capstone-work_session.jpg": {
 		"ft": 16384,
 		"iS": 4451130,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/Capstone-work_session.jpg",
 		"oF": 0,
@@ -1027,6 +1070,7 @@
 	"\/public\/imgs\/Capstone\/evolution.jpg": {
 		"ft": 16384,
 		"iS": 1333900,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/evolution.jpg",
 		"oF": 0,
@@ -1037,6 +1081,7 @@
 	"\/public\/imgs\/Capstone\/rubberband_clasp.jpg": {
 		"ft": 16384,
 		"iS": 1065520,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Capstone\/rubberband_clasp.jpg",
 		"oF": 0,
@@ -1047,6 +1092,7 @@
 	"\/public\/imgs\/cover_capstone.jpg": {
 		"ft": 16384,
 		"iS": 366912,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/cover_capstone.jpg",
 		"oF": 0,
@@ -1090,6 +1136,7 @@
 	"\/public\/imgs\/eagle\/DSC_0058_trunk.jpg": {
 		"ft": 16384,
 		"iS": 3585020,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/eagle\/DSC_0058_trunk.jpg",
 		"oF": 0,
@@ -1100,6 +1147,7 @@
 	"\/public\/imgs\/eagle\/DSC_0060_delivered.jpg": {
 		"ft": 16384,
 		"iS": 3420236,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/eagle\/DSC_0060_delivered.jpg",
 		"oF": 0,
@@ -1110,6 +1158,7 @@
 	"\/public\/imgs\/eagle\/Group_Photo.jpg": {
 		"ft": 16384,
 		"iS": 608438,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/eagle\/Group_Photo.jpg",
 		"oF": 0,
@@ -1131,6 +1180,7 @@
 	"\/public\/imgs\/Extensions\/extension-after.jpg": {
 		"ft": 16384,
 		"iS": 69965,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Extensions\/extension-after.jpg",
 		"oF": 0,
@@ -1141,6 +1191,7 @@
 	"\/public\/imgs\/Extensions\/extension-before.jpg": {
 		"ft": 16384,
 		"iS": 53039,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Extensions\/extension-before.jpg",
 		"oF": 0,
@@ -1162,6 +1213,7 @@
 	"\/public\/imgs\/Microfluidics\/microfluidics-01.jpg": {
 		"ft": 16384,
 		"iS": 58172,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-01.jpg",
 		"oF": 0,
@@ -1172,6 +1224,7 @@
 	"\/public\/imgs\/Microfluidics\/microfluidics-02.jpg": {
 		"ft": 16384,
 		"iS": 65482,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-02.jpg",
 		"oF": 0,
@@ -1182,6 +1235,7 @@
 	"\/public\/imgs\/Microfluidics\/microfluidics-03.jpg": {
 		"ft": 16384,
 		"iS": 89458,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-03.jpg",
 		"oF": 0,
@@ -1192,6 +1246,7 @@
 	"\/public\/imgs\/Microfluidics\/microfluidics-04.jpg": {
 		"ft": 16384,
 		"iS": 55454,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-04.jpg",
 		"oF": 0,
@@ -1202,6 +1257,7 @@
 	"\/public\/imgs\/Microfluidics\/microfluidics-09.jpg": {
 		"ft": 16384,
 		"iS": 70473,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-09.jpg",
 		"oF": 0,
@@ -1212,6 +1268,7 @@
 	"\/public\/imgs\/Microfluidics\/microfluidics-15.jpg": {
 		"ft": 16384,
 		"iS": 37992,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-15.jpg",
 		"oF": 0,
@@ -1222,6 +1279,7 @@
 	"\/public\/imgs\/Microfluidics\/microfluidics-17.jpg": {
 		"ft": 16384,
 		"iS": 60805,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-17.jpg",
 		"oF": 0,
@@ -1232,6 +1290,7 @@
 	"\/public\/imgs\/Microfluidics\/microfluidics-20 full.jpg": {
 		"ft": 16384,
 		"iS": 177080,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-20 full.jpg",
 		"oF": 0,
@@ -1242,6 +1301,7 @@
 	"\/public\/imgs\/Microfluidics\/microfluidics-20.jpg": {
 		"ft": 16384,
 		"iS": 340677,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-20.jpg",
 		"oF": 0,
@@ -1252,6 +1312,7 @@
 	"\/public\/imgs\/Microfluidics\/microfluidics-21.jpg": {
 		"ft": 16384,
 		"iS": 19144,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-21.jpg",
 		"oF": 0,
@@ -1262,6 +1323,7 @@
 	"\/public\/imgs\/Microfluidics\/microfluidics-22 full.jpg": {
 		"ft": 16384,
 		"iS": 34452,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-22 full.jpg",
 		"oF": 0,
@@ -1272,6 +1334,7 @@
 	"\/public\/imgs\/Microfluidics\/microfluidics-22.jpg": {
 		"ft": 16384,
 		"iS": 23804,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-22.jpg",
 		"oF": 0,
@@ -1293,6 +1356,7 @@
 	"\/public\/imgs\/Microfluidics\/microfluidics-25.jpg": {
 		"ft": 16384,
 		"iS": 927995,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-25.jpg",
 		"oF": 0,
@@ -1303,6 +1367,7 @@
 	"\/public\/imgs\/Microfluidics\/microfluidics-26.jpg": {
 		"ft": 16384,
 		"iS": 741008,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-26.jpg",
 		"oF": 0,
@@ -1313,6 +1378,7 @@
 	"\/public\/imgs\/Microfluidics\/microfluidics-27.jpg": {
 		"ft": 16384,
 		"iS": 3405630,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-27.jpg",
 		"oF": 0,
@@ -1323,6 +1389,7 @@
 	"\/public\/imgs\/Microfluidics\/microfluidics-28.jpg": {
 		"ft": 16384,
 		"iS": 740050,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-28.jpg",
 		"oF": 0,
@@ -1333,6 +1400,7 @@
 	"\/public\/imgs\/Microfluidics\/microfluidics-29.jpg": {
 		"ft": 16384,
 		"iS": 608720,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/microfluidics-29.jpg",
 		"oF": 0,
@@ -1354,6 +1422,7 @@
 	"\/public\/imgs\/Microfluidics\/MilledChip.jpg": {
 		"ft": 16384,
 		"iS": 147867,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/MilledChip.jpg",
 		"oF": 0,
@@ -1364,6 +1433,7 @@
 	"\/public\/imgs\/Microfluidics\/TurtleBot_Front Full.jpg": {
 		"ft": 16384,
 		"iS": 221102,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/TurtleBot_Front Full.jpg",
 		"oF": 0,
@@ -1374,6 +1444,7 @@
 	"\/public\/imgs\/Microfluidics\/TurtleBot_Front.jpg": {
 		"ft": 16384,
 		"iS": 221102,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/TurtleBot_Front.jpg",
 		"oF": 0,
@@ -1384,6 +1455,7 @@
 	"\/public\/imgs\/Microfluidics\/TurtleBot_Setup.jpg": {
 		"ft": 16384,
 		"iS": 188004,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/TurtleBot_Setup.jpg",
 		"oF": 0,
@@ -1394,6 +1466,7 @@
 	"\/public\/imgs\/Microfluidics\/TurtleBot_View.jpg": {
 		"ft": 16384,
 		"iS": 236444,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Microfluidics\/TurtleBot_View.jpg",
 		"oF": 0,
@@ -1404,6 +1477,7 @@
 	"\/public\/imgs\/MSD\/cover.jpg": {
 		"ft": 16384,
 		"iS": 616405,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/MSD\/cover.jpg",
 		"oF": 0,
@@ -1469,6 +1543,7 @@
 	"\/public\/imgs\/Next\/alarm_clock-1.jpg": {
 		"ft": 16384,
 		"iS": 77469,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Next\/alarm_clock-1.jpg",
 		"oF": 0,
@@ -1479,6 +1554,7 @@
 	"\/public\/imgs\/Next\/alumni_cup-4.jpg": {
 		"ft": 16384,
 		"iS": 49464,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Next\/alumni_cup-4.jpg",
 		"oF": 0,
@@ -1489,6 +1565,7 @@
 	"\/public\/imgs\/Next\/alumni_cup-5.jpg": {
 		"ft": 16384,
 		"iS": 47052,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Next\/alumni_cup-5.jpg",
 		"oF": 0,
@@ -1499,6 +1576,7 @@
 	"\/public\/imgs\/Next\/alumni_cup-7.jpg": {
 		"ft": 16384,
 		"iS": 83428,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Next\/alumni_cup-7.jpg",
 		"oF": 0,
@@ -1509,6 +1587,7 @@
 	"\/public\/imgs\/Next\/microduino.jpg": {
 		"ft": 16384,
 		"iS": 91662,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Next\/microduino.jpg",
 		"oF": 0,
@@ -1519,6 +1598,7 @@
 	"\/public\/imgs\/Next\/side-project-1.jpg": {
 		"ft": 16384,
 		"iS": 91566,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Next\/side-project-1.jpg",
 		"oF": 0,
@@ -1529,6 +1609,7 @@
 	"\/public\/imgs\/PhotoFrame\/3D_printed_feet.jpg": {
 		"ft": 16384,
 		"iS": 0,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/3D_printed_feet.jpg",
 		"oF": 0,
@@ -1550,6 +1631,7 @@
 	"\/public\/imgs\/PhotoFrame\/cover.jpg": {
 		"ft": 16384,
 		"iS": 453801,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/cover.jpg",
 		"oF": 0,
@@ -1560,6 +1642,7 @@
 	"\/public\/imgs\/PhotoFrame\/cover_alt.jpg": {
 		"ft": 16384,
 		"iS": 0,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/cover_alt.jpg",
 		"oF": 0,
@@ -1570,6 +1653,7 @@
 	"\/public\/imgs\/PhotoFrame\/cover_fullsize.jpg": {
 		"ft": 16384,
 		"iS": 1515770,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/cover_fullsize.jpg",
 		"oF": 0,
@@ -1580,6 +1664,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_2304.jpg": {
 		"ft": 16384,
 		"iS": 1505080,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_2304.jpg",
 		"oF": 0,
@@ -1590,6 +1675,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_2306.jpg": {
 		"ft": 16384,
 		"iS": 713747,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_2306.jpg",
 		"oF": 0,
@@ -1600,6 +1686,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_2308.jpg": {
 		"ft": 16384,
 		"iS": 1580200,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_2308.jpg",
 		"oF": 0,
@@ -1610,6 +1697,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_2309.JPG": {
 		"ft": 16384,
 		"iS": 1507970,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_2309.JPG",
 		"oF": 0,
@@ -1620,6 +1708,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_2310.jpg": {
 		"ft": 16384,
 		"iS": 1075480,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_2310.jpg",
 		"oF": 0,
@@ -1630,6 +1719,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_2311.jpg": {
 		"ft": 16384,
 		"iS": 1798880,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_2311.jpg",
 		"oF": 0,
@@ -1640,6 +1730,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_2330.jpg": {
 		"ft": 16384,
 		"iS": 1758220,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_2330.jpg",
 		"oF": 0,
@@ -1650,6 +1741,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_2376.jpg": {
 		"ft": 16384,
 		"iS": 1760740,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_2376.jpg",
 		"oF": 0,
@@ -1660,6 +1752,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_2377.jpg": {
 		"ft": 16384,
 		"iS": 1134130,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_2377.jpg",
 		"oF": 0,
@@ -1670,6 +1763,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_2685.JPG": {
 		"ft": 16384,
 		"iS": 1439570,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_2685.JPG",
 		"oF": 0,
@@ -1680,6 +1774,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_2800.jpg": {
 		"ft": 16384,
 		"iS": 1362890,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_2800.jpg",
 		"oF": 0,
@@ -1690,6 +1785,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_2801.jpg": {
 		"ft": 16384,
 		"iS": 1189330,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_2801.jpg",
 		"oF": 0,
@@ -1700,6 +1796,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_2802.jpg": {
 		"ft": 16384,
 		"iS": 1372990,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_2802.jpg",
 		"oF": 0,
@@ -1710,6 +1807,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_2803.JPG": {
 		"ft": 16384,
 		"iS": 1535720,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_2803.JPG",
 		"oF": 0,
@@ -1720,6 +1818,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3258.jpg": {
 		"ft": 16384,
 		"iS": 1784020,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3258.jpg",
 		"oF": 0,
@@ -1730,6 +1829,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3259.jpg": {
 		"ft": 16384,
 		"iS": 1427670,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3259.jpg",
 		"oF": 0,
@@ -1740,6 +1840,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3260.jpg": {
 		"ft": 16384,
 		"iS": 1426300,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3260.jpg",
 		"oF": 0,
@@ -1750,6 +1851,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3261.jpg": {
 		"ft": 16384,
 		"iS": 1575150,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3261.jpg",
 		"oF": 0,
@@ -1760,6 +1862,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3262.jpg": {
 		"ft": 16384,
 		"iS": 1436900,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3262.jpg",
 		"oF": 0,
@@ -1770,6 +1873,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3263.JPG": {
 		"ft": 16384,
 		"iS": 2195650,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3263.JPG",
 		"oF": 0,
@@ -1780,6 +1884,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3265.jpg": {
 		"ft": 16384,
 		"iS": 1951260,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3265.jpg",
 		"oF": 0,
@@ -1790,6 +1895,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3266.jpg": {
 		"ft": 16384,
 		"iS": 1149880,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3266.jpg",
 		"oF": 0,
@@ -1800,6 +1906,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3268.jpg": {
 		"ft": 16384,
 		"iS": 1428160,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3268.jpg",
 		"oF": 0,
@@ -1810,6 +1917,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3269.jpg": {
 		"ft": 16384,
 		"iS": 1154920,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3269.jpg",
 		"oF": 0,
@@ -1820,6 +1928,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3270.jpg": {
 		"ft": 16384,
 		"iS": 1170380,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3270.jpg",
 		"oF": 0,
@@ -1830,6 +1939,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3271.jpg": {
 		"ft": 16384,
 		"iS": 1144450,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3271.jpg",
 		"oF": 0,
@@ -1840,6 +1950,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3273.jpg": {
 		"ft": 16384,
 		"iS": 1412470,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3273.jpg",
 		"oF": 0,
@@ -1850,6 +1961,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3274.jpg": {
 		"ft": 16384,
 		"iS": 1858880,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3274.jpg",
 		"oF": 0,
@@ -1860,6 +1972,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3275.jpg": {
 		"ft": 16384,
 		"iS": 1341440,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3275.jpg",
 		"oF": 0,
@@ -1870,6 +1983,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3276.jpg": {
 		"ft": 16384,
 		"iS": 879840,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3276.jpg",
 		"oF": 0,
@@ -1880,6 +1994,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3277.jpg": {
 		"ft": 16384,
 		"iS": 833935,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3277.jpg",
 		"oF": 0,
@@ -1890,6 +2005,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3278.jpg": {
 		"ft": 16384,
 		"iS": 1684310,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3278.jpg",
 		"oF": 0,
@@ -1900,6 +2016,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3279.jpg": {
 		"ft": 16384,
 		"iS": 977536,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3279.jpg",
 		"oF": 0,
@@ -1910,6 +2027,7 @@
 	"\/public\/imgs\/PhotoFrame\/IMG_3280.jpg": {
 		"ft": 16384,
 		"iS": 1654260,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/IMG_3280.jpg",
 		"oF": 0,
@@ -1920,6 +2038,7 @@
 	"\/public\/imgs\/PhotoFrame\/lc_base_layer.jpg": {
 		"ft": 16384,
 		"iS": 0,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/lc_base_layer.jpg",
 		"oF": 0,
@@ -1930,6 +2049,7 @@
 	"\/public\/imgs\/PhotoFrame\/stacked_lc_acrylic.jpg": {
 		"ft": 16384,
 		"iS": 1575150,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/stacked_lc_acrylic.jpg",
 		"oF": 0,
@@ -1940,6 +2060,7 @@
 	"\/public\/imgs\/PhotoFrame\/the_guts.jpg": {
 		"ft": 16384,
 		"iS": 0,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/the_guts.jpg",
 		"oF": 0,
@@ -1950,6 +2071,7 @@
 	"\/public\/imgs\/PhotoFrame\/UNADJUSTEDNONRAW_thumb_153.jpg": {
 		"ft": 16384,
 		"iS": 279192,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PhotoFrame\/UNADJUSTEDNONRAW_thumb_153.jpg",
 		"oF": 0,
@@ -1960,6 +2082,7 @@
 	"\/public\/imgs\/PiAlarm\/cover.jpg": {
 		"ft": 16384,
 		"iS": 1572820,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PiAlarm\/cover.jpg",
 		"oF": 0,
@@ -1970,6 +2093,7 @@
 	"\/public\/imgs\/PiAlarm\/IMG_4047.jpg": {
 		"ft": 16384,
 		"iS": 1844560,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PiAlarm\/IMG_4047.jpg",
 		"oF": 0,
@@ -1980,6 +2104,7 @@
 	"\/public\/imgs\/PiAlarm\/IMG_4066.jpg": {
 		"ft": 16384,
 		"iS": 1672500,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PiAlarm\/IMG_4066.jpg",
 		"oF": 0,
@@ -1990,6 +2115,7 @@
 	"\/public\/imgs\/PiAlarm\/IMG_4068.jpg": {
 		"ft": 16384,
 		"iS": 747402,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PiAlarm\/IMG_4068.jpg",
 		"oF": 0,
@@ -2000,6 +2126,7 @@
 	"\/public\/imgs\/PiAlarm\/IMG_4118.JPG": {
 		"ft": 16384,
 		"iS": 164089,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PiAlarm\/IMG_4118.JPG",
 		"oF": 0,
@@ -2010,6 +2137,7 @@
 	"\/public\/imgs\/PiAlarm\/IMG_4121.jpg": {
 		"ft": 16384,
 		"iS": 1473090,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PiAlarm\/IMG_4121.jpg",
 		"oF": 0,
@@ -2020,6 +2148,7 @@
 	"\/public\/imgs\/PiAlarm\/Overview.jpg": {
 		"ft": 16384,
 		"iS": 1628290,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/PiAlarm\/Overview.jpg",
 		"oF": 0,
@@ -2252,6 +2381,7 @@
 	"\/public\/imgs\/SustainaMetrix\/AmSam_Abbreviated_Timeline.jpeg": {
 		"ft": 16384,
 		"iS": 170390,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/SustainaMetrix\/AmSam_Abbreviated_Timeline.jpg",
 		"oF": 0,
@@ -2310,6 +2440,7 @@
 	"\/public\/imgs\/Zoo\/anulijuma.jpg": {
 		"ft": 16384,
 		"iS": 243452,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Zoo\/anulijuma.jpg",
 		"oF": 0,
@@ -2331,6 +2462,7 @@
 	"\/public\/imgs\/Zoo\/cormorant.jpg": {
 		"ft": 16384,
 		"iS": 56115,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Zoo\/cormorant.jpg",
 		"oF": 0,
@@ -2341,6 +2473,7 @@
 	"\/public\/imgs\/Zoo\/CSC_0053_maggie.jpg": {
 		"ft": 16384,
 		"iS": 3671052,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Zoo\/CSC_0053_maggie.jpg",
 		"oF": 0,
@@ -2351,6 +2484,7 @@
 	"\/public\/imgs\/Zoo\/DSC_0005_badge.jpg": {
 		"ft": 16384,
 		"iS": 3531819,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Zoo\/DSC_0005_badge.jpg",
 		"oF": 0,
@@ -2361,6 +2495,7 @@
 	"\/public\/imgs\/Zoo\/DSC_0040_pruning.jpg": {
 		"ft": 16384,
 		"iS": 3791072,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Zoo\/DSC_0040_pruning.jpg",
 		"oF": 0,
@@ -2371,6 +2506,7 @@
 	"\/public\/imgs\/Zoo\/DSC_0050_closedeye.jpg": {
 		"ft": 16384,
 		"iS": 3079539,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Zoo\/DSC_0050_closedeye.jpg",
 		"oF": 0,
@@ -2381,6 +2517,7 @@
 	"\/public\/imgs\/Zoo\/DSC_0051_close_eye.jpg": {
 		"ft": 16384,
 		"iS": 3177667,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Zoo\/DSC_0051_close_eye.jpg",
 		"oF": 0,
@@ -2391,6 +2528,7 @@
 	"\/public\/imgs\/Zoo\/DSC_0062_swim1.jpg": {
 		"ft": 16384,
 		"iS": 3424113,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Zoo\/DSC_0062_swim1.jpg",
 		"oF": 0,
@@ -2401,6 +2539,7 @@
 	"\/public\/imgs\/Zoo\/DSC_0067_swim2.jpg": {
 		"ft": 16384,
 		"iS": 3588751,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Zoo\/DSC_0067_swim2.jpg",
 		"oF": 0,
@@ -2411,6 +2550,7 @@
 	"\/public\/imgs\/Zoo\/DSC_0082_feed_count.jpg": {
 		"ft": 16384,
 		"iS": 1002040,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Zoo\/DSC_0082_feed_count.jpg",
 		"oF": 0,
@@ -2421,6 +2561,7 @@
 	"\/public\/imgs\/Zoo\/DSC_0097_bubbles.jpg": {
 		"ft": 16384,
 		"iS": 1180645,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Zoo\/DSC_0097_bubbles.jpg",
 		"oF": 0,
@@ -2431,6 +2572,7 @@
 	"\/public\/imgs\/Zoo\/DSC_0249_swim3.jpg": {
 		"ft": 16384,
 		"iS": 4248306,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Zoo\/DSC_0249_swim3.jpg",
 		"oF": 0,
@@ -2441,6 +2583,7 @@
 	"\/public\/imgs\/Zoo\/DSC_0254_swim4.jpg": {
 		"ft": 16384,
 		"iS": 4695297,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Zoo\/DSC_0254_swim4.jpg",
 		"oF": 0,
@@ -2451,6 +2594,7 @@
 	"\/public\/imgs\/Zoo\/keeper_of_year.jpg": {
 		"ft": 16384,
 		"iS": 314259,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Zoo\/keeper_of_year.jpg",
 		"oF": 0,
@@ -2461,6 +2605,7 @@
 	"\/public\/imgs\/Zoo\/keepers.jpg": {
 		"ft": 16384,
 		"iS": 489264,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/public\/imgs\/Zoo\/keepers.jpg",
 		"oF": 0,
@@ -3239,7 +3384,8 @@
 	"creationDate": 533762121,
 	"displayValue": "KyleKing.Github.io",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "brackets_orange"
+	"iconImageName": "brackets_orange",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -5042,6 +5188,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
