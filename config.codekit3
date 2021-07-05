@@ -143,6 +143,14 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/pages/MSD-SoftwareEngineer-2.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/pages/MSD-SoftwareEngineer-2.html",
+		"oF": 0
+		},
 	"/pages/MSD-SystemsEngineer-1.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -1560,6 +1568,17 @@
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/public/imgs/MSD/sq120.png": {
+		"ft": 32768,
+		"iS": 392425,
+		"oA": 0,
+		"oAP": "/public/imgs/MSD/sq120.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
@@ -3207,6 +3226,16 @@
 		"oF": 2,
 		"oS": 0
 		},
+	"/src/pages/MSD-SoftwareEngineer-2.pug": {
+		"cB": 0,
+		"cOD": 1,
+		"ft": 512,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/pages/MSD-SoftwareEngineer-2.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"/src/pages/MSD-SystemsEngineer-1.pug": {
 		"cB": 0,
 		"cOD": 1,
@@ -3510,7 +3539,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_orange",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 647138748.08472598
+	"lastBuiltDate": 647145537.36790097
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
