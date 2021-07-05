@@ -1,3 +1,19 @@
+
+/* line 1248 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
+
+/* line 1 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/stylus/lib/functions/index.styl */
+
+/* line 297 : /Applications/CodeKit.app/Contents/Resources/engines/node_modules/stylus/lib/functions/index.styl */
+
+/* line 870 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.import.styl */
+
+/* line 870 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.import.styl */
+
+/* line 10 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 971 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 759 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .clearfix:before,
 .dl-horizontal dd:before,
 .container:before,
@@ -11,6 +27,8 @@
   content: " ";
   display: table;
 }
+
+/* line 764 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .clearfix:after,
 .dl-horizontal dd:after,
 .container:after,
@@ -18,26 +36,40 @@
 .row:after {
   clear: both;
 }
+
+/* line 974 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
+/* line 977 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .pull-right {
   float: right !important;
 }
+
+/* line 980 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .pull-left {
   float: left !important;
 }
+
+/* line 988 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .hide {
   display: none !important;
 }
+
+/* line 991 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .show {
   display: block !important;
 }
+
+/* line 994 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .invisible {
   visibility: hidden;
 }
+
+/* line 997 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .text-hide {
   font: 0/0 a;
   color: transparent;
@@ -45,21 +77,33 @@
   background-color: transparent;
   border: 0;
 }
+
+/* line 1005 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .hidden {
   display: none !important;
 }
+
+/* line 1012 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .affix {
   position: fixed;
 }
+
+/* line 13 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/* line 21 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
+/* line 30 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 body {
   margin: 0;
 }
+
+/* line 43 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 article,
 aside,
 details,
@@ -75,6 +119,8 @@ section,
 summary {
   display: block;
 }
+
+/* line 63 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 audio,
 canvas,
 progress,
@@ -82,42 +128,64 @@ video {
   display: inline-block;
   vertical-align: baseline;
 }
+
+/* line 75 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
+
+/* line 84 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 [hidden],
 template {
   display: none;
 }
+
+/* line 95 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 a {
   background-color: transparent;
 }
+
+/* line 102 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 a:active,
 a:hover {
   outline: 0;
 }
+
+/* line 113 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 abbr[title] {
   border-bottom: 1px dotted;
 }
+
+/* line 120 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 b,
 strong {
   font-weight: bold;
 }
+
+/* line 128 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 dfn {
   font-style: italic;
 }
+
+/* line 136 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
+
+/* line 144 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 mark {
   background: #ff0;
   color: #000;
 }
+
+/* line 152 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 small {
   font-size: 80%;
 }
+
+/* line 159 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 sub,
 sup {
   font-size: 75%;
@@ -125,29 +193,45 @@ sup {
   position: relative;
   vertical-align: baseline;
 }
+
+/* line 166 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 sup {
   top: -0.5em;
 }
+
+/* line 169 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 sub {
   bottom: -0.25em;
 }
+
+/* line 179 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 img {
   border: 0;
 }
+
+/* line 186 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 svg:not(:root) {
   overflow: hidden;
 }
+
+/* line 196 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 figure {
   margin: 1em 40px;
 }
+
+/* line 203 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
+
+/* line 212 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 pre {
   overflow: auto;
 }
+
+/* line 219 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 code,
 kbd,
 pre,
@@ -155,6 +239,8 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
+
+/* line 241 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 button,
 input,
 optgroup,
@@ -164,13 +250,19 @@ textarea {
   font: inherit;
   margin: 0;
 }
+
+/* line 254 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 button {
   overflow: visible;
 }
+
+/* line 264 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 button,
 select {
   text-transform: none;
 }
+
+/* line 276 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -178,62 +270,94 @@ input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
+
+/* line 287 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
+
+/* line 295 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
+
+/* line 305 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 input {
   line-height: normal;
 }
+
+/* line 316 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
+
+/* line 327 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
+
+/* line 337 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
+
+/* line 349 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
+
+/* line 357 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
+
+/* line 367 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 legend {
   border: 0;
   padding: 0;
 }
+
+/* line 375 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 textarea {
   overflow: auto;
 }
+
+/* line 383 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 optgroup {
   font-weight: bold;
 }
+
+/* line 393 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* line 397 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 td,
 th {
   padding: 0;
 }
+
+/* line 404 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 /* Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
+/* line 411 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media print {
+
+/* line 412 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   *,
   *:before,
   *:after {
@@ -242,70 +366,110 @@ th {
     box-shadow: none !important;
     text-shadow: none !important;
   }
+
+/* line 420 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   a,
   a:visited {
     text-decoration: underline;
   }
+
+/* line 424 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   a[href]:after {
     content: " (" attr(href) ")";
   }
+
+/* line 427 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
+
+/* line 432 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
     content: "";
   }
+
+/* line 436 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
+/* line 441 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   thead {
     display: table-header-group;
   }
+
+/* line 444 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   tr,
   img {
     page-break-inside: avoid;
   }
+
+/* line 448 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   img {
     max-width: 100% !important;
   }
+
+/* line 451 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
+
+/* line 457 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   h2,
   h3 {
     page-break-after: avoid;
   }
+
+/* line 465 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   select {
     background: #fff !important;
   }
+
+/* line 469 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .navbar {
     display: none;
   }
+
+/* line 472 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
+
+/* line 474 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .btn > .caret,
   .dropup > .btn > .caret {
     border-top-color: #000 !important;
   }
+
+/* line 477 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .label {
     border: 1px solid #000;
   }
+
+/* line 480 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .table {
     border-collapse: collapse !important;
   }
+
+/* line 483 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .table td,
   .table th {
     background-color: #fff !important;
   }
+
+/* line 487 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
+
+/* line 488 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important;
   }
 }
+
+/* line 505 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 h1,
 h2,
 h3,
@@ -323,6 +487,8 @@ h6,
   line-height: 1.1;
   color: inherit;
 }
+
+/* line 512 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 h1 small,
 h2 small,
 h3 small,
@@ -351,6 +517,8 @@ h6 .small,
   line-height: 1;
   color: #777;
 }
+
+/* line 518 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 h1,
 .h1,
 h2,
@@ -360,6 +528,8 @@ h3,
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
+/* line 524 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 h1 small,
 .h1 small,
 h2 small,
@@ -374,6 +544,8 @@ h3 .small,
 .h3 .small {
   font-size: 65%;
 }
+
+/* line 528 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 h4,
 .h4,
 h5,
@@ -383,6 +555,8 @@ h6,
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+/* line 534 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 h4 small,
 .h4 small,
 h5 small,
@@ -397,33 +571,49 @@ h6 .small,
 .h6 .small {
   font-size: 75%;
 }
+
+/* line 538 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 h1,
 .h1 {
   font-size: 36px;
 }
+
+/* line 541 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 h2,
 .h2 {
   font-size: 30px;
 }
+
+/* line 544 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 h3,
 .h3 {
   font-size: 24px;
 }
+
+/* line 547 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 h4,
 .h4 {
   font-size: 18px;
 }
+
+/* line 550 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 h5,
 .h5 {
   font-size: 14px;
 }
+
+/* line 553 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 h6,
 .h6 {
   font-size: 12px;
 }
+
+/* line 560 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 p {
   margin: 0 0 10px;
 }
+
+/* line 563 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .lead {
   margin-bottom: 20px;
   font-size: 16px;
@@ -431,151 +621,241 @@ p {
   line-height: 1.4;
 }
 @media (min-width: 768px) {
+
+/* line 569 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .lead {
     font-size: 21px;
   }
 }
+
+/* line 577 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 small,
 .small {
   font-size: 85%;
 }
+
+/* line 581 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 mark,
 .mark {
   background-color: #fcf8e3;
   padding: 0.2em;
 }
+
+/* line 587 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .text-left {
   text-align: left;
 }
+
+/* line 590 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .text-right {
   text-align: right;
 }
+
+/* line 593 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .text-center {
   text-align: center;
 }
+
+/* line 596 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .text-justify {
   text-align: justify;
 }
+
+/* line 599 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .text-nowrap {
   white-space: nowrap;
 }
+
+/* line 603 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .text-lowercase {
   text-transform: lowercase;
 }
+
+/* line 606 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .text-uppercase {
   text-transform: uppercase;
 }
+
+/* line 609 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .text-capitalize {
   text-transform: capitalize;
 }
+
+/* line 613 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .text-muted {
   color: #777;
 }
+
+/* line 616 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .text-primary {
   color: #3782c4;
 }
+
+/* line 169 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 a.text-primary:hover {
   color: #3275b0;
 }
+
+/* line 619 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .text-success {
   color: #3c763d;
 }
+
+/* line 169 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 a.text-success:hover {
   color: #366a37;
 }
+
+/* line 622 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .text-info {
   color: #31708f;
 }
+
+/* line 169 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 a.text-info:hover {
   color: #2c6581;
 }
+
+/* line 625 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .text-warning {
   color: #8a6d3b;
 }
+
+/* line 169 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 a.text-warning:hover {
   color: #7c6235;
 }
+
+/* line 628 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .text-danger {
   color: #a94442;
 }
+
+/* line 169 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 a.text-danger:hover {
   color: #983d3b;
 }
+
+/* line 634 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .bg-primary {
   color: #fff;
   background-color: #3782c4;
 }
+
+/* line 653 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 a.bg-primary:hover {
   background-color: #3275b0;
 }
+
+/* line 640 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .bg-success {
   background-color: #dff0d8;
 }
+
+/* line 653 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 a.bg-success:hover {
   background-color: #c4e3b7;
 }
+
+/* line 643 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .bg-info {
   background-color: #d9edf7;
 }
+
+/* line 653 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 a.bg-info:hover {
   background-color: #b3dbef;
 }
+
+/* line 646 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .bg-warning {
   background-color: #fcf8e3;
 }
+
+/* line 653 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 a.bg-warning:hover {
   background-color: #f7edb8;
 }
+
+/* line 649 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .bg-danger {
   background-color: #f2dede;
 }
+
+/* line 653 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 a.bg-danger:hover {
   background-color: #e5bdbd;
 }
+
+/* line 656 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
   border-bottom: 1px solid #eee;
 }
+
+/* line 666 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 ul,
 ol {
   margin-top: 0;
   margin-bottom: 10px;
 }
+
+/* line 670 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 ul ul,
 ol ul,
 ul ol,
 ol ol {
   margin-bottom: 0;
 }
+
+/* line 677 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .list-inline,
 .list-unstyled {
   padding-left: 0;
   list-style: none;
 }
+
+/* line 683 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .list-inline {
   margin-left: -5px;
 }
+
+/* line 686 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .list-inline > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
 }
+
+/* line 692 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 dl {
   margin-top: 0;
   margin-bottom: 20px;
 }
+
+/* line 696 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 dt,
 dd {
   line-height: 1.428571429;
 }
+
+/* line 700 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 dt {
   font-weight: bold;
 }
+
+/* line 703 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 dd {
   margin-left: 0;
 }
+
+/* line 711 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
+
+/* line 712 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 768px) {
+
+/* line 716 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -585,30 +865,44 @@ dd {
     overflow: hidden;
     white-space: nowrap;
   }
+
+/* line 723 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .dl-horizontal dd {
     margin-left: 180px;
   }
 }
+
+/* line 731 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 abbr[title],
 abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted #777;
 }
+
+/* line 738 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
+
+/* line 743 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
   border-left: 5px solid #eee;
 }
+
+/* line 749 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
+
+/* line 752 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 blockquote p:last-child,
 blockquote ul:last-child,
 blockquote ol:last-child {
   margin-bottom: 0;
 }
+
+/* line 757 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 blockquote footer,
 blockquote small,
 blockquote .small {
@@ -617,11 +911,15 @@ blockquote .small {
   line-height: 1.428571429;
   color: #777;
 }
+
+/* line 765 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 blockquote footer:before,
 blockquote small:before,
 blockquote .small:before {
   content: '\2014 \00A0';
 }
+
+/* line 771 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .blockquote-reverse,
 blockquote.pull-right {
   padding-right: 15px;
@@ -630,6 +928,10 @@ blockquote.pull-right {
   border-left: 0;
   text-align: right;
 }
+
+/* line 780 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
+
+/* line 783 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .blockquote-reverse footer:before,
 blockquote.pull-right footer:before,
 .blockquote-reverse small:before,
@@ -638,6 +940,8 @@ blockquote.pull-right small:before,
 blockquote.pull-right .small:before {
   content: '';
 }
+
+/* line 785 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .blockquote-reverse footer:after,
 blockquote.pull-right footer:after,
 .blockquote-reverse small:after,
@@ -646,17 +950,23 @@ blockquote.pull-right small:after,
 blockquote.pull-right .small:after {
   content: '\00A0 \2014';
 }
+
+/* line 789 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 address {
   margin-bottom: 20px;
   font-style: normal;
   line-height: 1.428571429;
 }
+
+/* line 803 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 code,
 kbd,
 pre,
 samp {
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+/* line 810 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 code {
   padding: 2px 4px;
   font-size: 90%;
@@ -664,6 +974,8 @@ code {
   background-color: #f9f2f4;
   border-radius: 4px;
 }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 kbd {
   padding: 2px 4px;
   font-size: 90%;
@@ -672,12 +984,16 @@ kbd {
   border-radius: 3px;
   box-shadow: inset 0 -1px 0 rgba(0,0,0,0.25);
 }
+
+/* line 826 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 kbd kbd {
   padding: 0;
   font-size: 100%;
   font-weight: bold;
   box-shadow: none;
 }
+
+/* line 833 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 pre {
   display: block;
   padding: 9.5px;
@@ -691,6 +1007,8 @@ pre {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+/* line 847 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 pre code {
   padding: 0;
   font-size: inherit;
@@ -699,10 +1017,14 @@ pre code {
   background-color: transparent;
   border-radius: 0;
 }
+
+/* line 856 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll;
 }
+
+/* line 872 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -710,30 +1032,42 @@ pre code {
   padding-right: 15px;
 }
 @media (min-width: 768px) {
+
+/* line 875 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .container {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
+
+/* line 877 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .container {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
+
+/* line 879 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .container {
     width: 1170px;
   }
 }
+
+/* line 888 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
+
+/* line 896 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .row {
   margin-left: -15px;
   margin-right: -15px;
 }
+
+/* line 795 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-1,
 .col-sm-1,
 .col-md-1,
@@ -787,6 +1121,32 @@ pre code {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+/* line 805 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 805 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 805 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 805 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 805 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 805 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 805 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 805 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 805 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 805 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 805 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 805 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 809 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-1,
 .col-xs-2,
 .col-xs-3,
@@ -801,160 +1161,290 @@ pre code {
 .col-xs-12 {
   float: left;
 }
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-12 {
   width: 100%;
 }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-11 {
   width: 91.66666666666666%;
 }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-10 {
   width: 83.33333333333334%;
 }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-9 {
   width: 75%;
 }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-8 {
   width: 66.66666666666666%;
 }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-7 {
   width: 58.333333333333336%;
 }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-6 {
   width: 50%;
 }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-5 {
   width: 41.66666666666667%;
 }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-4 {
   width: 33.33333333333333%;
 }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-3 {
   width: 25%;
 }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-2 {
   width: 16.666666666666664%;
 }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-1 {
   width: 8.333333333333332%;
 }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-pull-12 {
   right: 100%;
 }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-pull-11 {
   right: 91.66666666666666%;
 }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-pull-10 {
   right: 83.33333333333334%;
 }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-pull-9 {
   right: 75%;
 }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-pull-8 {
   right: 66.66666666666666%;
 }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-pull-7 {
   right: 58.333333333333336%;
 }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-pull-6 {
   right: 50%;
 }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-pull-5 {
   right: 41.66666666666667%;
 }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-pull-4 {
   right: 33.33333333333333%;
 }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-pull-3 {
   right: 25%;
 }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-pull-2 {
   right: 16.666666666666664%;
 }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-pull-1 {
   right: 8.333333333333332%;
 }
+
+/* line 829 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-pull-0 {
   right: auto;
 }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-push-12 {
   left: 100%;
 }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-push-11 {
   left: 91.66666666666666%;
 }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-push-10 {
   left: 83.33333333333334%;
 }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-push-9 {
   left: 75%;
 }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-push-8 {
   left: 66.66666666666666%;
 }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-push-7 {
   left: 58.333333333333336%;
 }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-push-6 {
   left: 50%;
 }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-push-5 {
   left: 41.66666666666667%;
 }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-push-4 {
   left: 33.33333333333333%;
 }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-push-3 {
   left: 25%;
 }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-push-2 {
   left: 16.666666666666664%;
 }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-push-1 {
   left: 8.333333333333332%;
 }
+
+/* line 822 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-push-0 {
   left: auto;
 }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-offset-12 {
   margin-left: 100%;
 }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-offset-11 {
   margin-left: 91.66666666666666%;
 }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-offset-10 {
   margin-left: 83.33333333333334%;
 }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-offset-9 {
   margin-left: 75%;
 }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-offset-8 {
   margin-left: 66.66666666666666%;
 }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-offset-7 {
   margin-left: 58.333333333333336%;
 }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-offset-6 {
   margin-left: 50%;
 }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-offset-5 {
   margin-left: 41.66666666666667%;
 }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-offset-4 {
   margin-left: 33.33333333333333%;
 }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-offset-3 {
   margin-left: 25%;
 }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-offset-2 {
   margin-left: 16.666666666666664%;
 }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-offset-1 {
   margin-left: 8.333333333333332%;
 }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .col-xs-offset-0 {
   margin-left: 0;
 }
+
+/* line 920 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 768px) {
+
+/* line 809 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-1,
   .col-sm-2,
   .col-sm-3,
@@ -969,161 +1459,291 @@ pre code {
   .col-sm-12 {
     float: left;
   }
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-12 {
     width: 100%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-11 {
     width: 91.66666666666666%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-10 {
     width: 83.33333333333334%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-9 {
     width: 75%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-8 {
     width: 66.66666666666666%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-7 {
     width: 58.333333333333336%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-6 {
     width: 50%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-5 {
     width: 41.66666666666667%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-4 {
     width: 33.33333333333333%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-3 {
     width: 25%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-2 {
     width: 16.666666666666664%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-1 {
     width: 8.333333333333332%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-pull-12 {
     right: 100%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-pull-11 {
     right: 91.66666666666666%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-pull-10 {
     right: 83.33333333333334%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-pull-9 {
     right: 75%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-pull-8 {
     right: 66.66666666666666%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-pull-7 {
     right: 58.333333333333336%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-pull-6 {
     right: 50%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-pull-5 {
     right: 41.66666666666667%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-pull-4 {
     right: 33.33333333333333%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-pull-3 {
     right: 25%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-pull-2 {
     right: 16.666666666666664%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-pull-1 {
     right: 8.333333333333332%;
   }
+
+/* line 829 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-pull-0 {
     right: auto;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-push-12 {
     left: 100%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-push-11 {
     left: 91.66666666666666%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-push-10 {
     left: 83.33333333333334%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-push-9 {
     left: 75%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-push-8 {
     left: 66.66666666666666%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-push-7 {
     left: 58.333333333333336%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-push-6 {
     left: 50%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-push-5 {
     left: 41.66666666666667%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-push-4 {
     left: 33.33333333333333%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-push-3 {
     left: 25%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-push-2 {
     left: 16.666666666666664%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-push-1 {
     left: 8.333333333333332%;
   }
+
+/* line 822 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-push-0 {
     left: auto;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-offset-12 {
     margin-left: 100%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-offset-11 {
     margin-left: 91.66666666666666%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-offset-10 {
     margin-left: 83.33333333333334%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-offset-9 {
     margin-left: 75%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-offset-8 {
     margin-left: 66.66666666666666%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-offset-7 {
     margin-left: 58.333333333333336%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-offset-6 {
     margin-left: 50%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-offset-5 {
     margin-left: 41.66666666666667%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-offset-4 {
     margin-left: 33.33333333333333%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-offset-3 {
     margin-left: 25%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-offset-2 {
     margin-left: 16.666666666666664%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-offset-1 {
     margin-left: 8.333333333333332%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-sm-offset-0 {
     margin-left: 0;
   }
 }
+
+/* line 928 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 992px) {
+
+/* line 809 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-1,
   .col-md-2,
   .col-md-3,
@@ -1138,161 +1758,291 @@ pre code {
   .col-md-12 {
     float: left;
   }
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-12 {
     width: 100%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-11 {
     width: 91.66666666666666%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-10 {
     width: 83.33333333333334%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-9 {
     width: 75%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-8 {
     width: 66.66666666666666%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-7 {
     width: 58.333333333333336%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-6 {
     width: 50%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-5 {
     width: 41.66666666666667%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-4 {
     width: 33.33333333333333%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-3 {
     width: 25%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-2 {
     width: 16.666666666666664%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-1 {
     width: 8.333333333333332%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-pull-12 {
     right: 100%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-pull-11 {
     right: 91.66666666666666%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-pull-10 {
     right: 83.33333333333334%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-pull-9 {
     right: 75%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-pull-8 {
     right: 66.66666666666666%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-pull-7 {
     right: 58.333333333333336%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-pull-6 {
     right: 50%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-pull-5 {
     right: 41.66666666666667%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-pull-4 {
     right: 33.33333333333333%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-pull-3 {
     right: 25%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-pull-2 {
     right: 16.666666666666664%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-pull-1 {
     right: 8.333333333333332%;
   }
+
+/* line 829 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-pull-0 {
     right: auto;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-push-12 {
     left: 100%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-push-11 {
     left: 91.66666666666666%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-push-10 {
     left: 83.33333333333334%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-push-9 {
     left: 75%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-push-8 {
     left: 66.66666666666666%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-push-7 {
     left: 58.333333333333336%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-push-6 {
     left: 50%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-push-5 {
     left: 41.66666666666667%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-push-4 {
     left: 33.33333333333333%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-push-3 {
     left: 25%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-push-2 {
     left: 16.666666666666664%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-push-1 {
     left: 8.333333333333332%;
   }
+
+/* line 822 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-push-0 {
     left: auto;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-offset-12 {
     margin-left: 100%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-offset-11 {
     margin-left: 91.66666666666666%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-offset-10 {
     margin-left: 83.33333333333334%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-offset-9 {
     margin-left: 75%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-offset-8 {
     margin-left: 66.66666666666666%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-offset-7 {
     margin-left: 58.333333333333336%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-offset-6 {
     margin-left: 50%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-offset-5 {
     margin-left: 41.66666666666667%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-offset-4 {
     margin-left: 33.33333333333333%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-offset-3 {
     margin-left: 25%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-offset-2 {
     margin-left: 16.666666666666664%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-offset-1 {
     margin-left: 8.333333333333332%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-md-offset-0 {
     margin-left: 0;
   }
 }
+
+/* line 936 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 1200px) {
+
+/* line 809 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-1,
   .col-lg-2,
   .col-lg-3,
@@ -1307,160 +2057,288 @@ pre code {
   .col-lg-12 {
     float: left;
   }
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 813 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-12 {
     width: 100%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-11 {
     width: 91.66666666666666%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-10 {
     width: 83.33333333333334%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-9 {
     width: 75%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-8 {
     width: 66.66666666666666%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-7 {
     width: 58.333333333333336%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-6 {
     width: 50%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-5 {
     width: 41.66666666666667%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-4 {
     width: 33.33333333333333%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-3 {
     width: 25%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-2 {
     width: 16.666666666666664%;
   }
+
+/* line 818 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-1 {
     width: 8.333333333333332%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-pull-12 {
     right: 100%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-pull-11 {
     right: 91.66666666666666%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-pull-10 {
     right: 83.33333333333334%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-pull-9 {
     right: 75%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-pull-8 {
     right: 66.66666666666666%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-pull-7 {
     right: 58.333333333333336%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-pull-6 {
     right: 50%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-pull-5 {
     right: 41.66666666666667%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-pull-4 {
     right: 33.33333333333333%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-pull-3 {
     right: 25%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-pull-2 {
     right: 16.666666666666664%;
   }
+
+/* line 832 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-pull-1 {
     right: 8.333333333333332%;
   }
+
+/* line 829 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-pull-0 {
     right: auto;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-push-12 {
     left: 100%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-push-11 {
     left: 91.66666666666666%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-push-10 {
     left: 83.33333333333334%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-push-9 {
     left: 75%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-push-8 {
     left: 66.66666666666666%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-push-7 {
     left: 58.333333333333336%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-push-6 {
     left: 50%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-push-5 {
     left: 41.66666666666667%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-push-4 {
     left: 33.33333333333333%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-push-3 {
     left: 25%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-push-2 {
     left: 16.666666666666664%;
   }
+
+/* line 825 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-push-1 {
     left: 8.333333333333332%;
   }
+
+/* line 822 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-push-0 {
     left: auto;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-offset-12 {
     margin-left: 100%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-offset-11 {
     margin-left: 91.66666666666666%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-offset-10 {
     margin-left: 83.33333333333334%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-offset-9 {
     margin-left: 75%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-offset-8 {
     margin-left: 66.66666666666666%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-offset-7 {
     margin-left: 58.333333333333336%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-offset-6 {
     margin-left: 50%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-offset-5 {
     margin-left: 41.66666666666667%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-offset-4 {
     margin-left: 33.33333333333333%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-offset-3 {
     margin-left: 25%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-offset-2 {
     margin-left: 16.666666666666664%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-offset-1 {
     margin-left: 8.333333333333332%;
   }
+
+/* line 835 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   .col-lg-offset-0 {
     margin-left: 0;
   }
 }
+
+/* line 950 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn {
   display: inline-block;
   margin-bottom: 0;
@@ -1478,6 +2356,10 @@ pre code {
   border-radius: 4px;
   user-select: none;
 }
+
+/* line 964 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
+
+/* line 967 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn:focus,
 .btn:active:focus,
 .btn.active:focus,
@@ -1488,18 +2370,24 @@ pre code {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
+
+/* line 971 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn:hover,
 .btn:focus,
 .btn.focus {
   color: #333;
   text-decoration: none;
 }
+
+/* line 977 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn:active,
 .btn.active {
   outline: 0;
   background-image: none;
   box-shadow: inset 0 3px 5px rgba(0,0,0,0.125);
 }
+
+/* line 983 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn.disabled,
 .btn[disabled],
 fieldset[disabled] .btn {
@@ -1509,11 +2397,15 @@ fieldset[disabled] .btn {
   filter: alpha(opacity=65);
   box-shadow: none;
 }
+
+/* line 995 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn-default {
   color: #333;
   background-color: #fff;
   border-color: #ccc;
 }
+
+/* line 404 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-default:hover,
 .btn-default:focus,
 .btn-default.focus,
@@ -1524,11 +2416,17 @@ fieldset[disabled] .btn {
   background-color: #e6e6e6;
   border-color: #b4b4b4;
 }
+
+/* line 414 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   background-image: none;
 }
+
+/* line 419 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 422 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-default.disabled,
 .btn-default[disabled],
 fieldset[disabled] .btn-default,
@@ -1550,15 +2448,21 @@ fieldset[disabled] .btn-default.active {
   background-color: #fff;
   border-color: #ccc;
 }
+
+/* line 431 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-default .badge {
   color: #fff;
   background-color: #333;
 }
+
+/* line 998 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn-primary {
   color: #fff;
   background-color: #3782c4;
   border-color: #347bba;
 }
+
+/* line 404 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus,
@@ -1569,11 +2473,17 @@ fieldset[disabled] .btn-default.active {
   background-color: #3275b0;
   border-color: #2e6ca4;
 }
+
+/* line 414 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   background-image: none;
 }
+
+/* line 419 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 422 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-primary.disabled,
 .btn-primary[disabled],
 fieldset[disabled] .btn-primary,
@@ -1595,15 +2505,21 @@ fieldset[disabled] .btn-primary.active {
   background-color: #3782c4;
   border-color: #347bba;
 }
+
+/* line 431 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-primary .badge {
   color: #3782c4;
   background-color: #fff;
 }
+
+/* line 1002 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn-success {
   color: #fff;
   background-color: #5cb85c;
   border-color: #52b452;
 }
+
+/* line 404 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-success:hover,
 .btn-success:focus,
 .btn-success.focus,
@@ -1614,11 +2530,17 @@ fieldset[disabled] .btn-primary.active {
   background-color: #4bad4b;
   border-color: #46a146;
 }
+
+/* line 414 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-success:active,
 .btn-success.active,
 .open > .dropdown-toggle.btn-success {
   background-image: none;
 }
+
+/* line 419 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 422 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-success.disabled,
 .btn-success[disabled],
 fieldset[disabled] .btn-success,
@@ -1640,15 +2562,21 @@ fieldset[disabled] .btn-success.active {
   background-color: #5cb85c;
   border-color: #52b452;
 }
+
+/* line 431 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-success .badge {
   color: #5cb85c;
   background-color: #fff;
 }
+
+/* line 1006 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn-info {
   color: #fff;
   background-color: #5bc0de;
   border-color: #4ebbdb;
 }
+
+/* line 404 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-info:hover,
 .btn-info:focus,
 .btn-info.focus,
@@ -1659,11 +2587,17 @@ fieldset[disabled] .btn-success.active {
   background-color: #41b6d9;
   border-color: #30b0d5;
 }
+
+/* line 414 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-info:active,
 .btn-info.active,
 .open > .dropdown-toggle.btn-info {
   background-image: none;
 }
+
+/* line 419 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 422 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-info.disabled,
 .btn-info[disabled],
 fieldset[disabled] .btn-info,
@@ -1685,15 +2619,21 @@ fieldset[disabled] .btn-info.active {
   background-color: #5bc0de;
   border-color: #4ebbdb;
 }
+
+/* line 431 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-info .badge {
   color: #5bc0de;
   background-color: #fff;
 }
+
+/* line 1010 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn-warning {
   color: #fff;
   background-color: #f0ad4e;
   border-color: #efa63f;
 }
+
+/* line 404 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-warning:hover,
 .btn-warning:focus,
 .btn-warning.focus,
@@ -1704,11 +2644,17 @@ fieldset[disabled] .btn-info.active {
   background-color: #ee9f31;
   border-color: #ec961e;
 }
+
+/* line 414 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-warning:active,
 .btn-warning.active,
 .open > .dropdown-toggle.btn-warning {
   background-image: none;
 }
+
+/* line 419 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 422 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-warning.disabled,
 .btn-warning[disabled],
 fieldset[disabled] .btn-warning,
@@ -1730,15 +2676,21 @@ fieldset[disabled] .btn-warning.active {
   background-color: #f0ad4e;
   border-color: #efa63f;
 }
+
+/* line 431 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-warning .badge {
   color: #f0ad4e;
   background-color: #fff;
 }
+
+/* line 1014 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn-danger {
   color: #fff;
   background-color: #d9534f;
   border-color: #d64743;
 }
+
+/* line 404 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-danger:hover,
 .btn-danger:focus,
 .btn-danger.focus,
@@ -1749,11 +2701,17 @@ fieldset[disabled] .btn-warning.active {
   background-color: #d43b37;
   border-color: #cb312c;
 }
+
+/* line 414 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-danger:active,
 .btn-danger.active,
 .open > .dropdown-toggle.btn-danger {
   background-image: none;
 }
+
+/* line 419 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
+
+/* line 422 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-danger.disabled,
 .btn-danger[disabled],
 fieldset[disabled] .btn-danger,
@@ -1775,15 +2733,21 @@ fieldset[disabled] .btn-danger.active {
   background-color: #d9534f;
   border-color: #d64743;
 }
+
+/* line 431 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
 .btn-danger .badge {
   color: #d9534f;
   background-color: #fff;
 }
+
+/* line 1022 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn-link {
   color: #3782c4;
   font-weight: normal;
   border-radius: 0;
 }
+
+/* line 1027 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn-link,
 .btn-link:active,
 .btn-link.active,
@@ -1792,18 +2756,26 @@ fieldset[disabled] .btn-link {
   background-color: transparent;
   box-shadow: none;
 }
+
+/* line 1035 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn-link,
 .btn-link:hover,
 .btn-link:focus,
 .btn-link:active {
   border-color: transparent;
 }
+
+/* line 1041 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn-link:hover,
 .btn-link:focus {
   color: #2f6ea7;
   text-decoration: underline;
   background-color: transparent;
 }
+
+/* line 1047 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
+
+/* line 1049 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn-link[disabled]:hover,
 fieldset[disabled] .btn-link:hover,
 .btn-link[disabled]:focus,
@@ -1811,45 +2783,65 @@ fieldset[disabled] .btn-link:focus {
   color: #777;
   text-decoration: none;
 }
+
+/* line 1058 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn-lg {
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.3333333;
   border-radius: 6px;
 }
+
+/* line 1062 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn-sm {
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
 }
+
+/* line 1066 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn-xs {
   padding: 1px 5px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
 }
+
+/* line 1073 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn-block {
   display: block;
   width: 100%;
 }
+
+/* line 1078 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .btn-block + .btn-block {
   margin-top: 5px;
 }
+
+/* line 1082 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
+
+/* line 1085 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
 }
+
+/* line 1111 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @-ms-viewport {
   width: device-width;
 }
+
+/* line 1116 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .visible-xs,
 .visible-sm,
 .visible-md,
 .visible-lg {
   display: none !important;
 }
+
+/* line 1122 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .visible-xs-block,
 .visible-xs-inline,
 .visible-xs-inline-block,
@@ -1864,190 +2856,321 @@ input[type="button"].btn-block {
 .visible-lg-inline-block {
   display: none !important;
 }
+
+/* line 1136 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (max-width: 767px) {
+
+/* line 1137 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-xs {
     display: block !important;
   }
+
+/* line 127 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   table.visible-xs {
     display: table;
   }
+
+/* line 130 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   tr.visible-xs {
     display: table-row !important;
   }
+
+/* line 133 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   th.visible-xs,
   td.visible-xs {
     display: table-cell !important;
   }
 }
+
+/* line 1140 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (max-width: 767px) {
+
+/* line 1141 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-xs-block {
     display: block !important;
   }
 }
+
+/* line 1144 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (max-width: 767px) {
+
+/* line 1145 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-xs-inline {
     display: inline !important;
   }
 }
+
+/* line 1148 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (max-width: 767px) {
+
+/* line 1149 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-xs-inline-block {
     display: inline-block !important;
   }
 }
+
+/* line 1152 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 768px) and (max-width: 991px) {
+
+/* line 1153 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-sm {
     display: block !important;
   }
+
+/* line 127 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   table.visible-sm {
     display: table;
   }
+
+/* line 130 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   tr.visible-sm {
     display: table-row !important;
   }
+
+/* line 133 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   th.visible-sm,
   td.visible-sm {
     display: table-cell !important;
   }
 }
+
+/* line 1156 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 768px) and (max-width: 991px) {
+
+/* line 1157 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-sm-block {
     display: block !important;
   }
 }
+
+/* line 1160 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 768px) and (max-width: 991px) {
+
+/* line 1161 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-sm-inline {
     display: inline !important;
   }
 }
+
+/* line 1164 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 768px) and (max-width: 991px) {
+
+/* line 1165 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-sm-inline-block {
     display: inline-block !important;
   }
 }
+
+/* line 1168 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 992px) and (max-width: 1199px) {
+
+/* line 1169 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-md {
     display: block !important;
   }
+
+/* line 127 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   table.visible-md {
     display: table;
   }
+
+/* line 130 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   tr.visible-md {
     display: table-row !important;
   }
+
+/* line 133 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   th.visible-md,
   td.visible-md {
     display: table-cell !important;
   }
 }
+
+/* line 1172 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 992px) and (max-width: 1199px) {
+
+/* line 1173 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-md-block {
     display: block !important;
   }
 }
+
+/* line 1176 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 992px) and (max-width: 1199px) {
+
+/* line 1177 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-md-inline {
     display: inline !important;
   }
 }
+
+/* line 1180 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 992px) and (max-width: 1199px) {
+
+/* line 1181 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-md-inline-block {
     display: inline-block !important;
   }
 }
+
+/* line 1184 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 1200px) {
+
+/* line 1185 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-lg {
     display: block !important;
   }
+
+/* line 127 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   table.visible-lg {
     display: table;
   }
+
+/* line 130 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   tr.visible-lg {
     display: table-row !important;
   }
+
+/* line 133 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   th.visible-lg,
   td.visible-lg {
     display: table-cell !important;
   }
 }
+
+/* line 1188 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 1200px) {
+
+/* line 1189 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-lg-block {
     display: block !important;
   }
 }
+
+/* line 1192 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 1200px) {
+
+/* line 1193 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-lg-inline {
     display: inline !important;
   }
 }
+
+/* line 1196 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 1200px) {
+
+/* line 1197 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-lg-inline-block {
     display: inline-block !important;
   }
 }
+
+/* line 1200 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (max-width: 767px) {
+
+/* line 1201 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .hidden-xs {
     display: none !important;
   }
 }
+
+/* line 1204 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 768px) and (max-width: 991px) {
+
+/* line 1205 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .hidden-sm {
     display: none !important;
   }
 }
+
+/* line 1208 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 992px) and (max-width: 1199px) {
+
+/* line 1209 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .hidden-md {
     display: none !important;
   }
 }
+
+/* line 1212 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media (min-width: 1200px) {
+
+/* line 1213 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .hidden-lg {
     display: none !important;
   }
 }
+
+/* line 1222 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .visible-print {
   display: none !important;
 }
 @media print {
+
+/* line 1225 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-print {
     display: block !important;
   }
+
+/* line 127 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   table.visible-print {
     display: table;
   }
+
+/* line 130 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   tr.visible-print {
     display: table-row !important;
   }
+
+/* line 133 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.mixins.import.styl */
   th.visible-print,
   td.visible-print {
     display: table-cell !important;
   }
 }
+
+/* line 1228 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .visible-print-block {
   display: none !important;
 }
 @media print {
+
+/* line 1231 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-print-block {
     display: block !important;
   }
 }
+
+/* line 1234 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .visible-print-inline {
   display: none !important;
 }
 @media print {
+
+/* line 1237 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-print-inline {
     display: inline !important;
   }
 }
+
+/* line 1240 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 .visible-print-inline-block {
   display: none !important;
 }
 @media print {
+
+/* line 1243 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .visible-print-inline-block {
     display: inline-block !important;
   }
 }
+
+/* line 1246 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
 @media print {
+
+/* line 1247 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/CustomBootstrap/custom.bootstrap.styl */
   .hidden-print {
     display: none !important;
   }
 }
+/*# sourceMappingURL=custom.bootstrap.css.map */
