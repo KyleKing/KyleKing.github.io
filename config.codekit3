@@ -1577,8 +1577,8 @@
 		"oA": 0,
 		"oAP": "/public/imgs/MSD/sq120.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -3539,7 +3539,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "brackets_orange",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 647145537.36790097
+	"lastBuiltDate": 647146245.90460706
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

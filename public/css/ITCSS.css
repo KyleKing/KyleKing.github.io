@@ -565,19 +565,8 @@ a.footer-link:hover {
 }
 
 /* line 38 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
-.project-MSD-1-image {
+.project-MSD-image {
   background-image: url("../imgs/MSD/instruments.png");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-position: 50% 50%;
-  height: 180px;
-  width: auto;
-  overflow: hidden;
-}
-.project-MSD-2-image {
-  background-image: url("../imgs/MSD/sq120.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
