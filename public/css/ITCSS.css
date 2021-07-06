@@ -565,7 +565,20 @@ a.footer-link:hover {
 }
 
 /* line 38 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
-.project-MSD-image {
+.project-MSD-2-image {
+  background-image: url("../imgs/MSD/sq120.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 180px;
+  width: auto;
+  overflow: hidden;
+}
+
+/* line 40 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+.project-MSD-1-image {
   background-image: url("../imgs/MSD/instruments.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
@@ -577,7 +590,7 @@ a.footer-link:hover {
   overflow: hidden;
 }
 
-/* line 42 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 44 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-microfluidics-image {
   background-image: url("../imgs/Microfluidics/microfluidics-02.jpg");
   background-repeat: no-repeat;
@@ -590,7 +603,7 @@ a.footer-link:hover {
   overflow: hidden;
 }
 
-/* line 44 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 46 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-Canon-image {
   background-image: url("../imgs/Canon/cover.jpg");
   background-repeat: no-repeat;
@@ -603,7 +616,7 @@ a.footer-link:hover {
   overflow: hidden;
 }
 
-/* line 47 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 49 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-sustainametrix-image {
   background-image: url("../imgs/SustainaMetrix/logo.gif");
   background-repeat: no-repeat;
@@ -616,7 +629,7 @@ a.footer-link:hover {
   overflow: hidden;
 }
 
-/* line 49 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 51 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-dassarma-image {
   background-image: url("../imgs/DasSarma/Mut234_digest.png");
   background-repeat: no-repeat;
@@ -629,7 +642,7 @@ a.footer-link:hover {
   overflow: hidden;
 }
 
-/* line 52 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 54 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-PiAlarm-image {
   background-image: url("../imgs/PiAlarm/cover.jpg");
   background-repeat: no-repeat;
@@ -642,7 +655,7 @@ a.footer-link:hover {
   overflow: hidden;
 }
 
-/* line 54 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 56 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-bikeshare-image {
   background-image: url("../imgs/Bikeshare/LockInUse.gif");
   background-repeat: no-repeat;
@@ -655,7 +668,7 @@ a.footer-link:hover {
   overflow: hidden;
 }
 
-/* line 56 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 58 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-CAPSTONE-image {
   background-image: url("../imgs/Capstone/1_phone.jpg");
   background-repeat: no-repeat;
@@ -668,7 +681,7 @@ a.footer-link:hover {
   overflow: hidden;
 }
 
-/* line 58 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 60 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-PhotoFrame-image {
   background-image: url("../imgs/PhotoFrame/cover.jpg");
   background-repeat: no-repeat;
@@ -681,7 +694,7 @@ a.footer-link:hover {
   overflow: hidden;
 }
 
-/* line 60 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 62 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-3DPrints-image {
   background-image: url("../imgs/3DPrints/Fan Mount.jpeg");
   background-repeat: no-repeat;
@@ -694,7 +707,7 @@ a.footer-link:hover {
   overflow: hidden;
 }
 
-/* line 63 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 65 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-4K-image {
   background-image: url("../imgs/4K/D01_12.jpg");
   background-repeat: no-repeat;
@@ -707,7 +720,7 @@ a.footer-link:hover {
   overflow: hidden;
 }
 
-/* line 65 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 67 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-eagle-image {
   background-image: url("../imgs/eagle/Group_Photo.jpg");
   background-repeat: no-repeat;
@@ -720,7 +733,7 @@ a.footer-link:hover {
   overflow: hidden;
 }
 
-/* line 67 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 69 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-Zoo-image {
   background-image: url("../imgs/Zoo/DSC_0082_feed_count.jpg");
   background-repeat: no-repeat;
@@ -733,7 +746,7 @@ a.footer-link:hover {
   overflow: hidden;
 }
 
-/* line 70 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 72 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-quest-image {
   background-image: url("../imgs/quest/pres4final.png");
   background-repeat: no-repeat;
@@ -746,7 +759,7 @@ a.footer-link:hover {
   overflow: hidden;
 }
 
-/* line 72 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 74 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-bioe340-image {
   background-image: url("../imgs/bioe340/mathematica_01.png");
   background-repeat: no-repeat;
@@ -759,7 +772,7 @@ a.footer-link:hover {
   overflow: hidden;
 }
 
-/* line 75 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 77 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-N1-image {
   background-image: url("../imgs/N1/cover.png");
   background-repeat: no-repeat;
@@ -772,7 +785,7 @@ a.footer-link:hover {
   overflow: hidden;
 }
 
-/* line 77 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 79 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-SoundCloud-image {
   background-image: url("../imgs/SoundCloud/cover.png");
   background-repeat: no-repeat;
@@ -785,7 +798,7 @@ a.footer-link:hover {
   overflow: hidden;
 }
 
-/* line 79 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 81 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .project-extensions-image {
   background-image: url("../imgs/Extensions/cover.png");
   background-repeat: no-repeat;
@@ -798,7 +811,7 @@ a.footer-link:hover {
   overflow: hidden;
 }
 
-/* line 83 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 85 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .card-container {
   padding-top: 0;
   padding-bottom: 40px;
@@ -807,7 +820,7 @@ a.footer-link:hover {
 }
 @media (min-width: 768px) {
 
-/* line 89 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 91 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
   .card-container {
     padding-right: 5px;
     padding-left: 5px;
@@ -815,14 +828,14 @@ a.footer-link:hover {
 }
 @media (max-width: 768px) {
 
-/* line 92 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 94 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
   .card-container {
     padding-right: 50px;
     padding-left: 50px;
   }
 }
 
-/* line 96 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 98 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .description-container {
   height: 180px;
   padding-right: 15px;
@@ -831,7 +844,7 @@ a.footer-link:hover {
 }
 @media (max-width: 768px) {
 
-/* line 100 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 102 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
   .description-container {
     height: 210px;
     padding-right: 5px;
@@ -839,7 +852,7 @@ a.footer-link:hover {
   }
 }
 
-/* line 109 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 111 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .description-container .content {
   position: absolute;
   top: 50%;
@@ -852,24 +865,24 @@ a.footer-link:hover {
   transform: translate(-50%, -50%);
 }
 
-/* line 117 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 119 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .section-spacing {
   height: 50px;
   width: 100%;
   margin: none !important;
 }
 
-/* line 121 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 123 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .inverse {
   color: #fbfcfc;
 }
 
-/* line 123 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 125 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 .secondary-bg {
   background-color: #fbfcfc;
 }
 
-/* line 124 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
+/* line 126 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/macaw.import.styl */
 
 /* line 1 : /Volumes/Expansion/Developer-Large/KyleKing.github.io/src/styles/Imports/Slide_In_Panel.import.styl */
 
