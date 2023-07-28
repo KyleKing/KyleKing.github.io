@@ -24,7 +24,7 @@ keywords = []
 license = "MIT"
 maintainers = []
 name = "personal_site"
-readme = "docs/README.md"
+readme = "docs-code/README.md"
 repository = "https://github.com/kyleking/KyleKing.github.io"
 version = "0.0.1"
 
@@ -37,7 +37,7 @@ calcipy = {extras = ["doc", "lint", "nox", "stale", "tags", "test", "types"], ve
 
 [tool.poetry.urls]
 "Bug Tracker" = "https://github.com/kyleking/KyleKing.github.io/issues"
-"Changelog" = "https://github.com/kyleking/KyleKing.github.io/blob/main/docs/docs/CHANGELOG.md"
+"Changelog" = "https://github.com/kyleking/KyleKing.github.io/blob/main/docs-code/docs/CHANGELOG.md"
 
 [tool.pyright]
 include = ["personal_site"]

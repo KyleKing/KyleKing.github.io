@@ -33,9 +33,6 @@ plugins:
       input_folder: src
       input_extensions: puml
   - search
-  - gen-files:
-      scripts:
-        - docs/gen_ref_nav.py
   - git-revision-date-localized:
       enable_creation_date: true
       fallback_to_build_date: true
