@@ -4,7 +4,7 @@ requires = ["poetry-core"]
 
 [tool.commitizen]
 version = "0.0.1"
-version_files = ["pyproject.toml:^version", "personal_site/__init__.py:^__version"]
+version_files = ["personal_site/__init__.py:^__version", "pyproject.toml:^version"]
 
 [tool.poetry]
 authors = ["Kyle King <dev.act.kyle@gmail.com>"]
