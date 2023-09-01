@@ -1,8 +1,15 @@
+---
+date: 2016-01-01
+
+categories:
+  - University of Maryland
+---
+
 # Senior Capstone
 
-## Summary
-
 At the University of Maryland, with a team of 4 fellow senior bioengineering students, we created an immersive experience device for pediatric patients. Typically, when an MRI is necessary, pediatric patients are given anesthesia; however, there is a growing body of literature suggesting that this practice can lead to short term and possibly long term neurological deficits, along with additional cost, risks for respiratory issues, and other immediate concerns. Our approach was to create a device that follows the user from the waiting room to inside the MRI and all the way back out.
+
+<!-- more -->
 
 ## The Experience
 
@@ -14,23 +21,23 @@ Meeting with technicians, doctors, and other stakeholders, we realized that a ma
 
     Step 1. iPod Touch:
 
-    ![TBD](./imgs/Capstone/Capstone-ipod.png)
+    ![../imgs/Capstone/Capstone-ipod.png](../imgs/Capstone/Capstone-ipod.png)
 
 1. Once ready to enter the room, the technician needs to move the patient about 6 meters from a magnetic-safe environment to the MRI bed. Once the app had finished the first stage, the technician would be ready to slide out the iPod touch and expose the snapped-on transparency. Similar to the View Master toy, the patient could continue their experience with a calming ocean scene or an exciting space helmet as the technician rolls them on a stretcher to the MRI.
 
     Step 2. Static Transparency:
 
-    ![TBD](./imgs/Capstone/Capstone-transparency.png)
+    ![../imgs/Capstone/Capstone-transparency.png](../imgs/Capstone/Capstone-transparency.png)
 
 1. Once in the MRI bed, the technician could slide in the special projector screen lenses and snap-off the transparency. The third step utilizes a long throw projector that is already installed in most MRI's. The projector is placed at a safe distance and projects onto a mirror above the patient. In our case, the projector is angled down to the special projector lenses that fill the patient's field of view with a video chosen by the technician and patient.
 
     Step 3. Projector Surface:
 
-    ![TBD](./imgs/Capstone/Capstone-projector.png)
+    ![../imgs/Capstone/Capstone-projector.png](../imgs/Capstone/Capstone-projector.png)
 
     Step 3. Shown inside the MRI with the projector:
 
-    ![TBD](./imgs/Capstone/Capstone-mri.png)
+    ![../imgs/Capstone/Capstone-mri.png](../imgs/Capstone/Capstone-mri.png)
 
 Once successfully completed, the process can be walked back in reverse to bring the patient back out into the waiting room to see their parents
 
@@ -40,19 +47,19 @@ A critical part of our design process was rapid prototyping. With the prototypes
 
 Step 1. iPod Touch:
 
-![TBD](./imgs/Capstone/1_phone.jpg)
+![../imgs/Capstone/1_phone.jpg](../imgs/Capstone/1_phone.jpg)
 
 Step 2. Static Transparency:
 
-![TBD](./imgs/Capstone/2_transparency.jpg)
+![../imgs/Capstone/2_transparency.jpg](../imgs/Capstone/2_transparency.jpg)
 
 Step 3. Projector Surface:
 
-![TBD](./imgs/Capstone/3_projector.jpg)
+![../imgs/Capstone/3_projector.jpg](../imgs/Capstone/3_projector.jpg)
 
 The progression of designs:
 
-![TBD](./imgs/Capstone/evolution.jpg)
+![../imgs/Capstone/evolution.jpg](../imgs/Capstone/evolution.jpg)
 
 ## Design Highlights
 
@@ -60,7 +67,7 @@ Part of the engineering challenge was to decrease the overall footprint of the g
 
 Concealed clasp action:
 
-![TBD](./imgs/Capstone/rubberband_clasp.jpg)
+![../imgs/Capstone/rubberband_clasp.jpg](../imgs/Capstone/rubberband_clasp.jpg)
 
 ### Awards
 

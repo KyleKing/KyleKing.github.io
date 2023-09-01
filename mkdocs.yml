@@ -23,6 +23,13 @@ watch:
   - personal_site
 
 plugins:
+  # https://squidfunk.github.io/mkdocs-material/setup/setting-up-a-blog
+  - blog:
+      # enabled: !ENV [CI, false]
+      blog_toc: true
+      blog_dir: "."
+      post_date_format: long
+      post_readtime: false
   - build_plantuml:
       render: server # or "local"
       bin_path: /usr/local/bin/plantuml # ignored when render: server
@@ -41,18 +48,25 @@ plugins:
       fallback_to_build_date: true
       strict: false
       type: date
-  - literate-nav:
-      nav_file: SUMMARY.md
-  - mkdocstrings:
-      handlers:
-        python:
-          options:
-            docstring_section_style: spacy
-            line_length: 120
-            separate_signature: true
-            show_category_heading: true
+  # # Don't generate code documentation
+  # - literate-nav:
+  #     nav_file: SUMMARY.md
+  # FIXME: Try out Kroki instead of 'mkdocs-mermaid2-plugin'
+  #   https://github.com/AVATEAM-IT-SYSTEMHAUS/mkdocs-kroki-plugin
+  # - mermaid2:
+  #     version: 10.4.0 # https://github.com/mermaid-js/mermaid/releases
+  # # Don't generate code documentation
+  # - mkdocstrings:
+  #     handlers:
+  #       python:
+  #         options:
+  #           docstring_section_style: spacy
+  #           line_length: 120
+  #           separate_signature: true
+  #           show_category_heading: true
   - search
   - section-index
+  - live-edit
 
 markdown_extensions:
   - abbr
@@ -71,7 +85,18 @@ markdown_extensions:
   - pymdownx.highlight:
       linenums: true
       linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite # Supports "mock shebangs": `!#js console.log('123');`
   - pymdownx.superfences
+  #   # make exceptions to highlighting of code:
+  #   custom_fences:
+  #     - name: mermaid
+  #       class: mermaid
+  #       format: !!python/name:mermaid2.fence_mermaid_custom
+  - pymdownx.keys # Instead of `<kbd>` surround with `++`
+  # - pymdownx.magiclink:
+  #   repo_url_shorthand: true
+  #   user: kyleking
+  #   repo: recipes
   - pymdownx.tabbed
   - pymdownx.tasklist:
       custom_checkbox: true
@@ -81,6 +106,20 @@ markdown_extensions:
   - toc:
       permalink: ⚓︎
       toc_depth: 5
+  # # https://github.com/squidfunk/mkdocs-material/blob/fb18b20695fd27e0a4351fb9597e7307241e2f15/mkdocs.yml
+  # # https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/?h=magiclink
+  # - pymdownx.mark
+  # - pymdownx.smartsymbols
+  # - pymdownx.superfences:
+  #     custom_fences:
+  #       - name: mermaid
+  #         class: mermaid
+  #         format: !!python/name:pymdownx.superfences.fence_code_format
+  # - pymdownx.tabbed:
+  #     alternate_style: true
+  # - pymdownx.tasklist:
+  #     custom_checkbox: true
+  # - pymdownx.tilde
 
 extra_css:
   - _styles/mkdocstrings.css

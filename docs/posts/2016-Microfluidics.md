@@ -1,12 +1,19 @@
-# Microfluidic Researcher
+---
+date: 2016-01-01
 
-## Summary
+categories:
+  - University of Maryland
+---
+
+# Microfluidic Researcher
 
 As an undergraduate researcher in the UMD MEMS and Microfluidics Lab (MML), I pioneered a bead-based immunoassay for Ebola detection with a simple trick to improve optical clarity of an otherwise translucent matrix.
 
 Quick and efficient disease diagnostics require precision, innovation, and ingenuity. Current diagnostic tests are often performed by lab technicians and can take 12 to 24 hours to heed results. Accurate and reliable results can influence treatment plans and avoid unnecessary follow up appointments. I developed a very-early prototype of a potentially rapid, microfluidic technology that simplifies the diagnostic process. The final product could be integrated into a sample preparation device to be used by a variety of audiences including primary care physicians and doctors in developing countries.
 
-Undergraduate Research Day Poster :::
+<!-- more -->
+
+<!-- FIXME: Undergraduate Research Day Poster ::: -->
 
 ## The Technology
 
@@ -29,7 +36,7 @@ A comparison of before and after heating LMP Agarose beads inside a COC microflu
 
 An separate view of the above COC chip prior to bead packing. The region of interest from the prior image is marked with the orange arrow:
 
-![TBD](./imgs/Microfluidics/microfluidics-20.jpg)
+![../imgs/Microfluidics/microfluidics-20.jpg](../imgs/Microfluidics/microfluidics-20.jpg)
 
 ### Selecting the Chemical Reaction
 
@@ -37,7 +44,7 @@ Through my research, I found several viable options for activating agarose. I se
 
 Large agarose beads used to demonstrate chemical reaction:
 
-![TBD](./imgs/Microfluidics/microfluidics-23.png)
+![../imgs/Microfluidics/microfluidics-23.png](../imgs/Microfluidics/microfluidics-23.png)
 
 ### Producing Agarose Beads
 
@@ -45,17 +52,17 @@ The micro-scale agarose beads intended for the final device were generated using
 
 Water in oil droplet generation. Filmed on iPhone for higher frame rate:
 
-![TBD](./videos/microfluidics-01.png)
+![../videos/microfluidics-01.png](../videos/microfluidics-01.png)
 
 The device seen in the video is first milled from polycarbonate (PC), bonded to a second, thinner layer of PC through heat and pressure. Brought slowly back to room temperature, the needle ports are pressed and attached to syringe pumps.
 
 The microfluidic chip is about to milled before bonding:
 
-![TBD](./imgs/Microfluidics/MilledChip.jpg)
+![../imgs/Microfluidics/MilledChip.jpg](../imgs/Microfluidics/MilledChip.jpg)
 
 Once assembled, the chip was mounted onto the heat stage as shown above. The orange arrow is pointing to the microfluidic channel intersection:
 
-![TBD](./imgs/Microfluidics/TurtleBot_Front.jpg)
+![../imgs/Microfluidics/TurtleBot_Front.jpg](../imgs/Microfluidics/TurtleBot_Front.jpg)
 
 Maintaining optimal temperature within the microfluidic chip serves a critical and challenging role in agarose bead production. At room temperature, agarose solidifies into a gel that can alter internal pressures and flow rates or clog the microfluidic chip.
 
@@ -63,11 +70,11 @@ To maintain temperature control, I built Turtle-Bot, a rapidly prototyped platfo
 
 Microfluidic Droplet generator generation one:
 
-![TBD](./imgs/Microfluidics/microfluidics-27.jpg)
+![../imgs/Microfluidics/microfluidics-27.jpg](../imgs/Microfluidics/microfluidics-27.jpg)
 
 Microfluidic Droplet generator generation two:
 
-![TBD](./imgs/Microfluidics/TurtleBot_Setup.jpg)
+![../imgs/Microfluidics/TurtleBot_Setup.jpg](../imgs/Microfluidics/TurtleBot_Setup.jpg)
 
 ### Key Takeaways
 
