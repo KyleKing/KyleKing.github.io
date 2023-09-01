@@ -178,13 +178,13 @@ poetry.toml
 # General
 .vscode/*
 *.csv
-*.doc*
+# *.doc*
 *.jsonl
 *.lnk
 *.log
-*.pdf
-*.png
-*.jp*g
+# *.pdf
+# *.png
+# *.jp*g
 *.spe
 *.svg
 *.xl*

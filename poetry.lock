@@ -1059,6 +1059,19 @@ docs = ["mdx-gh-links (>=0.2)", "mkdocs (>=1.0)", "mkdocs-nature (>=0.4)"]
 testing = ["coverage", "pyyaml"]
 
 [[package]]
+name = "markdown-captions"
+version = "2.1.2"
+description = "Turn markdown images into captioned images using <figure>"
+optional = false
+python-versions = "*"
+files = [
+    {file = "markdown-captions-2.1.2.tar.gz", hash = "sha256:1c3ec0b674dd41a4c5f125724188c32a17bd46fd527db29f0c55a001e2d7abaf"},
+]
+
+[package.dependencies]
+Markdown = ">=3.0.1"
+
+[[package]]
 name = "markdown-it-py"
 version = "3.0.0"
 description = "Python port of markdown-it. Markdown parsing, done right!"
@@ -3084,4 +3097,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11.2"
-content-hash = "33962a49fdd189a3f6a63ea93eeeb8b874535a0b771df7dc84444551865dfd73"
+content-hash = "3ab7bb4ce988dc06bc0c3e3cf4a38ef751607419cf36508aa6d020f0d3022aff"

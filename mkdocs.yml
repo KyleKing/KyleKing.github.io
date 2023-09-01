@@ -78,6 +78,8 @@ markdown_extensions:
   - extra
   - fenced_code
   - footnotes
+  - markdown_captions
+  - md_in_html
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -122,6 +124,7 @@ markdown_extensions:
   # - pymdownx.tilde
 
 extra_css:
+  - _styles/extra.css
   - _styles/mkdocstrings.css
 
 extra_javascript:

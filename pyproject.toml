@@ -28,6 +28,7 @@ version = "0.0.1"
 [tool.poetry.dependencies]
 python = "^3.11.2"
 corallium = ">=0.3.3"
+markdown-captions = ">=2.1.2"
 mkdocs-live-edit-plugin = ">=0.1.2"
 
 [tool.poetry.group.dev.dependencies]
