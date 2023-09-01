@@ -32,9 +32,10 @@ plugins:
       output_folder: out
       input_folder: src
       input_extensions: puml
-  - gen-files:
-      scripts:
-        - docs-code/gen_ref_nav.py
+  # # Don't generate code documentation
+  # - gen-files:
+  #     scripts:
+  #       - docs-code/gen_ref_nav.py
   - git-revision-date-localized:
       enable_creation_date: true
       fallback_to_build_date: true
