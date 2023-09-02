@@ -125,11 +125,6 @@
         -webkit-mask: var(--icon) no-repeat;
         mask: var(--icon) no-repeat;
       }
-
-      .blurry-text {
-        color: transparent;
-        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-      }
     </style>
     <script>
       window.onload = function () {
@@ -210,22 +205,18 @@
         const [activity, linkName, linkHref] = fav;
         console.log({ favorites });
 
-        const content = document.getElementById("content");
-        const elem = document.getElementById("random-link");
-        // elem.classList.remove("blurry-text");
-
         // Build the replacement!
+        const text = `Outside of work, I really enjoy ${activity}. Here is a random recommendation from my favorites: `;
         const paragraph = document.createElement("div");
         paragraph.className = "paragraph";
         const link = document.createElement("a");
         link.href = linkHref;
         link.appendChild(document.createTextNode(linkName));
-        paragraph.appendChild(
-          document.createTextNode(
-            `Outside of work, I really enjoy ${activity}. Here is a random recommendation from my favorites: `,
-          ),
-        );
+        paragraph.appendChild(document.createTextNode(text));
         paragraph.appendChild(link);
+
+        const content = document.getElementById("content");
+        const elem = document.getElementById("random-link");
         content.replaceChild(paragraph, elem);
       };
     </script>
