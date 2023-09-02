@@ -1,0 +1,10 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "unocss 'index.html' --watch",
+        "build": "unocss 'index.html' --minify --out-file='uno.min.css'"
+    },
+    "devDependencies": {
+        "@unocss/cli": "^0.55.4"
+    }
+}
