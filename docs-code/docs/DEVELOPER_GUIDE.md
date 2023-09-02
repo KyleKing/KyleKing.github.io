@@ -46,8 +46,8 @@ poetry config pypi-token.pypi ...
 <!-- {cts} COVERAGE -->
 | File                        |   Statements |   Missing |   Excluded | Coverage   |
 |-----------------------------|--------------|-----------|------------|------------|
-| `personal_site/__init__.py` |           26 |         6 |          0 | 71.9%      |
-| **Totals**                  |           26 |         6 |          0 | 71.9%      |
+| `personal_site/__init__.py` |           17 |         0 |         17 | 100.0%     |
+| **Totals**                  |           17 |         0 |         17 | 100.0%     |
 
-Generated on: 2023-07-30
+Generated on: 2023-09-01
 <!-- {cte} -->
