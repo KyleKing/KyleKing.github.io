@@ -51,19 +51,28 @@
       }
 
       #container {
+        align-items: center;
         display: flex;
         flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
         height: 100%;
+        justify-content: center;
+        text-align: center;
         vertical-align: middle;
       }
-      /* For centering horizontally */
+      /* For centering horizontally
+         And preventing the image from being shrunk on mobile
+         https://css-tricks.com/flexbox-truncated-text/
+      */
       #content {
+        margin: auto 5% auto 5%;
         max-width: 800px;
+        min-height: 0;
+        min-width: 0;
       }
 
+      .spacer {
+        height: 5rem;
+      }
       .img-rounded {
         border-radius: 50%;
         height: 15rem;
@@ -225,6 +234,7 @@
   <body>
     <div id="container">
       <div id="content">
+        <div class="spacer"></div>
         <img class="img-rounded" src="./langos-profile.jpeg" />
         <div class="header">Kyle King</div>
         <div class="paragraph">
@@ -251,6 +261,7 @@
           ></a>
           <a id="i-carbon-email" href="mailto:dev.act.kyle@gmail.com"></a>
         </div>
+        <div class="spacer"></div>
       </div>
     </div>
   </body>
