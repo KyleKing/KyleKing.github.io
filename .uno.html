@@ -1,0 +1,163 @@
+<!-- Using: https://unocss.dev/play -->
+
+<div h-full text-center flex all:transition-400>
+  <div ma>
+    <div flex justify-center text-5xl op50 hover="op80">
+      <!-- Carbon Icons: https://carbon-elements.netlify.app/icons/examples/preview -->
+      <a
+        i-carbon-logo-github
+        text-inherit
+        op30
+        hover="op80"
+        href="https://github.com/KyleKing"
+      ></a>
+      <a
+        i-carbon-logo-linkedin
+        text-inherit
+        op30
+        hover="op80"
+        href="https://www.linkedin.com/in/kylemorganking"
+      ></a>
+      <a
+        i-carbon-email
+        text-inherit
+        op30
+        hover="op80"
+        href="mailto:dev.act.kyle@gmail.com"
+      ></a>
+    </div>
+  </div>
+</div>
+
+<!-- Creates styles -->
+
+<style>
+  /* layer: icons */
+  .i-carbon-email,
+  [i-carbon-email=""] {
+    --un-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 32 32' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M28 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm-2.2 2L16 14.78L6.2 8ZM4 24V8.91l11.43 7.91a1 1 0 0 0 1.14 0L28 8.91V24Z'/%3E%3C/svg%3E");
+    -webkit-mask: var(--un-icon) no-repeat;
+    mask: var(--un-icon) no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    background-color: currentColor;
+    color: inherit;
+    width: 1.2em;
+    height: 1.2em;
+  }
+  .i-carbon-logo-github,
+  [i-carbon-logo-github=""] {
+    --un-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 32 32' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' fill-rule='evenodd' d='M16 2a14 14 0 0 0-4.43 27.28c.7.13 1-.3 1-.67v-2.38c-3.89.84-4.71-1.88-4.71-1.88a3.71 3.71 0 0 0-1.62-2.05c-1.27-.86.1-.85.1-.85a2.94 2.94 0 0 1 2.14 1.45a3 3 0 0 0 4.08 1.16a2.93 2.93 0 0 1 .88-1.87c-3.1-.36-6.37-1.56-6.37-6.92a5.4 5.4 0 0 1 1.44-3.76a5 5 0 0 1 .14-3.7s1.17-.38 3.85 1.43a13.3 13.3 0 0 1 7 0c2.67-1.81 3.84-1.43 3.84-1.43a5 5 0 0 1 .14 3.7a5.4 5.4 0 0 1 1.44 3.76c0 5.38-3.27 6.56-6.39 6.91a3.33 3.33 0 0 1 .95 2.59v3.84c0 .46.25.81 1 .67A14 14 0 0 0 16 2Z'/%3E%3C/svg%3E");
+    -webkit-mask: var(--un-icon) no-repeat;
+    mask: var(--un-icon) no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    background-color: currentColor;
+    color: inherit;
+    width: 1.2em;
+    height: 1.2em;
+  }
+  .i-carbon-logo-linkedin,
+  [i-carbon-logo-linkedin=""] {
+    --un-icon: url("data:image/svg+xml;utf8,%3Csvg viewBox='0 0 32 32' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' d='M26.2 4H5.8C4.8 4 4 4.8 4 5.7v20.5c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V5.7c0-.9-.8-1.7-1.8-1.7zM11.1 24.4H7.6V13h3.5v11.4zm-1.7-13c-1.1 0-2.1-.9-2.1-2.1c0-1.2.9-2.1 2.1-2.1c1.1 0 2.1.9 2.1 2.1s-1 2.1-2.1 2.1zm15.1 12.9H21v-5.6c0-1.3 0-3.1-1.9-3.1S17 17.1 17 18.5v5.7h-3.5V13h3.3v1.5h.1c.5-.9 1.7-1.9 3.4-1.9c3.6 0 4.3 2.4 4.3 5.5v6.2z'/%3E%3C/svg%3E");
+    -webkit-mask: var(--un-icon) no-repeat;
+    mask: var(--un-icon) no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    background-color: currentColor;
+    color: inherit;
+    width: 1.2em;
+    height: 1.2em;
+  }
+  /* layer: default */
+  .m5,
+  [m5=""] {
+    margin: 1.25rem;
+  }
+  .ma,
+  [ma=""] {
+    margin: auto;
+  }
+  .h-full,
+  [h-full=""] {
+    height: 100%;
+  }
+  .h60,
+  [h60=""] {
+    height: 15rem;
+  }
+  .w60,
+  [w60=""] {
+    width: 15rem;
+  }
+  .flex,
+  [flex=""] {
+    display: flex;
+  }
+  .flex-row,
+  [flex-row=""] {
+    flex-direction: row;
+  }
+  .flex-col,
+  [flex-col=""] {
+    flex-direction: column;
+  }
+  .justify-center,
+  [justify-center=""] {
+    justify-content: center;
+  }
+  .p5,
+  [p5=""] {
+    padding: 1.25rem;
+  }
+  .text-center,
+  [text-center=""] {
+    text-align: center;
+  }
+  .text-5xl,
+  [text-5xl=""] {
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .text-lg,
+  [text-lg=""] {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+  [text-3xl=""] {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+  [fw200=""] {
+    font-weight: 200;
+  }
+  [fw300=""] {
+    font-weight: 300;
+  }
+  .text-inherit,
+  [text-inherit=""] {
+    color: inherit;
+  }
+  .op30,
+  [op30=""] {
+    opacity: 0.3;
+  }
+  .op80 {
+    opacity: 0.8;
+  }
+  [hover~="op80"]:hover {
+    opacity: 0.8;
+  }
+  [all\:transition-400=""] * {
+    transition-property: color, background-color, border-color, outline-color,
+      text-decoration-color, fill, stroke, opacity, box-shadow, transform,
+      filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 400ms;
+  }
+  .img-rounded,
+  [img-rounded=""] {
+    object-fit: cover;
+    border-radius: 50%;
+  }
+</style>

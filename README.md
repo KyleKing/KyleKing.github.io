@@ -5,10 +5,8 @@ My personal website: <https://kyleking.me>
 ## Deployment
 
 ```sh
-# brew install pnpm
-pnpm install
-
-pnpm run build && pnpm publish
+# 😄
+git push
 ```
 
 ## Resources
