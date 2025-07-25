@@ -135,107 +135,6 @@
         mask: var(--icon) no-repeat;
       }
     </style>
-    <script>
-      window.onload = function () {
-        const favorites = [
-          [
-            "podcasts",
-            "Immunities by Dueling Genre Productions",
-            "https://pca.st/Hrr9",
-          ],
-          ["podcasts", "Parenting is a Joke", "https://pca.st/aye1yq91"],
-          ["podcasts", "Project Nova", "https://pca.st/66O9"],
-          ["podcasts", "Malevolent", "https://rustyquill.com/show/malevolent"],
-          ["podcasts", "The Amelia Project", "https://pca.st/Y6KE"],
-          [
-            "podcasts",
-            "The Bike Shed by Thoughtbot",
-            "https://pca.st/thebikeshed",
-          ],
-          ["podcasts", "Soft Skills Engineering", "https://softskills.audio"],
-          [
-            "podcasts",
-            "The Leviathan Chronicles",
-            "https://www.leviathanchronicles.com",
-          ],
-          ["podcasts", "The White Vault", "https://thewhitevault.com"],
-          ["podcasts", "Tides Podcast", "https://pca.st/FQ22"],
-          [
-            "podcasts",
-            "VAST Horizon Podcast",
-            "https://vasthorizonpodcast.com",
-          ],
-          ["podcasts", "Wolf 359", "https://pca.st/wolf359"],
-          [
-            "reading",
-            "Analog by Eliot Peper",
-            "https://app.thestorygraph.com/series/137910",
-          ],
-          [
-            "reading",
-            "Anything by Brandon Sanderson, but the Mistborn Series is a good place to start",
-            "https://app.thestorygraph.com/series/2",
-          ],
-          [
-            "reading",
-            "Daemon by Daniel Suarez",
-            "https://app.thestorygraph.com/series/597",
-          ],
-          [
-            "reading",
-            "Ender's Saga by Orson Scott Card",
-            "https://app.thestorygraph.com/series/54",
-          ],
-          [
-            "reading",
-            "Murderbot Diaries by Martha Wells",
-            "https://app.thestorygraph.com/series/12",
-          ],
-          [
-            "reading",
-            "Old Man's War by John Scalzi",
-            "https://app.thestorygraph.com/series/609",
-          ],
-          [
-            "reading",
-            "Remembrance of Earth's Past by Cixin Liu",
-            "https://app.thestorygraph.com/series/112333",
-          ],
-          [
-            "reading",
-            "Takeshi Kovacs by Richard K. Morgan",
-            "https://app.thestorygraph.com/series/2164",
-          ],
-          [
-            "reading",
-            "The Broken Earth by N.K. Jemisin",
-            "https://app.thestorygraph.com/series/123",
-          ],
-          [
-            "reading",
-            "Themis Files by Sylvain Neuvel",
-            "https://app.thestorygraph.com/series/186",
-          ],
-        ];
-        const fav = favorites[Math.floor(Math.random() * favorites.length)];
-        const [activity, linkName, linkHref] = fav;
-        console.log({ favorites });
-
-        // Build the replacement!
-        const text = `Outside of work, I really enjoy ${activity}. Here is a random recommendation from my favorites: `;
-        const paragraph = document.createElement("div");
-        paragraph.className = "paragraph";
-        const link = document.createElement("a");
-        link.href = linkHref;
-        link.appendChild(document.createTextNode(linkName));
-        paragraph.appendChild(document.createTextNode(text));
-        paragraph.appendChild(link);
-
-        const content = document.getElementById("content");
-        const elem = document.getElementById("random-link");
-        content.replaceChild(paragraph, elem);
-      };
-    </script>
   </head>
 
   <body>
@@ -255,11 +154,6 @@
         <div class="paragraph">
           I have a Masters in Computer Science from Georgia Tech and a B.S. in
           Bioengineering from the University of Maryland.
-        </div>
-        <!-- Replace with JS -->
-        <div class="paragraph blurry-text" id="random-link">
-          Outside of work, I really enjoy placeholder. Here is a random
-          recommendation from my favorites: placeholder-link-goes-here.
         </div>
         <div id="icons">
           <a id="i-carbon-logo-github" href="https://github.com/KyleKing"></a>
