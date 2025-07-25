@@ -2,10 +2,15 @@
 
 My personal website: <https://kyleking.me>
 
+## Local Development
+
+```sh
+python -m http.server -d .
+```
+
 ## Deployment
 
 ```sh
-# 😄
 git push
 ```
 
