@@ -14,115 +14,122 @@ from pathlib import Path
 
 
 class ItemStatus(StrEnum):
-    AVAILABLE = 'available'
-    PENDING = 'pending'
+    AVAILABLE = "available"
+    PENDING = "pending"
+    PAID = "paid"
 
 
 @dataclass(frozen=True)
 class Item:
     title: str
-    image_path: Path
+    image_paths: list[Path]
     status: ItemStatus
     link: str
-    description: str = ''
+    description: str
+    price: str = ""
 
 
 ITEMS: list[Item] = [
     Item(
         title=title,
-        image_path=Path('whatsapp-items') / image_name,
+        image_paths=[Path("whatsapp-items") / img for img in image_names],
         status=ItemStatus(status),
         link=link,
         description=description,
+        price=price,
     )
-    for title, image_name, status, link, description in [
+    for title, image_names, status, link, description, price in [
         (
-            'Munchkin Secure Grip™ Changing Pad Rev 2.0',
-            'Baby-Changing.jpeg',
-            ItemStatus.AVAILABLE,
-            'https://www.munchkin.com/secure-grip-changing-pad',
-            'Clean with extra linens. We would keep this, but we needed a smaller one',
-        ),
-        (
-            'MALMBÄCK IKEA Bathroom Shelf',
-            'Bathroom-Shelf.jpeg',
-            ItemStatus.AVAILABLE,
-            'https://www.ikea.com/us/en/p/malmbaeck-display-shelf-white-20446236',
-            'Display shelf, white, 23 5/8"',
-        ),
-        (
-            'IKEA Bedroom Blackout Curtains',
-            'Bedrom-Curtains.jpeg',
-            ItemStatus.AVAILABLE,
-            'https://www.ikea.com/us/en/p/vilborg-room-darkening-curtains-1-pair-beige-with-heading-tape-00297553',
-            '',
-        ),
-        (
-            'ARRIS SurfBoard SB6141 Modem',
-            'Home-Modem.jpeg',
-            ItemStatus.AVAILABLE,
-            'https://www.amazon.com/ARRIS-SURFboard-SB6141-DOCSIS-Cable/dp/B00AJHDZSI',
-            "I'm not sure if this will work with local providers, but if you're heading back to the US this modem is"
-            ' older, but still good',
-        ),
-        (
-            'Office Organizer Tray',
-            'Home-Tray.jpeg',
-            ItemStatus.AVAILABLE,
-            '',
-            '',
-        ),
-        (
-            'More Organizer Trays',
-            'home-more-trays.jpeg',
-            ItemStatus.AVAILABLE,
-            '',
-            '',
-        ),
-        (
-            'Framed World Map',
-            'House-World-Map.jpeg',
-            ItemStatus.AVAILABLE,
-            '',
-            "Note that the outside of the frame is slightly damaged from a fall, but isn't visible when mounted. The"
-            ' glass and map are in good condition. The frame is from IKEA',
-        ),
-        (
-            'Large Wooden Serving Bowl',
-            'Kitchen-Bowl.jpeg',
-            ItemStatus.AVAILABLE,
-            '',
-            'Made in Thailand from Lipper International',
-        ),
-        (
-            'Over the Cabinet Lid Organizer (Bronze)',
-            'Kitchen-Overdoor.jpeg',
-            ItemStatus.AVAILABLE,
-            'https://www.amazon.com/dp/B015EWKH2E?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_5',
-            '5.25" L X 12.25" W X 19.25" H',
-        ),
-        (
-            'Small Serving Tray',
-            'Kitchen-Tray.jpeg',
-            ItemStatus.AVAILABLE,
-            '',
-            'From Michel Design Works',
+            "Scalpers Brown Leather Wallet",
+            ("Wallet-01-Flat.jpeg", "Wallet-04-Back.jpeg"),
+            ItemStatus.PAID,
+            "https://en.ww.scalperscompany.com/products/61778-scmondit-free-wallet-aw2526-brown",
+            "I received this as a gift, but I had already gotten a new wallet."
+            " Made from 100% Cow Leather and never used and includes original tags if you would like to"
+            " give it as a gift",
+            "$30 USD or best offer",
         ),
         (
             "Thousand Fell Men's Lace Up (Color Dune, 11.5 Men)",
-            'Shoes.jpeg',
-            ItemStatus.AVAILABLE,
-            'https://www.thousandfell.com/products/mens-lace-up-sneaker-white',
-            'These shoes are brand new and never worn. They are great shoes, but not my style',
+            ("Shoes.jpeg",),
+            ItemStatus.PAID,
+            "https://www.thousandfell.com/products/mens-lace-up-sneaker-white",
+            "These shoes are great and brand new and never worn, but they aren't my style",
+            "$20 USD or best offer",
         ),
         (
-            'Scalpers Brown Leather Wallet',
-            'Wallet-01-Flat.jpeg',  # "Wallet-01-Back.jpeg",
+            "Munchkin Secure Grip™ Changing Pad Rev 2.0",
+            ("Baby-Changing.jpeg",),
             ItemStatus.AVAILABLE,
-            'https://en.ww.scalperscompany.com/products/61778-scmondit-free-wallet-aw2526-brown',
-            'I received this as a gift, but I had already gotten a new wallet. $30 USD or best offer.'
-            ' Made from 100% Cow Leather and never used and includes original tags if you would like to'
-            ' give it as a gift',
+            "https://www.munchkin.com/secure-grip-changing-pad",
+            "Clean with extra linens. We would keep this, but we needed a smaller one",
+            "",
+        ),
+        (
+            "MALMBÄCK IKEA Bathroom Shelf",
+            ("Bathroom-Shelf.jpeg",),
+            ItemStatus.AVAILABLE,
+            "https://www.ikea.com/us/en/p/malmbaeck-display-shelf-white-20446236",
+            'Display shelf, white, 23 5/8"',
+            "",
+        ),
+        (
+            "IKEA Bedroom Blackout Curtains",
+            ("Bedrom-Curtains.jpeg",),
+            ItemStatus.AVAILABLE,
+            "https://www.ikea.com/us/en/p/vilborg-room-darkening-curtains-1-pair-beige-with-heading-tape-00297553",
+            "",
+            "",
+        ),
+        (
+            "ARRIS SurfBoard SB6141 Modem",
+            ("Home-Modem.jpeg",),
+            ItemStatus.AVAILABLE,
+            "https://www.amazon.com/ARRIS-SURFboard-SB6141-DOCSIS-Cable/dp/B00AJHDZSI",
+            "We can't use this modem with Telmex because it requires a regular Ethernet hookup, but it may"
+            " work with other providers. While older, this works well and I would keep it if we had a use for it",
+            "",
+        ),
+        (
+            "Organizer Trays",
+            ("Home-Tray.jpeg", "home-more-trays.jpeg"),
+            ItemStatus.AVAILABLE,
+            "",
+            "",
+            "",
+        ),
+        (
+            "Framed World Map",
+            ("House-World-Map.jpeg",),
+            ItemStatus.AVAILABLE,
+            "",
+            "While the IKEA frame has minor exterior damage from a fall, it is not visible when mounted. The glass and"
+            " map are in good condition",
+            "",
+        ),
+        (
+            "Large Wooden Serving Bowl",
+            ("Kitchen-Bowl.jpeg",),
+            ItemStatus.AVAILABLE,
+            "",
+            "Made in Thailand from Lipper International",
+            "",
+        ),
+        (
+            "Over the Cabinet Lid Organizer (Bronze)",
+            ("Kitchen-Overdoor.jpeg",),
+            ItemStatus.AVAILABLE,
+            "https://www.amazon.com/dp/B015EWKH2E?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_5",
+            '5.25" L X 12.25" W X 19.25" H',
+            "",
+        ),
+        (
+            "Small Serving Tray",
+            ("Kitchen-Tray.jpeg",),
+            ItemStatus.AVAILABLE,
+            "",
+            "From Michel Design Works",
+            "",
         ),
     ]
 ]
@@ -152,6 +159,7 @@ HEAD_HTML = """
     --color-border: #C8DBBB;
     --color-card-bg: #ffffff;
     --color-available: #7FA99B;
+    --color-paid: #E8A87C;
     --color-pending: #C8DBBB;
     --color-pending-fg: #364547;
   }
@@ -162,6 +170,7 @@ HEAD_HTML = """
       --color-border: #364547;
       --color-card-bg: #2a2a2c;
       --color-available: #7FA99B;
+      --color-paid: #E8A87C;
       --color-pending: #7FA99B;
       --color-pending-fg: #1e1e20;
     }
@@ -187,11 +196,20 @@ HEAD_HTML = """
     color: var(--color-fg);
   }
 
-  #items-grid {
+  .items-section {
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+    margin: 2rem 0 1.5rem 0;
+    color: var(--color-fg);
+  }
+
+  .items-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 3rem;
+    gap: 1rem;
   }
 
   .item-card {
@@ -199,22 +217,20 @@ HEAD_HTML = """
     border-radius: 8px;
     padding: 1rem;
     background: var(--color-card-bg);
-    overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: visible;
+    transition: all 0.2s ease;
+    position: relative;
   }
 
   .item-card[open] {
     grid-column: span 2;
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.15);
+    box-shadow: 0 6px 12px -2px rgb(0 0 0 / 0.15);
   }
 
-  .item-card:hover {
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  .item-card:hover:not([open]) {
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 0.1);
     transform: translateY(-2px);
-  }
-
-  .item-card[open]:hover {
-    transform: none;
+    border-color: var(--color-available);
   }
 
   .item-card summary {
@@ -223,6 +239,25 @@ HEAD_HTML = """
     flex-direction: column;
     gap: 0.75rem;
     cursor: pointer;
+    position: relative;
+  }
+
+  .item-card summary::after {
+    content: "▼ Click to expand";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.75rem;
+    color: var(--color-available);
+    opacity: 0.7;
+    transition: all 0.2s ease;
+    padding: 0.5rem 1rem;
+    margin: -0.75rem -1rem;
+  }
+
+  .item-card[open] summary::after {
+    content: "";
   }
 
   .item-card summary::-webkit-details-marker {
@@ -233,24 +268,90 @@ HEAD_HTML = """
     display: none;
   }
 
-  .item-thumbnail {
-    width: 100%;
-    max-height: 250px;
-    object-fit: cover;
+  .close-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--color-available);
+    border: none;
     border-radius: 4px;
-    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    padding: 0;
+    transition: opacity 0.2s ease;
   }
 
-  .item-card[open] .item-thumbnail {
+  .close-button::before {
+    content: "✕";
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  .item-card[open]:not(:hover) .close-button {
+    opacity: 0.5;
+  }
+
+  .item-card[open] .close-button:hover {
+    opacity: 1;
+  }
+
+  .item-thumbnail-container {
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .item-thumbnail-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease;
+  }
+
+  .image-count {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  .item-card[open] .item-thumbnail-container {
     display: none;
   }
 
   .item-header {
     display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-height: 3rem;
+    padding-bottom: 0;
+  }
+
+  .item-header-row {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
-    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .item-price-closed {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-paid);
+    margin: 0;
   }
 
   .item-card[open] summary .item-header {
@@ -262,6 +363,15 @@ HEAD_HTML = """
     font-size: 1.25rem;
     font-weight: 500;
     flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .item-card[open] .item-title {
+    -webkit-line-clamp: unset;
+    overflow: visible;
   }
 
   .badge {
@@ -270,7 +380,6 @@ HEAD_HTML = """
     font-size: 0.875rem;
     font-weight: 500;
     white-space: nowrap;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .badge-available {
@@ -283,38 +392,54 @@ HEAD_HTML = """
     color: var(--color-pending-fg);
   }
 
+  .badge-paid {
+    background: var(--color-paid);
+    color: white;
+  }
+
   .item-expanded {
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 1rem;
-    animation: fadeInExpand 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
-  @keyframes fadeInExpand {
-    from {
-      opacity: 0;
-      transform: translateY(-20px) scale(0.95);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0) scale(1);
-    }
-  }
-
-  .item-full-image {
-    flex: 1;
-    max-width: 500px;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 4px;
-  }
-
-  .item-content {
-    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin-top: 1rem;
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .item-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .item-gallery img {
+    width: calc(50% - 0.25rem);
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-grow: 1;
+  }
+
+  .item-gallery img:only-child {
+    width: 100%;
+  }
+
+  .item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
   }
 
   .item-header-expanded {
@@ -324,17 +449,35 @@ HEAD_HTML = """
     gap: 0.5rem;
   }
 
+  .item-price {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-paid);
+    margin: 0 0 0.5rem 0;
+  }
+
   .item-description {
     line-height: 1.6;
     margin: 0;
   }
 
-  #footer {
+  .item-link {
+    display: block;
+    margin: 0.5rem auto 0;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-available);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
     text-align: center;
-    color: var(--color-fg);
-    opacity: 0.6;
-    font-size: 0.875rem;
-    padding: 2rem 0;
+    width: fit-content;
+  }
+
+  .item-link:hover {
+    opacity: 0.9;
   }
 
   @media (max-width: 768px) {
@@ -342,23 +485,13 @@ HEAD_HTML = """
       font-size: 2rem;
     }
 
-    .item-card[open] {
-      grid-column: span 1;
+    .item-gallery img {
+      max-height: 300px;
+      width: 100%;
     }
 
-    .item-expanded {
-      flex-direction: column;
-    }
-
-    .item-full-image {
-      max-width: 100%;
-    }
-  }
-
-  @media (min-width: 769px) and (max-width: 900px) {
-    /* On smaller desktops/tablets, allow single column span if needed */
-    .item-card[open] {
-      grid-column: span 1;
+    .item-card summary::after {
+      font-size: 0.7rem;
     }
   }
 </style>
@@ -367,56 +500,126 @@ HEAD_HTML = """
 
 # No JavaScript needed! The native `name` attribute on details elements
 # provides exclusive accordion behavior in modern browsers (Firefox 130+, Chrome 120+, Safari 17.4+)
-SCRIPT_HTML = ''
+SCRIPT_HTML = """<script>
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    const openCard = document.querySelector('details[open]');
+    if (openCard) {
+      openCard.open = false;
+    }
+  }
+});
+</script>"""
 
 
 def _generate_html(items: list[Item], last_updated: datetime) -> str:
     status_badge_html = {
         ItemStatus.AVAILABLE: '<span class="badge badge-available">Available</span>',
         ItemStatus.PENDING: '<span class="badge badge-pending">Pending Pickup</span>',
+        ItemStatus.PAID: '<span class="badge badge-paid">Paid</span>',
     }
 
-    items_html = []
+    section_config = [
+        (ItemStatus.PAID, "Paid Items"),
+        (ItemStatus.AVAILABLE, "Free Items"),
+        (ItemStatus.PENDING, "Pending Pickup"),
+    ]
+
+    items_by_status = {status: [] for status in ItemStatus}
     for item in items:
-        desc_html = (
-            f'<p class="item-description">{item.description}</p>'
-            if item.description
-            else ''
-        )
-        items_html.append(f"""
+        items_by_status[item.status].append(item)
+
+    sections_html = []
+    for status, section_title in section_config:
+        status_items = items_by_status[status]
+        if not status_items:
+            continue
+
+        items_html = []
+        for item in status_items:
+            desc_html = (
+                f'<p class="item-description">{item.description}</p>'
+                if item.description
+                else ""
+            )
+            link_html = (
+                f'<a href="{item.link}" target="_blank" class="item-link">View Product</a>'
+                if item.link
+                else ""
+            )
+            price_html = (
+                f'<p class="item-price">{item.price}</p>'
+                if item.price and item.status == ItemStatus.PAID
+                else ""
+            )
+            price_closed_html = (
+                f'<p class="item-price-closed">{item.price}</p>'
+                if item.price and item.status == ItemStatus.PAID
+                else ""
+            )
+            # Generate image gallery
+            images_html = []
+            for img_path in item.image_paths:
+                images_html.append(
+                    f'<img src="{img_path.as_posix()}" alt="{item.title}" class="item-image" />'
+                )
+
+            image_count_html = (
+                f'<span class="image-count">{len(images_html)}</span>'
+                if len(images_html) > 1
+                else ""
+            )
+
+            items_html.append(f"""
         <details class="item-card" name="free-items">
           <summary>
-            <img src="{item.image_path.as_posix()}" alt="{item.title}" class="item-thumbnail" />
+            <div class="item-thumbnail-container">
+              {images_html[0]}
+              {image_count_html}
+            </div>
             <div class="item-header">
-              <h3 class="item-title">{item.title}</h3>
-              {status_badge_html[item.status]}
+              <div class="item-header-row">
+                <h3 class="item-title">{item.title}</h3>
+                {status_badge_html[item.status]}
+              </div>
+              {price_closed_html}
             </div>
           </summary>
+          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
           <div class="item-expanded">
-            <img src="{item.image_path.as_posix()}" alt="{item.title}" class="item-full-image" />
+            <div class="item-gallery">
+              {"".join(images_html)}
+            </div>
             <div class="item-content">
               <div class="item-header-expanded">
                 <h3 class="item-title">{item.title}</h3>
                 {status_badge_html[item.status]}
               </div>
+              {price_html}
               {desc_html}
+              {link_html}
             </div>
           </div>
         </details>
         """)
+
+        sections_html.append(f"""
+      <section class="items-section">
+        <h2 class="section-title">{section_title}</h2>
+        <div class="items-grid">
+          {"".join(items_html)}
+        </div>
+      </section>
+      """)
 
     return f"""<!doctype html>
   <html lang="en">
   {HEAD_HTML}
   <body>
     <div id="container">
-      <h1>Free Items</h1>
-      <div id="items-grid">
-{"".join(items_html)}
-      </div>
-      <div id="footer">
-        Last updated: {last_updated.strftime("%B %d, %Y at %I:%M %p")}
-      </div>
+      <h1>Free and Paid Items</h1>
+      <p style="max-width: 600px; margin-right: auto; margin-left: auto;">All items available for pickup on the East Side of Polanco. Message me on WhatsApp to arrange a time. (Last updated: {last_updated.strftime("%B %d, %Y at %I:%M %p")})</p>
+      {"".join(sections_html)}
     </div>
     {SCRIPT_HTML}
   </body>
@@ -425,12 +628,12 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
 
 
 def main() -> None:
-    output_path = Path(__file__).parent / 'whatsapp-items.html'
+    output_path = Path(__file__).parent / "whatsapp-items.html"
     last_updated = datetime.now(UTC).astimezone()
     html_content = _generate_html(ITEMS, last_updated)
     output_path.write_text(html_content)
     print(f"Generated {output_path}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
