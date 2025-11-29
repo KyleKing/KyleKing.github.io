@@ -14,9 +14,9 @@ from pathlib import Path
 
 
 class ItemStatus(StrEnum):
-    AVAILABLE = "available"
-    PENDING = "pending"
-    PAID = "paid"
+    AVAILABLE = 'available'
+    PENDING = 'pending'
+    PAID = 'paid'
 
 
 @dataclass(frozen=True)
@@ -26,13 +26,13 @@ class Item:
     status: ItemStatus
     link: str
     description: str
-    price: str = ""
+    price: str = ''
 
 
 ITEMS: list[Item] = [
     Item(
         title=title,
-        image_paths=[Path("whatsapp-items") / img for img in image_names],
+        image_paths=[Path('whatsapp-items') / img for img in image_names],
         status=ItemStatus(status),
         link=link,
         description=description,
@@ -40,96 +40,96 @@ ITEMS: list[Item] = [
     )
     for title, image_names, status, link, description, price in [
         (
-            "Scalpers Brown Leather Wallet",
-            ("Wallet-01-Flat.jpeg", "Wallet-04-Back.jpeg"),
+            'Scalpers Brown Leather Wallet',
+            ('Wallet-01-Flat.jpeg', 'Wallet-04-Back.jpeg'),
             ItemStatus.PAID,
-            "https://en.ww.scalperscompany.com/products/61778-scmondit-free-wallet-aw2526-brown",
-            "I received this as a gift, but I had already gotten a new wallet."
-            " Made from 100% Cow Leather and never used and includes original tags if you would like to"
-            " give it as a gift",
-            "$30 USD or best offer",
+            'https://en.ww.scalperscompany.com/products/61778-scmondit-free-wallet-aw2526-brown',
+            'I received this as a gift, but I had already gotten a new wallet.'
+            ' Made from 100% Cow Leather and never used and includes original tags if you would like to'
+            ' give it as a gift',
+            '$30 USD or best offer',
         ),
         (
             "Thousand Fell Men's Lace Up (Color Dune, 11.5 Men)",
-            ("Shoes.jpeg",),
+            ('Shoes.jpeg',),
             ItemStatus.PAID,
-            "https://www.thousandfell.com/products/mens-lace-up-sneaker-white",
+            'https://www.thousandfell.com/products/mens-lace-up-sneaker-white',
             "These shoes are great and brand new and never worn, but they aren't my style",
-            "$20 USD or best offer",
+            '$20 USD or best offer',
         ),
         (
-            "Munchkin Secure Grip™ Changing Pad Rev 2.0",
-            ("Baby-Changing.jpeg",),
+            'Munchkin Secure Grip™ Changing Pad Rev 2.0',
+            ('Baby-Changing.jpeg',),
             ItemStatus.AVAILABLE,
-            "https://www.munchkin.com/secure-grip-changing-pad",
-            "Clean with extra linens. We would keep this, but we needed a smaller one",
-            "",
+            'https://www.munchkin.com/secure-grip-changing-pad',
+            'Clean with extra linens. We would keep this, but we needed a smaller one',
+            '',
         ),
         (
-            "MALMBÄCK IKEA Bathroom Shelf",
-            ("Bathroom-Shelf.jpeg",),
+            'MALMBÄCK IKEA Bathroom Shelf',
+            ('Bathroom-Shelf.jpeg',),
             ItemStatus.AVAILABLE,
-            "https://www.ikea.com/us/en/p/malmbaeck-display-shelf-white-20446236",
+            'https://www.ikea.com/us/en/p/malmbaeck-display-shelf-white-20446236',
             'Display shelf, white, 23 5/8"',
-            "",
+            '',
         ),
         (
-            "IKEA Bedroom Blackout Curtains",
-            ("Bedrom-Curtains.jpeg",),
+            'IKEA Bedroom Blackout Curtains',
+            ('Bedrom-Curtains.jpeg',),
             ItemStatus.AVAILABLE,
-            "https://www.ikea.com/us/en/p/vilborg-room-darkening-curtains-1-pair-beige-with-heading-tape-00297553",
-            "",
-            "",
+            'https://www.ikea.com/us/en/p/vilborg-room-darkening-curtains-1-pair-beige-with-heading-tape-00297553',
+            '',
+            '',
         ),
         (
-            "ARRIS SurfBoard SB6141 Modem",
-            ("Home-Modem.jpeg",),
+            'ARRIS SurfBoard SB6141 Modem',
+            ('Home-Modem.jpeg',),
             ItemStatus.AVAILABLE,
-            "https://www.amazon.com/ARRIS-SURFboard-SB6141-DOCSIS-Cable/dp/B00AJHDZSI",
+            'https://www.amazon.com/ARRIS-SURFboard-SB6141-DOCSIS-Cable/dp/B00AJHDZSI',
             "We can't use this modem with Telmex because it requires a regular Ethernet hookup, but it may"
-            " work with other providers. While older, this works well and I would keep it if we had a use for it",
-            "",
+            ' work with other providers. While older, this works well and I would keep it if we had a use for it',
+            '',
         ),
         (
-            "Organizer Trays",
-            ("Home-Tray.jpeg", "home-more-trays.jpeg"),
+            'Organizer Trays',
+            ('Home-Tray.jpeg', 'home-more-trays.jpeg'),
             ItemStatus.AVAILABLE,
-            "",
-            "",
-            "",
+            '',
+            '',
+            '',
         ),
         (
-            "Framed World Map",
-            ("House-World-Map.jpeg",),
+            'Framed World Map',
+            ('House-World-Map.jpeg',),
             ItemStatus.AVAILABLE,
-            "",
-            "While the IKEA frame has minor exterior damage from a fall, it is not visible when mounted. The glass and"
-            " map are in good condition",
-            "",
+            '',
+            'While the IKEA frame has minor exterior damage from a fall, it is not visible when mounted. The glass and'
+            ' map are in good condition',
+            '',
         ),
         (
-            "Large Wooden Serving Bowl",
-            ("Kitchen-Bowl.jpeg",),
+            'Large Wooden Serving Bowl',
+            ('Kitchen-Bowl.jpeg',),
             ItemStatus.AVAILABLE,
-            "",
-            "Made in Thailand from Lipper International",
-            "",
+            '',
+            'Made in Thailand from Lipper International',
+            '',
         ),
         (
-            "Over the Cabinet Lid Organizer (Bronze)",
-            ("Kitchen-Overdoor.jpeg",),
+            'Over the Cabinet Lid Organizer (Bronze)',
+            ('Kitchen-Overdoor.jpeg',),
             ItemStatus.AVAILABLE,
-            "https://www.amazon.com/dp/B015EWKH2E?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_5",
+            'https://www.amazon.com/dp/B015EWKH2E?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_5',
             '5.25" L X 12.25" W X 19.25" H',
-            "",
+            '',
         ),
         (
-            "Small Serving Tray",
-            ("Kitchen-Tray.jpeg",),
+            'Small Serving Tray',
+            ('Kitchen-Tray.jpeg',),
             ItemStatus.AVAILABLE,
-            "",
-            "From Michel Design Works",
-            "",
+            '',
+            'From Michel Design Works',
+            '',
         ),
     ]
 ]
@@ -138,6 +138,7 @@ HEAD_HTML = """
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Free and paid items available for pickup in Polanco" />
 <title>Free Items</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -254,10 +255,16 @@ HEAD_HTML = """
     transition: all 0.2s ease;
     padding: 0.5rem 1rem;
     margin: -0.75rem -1rem;
+    font-weight: 500;
   }
 
   .item-card[open] summary::after {
     content: "";
+  }
+
+  .item-card summary:focus-visible {
+    outline: 2px solid var(--color-available);
+    outline-offset: 2px;
   }
 
   .item-card summary::-webkit-details-marker {
@@ -284,6 +291,11 @@ HEAD_HTML = """
     z-index: 10;
     padding: 0;
     transition: opacity 0.2s ease;
+  }
+
+  .close-button:focus-visible {
+    outline: 2px solid var(--color-fg);
+    outline-offset: 2px;
   }
 
   .close-button::before {
@@ -326,6 +338,18 @@ HEAD_HTML = """
     border-radius: 4px;
     font-size: 0.75rem;
     font-weight: 500;
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
   }
 
   .item-card[open] .item-thumbnail-container {
@@ -514,15 +538,15 @@ document.addEventListener('keydown', (e) => {
 
 def _generate_html(items: list[Item], last_updated: datetime) -> str:
     status_badge_html = {
-        ItemStatus.AVAILABLE: '<span class="badge badge-available">Available</span>',
-        ItemStatus.PENDING: '<span class="badge badge-pending">Pending Pickup</span>',
-        ItemStatus.PAID: '<span class="badge badge-paid">Paid</span>',
+        ItemStatus.AVAILABLE: '<span class="badge badge-available" role="status" aria-label="Status: Available">Available</span>',
+        ItemStatus.PENDING: '<span class="badge badge-pending" role="status" aria-label="Status: Pending Pickup">Pending Pickup</span>',
+        ItemStatus.PAID: '<span class="badge badge-paid" role="status" aria-label="Status: Paid">Paid</span>',
     }
 
     section_config = [
-        (ItemStatus.PAID, "Paid Items"),
-        (ItemStatus.AVAILABLE, "Free Items"),
-        (ItemStatus.PENDING, "Pending Pickup"),
+        (ItemStatus.PAID, 'Paid Items'),
+        (ItemStatus.AVAILABLE, 'Free Items'),
+        (ItemStatus.PENDING, 'Pending Pickup'),
     ]
 
     items_by_status = {status: [] for status in ItemStatus}
@@ -540,22 +564,22 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
             desc_html = (
                 f'<p class="item-description">{item.description}</p>'
                 if item.description
-                else ""
+                else ''
             )
             link_html = (
-                f'<a href="{item.link}" target="_blank" class="item-link">View Product</a>'
+                f'<a href="{item.link}" target="_blank" class="item-link">View Original Product Link</a>'
                 if item.link
-                else ""
+                else ''
             )
             price_html = (
                 f'<p class="item-price">{item.price}</p>'
                 if item.price and item.status == ItemStatus.PAID
-                else ""
+                else ''
             )
             price_closed_html = (
                 f'<p class="item-price-closed">{item.price}</p>'
                 if item.price and item.status == ItemStatus.PAID
-                else ""
+                else ''
             )
             # Generate image gallery
             images_html = []
@@ -565,13 +589,13 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
                 )
 
             image_count_html = (
-                f'<span class="image-count">{len(images_html)}</span>'
+                f'<span class="image-count">{len(images_html)}<span class="sr-only"> images available</span></span>'
                 if len(images_html) > 1
-                else ""
+                else ''
             )
 
             items_html.append(f"""
-        <details class="item-card" name="free-items">
+        <details class="item-card" name="free-items" aria-label="Item details for {item.title}">
           <summary>
             <div class="item-thumbnail-container">
               {images_html[0]}
@@ -613,27 +637,27 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
       """)
 
     return f"""<!doctype html>
-  <html lang="en">
-  {HEAD_HTML}
-  <body>
-    <div id="container">
-      <h1>Free and Paid Items</h1>
-      <p style="max-width: 600px; margin-right: auto; margin-left: auto;">All items available for pickup on the East Side of Polanco. Message me on WhatsApp to arrange a time. (Last updated: {last_updated.strftime("%B %d, %Y at %I:%M %p")})</p>
-      {"".join(sections_html)}
-    </div>
-    {SCRIPT_HTML}
-  </body>
+<html lang="en">
+{HEAD_HTML}
+<body>
+  <main id="container">
+    <h1>Free and Paid Items</h1>
+    <p style="max-width: 600px; margin-right: auto; margin-left: auto;">All items available for pickup on the East Side of Polanco. Message me on WhatsApp to arrange a time. (Last updated: {last_updated.strftime("%B %d, %Y at %I:%M %p")})</p>
+    {"".join(sections_html)}
+  </main>
+  {SCRIPT_HTML}
+</body>
 </html>
 """
 
 
 def main() -> None:
-    output_path = Path(__file__).parent / "whatsapp-items.html"
+    output_path = Path(__file__).parent / 'whatsapp-items.html'
     last_updated = datetime.now(UTC).astimezone()
     html_content = _generate_html(ITEMS, last_updated)
     output_path.write_text(html_content)
     print(f"Generated {output_path}")
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

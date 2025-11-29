@@ -1,738 +1,1104 @@
 <!doctype html>
-  <html lang="en">
-  
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Free Items</title>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Free and paid items available for pickup in Polanco"
+    />
+    <title>Free Items</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link
-  href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
-  rel="stylesheet"
-/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
 
-<style>
-  /* Color palette from Color Hunt - Calm & Natural theme
+    <style>
+      /* Color palette from Color Hunt - Calm & Natural theme
      https://colorhunt.co/palette/364547-7fa99b-c8dbbe-f7f7e8
      Primary: #364547 (dark teal), #7FA99B (sage green)
      Secondary: #C8DBBB (soft mint), #F7F7E8 (cream)
   */
-  :root {
-    --color-bg: #F7F7E8;
-    --color-fg: #364547;
-    --color-border: #C8DBBB;
-    --color-card-bg: #ffffff;
-    --color-available: #7FA99B;
-    --color-paid: #E8A87C;
-    --color-pending: #C8DBBB;
-    --color-pending-fg: #364547;
-  }
-  @media (prefers-color-scheme: dark) {
-    body {
-      --color-bg: #1e1e20;
-      --color-fg: #C8DBBB;
-      --color-border: #364547;
-      --color-card-bg: #2a2a2c;
-      --color-available: #7FA99B;
-      --color-paid: #E8A87C;
-      --color-pending: #7FA99B;
-      --color-pending-fg: #1e1e20;
-    }
-  }
+      :root {
+        --color-bg: #f7f7e8;
+        --color-fg: #364547;
+        --color-border: #c8dbbb;
+        --color-card-bg: #ffffff;
+        --color-available: #7fa99b;
+        --color-paid: #e8a87c;
+        --color-pending: #c8dbbb;
+        --color-pending-fg: #364547;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          --color-bg: #1e1e20;
+          --color-fg: #c8dbbb;
+          --color-border: #364547;
+          --color-card-bg: #2a2a2c;
+          --color-available: #7fa99b;
+          --color-paid: #e8a87c;
+          --color-pending: #7fa99b;
+          --color-pending-fg: #1e1e20;
+        }
+      }
 
-  body {
-    background: var(--color-bg);
-    color: var(--color-fg);
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 1rem;
-  }
+      body {
+        background: var(--color-bg);
+        color: var(--color-fg);
+        font-family: "Roboto", sans-serif;
+        margin: 0;
+        padding: 1rem;
+      }
 
-  #container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+      #container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
 
-  h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin: 2rem 0;
-    color: var(--color-fg);
-  }
+      h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 2rem 0;
+        color: var(--color-fg);
+      }
 
-  .items-section {
-    margin-bottom: 3rem;
-  }
+      .items-section {
+        margin-bottom: 3rem;
+      }
 
-  .section-title {
-    font-size: 1.75rem;
-    margin: 2rem 0 1.5rem 0;
-    color: var(--color-fg);
-  }
+      .section-title {
+        font-size: 1.75rem;
+        margin: 2rem 0 1.5rem 0;
+        color: var(--color-fg);
+      }
 
-  .items-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
-  }
+      .items-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+      }
 
-  .item-card {
-    border: 1px solid var(--color-border);
-    border-radius: 8px;
-    padding: 1rem;
-    background: var(--color-card-bg);
-    overflow: visible;
-    transition: all 0.2s ease;
-    position: relative;
-  }
+      .item-card {
+        border: 1px solid var(--color-border);
+        border-radius: 8px;
+        padding: 1rem;
+        background: var(--color-card-bg);
+        overflow: visible;
+        transition: all 0.2s ease;
+        position: relative;
+      }
 
-  .item-card[open] {
-    grid-column: span 2;
-    box-shadow: 0 6px 12px -2px rgb(0 0 0 / 0.15);
-  }
+      .item-card[open] {
+        grid-column: span 2;
+        box-shadow: 0 6px 12px -2px rgb(0 0 0 / 0.15);
+      }
 
-  .item-card:hover:not([open]) {
-    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 0.1);
-    transform: translateY(-2px);
-    border-color: var(--color-available);
-  }
+      .item-card:hover:not([open]) {
+        box-shadow: 0 2px 4px -1px rgb(0 0 0 / 0.1);
+        transform: translateY(-2px);
+        border-color: var(--color-available);
+      }
 
-  .item-card summary {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    cursor: pointer;
-    position: relative;
-  }
+      .item-card summary {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        cursor: pointer;
+        position: relative;
+      }
 
-  .item-card summary::after {
-    content: "▼ Click to expand";
-    position: absolute;
-    bottom: -0.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 0.75rem;
-    color: var(--color-available);
-    opacity: 0.7;
-    transition: all 0.2s ease;
-    padding: 0.5rem 1rem;
-    margin: -0.75rem -1rem;
-  }
+      .item-card summary::after {
+        content: "▼ Click to expand";
+        position: absolute;
+        bottom: -0.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 0.75rem;
+        color: var(--color-available);
+        opacity: 0.7;
+        transition: all 0.2s ease;
+        padding: 0.5rem 1rem;
+        margin: -0.75rem -1rem;
+        font-weight: 500;
+      }
 
-  .item-card[open] summary::after {
-    content: "";
-  }
+      .item-card[open] summary::after {
+        content: "";
+      }
 
-  .item-card summary::-webkit-details-marker {
-    display: none;
-  }
+      .item-card summary:focus-visible {
+        outline: 2px solid var(--color-available);
+        outline-offset: 2px;
+      }
 
-  .item-card summary::marker {
-    display: none;
-  }
+      .item-card summary::-webkit-details-marker {
+        display: none;
+      }
 
-  .close-button {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    background: var(--color-available);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    padding: 0;
-    transition: opacity 0.2s ease;
-  }
+      .item-card summary::marker {
+        display: none;
+      }
 
-  .close-button::before {
-    content: "✕";
-    color: white;
-    font-size: 1.25rem;
-    font-weight: bold;
-  }
+      .close-button {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: var(--color-available);
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        padding: 0;
+        transition: opacity 0.2s ease;
+      }
 
-  .item-card[open]:not(:hover) .close-button {
-    opacity: 0.5;
-  }
+      .close-button:focus-visible {
+        outline: 2px solid var(--color-fg);
+        outline-offset: 2px;
+      }
 
-  .item-card[open] .close-button:hover {
-    opacity: 1;
-  }
+      .close-button::before {
+        content: "✕";
+        color: white;
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
 
-  .item-thumbnail-container {
-    width: 100%;
-    height: 200px;
-    border-radius: 4px;
-    overflow: hidden;
-    position: relative;
-  }
+      .item-card[open]:not(:hover) .close-button {
+        opacity: 0.5;
+      }
 
-  .item-thumbnail-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.2s ease;
-  }
+      .item-card[open] .close-button:hover {
+        opacity: 1;
+      }
 
-  .image-count {
-    position: absolute;
-    bottom: 0.5rem;
-    right: 0.5rem;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    font-size: 0.75rem;
-    font-weight: 500;
-  }
+      .item-thumbnail-container {
+        width: 100%;
+        height: 200px;
+        border-radius: 4px;
+        overflow: hidden;
+        position: relative;
+      }
 
-  .item-card[open] .item-thumbnail-container {
-    display: none;
-  }
+      .item-thumbnail-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: opacity 0.2s ease;
+      }
 
-  .item-header {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    min-height: 3rem;
-    padding-bottom: 0;
-  }
+      .image-count {
+        position: absolute;
+        bottom: 0.5rem;
+        right: 0.5rem;
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-size: 0.75rem;
+        font-weight: 500;
+      }
 
-  .item-header-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.5rem;
-  }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border-width: 0;
+      }
 
-  .item-price-closed {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--color-paid);
-    margin: 0;
-  }
+      .item-card[open] .item-thumbnail-container {
+        display: none;
+      }
 
-  .item-card[open] summary .item-header {
-    display: none;
-  }
+      .item-header {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        min-height: 3rem;
+        padding-bottom: 0;
+      }
 
-  .item-title {
-    margin: 0;
-    font-size: 1.25rem;
-    font-weight: 500;
-    flex: 1;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
+      .item-header-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+      }
 
-  .item-card[open] .item-title {
-    -webkit-line-clamp: unset;
-    overflow: visible;
-  }
+      .item-price-closed {
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--color-paid);
+        margin: 0;
+      }
 
-  .badge {
-    padding: 0.25rem 0.75rem;
-    border-radius: 12px;
-    font-size: 0.875rem;
-    font-weight: 500;
-    white-space: nowrap;
-  }
+      .item-card[open] summary .item-header {
+        display: none;
+      }
 
-  .badge-available {
-    background: var(--color-available);
-    color: white;
-  }
+      .item-title {
+        margin: 0;
+        font-size: 1.25rem;
+        font-weight: 500;
+        flex: 1;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
 
-  .badge-pending {
-    background: var(--color-pending);
-    color: var(--color-pending-fg);
-  }
+      .item-card[open] .item-title {
+        -webkit-line-clamp: unset;
+        overflow: visible;
+      }
 
-  .badge-paid {
-    background: var(--color-paid);
-    color: white;
-  }
+      .badge {
+        padding: 0.25rem 0.75rem;
+        border-radius: 12px;
+        font-size: 0.875rem;
+        font-weight: 500;
+        white-space: nowrap;
+      }
 
-  .item-expanded {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
-    animation: fadeIn 0.3s ease;
-  }
+      .badge-available {
+        background: var(--color-available);
+        color: white;
+      }
 
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+      .badge-pending {
+        background: var(--color-pending);
+        color: var(--color-pending-fg);
+      }
 
-  .item-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    align-items: flex-start;
-  }
+      .badge-paid {
+        background: var(--color-paid);
+        color: white;
+      }
 
-  .item-gallery img {
-    width: calc(50% - 0.25rem);
-    height: auto;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: 4px;
-    flex-grow: 1;
-  }
+      .item-expanded {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+        animation: fadeIn 0.3s ease;
+      }
 
-  .item-gallery img:only-child {
-    width: 100%;
-  }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
 
-  .item-content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
+      .item-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        align-items: flex-start;
+      }
 
-  .item-header-expanded {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
+      .item-gallery img {
+        width: calc(50% - 0.25rem);
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+        border-radius: 4px;
+        flex-grow: 1;
+      }
 
-  .item-price {
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: var(--color-paid);
-    margin: 0 0 0.5rem 0;
-  }
+      .item-gallery img:only-child {
+        width: 100%;
+      }
 
-  .item-description {
-    line-height: 1.6;
-    margin: 0;
-  }
+      .item-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
 
-  .item-link {
-    display: block;
-    margin: 0.5rem auto 0;
-    padding: 0.75rem 1.5rem;
-    background-color: var(--color-available);
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: opacity 0.2s ease;
-    text-align: center;
-    width: fit-content;
-  }
+      .item-header-expanded {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
 
-  .item-link:hover {
-    opacity: 0.9;
-  }
+      .item-price {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: var(--color-paid);
+        margin: 0 0 0.5rem 0;
+      }
 
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 2rem;
-    }
+      .item-description {
+        line-height: 1.6;
+        margin: 0;
+      }
 
-    .item-gallery img {
-      max-height: 300px;
-      width: 100%;
-    }
+      .item-link {
+        display: block;
+        margin: 0.5rem auto 0;
+        padding: 0.75rem 1.5rem;
+        background-color: var(--color-available);
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: opacity 0.2s ease;
+        text-align: center;
+        width: fit-content;
+      }
 
-    .item-card summary::after {
-      font-size: 0.7rem;
-    }
-  }
-</style>
-</head>
+      .item-link:hover {
+        opacity: 0.9;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        .item-gallery img {
+          max-height: 300px;
+          width: 100%;
+        }
+
+        .item-card summary::after {
+          font-size: 0.7rem;
+        }
+      }
+    </style>
+  </head>
 
   <body>
-    <div id="container">
+    <main id="container">
       <h1>Free and Paid Items</h1>
-      <p style="max-width: 600px; margin-right: auto; margin-left: auto;">All items available for pickup on the East Side of Polanco. Message me on WhatsApp to arrange a time. (Last updated: November 29, 2025 at 02:53 PM)</p>
-      
+      <p style="max-width: 600px; margin-right: auto; margin-left: auto">
+        All items available for pickup on the East Side of Polanco. Message me
+        on WhatsApp to arrange a time. (Last updated: November 29, 2025 at 03:00
+        PM)
+      </p>
+
       <section class="items-section">
         <h2 class="section-title">Paid Items</h2>
         <div class="items-grid">
-          
-        <details class="item-card" name="free-items">
-          <summary>
-            <div class="item-thumbnail-container">
-              <img src="whatsapp-items/Wallet-01-Flat.jpeg" alt="Scalpers Brown Leather Wallet" class="item-image" />
-              <span class="image-count">2</span>
-            </div>
-            <div class="item-header">
-              <div class="item-header-row">
-                <h3 class="item-title">Scalpers Brown Leather Wallet</h3>
-                <span class="badge badge-paid">Paid</span>
+          <details
+            class="item-card"
+            name="free-items"
+            aria-label="Item details for Scalpers Brown Leather Wallet"
+          >
+            <summary>
+              <div class="item-thumbnail-container">
+                <img
+                  src="whatsapp-items/Wallet-01-Flat.jpeg"
+                  alt="Scalpers Brown Leather Wallet"
+                  class="item-image"
+                />
+                <span class="image-count"
+                  >2<span class="sr-only"> images available</span></span
+                >
               </div>
-              <p class="item-price-closed">$30 USD or best offer</p>
-            </div>
-          </summary>
-          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
-          <div class="item-expanded">
-            <div class="item-gallery">
-              <img src="whatsapp-items/Wallet-01-Flat.jpeg" alt="Scalpers Brown Leather Wallet" class="item-image" /><img src="whatsapp-items/Wallet-04-Back.jpeg" alt="Scalpers Brown Leather Wallet" class="item-image" />
-            </div>
-            <div class="item-content">
-              <div class="item-header-expanded">
-                <h3 class="item-title">Scalpers Brown Leather Wallet</h3>
-                <span class="badge badge-paid">Paid</span>
+              <div class="item-header">
+                <div class="item-header-row">
+                  <h3 class="item-title">Scalpers Brown Leather Wallet</h3>
+                  <span
+                    class="badge badge-paid"
+                    role="status"
+                    aria-label="Status: Paid"
+                    >Paid</span
+                  >
+                </div>
+                <p class="item-price-closed">$30 USD or best offer</p>
               </div>
-              <p class="item-price">$30 USD or best offer</p>
-              <p class="item-description">I received this as a gift, but I had already gotten a new wallet. Made from 100% Cow Leather and never used and includes original tags if you would like to give it as a gift</p>
-              <a href="https://en.ww.scalperscompany.com/products/61778-scmondit-free-wallet-aw2526-brown" target="_blank" class="item-link">View Product</a>
-            </div>
-          </div>
-        </details>
-        
-        <details class="item-card" name="free-items">
-          <summary>
-            <div class="item-thumbnail-container">
-              <img src="whatsapp-items/Shoes.jpeg" alt="Thousand Fell Men's Lace Up (Color Dune, 11.5 Men)" class="item-image" />
-              
-            </div>
-            <div class="item-header">
-              <div class="item-header-row">
-                <h3 class="item-title">Thousand Fell Men's Lace Up (Color Dune, 11.5 Men)</h3>
-                <span class="badge badge-paid">Paid</span>
+            </summary>
+            <button
+              class="close-button"
+              aria-label="Close"
+              onclick="this.closest('details').open = false"
+            ></button>
+            <div class="item-expanded">
+              <div class="item-gallery">
+                <img
+                  src="whatsapp-items/Wallet-01-Flat.jpeg"
+                  alt="Scalpers Brown Leather Wallet"
+                  class="item-image"
+                /><img
+                  src="whatsapp-items/Wallet-04-Back.jpeg"
+                  alt="Scalpers Brown Leather Wallet"
+                  class="item-image"
+                />
               </div>
-              <p class="item-price-closed">$20 USD or best offer</p>
-            </div>
-          </summary>
-          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
-          <div class="item-expanded">
-            <div class="item-gallery">
-              <img src="whatsapp-items/Shoes.jpeg" alt="Thousand Fell Men's Lace Up (Color Dune, 11.5 Men)" class="item-image" />
-            </div>
-            <div class="item-content">
-              <div class="item-header-expanded">
-                <h3 class="item-title">Thousand Fell Men's Lace Up (Color Dune, 11.5 Men)</h3>
-                <span class="badge badge-paid">Paid</span>
+              <div class="item-content">
+                <div class="item-header-expanded">
+                  <h3 class="item-title">Scalpers Brown Leather Wallet</h3>
+                  <span
+                    class="badge badge-paid"
+                    role="status"
+                    aria-label="Status: Paid"
+                    >Paid</span
+                  >
+                </div>
+                <p class="item-price">$30 USD or best offer</p>
+                <p class="item-description">
+                  I received this as a gift, but I had already gotten a new
+                  wallet. Made from 100% Cow Leather and never used and includes
+                  original tags if you would like to give it as a gift
+                </p>
+                <a
+                  href="https://en.ww.scalperscompany.com/products/61778-scmondit-free-wallet-aw2526-brown"
+                  target="_blank"
+                  class="item-link"
+                  >View Original Product Link</a
+                >
               </div>
-              <p class="item-price">$20 USD or best offer</p>
-              <p class="item-description">These shoes are great and brand new and never worn, but they aren't my style</p>
-              <a href="https://www.thousandfell.com/products/mens-lace-up-sneaker-white" target="_blank" class="item-link">View Product</a>
             </div>
-          </div>
-        </details>
-        
+          </details>
+
+          <details
+            class="item-card"
+            name="free-items"
+            aria-label="Item details for Thousand Fell Men's Lace Up (Color Dune, 11.5 Men)"
+          >
+            <summary>
+              <div class="item-thumbnail-container">
+                <img
+                  src="whatsapp-items/Shoes.jpeg"
+                  alt="Thousand Fell Men's Lace Up (Color Dune, 11.5 Men)"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-header">
+                <div class="item-header-row">
+                  <h3 class="item-title">
+                    Thousand Fell Men's Lace Up (Color Dune, 11.5 Men)
+                  </h3>
+                  <span
+                    class="badge badge-paid"
+                    role="status"
+                    aria-label="Status: Paid"
+                    >Paid</span
+                  >
+                </div>
+                <p class="item-price-closed">$20 USD or best offer</p>
+              </div>
+            </summary>
+            <button
+              class="close-button"
+              aria-label="Close"
+              onclick="this.closest('details').open = false"
+            ></button>
+            <div class="item-expanded">
+              <div class="item-gallery">
+                <img
+                  src="whatsapp-items/Shoes.jpeg"
+                  alt="Thousand Fell Men's Lace Up (Color Dune, 11.5 Men)"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-content">
+                <div class="item-header-expanded">
+                  <h3 class="item-title">
+                    Thousand Fell Men's Lace Up (Color Dune, 11.5 Men)
+                  </h3>
+                  <span
+                    class="badge badge-paid"
+                    role="status"
+                    aria-label="Status: Paid"
+                    >Paid</span
+                  >
+                </div>
+                <p class="item-price">$20 USD or best offer</p>
+                <p class="item-description">
+                  These shoes are great and brand new and never worn, but they
+                  aren't my style
+                </p>
+                <a
+                  href="https://www.thousandfell.com/products/mens-lace-up-sneaker-white"
+                  target="_blank"
+                  class="item-link"
+                  >View Original Product Link</a
+                >
+              </div>
+            </div>
+          </details>
         </div>
       </section>
-      
+
       <section class="items-section">
         <h2 class="section-title">Free Items</h2>
         <div class="items-grid">
-          
-        <details class="item-card" name="free-items">
-          <summary>
-            <div class="item-thumbnail-container">
-              <img src="whatsapp-items/Baby-Changing.jpeg" alt="Munchkin Secure Grip™ Changing Pad Rev 2.0" class="item-image" />
-              
-            </div>
-            <div class="item-header">
-              <div class="item-header-row">
-                <h3 class="item-title">Munchkin Secure Grip™ Changing Pad Rev 2.0</h3>
-                <span class="badge badge-available">Available</span>
+          <details
+            class="item-card"
+            name="free-items"
+            aria-label="Item details for Munchkin Secure Grip™ Changing Pad Rev 2.0"
+          >
+            <summary>
+              <div class="item-thumbnail-container">
+                <img
+                  src="whatsapp-items/Baby-Changing.jpeg"
+                  alt="Munchkin Secure Grip™ Changing Pad Rev 2.0"
+                  class="item-image"
+                />
               </div>
-              
-            </div>
-          </summary>
-          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
-          <div class="item-expanded">
-            <div class="item-gallery">
-              <img src="whatsapp-items/Baby-Changing.jpeg" alt="Munchkin Secure Grip™ Changing Pad Rev 2.0" class="item-image" />
-            </div>
-            <div class="item-content">
-              <div class="item-header-expanded">
-                <h3 class="item-title">Munchkin Secure Grip™ Changing Pad Rev 2.0</h3>
-                <span class="badge badge-available">Available</span>
+              <div class="item-header">
+                <div class="item-header-row">
+                  <h3 class="item-title">
+                    Munchkin Secure Grip™ Changing Pad Rev 2.0
+                  </h3>
+                  <span
+                    class="badge badge-available"
+                    role="status"
+                    aria-label="Status: Available"
+                    >Available</span
+                  >
+                </div>
               </div>
-              
-              <p class="item-description">Clean with extra linens. We would keep this, but we needed a smaller one</p>
-              <a href="https://www.munchkin.com/secure-grip-changing-pad" target="_blank" class="item-link">View Product</a>
-            </div>
-          </div>
-        </details>
-        
-        <details class="item-card" name="free-items">
-          <summary>
-            <div class="item-thumbnail-container">
-              <img src="whatsapp-items/Bathroom-Shelf.jpeg" alt="MALMBÄCK IKEA Bathroom Shelf" class="item-image" />
-              
-            </div>
-            <div class="item-header">
-              <div class="item-header-row">
-                <h3 class="item-title">MALMBÄCK IKEA Bathroom Shelf</h3>
-                <span class="badge badge-available">Available</span>
+            </summary>
+            <button
+              class="close-button"
+              aria-label="Close"
+              onclick="this.closest('details').open = false"
+            ></button>
+            <div class="item-expanded">
+              <div class="item-gallery">
+                <img
+                  src="whatsapp-items/Baby-Changing.jpeg"
+                  alt="Munchkin Secure Grip™ Changing Pad Rev 2.0"
+                  class="item-image"
+                />
               </div>
-              
-            </div>
-          </summary>
-          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
-          <div class="item-expanded">
-            <div class="item-gallery">
-              <img src="whatsapp-items/Bathroom-Shelf.jpeg" alt="MALMBÄCK IKEA Bathroom Shelf" class="item-image" />
-            </div>
-            <div class="item-content">
-              <div class="item-header-expanded">
-                <h3 class="item-title">MALMBÄCK IKEA Bathroom Shelf</h3>
-                <span class="badge badge-available">Available</span>
+              <div class="item-content">
+                <div class="item-header-expanded">
+                  <h3 class="item-title">
+                    Munchkin Secure Grip™ Changing Pad Rev 2.0
+                  </h3>
+                  <span
+                    class="badge badge-available"
+                    role="status"
+                    aria-label="Status: Available"
+                    >Available</span
+                  >
+                </div>
+
+                <p class="item-description">
+                  Clean with extra linens. We would keep this, but we needed a
+                  smaller one
+                </p>
+                <a
+                  href="https://www.munchkin.com/secure-grip-changing-pad"
+                  target="_blank"
+                  class="item-link"
+                  >View Original Product Link</a
+                >
               </div>
-              
-              <p class="item-description">Display shelf, white, 23 5/8"</p>
-              <a href="https://www.ikea.com/us/en/p/malmbaeck-display-shelf-white-20446236" target="_blank" class="item-link">View Product</a>
             </div>
-          </div>
-        </details>
-        
-        <details class="item-card" name="free-items">
-          <summary>
-            <div class="item-thumbnail-container">
-              <img src="whatsapp-items/Bedrom-Curtains.jpeg" alt="IKEA Bedroom Blackout Curtains" class="item-image" />
-              
-            </div>
-            <div class="item-header">
-              <div class="item-header-row">
-                <h3 class="item-title">IKEA Bedroom Blackout Curtains</h3>
-                <span class="badge badge-available">Available</span>
+          </details>
+
+          <details
+            class="item-card"
+            name="free-items"
+            aria-label="Item details for MALMBÄCK IKEA Bathroom Shelf"
+          >
+            <summary>
+              <div class="item-thumbnail-container">
+                <img
+                  src="whatsapp-items/Bathroom-Shelf.jpeg"
+                  alt="MALMBÄCK IKEA Bathroom Shelf"
+                  class="item-image"
+                />
               </div>
-              
-            </div>
-          </summary>
-          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
-          <div class="item-expanded">
-            <div class="item-gallery">
-              <img src="whatsapp-items/Bedrom-Curtains.jpeg" alt="IKEA Bedroom Blackout Curtains" class="item-image" />
-            </div>
-            <div class="item-content">
-              <div class="item-header-expanded">
-                <h3 class="item-title">IKEA Bedroom Blackout Curtains</h3>
-                <span class="badge badge-available">Available</span>
+              <div class="item-header">
+                <div class="item-header-row">
+                  <h3 class="item-title">MALMBÄCK IKEA Bathroom Shelf</h3>
+                  <span
+                    class="badge badge-available"
+                    role="status"
+                    aria-label="Status: Available"
+                    >Available</span
+                  >
+                </div>
               </div>
-              
-              
-              <a href="https://www.ikea.com/us/en/p/vilborg-room-darkening-curtains-1-pair-beige-with-heading-tape-00297553" target="_blank" class="item-link">View Product</a>
-            </div>
-          </div>
-        </details>
-        
-        <details class="item-card" name="free-items">
-          <summary>
-            <div class="item-thumbnail-container">
-              <img src="whatsapp-items/Home-Modem.jpeg" alt="ARRIS SurfBoard SB6141 Modem" class="item-image" />
-              
-            </div>
-            <div class="item-header">
-              <div class="item-header-row">
-                <h3 class="item-title">ARRIS SurfBoard SB6141 Modem</h3>
-                <span class="badge badge-available">Available</span>
+            </summary>
+            <button
+              class="close-button"
+              aria-label="Close"
+              onclick="this.closest('details').open = false"
+            ></button>
+            <div class="item-expanded">
+              <div class="item-gallery">
+                <img
+                  src="whatsapp-items/Bathroom-Shelf.jpeg"
+                  alt="MALMBÄCK IKEA Bathroom Shelf"
+                  class="item-image"
+                />
               </div>
-              
-            </div>
-          </summary>
-          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
-          <div class="item-expanded">
-            <div class="item-gallery">
-              <img src="whatsapp-items/Home-Modem.jpeg" alt="ARRIS SurfBoard SB6141 Modem" class="item-image" />
-            </div>
-            <div class="item-content">
-              <div class="item-header-expanded">
-                <h3 class="item-title">ARRIS SurfBoard SB6141 Modem</h3>
-                <span class="badge badge-available">Available</span>
+              <div class="item-content">
+                <div class="item-header-expanded">
+                  <h3 class="item-title">MALMBÄCK IKEA Bathroom Shelf</h3>
+                  <span
+                    class="badge badge-available"
+                    role="status"
+                    aria-label="Status: Available"
+                    >Available</span
+                  >
+                </div>
+
+                <p class="item-description">Display shelf, white, 23 5/8"</p>
+                <a
+                  href="https://www.ikea.com/us/en/p/malmbaeck-display-shelf-white-20446236"
+                  target="_blank"
+                  class="item-link"
+                  >View Original Product Link</a
+                >
               </div>
-              
-              <p class="item-description">We can't use this modem with Telmex because it requires a regular Ethernet hookup, but it may work with other providers. While older, this works well and I would keep it if we had a use for it</p>
-              <a href="https://www.amazon.com/ARRIS-SURFboard-SB6141-DOCSIS-Cable/dp/B00AJHDZSI" target="_blank" class="item-link">View Product</a>
             </div>
-          </div>
-        </details>
-        
-        <details class="item-card" name="free-items">
-          <summary>
-            <div class="item-thumbnail-container">
-              <img src="whatsapp-items/Home-Tray.jpeg" alt="Organizer Trays" class="item-image" />
-              <span class="image-count">2</span>
-            </div>
-            <div class="item-header">
-              <div class="item-header-row">
-                <h3 class="item-title">Organizer Trays</h3>
-                <span class="badge badge-available">Available</span>
+          </details>
+
+          <details
+            class="item-card"
+            name="free-items"
+            aria-label="Item details for IKEA Bedroom Blackout Curtains"
+          >
+            <summary>
+              <div class="item-thumbnail-container">
+                <img
+                  src="whatsapp-items/Bedrom-Curtains.jpeg"
+                  alt="IKEA Bedroom Blackout Curtains"
+                  class="item-image"
+                />
               </div>
-              
-            </div>
-          </summary>
-          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
-          <div class="item-expanded">
-            <div class="item-gallery">
-              <img src="whatsapp-items/Home-Tray.jpeg" alt="Organizer Trays" class="item-image" /><img src="whatsapp-items/home-more-trays.jpeg" alt="Organizer Trays" class="item-image" />
-            </div>
-            <div class="item-content">
-              <div class="item-header-expanded">
-                <h3 class="item-title">Organizer Trays</h3>
-                <span class="badge badge-available">Available</span>
+              <div class="item-header">
+                <div class="item-header-row">
+                  <h3 class="item-title">IKEA Bedroom Blackout Curtains</h3>
+                  <span
+                    class="badge badge-available"
+                    role="status"
+                    aria-label="Status: Available"
+                    >Available</span
+                  >
+                </div>
               </div>
-              
-              
-              
-            </div>
-          </div>
-        </details>
-        
-        <details class="item-card" name="free-items">
-          <summary>
-            <div class="item-thumbnail-container">
-              <img src="whatsapp-items/House-World-Map.jpeg" alt="Framed World Map" class="item-image" />
-              
-            </div>
-            <div class="item-header">
-              <div class="item-header-row">
-                <h3 class="item-title">Framed World Map</h3>
-                <span class="badge badge-available">Available</span>
+            </summary>
+            <button
+              class="close-button"
+              aria-label="Close"
+              onclick="this.closest('details').open = false"
+            ></button>
+            <div class="item-expanded">
+              <div class="item-gallery">
+                <img
+                  src="whatsapp-items/Bedrom-Curtains.jpeg"
+                  alt="IKEA Bedroom Blackout Curtains"
+                  class="item-image"
+                />
               </div>
-              
-            </div>
-          </summary>
-          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
-          <div class="item-expanded">
-            <div class="item-gallery">
-              <img src="whatsapp-items/House-World-Map.jpeg" alt="Framed World Map" class="item-image" />
-            </div>
-            <div class="item-content">
-              <div class="item-header-expanded">
-                <h3 class="item-title">Framed World Map</h3>
-                <span class="badge badge-available">Available</span>
+              <div class="item-content">
+                <div class="item-header-expanded">
+                  <h3 class="item-title">IKEA Bedroom Blackout Curtains</h3>
+                  <span
+                    class="badge badge-available"
+                    role="status"
+                    aria-label="Status: Available"
+                    >Available</span
+                  >
+                </div>
+
+                <a
+                  href="https://www.ikea.com/us/en/p/vilborg-room-darkening-curtains-1-pair-beige-with-heading-tape-00297553"
+                  target="_blank"
+                  class="item-link"
+                  >View Original Product Link</a
+                >
               </div>
-              
-              <p class="item-description">While the IKEA frame has minor exterior damage from a fall, it is not visible when mounted. The glass and map are in good condition</p>
-              
             </div>
-          </div>
-        </details>
-        
-        <details class="item-card" name="free-items">
-          <summary>
-            <div class="item-thumbnail-container">
-              <img src="whatsapp-items/Kitchen-Bowl.jpeg" alt="Large Wooden Serving Bowl" class="item-image" />
-              
-            </div>
-            <div class="item-header">
-              <div class="item-header-row">
-                <h3 class="item-title">Large Wooden Serving Bowl</h3>
-                <span class="badge badge-available">Available</span>
+          </details>
+
+          <details
+            class="item-card"
+            name="free-items"
+            aria-label="Item details for ARRIS SurfBoard SB6141 Modem"
+          >
+            <summary>
+              <div class="item-thumbnail-container">
+                <img
+                  src="whatsapp-items/Home-Modem.jpeg"
+                  alt="ARRIS SurfBoard SB6141 Modem"
+                  class="item-image"
+                />
               </div>
-              
-            </div>
-          </summary>
-          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
-          <div class="item-expanded">
-            <div class="item-gallery">
-              <img src="whatsapp-items/Kitchen-Bowl.jpeg" alt="Large Wooden Serving Bowl" class="item-image" />
-            </div>
-            <div class="item-content">
-              <div class="item-header-expanded">
-                <h3 class="item-title">Large Wooden Serving Bowl</h3>
-                <span class="badge badge-available">Available</span>
+              <div class="item-header">
+                <div class="item-header-row">
+                  <h3 class="item-title">ARRIS SurfBoard SB6141 Modem</h3>
+                  <span
+                    class="badge badge-available"
+                    role="status"
+                    aria-label="Status: Available"
+                    >Available</span
+                  >
+                </div>
               </div>
-              
-              <p class="item-description">Made in Thailand from Lipper International</p>
-              
-            </div>
-          </div>
-        </details>
-        
-        <details class="item-card" name="free-items">
-          <summary>
-            <div class="item-thumbnail-container">
-              <img src="whatsapp-items/Kitchen-Overdoor.jpeg" alt="Over the Cabinet Lid Organizer (Bronze)" class="item-image" />
-              
-            </div>
-            <div class="item-header">
-              <div class="item-header-row">
-                <h3 class="item-title">Over the Cabinet Lid Organizer (Bronze)</h3>
-                <span class="badge badge-available">Available</span>
+            </summary>
+            <button
+              class="close-button"
+              aria-label="Close"
+              onclick="this.closest('details').open = false"
+            ></button>
+            <div class="item-expanded">
+              <div class="item-gallery">
+                <img
+                  src="whatsapp-items/Home-Modem.jpeg"
+                  alt="ARRIS SurfBoard SB6141 Modem"
+                  class="item-image"
+                />
               </div>
-              
-            </div>
-          </summary>
-          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
-          <div class="item-expanded">
-            <div class="item-gallery">
-              <img src="whatsapp-items/Kitchen-Overdoor.jpeg" alt="Over the Cabinet Lid Organizer (Bronze)" class="item-image" />
-            </div>
-            <div class="item-content">
-              <div class="item-header-expanded">
-                <h3 class="item-title">Over the Cabinet Lid Organizer (Bronze)</h3>
-                <span class="badge badge-available">Available</span>
+              <div class="item-content">
+                <div class="item-header-expanded">
+                  <h3 class="item-title">ARRIS SurfBoard SB6141 Modem</h3>
+                  <span
+                    class="badge badge-available"
+                    role="status"
+                    aria-label="Status: Available"
+                    >Available</span
+                  >
+                </div>
+
+                <p class="item-description">
+                  We can't use this modem with Telmex because it requires a
+                  regular Ethernet hookup, but it may work with other providers.
+                  While older, this works well and I would keep it if we had a
+                  use for it
+                </p>
+                <a
+                  href="https://www.amazon.com/ARRIS-SURFboard-SB6141-DOCSIS-Cable/dp/B00AJHDZSI"
+                  target="_blank"
+                  class="item-link"
+                  >View Original Product Link</a
+                >
               </div>
-              
-              <p class="item-description">5.25" L X 12.25" W X 19.25" H</p>
-              <a href="https://www.amazon.com/dp/B015EWKH2E?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_5" target="_blank" class="item-link">View Product</a>
             </div>
-          </div>
-        </details>
-        
-        <details class="item-card" name="free-items">
-          <summary>
-            <div class="item-thumbnail-container">
-              <img src="whatsapp-items/Kitchen-Tray.jpeg" alt="Small Serving Tray" class="item-image" />
-              
-            </div>
-            <div class="item-header">
-              <div class="item-header-row">
-                <h3 class="item-title">Small Serving Tray</h3>
-                <span class="badge badge-available">Available</span>
+          </details>
+
+          <details
+            class="item-card"
+            name="free-items"
+            aria-label="Item details for Organizer Trays"
+          >
+            <summary>
+              <div class="item-thumbnail-container">
+                <img
+                  src="whatsapp-items/Home-Tray.jpeg"
+                  alt="Organizer Trays"
+                  class="item-image"
+                />
+                <span class="image-count"
+                  >2<span class="sr-only"> images available</span></span
+                >
               </div>
-              
-            </div>
-          </summary>
-          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
-          <div class="item-expanded">
-            <div class="item-gallery">
-              <img src="whatsapp-items/Kitchen-Tray.jpeg" alt="Small Serving Tray" class="item-image" />
-            </div>
-            <div class="item-content">
-              <div class="item-header-expanded">
-                <h3 class="item-title">Small Serving Tray</h3>
-                <span class="badge badge-available">Available</span>
+              <div class="item-header">
+                <div class="item-header-row">
+                  <h3 class="item-title">Organizer Trays</h3>
+                  <span
+                    class="badge badge-available"
+                    role="status"
+                    aria-label="Status: Available"
+                    >Available</span
+                  >
+                </div>
               </div>
-              
-              <p class="item-description">From Michel Design Works</p>
-              
+            </summary>
+            <button
+              class="close-button"
+              aria-label="Close"
+              onclick="this.closest('details').open = false"
+            ></button>
+            <div class="item-expanded">
+              <div class="item-gallery">
+                <img
+                  src="whatsapp-items/Home-Tray.jpeg"
+                  alt="Organizer Trays"
+                  class="item-image"
+                /><img
+                  src="whatsapp-items/home-more-trays.jpeg"
+                  alt="Organizer Trays"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-content">
+                <div class="item-header-expanded">
+                  <h3 class="item-title">Organizer Trays</h3>
+                  <span
+                    class="badge badge-available"
+                    role="status"
+                    aria-label="Status: Available"
+                    >Available</span
+                  >
+                </div>
+              </div>
             </div>
-          </div>
-        </details>
-        
+          </details>
+
+          <details
+            class="item-card"
+            name="free-items"
+            aria-label="Item details for Framed World Map"
+          >
+            <summary>
+              <div class="item-thumbnail-container">
+                <img
+                  src="whatsapp-items/House-World-Map.jpeg"
+                  alt="Framed World Map"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-header">
+                <div class="item-header-row">
+                  <h3 class="item-title">Framed World Map</h3>
+                  <span
+                    class="badge badge-available"
+                    role="status"
+                    aria-label="Status: Available"
+                    >Available</span
+                  >
+                </div>
+              </div>
+            </summary>
+            <button
+              class="close-button"
+              aria-label="Close"
+              onclick="this.closest('details').open = false"
+            ></button>
+            <div class="item-expanded">
+              <div class="item-gallery">
+                <img
+                  src="whatsapp-items/House-World-Map.jpeg"
+                  alt="Framed World Map"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-content">
+                <div class="item-header-expanded">
+                  <h3 class="item-title">Framed World Map</h3>
+                  <span
+                    class="badge badge-available"
+                    role="status"
+                    aria-label="Status: Available"
+                    >Available</span
+                  >
+                </div>
+
+                <p class="item-description">
+                  While the IKEA frame has minor exterior damage from a fall, it
+                  is not visible when mounted. The glass and map are in good
+                  condition
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <details
+            class="item-card"
+            name="free-items"
+            aria-label="Item details for Large Wooden Serving Bowl"
+          >
+            <summary>
+              <div class="item-thumbnail-container">
+                <img
+                  src="whatsapp-items/Kitchen-Bowl.jpeg"
+                  alt="Large Wooden Serving Bowl"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-header">
+                <div class="item-header-row">
+                  <h3 class="item-title">Large Wooden Serving Bowl</h3>
+                  <span
+                    class="badge badge-available"
+                    role="status"
+                    aria-label="Status: Available"
+                    >Available</span
+                  >
+                </div>
+              </div>
+            </summary>
+            <button
+              class="close-button"
+              aria-label="Close"
+              onclick="this.closest('details').open = false"
+            ></button>
+            <div class="item-expanded">
+              <div class="item-gallery">
+                <img
+                  src="whatsapp-items/Kitchen-Bowl.jpeg"
+                  alt="Large Wooden Serving Bowl"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-content">
+                <div class="item-header-expanded">
+                  <h3 class="item-title">Large Wooden Serving Bowl</h3>
+                  <span
+                    class="badge badge-available"
+                    role="status"
+                    aria-label="Status: Available"
+                    >Available</span
+                  >
+                </div>
+
+                <p class="item-description">
+                  Made in Thailand from Lipper International
+                </p>
+              </div>
+            </div>
+          </details>
+
+          <details
+            class="item-card"
+            name="free-items"
+            aria-label="Item details for Over the Cabinet Lid Organizer (Bronze)"
+          >
+            <summary>
+              <div class="item-thumbnail-container">
+                <img
+                  src="whatsapp-items/Kitchen-Overdoor.jpeg"
+                  alt="Over the Cabinet Lid Organizer (Bronze)"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-header">
+                <div class="item-header-row">
+                  <h3 class="item-title">
+                    Over the Cabinet Lid Organizer (Bronze)
+                  </h3>
+                  <span
+                    class="badge badge-available"
+                    role="status"
+                    aria-label="Status: Available"
+                    >Available</span
+                  >
+                </div>
+              </div>
+            </summary>
+            <button
+              class="close-button"
+              aria-label="Close"
+              onclick="this.closest('details').open = false"
+            ></button>
+            <div class="item-expanded">
+              <div class="item-gallery">
+                <img
+                  src="whatsapp-items/Kitchen-Overdoor.jpeg"
+                  alt="Over the Cabinet Lid Organizer (Bronze)"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-content">
+                <div class="item-header-expanded">
+                  <h3 class="item-title">
+                    Over the Cabinet Lid Organizer (Bronze)
+                  </h3>
+                  <span
+                    class="badge badge-available"
+                    role="status"
+                    aria-label="Status: Available"
+                    >Available</span
+                  >
+                </div>
+
+                <p class="item-description">5.25" L X 12.25" W X 19.25" H</p>
+                <a
+                  href="https://www.amazon.com/dp/B015EWKH2E?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_5"
+                  target="_blank"
+                  class="item-link"
+                  >View Original Product Link</a
+                >
+              </div>
+            </div>
+          </details>
+
+          <details
+            class="item-card"
+            name="free-items"
+            aria-label="Item details for Small Serving Tray"
+          >
+            <summary>
+              <div class="item-thumbnail-container">
+                <img
+                  src="whatsapp-items/Kitchen-Tray.jpeg"
+                  alt="Small Serving Tray"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-header">
+                <div class="item-header-row">
+                  <h3 class="item-title">Small Serving Tray</h3>
+                  <span
+                    class="badge badge-available"
+                    role="status"
+                    aria-label="Status: Available"
+                    >Available</span
+                  >
+                </div>
+              </div>
+            </summary>
+            <button
+              class="close-button"
+              aria-label="Close"
+              onclick="this.closest('details').open = false"
+            ></button>
+            <div class="item-expanded">
+              <div class="item-gallery">
+                <img
+                  src="whatsapp-items/Kitchen-Tray.jpeg"
+                  alt="Small Serving Tray"
+                  class="item-image"
+                />
+              </div>
+              <div class="item-content">
+                <div class="item-header-expanded">
+                  <h3 class="item-title">Small Serving Tray</h3>
+                  <span
+                    class="badge badge-available"
+                    role="status"
+                    aria-label="Status: Available"
+                    >Available</span
+                  >
+                </div>
+
+                <p class="item-description">From Michel Design Works</p>
+              </div>
+            </div>
+          </details>
         </div>
       </section>
-      
-    </div>
+    </main>
     <script>
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    const openCard = document.querySelector('details[open]');
-    if (openCard) {
-      openCard.open = false;
-    }
-  }
-});
-</script>
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          const openCard = document.querySelector("details[open]");
+          if (openCard) {
+            openCard.open = false;
+          }
+        }
+      });
+    </script>
   </body>
 </html>
