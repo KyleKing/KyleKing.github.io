@@ -1,0 +1,492 @@
+<!doctype html>
+  <html lang="en">
+  
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Free Items</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+  rel="stylesheet"
+/>
+
+<style>
+  /* Color palette from Color Hunt - Calm & Natural theme
+     https://colorhunt.co/palette/364547-7fa99b-c8dbbe-f7f7e8
+     Primary: #364547 (dark teal), #7FA99B (sage green)
+     Secondary: #C8DBBB (soft mint), #F7F7E8 (cream)
+  */
+  :root {
+    --color-bg: #F7F7E8;
+    --color-fg: #364547;
+    --color-border: #C8DBBB;
+    --color-card-bg: #ffffff;
+    --color-available: #7FA99B;
+    --color-pending: #C8DBBB;
+    --color-pending-fg: #364547;
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+      --color-bg: #1e1e20;
+      --color-fg: #C8DBBB;
+      --color-border: #364547;
+      --color-card-bg: #2a2a2c;
+      --color-available: #7FA99B;
+      --color-pending: #7FA99B;
+      --color-pending-fg: #1e1e20;
+    }
+  }
+
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  #container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    color: var(--color-fg);
+  }
+
+  #items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .item-card {
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 1rem;
+    background: var(--color-card-bg);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .item-card[open] {
+    grid-column: span 2;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.15);
+  }
+
+  .item-card:hover {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    transform: translateY(-2px);
+  }
+
+  .item-card[open]:hover {
+    transform: none;
+  }
+
+  .item-card summary {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    cursor: pointer;
+  }
+
+  .item-card summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .item-card summary::marker {
+    display: none;
+  }
+
+  .item-thumbnail {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .item-card[open] .item-thumbnail {
+    display: none;
+  }
+
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .item-card[open] summary .item-header {
+    display: none;
+  }
+
+  .item-title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    flex: 1;
+  }
+
+  .badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .badge-available {
+    background: var(--color-available);
+    color: white;
+  }
+
+  .badge-pending {
+    background: var(--color-pending);
+    color: var(--color-pending-fg);
+  }
+
+  .item-expanded {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    animation: fadeInExpand 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @keyframes fadeInExpand {
+    from {
+      opacity: 0;
+      transform: translateY(-20px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .item-full-image {
+    flex: 1;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .item-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .item-header-expanded {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .item-description {
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  #footer {
+    text-align: center;
+    color: var(--color-fg);
+    opacity: 0.6;
+    font-size: 0.875rem;
+    padding: 2rem 0;
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .item-card[open] {
+      grid-column: span 1;
+    }
+
+    .item-expanded {
+      flex-direction: column;
+    }
+
+    .item-full-image {
+      max-width: 100%;
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 900px) {
+    /* On smaller desktops/tablets, allow single column span if needed */
+    .item-card[open] {
+      grid-column: span 1;
+    }
+  }
+</style>
+</head>
+
+  <body>
+    <div id="container">
+      <h1>Free Items</h1>
+      <div id="items-grid">
+
+        <details class="item-card" name="free-items">
+          <summary>
+            <img src="whatsapp-items/Baby-Changing.jpeg" alt="Munchkin Secure Grip™ Changing Pad Rev 2.0" class="item-thumbnail" />
+            <div class="item-header">
+              <h3 class="item-title">Munchkin Secure Grip™ Changing Pad Rev 2.0</h3>
+              <span class="badge badge-available">Available</span>
+            </div>
+          </summary>
+          <div class="item-expanded">
+            <img src="whatsapp-items/Baby-Changing.jpeg" alt="Munchkin Secure Grip™ Changing Pad Rev 2.0" class="item-full-image" />
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Munchkin Secure Grip™ Changing Pad Rev 2.0</h3>
+                <span class="badge badge-available">Available</span>
+              </div>
+              <p class="item-description">Clean with extra linens. We would keep this, but we needed a smaller one</p>
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items">
+          <summary>
+            <img src="whatsapp-items/Bathroom-Shelf.jpeg" alt="MALMBÄCK IKEA Bathroom Shelf" class="item-thumbnail" />
+            <div class="item-header">
+              <h3 class="item-title">MALMBÄCK IKEA Bathroom Shelf</h3>
+              <span class="badge badge-available">Available</span>
+            </div>
+          </summary>
+          <div class="item-expanded">
+            <img src="whatsapp-items/Bathroom-Shelf.jpeg" alt="MALMBÄCK IKEA Bathroom Shelf" class="item-full-image" />
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">MALMBÄCK IKEA Bathroom Shelf</h3>
+                <span class="badge badge-available">Available</span>
+              </div>
+              <p class="item-description">Display shelf, white, 23 5/8"</p>
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items">
+          <summary>
+            <img src="whatsapp-items/Bedrom-Curtains.jpeg" alt="IKEA Bedroom Blackout Curtains" class="item-thumbnail" />
+            <div class="item-header">
+              <h3 class="item-title">IKEA Bedroom Blackout Curtains</h3>
+              <span class="badge badge-available">Available</span>
+            </div>
+          </summary>
+          <div class="item-expanded">
+            <img src="whatsapp-items/Bedrom-Curtains.jpeg" alt="IKEA Bedroom Blackout Curtains" class="item-full-image" />
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">IKEA Bedroom Blackout Curtains</h3>
+                <span class="badge badge-available">Available</span>
+              </div>
+              
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items">
+          <summary>
+            <img src="whatsapp-items/Home-Modem.jpeg" alt="ARRIS SurfBoard SB6141 Modem" class="item-thumbnail" />
+            <div class="item-header">
+              <h3 class="item-title">ARRIS SurfBoard SB6141 Modem</h3>
+              <span class="badge badge-available">Available</span>
+            </div>
+          </summary>
+          <div class="item-expanded">
+            <img src="whatsapp-items/Home-Modem.jpeg" alt="ARRIS SurfBoard SB6141 Modem" class="item-full-image" />
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">ARRIS SurfBoard SB6141 Modem</h3>
+                <span class="badge badge-available">Available</span>
+              </div>
+              <p class="item-description">I'm not sure if this will work with local providers, but if you're heading back to the US this modem is older, but still good</p>
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items">
+          <summary>
+            <img src="whatsapp-items/Home-Tray.jpeg" alt="Office Organizer Tray" class="item-thumbnail" />
+            <div class="item-header">
+              <h3 class="item-title">Office Organizer Tray</h3>
+              <span class="badge badge-available">Available</span>
+            </div>
+          </summary>
+          <div class="item-expanded">
+            <img src="whatsapp-items/Home-Tray.jpeg" alt="Office Organizer Tray" class="item-full-image" />
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Office Organizer Tray</h3>
+                <span class="badge badge-available">Available</span>
+              </div>
+              
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items">
+          <summary>
+            <img src="whatsapp-items/home-more-trays.jpeg" alt="More Organizer Trays" class="item-thumbnail" />
+            <div class="item-header">
+              <h3 class="item-title">More Organizer Trays</h3>
+              <span class="badge badge-available">Available</span>
+            </div>
+          </summary>
+          <div class="item-expanded">
+            <img src="whatsapp-items/home-more-trays.jpeg" alt="More Organizer Trays" class="item-full-image" />
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">More Organizer Trays</h3>
+                <span class="badge badge-available">Available</span>
+              </div>
+              
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items">
+          <summary>
+            <img src="whatsapp-items/House-World-Map.jpeg" alt="Framed World Map" class="item-thumbnail" />
+            <div class="item-header">
+              <h3 class="item-title">Framed World Map</h3>
+              <span class="badge badge-available">Available</span>
+            </div>
+          </summary>
+          <div class="item-expanded">
+            <img src="whatsapp-items/House-World-Map.jpeg" alt="Framed World Map" class="item-full-image" />
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Framed World Map</h3>
+                <span class="badge badge-available">Available</span>
+              </div>
+              <p class="item-description">Note that the outside of the frame is slightly damaged from a fall, but isn't visible when mounted. The glass and map are in good condition. The frame is from IKEA</p>
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items">
+          <summary>
+            <img src="whatsapp-items/Kitchen-Bowl.jpeg" alt="Large Wooden Serving Bowl" class="item-thumbnail" />
+            <div class="item-header">
+              <h3 class="item-title">Large Wooden Serving Bowl</h3>
+              <span class="badge badge-available">Available</span>
+            </div>
+          </summary>
+          <div class="item-expanded">
+            <img src="whatsapp-items/Kitchen-Bowl.jpeg" alt="Large Wooden Serving Bowl" class="item-full-image" />
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Large Wooden Serving Bowl</h3>
+                <span class="badge badge-available">Available</span>
+              </div>
+              <p class="item-description">Made in Thailand from Lipper International</p>
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items">
+          <summary>
+            <img src="whatsapp-items/Kitchen-Overdoor.jpeg" alt="Over the Cabinet Lid Organizer (Bronze)" class="item-thumbnail" />
+            <div class="item-header">
+              <h3 class="item-title">Over the Cabinet Lid Organizer (Bronze)</h3>
+              <span class="badge badge-available">Available</span>
+            </div>
+          </summary>
+          <div class="item-expanded">
+            <img src="whatsapp-items/Kitchen-Overdoor.jpeg" alt="Over the Cabinet Lid Organizer (Bronze)" class="item-full-image" />
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Over the Cabinet Lid Organizer (Bronze)</h3>
+                <span class="badge badge-available">Available</span>
+              </div>
+              <p class="item-description">5.25" L X 12.25" W X 19.25" H</p>
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items">
+          <summary>
+            <img src="whatsapp-items/Kitchen-Tray.jpeg" alt="Small Serving Tray" class="item-thumbnail" />
+            <div class="item-header">
+              <h3 class="item-title">Small Serving Tray</h3>
+              <span class="badge badge-available">Available</span>
+            </div>
+          </summary>
+          <div class="item-expanded">
+            <img src="whatsapp-items/Kitchen-Tray.jpeg" alt="Small Serving Tray" class="item-full-image" />
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Small Serving Tray</h3>
+                <span class="badge badge-available">Available</span>
+              </div>
+              <p class="item-description">From Michel Design Works</p>
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items">
+          <summary>
+            <img src="whatsapp-items/Shoes.jpeg" alt="Thousand Fell Men's Lace Up (Color Dune, 11.5 Men)" class="item-thumbnail" />
+            <div class="item-header">
+              <h3 class="item-title">Thousand Fell Men's Lace Up (Color Dune, 11.5 Men)</h3>
+              <span class="badge badge-available">Available</span>
+            </div>
+          </summary>
+          <div class="item-expanded">
+            <img src="whatsapp-items/Shoes.jpeg" alt="Thousand Fell Men's Lace Up (Color Dune, 11.5 Men)" class="item-full-image" />
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Thousand Fell Men's Lace Up (Color Dune, 11.5 Men)</h3>
+                <span class="badge badge-available">Available</span>
+              </div>
+              <p class="item-description">These shoes are brand new and never worn. They are great shoes, but not my style</p>
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items">
+          <summary>
+            <img src="whatsapp-items/Wallet-01-Flat.jpeg" alt="Scalpers Brown Leather Wallet" class="item-thumbnail" />
+            <div class="item-header">
+              <h3 class="item-title">Scalpers Brown Leather Wallet</h3>
+              <span class="badge badge-available">Available</span>
+            </div>
+          </summary>
+          <div class="item-expanded">
+            <img src="whatsapp-items/Wallet-01-Flat.jpeg" alt="Scalpers Brown Leather Wallet" class="item-full-image" />
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Scalpers Brown Leather Wallet</h3>
+                <span class="badge badge-available">Available</span>
+              </div>
+              <p class="item-description">I received this as a gift, but I had already gotten a new wallet. $30 USD or best offer. Made from 100% Cow Leather and never used and includes original tags if you would like to give it as a gift</p>
+            </div>
+          </div>
+        </details>
+        
+      </div>
+      <div id="footer">
+        Last updated: November 29, 2025 at 01:38 PM
+      </div>
+    </div>
+    
+  </body>
+</html>
