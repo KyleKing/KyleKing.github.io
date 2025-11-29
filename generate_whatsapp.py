@@ -205,6 +205,22 @@ HEAD_HTML = """
     font-size: 1.75rem;
     margin: 2rem 0 1.5rem 0;
     color: var(--color-fg);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .section-anchor {
+    text-decoration: none;
+    color: var(--color-available);
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .section-anchor:hover {
+    opacity: 1;
   }
 
   .items-grid {
@@ -241,12 +257,13 @@ HEAD_HTML = """
     gap: 0.75rem;
     cursor: pointer;
     position: relative;
+    padding-bottom: 1.5rem;
   }
 
   .item-card summary::after {
     content: "▼ Click to expand";
     position: absolute;
-    bottom: -0.5rem;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     font-size: 0.75rem;
@@ -451,7 +468,7 @@ HEAD_HTML = """
     width: calc(50% - 0.25rem);
     height: auto;
     max-height: 300px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 4px;
     flex-grow: 1;
   }
@@ -507,6 +524,10 @@ HEAD_HTML = """
   @media (max-width: 768px) {
     h1 {
       font-size: 2rem;
+    }
+
+    .item-card[open] {
+      grid-column: span 1;
     }
 
     .item-gallery img {
@@ -628,8 +649,8 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
         """)
 
         sections_html.append(f"""
-      <section class="items-section">
-        <h2 class="section-title">{section_title}</h2>
+      <section class="items-section" id="{status.value}">
+        <h2 class="section-title"><a href="#{status.value}" class="section-anchor">#</a>{section_title}</h2>
         <div class="items-grid">
           {"".join(items_html)}
         </div>

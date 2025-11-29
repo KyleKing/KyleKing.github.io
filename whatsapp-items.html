@@ -73,6 +73,22 @@
         font-size: 1.75rem;
         margin: 2rem 0 1.5rem 0;
         color: var(--color-fg);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .section-anchor {
+        text-decoration: none;
+        color: var(--color-available);
+        opacity: 0.6;
+        transition: opacity 0.2s ease;
+        font-size: 1.5rem;
+        line-height: 1;
+      }
+
+      .section-anchor:hover {
+        opacity: 1;
       }
 
       .items-grid {
@@ -109,12 +125,13 @@
         gap: 0.75rem;
         cursor: pointer;
         position: relative;
+        padding-bottom: 1.5rem;
       }
 
       .item-card summary::after {
         content: "▼ Click to expand";
         position: absolute;
-        bottom: -0.5rem;
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         font-size: 0.75rem;
@@ -319,7 +336,7 @@
         width: calc(50% - 0.25rem);
         height: auto;
         max-height: 300px;
-        object-fit: cover;
+        object-fit: contain;
         border-radius: 4px;
         flex-grow: 1;
       }
@@ -377,6 +394,10 @@
           font-size: 2rem;
         }
 
+        .item-card[open] {
+          grid-column: span 1;
+        }
+
         .item-gallery img {
           max-height: 300px;
           width: 100%;
@@ -394,12 +415,14 @@
       <h1>Free and Paid Items</h1>
       <p style="max-width: 600px; margin-right: auto; margin-left: auto">
         All items available for pickup on the East Side of Polanco. Message me
-        on WhatsApp to arrange a time. (Last updated: November 29, 2025 at 03:00
+        on WhatsApp to arrange a time. (Last updated: November 29, 2025 at 04:03
         PM)
       </p>
 
-      <section class="items-section">
-        <h2 class="section-title">Paid Items</h2>
+      <section class="items-section" id="paid">
+        <h2 class="section-title">
+          <a href="#paid" class="section-anchor">#</a>Paid Items
+        </h2>
         <div class="items-grid">
           <details
             class="item-card"
@@ -543,8 +566,10 @@
         </div>
       </section>
 
-      <section class="items-section">
-        <h2 class="section-title">Free Items</h2>
+      <section class="items-section" id="available">
+        <h2 class="section-title">
+          <a href="#available" class="section-anchor">#</a>Free Items
+        </h2>
         <div class="items-grid">
           <details
             class="item-card"
