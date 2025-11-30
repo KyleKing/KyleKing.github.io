@@ -47,7 +47,7 @@ ITEMS: list[Item] = [
             'I received this as a gift, but I had already gotten a new wallet.'
             ' Made from 100% Cow Leather and never used and includes original tags if you would like to'
             ' give it as a gift',
-            '$30 USD or best offer',
+            '$20 USD or best offer',
         ),
         (
             "Thousand Fell Men's Lace Up (Color Dune, 11.5 Men)",
@@ -55,7 +55,7 @@ ITEMS: list[Item] = [
             ItemStatus.PAID,
             'https://www.thousandfell.com/products/mens-lace-up-sneaker-white',
             "These shoes are great and brand new and never worn, but they aren't my style",
-            '$20 USD or best offer',
+            '$15 USD or best offer',
         ),
         (
             'Munchkin Secure Grip™ Changing Pad Rev 2.0',
@@ -68,7 +68,7 @@ ITEMS: list[Item] = [
         (
             'MALMBÄCK IKEA Bathroom Shelf',
             ('Bathroom-Shelf.jpeg',),
-            ItemStatus.AVAILABLE,
+            ItemStatus.PENDING,
             'https://www.ikea.com/us/en/p/malmbaeck-display-shelf-white-20446236',
             'Display shelf, white, 23 5/8"',
             '',
@@ -93,7 +93,7 @@ ITEMS: list[Item] = [
         (
             'Organizer Trays',
             ('Home-Tray.jpeg', 'home-more-trays.jpeg'),
-            ItemStatus.AVAILABLE,
+            ItemStatus.PENDING,
             '',
             '',
             '',
@@ -101,7 +101,7 @@ ITEMS: list[Item] = [
         (
             'Framed World Map',
             ('House-World-Map.jpeg',),
-            ItemStatus.AVAILABLE,
+            ItemStatus.PENDING,
             '',
             'While the IKEA frame has minor exterior damage from a fall, it is not visible when mounted. The glass and'
             ' map are in good condition',
@@ -110,7 +110,7 @@ ITEMS: list[Item] = [
         (
             'Large Wooden Serving Bowl',
             ('Kitchen-Bowl.jpeg',),
-            ItemStatus.AVAILABLE,
+            ItemStatus.PENDING,
             '',
             'Made in Thailand from Lipper International',
             '',
@@ -126,7 +126,7 @@ ITEMS: list[Item] = [
         (
             'Small Serving Tray',
             ('Kitchen-Tray.jpeg',),
-            ItemStatus.AVAILABLE,
+            ItemStatus.PENDING,
             '',
             'From Michel Design Works',
             '',
