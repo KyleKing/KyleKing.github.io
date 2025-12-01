@@ -40,6 +40,14 @@ ITEMS: list[Item] = [
     )
     for title, image_names, status, link, description, price in [
         (
+            'Newborn to 18M Girls Clothes and Shoes',
+            ('Baby-Clothes.jpeg',),
+            ItemStatus.PAID,
+            '',
+            'Brands include: Ten Little, Primary, North Face, Gap, H&M, Honest Baby, Burt’s Bees',
+            '$100 USD for everything or offer for a portion',
+        ),
+        (
             'Scalpers Brown Leather Wallet',
             ('Wallet-01-Flat.jpeg', 'Wallet-04-Back.jpeg'),
             ItemStatus.PAID,
@@ -47,7 +55,7 @@ ITEMS: list[Item] = [
             'I received this as a gift, but I had already gotten a new wallet.'
             ' Made from 100% Cow Leather and never used and includes original tags if you would like to'
             ' give it as a gift',
-            '$20 USD or best offer',
+            '$20 USD',
         ),
         (
             "Thousand Fell Men's Lace Up (Color Dune, 11.5 Men)",
@@ -63,14 +71,6 @@ ITEMS: list[Item] = [
             ItemStatus.AVAILABLE,
             'https://www.munchkin.com/secure-grip-changing-pad',
             'Clean with extra linens. We would keep this, but we needed a smaller one',
-            '',
-        ),
-        (
-            'MALMBÄCK IKEA Bathroom Shelf',
-            ('Bathroom-Shelf.jpeg',),
-            ItemStatus.PENDING,
-            'https://www.ikea.com/us/en/p/malmbaeck-display-shelf-white-20446236',
-            'Display shelf, white, 23 5/8"',
             '',
         ),
         (
@@ -108,27 +108,11 @@ ITEMS: list[Item] = [
             '',
         ),
         (
-            'Large Wooden Serving Bowl',
-            ('Kitchen-Bowl.jpeg',),
-            ItemStatus.PENDING,
-            '',
-            'Made in Thailand from Lipper International',
-            '',
-        ),
-        (
             'Over the Cabinet Lid Organizer (Bronze)',
             ('Kitchen-Overdoor.jpeg',),
             ItemStatus.AVAILABLE,
             'https://www.amazon.com/dp/B015EWKH2E?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_5',
             '5.25" L X 12.25" W X 19.25" H',
-            '',
-        ),
-        (
-            'Small Serving Tray',
-            ('Kitchen-Tray.jpeg',),
-            ItemStatus.PENDING,
-            '',
-            'From Michel Design Works',
             '',
         ),
     ]
@@ -559,9 +543,9 @@ document.addEventListener('keydown', (e) => {
 
 def _generate_html(items: list[Item], last_updated: datetime) -> str:
     status_badge_html = {
+        ItemStatus.PAID: '<span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>',
         ItemStatus.AVAILABLE: '<span class="badge badge-available" role="status" aria-label="Status: Available">Available</span>',
         ItemStatus.PENDING: '<span class="badge badge-pending" role="status" aria-label="Status: Pending Pickup">Pending Pickup</span>',
-        ItemStatus.PAID: '<span class="badge badge-paid" role="status" aria-label="Status: Paid">Paid</span>',
     }
 
     section_config = [
