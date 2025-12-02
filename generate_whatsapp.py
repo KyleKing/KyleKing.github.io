@@ -40,14 +40,6 @@ ITEMS: list[Item] = [
     )
     for title, image_names, status, link, description, price in [
         (
-            'Newborn to 18M Girls Clothes and Shoes',
-            ('Baby-Clothes.jpeg',),
-            ItemStatus.PAID,
-            '',
-            'Brands include: Ten Little, Primary, North Face, Gap, H&M, Honest Baby, Burt’s Bees',
-            '$100 USD for everything or offer for a portion',
-        ),
-        (
             'Scalpers Brown Leather Wallet',
             ('Wallet-01-Flat.jpeg', 'Wallet-04-Back.jpeg'),
             ItemStatus.PAID,
@@ -76,7 +68,7 @@ ITEMS: list[Item] = [
         (
             'IKEA Bedroom Blackout Curtains',
             ('Bedrom-Curtains.jpeg',),
-            ItemStatus.AVAILABLE,
+            ItemStatus.PENDING,
             'https://www.ikea.com/us/en/p/vilborg-room-darkening-curtains-1-pair-beige-with-heading-tape-00297553',
             '',
             '',
@@ -110,7 +102,7 @@ ITEMS: list[Item] = [
         (
             'Over the Cabinet Lid Organizer (Bronze)',
             ('Kitchen-Overdoor.jpeg',),
-            ItemStatus.AVAILABLE,
+            ItemStatus.PENDING,
             'https://www.amazon.com/dp/B015EWKH2E?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_5',
             '5.25" L X 12.25" W X 19.25" H',
             '',
