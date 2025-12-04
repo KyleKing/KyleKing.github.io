@@ -66,14 +66,6 @@ ITEMS: list[Item] = [
             '',
         ),
         (
-            'IKEA Bedroom Blackout Curtains',
-            ('Bedrom-Curtains.jpeg',),
-            ItemStatus.PENDING,
-            'https://www.ikea.com/us/en/p/vilborg-room-darkening-curtains-1-pair-beige-with-heading-tape-00297553',
-            '',
-            '',
-        ),
-        (
             'ARRIS SurfBoard SB6141 Modem',
             ('Home-Modem.jpeg',),
             ItemStatus.AVAILABLE,
@@ -97,14 +89,6 @@ ITEMS: list[Item] = [
             '',
             'While the IKEA frame has minor exterior damage from a fall, it is not visible when mounted. The glass and'
             ' map are in good condition',
-            '',
-        ),
-        (
-            'Over the Cabinet Lid Organizer (Bronze)',
-            ('Kitchen-Overdoor.jpeg',),
-            ItemStatus.PENDING,
-            'https://www.amazon.com/dp/B015EWKH2E?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_5',
-            '5.25" L X 12.25" W X 19.25" H',
             '',
         ),
     ]
