@@ -47,7 +47,7 @@ ITEMS: list[Item] = [
             'I received this as a gift, but I had already gotten a new wallet.'
             ' Made from 100% Cow Leather and never used and includes original tags if you would like to'
             ' give it as a gift',
-            '$30 USD or best offer',
+            '$20 USD',
         ),
         (
             "Thousand Fell Men's Lace Up (Color Dune, 11.5 Men)",
@@ -55,7 +55,7 @@ ITEMS: list[Item] = [
             ItemStatus.PAID,
             'https://www.thousandfell.com/products/mens-lace-up-sneaker-white',
             "These shoes are great and brand new and never worn, but they aren't my style",
-            '$20 USD or best offer',
+            '$15 USD or best offer',
         ),
         (
             'Munchkin Secure Grip™ Changing Pad Rev 2.0',
@@ -66,69 +66,12 @@ ITEMS: list[Item] = [
             '',
         ),
         (
-            'MALMBÄCK IKEA Bathroom Shelf',
-            ('Bathroom-Shelf.jpeg',),
-            ItemStatus.AVAILABLE,
-            'https://www.ikea.com/us/en/p/malmbaeck-display-shelf-white-20446236',
-            'Display shelf, white, 23 5/8"',
-            '',
-        ),
-        (
-            'IKEA Bedroom Blackout Curtains',
-            ('Bedrom-Curtains.jpeg',),
-            ItemStatus.AVAILABLE,
-            'https://www.ikea.com/us/en/p/vilborg-room-darkening-curtains-1-pair-beige-with-heading-tape-00297553',
-            '',
-            '',
-        ),
-        (
             'ARRIS SurfBoard SB6141 Modem',
             ('Home-Modem.jpeg',),
             ItemStatus.AVAILABLE,
             'https://www.amazon.com/ARRIS-SURFboard-SB6141-DOCSIS-Cable/dp/B00AJHDZSI',
             "We can't use this modem with Telmex because it requires a regular Ethernet hookup, but it may"
             ' work with other providers. While older, this works well and I would keep it if we had a use for it',
-            '',
-        ),
-        (
-            'Organizer Trays',
-            ('Home-Tray.jpeg', 'home-more-trays.jpeg'),
-            ItemStatus.AVAILABLE,
-            '',
-            '',
-            '',
-        ),
-        (
-            'Framed World Map',
-            ('House-World-Map.jpeg',),
-            ItemStatus.AVAILABLE,
-            '',
-            'While the IKEA frame has minor exterior damage from a fall, it is not visible when mounted. The glass and'
-            ' map are in good condition',
-            '',
-        ),
-        (
-            'Large Wooden Serving Bowl',
-            ('Kitchen-Bowl.jpeg',),
-            ItemStatus.AVAILABLE,
-            '',
-            'Made in Thailand from Lipper International',
-            '',
-        ),
-        (
-            'Over the Cabinet Lid Organizer (Bronze)',
-            ('Kitchen-Overdoor.jpeg',),
-            ItemStatus.AVAILABLE,
-            'https://www.amazon.com/dp/B015EWKH2E?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_5',
-            '5.25" L X 12.25" W X 19.25" H',
-            '',
-        ),
-        (
-            'Small Serving Tray',
-            ('Kitchen-Tray.jpeg',),
-            ItemStatus.AVAILABLE,
-            '',
-            'From Michel Design Works',
             '',
         ),
     ]
@@ -205,6 +148,22 @@ HEAD_HTML = """
     font-size: 1.75rem;
     margin: 2rem 0 1.5rem 0;
     color: var(--color-fg);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .section-anchor {
+    text-decoration: none;
+    color: var(--color-available);
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .section-anchor:hover {
+    opacity: 1;
   }
 
   .items-grid {
@@ -241,12 +200,13 @@ HEAD_HTML = """
     gap: 0.75rem;
     cursor: pointer;
     position: relative;
+    padding-bottom: 1.5rem;
   }
 
   .item-card summary::after {
     content: "▼ Click to expand";
     position: absolute;
-    bottom: -0.5rem;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     font-size: 0.75rem;
@@ -451,7 +411,7 @@ HEAD_HTML = """
     width: calc(50% - 0.25rem);
     height: auto;
     max-height: 300px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 4px;
     flex-grow: 1;
   }
@@ -509,6 +469,10 @@ HEAD_HTML = """
       font-size: 2rem;
     }
 
+    .item-card[open] {
+      grid-column: span 1;
+    }
+
     .item-gallery img {
       max-height: 300px;
       width: 100%;
@@ -538,9 +502,9 @@ document.addEventListener('keydown', (e) => {
 
 def _generate_html(items: list[Item], last_updated: datetime) -> str:
     status_badge_html = {
+        ItemStatus.PAID: '<span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>',
         ItemStatus.AVAILABLE: '<span class="badge badge-available" role="status" aria-label="Status: Available">Available</span>',
         ItemStatus.PENDING: '<span class="badge badge-pending" role="status" aria-label="Status: Pending Pickup">Pending Pickup</span>',
-        ItemStatus.PAID: '<span class="badge badge-paid" role="status" aria-label="Status: Paid">Paid</span>',
     }
 
     section_config = [
@@ -628,8 +592,8 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
         """)
 
         sections_html.append(f"""
-      <section class="items-section">
-        <h2 class="section-title">{section_title}</h2>
+      <section class="items-section" id="{status.value}">
+        <h2 class="section-title"><a href="#{status.value}" class="section-anchor">#</a>{section_title}</h2>
         <div class="items-grid">
           {"".join(items_html)}
         </div>
