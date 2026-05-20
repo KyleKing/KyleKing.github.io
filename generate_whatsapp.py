@@ -11,12 +11,13 @@ from dataclasses import dataclass
 from datetime import UTC, datetime
 from enum import StrEnum
 from pathlib import Path
+from textwrap import dedent
 
 
 class ItemStatus(StrEnum):
-    AVAILABLE = 'available'
-    PENDING = 'pending'
+    FREE = 'free'
     PAID = 'paid'
+    PENDING = 'pending'
 
 
 @dataclass(frozen=True)
@@ -26,7 +27,7 @@ class Item:
     status: ItemStatus
     link: str
     description: str
-    price: str = ''
+    price: str
 
 
 ITEMS: list[Item] = [
@@ -40,22 +41,192 @@ ITEMS: list[Item] = [
     )
     for title, image_names, status, link, description, price in [
         (
+            'Pantry Items',
+            (
+                '0-Food.jpeg',
+                'Food-Unopened.jpeg',
+                'Food-Salt.jpeg',
+                'Food-Bottles.jpeg',
+                'Food-Spices.jpeg',
+                'Food-FetaGoat.jpeg',
+            ),
+            ItemStatus.FREE,
+            '',
+            dedent("""\
+            We aren't leaving for a year, but when we had a chef, he bought either duplicate items or ingredients that
+            we wouldn't otherwise use. Feel free to take only a few items rather than all. A few items are unopened and
+            brand new"""),
+            '',
+        ),
+        (
+            '7 Wonders',
+            ('Games-7Wonders-Open.jpeg', 'Games-7Wonders-Box.jpeg'),
+            ItemStatus.PAID,
+            'https://boardgamegeek.com/boardgame/68448/7-wonders',
+            dedent("""\
+            Played three times and in very good condition!"""),
+            '$20 USD',
+        ),
+        (
+            "WE'RE NOT REALLY STRANGERS Couple's Edition",
+            ('Games-CouplesEdition-Open.jpeg',),
+            ItemStatus.PAID,
+            'https://www.amazon.com/WERE-NOT-REALLY-STRANGERS-Strangers/dp/B0B7V56B7H',
+            dedent("""\
+            We received this as a gift, but have never played it. Like new condition"""),
+            '$5 USD',
+        ),
+        (
+            'Decrypto (Limited 5th Edition Box)',
+            ('Games-Decrypto-1.jpeg', 'Games-Decrypto-2.jpeg', 'Games-Decrypto-3.jpeg'),
+            ItemStatus.PAID,
+            'https://boardgamegeek.com/boardgame/225694/decrypto',
+            dedent("""\
+            New in shrink wrap because I accidentally ordered two and I can't figure out how?"""),
+            '$25 USD',
+        ),
+        (
+            'Geared (Kickstarter Edition)',
+            ('Games-Geared-Open.jpeg', 'Games-Geared-Box.jpeg'),
+            ItemStatus.PAID,
+            'https://www.kickstarter.com/projects/815894852/geared-build-your-bike',
+            dedent("""\
+            Played five or so timtes and in very good condition!"""),
+            '$5 USD',
+        ),
+        (
+            'Love Letter',
+            ('Games-LoveLetter-Open.jpeg', 'Games-LoveLetter-Box.jpeg'),
+            ItemStatus.PAID,
+            'https://boardgamegeek.com/boardgame/129622/love-letter',
+            dedent("""\
+            Played a dozen times and in very good condition!"""),
+            '$7 USD',
+        ),
+        (
+            'Sushi Go',
+            ('Games-SushiGo-Open.jpeg', 'Games-SushiGo-Box.jpeg'),
+            ItemStatus.PAID,
+            'https://boardgamegeek.com/boardgame/133473/sushi-go',
+            dedent("""\
+            Played around ten times and in very good condition!"""),
+            '$5 USD',
+        ),
+        (
+            'Tsuro',
+            (
+                'Games-Tsuro-Open-2.jpeg',
+                'Games-Tsuro-Open.jpeg',
+                'Games-Tsuro-Box.jpeg',
+            ),
+            ItemStatus.PAID,
+            'https://www.amazon.com/dp/B002SQBB3O?tag=itemtext-boardgamegeek-20&linkCode=ogi&th=1&psc=1',
+            dedent("""\
+            Played around ten times and in very good condition!"""),
+            '$20 USD',
+        ),
+        (
+            'Tony Box (Broken! For parts)',
+            ('Home-BrokenTony-1.jpeg', 'Home-BrokenTony.jpeg'),
+            ItemStatus.FREE,
+            '',
+            dedent("""\
+            We have already received a replacement, because the first one would suddenly stop playing and shutdown. They
+            never clarified what was wrong, but the speakers, battery, and other parts might be of interest? I no
+            longer have a soldering iron or raspberry pi to take advantage of it"""),
+            '',
+        ),
+        (
+            'Causa Forcia Turkish Cotton Handkerchiefs',
+            ('Home-Kerchiefs.jpeg',),
+            ItemStatus.PAID,
+            'https://www.amazon.com/dp/B08D3CYZ1L?ref=ppx_yo2ov_dt_b_fed_asin_title',
+            dedent("""\
+            This came with too many for one person, so I have four available that are brand new"""),
+            '$5 USD',
+        ),
+        (
+            'Amazon Basics Exercise/Yoga Mat',
+            ('Home-Mat.jpeg',),
+            ItemStatus.FREE,
+            '',
+            dedent("""\
+            Lightly used exercise mat and properly cleaned. Not sure if anyone will have a use for this?"""),
+            '',
+        ),
+        (
+            'Assorted Velcro Sanding Discs with Drill Attachment Pad',
+            ('Home-Sanding.jpeg',),
+            ItemStatus.FREE,
+            'https://www.amazon.com/dp/B088CXY3X5?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1',
+            dedent("""\
+            These work ok, but I needed to resurface a wooden bowl, which required buying a stronger orbital sander"""),
+            '',
+        ),
+        (
+            "Dr. Brown's Bottles, Formula Mixer, and Dishwasher Contraption",
+            ('Kids-Bottles.jpeg',),
+            ItemStatus.FREE,
+            '',
+            dedent("""\
+            Our oldest loved these bottles and was fine with cold formula from the mixer, but our youngest prefers an
+            entirely different brand, which is just how it goes. These are all like new and free or pay what you want!"""),
+            '',
+        ),
+        (
+            'Breast Milk Storage Bags',
+            ('Kids-Bags.jpeg',),
+            ItemStatus.FREE,
+            '',
+            dedent("""\
+            These are brand new and unused"""),
+            '',
+        ),
+        (
+            'Reusable Water Balloons',
+            ('Kids-Balloons.jpeg',),
+            ItemStatus.FREE,
+            '',
+            dedent("""\
+            Our kids are too young for these, so free or pay-what-you-want for anyone who would be interested in them"""),
+            '',
+        ),
+        (
+            'VIGRUE 175PCS Assorted Concrete Screws Kit',
+            ('Home-Nails.jpeg',),
+            ItemStatus.PAID,
+            'https://www.amazon.com/dp/B0CJT845WJ?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1',
+            dedent("""\
+            We bought this last year, but ended up not needing it"""),
+            '$10 USD',
+        ),
+        (
             'Scalpers Brown Leather Wallet',
             ('Wallet-01-Flat.jpeg', 'Wallet-04-Back.jpeg'),
             ItemStatus.PAID,
             'https://en.ww.scalperscompany.com/products/61778-scmondit-free-wallet-aw2526-brown',
-            'I received this as a gift, but I had already gotten a new wallet.'
-            ' Made from 100% Cow Leather and never used and includes original tags if you would like to'
-            ' give it as a gift',
+            dedent("""\
+            I received this as a gift, but I had already gotten a new wallet. Made from 100% Cow Leather.
+            The wallet has the original tags, if you would like to give it as a gift"""),
             '$20 USD',
         ),
         (
             'ARRIS SurfBoard SB6141 Modem',
             ('Home-Modem.jpeg',),
-            ItemStatus.AVAILABLE,
+            ItemStatus.FREE,
             'https://www.amazon.com/ARRIS-SURFboard-SB6141-DOCSIS-Cable/dp/B00AJHDZSI',
-            "We can't use this modem with Telmex because it requires a regular Ethernet hookup, but it may"
-            ' work with other providers. While older, this works well and I would keep it if we had a use for it',
+            dedent("""\
+            We can't use this modem with Telmex because it requires a regular Ethernet hookup, but it may work with other providers here or be useful for parts"""),
+            '',
+        ),
+        (
+            'IKEA Hugad Curtain Rod (Rod only)',
+            ('Home-Rod-0.jpeg', 'Home-Rod-2.jpeg'),
+            ItemStatus.FREE,
+            'https://www.ikea.com/us/en/p/hugad-curtain-rod-white-10217141/#content',
+            dedent("""\
+            We gave away the blackout curtains that we used with this rod, but I didn't find it until doing
+            a deep clean this week. Free to anyone who could use it!"""),
             '',
         ),
     ]
@@ -86,7 +257,7 @@ HEAD_HTML = """
     --color-fg: #364547;
     --color-border: #C8DBBB;
     --color-card-bg: #ffffff;
-    --color-available: #7FA99B;
+    --color-free: #7FA99B;
     --color-paid: #E8A87C;
     --color-pending: #C8DBBB;
     --color-pending-fg: #364547;
@@ -97,7 +268,7 @@ HEAD_HTML = """
       --color-fg: #C8DBBB;
       --color-border: #364547;
       --color-card-bg: #2a2a2c;
-      --color-available: #7FA99B;
+      --color-free: #7FA99B;
       --color-paid: #E8A87C;
       --color-pending: #7FA99B;
       --color-pending-fg: #1e1e20;
@@ -139,7 +310,7 @@ HEAD_HTML = """
 
   .section-anchor {
     text-decoration: none;
-    color: var(--color-available);
+    color: var(--color-free);
     opacity: 0.6;
     transition: opacity 0.2s ease;
     font-size: 1.5rem;
@@ -174,7 +345,7 @@ HEAD_HTML = """
   .item-card:hover:not([open]) {
     box-shadow: 0 2px 4px -1px rgb(0 0 0 / 0.1);
     transform: translateY(-2px);
-    border-color: var(--color-available);
+    border-color: var(--color-free);
   }
 
   .item-card summary {
@@ -194,7 +365,7 @@ HEAD_HTML = """
     left: 50%;
     transform: translateX(-50%);
     font-size: 0.75rem;
-    color: var(--color-available);
+    color: var(--color-free);
     opacity: 0.7;
     transition: all 0.2s ease;
     padding: 0.5rem 1rem;
@@ -207,7 +378,7 @@ HEAD_HTML = """
   }
 
   .item-card summary:focus-visible {
-    outline: 2px solid var(--color-available);
+    outline: 2px solid var(--color-free);
     outline-offset: 2px;
   }
 
@@ -225,7 +396,7 @@ HEAD_HTML = """
     right: 0.5rem;
     width: 2.5rem;
     height: 2.5rem;
-    background: var(--color-available);
+    background: var(--color-free);
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -350,8 +521,8 @@ HEAD_HTML = """
     white-space: nowrap;
   }
 
-  .badge-available {
-    background: var(--color-available);
+  .badge-free {
+    background: var(--color-free);
     color: white;
   }
 
@@ -433,7 +604,7 @@ HEAD_HTML = """
     display: block;
     margin: 0.5rem auto 0;
     padding: 0.75rem 1.5rem;
-    background-color: var(--color-available);
+    background-color: var(--color-free);
     color: white;
     text-decoration: none;
     border-radius: 6px;
@@ -487,13 +658,13 @@ document.addEventListener('keydown', (e) => {
 def _generate_html(items: list[Item], last_updated: datetime) -> str:
     status_badge_html = {
         ItemStatus.PAID: '<span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>',
-        ItemStatus.AVAILABLE: '<span class="badge badge-available" role="status" aria-label="Status: Available">Available</span>',
+        ItemStatus.FREE: '<span class="badge badge-free" role="status" aria-label="Status: Available">Available</span>',
         ItemStatus.PENDING: '<span class="badge badge-pending" role="status" aria-label="Status: Pending Pickup">Pending Pickup</span>',
     }
 
     section_config = [
         (ItemStatus.PAID, 'Paid Items'),
-        (ItemStatus.AVAILABLE, 'Free Items'),
+        (ItemStatus.FREE, 'Free Items'),
         (ItemStatus.PENDING, 'Pending Pickup'),
     ]
 
@@ -515,7 +686,7 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
                 else ''
             )
             link_html = (
-                f'<a href="{item.link}" target="_blank" class="item-link">View Original Product Link</a>'
+                f'<a href="{item.link}" target="_blank" class="item-link">External Reference Link</a>'
                 if item.link
                 else ''
             )
@@ -590,7 +761,8 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
 <body>
   <main id="container">
     <h1>Free and Paid Items</h1>
-    <p style="max-width: 600px; margin-right: auto; margin-left: auto;">All items available for pickup on the East Side of Polanco. Message me on WhatsApp to arrange a time. (Last updated: {last_updated.strftime("%B %d, %Y at %I:%M %p")})</p>
+    <p style="max-width: 600px; margin-right: auto; margin-left: auto;">All items available for pickup on the East side
+    of Polanco near Liverpool. Prices are roughly half of Amazon. Message me on WhatsApp to arrange a time. (Last updated: {last_updated.strftime("%B %d, %Y at %I:%M %p")})</p>
     {"".join(sections_html)}
   </main>
   {SCRIPT_HTML}
