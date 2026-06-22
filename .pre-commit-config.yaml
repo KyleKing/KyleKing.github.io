@@ -34,6 +34,7 @@ repos:
       - id: mixed-line-ending
         args: [--fix=auto]
       - id: trailing-whitespace
+        exclude: ^whatsapp-items\.html$
   - repo: https://github.com/commitizen-tools/commitizen
     rev: v4.10.0
     hooks:
@@ -53,3 +54,12 @@ repos:
     rev: v4.0.0-alpha.8
     hooks:
       - id: prettier
+        exclude: ^whatsapp-items\.html$
+  - repo: local
+    hooks:
+      - id: generate-whatsapp
+        name: generate whatsapp page
+        language: system
+        entry: python generate_whatsapp.py
+        files: ^(generate_whatsapp\.py|whatsapp-items/.*)$
+        pass_filenames: false
