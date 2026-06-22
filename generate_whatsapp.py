@@ -77,6 +77,16 @@ ITEMS: list[Item] = [
             '$5 or MX$100',
         ),
         (
+            'Ticket to Ride Europe + 1912 Expansion',
+            ( 'Games-TTR-Open.jpeg', 'Games-TTR-Box.jpeg',),
+            ItemStatus.PAID,
+            'https://boardgamegeek.com/boardgameexpansion/53383/ticket-to-ride-europa-1912',
+            dedent("""\
+            Such a great game, but I now have too many games. I would be willing to sell the Europa expansion
+            separately (~$12), but I no longer have the box for it"""),
+            '$35 or MX$700',
+        ),
+        (
             'Whirling Witchraft',
             ( 'Games-WW-Open.jpeg', 'Games-WW-Box.jpeg',),
             ItemStatus.PAID,
@@ -112,15 +122,6 @@ ITEMS: list[Item] = [
             '',
         ),
         (
-            'Causa Forcia Turkish Cotton Handkerchiefs',
-            ('Home-Kerchiefs.jpeg',),
-            ItemStatus.PAID,
-            'https://www.amazon.com/dp/B08D3CYZ1L?ref=ppx_yo2ov_dt_b_fed_asin_title',
-            dedent("""\
-            This came with too many for one person, so I have four available that are brand new"""),
-            '$5 or MX$100',
-        ),
-        (
             'Assorted Velcro Sanding Discs with Drill Attachment Pad',
             ('Home-Sanding.jpeg',),
             ItemStatus.FREE,
@@ -131,19 +132,18 @@ ITEMS: list[Item] = [
         ),
         (
             'Kate Spade Macaron Mug',
-            ('Home-KS-Mug-Down.jpeg', 'Home-KS-Mug-Up.jpeg',),
+            ('Home-KS-Mug-Up.jpeg', 'Home-KS-Mug-Down.jpeg',),
             ItemStatus.FREE,
             '',
             '',
             '',
         ),
         (
-            'Breast Milk Storage Bags',
-            ('Kids-Bags.jpeg',),
+            'Away Orange Drawstring Kids Bag',
+            ('Home-AWay-Bag.jpeg',),
             ItemStatus.FREE,
             '',
-            dedent("""\
-            These are brand new and unused"""),
+            'This came with an Away suitcase and sized smaller than most drawstring bags, but we don\'t have a use for it',
             '',
         ),
         (

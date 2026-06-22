@@ -63,3 +63,4 @@ repos:
         entry: python generate_whatsapp.py
         files: ^(generate_whatsapp\.py|whatsapp-items/.*)$
         pass_filenames: false
+        stages: [pre-commit]

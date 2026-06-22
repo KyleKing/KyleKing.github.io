@@ -1,1543 +1,916 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Free and paid items available for pickup in Polanco"
-    />
-    <title>Free Items</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
-      rel="stylesheet"
-    />
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Free and paid items available for pickup in Polanco" />
+<title>Free Items</title>
 
-    <style>
-      /* Color palette from Color Hunt - Calm & Natural theme
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+  rel="stylesheet"
+/>
+
+<style>
+  /* Color palette from Color Hunt - Calm & Natural theme
      https://colorhunt.co/palette/364547-7fa99b-c8dbbe-f7f7e8
      Primary: #364547 (dark teal), #7FA99B (sage green)
      Secondary: #C8DBBB (soft mint), #F7F7E8 (cream)
   */
-      :root {
-        --color-bg: #f7f7e8;
-        --color-fg: #364547;
-        --color-border: #c8dbbb;
-        --color-card-bg: #ffffff;
-        --color-free: #7fa99b;
-        --color-paid: #e8a87c;
-        --color-pending: #c8dbbb;
-        --color-pending-fg: #364547;
-      }
-      @media (prefers-color-scheme: dark) {
-        body {
-          --color-bg: #1e1e20;
-          --color-fg: #c8dbbb;
-          --color-border: #364547;
-          --color-card-bg: #2a2a2c;
-          --color-free: #7fa99b;
-          --color-paid: #e8a87c;
-          --color-pending: #7fa99b;
-          --color-pending-fg: #1e1e20;
-        }
-      }
+  :root {
+    --color-bg: #F7F7E8;
+    --color-fg: #364547;
+    --color-border: #C8DBBB;
+    --color-card-bg: #ffffff;
+    --color-free: #7FA99B;
+    --color-paid: #E8A87C;
+    --color-pending: #C8DBBB;
+    --color-pending-fg: #364547;
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+      --color-bg: #1e1e20;
+      --color-fg: #C8DBBB;
+      --color-border: #364547;
+      --color-card-bg: #2a2a2c;
+      --color-free: #7FA99B;
+      --color-paid: #E8A87C;
+      --color-pending: #7FA99B;
+      --color-pending-fg: #1e1e20;
+    }
+  }
 
-      body {
-        background: var(--color-bg);
-        color: var(--color-fg);
-        font-family: "Roboto", sans-serif;
-        margin: 0;
-        padding: 1rem;
-      }
+  body {
+    background: var(--color-bg);
+    color: var(--color-fg);
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 1rem;
+  }
 
-      #container {
-        max-width: 1200px;
-        margin: 0 auto;
-      }
+  #container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
-      h1 {
-        text-align: center;
-        font-size: 2.5rem;
-        margin: 2rem 0;
-        color: var(--color-fg);
-      }
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    color: var(--color-fg);
+  }
 
-      .items-section {
-        margin-bottom: 3rem;
-      }
+  .items-section {
+    margin-bottom: 3rem;
+  }
 
-      .section-title {
-        font-size: 1.75rem;
-        margin: 2rem 0 1.5rem 0;
-        color: var(--color-fg);
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-      }
+  .section-title {
+    font-size: 1.75rem;
+    margin: 2rem 0 1.5rem 0;
+    color: var(--color-fg);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
-      .section-anchor {
-        text-decoration: none;
-        color: var(--color-free);
-        opacity: 0.6;
-        transition: opacity 0.2s ease;
-        font-size: 1.5rem;
-        line-height: 1;
-      }
+  .section-anchor {
+    text-decoration: none;
+    color: var(--color-free);
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
 
-      .section-anchor:hover {
-        opacity: 1;
-      }
+  .section-anchor:hover {
+    opacity: 1;
+  }
 
-      .items-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 1rem;
-      }
+  .items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+  }
 
-      .item-card {
-        border: 1px solid var(--color-border);
-        border-radius: 8px;
-        padding: 1rem;
-        background: var(--color-card-bg);
-        overflow: visible;
-        transition: all 0.2s ease;
-        position: relative;
-      }
+  .item-card {
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    padding: 1rem;
+    background: var(--color-card-bg);
+    overflow: visible;
+    transition: all 0.2s ease;
+    position: relative;
+  }
 
-      .item-card[open] {
-        grid-column: span 2;
-        box-shadow: 0 6px 12px -2px rgb(0 0 0 / 0.15);
-      }
+  .item-card[open] {
+    grid-column: span 2;
+    box-shadow: 0 6px 12px -2px rgb(0 0 0 / 0.15);
+  }
 
-      .item-card:hover:not([open]) {
-        box-shadow: 0 2px 4px -1px rgb(0 0 0 / 0.1);
-        transform: translateY(-2px);
-        border-color: var(--color-free);
-      }
+  .item-card:hover:not([open]) {
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 0.1);
+    transform: translateY(-2px);
+    border-color: var(--color-free);
+  }
 
-      .item-card summary {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
-        cursor: pointer;
-        position: relative;
-        padding-bottom: 1.5rem;
-      }
+  .item-card summary {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 1.5rem;
+  }
 
-      .item-card summary::after {
-        content: "▼ Click to expand";
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 0.75rem;
-        color: var(--color-free);
-        opacity: 0.7;
-        transition: all 0.2s ease;
-        padding: 0.5rem 1rem;
-        margin: -0.75rem -1rem;
-        font-weight: 500;
-      }
+  .item-card summary::after {
+    content: "▼ Click to expand";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.75rem;
+    color: var(--color-free);
+    opacity: 0.7;
+    transition: all 0.2s ease;
+    padding: 0.5rem 1rem;
+    margin: -0.75rem -1rem;
+    font-weight: 500;
+  }
 
-      .item-card[open] summary::after {
-        content: "";
-      }
+  .item-card[open] summary::after {
+    content: "";
+  }
 
-      .item-card summary:focus-visible {
-        outline: 2px solid var(--color-free);
-        outline-offset: 2px;
-      }
+  .item-card summary:focus-visible {
+    outline: 2px solid var(--color-free);
+    outline-offset: 2px;
+  }
 
-      .item-card summary::-webkit-details-marker {
-        display: none;
-      }
+  .item-card summary::-webkit-details-marker {
+    display: none;
+  }
 
-      .item-card summary::marker {
-        display: none;
-      }
+  .item-card summary::marker {
+    display: none;
+  }
 
-      .close-button {
-        position: absolute;
-        top: 0.5rem;
-        right: 0.5rem;
-        width: 2.5rem;
-        height: 2.5rem;
-        background: var(--color-free);
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 10;
-        padding: 0;
-        transition: opacity 0.2s ease;
-      }
+  .close-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: var(--color-free);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    padding: 0;
+    transition: opacity 0.2s ease;
+  }
 
-      .close-button:focus-visible {
-        outline: 2px solid var(--color-fg);
-        outline-offset: 2px;
-      }
+  .close-button:focus-visible {
+    outline: 2px solid var(--color-fg);
+    outline-offset: 2px;
+  }
 
-      .close-button::before {
-        content: "✕";
-        color: white;
-        font-size: 1.25rem;
-        font-weight: bold;
-      }
+  .close-button::before {
+    content: "✕";
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
 
-      .item-card[open]:not(:hover) .close-button {
-        opacity: 0.5;
-      }
+  .item-card[open]:not(:hover) .close-button {
+    opacity: 0.5;
+  }
 
-      .item-card[open] .close-button:hover {
-        opacity: 1;
-      }
+  .item-card[open] .close-button:hover {
+    opacity: 1;
+  }
 
-      .item-thumbnail-container {
-        width: 100%;
-        height: 200px;
-        border-radius: 4px;
-        overflow: hidden;
-        position: relative;
-      }
+  .item-thumbnail-container {
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
 
-      .item-thumbnail-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: opacity 0.2s ease;
-      }
+  .item-thumbnail-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.2s ease;
+  }
 
-      .image-count {
-        position: absolute;
-        bottom: 0.5rem;
-        right: 0.5rem;
-        background: rgba(0, 0, 0, 0.6);
-        color: white;
-        padding: 0.25rem 0.5rem;
-        border-radius: 4px;
-        font-size: 0.75rem;
-        font-weight: 500;
-      }
+  .image-count {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
 
-      .sr-only {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border-width: 0;
-      }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
 
-      .item-card[open] .item-thumbnail-container {
-        display: none;
-      }
+  .item-card[open] .item-thumbnail-container {
+    display: none;
+  }
 
-      .item-header {
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-        min-height: 3rem;
-        padding-bottom: 0;
-      }
+  .item-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    min-height: 3rem;
+    padding-bottom: 0;
+  }
 
-      .item-header-row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0.5rem;
-      }
+  .item-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
-      .item-price-closed {
-        font-size: 1rem;
-        font-weight: 500;
-        color: var(--color-paid);
-        margin: 0;
-      }
+  .item-price-closed {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-paid);
+    margin: 0;
+  }
 
-      .item-card[open] summary .item-header {
-        display: none;
-      }
+  .item-card[open] summary .item-header {
+    display: none;
+  }
 
-      .item-title {
-        margin: 0;
-        font-size: 1.25rem;
-        font-weight: 500;
-        flex: 1;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-      }
+  .item-title {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 
-      .item-card[open] .item-title {
-        -webkit-line-clamp: unset;
-        overflow: visible;
-      }
+  .item-card[open] .item-title {
+    -webkit-line-clamp: unset;
+    overflow: visible;
+  }
 
-      .badge {
-        padding: 0.25rem 0.75rem;
-        border-radius: 12px;
-        font-size: 0.875rem;
-        font-weight: 500;
-        white-space: nowrap;
-      }
+  .badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    white-space: nowrap;
+  }
 
-      .badge-free {
-        background: var(--color-free);
-        color: white;
-      }
+  .badge-free {
+    background: var(--color-free);
+    color: white;
+  }
 
-      .badge-pending {
-        background: var(--color-pending);
-        color: var(--color-pending-fg);
-      }
+  .badge-pending {
+    background: var(--color-pending);
+    color: var(--color-pending-fg);
+  }
 
-      .badge-paid {
-        background: var(--color-paid);
-        color: white;
-      }
+  .badge-paid {
+    background: var(--color-paid);
+    color: white;
+  }
 
-      .item-expanded {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        margin-top: 1rem;
-        animation: fadeIn 0.3s ease;
-      }
+  .item-expanded {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+    animation: fadeIn 0.3s ease;
+  }
 
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-          transform: translateY(-10px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-      .item-gallery {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        align-items: flex-start;
-      }
+  .item-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
 
-      .item-gallery img {
-        width: calc(50% - 0.25rem);
-        height: auto;
-        max-height: 300px;
-        object-fit: contain;
-        border-radius: 4px;
-        flex-grow: 1;
-      }
+  .item-gallery img {
+    width: calc(50% - 0.25rem);
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 4px;
+    flex-grow: 1;
+  }
 
-      .item-gallery img:only-child {
-        width: 100%;
-      }
+  .item-gallery img:only-child {
+    width: 100%;
+  }
 
-      .item-content {
-        display: flex;
-        flex-direction: column;
-        gap: 0.75rem;
-      }
+  .item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
 
-      .item-header-expanded {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 0.5rem;
-      }
+  .item-header-expanded {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 
-      .item-price {
-        font-size: 1.25rem;
-        font-weight: 500;
-        color: var(--color-paid);
-        margin: 0 0 0.5rem 0;
-      }
+  .item-price {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--color-paid);
+    margin: 0 0 0.5rem 0;
+  }
 
-      .item-description {
-        line-height: 1.6;
-        margin: 0;
-      }
+  .item-description {
+    line-height: 1.6;
+    margin: 0;
+  }
 
-      .item-link {
-        display: block;
-        margin: 0.5rem auto 0;
-        padding: 0.75rem 1.5rem;
-        background-color: var(--color-free);
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        font-size: 0.9rem;
-        font-weight: 500;
-        transition: opacity 0.2s ease;
-        text-align: center;
-        width: fit-content;
-      }
+  .item-link {
+    display: block;
+    margin: 0.5rem auto 0;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-free);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+    text-align: center;
+    width: fit-content;
+  }
 
-      .item-link:hover {
-        opacity: 0.9;
-      }
+  .item-link:hover {
+    opacity: 0.9;
+  }
 
-      @media (max-width: 768px) {
-        h1 {
-          font-size: 2rem;
-        }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
 
-        .item-card[open] {
-          grid-column: span 1;
-        }
+    .item-card[open] {
+      grid-column: span 1;
+    }
 
-        .item-gallery img {
-          max-height: 300px;
-          width: 100%;
-        }
+    .item-gallery img {
+      max-height: 300px;
+      width: 100%;
+    }
 
-        .item-card summary::after {
-          font-size: 0.7rem;
-        }
-      }
-    </style>
-  </head>
+    .item-card summary::after {
+      font-size: 0.7rem;
+    }
+  }
+</style>
+</head>
 
-  <body>
-    <main id="container">
-      <h1>Free and Paid Items</h1>
-      <p style="max-width: 600px; margin-right: auto; margin-left: auto">
-        All items available for pickup on the East side of Polanco near
-      Liverpool. Prices are roughly half of Amazon and I accept pesos or
-      dollars, Venmo, PayPal, etc. Message me on WhatsApp to ask questions and
-      arrange a time. (Last updated: May 26, 2026 at 07:21 AM)
-      </p>
-
+<body>
+  <main id="container">
+    <h1>Free and Paid Items</h1>
+    <p style="max-width: 600px; margin-right: auto; margin-left: auto;">All items available for pickup on the East side
+    of Polanco near Liverpool. Prices are roughly half of Amazon and I accept pesos or dollars, Venmo, PayPal, etc.
+    Message me on WhatsApp to ask questions and arrange a time. (Last updated: June 21, 2026 at 10:03 PM)</p>
+    
       <section class="items-section" id="paid">
-        <h2 class="section-title">
-          <a href="#paid" class="section-anchor">#</a>Paid Items
-        </h2>
+        <h2 class="section-title"><a href="#paid" class="section-anchor">#</a>Paid Items</h2>
         <div class="items-grid">
-          <details
-            class="item-card"
-            name="free-items"
-            aria-label="Item details for Decrypto (Limited 5th Edition Box)"
-          >
-            <summary>
-              <div class="item-thumbnail-container">
-                <img
-                  src="whatsapp-items/Games-Decrypto-1.jpeg"
-                  alt="Decrypto (Limited 5th Edition Box)"
-                  class="item-image"
-                />
-                <span class="image-count"
-                  >3<span class="sr-only"> images available</span></span
-                >
-              </div>
-              <div class="item-header">
-                <div class="item-header-row">
-                  <h3 class="item-title">Decrypto (Limited 5th Edition Box)</h3>
-                  <span
-                    class="badge badge-paid"
-                    role="status"
-                    aria-label="Status: Paid"
-                    >Available</span
-                  >
-                </div>
-                <p class="item-price-closed">$25 or MX$500</p>
-              </div>
-            </summary>
-            <button
-              class="close-button"
-              aria-label="Close"
-              onclick="this.closest('details').open = false"
-            ></button>
-            <div class="item-expanded">
-              <div class="item-gallery">
-                <img
-                  src="whatsapp-items/Games-Decrypto-1.jpeg"
-                  alt="Decrypto (Limited 5th Edition Box)"
-                  class="item-image"
-                /><img
-                  src="whatsapp-items/Games-Decrypto-4.jpeg"
-                  alt="Decrypto (Limited 5th Edition Box)"
-                  class="item-image"
-                /><img
-                  src="whatsapp-items/Games-Decrypto-5.jpeg"
-                  alt="Decrypto (Limited 5th Edition Box)"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-content">
-                <div class="item-header-expanded">
-                  <h3 class="item-title">Decrypto (Limited 5th Edition Box)</h3>
-                  <span
-                    class="badge badge-paid"
-                    role="status"
-                    aria-label="Status: Paid"
-                    >Available</span
-                  >
-                </div>
-                <p class="item-price">$25 or MX$500</p>
-                <p class="item-description">
-                  New in shrink wrap because I accidentally ordered two and I
-                  can't figure out how?
-                </p>
-                <a
-                  href="https://boardgamegeek.com/boardgame/225694/decrypto"
-                  target="_blank"
-                  class="item-link"
-                  >External Reference Link</a
-                >
-              </div>
+          
+        <details class="item-card" name="free-items" aria-label="Item details for Decrypto (Limited 5th Edition Box)">
+          <summary>
+            <div class="item-thumbnail-container">
+              <img src="whatsapp-items/Games-Decrypto-1.jpeg" alt="Decrypto (Limited 5th Edition Box)" class="item-image" />
+              <span class="image-count">3<span class="sr-only"> images available</span></span>
             </div>
-          </details>
-
-          <details
-            class="item-card"
-            name="free-items"
-            aria-label="Item details for Geared (Kickstarter Edition)"
-          >
-            <summary>
-              <div class="item-thumbnail-container">
-                <img
-                  src="whatsapp-items/Games-Geared-Open.jpeg"
-                  alt="Geared (Kickstarter Edition)"
-                  class="item-image"
-                />
-                <span class="image-count"
-                  >2<span class="sr-only"> images available</span></span
-                >
+            <div class="item-header">
+              <div class="item-header-row">
+                <h3 class="item-title">Decrypto (Limited 5th Edition Box)</h3>
+                <span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>
               </div>
-              <div class="item-header">
-                <div class="item-header-row">
-                  <h3 class="item-title">Geared (Kickstarter Edition)</h3>
-                  <span
-                    class="badge badge-paid"
-                    role="status"
-                    aria-label="Status: Paid"
-                    >Available</span
-                  >
-                </div>
-                <p class="item-price-closed">$5 or MX$100</p>
-              </div>
-            </summary>
-            <button
-              class="close-button"
-              aria-label="Close"
-              onclick="this.closest('details').open = false"
-            ></button>
-            <div class="item-expanded">
-              <div class="item-gallery">
-                <img
-                  src="whatsapp-items/Games-Geared-Open.jpeg"
-                  alt="Geared (Kickstarter Edition)"
-                  class="item-image"
-                /><img
-                  src="whatsapp-items/Games-Geared-Box.jpeg"
-                  alt="Geared (Kickstarter Edition)"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-content">
-                <div class="item-header-expanded">
-                  <h3 class="item-title">Geared (Kickstarter Edition)</h3>
-                  <span
-                    class="badge badge-paid"
-                    role="status"
-                    aria-label="Status: Paid"
-                    >Available</span
-                  >
-                </div>
-                <p class="item-price">$5 or MX$100</p>
-                <p class="item-description">
-                  Played five or so timtes and in very good condition!
-                </p>
-                <a
-                  href="https://www.kickstarter.com/projects/815894852/geared-build-your-bike"
-                  target="_blank"
-                  class="item-link"
-                  >External Reference Link</a
-                >
-              </div>
+              <p class="item-price-closed">$25 or MX$500</p>
             </div>
-          </details>
-
-          <details
-            class="item-card"
-            name="free-items"
-            aria-label="Item details for Love Letter"
-          >
-            <summary>
-              <div class="item-thumbnail-container">
-                <img
-                  src="whatsapp-items/Games-LoveLetter-Open.jpeg"
-                  alt="Love Letter"
-                  class="item-image"
-                />
-                <span class="image-count"
-                  >2<span class="sr-only"> images available</span></span
-                >
-              </div>
-              <div class="item-header">
-                <div class="item-header-row">
-                  <h3 class="item-title">Love Letter</h3>
-                  <span
-                    class="badge badge-paid"
-                    role="status"
-                    aria-label="Status: Paid"
-                    >Available</span
-                  >
-                </div>
-                <p class="item-price-closed">$7 or MX$150</p>
-              </div>
-            </summary>
-            <button
-              class="close-button"
-              aria-label="Close"
-              onclick="this.closest('details').open = false"
-            ></button>
-            <div class="item-expanded">
-              <div class="item-gallery">
-                <img
-                  src="whatsapp-items/Games-LoveLetter-Open.jpeg"
-                  alt="Love Letter"
-                  class="item-image"
-                /><img
-                  src="whatsapp-items/Games-LoveLetter-Box.jpeg"
-                  alt="Love Letter"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-content">
-                <div class="item-header-expanded">
-                  <h3 class="item-title">Love Letter</h3>
-                  <span
-                    class="badge badge-paid"
-                    role="status"
-                    aria-label="Status: Paid"
-                    >Available</span
-                  >
-                </div>
-                <p class="item-price">$7 or MX$150</p>
-                <p class="item-description">
-                  Played a dozen times and in very good condition!
-                </p>
-                <a
-                  href="https://boardgamegeek.com/boardgame/129622/love-letter"
-                  target="_blank"
-                  class="item-link"
-                  >External Reference Link</a
-                >
-              </div>
+          </summary>
+          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
+          <div class="item-expanded">
+            <div class="item-gallery">
+              <img src="whatsapp-items/Games-Decrypto-1.jpeg" alt="Decrypto (Limited 5th Edition Box)" class="item-image" /><img src="whatsapp-items/Games-Decrypto-4.jpeg" alt="Decrypto (Limited 5th Edition Box)" class="item-image" /><img src="whatsapp-items/Games-Decrypto-5.jpeg" alt="Decrypto (Limited 5th Edition Box)" class="item-image" />
             </div>
-          </details>
-
-          <details
-            class="item-card"
-            name="free-items"
-            aria-label="Item details for Sushi Go"
-          >
-            <summary>
-              <div class="item-thumbnail-container">
-                <img
-                  src="whatsapp-items/Games-SushiGo-Open.jpeg"
-                  alt="Sushi Go"
-                  class="item-image"
-                />
-                <span class="image-count"
-                  >2<span class="sr-only"> images available</span></span
-                >
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Decrypto (Limited 5th Edition Box)</h3>
+                <span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>
               </div>
-              <div class="item-header">
-                <div class="item-header-row">
-                  <h3 class="item-title">Sushi Go</h3>
-                  <span
-                    class="badge badge-paid"
-                    role="status"
-                    aria-label="Status: Paid"
-                    >Available</span
-                  >
-                </div>
-                <p class="item-price-closed">$5 or MX$100</p>
-              </div>
-            </summary>
-            <button
-              class="close-button"
-              aria-label="Close"
-              onclick="this.closest('details').open = false"
-            ></button>
-            <div class="item-expanded">
-              <div class="item-gallery">
-                <img
-                  src="whatsapp-items/Games-SushiGo-Open.jpeg"
-                  alt="Sushi Go"
-                  class="item-image"
-                /><img
-                  src="whatsapp-items/Games-SushiGo-Box.jpeg"
-                  alt="Sushi Go"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-content">
-                <div class="item-header-expanded">
-                  <h3 class="item-title">Sushi Go</h3>
-                  <span
-                    class="badge badge-paid"
-                    role="status"
-                    aria-label="Status: Paid"
-                    >Available</span
-                  >
-                </div>
-                <p class="item-price">$5 or MX$100</p>
-                <p class="item-description">
-                  Played around ten times and in very good condition!
-                </p>
-                <a
-                  href="https://boardgamegeek.com/boardgame/133473/sushi-go"
-                  target="_blank"
-                  class="item-link"
-                  >External Reference Link</a
-                >
-              </div>
+              <p class="item-price">$25 or MX$500</p>
+              <p class="item-description">New in shrink wrap because I accidentally ordered two and I can't figure out how?</p>
+              <a href="https://boardgamegeek.com/boardgame/225694/decrypto" target="_blank" class="item-link">External Reference Link</a>
             </div>
-          </details>
-
-          <details
-            class="item-card"
-            name="free-items"
-            aria-label="Item details for Whirling Witchraft"
-          >
-            <summary>
-              <div class="item-thumbnail-container">
-                <img
-                  src="whatsapp-items/Games-WW-Open.jpeg"
-                  alt="Whirling Witchraft"
-                  class="item-image"
-                />
-                <span class="image-count"
-                  >2<span class="sr-only"> images available</span></span
-                >
-              </div>
-              <div class="item-header">
-                <div class="item-header-row">
-                  <h3 class="item-title">Whirling Witchraft</h3>
-                  <span
-                    class="badge badge-paid"
-                    role="status"
-                    aria-label="Status: Paid"
-                    >Available</span
-                  >
-                </div>
-                <p class="item-price-closed">$20 or MX$400</p>
-              </div>
-            </summary>
-            <button
-              class="close-button"
-              aria-label="Close"
-              onclick="this.closest('details').open = false"
-            ></button>
-            <div class="item-expanded">
-              <div class="item-gallery">
-                <img
-                  src="whatsapp-items/Games-WW-Open.jpeg"
-                  alt="Whirling Witchraft"
-                  class="item-image"
-                /><img
-                  src="whatsapp-items/Games-WW-Box.jpeg"
-                  alt="Whirling Witchraft"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-content">
-                <div class="item-header-expanded">
-                  <h3 class="item-title">Whirling Witchraft</h3>
-                  <span
-                    class="badge badge-paid"
-                    role="status"
-                    aria-label="Status: Paid"
-                    >Available</span
-                  >
-                </div>
-                <p class="item-price">$20 or MX$400</p>
-                <p class="item-description">
-                  Played once and in very good condition
-                </p>
-                <a
-                  href="https://boardgamegeek.com/boardgame/335275/whirling-witchcraft"
-                  target="_blank"
-                  class="item-link"
-                  >External Reference Link</a
-                >
-              </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items" aria-label="Item details for Geared (Kickstarter Edition)">
+          <summary>
+            <div class="item-thumbnail-container">
+              <img src="whatsapp-items/Games-Geared-Open.jpeg" alt="Geared (Kickstarter Edition)" class="item-image" />
+              <span class="image-count">2<span class="sr-only"> images available</span></span>
             </div>
-          </details>
-
-          <details
-            class="item-card"
-            name="free-items"
-            aria-label="Item details for Tsuro"
-          >
-            <summary>
-              <div class="item-thumbnail-container">
-                <img
-                  src="whatsapp-items/Games-Tsuro-Open-2.jpeg"
-                  alt="Tsuro"
-                  class="item-image"
-                />
-                <span class="image-count"
-                  >3<span class="sr-only"> images available</span></span
-                >
+            <div class="item-header">
+              <div class="item-header-row">
+                <h3 class="item-title">Geared (Kickstarter Edition)</h3>
+                <span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>
               </div>
-              <div class="item-header">
-                <div class="item-header-row">
-                  <h3 class="item-title">Tsuro</h3>
-                  <span
-                    class="badge badge-paid"
-                    role="status"
-                    aria-label="Status: Paid"
-                    >Available</span
-                  >
-                </div>
-                <p class="item-price-closed">$20 or MX$400</p>
-              </div>
-            </summary>
-            <button
-              class="close-button"
-              aria-label="Close"
-              onclick="this.closest('details').open = false"
-            ></button>
-            <div class="item-expanded">
-              <div class="item-gallery">
-                <img
-                  src="whatsapp-items/Games-Tsuro-Open-2.jpeg"
-                  alt="Tsuro"
-                  class="item-image"
-                /><img
-                  src="whatsapp-items/Games-Tsuro-Open-1.jpeg"
-                  alt="Tsuro"
-                  class="item-image"
-                /><img
-                  src="whatsapp-items/Games-Tsuro-Box.jpeg"
-                  alt="Tsuro"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-content">
-                <div class="item-header-expanded">
-                  <h3 class="item-title">Tsuro</h3>
-                  <span
-                    class="badge badge-paid"
-                    role="status"
-                    aria-label="Status: Paid"
-                    >Available</span
-                  >
-                </div>
-                <p class="item-price">$20 or MX$400</p>
-                <p class="item-description">
-                  Played around ten times and in very good condition!
-                </p>
-                <a
-                  href="https://www.amazon.com/dp/B002SQBB3O?tag=itemtext-boardgamegeek-20&linkCode=ogi&th=1&psc=1"
-                  target="_blank"
-                  class="item-link"
-                  >External Reference Link</a
-                >
-              </div>
+              <p class="item-price-closed">$5 or MX$100</p>
             </div>
-          </details>
-
-          <details
-            class="item-card"
-            name="free-items"
-            aria-label="Item details for Causa Forcia Turkish Cotton Handkerchiefs"
-          >
-            <summary>
-              <div class="item-thumbnail-container">
-                <img
-                  src="whatsapp-items/Home-Kerchiefs.jpeg"
-                  alt="Causa Forcia Turkish Cotton Handkerchiefs"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-header">
-                <div class="item-header-row">
-                  <h3 class="item-title">
-                    Causa Forcia Turkish Cotton Handkerchiefs
-                  </h3>
-                  <span
-                    class="badge badge-paid"
-                    role="status"
-                    aria-label="Status: Paid"
-                    >Available</span
-                  >
-                </div>
-                <p class="item-price-closed">$5 or MX$100</p>
-              </div>
-            </summary>
-            <button
-              class="close-button"
-              aria-label="Close"
-              onclick="this.closest('details').open = false"
-            ></button>
-            <div class="item-expanded">
-              <div class="item-gallery">
-                <img
-                  src="whatsapp-items/Home-Kerchiefs.jpeg"
-                  alt="Causa Forcia Turkish Cotton Handkerchiefs"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-content">
-                <div class="item-header-expanded">
-                  <h3 class="item-title">
-                    Causa Forcia Turkish Cotton Handkerchiefs
-                  </h3>
-                  <span
-                    class="badge badge-paid"
-                    role="status"
-                    aria-label="Status: Paid"
-                    >Available</span
-                  >
-                </div>
-                <p class="item-price">$5 or MX$100</p>
-                <p class="item-description">
-                  This came with too many for one person, so I have four
-                  available that are brand new
-                </p>
-                <a
-                  href="https://www.amazon.com/dp/B08D3CYZ1L?ref=ppx_yo2ov_dt_b_fed_asin_title"
-                  target="_blank"
-                  class="item-link"
-                  >External Reference Link</a
-                >
-              </div>
+          </summary>
+          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
+          <div class="item-expanded">
+            <div class="item-gallery">
+              <img src="whatsapp-items/Games-Geared-Open.jpeg" alt="Geared (Kickstarter Edition)" class="item-image" /><img src="whatsapp-items/Games-Geared-Box.jpeg" alt="Geared (Kickstarter Edition)" class="item-image" />
             </div>
-          </details>
-
-          <details
-            class="item-card"
-            name="free-items"
-            aria-label="Item details for VIGRUE 175PCS Assorted Concrete Screws Kit"
-          >
-            <summary>
-              <div class="item-thumbnail-container">
-                <img
-                  src="whatsapp-items/Home-Nails.jpeg"
-                  alt="VIGRUE 175PCS Assorted Concrete Screws Kit"
-                  class="item-image"
-                />
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Geared (Kickstarter Edition)</h3>
+                <span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>
               </div>
-              <div class="item-header">
-                <div class="item-header-row">
-                  <h3 class="item-title">
-                    VIGRUE 175PCS Assorted Concrete Screws Kit
-                  </h3>
-                  <span
-                    class="badge badge-paid"
-                    role="status"
-                    aria-label="Status: Paid"
-                    >Available</span
-                  >
-                </div>
-                <p class="item-price-closed">$10 or MX$200</p>
-              </div>
-            </summary>
-            <button
-              class="close-button"
-              aria-label="Close"
-              onclick="this.closest('details').open = false"
-            ></button>
-            <div class="item-expanded">
-              <div class="item-gallery">
-                <img
-                  src="whatsapp-items/Home-Nails.jpeg"
-                  alt="VIGRUE 175PCS Assorted Concrete Screws Kit"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-content">
-                <div class="item-header-expanded">
-                  <h3 class="item-title">
-                    VIGRUE 175PCS Assorted Concrete Screws Kit
-                  </h3>
-                  <span
-                    class="badge badge-paid"
-                    role="status"
-                    aria-label="Status: Paid"
-                    >Available</span
-                  >
-                </div>
-                <p class="item-price">$10 or MX$200</p>
-                <p class="item-description">
-                  We bought this last year, but ended up not needing it
-                </p>
-                <a
-                  href="https://www.amazon.com/dp/B0CJT845WJ?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1"
-                  target="_blank"
-                  class="item-link"
-                  >External Reference Link</a
-                >
-              </div>
+              <p class="item-price">$5 or MX$100</p>
+              <p class="item-description">Played five or so timtes and in very good condition!</p>
+              <a href="https://www.kickstarter.com/projects/815894852/geared-build-your-bike" target="_blank" class="item-link">External Reference Link</a>
             </div>
-          </details>
-
-          <details
-            class="item-card"
-            name="free-items"
-            aria-label="Item details for Scalpers Brown Leather Wallet"
-          >
-            <summary>
-              <div class="item-thumbnail-container">
-                <img
-                  src="whatsapp-items/Wallet-01-Flat.jpeg"
-                  alt="Scalpers Brown Leather Wallet"
-                  class="item-image"
-                />
-                <span class="image-count"
-                  >2<span class="sr-only"> images available</span></span
-                >
-              </div>
-              <div class="item-header">
-                <div class="item-header-row">
-                  <h3 class="item-title">Scalpers Brown Leather Wallet</h3>
-                  <span
-                    class="badge badge-paid"
-                    role="status"
-                    aria-label="Status: Paid"
-                    >Available</span
-                  >
-                </div>
-                <p class="item-price-closed">$20 or MX$400</p>
-              </div>
-            </summary>
-            <button
-              class="close-button"
-              aria-label="Close"
-              onclick="this.closest('details').open = false"
-            ></button>
-            <div class="item-expanded">
-              <div class="item-gallery">
-                <img
-                  src="whatsapp-items/Wallet-01-Flat.jpeg"
-                  alt="Scalpers Brown Leather Wallet"
-                  class="item-image"
-                /><img
-                  src="whatsapp-items/Wallet-04-Back.jpeg"
-                  alt="Scalpers Brown Leather Wallet"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-content">
-                <div class="item-header-expanded">
-                  <h3 class="item-title">Scalpers Brown Leather Wallet</h3>
-                  <span
-                    class="badge badge-paid"
-                    role="status"
-                    aria-label="Status: Paid"
-                    >Available</span
-                  >
-                </div>
-                <p class="item-price">$20 or MX$400</p>
-                <p class="item-description">
-                  I received this as a gift, but I had already gotten a new
-                  wallet. Made from 100% Cow Leather. The wallet has the
-                  original tags, if you would like to give it as a gift
-                </p>
-                <a
-                  href="https://en.ww.scalperscompany.com/products/61778-scmondit-free-wallet-aw2526-brown"
-                  target="_blank"
-                  class="item-link"
-                  >External Reference Link</a
-                >
-              </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items" aria-label="Item details for Love Letter">
+          <summary>
+            <div class="item-thumbnail-container">
+              <img src="whatsapp-items/Games-LoveLetter-Open.jpeg" alt="Love Letter" class="item-image" />
+              <span class="image-count">2<span class="sr-only"> images available</span></span>
             </div>
-          </details>
+            <div class="item-header">
+              <div class="item-header-row">
+                <h3 class="item-title">Love Letter</h3>
+                <span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>
+              </div>
+              <p class="item-price-closed">$7 or MX$150</p>
+            </div>
+          </summary>
+          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
+          <div class="item-expanded">
+            <div class="item-gallery">
+              <img src="whatsapp-items/Games-LoveLetter-Open.jpeg" alt="Love Letter" class="item-image" /><img src="whatsapp-items/Games-LoveLetter-Box.jpeg" alt="Love Letter" class="item-image" />
+            </div>
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Love Letter</h3>
+                <span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>
+              </div>
+              <p class="item-price">$7 or MX$150</p>
+              <p class="item-description">Played a dozen times and in very good condition!</p>
+              <a href="https://boardgamegeek.com/boardgame/129622/love-letter" target="_blank" class="item-link">External Reference Link</a>
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items" aria-label="Item details for Sushi Go">
+          <summary>
+            <div class="item-thumbnail-container">
+              <img src="whatsapp-items/Games-SushiGo-Open.jpeg" alt="Sushi Go" class="item-image" />
+              <span class="image-count">2<span class="sr-only"> images available</span></span>
+            </div>
+            <div class="item-header">
+              <div class="item-header-row">
+                <h3 class="item-title">Sushi Go</h3>
+                <span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>
+              </div>
+              <p class="item-price-closed">$5 or MX$100</p>
+            </div>
+          </summary>
+          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
+          <div class="item-expanded">
+            <div class="item-gallery">
+              <img src="whatsapp-items/Games-SushiGo-Open.jpeg" alt="Sushi Go" class="item-image" /><img src="whatsapp-items/Games-SushiGo-Box.jpeg" alt="Sushi Go" class="item-image" />
+            </div>
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Sushi Go</h3>
+                <span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>
+              </div>
+              <p class="item-price">$5 or MX$100</p>
+              <p class="item-description">Played around ten times and in very good condition!</p>
+              <a href="https://boardgamegeek.com/boardgame/133473/sushi-go" target="_blank" class="item-link">External Reference Link</a>
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items" aria-label="Item details for Ticket to Ride Europe + 1912 Expansion">
+          <summary>
+            <div class="item-thumbnail-container">
+              <img src="whatsapp-items/Games-TTR-Open.jpeg" alt="Ticket to Ride Europe + 1912 Expansion" class="item-image" />
+              <span class="image-count">2<span class="sr-only"> images available</span></span>
+            </div>
+            <div class="item-header">
+              <div class="item-header-row">
+                <h3 class="item-title">Ticket to Ride Europe + 1912 Expansion</h3>
+                <span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>
+              </div>
+              <p class="item-price-closed">$35 or MX$700</p>
+            </div>
+          </summary>
+          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
+          <div class="item-expanded">
+            <div class="item-gallery">
+              <img src="whatsapp-items/Games-TTR-Open.jpeg" alt="Ticket to Ride Europe + 1912 Expansion" class="item-image" /><img src="whatsapp-items/Games-TTR-Box.jpeg" alt="Ticket to Ride Europe + 1912 Expansion" class="item-image" />
+            </div>
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Ticket to Ride Europe + 1912 Expansion</h3>
+                <span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>
+              </div>
+              <p class="item-price">$35 or MX$700</p>
+              <p class="item-description">Such a great game, but I now have too many games. I would be willing to sell the Europa expansion
+separately (~$12), but I no longer have the box for it</p>
+              <a href="https://boardgamegeek.com/boardgameexpansion/53383/ticket-to-ride-europa-1912" target="_blank" class="item-link">External Reference Link</a>
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items" aria-label="Item details for Whirling Witchraft">
+          <summary>
+            <div class="item-thumbnail-container">
+              <img src="whatsapp-items/Games-WW-Open.jpeg" alt="Whirling Witchraft" class="item-image" />
+              <span class="image-count">2<span class="sr-only"> images available</span></span>
+            </div>
+            <div class="item-header">
+              <div class="item-header-row">
+                <h3 class="item-title">Whirling Witchraft</h3>
+                <span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>
+              </div>
+              <p class="item-price-closed">$20 or MX$400</p>
+            </div>
+          </summary>
+          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
+          <div class="item-expanded">
+            <div class="item-gallery">
+              <img src="whatsapp-items/Games-WW-Open.jpeg" alt="Whirling Witchraft" class="item-image" /><img src="whatsapp-items/Games-WW-Box.jpeg" alt="Whirling Witchraft" class="item-image" />
+            </div>
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Whirling Witchraft</h3>
+                <span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>
+              </div>
+              <p class="item-price">$20 or MX$400</p>
+              <p class="item-description">Played once and in very good condition</p>
+              <a href="https://boardgamegeek.com/boardgame/335275/whirling-witchcraft" target="_blank" class="item-link">External Reference Link</a>
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items" aria-label="Item details for Tsuro">
+          <summary>
+            <div class="item-thumbnail-container">
+              <img src="whatsapp-items/Games-Tsuro-Open-2.jpeg" alt="Tsuro" class="item-image" />
+              <span class="image-count">3<span class="sr-only"> images available</span></span>
+            </div>
+            <div class="item-header">
+              <div class="item-header-row">
+                <h3 class="item-title">Tsuro</h3>
+                <span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>
+              </div>
+              <p class="item-price-closed">$20 or MX$400</p>
+            </div>
+          </summary>
+          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
+          <div class="item-expanded">
+            <div class="item-gallery">
+              <img src="whatsapp-items/Games-Tsuro-Open-2.jpeg" alt="Tsuro" class="item-image" /><img src="whatsapp-items/Games-Tsuro-Open-1.jpeg" alt="Tsuro" class="item-image" /><img src="whatsapp-items/Games-Tsuro-Box.jpeg" alt="Tsuro" class="item-image" />
+            </div>
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Tsuro</h3>
+                <span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>
+              </div>
+              <p class="item-price">$20 or MX$400</p>
+              <p class="item-description">Played around ten times and in very good condition!</p>
+              <a href="https://www.amazon.com/dp/B002SQBB3O?tag=itemtext-boardgamegeek-20&linkCode=ogi&th=1&psc=1" target="_blank" class="item-link">External Reference Link</a>
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items" aria-label="Item details for VIGRUE 175PCS Assorted Concrete Screws Kit">
+          <summary>
+            <div class="item-thumbnail-container">
+              <img src="whatsapp-items/Home-Nails.jpeg" alt="VIGRUE 175PCS Assorted Concrete Screws Kit" class="item-image" />
+              
+            </div>
+            <div class="item-header">
+              <div class="item-header-row">
+                <h3 class="item-title">VIGRUE 175PCS Assorted Concrete Screws Kit</h3>
+                <span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>
+              </div>
+              <p class="item-price-closed">$10 or MX$200</p>
+            </div>
+          </summary>
+          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
+          <div class="item-expanded">
+            <div class="item-gallery">
+              <img src="whatsapp-items/Home-Nails.jpeg" alt="VIGRUE 175PCS Assorted Concrete Screws Kit" class="item-image" />
+            </div>
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">VIGRUE 175PCS Assorted Concrete Screws Kit</h3>
+                <span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>
+              </div>
+              <p class="item-price">$10 or MX$200</p>
+              <p class="item-description">We bought this last year, but ended up not needing it</p>
+              <a href="https://www.amazon.com/dp/B0CJT845WJ?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1" target="_blank" class="item-link">External Reference Link</a>
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items" aria-label="Item details for Scalpers Brown Leather Wallet">
+          <summary>
+            <div class="item-thumbnail-container">
+              <img src="whatsapp-items/Wallet-01-Flat.jpeg" alt="Scalpers Brown Leather Wallet" class="item-image" />
+              <span class="image-count">2<span class="sr-only"> images available</span></span>
+            </div>
+            <div class="item-header">
+              <div class="item-header-row">
+                <h3 class="item-title">Scalpers Brown Leather Wallet</h3>
+                <span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>
+              </div>
+              <p class="item-price-closed">$20 or MX$400</p>
+            </div>
+          </summary>
+          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
+          <div class="item-expanded">
+            <div class="item-gallery">
+              <img src="whatsapp-items/Wallet-01-Flat.jpeg" alt="Scalpers Brown Leather Wallet" class="item-image" /><img src="whatsapp-items/Wallet-04-Back.jpeg" alt="Scalpers Brown Leather Wallet" class="item-image" />
+            </div>
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Scalpers Brown Leather Wallet</h3>
+                <span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>
+              </div>
+              <p class="item-price">$20 or MX$400</p>
+              <p class="item-description">I received this as a gift, but I had already gotten a new wallet. Made from 100% Cow Leather.
+The wallet has the original tags, if you would like to give it as a gift</p>
+              <a href="https://en.ww.scalperscompany.com/products/61778-scmondit-free-wallet-aw2526-brown" target="_blank" class="item-link">External Reference Link</a>
+            </div>
+          </div>
+        </details>
+        
         </div>
       </section>
-
+      
       <section class="items-section" id="free">
-        <h2 class="section-title">
-          <a href="#free" class="section-anchor">#</a>Free Items
-        </h2>
+        <h2 class="section-title"><a href="#free" class="section-anchor">#</a>Free Items</h2>
         <div class="items-grid">
-          <details
-            class="item-card"
-            name="free-items"
-            aria-label="Item details for Toniebox (Broken! For parts)"
-          >
-            <summary>
-              <div class="item-thumbnail-container">
-                <img
-                  src="whatsapp-items/Home-BrokenTony-2.jpeg"
-                  alt="Toniebox (Broken! For parts)"
-                  class="item-image"
-                />
-                <span class="image-count"
-                  >2<span class="sr-only"> images available</span></span
-                >
-              </div>
-              <div class="item-header">
-                <div class="item-header-row">
-                  <h3 class="item-title">Toniebox (Broken! For parts)</h3>
-                  <span
-                    class="badge badge-free"
-                    role="status"
-                    aria-label="Status: Available"
-                    >Available</span
-                  >
-                </div>
-              </div>
-            </summary>
-            <button
-              class="close-button"
-              aria-label="Close"
-              onclick="this.closest('details').open = false"
-            ></button>
-            <div class="item-expanded">
-              <div class="item-gallery">
-                <img
-                  src="whatsapp-items/Home-BrokenTony-2.jpeg"
-                  alt="Toniebox (Broken! For parts)"
-                  class="item-image"
-                /><img
-                  src="whatsapp-items/Home-BrokenTony-3.jpeg"
-                  alt="Toniebox (Broken! For parts)"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-content">
-                <div class="item-header-expanded">
-                  <h3 class="item-title">Toniebox (Broken! For parts)</h3>
-                  <span
-                    class="badge badge-free"
-                    role="status"
-                    aria-label="Status: Available"
-                    >Available</span
-                  >
-                </div>
-
-                <p class="item-description">
-                  We have already received a replacement, because the first one
-                  would suddenly stop playing and shutdown. They never clarified
-                  what was wrong, but the speakers, battery, and other parts
-                  might be of interest? You might be able to drop in a Raspberry
-                  Pi Zero in place of the motherboard if adventurous. It doesn't
-                  look like you can buy replacement boards and replacing the
-                  transistor or other shorted components is involved to salvage
-                  it fully
-                </p>
-              </div>
+          
+        <details class="item-card" name="free-items" aria-label="Item details for Toniebox (Broken! For parts)">
+          <summary>
+            <div class="item-thumbnail-container">
+              <img src="whatsapp-items/Home-BrokenTony-2.jpeg" alt="Toniebox (Broken! For parts)" class="item-image" />
+              <span class="image-count">2<span class="sr-only"> images available</span></span>
             </div>
-          </details>
-
-          <details
-            class="item-card"
-            name="free-items"
-            aria-label="Item details for Assorted Velcro Sanding Discs with Drill Attachment Pad"
-          >
-            <summary>
-              <div class="item-thumbnail-container">
-                <img
-                  src="whatsapp-items/Home-Sanding.jpeg"
-                  alt="Assorted Velcro Sanding Discs with Drill Attachment Pad"
-                  class="item-image"
-                />
+            <div class="item-header">
+              <div class="item-header-row">
+                <h3 class="item-title">Toniebox (Broken! For parts)</h3>
+                <span class="badge badge-free" role="status" aria-label="Status: Available">Available</span>
               </div>
-              <div class="item-header">
-                <div class="item-header-row">
-                  <h3 class="item-title">
-                    Assorted Velcro Sanding Discs with Drill Attachment Pad
-                  </h3>
-                  <span
-                    class="badge badge-free"
-                    role="status"
-                    aria-label="Status: Available"
-                    >Available</span
-                  >
-                </div>
-              </div>
-            </summary>
-            <button
-              class="close-button"
-              aria-label="Close"
-              onclick="this.closest('details').open = false"
-            ></button>
-            <div class="item-expanded">
-              <div class="item-gallery">
-                <img
-                  src="whatsapp-items/Home-Sanding.jpeg"
-                  alt="Assorted Velcro Sanding Discs with Drill Attachment Pad"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-content">
-                <div class="item-header-expanded">
-                  <h3 class="item-title">
-                    Assorted Velcro Sanding Discs with Drill Attachment Pad
-                  </h3>
-                  <span
-                    class="badge badge-free"
-                    role="status"
-                    aria-label="Status: Available"
-                    >Available</span
-                  >
-                </div>
-
-                <p class="item-description">
-                  These work ok, but I needed to resurface a wooden bowl, which
-                  required buying a stronger orbital sander
-                </p>
-                <a
-                  href="https://www.amazon.com/dp/B088CXY3X5?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1"
-                  target="_blank"
-                  class="item-link"
-                  >External Reference Link</a
-                >
-              </div>
+              
             </div>
-          </details>
-
-          <details
-            class="item-card"
-            name="free-items"
-            aria-label="Item details for Breast Milk Storage Bags"
-          >
-            <summary>
-              <div class="item-thumbnail-container">
-                <img
-                  src="whatsapp-items/Kids-Bags.jpeg"
-                  alt="Breast Milk Storage Bags"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-header">
-                <div class="item-header-row">
-                  <h3 class="item-title">Breast Milk Storage Bags</h3>
-                  <span
-                    class="badge badge-free"
-                    role="status"
-                    aria-label="Status: Available"
-                    >Available</span
-                  >
-                </div>
-              </div>
-            </summary>
-            <button
-              class="close-button"
-              aria-label="Close"
-              onclick="this.closest('details').open = false"
-            ></button>
-            <div class="item-expanded">
-              <div class="item-gallery">
-                <img
-                  src="whatsapp-items/Kids-Bags.jpeg"
-                  alt="Breast Milk Storage Bags"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-content">
-                <div class="item-header-expanded">
-                  <h3 class="item-title">Breast Milk Storage Bags</h3>
-                  <span
-                    class="badge badge-free"
-                    role="status"
-                    aria-label="Status: Available"
-                    >Available</span
-                  >
-                </div>
-
-                <p class="item-description">These are brand new and unused</p>
-              </div>
+          </summary>
+          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
+          <div class="item-expanded">
+            <div class="item-gallery">
+              <img src="whatsapp-items/Home-BrokenTony-2.jpeg" alt="Toniebox (Broken! For parts)" class="item-image" /><img src="whatsapp-items/Home-BrokenTony-3.jpeg" alt="Toniebox (Broken! For parts)" class="item-image" />
             </div>
-          </details>
-
-          <details
-            class="item-card"
-            name="free-items"
-            aria-label="Item details for ARRIS SurfBoard SB6141 Modem"
-          >
-            <summary>
-              <div class="item-thumbnail-container">
-                <img
-                  src="whatsapp-items/Home-Modem.jpeg"
-                  alt="ARRIS SurfBoard SB6141 Modem"
-                  class="item-image"
-                />
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Toniebox (Broken! For parts)</h3>
+                <span class="badge badge-free" role="status" aria-label="Status: Available">Available</span>
               </div>
-              <div class="item-header">
-                <div class="item-header-row">
-                  <h3 class="item-title">ARRIS SurfBoard SB6141 Modem</h3>
-                  <span
-                    class="badge badge-free"
-                    role="status"
-                    aria-label="Status: Available"
-                    >Available</span
-                  >
-                </div>
-              </div>
-            </summary>
-            <button
-              class="close-button"
-              aria-label="Close"
-              onclick="this.closest('details').open = false"
-            ></button>
-            <div class="item-expanded">
-              <div class="item-gallery">
-                <img
-                  src="whatsapp-items/Home-Modem.jpeg"
-                  alt="ARRIS SurfBoard SB6141 Modem"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-content">
-                <div class="item-header-expanded">
-                  <h3 class="item-title">ARRIS SurfBoard SB6141 Modem</h3>
-                  <span
-                    class="badge badge-free"
-                    role="status"
-                    aria-label="Status: Available"
-                    >Available</span
-                  >
-                </div>
-
-                <p class="item-description">
-                  We can't use this modem with Telmex because it requires a
-                  regular Ethernet hookup, but it may work with other providers
-                  here or be useful for parts
-                </p>
-                <a
-                  href="https://www.amazon.com/ARRIS-SURFboard-SB6141-DOCSIS-Cable/dp/B00AJHDZSI"
-                  target="_blank"
-                  class="item-link"
-                  >External Reference Link</a
-                >
-              </div>
+              
+              <p class="item-description">We have already received a replacement, because the first one would suddenly stop playing and shutdown. They
+never clarified what was wrong, but the speakers, battery, and other parts might be of interest? You might
+be able to drop in a Raspberry Pi Zero in place of the motherboard if adventurous. It doesn't look like you
+can buy replacement boards and replacing the transistor or other shorted components is involved to salvage
+it fully</p>
+              
             </div>
-          </details>
-
-          <details
-            class="item-card"
-            name="free-items"
-            aria-label="Item details for IKEA Hugad Curtain Rod (Rod only)"
-          >
-            <summary>
-              <div class="item-thumbnail-container">
-                <img
-                  src="whatsapp-items/Home-Rod-0.jpeg"
-                  alt="IKEA Hugad Curtain Rod (Rod only)"
-                  class="item-image"
-                />
-                <span class="image-count"
-                  >2<span class="sr-only"> images available</span></span
-                >
-              </div>
-              <div class="item-header">
-                <div class="item-header-row">
-                  <h3 class="item-title">IKEA Hugad Curtain Rod (Rod only)</h3>
-                  <span
-                    class="badge badge-free"
-                    role="status"
-                    aria-label="Status: Available"
-                    >Available</span
-                  >
-                </div>
-              </div>
-            </summary>
-            <button
-              class="close-button"
-              aria-label="Close"
-              onclick="this.closest('details').open = false"
-            ></button>
-            <div class="item-expanded">
-              <div class="item-gallery">
-                <img
-                  src="whatsapp-items/Home-Rod-0.jpeg"
-                  alt="IKEA Hugad Curtain Rod (Rod only)"
-                  class="item-image"
-                /><img
-                  src="whatsapp-items/Home-Rod-2.jpeg"
-                  alt="IKEA Hugad Curtain Rod (Rod only)"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-content">
-                <div class="item-header-expanded">
-                  <h3 class="item-title">IKEA Hugad Curtain Rod (Rod only)</h3>
-                  <span
-                    class="badge badge-free"
-                    role="status"
-                    aria-label="Status: Available"
-                    >Available</span
-                  >
-                </div>
-
-                <p class="item-description">
-                  We gave away the blackout curtains that we used with this rod,
-                  but I didn't find it until doing a deep clean this week. Free
-                  to anyone who could use it!
-                </p>
-                <a
-                  href="https://www.ikea.com/us/en/p/hugad-curtain-rod-white-10217141/#content"
-                  target="_blank"
-                  class="item-link"
-                  >External Reference Link</a
-                >
-              </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items" aria-label="Item details for Assorted Velcro Sanding Discs with Drill Attachment Pad">
+          <summary>
+            <div class="item-thumbnail-container">
+              <img src="whatsapp-items/Home-Sanding.jpeg" alt="Assorted Velcro Sanding Discs with Drill Attachment Pad" class="item-image" />
+              
             </div>
-          </details>
+            <div class="item-header">
+              <div class="item-header-row">
+                <h3 class="item-title">Assorted Velcro Sanding Discs with Drill Attachment Pad</h3>
+                <span class="badge badge-free" role="status" aria-label="Status: Available">Available</span>
+              </div>
+              
+            </div>
+          </summary>
+          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
+          <div class="item-expanded">
+            <div class="item-gallery">
+              <img src="whatsapp-items/Home-Sanding.jpeg" alt="Assorted Velcro Sanding Discs with Drill Attachment Pad" class="item-image" />
+            </div>
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Assorted Velcro Sanding Discs with Drill Attachment Pad</h3>
+                <span class="badge badge-free" role="status" aria-label="Status: Available">Available</span>
+              </div>
+              
+              <p class="item-description">These work ok, but I needed to resurface a wooden bowl, which required buying a stronger orbital sander</p>
+              <a href="https://www.amazon.com/dp/B088CXY3X5?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1" target="_blank" class="item-link">External Reference Link</a>
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items" aria-label="Item details for Kate Spade Macaron Mug">
+          <summary>
+            <div class="item-thumbnail-container">
+              <img src="whatsapp-items/Home-KS-Mug-Up.jpeg" alt="Kate Spade Macaron Mug" class="item-image" />
+              <span class="image-count">2<span class="sr-only"> images available</span></span>
+            </div>
+            <div class="item-header">
+              <div class="item-header-row">
+                <h3 class="item-title">Kate Spade Macaron Mug</h3>
+                <span class="badge badge-free" role="status" aria-label="Status: Available">Available</span>
+              </div>
+              
+            </div>
+          </summary>
+          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
+          <div class="item-expanded">
+            <div class="item-gallery">
+              <img src="whatsapp-items/Home-KS-Mug-Up.jpeg" alt="Kate Spade Macaron Mug" class="item-image" /><img src="whatsapp-items/Home-KS-Mug-Down.jpeg" alt="Kate Spade Macaron Mug" class="item-image" />
+            </div>
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Kate Spade Macaron Mug</h3>
+                <span class="badge badge-free" role="status" aria-label="Status: Available">Available</span>
+              </div>
+              
+              
+              
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items" aria-label="Item details for Away Orange Drawstring Kids Bag">
+          <summary>
+            <div class="item-thumbnail-container">
+              <img src="whatsapp-items/Home-AWay-Bag.jpeg" alt="Away Orange Drawstring Kids Bag" class="item-image" />
+              
+            </div>
+            <div class="item-header">
+              <div class="item-header-row">
+                <h3 class="item-title">Away Orange Drawstring Kids Bag</h3>
+                <span class="badge badge-free" role="status" aria-label="Status: Available">Available</span>
+              </div>
+              
+            </div>
+          </summary>
+          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
+          <div class="item-expanded">
+            <div class="item-gallery">
+              <img src="whatsapp-items/Home-AWay-Bag.jpeg" alt="Away Orange Drawstring Kids Bag" class="item-image" />
+            </div>
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">Away Orange Drawstring Kids Bag</h3>
+                <span class="badge badge-free" role="status" aria-label="Status: Available">Available</span>
+              </div>
+              
+              <p class="item-description">This came with an Away suitcase and sized smaller than most drawstring bags, but we don't have a use for it</p>
+              
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items" aria-label="Item details for ARRIS SurfBoard SB6141 Modem">
+          <summary>
+            <div class="item-thumbnail-container">
+              <img src="whatsapp-items/Home-Modem.jpeg" alt="ARRIS SurfBoard SB6141 Modem" class="item-image" />
+              
+            </div>
+            <div class="item-header">
+              <div class="item-header-row">
+                <h3 class="item-title">ARRIS SurfBoard SB6141 Modem</h3>
+                <span class="badge badge-free" role="status" aria-label="Status: Available">Available</span>
+              </div>
+              
+            </div>
+          </summary>
+          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
+          <div class="item-expanded">
+            <div class="item-gallery">
+              <img src="whatsapp-items/Home-Modem.jpeg" alt="ARRIS SurfBoard SB6141 Modem" class="item-image" />
+            </div>
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">ARRIS SurfBoard SB6141 Modem</h3>
+                <span class="badge badge-free" role="status" aria-label="Status: Available">Available</span>
+              </div>
+              
+              <p class="item-description">We can't use this modem with Telmex because it requires a regular Ethernet hookup, but it may work with other providers here or be useful for parts</p>
+              <a href="https://www.amazon.com/ARRIS-SURFboard-SB6141-DOCSIS-Cable/dp/B00AJHDZSI" target="_blank" class="item-link">External Reference Link</a>
+            </div>
+          </div>
+        </details>
+        
+        <details class="item-card" name="free-items" aria-label="Item details for IKEA Hugad Curtain Rod (Rod only)">
+          <summary>
+            <div class="item-thumbnail-container">
+              <img src="whatsapp-items/Home-Rod-0.jpeg" alt="IKEA Hugad Curtain Rod (Rod only)" class="item-image" />
+              <span class="image-count">2<span class="sr-only"> images available</span></span>
+            </div>
+            <div class="item-header">
+              <div class="item-header-row">
+                <h3 class="item-title">IKEA Hugad Curtain Rod (Rod only)</h3>
+                <span class="badge badge-free" role="status" aria-label="Status: Available">Available</span>
+              </div>
+              
+            </div>
+          </summary>
+          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
+          <div class="item-expanded">
+            <div class="item-gallery">
+              <img src="whatsapp-items/Home-Rod-0.jpeg" alt="IKEA Hugad Curtain Rod (Rod only)" class="item-image" /><img src="whatsapp-items/Home-Rod-2.jpeg" alt="IKEA Hugad Curtain Rod (Rod only)" class="item-image" />
+            </div>
+            <div class="item-content">
+              <div class="item-header-expanded">
+                <h3 class="item-title">IKEA Hugad Curtain Rod (Rod only)</h3>
+                <span class="badge badge-free" role="status" aria-label="Status: Available">Available</span>
+              </div>
+              
+              <p class="item-description">We gave away the blackout curtains that we used with this rod, but I didn't find it until doing
+a deep clean this week. Free to anyone who could use it!</p>
+              <a href="https://www.ikea.com/us/en/p/hugad-curtain-rod-white-10217141/#content" target="_blank" class="item-link">External Reference Link</a>
+            </div>
+          </div>
+        </details>
+        
         </div>
       </section>
-
-      <section class="items-section" id="pending">
-        <h2 class="section-title">
-          <a href="#pending" class="section-anchor">#</a>Pending Pickup
-        </h2>
-        <div class="items-grid">
-          <details
-            class="item-card"
-            name="free-items"
-            aria-label="Item details for 7 Wonders"
-          >
-            <summary>
-              <div class="item-thumbnail-container">
-                <img
-                  src="whatsapp-items/Games-7Wonders-Open.jpeg"
-                  alt="7 Wonders"
-                  class="item-image"
-                />
-                <span class="image-count"
-                  >2<span class="sr-only"> images available</span></span
-                >
-              </div>
-              <div class="item-header">
-                <div class="item-header-row">
-                  <h3 class="item-title">7 Wonders</h3>
-                  <span
-                    class="badge badge-pending"
-                    role="status"
-                    aria-label="Status: Pending Pickup"
-                    >Pending Pickup</span
-                  >
-                </div>
-                <p class="item-price-closed">$20 or MX$400</p>
-              </div>
-            </summary>
-            <button
-              class="close-button"
-              aria-label="Close"
-              onclick="this.closest('details').open = false"
-            ></button>
-            <div class="item-expanded">
-              <div class="item-gallery">
-                <img
-                  src="whatsapp-items/Games-7Wonders-Open.jpeg"
-                  alt="7 Wonders"
-                  class="item-image"
-                /><img
-                  src="whatsapp-items/Games-7Wonders-Box.jpeg"
-                  alt="7 Wonders"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-content">
-                <div class="item-header-expanded">
-                  <h3 class="item-title">7 Wonders</h3>
-                  <span
-                    class="badge badge-pending"
-                    role="status"
-                    aria-label="Status: Pending Pickup"
-                    >Pending Pickup</span
-                  >
-                </div>
-                <p class="item-price">$20 or MX$400</p>
-                <p class="item-description">
-                  Played three times and in very good condition!
-                </p>
-                <a
-                  href="https://boardgamegeek.com/boardgame/68448/7-wonders"
-                  target="_blank"
-                  class="item-link"
-                  >External Reference Link</a
-                >
-              </div>
-            </div>
-          </details>
-
-          <details
-            class="item-card"
-            name="free-items"
-            aria-label="Item details for Free Shopping Bags"
-          >
-            <summary>
-              <div class="item-thumbnail-container">
-                <img
-                  src="whatsapp-items/Home-Bags.jpeg"
-                  alt="Free Shopping Bags"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-header">
-                <div class="item-header-row">
-                  <h3 class="item-title">Free Shopping Bags</h3>
-                  <span
-                    class="badge badge-pending"
-                    role="status"
-                    aria-label="Status: Pending Pickup"
-                    >Pending Pickup</span
-                  >
-                </div>
-              </div>
-            </summary>
-            <button
-              class="close-button"
-              aria-label="Close"
-              onclick="this.closest('details').open = false"
-            ></button>
-            <div class="item-expanded">
-              <div class="item-gallery">
-                <img
-                  src="whatsapp-items/Home-Bags.jpeg"
-                  alt="Free Shopping Bags"
-                  class="item-image"
-                />
-              </div>
-              <div class="item-content">
-                <div class="item-header-expanded">
-                  <h3 class="item-title">Free Shopping Bags</h3>
-                  <span
-                    class="badge badge-pending"
-                    role="status"
-                    aria-label="Status: Pending Pickup"
-                    >Pending Pickup</span
-                  >
-                </div>
-
-                <p class="item-description">
-                  Cleaning out our closet. Take any that you would like
-                </p>
-              </div>
-            </div>
-          </details>
-        </div>
-      </section>
-    </main>
-    <script>
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape") {
-          const openCard = document.querySelector("details[open]");
-          if (openCard) {
-            openCard.open = false;
-          }
-        }
-      });
-    </script>
-  </body>
+      
+  </main>
+  <script>
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    const openCard = document.querySelector('details[open]');
+    if (openCard) {
+      openCard.open = false;
+    }
+  }
+});
+</script>
+</body>
 </html>
