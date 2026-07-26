@@ -202,7 +202,7 @@ and it fights the phone-scan job). Seed bed3738d.
     cursor: pointer;
     display: grid;
     gap: 1rem;
-    grid-template-columns: 2rem 4.5rem minmax(0, 1fr) auto;
+    grid-template-columns: 2rem 4.5rem minmax(0, 1fr) auto 1.5rem;
     list-style: none;
     padding: 1.05rem 0.25rem;
   }
@@ -288,6 +288,25 @@ and it fights the phone-scan job). Seed bed3738d.
     font-size: 0.875rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
+  }
+
+  .disclosure {
+    align-items: center;
+    border: 1px solid var(--ink);
+    display: flex;
+    height: 1.5rem;
+    justify-content: center;
+    width: 1.5rem;
+  }
+  .disclosure::before {
+    border-left: 0.3125rem solid transparent;
+    border-right: 0.3125rem solid transparent;
+    border-top: 0.375rem solid var(--ink);
+    content: "";
+    transition: transform 200ms var(--ease);
+  }
+  .line[open] .disclosure::before {
+    transform: rotate(180deg);
   }
 
   /* The authored moment: an opened line feeds out like a printout */
@@ -416,7 +435,7 @@ and it fights the phone-scan job). Seed bed3738d.
     /* The title needs the full column width, so the price drops beneath it */
     .line > summary {
       gap: 0.4rem 0.85rem;
-      grid-template-columns: 1.75rem 5.5rem minmax(0, 1fr);
+      grid-template-columns: 1.75rem 5.5rem minmax(0, 1fr) 1.25rem;
     }
     .gallery {
       gap: 0.35rem;
@@ -499,6 +518,7 @@ and it fights the phone-scan job). Seed bed3738d.
               </span>
               <span class="line-title">Ingenuity Soothe 'n Delight Foldable Baby Swing and 6-Speeds (0-9 Months, 6-20 lbs)</span>
               <span class="price">$40<span class="mx">MX$750</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Baby-Swing-1.jpeg" alt="Ingenuity Soothe 'n Delight Foldable Baby Swing and 6-Speeds (0-9 Months, 6-20 lbs), photo 1 of 3" style="--i:0" loading="lazy" decoding="async" /><img src="whatsapp-items/display/Baby-Swing-2.jpeg" alt="Ingenuity Soothe 'n Delight Foldable Baby Swing and 6-Speeds (0-9 Months, 6-20 lbs), photo 2 of 3" style="--i:1" loading="lazy" decoding="async" /><img src="whatsapp-items/display/Baby-Swing-3.jpeg" alt="Ingenuity Soothe 'n Delight Foldable Baby Swing and 6-Speeds (0-9 Months, 6-20 lbs), photo 3 of 3" style="--i:2" loading="lazy" decoding="async" /></div>
@@ -521,6 +541,7 @@ and it fights the phone-scan job). Seed bed3738d.
               </span>
               <span class="line-title">Ergobaby Embrace Newborn Baby Carrier (0-12 Months, 7-25 lbs)</span>
               <span class="price">$75<span class="mx">MX$1500</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Baby-Carrier.jpeg" alt="Ergobaby Embrace Newborn Baby Carrier (0-12 Months, 7-25 lbs), photo 1 of 1" style="--i:0" loading="lazy" decoding="async" /></div>
@@ -543,6 +564,7 @@ and it fights the phone-scan job). Seed bed3738d.
               </span>
               <span class="line-title">Bobbie Organic Infant Formula (Gentle)</span>
               <span class="price">$25/each<span class="mx">$150 for all seven</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Baby-Bobbie-Formula-Gentle.jpeg" alt="Bobbie Organic Infant Formula (Gentle), photo 1 of 1" style="--i:0" loading="lazy" decoding="async" /></div>
@@ -565,6 +587,7 @@ and it fights the phone-scan job). Seed bed3738d.
               </span>
               <span class="line-title">Bobbie Organic Infant Formula</span>
               <span class="price">$20/each<span class="mx">$140 for all eight</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Baby-Bobbie-Formula-Organic.jpeg" alt="Bobbie Organic Infant Formula, photo 1 of 1" style="--i:0" loading="lazy" decoding="async" /></div>
@@ -587,6 +610,7 @@ and it fights the phone-scan job). Seed bed3738d.
               </span>
               <span class="line-title">Decrypto (Limited 5th Edition Box)</span>
               <span class="price">$25<span class="mx">MX$500</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Games-Decrypto-1.jpeg" alt="Decrypto (Limited 5th Edition Box), photo 1 of 3" style="--i:0" loading="lazy" decoding="async" /><img src="whatsapp-items/display/Games-Decrypto-4.jpeg" alt="Decrypto (Limited 5th Edition Box), photo 2 of 3" style="--i:1" loading="lazy" decoding="async" /><img src="whatsapp-items/display/Games-Decrypto-5.jpeg" alt="Decrypto (Limited 5th Edition Box), photo 3 of 3" style="--i:2" loading="lazy" decoding="async" /></div>
@@ -609,6 +633,7 @@ and it fights the phone-scan job). Seed bed3738d.
               </span>
               <span class="line-title">Geared (Kickstarter Edition)</span>
               <span class="price">$5<span class="mx">MX$100</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Games-Geared-Open.jpeg" alt="Geared (Kickstarter Edition), photo 1 of 2" style="--i:0" loading="lazy" decoding="async" /><img src="whatsapp-items/display/Games-Geared-Box.jpeg" alt="Geared (Kickstarter Edition), photo 2 of 2" style="--i:1" loading="lazy" decoding="async" /></div>
@@ -631,6 +656,7 @@ and it fights the phone-scan job). Seed bed3738d.
               </span>
               <span class="line-title">Love Letter</span>
               <span class="price">$7<span class="mx">MX$150</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Games-LoveLetter-Open.jpeg" alt="Love Letter, photo 1 of 2" style="--i:0" loading="lazy" decoding="async" /><img src="whatsapp-items/display/Games-LoveLetter-Box.jpeg" alt="Love Letter, photo 2 of 2" style="--i:1" loading="lazy" decoding="async" /></div>
@@ -653,6 +679,7 @@ and it fights the phone-scan job). Seed bed3738d.
               </span>
               <span class="line-title">Sushi Go</span>
               <span class="price">$5<span class="mx">MX$100</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Games-SushiGo-Open.jpeg" alt="Sushi Go, photo 1 of 2" style="--i:0" loading="lazy" decoding="async" /><img src="whatsapp-items/display/Games-SushiGo-Box.jpeg" alt="Sushi Go, photo 2 of 2" style="--i:1" loading="lazy" decoding="async" /></div>
@@ -675,6 +702,7 @@ and it fights the phone-scan job). Seed bed3738d.
               </span>
               <span class="line-title">Ticket to Ride Europe + 1912 Expansion</span>
               <span class="price">$35<span class="mx">MX$700</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Games-TTR-Open.jpeg" alt="Ticket to Ride Europe + 1912 Expansion, photo 1 of 2" style="--i:0" loading="lazy" decoding="async" /><img src="whatsapp-items/display/Games-TTR-Box.jpeg" alt="Ticket to Ride Europe + 1912 Expansion, photo 2 of 2" style="--i:1" loading="lazy" decoding="async" /></div>
@@ -698,6 +726,7 @@ separately (~$12), but I no longer have the box for it</p>
               </span>
               <span class="line-title">Whirling Witchraft</span>
               <span class="price">$20<span class="mx">MX$400</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Games-WW-Open.jpeg" alt="Whirling Witchraft, photo 1 of 2" style="--i:0" loading="lazy" decoding="async" /><img src="whatsapp-items/display/Games-WW-Box.jpeg" alt="Whirling Witchraft, photo 2 of 2" style="--i:1" loading="lazy" decoding="async" /></div>
@@ -720,6 +749,7 @@ separately (~$12), but I no longer have the box for it</p>
               </span>
               <span class="line-title">Tsuro</span>
               <span class="price">$20<span class="mx">MX$400</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Games-Tsuro-Open-2.jpeg" alt="Tsuro, photo 1 of 3" style="--i:0" loading="lazy" decoding="async" /><img src="whatsapp-items/display/Games-Tsuro-Open-1.jpeg" alt="Tsuro, photo 2 of 3" style="--i:1" loading="lazy" decoding="async" /><img src="whatsapp-items/display/Games-Tsuro-Box.jpeg" alt="Tsuro, photo 3 of 3" style="--i:2" loading="lazy" decoding="async" /></div>
@@ -742,6 +772,7 @@ separately (~$12), but I no longer have the box for it</p>
               </span>
               <span class="line-title">VIGRUE 175PCS Assorted Concrete Screws Kit</span>
               <span class="price">$10<span class="mx">MX$200</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Home-Nails.jpeg" alt="VIGRUE 175PCS Assorted Concrete Screws Kit, photo 1 of 1" style="--i:0" loading="lazy" decoding="async" /></div>
@@ -764,6 +795,7 @@ separately (~$12), but I no longer have the box for it</p>
               </span>
               <span class="line-title">Scalpers Brown Leather Wallet</span>
               <span class="price">$20<span class="mx">MX$400</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Wallet-01-Flat.jpeg" alt="Scalpers Brown Leather Wallet, photo 1 of 2" style="--i:0" loading="lazy" decoding="async" /><img src="whatsapp-items/display/Wallet-04-Back.jpeg" alt="Scalpers Brown Leather Wallet, photo 2 of 2" style="--i:1" loading="lazy" decoding="async" /></div>
@@ -798,6 +830,7 @@ The wallet has the original tags, if you would like to give it as a gift</p>
               </span>
               <span class="line-title">Toniebox (Broken! For parts)</span>
               <span class="price is-free">Free<span class="sr-only">, no charge</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Home-BrokenTony-2.jpeg" alt="Toniebox (Broken! For parts), photo 1 of 2" style="--i:0" loading="lazy" decoding="async" /><img src="whatsapp-items/display/Home-BrokenTony-3.jpeg" alt="Toniebox (Broken! For parts), photo 2 of 2" style="--i:1" loading="lazy" decoding="async" /></div>
@@ -824,6 +857,7 @@ it fully</p>
               </span>
               <span class="line-title">Assorted Velcro Sanding Discs with Drill Attachment Pad</span>
               <span class="price is-free">Free<span class="sr-only">, no charge</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Home-Sanding.jpeg" alt="Assorted Velcro Sanding Discs with Drill Attachment Pad, photo 1 of 1" style="--i:0" loading="lazy" decoding="async" /></div>
@@ -846,6 +880,7 @@ it fully</p>
               </span>
               <span class="line-title">Kate Spade Macaron Mug</span>
               <span class="price is-free">Free<span class="sr-only">, no charge</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Home-KS-Mug-Up.jpeg" alt="Kate Spade Macaron Mug, photo 1 of 2" style="--i:0" loading="lazy" decoding="async" /><img src="whatsapp-items/display/Home-KS-Mug-Down.jpeg" alt="Kate Spade Macaron Mug, photo 2 of 2" style="--i:1" loading="lazy" decoding="async" /></div>
@@ -868,6 +903,7 @@ it fully</p>
               </span>
               <span class="line-title">Away Orange Drawstring Kids Bag</span>
               <span class="price is-free">Free<span class="sr-only">, no charge</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Home-Away-Bag.jpeg" alt="Away Orange Drawstring Kids Bag, photo 1 of 1" style="--i:0" loading="lazy" decoding="async" /></div>
@@ -890,6 +926,7 @@ it fully</p>
               </span>
               <span class="line-title">ARRIS SurfBoard SB6141 Modem</span>
               <span class="price is-free">Free<span class="sr-only">, no charge</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Home-Modem.jpeg" alt="ARRIS SurfBoard SB6141 Modem, photo 1 of 1" style="--i:0" loading="lazy" decoding="async" /></div>
@@ -912,6 +949,7 @@ it fully</p>
               </span>
               <span class="line-title">IKEA Hugad Curtain Rod (Rod only)</span>
               <span class="price is-free">Free<span class="sr-only">, no charge</span></span>
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               <div class="gallery"><img src="whatsapp-items/display/Home-Rod-2.jpeg" alt="IKEA Hugad Curtain Rod (Rod only), photo 1 of 2" style="--i:0" loading="lazy" decoding="async" /><img src="whatsapp-items/display/Home-Rod-0.jpeg" alt="IKEA Hugad Curtain Rod (Rod only), photo 2 of 2" style="--i:1" loading="lazy" decoding="async" /></div>

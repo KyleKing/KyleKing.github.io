@@ -440,7 +440,7 @@ HEAD_HTML = """
     cursor: pointer;
     display: grid;
     gap: 1rem;
-    grid-template-columns: 2rem 4.5rem minmax(0, 1fr) auto;
+    grid-template-columns: 2rem 4.5rem minmax(0, 1fr) auto 1.5rem;
     list-style: none;
     padding: 1.05rem 0.25rem;
   }
@@ -526,6 +526,25 @@ HEAD_HTML = """
     font-size: 0.875rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
+  }
+
+  .disclosure {
+    align-items: center;
+    border: 1px solid var(--ink);
+    display: flex;
+    height: 1.5rem;
+    justify-content: center;
+    width: 1.5rem;
+  }
+  .disclosure::before {
+    border-left: 0.3125rem solid transparent;
+    border-right: 0.3125rem solid transparent;
+    border-top: 0.375rem solid var(--ink);
+    content: "";
+    transition: transform 200ms var(--ease);
+  }
+  .line[open] .disclosure::before {
+    transform: rotate(180deg);
   }
 
   /* The authored moment: an opened line feeds out like a printout */
@@ -654,7 +673,7 @@ HEAD_HTML = """
     /* The title needs the full column width, so the price drops beneath it */
     .line > summary {
       gap: 0.4rem 0.85rem;
-      grid-template-columns: 1.75rem 5.5rem minmax(0, 1fr);
+      grid-template-columns: 1.75rem 5.5rem minmax(0, 1fr) 1.25rem;
     }
     .gallery {
       gap: 0.35rem;
@@ -780,6 +799,7 @@ def _line_html(item: Item, line_no: int, eager: bool) -> str:
               </span>
               <span class="line-title">{item.title}</span>
               {_price_html(item)}
+              <span class="disclosure" aria-hidden="true"></span>
             </summary>
             <div class="detail">
               {_gallery_html(item)}
