@@ -1,0 +1,229 @@
+{
+    "schemaVersion": 2,
+    "generatedAt": "2026-07-26T14:50:28Z",
+    "title": "Design System: kyleking.me",
+    "extensions": {
+        "colorMeta": {
+            "paper": {
+                "role": "neutral",
+                "displayName": "Warm Paper",
+                "canonical": "#f5f3ed",
+                "tonalRamp": [
+                    "#312c1b",
+                    "#574d30",
+                    "#7c6e45",
+                    "#a2905a",
+                    "#b7a97e",
+                    "#ccc2a4",
+                    "#e1dbc9",
+                    "#f6f4ef"
+                ]
+            },
+            "ink": {
+                "role": "neutral",
+                "displayName": "Warm Near-Black",
+                "canonical": "#1a1815",
+                "tonalRamp": [
+                    "#2a2722",
+                    "#4b453c",
+                    "#6b6356",
+                    "#8b8070",
+                    "#a59d90",
+                    "#c0b9b0",
+                    "#dad6d1",
+                    "#f4f3f1"
+                ]
+            },
+            "night": {
+                "role": "neutral",
+                "displayName": "Charcoal Night",
+                "canonical": "#17171a",
+                "tonalRamp": [
+                    "#242429",
+                    "#3f3f48",
+                    "#5b5b66",
+                    "#767685",
+                    "#9595a1",
+                    "#b4b4bc",
+                    "#d3d3d8",
+                    "#f1f1f3"
+                ]
+            },
+            "ash": {
+                "role": "neutral",
+                "displayName": "Cool Ash",
+                "canonical": "#b9b9be",
+                "tonalRamp": [
+                    "#252528",
+                    "#414146",
+                    "#5d5d64",
+                    "#797982",
+                    "#97979f",
+                    "#b5b5bb",
+                    "#d4d4d7",
+                    "#f2f2f3"
+                ]
+            },
+            "fountain-ink": {
+                "role": "primary",
+                "displayName": "Fountain Ink",
+                "canonical": "#3a5a8c",
+                "tonalRamp": [
+                    "#162336",
+                    "#273d5f",
+                    "#395889",
+                    "#4a72b2",
+                    "#7192c4",
+                    "#9bb2d5",
+                    "#c4d1e6",
+                    "#edf1f8"
+                ]
+            },
+            "fountain-ink-pale": {
+                "role": "primary",
+                "displayName": "Pale Fountain Ink",
+                "canonical": "#93aede",
+                "tonalRamp": [
+                    "#12213b",
+                    "#203967",
+                    "#2d5294",
+                    "#3b6bc1",
+                    "#668cd0",
+                    "#92adde",
+                    "#bfcfeb",
+                    "#ebf0f9"
+                ]
+            }
+        },
+        "typographyMeta": {
+            "display": {
+                "displayName": "Display",
+                "purpose": "The name only. Clamps between 2.5rem and 3.5rem; optical sizing thins the strokes at the top of that range."
+            },
+            "body": {
+                "displayName": "Body",
+                "purpose": "Left-aligned biography paragraphs, capped at a 38rem measure (about 61 characters)."
+            },
+            "label": {
+                "displayName": "Icon Row",
+                "purpose": "Glyph scale for the contact icon row, not a text scale."
+            }
+        },
+        "shadows": [],
+        "motion": [
+            {
+                "name": "ease-standard",
+                "value": "cubic-bezier(0.4, 0, 0.2, 1)",
+                "purpose": "The only easing in the system, used for the contact icon opacity fade."
+            },
+            {
+                "name": "duration-slow",
+                "value": "400ms",
+                "purpose": "Hover transition length. Deliberately unhurried; the page's only motion."
+            }
+        ],
+        "breakpoints": []
+    },
+    "components": [
+        {
+            "name": "Contact Icon Link",
+            "kind": "nav",
+            "refersTo": "icon-link",
+            "description": "Label-free contact anchor drawn by masking currentColor through an inlined Carbon SVG. Rests at 55% opacity, lifts to 95% on hover, and draws a Fountain Ink ring on keyboard focus.",
+            "html": "<a class=\"ds-icon-link ds-icon-github\" href=\"https://github.com/KyleKing\" aria-label=\"GitHub\"></a>",
+            "css": ".ds-icon-link { display: inline-block; width: 1.2em; height: 1.2em; font-size: 1.875rem; line-height: 2.25rem; color: inherit; background-color: currentColor; opacity: 0.55; mask-size: 100% 100%; -webkit-mask-size: 100% 100%; transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-icon-link:hover { opacity: 0.95; } .ds-icon-link:focus-visible { opacity: 0.95; outline: 2px solid #3a5a8c; outline-offset: 4px; } .ds-icon-github { --icon: url(\"data:image/svg+xml;utf8,%3Csvg viewBox='0 0 32 32' width='1.2em' height='1.2em' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath fill='currentColor' fill-rule='evenodd' d='M16 2a14 14 0 0 0-4.43 27.28c.7.13 1-.3 1-.67v-2.38c-3.89.84-4.71-1.88-4.71-1.88a3.71 3.71 0 0 0-1.62-2.05c-1.27-.86.1-.85.1-.85a2.94 2.94 0 0 1 2.14 1.45a3 3 0 0 0 4.08 1.16a2.93 2.93 0 0 1 .88-1.87c-3.1-.36-6.37-1.56-6.37-6.92a5.4 5.4 0 0 1 1.44-3.76a5 5 0 0 1 .14-3.7s1.17-.38 3.85 1.43a13.3 13.3 0 0 1 7 0c2.67-1.81 3.84-1.43 3.84-1.43a5 5 0 0 1 .14 3.7a5.4 5.4 0 0 1 1.44 3.76c0 5.38-3.27 6.56-6.39 6.91a3.33 3.33 0 0 1 .95 2.59v3.84c0 .46.25.81 1 .67A14 14 0 0 0 16 2Z'/%3E%3C/svg%3E\"); mask: var(--icon) no-repeat; -webkit-mask: var(--icon) no-repeat; }"
+        },
+        {
+            "name": "Text Link",
+            "kind": "custom",
+            "refersTo": "text-link",
+            "description": "Fountain Ink in both schemes, underlined at 1px with a 0.15em offset so descenders clear the rule.",
+            "html": "<a class=\"ds-link\" href=\"#\">a link in running text</a>",
+            "css": ".ds-link { font-family: Newsreader, Georgia, 'Times New Roman', serif; font-weight: 400; font-size: 1.125rem; color: #3a5a8c; text-decoration-thickness: 1px; text-underline-offset: 0.15em; } @media (prefers-color-scheme: dark) { .ds-link { color: #93aede; } }"
+        },
+        {
+            "name": "Portrait",
+            "kind": "custom",
+            "refersTo": "portrait",
+            "description": "The only image and the only curve on the page. A 15rem circle that does the work a logo would do elsewhere.",
+            "html": "<img class=\"ds-portrait\" src=\"./IMG_0428.jpeg\" alt=\"Kyle King\" />",
+            "css": ".ds-portrait { width: 15rem; height: 15rem; border-radius: 50%; object-fit: cover; }"
+        },
+        {
+            "name": "Display Name",
+            "kind": "custom",
+            "refersTo": "display",
+            "description": "The name, and the only element permitted at display size. Clamps down on narrow screens with no breakpoint.",
+            "html": "<div class=\"ds-display\">Kyle King</div>",
+            "css": ".ds-display { font-family: Newsreader, Georgia, 'Times New Roman', serif; font-optical-sizing: auto; font-weight: 400; font-size: clamp(2.5rem, 9vw, 3.5rem); line-height: 1.05; letter-spacing: -0.015em; margin: 1.75rem 0 1.5rem 0; text-align: center; }"
+        },
+        {
+            "name": "Body Paragraph",
+            "kind": "custom",
+            "refersTo": "body",
+            "description": "Left-aligned biography copy inside a centered column, held to about 61 characters.",
+            "html": "<div class=\"ds-paragraph\">I have a Masters in Computer Science from Georgia Tech and a B.S. in Bioengineering from the University of Maryland.</div>",
+            "css": ".ds-paragraph { font-family: Newsreader, Georgia, 'Times New Roman', serif; font-optical-sizing: auto; font-weight: 400; font-size: 1.125rem; line-height: 1.7; margin-bottom: 1.25rem; max-width: 38rem; text-align: left; text-wrap: pretty; }"
+        }
+    ],
+    "narrative": {
+        "northStar": "The Quiet Résumé",
+        "overview": "The page reads like a printed page rather than a web application. It is paper-colored, low in contrast, and unhurried, and it asks nothing of the visitor except to read two short paragraphs and pick a way to get in touch. A recruiter arriving from a profile link should form a judgment in under a minute, and the restraint of the surface is what earns that judgment. Loud design on a personal page reads as compensation, so this page declines to compensate.\n\nEverything sits in one vertically centered column against a full-viewport field of warm off-white. There is no navigation, no scroll narrative, and no second destination, because there is no second page. Depth is absent by construction: no shadows, no borders, no cards, no dividers. Separation comes from generous vertical air (5rem spacers opening and closing the column) and from the contrast between the one circular photograph and the flat ground it sits on.\n\nColor is nearly absent. The palette is a warm paper and a warm near-black in light mode, mirrored to a cool charcoal and a cool ash in dark mode, with a single fountain-pen blue reserved for links. Type is Newsreader at one weight, with optical sizing on, so the name and the body copy are cut by the same hand at different sizes. The page is static HTML with inlined SVG icon masks and one font request, and that economy is a standing constraint rather than a temporary state.",
+        "keyCharacteristics": [
+            "One centered column, one viewport, no navigation",
+            "Warm paper and warm ink by day, cool charcoal and cool ash by night",
+            "A single serif at a single weight, with optical sizing carrying the size range",
+            "Uniformly flat: no shadow, no border, no card, no divider",
+            "A single circular portrait as the only geometric event",
+            "Static HTML with inlined icons and no build step"
+        ],
+        "rules": [
+            {
+                "name": "The Two-Tone Rule",
+                "body": "Any screen resolves to one ground and one ink. The fountain blue is the single exception, and it is reserved for links. A fourth color needs a reason that survives being stated out loud, and \"it looked bare\" is not one.",
+                "section": "colors"
+            },
+            {
+                "name": "The Mirror Rule",
+                "body": "Dark mode is a scheme of equal standing, not a filter over the light one. Both grounds are chosen for their own temperature (#f5f3ed warm, #17171a cool), the inks follow their ground's temperature, and both schemes define the accent explicitly.",
+                "section": "colors"
+            },
+            {
+                "name": "The One Weight Rule",
+                "body": "The page uses a single family at weight 400. Hierarchy is built from size, optical sizing, and vertical air. No bold, no italic, no uppercase, no letter-spacing tricks beyond the display's -0.015em.",
+                "section": "typography"
+            },
+            {
+                "name": "The Two Sizes Rule",
+                "body": "Display and Body are the whole text scale. Introducing a third text size means the page has grown a section it probably should not have.",
+                "section": "typography"
+            },
+            {
+                "name": "The No Surface Rule",
+                "body": "Nothing gets a background, a border, or a shadow. If content needs separating, separate it with space.",
+                "section": "elevation"
+            }
+        ],
+        "dos": [
+            "Do keep the entire page inside one centered column at a 38rem cap with a 5% gutter.",
+            "Do resolve every screen to one ground and one ink, reserving the fountain blue for links, per The Two-Tone Rule.",
+            "Do left align running text inside the centered column; center only the portrait, the name, and the icon row.",
+            "Do build hierarchy from size, optical sizing, and vertical air, using the 5rem / 1.75rem / 1.25rem / 0.75rem rhythm already in place.",
+            "Do define both color schemes deliberately, including the accent; dark mode is not a post-processing pass.",
+            "Do inline icons as SVG data URI masks over currentColor, adding no network request and no icon dependency.",
+            "Do give every interactive element a visible :focus-visible treatment, since nothing here has a box of its own to shift.",
+            "Do keep new work editable as plain static HTML that opens from the filesystem."
+        ],
+        "donts": [
+            "Don't add a shadow, border, card, or divider. Separation is space, per The No Surface Rule.",
+            "Don't introduce a second font family, a second weight, or bold, italic, and uppercase treatments.",
+            "Don't spend Fountain Ink on anything but links and focus rings. It is not a heading color, a button fill, or a hover state.",
+            "Don't add a navigation bar, header chrome, or footer. There is no second page, and chrome implying one would be a lie.",
+            "Don't import a CSS framework, a build step, or an icon package.",
+            "Don't borrow the marketing landing page vocabulary: gradient hero, feature grid, testimonial row, oversized CTA.",
+            "Don't borrow the developer portfolio template vocabulary: terminal green, monospace body text, typing animations, contribution graphs.",
+            "Don't borrow the maximal personal brand vocabulary: full-bleed photography, scroll-jacking, display type at hero scale, motion on every element.",
+            "Don't treat whatsapp-items.html as part of this system. It is a temporary surface for one move, running its own throwaway sage palette (#7fa99b, #c8dbbb, #f7f7e8) with cards, badges, and shadows that this system rejects. Nothing here inherits from it, and it is generated only by generate_whatsapp.py."
+        ]
+    }
+}

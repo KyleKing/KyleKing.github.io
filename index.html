@@ -17,27 +17,39 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kyle King's Personal Website</title>
+    <meta
+      name="description"
+      content="Kyle King, founding software engineer at Coverbase. Previously Parexel AI Labs and Meso Scale Discovery."
+    />
+    <meta
+      name="theme-color"
+      content="#f5f3ed"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#17171a"
+      media="(prefers-color-scheme: dark)"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400&display=swap"
       rel="stylesheet"
     />
 
     <style>
       :root {
-        --color-bg: #f4f4f0;
-        --color-fg: #161616;
+        --color-bg: #f5f3ed;
+        --color-fg: #1a1815;
+        --color-link: #3a5a8c;
       }
       @media (prefers-color-scheme: dark) {
-        body {
-          --color-bg: #1e1e20;
-          --color-fg: #acacad;
-        }
-
-        body a {
-          color: #9b63dc;
+        :root {
+          --color-bg: #17171a;
+          --color-fg: #b9b9be;
+          --color-link: #93aede;
         }
       }
 
@@ -45,9 +57,17 @@
       body {
         background: var(--color-bg);
         color: var(--color-fg);
-        font-family: "Roboto", sans-serif;
+        font-family: "Newsreader", Georgia, "Times New Roman", serif;
+        font-optical-sizing: auto;
         height: 100vh;
+        height: 100dvh;
         margin: 0;
+      }
+
+      a {
+        color: var(--color-link);
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.15em;
       }
 
       #container {
@@ -65,7 +85,7 @@
       */
       #content {
         margin: auto 5% auto 5%;
-        max-width: 800px;
+        max-width: 38rem;
         min-height: 0;
         min-width: 0;
       }
@@ -80,14 +100,17 @@
         width: 15rem;
       }
       .header {
-        font-size: 3rem;
-        line-height: 1;
-        margin: 1.25rem;
+        font-size: clamp(2.5rem, 9vw, 3.5rem);
+        letter-spacing: -0.015em;
+        line-height: 1.05;
+        margin: 1.75rem 0 1.5rem 0;
       }
       .paragraph {
         font-size: 1.125rem;
-        line-height: 1.75rem;
+        line-height: 1.7;
         margin-bottom: 1.25rem;
+        text-align: left;
+        text-wrap: pretty;
       }
 
       #icons {
@@ -95,27 +118,28 @@
         display: flex;
         flex-direction: row;
         font-size: 1.875rem;
+        gap: 0.75rem;
         justify-content: center;
         line-height: 2.25rem;
+        margin-top: 2rem;
       }
       #icons a {
         -webkit-mask-size: 100% 100%;
         background-color: currentColor;
         color: inherit;
         height: 1.2em;
-        margin: 0.1rem;
         mask-size: 100% 100%;
-        opacity: 0.3;
-        transition-duration: 400ms;
-        transition-property:
-          color, background-color, border-color, outline-color,
-          text-decoration-color, fill, stroke, opacity, box-shadow, transform,
-          filter, backdrop-filter;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        opacity: 0.55;
+        transition: opacity 400ms cubic-bezier(0.4, 0, 0.2, 1);
         width: 1.2em;
       }
       #icons a:hover {
-        opacity: 0.9;
+        opacity: 0.95;
+      }
+      #icons a:focus-visible {
+        opacity: 0.95;
+        outline: 2px solid var(--color-link);
+        outline-offset: 4px;
       }
       /* FYI: from: ".uno.html" using Carbon icons
          https://carbon-elements.netlify.app/icons/examples/preview
@@ -142,22 +166,24 @@
     <div id="container">
       <div id="content">
         <div class="spacer"></div>
-        <img class="img-rounded" src="./IMG_0428.jpeg" />
+        <img class="img-rounded" src="./IMG_0428.jpeg" alt="Kyle King" />
         <div class="header">Kyle King</div>
         <div class="paragraph">
-          I am a founding software engineer at Coverbase, where are
+          I am a founding software engineer at Coverbase, where we are
           revolutionizing Procurement and TPRM capabilities for risk-aware
-          businesses. I was previously a tech lead for multiple products at
-          Parexel AI Labs where we applied NLP and LLMs to modernize
-          pharmaceutical services. Previously, at Meso Scale Discovery, I built
-          robotic control software for medical instruments. I am an Eagle Scout
-          who has also worked in a microfluidics lab, a Halobacterium genetics
-          lab, and with penguins and other animals at the Maryland Zoo in
-          Baltimore.
+          businesses.
         </div>
         <div class="paragraph">
-          I have a Masters in Computer Science from Georgia Tech and a B.S. in
-          Bioengineering from the University of Maryland.
+          Before Coverbase, I was a tech lead for multiple products at Parexel
+          AI Labs where we applied NLP and LLMs to modernize pharmaceutical
+          services. At Meso Scale Discovery, I built robotic control software
+          for medical instruments. Also an Eagle Scout, I've worked in a
+          microfluidics lab, a Halobacterium genetics lab, and with penguins and
+          other animals at the Maryland Zoo.
+        </div>
+        <div class="paragraph">
+          From Georgia Tech, I have a Masters in Computer Science and from the
+          University of Maryland, a B.S. in Bioengineering.
         </div>
         <div id="icons">
           <a id="i-carbon-logo-github" href="https://github.com/KyleKing"></a>
