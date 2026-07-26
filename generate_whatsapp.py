@@ -263,7 +263,7 @@ HEAD_HTML = """
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Household, baby, and board game items offered free or for sale in East Polanco, Mexico City" />
+<meta name="description" content="Board games, baby gear, and household items, free or for sale in East Polanco, Mexico City" />
 <meta name="theme-color" content="#f2f2f0" media="(prefers-color-scheme: light)" />
 <meta name="theme-color" content="#131312" media="(prefers-color-scheme: dark)" />
 <meta name="robots" content="noindex" />
@@ -738,7 +738,7 @@ def _line_html(item: Item, line_no: int, eager: bool) -> str:
               {desc}
               <p class="detail-foot">
                 {ref}
-                <a class="permalink" href="#{slug}">Link to this line</a>
+                <a class="permalink" href="#{slug}">Link to this item</a>
               </p>
             </div>
           </details>
@@ -804,10 +804,10 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
       <p class="label">East Polanco &middot; Ciudad de M&eacute;xico</p>
       <h1>Free &amp; For Sale</h1>
       <p class="standfirst">
-        Board games, baby gear, and household odds and ends we no longer use,
-        photographed as they are. Prices are roughly half of Amazon, and I take
-        pesos or dollars, Venmo, or PayPal. Message me in the building WhatsApp
-        group with questions or to arrange a time.
+        Board games, baby gear, and other things around the apartment we
+        don't use anymore. Prices are roughly half of Amazon and I accept pesos
+        or dollars, Venmo, PayPal, etc. Message me in the building WhatsApp
+        group to ask questions and arrange a time.
       </p>
       <dl class="fields">
         <div>
