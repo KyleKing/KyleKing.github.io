@@ -62,7 +62,7 @@ repos:
         name: compress photos and strip metadata
         language: system
         entry: uv run --no-project process_images.py
-        files: ^(process_images\.py|whatsapp-items/[^/]+\.jpeg|IMG_0428\.jpeg)$
+        files: ^(process_images\.py|generate_whatsapp\.py|whatsapp-items/[^/]+\.jpeg|IMG_0428\.jpeg)$
         pass_filenames: false
         stages: [pre-commit]
       - id: generate-whatsapp

@@ -55,16 +55,6 @@ ITEMS: list[Item] = [
     )
     for title, image_names, status, link, description, price in [
         (
-            'UPPAbaby Vista Bassinet (Bassinet only) + Bug and Rain Covers',
-            ('Baby-Bassinet-Open.jpeg', 'Baby-Bassinet-Closed.jpeg', 'Baby-Bassinet-Packed.jpeg',),
-            ItemStatus.PAID,
-            'https://babytochild.com/uppababy-bassinet-review-safe-overnight-sleep-or-just-smart-stroller-add-on',
-            dedent("""\
-            This is the v2 Bassinet, but it works with either v2 or v3 stroller (Vista, Cruz, and Ridge). Our UPPAbaby
-            Vista stroller isn't for sale right now so this listing is only for the bassinet"""),
-            '$75 or MX$1500',
-        ),
-        (
             'Ingenuity Soothe \'n Delight Foldable Baby Swing and 6-Speeds (0-9 Months, 6-20 lbs)',
             ('Baby-Swing-1.jpeg','Baby-Swing-2.jpeg','Baby-Swing-3.jpeg'),
             ItemStatus.PAID,
