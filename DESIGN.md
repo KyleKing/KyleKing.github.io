@@ -184,4 +184,4 @@ A `15rem` circle with `object-fit: cover`, sitting above the name. It is the onl
 - **Don't** borrow the marketing landing page vocabulary: gradient hero, feature grid, testimonial row, oversized CTA
 - **Don't** borrow the developer portfolio template vocabulary: terminal green, monospace body text, typing animations, contribution graphs
 - **Don't** borrow the maximal personal brand vocabulary: full-bleed photography, scroll-jacking, display type at hero scale, motion on every element
-- **Don't** treat `whatsapp-items.html` as part of this system. It is a temporary surface for one move, running its own throwaway sage palette (`#7fa99b`, `#c8dbbb`, `#f7f7e8`) with cards, badges, and shadows that this system rejects. Nothing here inherits from it, and it is generated only by `generate_whatsapp.py`
+- **Don't** treat `whatsapp-items.html` as part of this system. It runs a deliberately separate visual world (a packing manifest in Archivo on neutral form stock, documented in `.impeccable/surfaces/whatsapp-items-html.md`) and is generated only by `generate_whatsapp.py`. Neither surface borrows tokens, type, or components from the other

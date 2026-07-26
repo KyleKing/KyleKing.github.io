@@ -241,15 +241,15 @@ ITEMS: list[Item] = [
 DIRECTION_CONTRACT = """<!--
 THESIS: A neighbourhood offer list reads as the manifest it already is,
 numbered lines on a form, and refuses the e-commerce grid of equal cards.
-OWN-WORLD: Neutral form stock, one black ink, one dispatch-orange marking ink.
-Archivo worked across its width axis: expanded caps for the masthead, condensed
-tracked caps for field labels, tabular figures down the price column. Hairline
-rules, a perforated tear edge, sprocket margin. No shadows, no rounded cards.
+OWN-WORLD: Neutral form stock, one black ink, and a dispatch-orange marking ink
+spent only on what is free. Archivo at normal proportions: caps for the heading,
+tracked caps for field labels, tabular figures down the price column. Rules
+carry every division. No shadows, no rounded cards, no color fields.
 STORY: A neighbour sees what is on offer, judges condition from the
 photographs, reads an honest price, and messages in the building chat.
-FIRST VIEWPORT: Ink band with the title in expanded caps over a six-field form
-header (zone, lines, split, updated, terms, pickup), a torn perforation edge,
-then line 01 of the numbered list.
+FIRST VIEWPORT: A compact form header (title, standfirst, then six fields:
+pickup, lines, split, terms, to claim, updated) closed by a heavy rule, with
+the first five numbered lines already on screen beneath it.
 FORM: Packing manifest, candidate 4 of the grounded list, no staging (physics
 drop-assembly rejected: needs an engine this dependency-free page cannot carry,
 and it fights the phone-scan job). Seed bed3738d.
@@ -260,14 +260,15 @@ HEAD_HTML = """
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="Household, baby, and board game items offered free or for sale in East Polanco, Mexico City" />
-<meta name="theme-color" content="#131311" />
+<meta name="theme-color" content="#f2f2f0" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#131312" media="(prefers-color-scheme: dark)" />
 <meta name="robots" content="noindex" />
 <title>Free &amp; For Sale &middot; Polanco</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
-  href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Archivo:wght@400..900&display=swap"
   rel="stylesheet"
 />
 
@@ -280,11 +281,6 @@ HEAD_HTML = """
     --rule: #cfcfc9;
     --mark: #c33505;
     --photo: #e6e6e2;
-    --band-bg: #131311;
-    --band-fg: #f2f2f0;
-    --band-soft: #9a9a92;
-    --band-rule: #3a3a35;
-    --band-mark: #ff713f;
     --ease: cubic-bezier(0.16, 1, 0.3, 1);
     interpolate-size: allow-keywords;
   }
@@ -297,11 +293,6 @@ HEAD_HTML = """
       --rule: #333330;
       --mark: #ff713f;
       --photo: #232320;
-      --band-bg: #232320;
-      --band-fg: #e6e5e0;
-      --band-soft: #9b9b93;
-      --band-rule: #45453e;
-      --band-mark: #ff713f;
     }
   }
 
@@ -322,7 +313,6 @@ HEAD_HTML = """
   .label {
     color: var(--ink-soft);
     font-size: 0.6875rem;
-    font-stretch: 75%;
     font-weight: 600;
     letter-spacing: 0.14em;
     line-height: 1.2;
@@ -337,39 +327,30 @@ HEAD_HTML = """
 
   /* Masthead: the form header of the manifest */
   .masthead {
-    background: var(--band-bg);
-    color: var(--band-fg);
+    border-bottom: 2px solid var(--ink);
   }
   .masthead .wrap {
-    padding-bottom: 1.5rem;
-    padding-top: 2.25rem;
-  }
-  .masthead .label {
-    color: var(--band-soft);
+    padding-bottom: 1.25rem;
+    padding-top: 1.75rem;
   }
   .masthead h1 {
-    font-size: clamp(2.25rem, 10vw, 5.5rem);
-    font-stretch: 125%;
-    font-weight: 900;
-    letter-spacing: -0.015em;
-    line-height: 0.88;
-    margin: 0 0 0.35rem 0;
+    font-size: clamp(1.75rem, 5.5vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: 0.005em;
+    line-height: 1.05;
+    margin: 0 0 0.4rem 0;
     text-transform: uppercase;
     text-wrap: balance;
   }
-  .masthead h1 span {
-    color: var(--band-mark);
-  }
   .masthead .standfirst {
-    color: var(--band-soft);
+    color: var(--ink-soft);
     font-size: 1rem;
-    font-stretch: 87%;
-    margin: 0 0 1.75rem 0;
-    max-width: 46ch;
+    margin: 0 0 1.25rem 0;
+    max-width: 58ch;
   }
 
   .fields {
-    border-top: 1px solid var(--band-rule);
+    border-top: 1px solid var(--rule);
     display: grid;
     gap: 1.125rem 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
@@ -384,7 +365,6 @@ HEAD_HTML = """
   }
   .fields dd {
     font-size: 0.9375rem;
-    font-stretch: 87%;
     font-weight: 500;
     line-height: 1.35;
     margin: 0;
@@ -393,26 +373,6 @@ HEAD_HTML = """
     font-variant-numeric: tabular-nums;
     font-weight: 700;
   }
-  .fields .tally span {
-    color: var(--band-mark);
-  }
-
-  /* Tear-off perforation between the header and the lines */
-  .tear {
-    background: var(--band-bg);
-    height: 9px;
-    -webkit-mask-image: radial-gradient(
-      circle at 50% 0,
-      transparent 4.5px,
-      #000 5px
-    );
-    -webkit-mask-repeat: repeat-x;
-    -webkit-mask-size: 14px 9px;
-    mask-image: radial-gradient(circle at 50% 0, transparent 4.5px, #000 5px);
-    mask-repeat: repeat-x;
-    mask-size: 14px 9px;
-  }
-
   main {
     padding-bottom: 4rem;
   }
@@ -421,11 +381,10 @@ HEAD_HTML = """
     align-items: baseline;
     display: flex;
     flex-wrap: wrap;
-    font-size: clamp(1.25rem, 4vw, 1.75rem);
-    font-stretch: 112%;
-    font-weight: 800;
+    font-size: 1.125rem;
+    font-weight: 700;
     gap: 0.65rem;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.08em;
     margin: 2.75rem 0 0.85rem 0;
     text-transform: uppercase;
   }
@@ -449,22 +408,6 @@ HEAD_HTML = """
     margin: 0;
     padding: 0;
   }
-  /* Tractor-feed margin: sprocket holes against the tear guide */
-  @media (min-width: 62rem) {
-    .manifest {
-      background-image: radial-gradient(
-          circle 3.5px at center,
-          var(--rule) 99%,
-          transparent 100%
-        ),
-        linear-gradient(var(--rule), var(--rule));
-      background-position: 0.6rem 1rem, 1.7rem 0;
-      background-repeat: repeat-y, repeat-y;
-      background-size: 1.5rem 1.5rem, 1px 100%;
-      padding-left: 2.75rem;
-    }
-  }
-
   .line {
     border-bottom: 1px solid var(--rule);
   }
@@ -472,10 +415,10 @@ HEAD_HTML = """
     align-items: center;
     cursor: pointer;
     display: grid;
-    gap: 0.875rem;
-    grid-template-columns: 1.75rem 3.75rem 1fr auto;
+    gap: 1rem;
+    grid-template-columns: 2rem 4.5rem 1fr auto;
     list-style: none;
-    padding: 0.7rem 0.25rem;
+    padding: 1.05rem 0.25rem;
   }
   .line > summary::-webkit-details-marker {
     display: none;
@@ -491,7 +434,6 @@ HEAD_HTML = """
   .line-no {
     color: var(--ink-soft);
     font-size: 0.75rem;
-    font-stretch: 75%;
     font-variant-numeric: tabular-nums;
     font-weight: 700;
     letter-spacing: 0.06em;
@@ -530,7 +472,6 @@ HEAD_HTML = """
 
   .line-title {
     font-size: 1.0625rem;
-    font-stretch: 94%;
     font-weight: 600;
     line-height: 1.25;
     text-wrap: pretty;
@@ -551,7 +492,6 @@ HEAD_HTML = """
   .price.is-free {
     color: var(--mark);
     font-size: 0.875rem;
-    font-stretch: 75%;
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -559,7 +499,6 @@ HEAD_HTML = """
   .price.is-pending {
     color: var(--ink-soft);
     font-size: 0.875rem;
-    font-stretch: 75%;
     letter-spacing: 0.12em;
     text-transform: uppercase;
   }
@@ -582,7 +521,7 @@ HEAD_HTML = """
   }
   @media (min-width: 62rem) {
     .detail {
-      padding-left: 7.5rem;
+      padding-left: 8.75rem;
     }
   }
 
@@ -628,7 +567,6 @@ HEAD_HTML = """
   .ref,
   .permalink {
     font-size: 0.75rem;
-    font-stretch: 75%;
     font-weight: 700;
     letter-spacing: 0.12em;
     text-decoration-thickness: 1px;
@@ -673,9 +611,6 @@ HEAD_HTML = """
   }
 
   @media (max-width: 30rem) {
-    .masthead h1 {
-      font-stretch: 105%;
-    }
     .masthead .wrap {
       padding-top: 1.75rem;
     }
@@ -696,11 +631,22 @@ HEAD_HTML = """
       flex: 0 0 4.75rem;
       margin-bottom: 0;
     }
+    /* The title needs the full column width, so the price drops beneath it */
     .line > summary {
-      grid-template-columns: 1.5rem 3.25rem 1fr auto;
+      gap: 0.4rem 0.75rem;
+      grid-template-columns: 1.75rem 3.75rem 1fr;
+    }
+    .line-no,
+    .thumb {
+      grid-row: 1 / 3;
+    }
+    .price {
+      grid-column: 3;
+      text-align: left;
     }
     .price .mx {
-      display: none;
+      display: inline;
+      margin-left: 0.4rem;
     }
   }
 
@@ -862,7 +808,7 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
   <header class="masthead">
     <div class="wrap">
       <p class="label">East Polanco &middot; Ciudad de M&eacute;xico</p>
-      <h1>Free &amp; <span>For Sale</span></h1>
+      <h1>Free &amp; For Sale</h1>
       <p class="standfirst">
         Things we no longer use, photographed as they are. Board games, baby
         gear, and household odds and ends, posted to the building chats.
@@ -878,7 +824,7 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
         </div>
         <div>
           <dt class="label">Split</dt>
-          <dd class="tally">{for_sale} for sale &middot; <span>{free} free</span></dd>
+          <dd class="tally">{for_sale} for sale &middot; {free} free</dd>
         </div>
         <div>
           <dt class="label">Terms</dt>
@@ -895,7 +841,6 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
       </dl>
     </div>
   </header>
-  <div class="tear"></div>
 
   <main class="wrap">
     {"".join(sections_html)}

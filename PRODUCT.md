@@ -10,7 +10,7 @@ web
 
 Recruiters, hiring managers, and prospective collaborators who arrive at kyleking.me to judge Kyle King's professional credibility before or during a conversation. They usually come from a profile link, a signature, or a search, already know the name, and want to confirm who he is and how to reach him in under a minute.
 
-A second, temporary audience uses `whatsapp-items.html`: neighbors in Polanco (Mexico City) browsing household, baby, and board game items offered free or for sale during a move. They arrive from a WhatsApp group link, mostly on a phone.
+A second audience uses `whatsapp-items.html`: neighbours in the building's Free and For Sale WhatsApp chats in Polanco (Mexico City), browsing household, baby, and board game items Kyle and his family no longer use. They arrive from a chat link, almost always on a phone.
 
 ## Product Purpose
 
@@ -32,7 +32,8 @@ Static files served by GitHub Pages at kyleking.me, with Cloudflare as CDN, Name
 - `whatsapp-items.html` is generated output and is never hand-edited. All changes to it go through `generate_whatsapp.py`, which owns its markup and CSS. It is excluded from the prettier and trailing-whitespace pre-commit hooks
 - Both pages support light and dark via `prefers-color-scheme` and must continue to
 - Dependency-light and fast: the only external request today is a Google Fonts stylesheet. Icons are inlined as data-URI SVG masks
-- The items page is a one-off for the current move and will be retired once the items are gone. Work on it should not be generalized into a standing feature
+- The items page runs its own visual world and does not inherit DESIGN.md, which governs `index.html` only. See `.impeccable/surfaces/whatsapp-items-html.md`
+- The items page carries no contact link. Publishing a phone number on a page open to the internet is not worth the convenience when the audience is already in the chat
 
 ## Brand Commitments
 
@@ -52,4 +53,4 @@ No testimonials, case studies, metrics, press, project write-ups, or writing sam
 - A visitor should reach a decision (who is this, how do I contact him) without scrolling for it
 - Static and self-contained. Nothing on the site should require a toolchain to edit or a service to render
 - Generated pages stay generated. The source of truth is the script, not the HTML
-- Temporary surfaces stay temporary and do not accrete permanent structure
+- Each surface owns its own visual world. The personal site and the items page share no palette, typeface, or component vocabulary, and neither borrows from the other
