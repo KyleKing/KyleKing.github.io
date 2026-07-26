@@ -1,11 +1,15 @@
-"""Generate the static moving-inventory page from the hardcoded ITEMS list.
+"""Generate the static items page from the hardcoded ITEMS list.
 
-The page owns its own visual world (a packing manifest) and does not inherit
-from DESIGN.md, which governs index.html only. See .impeccable/briefs/ for the
-surface brief.
+The page owns its own visual world and does not inherit from DESIGN.md, which
+governs index.html only. See .impeccable/surfaces/ for the surface brief.
 
 Items titled 'TBD' are placeholders and are never emitted. Every image path a
 non-placeholder item references must exist, or generation fails.
+
+TODO: Serve thumbnails from build-time derivatives. The photo directory is
+~60 MB and every thumbnail currently loads a full-resolution original, so a
+72px square costs several megabytes on a phone. Resizing here would need
+Pillow, which the pre-commit hook's interpreter is not guaranteed to have.
 """
 
 import re
@@ -369,12 +373,8 @@ HEAD_HTML = """
     line-height: 1.35;
     margin: 0;
   }
-  .fields .tally {
-    font-variant-numeric: tabular-nums;
-    font-weight: 700;
-  }
   main {
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
   }
 
   .section-head {
@@ -416,7 +416,7 @@ HEAD_HTML = """
     cursor: pointer;
     display: grid;
     gap: 1rem;
-    grid-template-columns: 2rem 4.5rem 1fr auto;
+    grid-template-columns: 2rem 4.5rem minmax(0, 1fr) auto;
     list-style: none;
     padding: 1.05rem 0.25rem;
   }
@@ -472,6 +472,7 @@ HEAD_HTML = """
 
   .line-title {
     font-size: 1.0625rem;
+    overflow-wrap: break-word;
     font-weight: 600;
     line-height: 1.25;
     text-wrap: pretty;
@@ -585,18 +586,6 @@ HEAD_HTML = """
     outline-offset: 3px;
   }
 
-  .manifest-end {
-    align-items: baseline;
-    border-top: 2px solid var(--ink);
-    display: flex;
-    gap: 0.75rem;
-    margin-top: 3rem;
-    padding-top: 0.75rem;
-  }
-  .manifest-end .count {
-    font-variant-numeric: tabular-nums;
-    margin-left: auto;
-  }
 
   .sr-only {
     border-width: 0;
@@ -633,8 +622,15 @@ HEAD_HTML = """
     }
     /* The title needs the full column width, so the price drops beneath it */
     .line > summary {
-      gap: 0.4rem 0.75rem;
-      grid-template-columns: 1.75rem 3.75rem 1fr;
+      gap: 0.4rem 0.85rem;
+      grid-template-columns: 1.75rem 5.5rem minmax(0, 1fr);
+    }
+    .gallery {
+      gap: 0.35rem;
+    }
+    .detail {
+      padding-left: 0;
+      padding-right: 0;
     }
     .line-no,
     .thumb {
@@ -643,6 +639,7 @@ HEAD_HTML = """
     .price {
       grid-column: 3;
       text-align: left;
+      white-space: normal;
     }
     .price .mx {
       display: inline;
@@ -789,16 +786,13 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
         <h2 class="section-head">
           {section_title}
           <a class="section-anchor" href="#{status.value}" aria-label="Link to the {section_title} section">#</a>
-          <span class="section-count label">{count} {"line" if count == 1 else "lines"}</span>
+          <span class="section-count label">{count} {"item" if count == 1 else "items"}</span>
         </h2>
         <ol class="manifest">
           {"".join(lines_html)}
         </ol>
       </section>
       """)
-
-    for_sale = len(items_by_status[ItemStatus.PAID])
-    free = len(items_by_status[ItemStatus.FREE])
 
     return f"""<!doctype html>
 <html lang="en">
@@ -810,8 +804,10 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
       <p class="label">East Polanco &middot; Ciudad de M&eacute;xico</p>
       <h1>Free &amp; For Sale</h1>
       <p class="standfirst">
-        Things we no longer use, photographed as they are. Board games, baby
-        gear, and household odds and ends, posted to the building chats.
+        Board games, baby gear, and household odds and ends we no longer use,
+        photographed as they are. Prices are roughly half of Amazon, and I take
+        pesos or dollars, Venmo, or PayPal. Message me in the building WhatsApp
+        group with questions or to arrange a time.
       </p>
       <dl class="fields">
         <div>
@@ -819,24 +815,8 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
           <dd>East side of Polanco, near Liverpool</dd>
         </div>
         <div>
-          <dt class="label">Lines</dt>
-          <dd class="tally">{len(items)}</dd>
-        </div>
-        <div>
-          <dt class="label">Split</dt>
-          <dd class="tally">{for_sale} for sale &middot; {free} free</dd>
-        </div>
-        <div>
-          <dt class="label">Terms</dt>
-          <dd>Roughly half of Amazon. Pesos or dollars, Venmo, PayPal</dd>
-        </div>
-        <div>
-          <dt class="label">To claim</dt>
-          <dd>Message me in the building WhatsApp group</dd>
-        </div>
-        <div>
           <dt class="label">Updated</dt>
-          <dd>{last_updated.strftime("%B %-d, %Y at %-I:%M %p")}</dd>
+          <dd>{last_updated.strftime("%B %-d, %Y")}</dd>
         </div>
       </dl>
     </div>
@@ -844,10 +824,6 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
 
   <main class="wrap">
     {"".join(sections_html)}
-    <p class="manifest-end label">
-      End of manifest
-      <span class="count">{len(items)} lines</span>
-    </p>
   </main>
   {SCRIPT_HTML}
 </body>
