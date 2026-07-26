@@ -6,10 +6,9 @@ governs index.html only. See .impeccable/surfaces/ for the surface brief.
 Items titled 'TBD' are placeholders and are never emitted. Every image path a
 non-placeholder item references must exist, or generation fails.
 
-TODO: Serve thumbnails from build-time derivatives. The photo directory is
-~60 MB and every thumbnail currently loads a full-resolution original, so a
-72px square costs several megabytes on a phone. Resizing here would need
-Pillow, which the pre-commit hook's interpreter is not guaranteed to have.
+Photographs are never served from SOURCE_DIR. Rows load the THUMB_DIR copy and
+galleries the DISPLAY_DIR copy, both built by process_images.py, which owns the
+only dependency on Pillow.
 """
 
 import re
@@ -21,6 +20,11 @@ from textwrap import dedent
 from urllib.parse import urlparse
 
 PLACEHOLDER_TITLE = 'TBD'
+SOURCE_DIR = Path('whatsapp-items')
+THUMB_DIR = SOURCE_DIR / 'thumb'
+DISPLAY_DIR = SOURCE_DIR / 'display'
+THUMB_EDGE = 320
+DISPLAY_EDGE = 1400
 
 
 class ItemStatus(StrEnum):
@@ -42,7 +46,7 @@ class Item:
 ITEMS: list[Item] = [
     Item(
         title=title,
-        image_paths=[Path('whatsapp-items') / img for img in image_names],
+        image_paths=[SOURCE_DIR / img for img in image_names],
         status=ItemStatus(status),
         link=link,
         description=description,
@@ -698,7 +702,8 @@ def _price_html(item: Item) -> str:
 
 def _gallery_html(item: Item) -> str:
     images = [
-        f'<img src="{path.as_posix()}" alt="{item.title}, photo {n} of {len(item.image_paths)}" '
+        f'<img src="{(DISPLAY_DIR / path.name).as_posix()}" '
+        f'alt="{item.title}, photo {n} of {len(item.image_paths)}" '
         f'style="--i:{n - 1}" loading="lazy" decoding="async" />'
         for n, path in enumerate(item.image_paths, start=1)
     ]
@@ -727,7 +732,7 @@ def _line_html(item: Item, line_no: int, eager: bool) -> str:
             <summary>
               <span class="line-no">{line_no:02d}</span>
               <span class="thumb">
-                <img src="{item.image_paths[0].as_posix()}" alt="" loading="{loading}" decoding="async" />
+                <img src="{(THUMB_DIR / item.image_paths[0].name).as_posix()}" alt="" loading="{loading}" decoding="async" />
                 {shots}
               </span>
               <span class="line-title">{item.title}</span>
@@ -747,12 +752,16 @@ def _line_html(item: Item, line_no: int, eager: bool) -> str:
 
 
 def _validate(items: list[Item], root: Path) -> None:
-    missing = [
-        path for item in items for path in item.image_paths if not (root / path).is_file()
+    expected = [
+        directory / path.name
+        for item in items
+        for path in item.image_paths
+        for directory in (SOURCE_DIR, THUMB_DIR, DISPLAY_DIR)
     ]
+    missing = [path for path in expected if not (root / path).is_file()]
     if missing:
         listed = '\n  '.join(path.as_posix() for path in missing)
-        msg = f'Referenced images do not exist:\n  {listed}'
+        msg = f'Missing images. Run process_images.py to build derivatives:\n  {listed}'
         raise FileNotFoundError(msg)
 
 

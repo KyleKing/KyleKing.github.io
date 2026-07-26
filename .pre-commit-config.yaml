@@ -57,6 +57,15 @@ repos:
         exclude: ^whatsapp-items\.html$|DESIGN.md
   - repo: local
     hooks:
+      # Must precede generate-whatsapp, which fails when a derivative is missing
+      - id: process-images
+        name: strip photo metadata and build derivatives
+        language: python
+        additional_dependencies: ["pillow"]
+        entry: python process_images.py
+        files: ^(process_images\.py|whatsapp-items/[^/]+\.jpeg|IMG_0428\.jpeg)$
+        pass_filenames: false
+        stages: [pre-commit]
       - id: generate-whatsapp
         name: generate whatsapp page
         language: system

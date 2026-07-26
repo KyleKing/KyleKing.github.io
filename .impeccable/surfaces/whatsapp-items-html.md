@@ -36,5 +36,4 @@ Kyle chose the quietest of four rendered intensities: paper header rather than a
 
 ## Unresolved
 
-- The photo directory is ~60 MB and thumbnails are served from full-resolution originals. Nothing on the page fixes this; it needs build-time derivatives, which would add Pillow to the pre-commit hook
 - `robots: noindex` is set. Revisit if the page should be findable
