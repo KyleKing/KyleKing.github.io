@@ -32,7 +32,7 @@ Static files served by GitHub Pages at kyleking.me, with Cloudflare as CDN, Name
 - `whatsapp-items.html` is generated output and is never hand-edited. All changes to it go through `generate_whatsapp.py`, which owns its markup and CSS. It is excluded from the prettier and trailing-whitespace pre-commit hooks
 - Both pages support light and dark via `prefers-color-scheme` and must continue to
 - Dependency-light and fast: the only external request today is a Google Fonts stylesheet. Icons are inlined as data-URI SVG masks
-- Photographs are never published straight from the camera. `process_images.py` strips metadata from every source image, since GPS coordinates in a photo taken at home would publish that address, and builds the resized copies the items page serves
+- Photographs are never published straight from the camera. `process_images.py` resizes anything dropped into `whatsapp-items/` into a thumbnail and a display copy carrying no metadata, then deletes the original, since GPS coordinates in a photo taken at home would publish that address
 - The items page runs its own visual world and does not inherit DESIGN.md, which governs `index.html` only. See `.impeccable/surfaces/whatsapp-items-html.md`
 - The items page carries no contact link. Publishing a phone number on a page open to the internet is not worth the convenience when the audience is already in the chat
 

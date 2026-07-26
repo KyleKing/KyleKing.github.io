@@ -31,6 +31,7 @@ Kyle chose the quietest of four rendered intensities: paper header rather than a
 
 - No contact link. A `wa.me` link would publish a phone number on a page open to the internet, and the audience is already in the chat. Per-line permalinks carry the same benefit with no exposure
 - Static, no build step for the served page, no runtime dependencies
+- Photographs are served only as generated derivatives. Originals are deleted once both sizes exist, so the highest resolution that survives is the display copy
 - Light and dark via `prefers-color-scheme`
 - Free versus for-sale must be readable without color alone: the section, the price column, and the word "Free" all carry it
 

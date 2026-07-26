@@ -6,9 +6,10 @@ governs index.html only. See .impeccable/surfaces/ for the surface brief.
 Items titled 'TBD' are placeholders and are never emitted. Every image path a
 non-placeholder item references must exist, or generation fails.
 
-Photographs are never served from SOURCE_DIR. Rows load the THUMB_DIR copy and
-galleries the DISPLAY_DIR copy, both built by process_images.py, which owns the
-only dependency on Pillow.
+SOURCE_DIR is a drop folder, not a served directory: process_images.py resizes
+whatever lands there into THUMB_DIR and DISPLAY_DIR and deletes the original.
+Rows load the thumbnail, galleries the display copy. That script owns the only
+dependency on Pillow.
 """
 
 import re
@@ -756,12 +757,12 @@ def _validate(items: list[Item], root: Path) -> None:
         directory / path.name
         for item in items
         for path in item.image_paths
-        for directory in (SOURCE_DIR, THUMB_DIR, DISPLAY_DIR)
+        for directory in (THUMB_DIR, DISPLAY_DIR)
     ]
     missing = [path for path in expected if not (root / path).is_file()]
     if missing:
         listed = '\n  '.join(path.as_posix() for path in missing)
-        msg = f'Missing images. Run process_images.py to build derivatives:\n  {listed}'
+        msg = f'Missing images. Run process_images.py over the originals:\n  {listed}'
         raise FileNotFoundError(msg)
 
 

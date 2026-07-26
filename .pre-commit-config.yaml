@@ -59,10 +59,9 @@ repos:
     hooks:
       # Must precede generate-whatsapp, which fails when a derivative is missing
       - id: process-images
-        name: strip photo metadata and build derivatives
-        language: python
-        additional_dependencies: ["pillow"]
-        entry: python process_images.py
+        name: compress photos and strip metadata
+        language: system
+        entry: uv run --no-project process_images.py
         files: ^(process_images\.py|whatsapp-items/[^/]+\.jpeg|IMG_0428\.jpeg)$
         pass_filenames: false
         stages: [pre-commit]
