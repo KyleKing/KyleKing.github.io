@@ -334,6 +334,35 @@ HEAD_HTML = """
     padding: 0 1.25rem;
   }
 
+  .controls {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1.5rem;
+  }
+  .toggle-all {
+    align-items: center;
+    background: none;
+    border: 1px solid var(--rule);
+    color: var(--ink);
+    cursor: pointer;
+    display: inline-flex;
+    font: inherit;
+    font-size: 0.6875rem;
+    min-height: 2.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    padding: 0.55rem 0.95rem;
+    text-transform: uppercase;
+    transition: border-color 200ms var(--ease);
+  }
+  .toggle-all:hover {
+    border-color: var(--ink);
+  }
+  .toggle-all:focus-visible {
+    outline: 2px solid var(--mark);
+    outline-offset: 2px;
+  }
+
   /* Masthead: the form header of the manifest */
   .masthead {
     border-bottom: 2px solid var(--ink);
@@ -526,6 +555,12 @@ HEAD_HTML = """
     padding: 0.5rem 0.25rem 2rem 0.25rem;
   }
   @media (min-width: 62rem) {
+    .wrap {
+      padding: 0 3.5rem;
+    }
+    .masthead .wrap {
+      padding-top: 3rem;
+    }
     .detail {
       padding-left: 8.75rem;
     }
@@ -665,25 +700,41 @@ HEAD_HTML = """
 </head>
 """
 
-# A deep link should open the line it names; the accordion itself is native.
+# Expanding and collapsing is native; this only adds deep links and the
+# expand-all control, which is revealed once it is known to work.
 SCRIPT_HTML = """<script>
+const lines = [...document.querySelectorAll('details.line')];
+const toggle = document.getElementById('toggle-all');
+
+const setAll = (open) => lines.forEach((line) => { line.open = open; });
+const sync = () => {
+  toggle.textContent = lines.every((line) => line.open) ? 'Compact all' : 'Expand all';
+};
+
+toggle.hidden = false;
+toggle.addEventListener('click', () => {
+  setAll(!lines.every((line) => line.open));
+  sync();
+});
+lines.forEach((line) => line.addEventListener('toggle', sync));
+sync();
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && lines.some((line) => line.open)) {
+    setAll(false);
+    sync();
+  }
+});
+
 const openTarget = () => {
-  const line = document.querySelector(location.hash ? `details${location.hash}` : null);
+  const line = location.hash && document.querySelector(`details${location.hash}`);
   if (line) {
     line.open = true;
     line.scrollIntoView({block: 'start'});
   }
 };
 window.addEventListener('hashchange', openTarget);
-if (location.hash) openTarget();
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    const openCard = document.querySelector('details[open]');
-    if (openCard) {
-      openCard.open = false;
-    }
-  }
-});
+openTarget();
 </script>"""
 
 
@@ -729,7 +780,7 @@ def _line_html(item: Item, line_no: int, eager: bool) -> str:
     )
     return f"""
         <li>
-          <details class="line" id="{slug}" name="manifest">
+          <details class="line" id="{slug}">
             <summary>
               <span class="line-no">{line_no:02d}</span>
               <span class="thumb">
@@ -833,6 +884,9 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
   </header>
 
   <main class="wrap">
+    <div class="controls">
+      <button type="button" class="toggle-all" id="toggle-all" hidden>Expand all</button>
+    </div>
     {"".join(sections_html)}
   </main>
   {SCRIPT_HTML}

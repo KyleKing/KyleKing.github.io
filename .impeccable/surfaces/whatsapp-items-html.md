@@ -25,6 +25,8 @@ A packing manifest: numbered lines on a form, refusing the product grid of equal
 
 Memorable moment: an opened line feeds its photographs out in a short staggered clip-path cascade, like paper leaving a printer.
 
+Lines open independently rather than as an exclusive accordion, because closing one to open another shifts everything below it. A single control expands every line, and offers to compact them only once all of them are open.
+
 Kyle chose the quietest of four rendered intensities: paper header rather than a solid ink band, no stretched letterforms, no sprocket margin, roomier rows.
 
 ## Constraints

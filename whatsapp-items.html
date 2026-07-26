@@ -86,6 +86,35 @@ and it fights the phone-scan job). Seed bed3738d.
     padding: 0 1.25rem;
   }
 
+  .controls {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1.5rem;
+  }
+  .toggle-all {
+    align-items: center;
+    background: none;
+    border: 1px solid var(--rule);
+    color: var(--ink);
+    cursor: pointer;
+    display: inline-flex;
+    font: inherit;
+    font-size: 0.6875rem;
+    min-height: 2.75rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    padding: 0.55rem 0.95rem;
+    text-transform: uppercase;
+    transition: border-color 200ms var(--ease);
+  }
+  .toggle-all:hover {
+    border-color: var(--ink);
+  }
+  .toggle-all:focus-visible {
+    outline: 2px solid var(--mark);
+    outline-offset: 2px;
+  }
+
   /* Masthead: the form header of the manifest */
   .masthead {
     border-bottom: 2px solid var(--ink);
@@ -278,6 +307,12 @@ and it fights the phone-scan job). Seed bed3738d.
     padding: 0.5rem 0.25rem 2rem 0.25rem;
   }
   @media (min-width: 62rem) {
+    .wrap {
+      padding: 0 3.5rem;
+    }
+    .masthead .wrap {
+      padding-top: 3rem;
+    }
     .detail {
       padding-left: 8.75rem;
     }
@@ -441,6 +476,9 @@ and it fights the phone-scan job). Seed bed3738d.
   </header>
 
   <main class="wrap">
+    <div class="controls">
+      <button type="button" class="toggle-all" id="toggle-all" hidden>Expand all</button>
+    </div>
     
       <section id="paid">
         <h2 class="section-head">
@@ -451,7 +489,7 @@ and it fights the phone-scan job). Seed bed3738d.
         <ol class="manifest">
           
         <li>
-          <details class="line" id="item-uppababy-vista-bassinet-bassinet-only-bug-and-rain-covers" name="manifest">
+          <details class="line" id="item-uppababy-vista-bassinet-bassinet-only-bug-and-rain-covers">
             <summary>
               <span class="line-no">01</span>
               <span class="thumb">
@@ -474,7 +512,7 @@ Vista stroller isn't for sale right now so this listing is only for the bassinet
         </li>
         
         <li>
-          <details class="line" id="item-ingenuity-soothe-n-delight-foldable-baby-swing-and-6-speeds-0-9-months-6-20-lbs" name="manifest">
+          <details class="line" id="item-ingenuity-soothe-n-delight-foldable-baby-swing-and-6-speeds-0-9-months-6-20-lbs">
             <summary>
               <span class="line-no">02</span>
               <span class="thumb">
@@ -496,7 +534,7 @@ Vista stroller isn't for sale right now so this listing is only for the bassinet
         </li>
         
         <li>
-          <details class="line" id="item-ergobaby-embrace-newborn-baby-carrier-0-12-months-7-25-lbs" name="manifest">
+          <details class="line" id="item-ergobaby-embrace-newborn-baby-carrier-0-12-months-7-25-lbs">
             <summary>
               <span class="line-no">03</span>
               <span class="thumb">
@@ -518,7 +556,7 @@ Vista stroller isn't for sale right now so this listing is only for the bassinet
         </li>
         
         <li>
-          <details class="line" id="item-bobbie-organic-infant-formula-gentle" name="manifest">
+          <details class="line" id="item-bobbie-organic-infant-formula-gentle">
             <summary>
               <span class="line-no">04</span>
               <span class="thumb">
@@ -540,7 +578,7 @@ Vista stroller isn't for sale right now so this listing is only for the bassinet
         </li>
         
         <li>
-          <details class="line" id="item-bobbie-organic-infant-formula" name="manifest">
+          <details class="line" id="item-bobbie-organic-infant-formula">
             <summary>
               <span class="line-no">05</span>
               <span class="thumb">
@@ -562,7 +600,7 @@ Vista stroller isn't for sale right now so this listing is only for the bassinet
         </li>
         
         <li>
-          <details class="line" id="item-decrypto-limited-5th-edition-box" name="manifest">
+          <details class="line" id="item-decrypto-limited-5th-edition-box">
             <summary>
               <span class="line-no">06</span>
               <span class="thumb">
@@ -584,7 +622,7 @@ Vista stroller isn't for sale right now so this listing is only for the bassinet
         </li>
         
         <li>
-          <details class="line" id="item-geared-kickstarter-edition" name="manifest">
+          <details class="line" id="item-geared-kickstarter-edition">
             <summary>
               <span class="line-no">07</span>
               <span class="thumb">
@@ -606,7 +644,7 @@ Vista stroller isn't for sale right now so this listing is only for the bassinet
         </li>
         
         <li>
-          <details class="line" id="item-love-letter" name="manifest">
+          <details class="line" id="item-love-letter">
             <summary>
               <span class="line-no">08</span>
               <span class="thumb">
@@ -628,7 +666,7 @@ Vista stroller isn't for sale right now so this listing is only for the bassinet
         </li>
         
         <li>
-          <details class="line" id="item-sushi-go" name="manifest">
+          <details class="line" id="item-sushi-go">
             <summary>
               <span class="line-no">09</span>
               <span class="thumb">
@@ -650,7 +688,7 @@ Vista stroller isn't for sale right now so this listing is only for the bassinet
         </li>
         
         <li>
-          <details class="line" id="item-ticket-to-ride-europe-1912-expansion" name="manifest">
+          <details class="line" id="item-ticket-to-ride-europe-1912-expansion">
             <summary>
               <span class="line-no">10</span>
               <span class="thumb">
@@ -673,7 +711,7 @@ separately (~$12), but I no longer have the box for it</p>
         </li>
         
         <li>
-          <details class="line" id="item-whirling-witchraft" name="manifest">
+          <details class="line" id="item-whirling-witchraft">
             <summary>
               <span class="line-no">11</span>
               <span class="thumb">
@@ -695,7 +733,7 @@ separately (~$12), but I no longer have the box for it</p>
         </li>
         
         <li>
-          <details class="line" id="item-tsuro" name="manifest">
+          <details class="line" id="item-tsuro">
             <summary>
               <span class="line-no">12</span>
               <span class="thumb">
@@ -717,7 +755,7 @@ separately (~$12), but I no longer have the box for it</p>
         </li>
         
         <li>
-          <details class="line" id="item-vigrue-175pcs-assorted-concrete-screws-kit" name="manifest">
+          <details class="line" id="item-vigrue-175pcs-assorted-concrete-screws-kit">
             <summary>
               <span class="line-no">13</span>
               <span class="thumb">
@@ -739,7 +777,7 @@ separately (~$12), but I no longer have the box for it</p>
         </li>
         
         <li>
-          <details class="line" id="item-scalpers-brown-leather-wallet" name="manifest">
+          <details class="line" id="item-scalpers-brown-leather-wallet">
             <summary>
               <span class="line-no">14</span>
               <span class="thumb">
@@ -773,7 +811,7 @@ The wallet has the original tags, if you would like to give it as a gift</p>
         <ol class="manifest">
           
         <li>
-          <details class="line" id="item-toniebox-broken-for-parts" name="manifest">
+          <details class="line" id="item-toniebox-broken-for-parts">
             <summary>
               <span class="line-no">15</span>
               <span class="thumb">
@@ -799,7 +837,7 @@ it fully</p>
         </li>
         
         <li>
-          <details class="line" id="item-assorted-velcro-sanding-discs-with-drill-attachment-pad" name="manifest">
+          <details class="line" id="item-assorted-velcro-sanding-discs-with-drill-attachment-pad">
             <summary>
               <span class="line-no">16</span>
               <span class="thumb">
@@ -821,7 +859,7 @@ it fully</p>
         </li>
         
         <li>
-          <details class="line" id="item-kate-spade-macaron-mug" name="manifest">
+          <details class="line" id="item-kate-spade-macaron-mug">
             <summary>
               <span class="line-no">17</span>
               <span class="thumb">
@@ -843,7 +881,7 @@ it fully</p>
         </li>
         
         <li>
-          <details class="line" id="item-away-orange-drawstring-kids-bag" name="manifest">
+          <details class="line" id="item-away-orange-drawstring-kids-bag">
             <summary>
               <span class="line-no">18</span>
               <span class="thumb">
@@ -865,7 +903,7 @@ it fully</p>
         </li>
         
         <li>
-          <details class="line" id="item-arris-surfboard-sb6141-modem" name="manifest">
+          <details class="line" id="item-arris-surfboard-sb6141-modem">
             <summary>
               <span class="line-no">19</span>
               <span class="thumb">
@@ -887,7 +925,7 @@ it fully</p>
         </li>
         
         <li>
-          <details class="line" id="item-ikea-hugad-curtain-rod-rod-only" name="manifest">
+          <details class="line" id="item-ikea-hugad-curtain-rod-rod-only">
             <summary>
               <span class="line-no">20</span>
               <span class="thumb">
@@ -914,23 +952,38 @@ a deep clean this week. Free to anyone who could use it!</p>
       
   </main>
   <script>
+const lines = [...document.querySelectorAll('details.line')];
+const toggle = document.getElementById('toggle-all');
+
+const setAll = (open) => lines.forEach((line) => { line.open = open; });
+const sync = () => {
+  toggle.textContent = lines.every((line) => line.open) ? 'Compact all' : 'Expand all';
+};
+
+toggle.hidden = false;
+toggle.addEventListener('click', () => {
+  setAll(!lines.every((line) => line.open));
+  sync();
+});
+lines.forEach((line) => line.addEventListener('toggle', sync));
+sync();
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && lines.some((line) => line.open)) {
+    setAll(false);
+    sync();
+  }
+});
+
 const openTarget = () => {
-  const line = document.querySelector(location.hash ? `details${location.hash}` : null);
+  const line = location.hash && document.querySelector(`details${location.hash}`);
   if (line) {
     line.open = true;
     line.scrollIntoView({block: 'start'});
   }
 };
 window.addEventListener('hashchange', openTarget);
-if (location.hash) openTarget();
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') {
-    const openCard = document.querySelector('details[open]');
-    if (openCard) {
-      openCard.open = false;
-    }
-  }
-});
+openTarget();
 </script>
 </body>
 </html>

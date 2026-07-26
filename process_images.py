@@ -16,9 +16,9 @@ anything already committed stays in history and is recoverable from there.
 Metadata includes the orientation tag, so rotation is baked into the pixels
 first. DISPLAY_EDGE is the highest resolution that survives.
 
-ITEMS is the authority on which photographs exist. Copies of anything it no
-longer references are deleted, and a photograph it does not reference yet is
-left untouched, since compressing it would destroy the only copy.
+ITEMS is the authority on which photographs exist. Only what it lists is
+compressed, copies of anything it no longer lists are deleted, and an unlisted
+photograph waits in SOURCE_DIR, stripped but otherwise untouched.
 
 The portrait on the personal site is served directly and so is stripped in place
 rather than resized.
@@ -103,20 +103,18 @@ def main() -> None:
     referenced = {path.name for item in ITEMS for path in item.image_paths}
 
     sources = sorted((root / SOURCE_DIR).glob('*.jpeg'))
-    # Compressing an unclaimed photograph would delete the only copy of it.
-    unclaimed = [path.name for path in sources if path.name not in referenced]
-    if unclaimed:
-        listed = '\n  '.join(unclaimed)
-        msg = f'No Item references these photographs. Add or delete them:\n  {listed}'
-        raise ValueError(msg)
+    claimed = [path for path in sources if path.name in referenced]
+    # An unlisted photograph is left in place so it can be listed later, but it
+    # is still stripped, in case it reaches the site before anyone lists it.
+    unlisted = [path for path in sources if path.name not in referenced]
 
-    for source in sources:
+    for source in claimed:
         _compress(source, root)
     orphans = _prune(root, referenced)
-    stripped = _strip_metadata(root / PORTRAIT)
+    stripped = sum(_strip_metadata(path) for path in [*unlisted, root / PORTRAIT])
     print(
-        f'compressed {len(sources)} originals, deleted {len(orphans)} orphaned copies, '
-        f'stripped {int(stripped)} portrait'
+        f'compressed {len(claimed)} originals, left {len(unlisted)} unlisted, '
+        f'deleted {len(orphans)} orphaned copies, stripped {stripped}'
     )
 
 
