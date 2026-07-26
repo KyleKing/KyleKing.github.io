@@ -41,12 +41,49 @@ ITEMS: list[Item] = [
     )
     for title, image_names, status, link, description, price in [
         (
+            'UPPAbaby Vista Bassinet (Bassinet only) + Bug and Rain Covers',
+            ('Baby-Bassinet-Open.jpeg', 'Baby-Bassinet-Closed.jpeg', 'Baby-Bassinet-Packed.jpeg',),
+            ItemStatus.PAID,
+            'https://babytochild.com/uppababy-bassinet-review-safe-overnight-sleep-or-just-smart-stroller-add-on',
+            dedent("""\
+            This is the v2 Bassinet, but it works with either v2 or v3 stroller (Vista, Cruz, and Ridge). Our UPPAbaby
+            Vista stroller isn't for sale right now so this listing is only for the bassinet"""),
+            '$75 or MX$1500',
+        ),
+        (
+            'Ingenuity Soothe \'n Delight Foldable Baby Swing and 6-Speeds (0-9 Months, 6-20 lbs)',
+            ('Baby-Swing-1.jpeg','Baby-Swing-2.jpeg','Baby-Swing-3.jpeg'),
+            ItemStatus.PAID,
+            'https://www.amazon.com/Ingenuity-Comfort-Go-Portable-Swing/dp/B00E3RKC36?th=1',
+            dedent("""\
+            Includes batteries and only lightly used. Sold new for $70"""),
+            '$40 or MX$750',
+        ),
+        (
+            'Ergobaby Embrace Newborn Baby Carrier (0-12 Months, 7-25 lbs)',
+            ('Baby-Carrier.jpeg',),
+            ItemStatus.PAID,
+            'https://ergobaby.com/en-us/products/embrace-newborn-carrier',
+            dedent("""\
+            Soft olive color and like new. Recommended by the WireCutter"""),
+            '$75 or MX$1500',
+        ),
+        (
+            'TBD',
+            ('TBD.jpeg',),
+            ItemStatus.PAID,
+            'TBD',
+            dedent("""\
+            TBD"""),
+            '$40 or MX$750',
+        ),
+        (
             'Decrypto (Limited 5th Edition Box)',
             ('Games-Decrypto-1.jpeg', 'Games-Decrypto-4.jpeg', 'Games-Decrypto-5.jpeg'),
             ItemStatus.PAID,
             'https://boardgamegeek.com/boardgame/225694/decrypto',
             dedent("""\
-            New in shrink wrap because I accidentally ordered two and I can't figure out how?"""),
+            New in shrink wrap because I accidentally ordered two"""),
             '$25 or MX$500',
         ),
         (
@@ -176,7 +213,7 @@ ITEMS: list[Item] = [
         ),
         (
             'IKEA Hugad Curtain Rod (Rod only)',
-            ('Home-Rod-0.jpeg', 'Home-Rod-2.jpeg'),
+            ('Home-Rod-2.jpeg','Home-Rod-0.jpeg'),
             ItemStatus.FREE,
             'https://www.ikea.com/us/en/p/hugad-curtain-rod-white-10217141/#content',
             dedent("""\
