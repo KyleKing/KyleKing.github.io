@@ -1,17 +1,22 @@
-"""Generate static HTML page for free items listing.
+"""Generate the static moving-inventory page from the hardcoded ITEMS list.
 
-Color Palettes Considered from Color Hunt (https://colorhunt.co):
+The page owns its own visual world (a packing manifest) and does not inherit
+from DESIGN.md, which governs index.html only. See .impeccable/briefs/ for the
+surface brief.
 
-1. Calm & Natural (#364547, #7FA99B, #C8DBBB, #F7F7E8)
-2. Soft & Approachable (#FFE6E6, #F7F5EB, #AACAA7, #8B9A8B)
-3. Modern & Bold (#222831, #393E46, #00ADB5, #EEEEEE)
+Items titled 'TBD' are placeholders and are never emitted. Every image path a
+non-placeholder item references must exist, or generation fails.
 """
 
+import re
 from dataclasses import dataclass
 from datetime import UTC, datetime
 from enum import StrEnum
 from pathlib import Path
 from textwrap import dedent
+from urllib.parse import urlparse
+
+PLACEHOLDER_TITLE = 'TBD'
 
 
 class ItemStatus(StrEnum):
@@ -69,13 +74,22 @@ ITEMS: list[Item] = [
             '$75 or MX$1500',
         ),
         (
-            'TBD',
-            ('TBD.jpeg',),
+            'Bobbie Organic Infant Formula (Gentle)',
+            ('Baby-Bobbie-Formula-Gentle.jpeg',),
             ItemStatus.PAID,
-            'TBD',
+            'https://www.hibobbie.com/products/bobbie-organic-gentle-infant-formula?variant=40549922046037',
             dedent("""\
-            TBD"""),
-            '$40 or MX$750',
+            All unopened and good until August 2027"""),
+            '$25/each or $150 for all seven',
+        ),
+        (
+            'Bobbie Organic Infant Formula',
+            ('Baby-Bobbie-Formula-Organic.jpeg',),
+            ItemStatus.PAID,
+            'https://www.hibobbie.com/products/bobbie-organic-infant-formula?variant=32828253667413',
+            dedent("""\
+            All unopened and good until August 2027"""),
+            '$20/each or $140 for all eight',
         ),
         (
             'Decrypto (Limited 5th Edition Box)',
@@ -177,7 +191,7 @@ ITEMS: list[Item] = [
         ),
         (
             'Away Orange Drawstring Kids Bag',
-            ('Home-AWay-Bag.jpeg',),
+            ('Home-Away-Bag.jpeg',),
             ItemStatus.FREE,
             '',
             'This came with an Away suitcase and sized smaller than most drawstring bags, but we don\'t have a use for it',
@@ -224,418 +238,496 @@ ITEMS: list[Item] = [
     ]
 ]
 
+DIRECTION_CONTRACT = """<!--
+THESIS: A neighbourhood offer list reads as the manifest it already is,
+numbered lines on a form, and refuses the e-commerce grid of equal cards.
+OWN-WORLD: Neutral form stock, one black ink, one dispatch-orange marking ink.
+Archivo worked across its width axis: expanded caps for the masthead, condensed
+tracked caps for field labels, tabular figures down the price column. Hairline
+rules, a perforated tear edge, sprocket margin. No shadows, no rounded cards.
+STORY: A neighbour sees what is on offer, judges condition from the
+photographs, reads an honest price, and messages in the building chat.
+FIRST VIEWPORT: Ink band with the title in expanded caps over a six-field form
+header (zone, lines, split, updated, terms, pickup), a torn perforation edge,
+then line 01 of the numbered list.
+FORM: Packing manifest, candidate 4 of the grounded list, no staging (physics
+drop-assembly rejected: needs an engine this dependency-free page cannot carry,
+and it fights the phone-scan job). Seed bed3738d.
+-->"""
+
 HEAD_HTML = """
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Free and paid items available for pickup in Polanco" />
-<title>Free Items</title>
+<meta name="description" content="Household, baby, and board game items offered free or for sale in East Polanco, Mexico City" />
+<meta name="theme-color" content="#131311" />
+<meta name="robots" content="noindex" />
+<title>Free &amp; For Sale &middot; Polanco</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link
-  href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
+  href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap"
   rel="stylesheet"
 />
 
 <style>
-  /* Color palette from Color Hunt - Calm & Natural theme
-     https://colorhunt.co/palette/364547-7fa99b-c8dbbe-f7f7e8
-     Primary: #364547 (dark teal), #7FA99B (sage green)
-     Secondary: #C8DBBB (soft mint), #F7F7E8 (cream)
-  */
   :root {
-    --color-bg: #F7F7E8;
-    --color-fg: #364547;
-    --color-border: #C8DBBB;
-    --color-card-bg: #ffffff;
-    --color-free: #7FA99B;
-    --color-paid: #E8A87C;
-    --color-pending: #C8DBBB;
-    --color-pending-fg: #364547;
+    --ground: #f2f2f0;
+    --surface: #ffffff;
+    --ink: #131311;
+    --ink-soft: #54544f;
+    --rule: #cfcfc9;
+    --mark: #c33505;
+    --photo: #e6e6e2;
+    --band-bg: #131311;
+    --band-fg: #f2f2f0;
+    --band-soft: #9a9a92;
+    --band-rule: #3a3a35;
+    --band-mark: #ff713f;
+    --ease: cubic-bezier(0.16, 1, 0.3, 1);
+    interpolate-size: allow-keywords;
   }
   @media (prefers-color-scheme: dark) {
-    body {
-      --color-bg: #1e1e20;
-      --color-fg: #C8DBBB;
-      --color-border: #364547;
-      --color-card-bg: #2a2a2c;
-      --color-free: #7FA99B;
-      --color-paid: #E8A87C;
-      --color-pending: #7FA99B;
-      --color-pending-fg: #1e1e20;
+    :root {
+      --ground: #131312;
+      --surface: #1c1c1a;
+      --ink: #e6e5e0;
+      --ink-soft: #9b9b93;
+      --rule: #333330;
+      --mark: #ff713f;
+      --photo: #232320;
+      --band-bg: #232320;
+      --band-fg: #e6e5e0;
+      --band-soft: #9b9b93;
+      --band-rule: #45453e;
+      --band-mark: #ff713f;
     }
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
   }
 
   body {
-    background: var(--color-bg);
-    color: var(--color-fg);
-    font-family: "Roboto", sans-serif;
+    background: var(--ground);
+    color: var(--ink);
+    font-family: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    font-size: 1rem;
     margin: 0;
-    padding: 1rem;
   }
 
-  #container {
-    max-width: 1200px;
+  .label {
+    color: var(--ink-soft);
+    font-size: 0.6875rem;
+    font-stretch: 75%;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .wrap {
     margin: 0 auto;
+    max-width: 74rem;
+    padding: 0 1.25rem;
   }
 
-  h1 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin: 2rem 0;
-    color: var(--color-fg);
+  /* Masthead: the form header of the manifest */
+  .masthead {
+    background: var(--band-bg);
+    color: var(--band-fg);
   }
-
-  .items-section {
-    margin-bottom: 3rem;
-  }
-
-  .section-title {
-    font-size: 1.75rem;
-    margin: 2rem 0 1.5rem 0;
-    color: var(--color-fg);
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .section-anchor {
-    text-decoration: none;
-    color: var(--color-free);
-    opacity: 0.6;
-    transition: opacity 0.2s ease;
-    font-size: 1.5rem;
-    line-height: 1;
-  }
-
-  .section-anchor:hover {
-    opacity: 1;
-  }
-
-  .items-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1rem;
-  }
-
-  .item-card {
-    border: 1px solid var(--color-border);
-    border-radius: 8px;
-    padding: 1rem;
-    background: var(--color-card-bg);
-    overflow: visible;
-    transition: all 0.2s ease;
-    position: relative;
-  }
-
-  .item-card[open] {
-    grid-column: span 2;
-    box-shadow: 0 6px 12px -2px rgb(0 0 0 / 0.15);
-  }
-
-  .item-card:hover:not([open]) {
-    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 0.1);
-    transform: translateY(-2px);
-    border-color: var(--color-free);
-  }
-
-  .item-card summary {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    cursor: pointer;
-    position: relative;
+  .masthead .wrap {
     padding-bottom: 1.5rem;
+    padding-top: 2.25rem;
+  }
+  .masthead .label {
+    color: var(--band-soft);
+  }
+  .masthead h1 {
+    font-size: clamp(2.25rem, 10vw, 5.5rem);
+    font-stretch: 125%;
+    font-weight: 900;
+    letter-spacing: -0.015em;
+    line-height: 0.88;
+    margin: 0 0 0.35rem 0;
+    text-transform: uppercase;
+    text-wrap: balance;
+  }
+  .masthead h1 span {
+    color: var(--band-mark);
+  }
+  .masthead .standfirst {
+    color: var(--band-soft);
+    font-size: 1rem;
+    font-stretch: 87%;
+    margin: 0 0 1.75rem 0;
+    max-width: 46ch;
   }
 
-  .item-card summary::after {
-    content: "▼ Click to expand";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 0.75rem;
-    color: var(--color-free);
-    opacity: 0.7;
-    transition: all 0.2s ease;
-    padding: 0.5rem 1rem;
-    margin: -0.75rem -1rem;
+  .fields {
+    border-top: 1px solid var(--band-rule);
+    display: grid;
+    gap: 1.125rem 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+    margin: 0;
+    padding-top: 1.125rem;
+  }
+  .fields div {
+    min-width: 0;
+  }
+  .fields dt {
+    margin-bottom: 0.3rem;
+  }
+  .fields dd {
+    font-size: 0.9375rem;
+    font-stretch: 87%;
     font-weight: 500;
+    line-height: 1.35;
+    margin: 0;
+  }
+  .fields .tally {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+  }
+  .fields .tally span {
+    color: var(--band-mark);
   }
 
-  .item-card[open] summary::after {
-    content: "";
+  /* Tear-off perforation between the header and the lines */
+  .tear {
+    background: var(--band-bg);
+    height: 9px;
+    -webkit-mask-image: radial-gradient(
+      circle at 50% 0,
+      transparent 4.5px,
+      #000 5px
+    );
+    -webkit-mask-repeat: repeat-x;
+    -webkit-mask-size: 14px 9px;
+    mask-image: radial-gradient(circle at 50% 0, transparent 4.5px, #000 5px);
+    mask-repeat: repeat-x;
+    mask-size: 14px 9px;
   }
 
-  .item-card summary:focus-visible {
-    outline: 2px solid var(--color-free);
-    outline-offset: 2px;
+  main {
+    padding-bottom: 4rem;
   }
 
-  .item-card summary::-webkit-details-marker {
-    display: none;
-  }
-
-  .item-card summary::marker {
-    display: none;
-  }
-
-  .close-button {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    width: 2.5rem;
-    height: 2.5rem;
-    background: var(--color-free);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  .section-head {
+    align-items: baseline;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
+    flex-wrap: wrap;
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
+    font-stretch: 112%;
+    font-weight: 800;
+    gap: 0.65rem;
+    letter-spacing: 0.01em;
+    margin: 2.75rem 0 0.85rem 0;
+    text-transform: uppercase;
+  }
+  .section-count {
+    margin-left: auto;
+  }
+  .section-anchor {
+    color: var(--ink-soft);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .section-anchor:hover,
+  .section-anchor:focus-visible {
+    color: var(--mark);
+  }
+
+  .manifest {
+    border-top: 2px solid var(--ink);
+    list-style: none;
+    margin: 0;
     padding: 0;
-    transition: opacity 0.2s ease;
+  }
+  /* Tractor-feed margin: sprocket holes against the tear guide */
+  @media (min-width: 62rem) {
+    .manifest {
+      background-image: radial-gradient(
+          circle 3.5px at center,
+          var(--rule) 99%,
+          transparent 100%
+        ),
+        linear-gradient(var(--rule), var(--rule));
+      background-position: 0.6rem 1rem, 1.7rem 0;
+      background-repeat: repeat-y, repeat-y;
+      background-size: 1.5rem 1.5rem, 1px 100%;
+      padding-left: 2.75rem;
+    }
   }
 
-  .close-button:focus-visible {
-    outline: 2px solid var(--color-fg);
-    outline-offset: 2px;
+  .line {
+    border-bottom: 1px solid var(--rule);
+  }
+  .line > summary {
+    align-items: center;
+    cursor: pointer;
+    display: grid;
+    gap: 0.875rem;
+    grid-template-columns: 1.75rem 3.75rem 1fr auto;
+    list-style: none;
+    padding: 0.7rem 0.25rem;
+  }
+  .line > summary::-webkit-details-marker {
+    display: none;
+  }
+  .line:hover:not([open]) {
+    background: var(--surface);
+  }
+  .line > summary:focus-visible {
+    outline: 2px solid var(--mark);
+    outline-offset: -2px;
   }
 
-  .close-button::before {
-    content: "✕";
-    color: white;
-    font-size: 1.25rem;
-    font-weight: bold;
+  .line-no {
+    color: var(--ink-soft);
+    font-size: 0.75rem;
+    font-stretch: 75%;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 0.15rem 0;
+    text-align: center;
+    transition: background 200ms var(--ease), color 200ms var(--ease);
+  }
+  .line[open] .line-no {
+    background: var(--ink);
+    color: var(--ground);
   }
 
-  .item-card[open]:not(:hover) .close-button {
-    opacity: 0.5;
-  }
-
-  .item-card[open] .close-button:hover {
-    opacity: 1;
-  }
-
-  .item-thumbnail-container {
-    width: 100%;
-    height: 200px;
-    border-radius: 4px;
+  .thumb {
+    aspect-ratio: 1;
+    background: var(--photo);
     overflow: hidden;
     position: relative;
   }
-
-  .item-thumbnail-container img {
-    width: 100%;
+  .thumb img {
+    display: block;
     height: 100%;
     object-fit: cover;
-    transition: opacity 0.2s ease;
+    width: 100%;
+  }
+  .shots {
+    background: var(--ink);
+    bottom: 0;
+    color: var(--ground);
+    font-size: 0.625rem;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    padding: 0.1rem 0.32rem;
+    position: absolute;
+    right: 0;
   }
 
-  .image-count {
-    position: absolute;
-    bottom: 0.5rem;
-    right: 0.5rem;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    font-size: 0.75rem;
+  .line-title {
+    font-size: 1.0625rem;
+    font-stretch: 94%;
+    font-weight: 600;
+    line-height: 1.25;
+    text-wrap: pretty;
+  }
+
+  .price {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    text-align: right;
+    white-space: nowrap;
+  }
+  .price .mx {
+    color: var(--ink-soft);
+    display: block;
+    font-size: 0.8125rem;
     font-weight: 500;
+  }
+  .price.is-free {
+    color: var(--mark);
+    font-size: 0.875rem;
+    font-stretch: 75%;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .price.is-pending {
+    color: var(--ink-soft);
+    font-size: 0.875rem;
+    font-stretch: 75%;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  /* The authored moment: an opened line feeds out like a printout */
+  .line::details-content {
+    block-size: 0;
+    overflow: hidden;
+    transition: block-size 420ms var(--ease),
+      content-visibility 420ms var(--ease) allow-discrete;
+  }
+  .line[open]::details-content {
+    block-size: auto;
+  }
+
+  .detail {
+    display: grid;
+    gap: 1.25rem;
+    padding: 0.5rem 0.25rem 2rem 0.25rem;
+  }
+  @media (min-width: 62rem) {
+    .detail {
+      padding-left: 7.5rem;
+    }
+  }
+
+  .gallery {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    margin: 0;
+  }
+  /* Portrait-leaning frame: these are phone photographs, and contain never
+     crops away the wear a buyer is trying to see. */
+  .gallery img {
+    animation: feed 520ms var(--ease) both;
+    animation-delay: calc(var(--i) * 70ms);
+    aspect-ratio: 3 / 4;
+    background: var(--photo);
+    display: block;
+    object-fit: contain;
+    width: 100%;
+  }
+  @keyframes feed {
+    from {
+      clip-path: inset(0 0 100% 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  .desc {
+    line-height: 1.65;
+    margin: 0;
+    max-width: 68ch;
+    text-wrap: pretty;
+  }
+
+  .detail-foot {
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+  }
+  .ref,
+  .permalink {
+    font-size: 0.75rem;
+    font-stretch: 75%;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-decoration-thickness: 1px;
+    text-transform: uppercase;
+    text-underline-offset: 0.28em;
+  }
+  .ref {
+    color: var(--mark);
+  }
+  .permalink {
+    color: var(--ink-soft);
+  }
+  .ref:focus-visible,
+  .permalink:focus-visible {
+    outline: 2px solid var(--mark);
+    outline-offset: 3px;
+  }
+
+  .manifest-end {
+    align-items: baseline;
+    border-top: 2px solid var(--ink);
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 3rem;
+    padding-top: 0.75rem;
+  }
+  .manifest-end .count {
+    font-variant-numeric: tabular-nums;
+    margin-left: auto;
   }
 
   .sr-only {
-    position: absolute;
-    width: 1px;
+    border-width: 0;
+    clip: rect(0, 0, 0, 0);
     height: 1px;
-    padding: 0;
     margin: -1px;
     overflow: hidden;
-    clip: rect(0, 0, 0, 0);
+    padding: 0;
+    position: absolute;
     white-space: nowrap;
-    border-width: 0;
+    width: 1px;
   }
 
-  .item-card[open] .item-thumbnail-container {
-    display: none;
-  }
-
-  .item-header {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    min-height: 3rem;
-    padding-bottom: 0;
-  }
-
-  .item-header-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  .item-price-closed {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--color-paid);
-    margin: 0;
-  }
-
-  .item-card[open] summary .item-header {
-    display: none;
-  }
-
-  .item-title {
-    margin: 0;
-    font-size: 1.25rem;
-    font-weight: 500;
-    flex: 1;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .item-card[open] .item-title {
-    -webkit-line-clamp: unset;
-    overflow: visible;
-  }
-
-  .badge {
-    padding: 0.25rem 0.75rem;
-    border-radius: 12px;
-    font-size: 0.875rem;
-    font-weight: 500;
-    white-space: nowrap;
-  }
-
-  .badge-free {
-    background: var(--color-free);
-    color: white;
-  }
-
-  .badge-pending {
-    background: var(--color-pending);
-    color: var(--color-pending-fg);
-  }
-
-  .badge-paid {
-    background: var(--color-paid);
-    color: white;
-  }
-
-  .item-expanded {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
-    animation: fadeIn 0.3s ease;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(-10px);
+  @media (max-width: 30rem) {
+    .masthead h1 {
+      font-stretch: 105%;
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
+    .masthead .wrap {
+      padding-top: 1.75rem;
+    }
+    .masthead .standfirst {
+      margin-bottom: 1.25rem;
+    }
+    /* Ruled form rows, so the header does not eat the whole phone screen */
+    .fields {
+      gap: 0.6rem;
+      grid-template-columns: 1fr;
+    }
+    .fields div {
+      align-items: baseline;
+      display: flex;
+      gap: 0.75rem;
+    }
+    .fields dt {
+      flex: 0 0 4.75rem;
+      margin-bottom: 0;
+    }
+    .line > summary {
+      grid-template-columns: 1.5rem 3.25rem 1fr auto;
+    }
+    .price .mx {
+      display: none;
     }
   }
 
-  .item-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    align-items: flex-start;
-  }
-
-  .item-gallery img {
-    width: calc(50% - 0.25rem);
-    height: auto;
-    max-height: 300px;
-    object-fit: contain;
-    border-radius: 4px;
-    flex-grow: 1;
-  }
-
-  .item-gallery img:only-child {
-    width: 100%;
-  }
-
-  .item-content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  .item-header-expanded {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-
-  .item-price {
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: var(--color-paid);
-    margin: 0 0 0.5rem 0;
-  }
-
-  .item-description {
-    line-height: 1.6;
-    margin: 0;
-  }
-
-  .item-link {
-    display: block;
-    margin: 0.5rem auto 0;
-    padding: 0.75rem 1.5rem;
-    background-color: var(--color-free);
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: opacity 0.2s ease;
-    text-align: center;
-    width: fit-content;
-  }
-
-  .item-link:hover {
-    opacity: 0.9;
-  }
-
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 2rem;
+  @media (prefers-reduced-motion: reduce) {
+    .line::details-content,
+    .line-no {
+      transition: none;
     }
-
-    .item-card[open] {
-      grid-column: span 1;
-    }
-
-    .item-gallery img {
-      max-height: 300px;
-      width: 100%;
-    }
-
-    .item-card summary::after {
-      font-size: 0.7rem;
+    .gallery img {
+      animation: none;
     }
   }
 </style>
 </head>
 """
 
-# No JavaScript needed! The native `name` attribute on details elements
-# provides exclusive accordion behavior in modern browsers (Firefox 130+, Chrome 120+, Safari 17.4+)
+# A deep link should open the line it names; the accordion itself is native.
 SCRIPT_HTML = """<script>
+const openTarget = () => {
+  const line = document.querySelector(location.hash ? `details${location.hash}` : null);
+  if (line) {
+    line.open = true;
+    line.scrollIntoView({block: 'start'});
+  }
+};
+window.addEventListener('hashchange', openTarget);
+if (location.hash) openTarget();
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     const openCard = document.querySelector('details[open]');
@@ -647,16 +739,84 @@ document.addEventListener('keydown', (e) => {
 </script>"""
 
 
-def _generate_html(items: list[Item], last_updated: datetime) -> str:
-    status_badge_html = {
-        ItemStatus.PAID: '<span class="badge badge-paid" role="status" aria-label="Status: Paid">Available</span>',
-        ItemStatus.FREE: '<span class="badge badge-free" role="status" aria-label="Status: Available">Available</span>',
-        ItemStatus.PENDING: '<span class="badge badge-pending" role="status" aria-label="Status: Pending Pickup">Pending Pickup</span>',
-    }
+def _slug(title: str) -> str:
+    return 'item-' + re.sub(r'-+', '-', re.sub(r'[^a-z0-9]+', '-', title.lower())).strip('-')
 
+
+def _price_html(item: Item) -> str:
+    if item.status is ItemStatus.PENDING:
+        return '<span class="price is-pending">Pending</span>'
+    if not item.price:
+        return '<span class="price is-free">Free<span class="sr-only">, no charge</span></span>'
+    usd, _, mxn = item.price.partition(' or ')
+    mxn_html = f'<span class="mx">{mxn}</span>' if mxn else ''
+    return f'<span class="price">{usd}{mxn_html}</span>'
+
+
+def _gallery_html(item: Item) -> str:
+    images = [
+        f'<img src="{path.as_posix()}" alt="{item.title}, photo {n} of {len(item.image_paths)}" '
+        f'style="--i:{n - 1}" loading="lazy" decoding="async" />'
+        for n, path in enumerate(item.image_paths, start=1)
+    ]
+    return f'<div class="gallery">{"".join(images)}</div>'
+
+
+def _line_html(item: Item, line_no: int, eager: bool) -> str:
+    slug = _slug(item.title)
+    shots = (
+        f'<span class="shots">{len(item.image_paths)}<span class="sr-only"> photos</span></span>'
+        if len(item.image_paths) > 1
+        else ''
+    )
+    loading = 'eager' if eager else 'lazy'
+    desc = f'<p class="desc">{item.description}</p>' if item.description else ''
+    host = urlparse(item.link).netloc.removeprefix('www.')
+    ref = (
+        f'<a class="ref" href="{item.link}" target="_blank" rel="noopener noreferrer">'
+        f'View on {host}<span class="sr-only">, opens in a new tab</span></a>'
+        if item.link
+        else ''
+    )
+    return f"""
+        <li>
+          <details class="line" id="{slug}" name="manifest">
+            <summary>
+              <span class="line-no">{line_no:02d}</span>
+              <span class="thumb">
+                <img src="{item.image_paths[0].as_posix()}" alt="" loading="{loading}" decoding="async" />
+                {shots}
+              </span>
+              <span class="line-title">{item.title}</span>
+              {_price_html(item)}
+            </summary>
+            <div class="detail">
+              {_gallery_html(item)}
+              {desc}
+              <p class="detail-foot">
+                {ref}
+                <a class="permalink" href="#{slug}">Link to this line</a>
+              </p>
+            </div>
+          </details>
+        </li>
+        """
+
+
+def _validate(items: list[Item], root: Path) -> None:
+    missing = [
+        path for item in items for path in item.image_paths if not (root / path).is_file()
+    ]
+    if missing:
+        listed = '\n  '.join(path.as_posix() for path in missing)
+        msg = f'Referenced images do not exist:\n  {listed}'
+        raise FileNotFoundError(msg)
+
+
+def _generate_html(items: list[Item], last_updated: datetime) -> str:
     section_config = [
-        (ItemStatus.PAID, 'Paid Items'),
-        (ItemStatus.FREE, 'Free Items'),
+        (ItemStatus.PAID, 'For Sale'),
+        (ItemStatus.FREE, 'Free'),
         (ItemStatus.PENDING, 'Pending Pickup'),
     ]
 
@@ -664,99 +824,85 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
     for item in items:
         items_by_status[item.status].append(item)
 
+    line_no = 0
+    eager_budget = 3
     sections_html = []
     for status, section_title in section_config:
         status_items = items_by_status[status]
         if not status_items:
             continue
 
-        items_html = []
+        lines_html = []
         for item in status_items:
-            desc_html = (
-                f'<p class="item-description">{item.description}</p>'
-                if item.description
-                else ''
-            )
-            link_html = (
-                f'<a href="{item.link}" target="_blank" class="item-link">External Reference Link</a>'
-                if item.link
-                else ''
-            )
-            price_html = (
-                f'<p class="item-price">{item.price}</p>'
-                if item.price
-                else ''
-            )
-            price_closed_html = (
-                f'<p class="item-price-closed">{item.price}</p>'
-                if item.price
-                else ''
-            )
-            # Generate image gallery
-            images_html = []
-            for img_path in item.image_paths:
-                images_html.append(
-                    f'<img src="{img_path.as_posix()}" alt="{item.title}" class="item-image" />'
-                )
+            line_no += 1
+            lines_html.append(_line_html(item, line_no, eager=line_no <= eager_budget))
 
-            image_count_html = (
-                f'<span class="image-count">{len(images_html)}<span class="sr-only"> images available</span></span>'
-                if len(images_html) > 1
-                else ''
-            )
-
-            items_html.append(f"""
-        <details class="item-card" name="free-items" aria-label="Item details for {item.title}">
-          <summary>
-            <div class="item-thumbnail-container">
-              {images_html[0]}
-              {image_count_html}
-            </div>
-            <div class="item-header">
-              <div class="item-header-row">
-                <h3 class="item-title">{item.title}</h3>
-                {status_badge_html[item.status]}
-              </div>
-              {price_closed_html}
-            </div>
-          </summary>
-          <button class="close-button" aria-label="Close" onclick="this.closest('details').open = false;"></button>
-          <div class="item-expanded">
-            <div class="item-gallery">
-              {"".join(images_html)}
-            </div>
-            <div class="item-content">
-              <div class="item-header-expanded">
-                <h3 class="item-title">{item.title}</h3>
-                {status_badge_html[item.status]}
-              </div>
-              {price_html}
-              {desc_html}
-              {link_html}
-            </div>
-          </div>
-        </details>
-        """)
-
+        count = len(status_items)
         sections_html.append(f"""
-      <section class="items-section" id="{status.value}">
-        <h2 class="section-title"><a href="#{status.value}" class="section-anchor">#</a>{section_title}</h2>
-        <div class="items-grid">
-          {"".join(items_html)}
-        </div>
+      <section id="{status.value}">
+        <h2 class="section-head">
+          {section_title}
+          <a class="section-anchor" href="#{status.value}" aria-label="Link to the {section_title} section">#</a>
+          <span class="section-count label">{count} {"line" if count == 1 else "lines"}</span>
+        </h2>
+        <ol class="manifest">
+          {"".join(lines_html)}
+        </ol>
       </section>
       """)
 
+    for_sale = len(items_by_status[ItemStatus.PAID])
+    free = len(items_by_status[ItemStatus.FREE])
+
     return f"""<!doctype html>
 <html lang="en">
+{DIRECTION_CONTRACT}
 {HEAD_HTML}
 <body>
-  <main id="container">
-    <h1>Free and Paid Items</h1>
-    <p style="max-width: 600px; margin-right: auto; margin-left: auto;">All items available for pickup on the East side
-    of Polanco near Liverpool. Prices are roughly half of Amazon and I accept pesos or dollars, Venmo, PayPal, etc.
-    Message me on WhatsApp to ask questions and arrange a time. (Last updated: {last_updated.strftime("%B %d, %Y at %I:%M %p")})</p>
+  <header class="masthead">
+    <div class="wrap">
+      <p class="label">East Polanco &middot; Ciudad de M&eacute;xico</p>
+      <h1>Free &amp; <span>For Sale</span></h1>
+      <p class="standfirst">
+        Things we no longer use, photographed as they are. Board games, baby
+        gear, and household odds and ends, posted to the building chats.
+      </p>
+      <dl class="fields">
+        <div>
+          <dt class="label">Pickup</dt>
+          <dd>East side of Polanco, near Liverpool</dd>
+        </div>
+        <div>
+          <dt class="label">Lines</dt>
+          <dd class="tally">{len(items)}</dd>
+        </div>
+        <div>
+          <dt class="label">Split</dt>
+          <dd class="tally">{for_sale} for sale &middot; <span>{free} free</span></dd>
+        </div>
+        <div>
+          <dt class="label">Terms</dt>
+          <dd>Roughly half of Amazon. Pesos or dollars, Venmo, PayPal</dd>
+        </div>
+        <div>
+          <dt class="label">To claim</dt>
+          <dd>Message me in the building WhatsApp group</dd>
+        </div>
+        <div>
+          <dt class="label">Updated</dt>
+          <dd>{last_updated.strftime("%B %-d, %Y at %-I:%M %p")}</dd>
+        </div>
+      </dl>
+    </div>
+  </header>
+  <div class="tear"></div>
+
+  <main class="wrap">
     {"".join(sections_html)}
+    <p class="manifest-end label">
+      End of manifest
+      <span class="count">{len(items)} lines</span>
+    </p>
   </main>
   {SCRIPT_HTML}
 </body>
@@ -765,11 +911,14 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
 
 
 def main() -> None:
-    output_path = Path(__file__).parent / 'whatsapp-items.html'
+    root = Path(__file__).parent
+    items = [item for item in ITEMS if item.title != PLACEHOLDER_TITLE]
+    _validate(items, root)
+    skipped = len(ITEMS) - len(items)
+    output_path = root / 'whatsapp-items.html'
     last_updated = datetime.now(UTC).astimezone()
-    html_content = _generate_html(ITEMS, last_updated)
-    output_path.write_text(html_content)
-    print(f"Generated {output_path}")
+    output_path.write_text(_generate_html(items, last_updated))
+    print(f'Generated {output_path} ({len(items)} lines, {skipped} placeholder skipped)')
 
 
 if __name__ == '__main__':
