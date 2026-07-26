@@ -580,6 +580,7 @@ HEAD_HTML = """
     aspect-ratio: 3 / 4;
     background: var(--photo);
     display: block;
+    max-height: 24rem;
     object-fit: contain;
     width: 100%;
   }
