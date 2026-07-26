@@ -16,6 +16,10 @@ anything already committed stays in history and is recoverable from there.
 Metadata includes the orientation tag, so rotation is baked into the pixels
 first. DISPLAY_EDGE is the highest resolution that survives.
 
+ITEMS is the authority on which photographs exist. Copies of anything it no
+longer references are deleted, and a photograph it does not reference yet is
+left untouched, since compressing it would destroy the only copy.
+
 The portrait on the personal site is served directly and so is stripped in place
 rather than resized.
 """
@@ -25,7 +29,14 @@ from pathlib import Path
 from PIL import Image, ImageOps
 from PIL.JpegImagePlugin import get_sampling
 
-from generate_whatsapp import DISPLAY_DIR, DISPLAY_EDGE, SOURCE_DIR, THUMB_DIR, THUMB_EDGE
+from generate_whatsapp import (
+    DISPLAY_DIR,
+    DISPLAY_EDGE,
+    ITEMS,
+    SOURCE_DIR,
+    THUMB_DIR,
+    THUMB_EDGE,
+)
 
 ORIENTATION_TAG = 274
 PORTRAIT = Path('IMG_0428.jpeg')
@@ -74,13 +85,39 @@ def _compress(source: Path, root: Path) -> None:
         source.unlink()
 
 
+def _prune(root: Path, referenced: set[str]) -> list[Path]:
+    """Delete the copies of photographs no Item claims any more."""
+    orphans = [
+        path
+        for directory in (THUMB_DIR, DISPLAY_DIR)
+        for path in sorted((root / directory).glob('*.jpeg'))
+        if path.name not in referenced
+    ]
+    for path in orphans:
+        path.unlink()
+    return orphans
+
+
 def main() -> None:
     root = Path(__file__).parent
+    referenced = {path.name for item in ITEMS for path in item.image_paths}
+
     sources = sorted((root / SOURCE_DIR).glob('*.jpeg'))
+    # Compressing an unclaimed photograph would delete the only copy of it.
+    unclaimed = [path.name for path in sources if path.name not in referenced]
+    if unclaimed:
+        listed = '\n  '.join(unclaimed)
+        msg = f'No Item references these photographs. Add or delete them:\n  {listed}'
+        raise ValueError(msg)
+
     for source in sources:
         _compress(source, root)
+    orphans = _prune(root, referenced)
     stripped = _strip_metadata(root / PORTRAIT)
-    print(f'compressed and removed {len(sources)} originals, stripped {int(stripped)} portrait')
+    print(
+        f'compressed {len(sources)} originals, deleted {len(orphans)} orphaned copies, '
+        f'stripped {int(stripped)} portrait'
+    )
 
 
 if __name__ == '__main__':
