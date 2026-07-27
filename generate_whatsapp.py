@@ -324,11 +324,6 @@ HEAD_HTML = """
     padding: 0 1.25rem;
   }
 
-  .controls {
-    display: flex;
-    justify-content: flex-end;
-    padding-top: 1.5rem;
-  }
   .toggle-all {
     align-items: center;
     background: none;
@@ -344,6 +339,7 @@ HEAD_HTML = """
     padding: 0.55rem 0.95rem;
     text-transform: uppercase;
     transition: border-color 200ms var(--ease);
+    flex-shrink: 0;
   }
   .toggle-all:hover {
     border-color: var(--ink);
@@ -354,9 +350,6 @@ HEAD_HTML = """
   }
 
   /* Masthead: the form header of the manifest */
-  .masthead {
-    border-bottom: 2px solid var(--ink);
-  }
   .masthead .wrap {
     padding-bottom: 1.25rem;
     padding-top: 1.75rem;
@@ -377,13 +370,22 @@ HEAD_HTML = """
     max-width: 58ch;
   }
 
-  .fields {
+  .masthead-foot {
+    align-items: center;
     border-top: 1px solid var(--rule);
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    padding-top: 1.125rem;
+  }
+
+  .fields {
     display: grid;
+    flex: 1;
     gap: 1.125rem 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
     margin: 0;
-    padding-top: 1.125rem;
+    min-width: 0;
   }
   .fields div {
     min-width: 0;
@@ -653,6 +655,10 @@ HEAD_HTML = """
     .masthead .wrap {
       padding-top: 1.75rem;
     }
+    /* Duplicates the h1, which already carries the location */
+    .masthead .wrap > .label {
+      display: none;
+    }
     .masthead .standfirst {
       margin-bottom: 1.25rem;
     }
@@ -881,23 +887,19 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
         or dollars, Venmo, PayPal, etc. Message me in the building WhatsApp
         group to ask questions and arrange a time.
       </p>
-      <dl class="fields">
-        <div>
-          <dt class="label">Pickup</dt>
-          <dd>East side of Polanco, near Liverpool</dd>
-        </div>
-        <div>
-          <dt class="label">Updated</dt>
-          <dd>{last_updated.strftime("%B %-d, %Y")}</dd>
-        </div>
-      </dl>
+      <div class="masthead-foot">
+        <dl class="fields">
+          <div>
+            <dt class="label">Updated</dt>
+            <dd>{last_updated.strftime("%B %-d, %Y")}</dd>
+          </div>
+        </dl>
+        <button type="button" class="toggle-all" id="toggle-all" hidden>Expand all</button>
+      </div>
     </div>
   </header>
 
   <main class="wrap">
-    <div class="controls">
-      <button type="button" class="toggle-all" id="toggle-all" hidden>Expand all</button>
-    </div>
     {"".join(sections_html)}
   </main>
   {SCRIPT_HTML}
