@@ -73,22 +73,22 @@ ITEMS: list[Item] = [
             '$75 or MX$1500',
         ),
         (
-            'Bobbie Organic Infant Formula (Gentle)',
-            ('Baby-Bobbie-Formula-Gentle.jpeg',),
-            ItemStatus.PAID,
-            'https://www.hibobbie.com/products/bobbie-organic-gentle-infant-formula?variant=40549922046037',
-            dedent("""\
-            All unopened and good until August 2027"""),
-            '$25/each or $150 for all seven',
-        ),
-        (
             'Bobbie Organic Infant Formula',
-            ('Baby-Bobbie-Formula-Organic.jpeg',),
+            ('Baby-Bobbie-Formula-Organic-Big.jpeg', 'Baby-Bobbie-Formula-Organic.jpeg',),
             ItemStatus.PAID,
             'https://www.hibobbie.com/products/bobbie-organic-infant-formula?variant=32828253667413',
             dedent("""\
             All unopened and good until August 2027"""),
             '$20/each or $140 for all eight',
+        ),
+        (
+            'Bobbie Organic Infant Formula (Gentle)',
+            ('Baby-Bobbie-Formula-Gentle-Big.jpeg', 'Baby-Bobbie-Formula-Gentle.jpeg',),
+            ItemStatus.PAID,
+            'https://www.hibobbie.com/products/bobbie-organic-gentle-infant-formula?variant=40549922046037',
+            dedent("""\
+            All unopened and good until August 2027"""),
+            '$25/each or $150 for all seven',
         ),
         (
             'Decrypto (Limited 5th Edition Box)',
@@ -157,6 +157,19 @@ ITEMS: list[Item] = [
             dedent("""\
             Played around ten times and in very good condition!"""),
             '$20 or MX$400',
+        ),
+        (
+            'Three Toddler Puzzles',
+            ('Kid-Puzzle-0.jpeg', 'Kid-Puzzle-1.jpeg', 'Kid-Puzzle-2.jpeg'),
+            ItemStatus.FREE,
+            '',
+            dedent("""\
+            We have already received a replacement, because the first one would suddenly stop playing and shutdown. They
+            never clarified what was wrong, but the speakers, battery, and other parts might be of interest? You might
+            be able to drop in a Raspberry Pi Zero in place of the motherboard if adventurous. It doesn't look like you
+            can buy replacement boards and replacing the transistor or other shorted components is involved to salvage
+            it fully"""),
+            '',
         ),
         (
             'Toniebox (Broken! For parts)',
