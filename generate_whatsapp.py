@@ -591,22 +591,34 @@ HEAD_HTML = """
   }
 
   .gallery {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
     margin: 0;
   }
-  /* Portrait-leaning frame: these are phone photographs, and contain never
-     crops away the wear a buyer is trying to see. */
-  .gallery img {
+  /* Height-capped, width-auto: the box matches each photo's own aspect
+     ratio, so nothing pads out a portrait next to a landscape shot. */
+  .shot {
+    background: none;
+    border: 0;
+    cursor: zoom-in;
+    display: block;
+    flex: 0 0 auto;
+    padding: 0;
+  }
+  .shot img {
     animation: feed 520ms var(--ease) both;
     animation-delay: calc(var(--i) * 70ms);
-    aspect-ratio: 3 / 4;
     background: var(--photo);
     display: block;
-    max-height: 24rem;
-    object-fit: contain;
-    width: 100%;
+    height: 10rem;
+    max-width: 100%;
+    width: auto;
+  }
+  @media (min-width: 62rem) {
+    .shot img {
+      height: 12rem;
+    }
   }
   @keyframes feed {
     from {
@@ -617,10 +629,47 @@ HEAD_HTML = """
     }
   }
 
+  dialog.lightbox {
+    background: transparent;
+    border: 0;
+    max-height: 100vh;
+    max-width: 100vw;
+    padding: 0;
+  }
+  dialog.lightbox::backdrop {
+    background: rgba(0, 0, 0, 0.85);
+  }
+  dialog.lightbox img {
+    display: block;
+    height: auto;
+    margin: auto;
+    max-height: 92vh;
+    max-width: 92vw;
+    width: auto;
+  }
+  .lightbox-close {
+    background: var(--ink);
+    border: 0;
+    color: var(--ground);
+    cursor: pointer;
+    font-size: 1.25rem;
+    height: 2.5rem;
+    line-height: 1;
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    width: 2.5rem;
+  }
+  .lightbox-close:focus-visible {
+    outline: 2px solid var(--mark);
+    outline-offset: 2px;
+  }
+
   .desc {
-    line-height: 1.65;
+    font-size: 1.0625rem;
+    line-height: 1.7;
     margin: 0;
-    max-width: 68ch;
+    max-width: 60ch;
     text-wrap: pretty;
   }
 
@@ -697,6 +746,9 @@ HEAD_HTML = """
     .gallery {
       gap: 0.35rem;
     }
+    .shot img {
+      height: 8rem;
+    }
     .detail {
       padding-left: 0;
       padding-right: 0;
@@ -721,7 +773,7 @@ HEAD_HTML = """
     .line-no {
       transition: none;
     }
-    .gallery img {
+    .shot img {
       animation: none;
     }
   }
@@ -764,6 +816,22 @@ const openTarget = () => {
 };
 window.addEventListener('hashchange', openTarget);
 openTarget();
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+document.querySelectorAll('.shot').forEach((shot) => {
+  shot.addEventListener('click', () => {
+    const img = shot.querySelector('img');
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightbox.showModal();
+  });
+});
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) lightbox.close();
+});
+lightbox.querySelector('.lightbox-close').addEventListener('click', () => lightbox.close());
+lightbox.addEventListener('close', () => { lightboxImg.src = ''; });
 </script>"""
 
 
@@ -782,13 +850,15 @@ def _price_html(item: Item) -> str:
 
 
 def _gallery_html(item: Item) -> str:
-    images = [
+    shots = [
+        f'<button type="button" class="shot" '
+        f'aria-label="Open photo {n} of {len(item.image_paths)} of {item.title} full size">'
         f'<img src="{(DISPLAY_DIR / path.name).as_posix()}" '
         f'alt="{item.title}, photo {n} of {len(item.image_paths)}" '
-        f'style="--i:{n - 1}" loading="lazy" decoding="async" />'
+        f'style="--i:{n - 1}" loading="lazy" decoding="async" /></button>'
         for n, path in enumerate(item.image_paths, start=1)
     ]
-    return f'<div class="gallery">{"".join(images)}</div>'
+    return f'<div class="gallery">{"".join(shots)}</div>'
 
 
 def _line_html(item: Item, line_no: int, eager: bool) -> str:
@@ -915,6 +985,11 @@ def _generate_html(items: list[Item], last_updated: datetime) -> str:
   <main class="wrap">
     {"".join(sections_html)}
   </main>
+
+  <dialog class="lightbox" id="lightbox">
+    <button type="button" class="lightbox-close" aria-label="Close photo">&times;</button>
+    <img id="lightbox-img" src="" alt="" />
+  </dialog>
   {SCRIPT_HTML}
 </body>
 </html>
