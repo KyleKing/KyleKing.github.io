@@ -36,7 +36,7 @@ repos:
       - id: trailing-whitespace
         exclude: ^whatsapp-items\.html$
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: v4.10.0
+    rev: v4.17.0
     hooks:
       - id: commitizen
   - repo: https://github.com/executablebooks/mdformat
