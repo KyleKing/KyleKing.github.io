@@ -55,22 +55,13 @@ ITEMS: list[Item] = [
     )
     for title, image_names, status, link, description, price in [
         (
-            'Ingenuity Soothe \'n Delight Foldable Baby Swing and 6-Speeds (0-9 Months, 6-20 lbs)',
-            ('Baby-Swing-1.jpeg','Baby-Swing-2.jpeg','Baby-Swing-3.jpeg'),
-            ItemStatus.PAID,
-            'https://www.amazon.com/Ingenuity-Comfort-Go-Portable-Swing/dp/B00E3RKC36?th=1',
-            dedent("""\
-            Includes batteries and only lightly used. Sold new for $70"""),
-            '$40 or MX$750',
-        ),
-        (
             'Ergobaby Embrace Newborn Baby Carrier (0-12 Months, 7-25 lbs)',
             ('Baby-Carrier.jpeg',),
             ItemStatus.PAID,
             'https://ergobaby.com/en-us/products/embrace-newborn-carrier',
             dedent("""\
             Soft olive color and like new. Recommended by the WireCutter"""),
-            '$75 or MX$1500',
+            '$50 or MX$1000',
         ),
         (
             'Bobbie Organic Infant Formula',
@@ -79,7 +70,7 @@ ITEMS: list[Item] = [
             'https://www.hibobbie.com/products/bobbie-organic-infant-formula?variant=32828253667413',
             dedent("""\
             All unopened and good until August 2027"""),
-            '$20/each or $140 for all eight',
+            '$18/each or $120 for all eight',
         ),
         (
             'Bobbie Organic Infant Formula (Gentle)',
@@ -88,7 +79,7 @@ ITEMS: list[Item] = [
             'https://www.hibobbie.com/products/bobbie-organic-gentle-infant-formula?variant=40549922046037',
             dedent("""\
             All unopened and good until August 2027"""),
-            '$25/each or $150 for all seven',
+            '$20/each or $120 for all seven',
         ),
         (
             'Decrypto (Limited 5th Edition Box)',
@@ -97,7 +88,7 @@ ITEMS: list[Item] = [
             'https://boardgamegeek.com/boardgame/225694/decrypto',
             dedent("""\
             New in shrink wrap because I accidentally ordered two"""),
-            '$25 or MX$500',
+            '$20 or MX$400',
         ),
         (
             'Geared (Kickstarter Edition)',
@@ -143,7 +134,7 @@ ITEMS: list[Item] = [
             'https://boardgamegeek.com/boardgame/335275/whirling-witchcraft',
             dedent("""\
             Played once and in very good condition"""),
-            '$20 or MX$400',
+            '$10 or MX$200',
         ),
         (
             'Tsuro',
@@ -171,19 +162,19 @@ ITEMS: list[Item] = [
             it fully"""),
             '',
         ),
-        (
-            'Toniebox (Broken! For parts)',
-            ('Home-BrokenTony-2.jpeg', 'Home-BrokenTony-3.jpeg'),
-            ItemStatus.FREE,
-            '',
-            dedent("""\
-            We have already received a replacement, because the first one would suddenly stop playing and shutdown. They
-            never clarified what was wrong, but the speakers, battery, and other parts might be of interest? You might
-            be able to drop in a Raspberry Pi Zero in place of the motherboard if adventurous. It doesn't look like you
-            can buy replacement boards and replacing the transistor or other shorted components is involved to salvage
-            it fully"""),
-            '',
-        ),
+        # (
+        #     'Toniebox (Broken! For parts)',
+        #     ('Home-BrokenTony-2.jpeg', 'Home-BrokenTony-3.jpeg'),
+        #     ItemStatus.FREE,
+        #     '',
+        #     dedent("""\
+        #     We have already received a replacement, because the first one would suddenly stop playing and shutdown. They
+        #     never clarified what was wrong, but the speakers, battery, and other parts might be of interest? You might
+        #     be able to drop in a Raspberry Pi Zero in place of the motherboard if adventurous. It doesn't look like you
+        #     can buy replacement boards and replacing the transistor or other shorted components is involved to salvage
+        #     it fully"""),
+        #     '',
+        # ),
         (
             'Assorted Velcro Sanding Discs with Drill Attachment Pad',
             ('Home-Sanding.jpeg',),
@@ -227,25 +218,6 @@ ITEMS: list[Item] = [
             I received this as a gift, but I had already gotten a new wallet. Made from 100% Cow Leather.
             The wallet has the original tags, if you would like to give it as a gift"""),
             '$20 or MX$400',
-        ),
-        (
-            'ARRIS SurfBoard SB6141 Modem',
-            ('Home-Modem.jpeg',),
-            ItemStatus.FREE,
-            'https://www.amazon.com/ARRIS-SURFboard-SB6141-DOCSIS-Cable/dp/B00AJHDZSI',
-            dedent("""\
-            We can't use this modem with Telmex because it requires a regular Ethernet hookup, but it may work with other providers here or be useful for parts"""),
-            '',
-        ),
-        (
-            'IKEA Hugad Curtain Rod (Rod only)',
-            ('Home-Rod-2.jpeg','Home-Rod-0.jpeg'),
-            ItemStatus.FREE,
-            'https://www.ikea.com/us/en/p/hugad-curtain-rod-white-10217141/#content',
-            dedent("""\
-            We gave away the blackout curtains that we used with this rod, but I didn't find it until doing
-            a deep clean this week. Free to anyone who could use it!"""),
-            '',
         ),
     ]
 ]
