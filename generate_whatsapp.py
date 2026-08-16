@@ -18,6 +18,7 @@ from datetime import UTC, datetime
 from enum import StrEnum
 from pathlib import Path
 from textwrap import dedent
+from typing import Literal
 from urllib.parse import urlparse
 
 PLACEHOLDER_TITLE = 'TBD'
@@ -35,173 +36,175 @@ class ItemStatus(StrEnum):
 
 
 @dataclass(frozen=True)
-class Item:
+class FreeItem:
     title: str
     image_paths: list[Path]
-    status: ItemStatus
+    status: Literal[ItemStatus.FREE, ItemStatus.PENDING]
+    link: str
+    description: str
+
+
+@dataclass(frozen=True)
+class PaidItem:
+    title: str
+    image_paths: list[Path]
+    status: Literal[ItemStatus.PAID]
     link: str
     description: str
     price: str
 
 
-ITEMS: list[Item] = [
-    Item(
+Item = FreeItem | PaidItem
+
+
+def _free(title: str, image_names: tuple[str, ...], link: str, description: str) -> FreeItem:
+    return FreeItem(
         title=title,
         image_paths=[SOURCE_DIR / img for img in image_names],
-        status=ItemStatus(status),
+        status=ItemStatus.FREE,
+        link=link,
+        description=description,
+    )
+
+
+def _paid(title: str, image_names: tuple[str, ...], link: str, description: str, price: str) -> PaidItem:
+    return PaidItem(
+        title=title,
+        image_paths=[SOURCE_DIR / img for img in image_names],
+        status=ItemStatus.PAID,
         link=link,
         description=description,
         price=price,
     )
-    for title, image_names, status, link, description, price in [
-        (
-            'Babyletto Mini Crib',
-            ('Baby-MiniCrib.jpeg', 'Baby-MiniCrib-Height.jpeg','Baby-MiniCrib-WithMattress.jpeg'),
-            ItemStatus.PAID,
-            '',
-            dedent("""\
-            Price doesn't include the mattress, but we can sell them together for $200"""),
-            '$150 or MX$2550',
-        ),
-        (
-            'Newton Baby Mini Crib Mattress',
-            ('Baby-CribMattress.jpeg',),
-            ItemStatus.PAID,
-            'https://www.newtonbaby.com/products/mini-crib-mattress',
-            dedent("""\
-            Will include mattress covers, waterproof covers, and sheets"""),
-            '$100 or MX$1700',
-        ),
-        (
-            'Ergobaby Embrace Newborn Baby Carrier (0-12 Months, 7-25 lbs)',
-            ('Baby-Carrier.jpeg',),
-            ItemStatus.PAID,
-            'https://ergobaby.com/en-us/products/embrace-newborn-carrier',
-            dedent("""\
-            Soft olive color and like new. Recommended by the WireCutter"""),
-            '$50 or MX$850',
-        ),
-        (
-            'Bobbie Organic Infant Formula',
-            ('Baby-Bobbie-Formula-Organic-Big.jpeg', 'Baby-Bobbie-Formula-Organic.jpeg',),
-            ItemStatus.PAID,
-            'https://www.hibobbie.com/products/bobbie-organic-infant-formula?variant=32828253667413',
-            dedent("""\
-            All unopened and good until August 2027"""),
-            '$18/each or $120 for all eight',
-        ),
-        (
-            'Bobbie Organic Infant Formula (Gentle)',
-            ('Baby-Bobbie-Formula-Gentle-Big.jpeg', 'Baby-Bobbie-Formula-Gentle.jpeg',),
-            ItemStatus.PAID,
-            'https://www.hibobbie.com/products/bobbie-organic-gentle-infant-formula?variant=40549922046037',
-            dedent("""\
-            All unopened and good until August 2027"""),
-            '$20/each or $120 for all seven',
-        ),
-        (
-            'Decrypto (Limited 5th Edition Box)',
-            ('Games-Decrypto-1.jpeg', 'Games-Decrypto-4.jpeg', 'Games-Decrypto-5.jpeg'),
-            ItemStatus.PAID,
-            'https://boardgamegeek.com/boardgame/225694/decrypto',
-            dedent("""\
-            New in shrink wrap because I accidentally ordered two"""),
-            '$20 or MX$340',
-        ),
-        (
-            'Love Letter',
-            ('Games-LoveLetter-Open.jpeg', 'Games-LoveLetter-Box.jpeg'),
-            ItemStatus.PAID,
-            'https://boardgamegeek.com/boardgame/129622/love-letter',
-            dedent("""\
-            Played a dozen times and in very good condition!"""),
-            '$7 or MX$120',
-        ),
-        (
-            'Sushi Go',
-            ('Games-SushiGo-Open.jpeg', 'Games-SushiGo-Box.jpeg'),
-            ItemStatus.PAID,
-            'https://boardgamegeek.com/boardgame/133473/sushi-go',
-            dedent("""\
-            Played around ten times and in very good condition!"""),
-            '$5 or MX$90',
-        ),
-        (
-            'Ticket to Ride Europe + 1912 Expansion',
-            ('Games-TTR-Open.jpeg', 'Games-TTR-Box.jpeg',),
-            ItemStatus.PAID,
-            'https://boardgamegeek.com/boardgameexpansion/53383/ticket-to-ride-europa-1912',
-            dedent("""\
-            Such a great game, but I now have too many games. I would be willing to sell the Europa expansion
-            separately (~$12), but I no longer have the box for it"""),
-            '$35 or MX$600',
-        ),
-        (
-            'Three Toddler Puzzles',
-            ('Kid-Puzzle-0.jpeg', 'Kid-Puzzle-1.jpeg', 'Kid-Puzzle-2.jpeg'),
-            ItemStatus.FREE,
-            '',
-            dedent("""\
-            We have already received a replacement, because the first one would suddenly stop playing and shutdown. They
-            never clarified what was wrong, but the speakers, battery, and other parts might be of interest? You might
-            be able to drop in a Raspberry Pi Zero in place of the motherboard if adventurous. It doesn't look like you
-            can buy replacement boards and replacing the transistor or other shorted components is involved to salvage
-            it fully"""),
-            '',
-        ),
-        (
-            'Assorted Velcro Sanding Discs with Drill Attachment Pad',
-            ('Home-Sanding.jpeg',),
-            ItemStatus.FREE,
-            'https://www.amazon.com/dp/B088CXY3X5?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1',
-            dedent("""\
-            These work ok, but I needed to resurface a wooden bowl, which required buying a stronger orbital sander"""),
-            '',
-        ),
-        (
-            'Kate Spade Macaron Mug',
-            ('Home-KS-Mug-Up.jpeg', 'Home-KS-Mug-Down.jpeg',),
-            ItemStatus.FREE,
-            '',
-            '',
-            '',
-        ),
-        (
-            'Clek Liing Newborn Car Seat Base',
-            ('Baby-CarSeatBase.jpeg',),
-            ItemStatus.PAID,
-            'https://clekinc.com/products/liing-car-seat-base',
-            'The base is a few years old, but in great condition',
-            '$50 or MX$850',
-        ),
-        (
-            'Away Orange Drawstring Kids Bag',
-            ('Home-Away-Bag.jpeg',),
-            ItemStatus.FREE,
-            '',
-            'This came with an Away suitcase and sized smaller than most drawstring bags, but we don\'t have a use for it',
-            '',
-        ),
-        (
-            'VIGRUE 175PCS Assorted Concrete Screws Kit',
-            ('Home-Nails.jpeg',),
-            ItemStatus.PAID,
-            'https://www.amazon.com/dp/B0CJT845WJ?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1',
-            dedent("""\
-            We bought this last year, but ended up not needing it"""),
-            '$10 or MX$170',
-        ),
-        (
-            'Scalpers Brown Leather Wallet',
-            ('Wallet-01-Flat.jpeg', 'Wallet-04-Back.jpeg'),
-            ItemStatus.PAID,
-            'https://en.ww.scalperscompany.com/products/61778-scmondit-free-wallet-aw2526-brown',
-            dedent("""\
-            I received this as a gift, but I had already gotten a new wallet. Made from 100% Cow Leather.
-            The wallet has the original tags, if you would like to give it as a gift"""),
-            '$20 or MX$340',
-        ),
-    ]
+
+
+ITEMS: list[Item] = [
+    _paid(
+        'Babyletto Mini Crib',
+        ('Baby-MiniCrib.jpeg', 'Baby-MiniCrib-Height.jpeg','Baby-MiniCrib-WithMattress.jpeg'),
+        '',
+        dedent("""\
+        Price doesn't include the mattress, but we can sell them together for $200"""),
+        '$150 or MX$2550',
+    ),
+    _paid(
+        'Newton Baby Mini Crib Mattress',
+        ('Baby-CribMattress.jpeg',),
+        'https://www.newtonbaby.com/products/mini-crib-mattress',
+        dedent("""\
+        Will include mattress covers, waterproof covers, and sheets"""),
+        '$100 or MX$1700',
+    ),
+    _paid(
+        'Ergobaby Embrace Newborn Baby Carrier (0-12 Months, 7-25 lbs)',
+        ('Baby-Carrier.jpeg',),
+        'https://ergobaby.com/en-us/products/embrace-newborn-carrier',
+        dedent("""\
+        Soft olive color and like new. Recommended by the WireCutter"""),
+        '$50 or MX$850',
+    ),
+    _paid(
+        'Bobbie Organic Infant Formula',
+        ('Baby-Bobbie-Formula-Organic-Big.jpeg', 'Baby-Bobbie-Formula-Organic.jpeg',),
+        'https://www.hibobbie.com/products/bobbie-organic-infant-formula?variant=32828253667413',
+        dedent("""\
+        All unopened and good until August 2027"""),
+        '$18/each or $120 for all eight',
+    ),
+    _paid(
+        'Bobbie Organic Infant Formula (Gentle)',
+        ('Baby-Bobbie-Formula-Gentle-Big.jpeg', 'Baby-Bobbie-Formula-Gentle.jpeg',),
+        'https://www.hibobbie.com/products/bobbie-organic-gentle-infant-formula?variant=40549922046037',
+        dedent("""\
+        All unopened and good until August 2027"""),
+        '$20/each or $120 for all seven',
+    ),
+    _paid(
+        'Decrypto (Limited 5th Edition Box)',
+        ('Games-Decrypto-1.jpeg', 'Games-Decrypto-4.jpeg', 'Games-Decrypto-5.jpeg'),
+        'https://boardgamegeek.com/boardgame/225694/decrypto',
+        dedent("""\
+        New in shrink wrap because I accidentally ordered two"""),
+        '$20 or MX$340',
+    ),
+    _paid(
+        'Love Letter',
+        ('Games-LoveLetter-Open.jpeg', 'Games-LoveLetter-Box.jpeg'),
+        'https://boardgamegeek.com/boardgame/129622/love-letter',
+        dedent("""\
+        Played a dozen times and in very good condition!"""),
+        '$7 or MX$120',
+    ),
+    _paid(
+        'Sushi Go',
+        ('Games-SushiGo-Open.jpeg', 'Games-SushiGo-Box.jpeg'),
+        'https://boardgamegeek.com/boardgame/133473/sushi-go',
+        dedent("""\
+        Played around ten times and in very good condition!"""),
+        '$5 or MX$90',
+    ),
+    _paid(
+        'Ticket to Ride Europe + 1912 Expansion',
+        ('Games-TTR-Open.jpeg', 'Games-TTR-Box.jpeg',),
+        'https://boardgamegeek.com/boardgameexpansion/53383/ticket-to-ride-europa-1912',
+        dedent("""\
+        Such a great game, but I now have too many games. I would be willing to sell the Europa expansion
+        separately (~$12), but I no longer have the box for it"""),
+        '$35 or MX$600',
+    ),
+    _free(
+        'Three Toddler Puzzles',
+        ('Kid-Puzzle-0.jpeg', 'Kid-Puzzle-1.jpeg', 'Kid-Puzzle-2.jpeg'),
+        '',
+        dedent("""\
+        We have already received a replacement, because the first one would suddenly stop playing and shutdown. They
+        never clarified what was wrong, but the speakers, battery, and other parts might be of interest? You might
+        be able to drop in a Raspberry Pi Zero in place of the motherboard if adventurous. It doesn't look like you
+        can buy replacement boards and replacing the transistor or other shorted components is involved to salvage
+        it fully"""),
+    ),
+    _free(
+        'Assorted Velcro Sanding Discs with Drill Attachment Pad',
+        ('Home-Sanding.jpeg',),
+        'https://www.amazon.com/dp/B088CXY3X5?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1',
+        dedent("""\
+        These work ok, but I needed to resurface a wooden bowl, which required buying a stronger orbital sander"""),
+    ),
+    _free(
+        'Kate Spade Macaron Mug',
+        ('Home-KS-Mug-Up.jpeg', 'Home-KS-Mug-Down.jpeg',),
+        '',
+        '',
+    ),
+    _paid(
+        'Clek Liing Newborn Car Seat Base',
+        ('Baby-CarSeatBase.jpeg',),
+        'https://clekinc.com/products/liing-car-seat-base',
+        'The base is a few years old, but in great condition',
+        '$50 or MX$850',
+    ),
+    _free(
+        'Away Orange Drawstring Kids Bag',
+        ('Home-Away-Bag.jpeg',),
+        '',
+        'This came with an Away suitcase and sized smaller than most drawstring bags, but we don\'t have a use for it',
+    ),
+    _free(
+        'VIGRUE 175PCS Assorted Concrete Screws Kit',
+        ('Home-Nails.jpeg',),
+        'https://www.amazon.com/dp/B0CJT845WJ?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1',
+        dedent("""\
+        We bought this last year, but ended up not needing it"""),
+    ),
+    _paid(
+        'Scalpers Brown Leather Wallet',
+        ('Wallet-01-Flat.jpeg', 'Wallet-04-Back.jpeg'),
+        'https://en.ww.scalperscompany.com/products/61778-scmondit-free-wallet-aw2526-brown',
+        dedent("""\
+        I received this as a gift, but I had already gotten a new wallet. Made from 100% Cow Leather.
+        The wallet has the original tags, if you would like to give it as a gift"""),
+        '$20 or MX$340',
+    ),
 ]
 
 DIRECTION_CONTRACT = """<!--
@@ -796,7 +799,7 @@ def _slug(title: str) -> str:
 def _price_html(item: Item) -> str:
     if item.status is ItemStatus.PENDING:
         return '<span class="price is-pending">Pending</span>'
-    if not item.price:
+    if isinstance(item, FreeItem):
         return '<span class="price is-free">Free<span class="sr-only">, no charge</span></span>'
     usd, _, mxn = item.price.partition(' or ')
     mxn_html = f'<span class="mx">{mxn}</span>' if mxn else ''
