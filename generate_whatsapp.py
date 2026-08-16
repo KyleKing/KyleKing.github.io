@@ -152,6 +152,22 @@ ITEMS: list[Item] = [
         separately (~$12), but I no longer have the box for it"""),
         '$35 or MX$600',
     ),
+    _paid(
+        'Whirling Witchraft',
+        ('Games-WW-Open.jpeg', 'Games-WW-Box.jpeg'),
+        'https://boardgamegeek.com/boardgame/335275/whirling-witchcraft',
+        dedent("""\
+        Played once and in very good condition"""),
+        '$10 or MX$170',
+    ),
+    _paid(
+        'Tsuro',
+        ('Games-Tsuro-Open-2.jpeg', 'Games-Tsuro-Open-1.jpeg', 'Games-Tsuro-Box.jpeg'),
+        'https://www.amazon.com/dp/B002SQBB3O?tag=itemtext-boardgamegeek-20&linkCode=ogi&th=1&psc=1',
+        dedent("""\
+        Played around ten times and in very good condition!"""),
+        '$20 or MX$350',
+    ),
     _free(
         'Three Toddler Puzzles',
         ('Kid-Puzzle-0.jpeg', 'Kid-Puzzle-1.jpeg', 'Kid-Puzzle-2.jpeg'),
