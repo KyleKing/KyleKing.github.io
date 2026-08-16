@@ -55,13 +55,31 @@ ITEMS: list[Item] = [
     )
     for title, image_names, status, link, description, price in [
         (
+            'Babyletto Mini Crib',
+            ('Baby-MiniCrib.jpeg', 'Baby-MiniCrib-Height.jpeg','Baby-MiniCrib-WithMattress.jpeg'),
+            ItemStatus.PAID,
+            '',
+            dedent("""\
+            Price doesn't include the mattress, but we can sell them together for $200"""),
+            '$150 or MX$2550',
+        ),
+        (
+            'Newton Baby Mini Crib Mattress',
+            ('Baby-CribMattress.jpeg',),
+            ItemStatus.PAID,
+            'https://www.newtonbaby.com/products/mini-crib-mattress',
+            dedent("""\
+            Will include mattress covers, waterproof covers, and sheets"""),
+            '$100 or MX$1700',
+        ),
+        (
             'Ergobaby Embrace Newborn Baby Carrier (0-12 Months, 7-25 lbs)',
             ('Baby-Carrier.jpeg',),
             ItemStatus.PAID,
             'https://ergobaby.com/en-us/products/embrace-newborn-carrier',
             dedent("""\
             Soft olive color and like new. Recommended by the WireCutter"""),
-            '$50 or MX$1000',
+            '$50 or MX$850',
         ),
         (
             'Bobbie Organic Infant Formula',
@@ -88,16 +106,7 @@ ITEMS: list[Item] = [
             'https://boardgamegeek.com/boardgame/225694/decrypto',
             dedent("""\
             New in shrink wrap because I accidentally ordered two"""),
-            '$20 or MX$400',
-        ),
-        (
-            'Geared (Kickstarter Edition)',
-            ('Games-Geared-Open.jpeg', 'Games-Geared-Box.jpeg'),
-            ItemStatus.PAID,
-            'https://www.kickstarter.com/projects/815894852/geared-build-your-bike',
-            dedent("""\
-            Played five or so timtes and in very good condition!"""),
-            '$5 or MX$100',
+            '$20 or MX$340',
         ),
         (
             'Love Letter',
@@ -106,7 +115,7 @@ ITEMS: list[Item] = [
             'https://boardgamegeek.com/boardgame/129622/love-letter',
             dedent("""\
             Played a dozen times and in very good condition!"""),
-            '$7 or MX$150',
+            '$7 or MX$120',
         ),
         (
             'Sushi Go',
@@ -115,39 +124,17 @@ ITEMS: list[Item] = [
             'https://boardgamegeek.com/boardgame/133473/sushi-go',
             dedent("""\
             Played around ten times and in very good condition!"""),
-            '$5 or MX$100',
+            '$5 or MX$90',
         ),
         (
             'Ticket to Ride Europe + 1912 Expansion',
-            ( 'Games-TTR-Open.jpeg', 'Games-TTR-Box.jpeg',),
+            ('Games-TTR-Open.jpeg', 'Games-TTR-Box.jpeg',),
             ItemStatus.PAID,
             'https://boardgamegeek.com/boardgameexpansion/53383/ticket-to-ride-europa-1912',
             dedent("""\
             Such a great game, but I now have too many games. I would be willing to sell the Europa expansion
             separately (~$12), but I no longer have the box for it"""),
-            '$35 or MX$700',
-        ),
-        (
-            'Whirling Witchraft',
-            ( 'Games-WW-Open.jpeg', 'Games-WW-Box.jpeg',),
-            ItemStatus.PAID,
-            'https://boardgamegeek.com/boardgame/335275/whirling-witchcraft',
-            dedent("""\
-            Played once and in very good condition"""),
-            '$10 or MX$200',
-        ),
-        (
-            'Tsuro',
-            (
-                'Games-Tsuro-Open-2.jpeg',
-                'Games-Tsuro-Open-1.jpeg',
-                'Games-Tsuro-Box.jpeg',
-            ),
-            ItemStatus.PAID,
-            'https://www.amazon.com/dp/B002SQBB3O?tag=itemtext-boardgamegeek-20&linkCode=ogi&th=1&psc=1',
-            dedent("""\
-            Played around ten times and in very good condition!"""),
-            '$20 or MX$400',
+            '$35 or MX$600',
         ),
         (
             'Three Toddler Puzzles',
@@ -162,19 +149,6 @@ ITEMS: list[Item] = [
             it fully"""),
             '',
         ),
-        # (
-        #     'Toniebox (Broken! For parts)',
-        #     ('Home-BrokenTony-2.jpeg', 'Home-BrokenTony-3.jpeg'),
-        #     ItemStatus.FREE,
-        #     '',
-        #     dedent("""\
-        #     We have already received a replacement, because the first one would suddenly stop playing and shutdown. They
-        #     never clarified what was wrong, but the speakers, battery, and other parts might be of interest? You might
-        #     be able to drop in a Raspberry Pi Zero in place of the motherboard if adventurous. It doesn't look like you
-        #     can buy replacement boards and replacing the transistor or other shorted components is involved to salvage
-        #     it fully"""),
-        #     '',
-        # ),
         (
             'Assorted Velcro Sanding Discs with Drill Attachment Pad',
             ('Home-Sanding.jpeg',),
@@ -193,6 +167,14 @@ ITEMS: list[Item] = [
             '',
         ),
         (
+            'Clek Liing Newborn Car Seat Base',
+            ('Baby-CarSeatBase.jpeg',),
+            ItemStatus.PAID,
+            'https://clekinc.com/products/liing-car-seat-base',
+            'The base is a few years old, but in great condition',
+            '$50 or MX$850',
+        ),
+        (
             'Away Orange Drawstring Kids Bag',
             ('Home-Away-Bag.jpeg',),
             ItemStatus.FREE,
@@ -207,7 +189,7 @@ ITEMS: list[Item] = [
             'https://www.amazon.com/dp/B0CJT845WJ?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1',
             dedent("""\
             We bought this last year, but ended up not needing it"""),
-            '$10 or MX$200',
+            '$10 or MX$170',
         ),
         (
             'Scalpers Brown Leather Wallet',
@@ -217,7 +199,7 @@ ITEMS: list[Item] = [
             dedent("""\
             I received this as a gift, but I had already gotten a new wallet. Made from 100% Cow Leather.
             The wallet has the original tags, if you would like to give it as a gift"""),
-            '$20 or MX$400',
+            '$20 or MX$340',
         ),
     ]
 ]
@@ -583,13 +565,13 @@ HEAD_HTML = """
     animation-delay: calc(var(--i) * 70ms);
     background: var(--photo);
     display: block;
-    height: 10rem;
+    height: 12rem;
     max-width: 100%;
     width: auto;
   }
   @media (min-width: 62rem) {
     .shot img {
-      height: 12rem;
+      height: 14rem;
     }
   }
   @keyframes feed {
@@ -719,7 +701,7 @@ HEAD_HTML = """
       gap: 0.35rem;
     }
     .shot img {
-      height: 8rem;
+      height: 10rem;
     }
     .detail {
       padding-left: 0;
