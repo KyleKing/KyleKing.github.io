@@ -48,7 +48,7 @@ class FreeItem:
 class PaidItem:
     title: str
     image_paths: list[Path]
-    status: Literal[ItemStatus.PAID]
+    status: Literal[ItemStatus.PAID]  # PLANNED: these can be pending too?
     link: str
     description: str
     price: str
@@ -67,7 +67,20 @@ def _free(title: str, image_names: tuple[str, ...], link: str, description: str)
     )
 
 
+def _pending(title: str, image_names: tuple[str, ...], link: str, description: str) -> FreeItem:
+    return FreeItem(
+        title=title,
+        image_paths=[SOURCE_DIR / img for img in image_names],
+        status=ItemStatus.PENDING,
+        link=link,
+        description=description,
+    )
+
+
 def _paid(title: str, image_names: tuple[str, ...], link: str, description: str, price: str) -> PaidItem:
+    if not price:  # PLANNED: Can this be in Pydantic instead?
+        msg = f'{title!r} is PAID but has no price'
+        raise ValueError(msg)
     return PaidItem(
         title=title,
         image_paths=[SOURCE_DIR / img for img in image_names],
@@ -133,24 +146,7 @@ ITEMS: list[Item] = [
         'https://boardgamegeek.com/boardgame/129622/love-letter',
         dedent("""\
         Played a dozen times and in very good condition!"""),
-        '$7 or MX$120',
-    ),
-    _paid(
-        'Sushi Go',
-        ('Games-SushiGo-Open.jpeg', 'Games-SushiGo-Box.jpeg'),
-        'https://boardgamegeek.com/boardgame/133473/sushi-go',
-        dedent("""\
-        Played around ten times and in very good condition!"""),
         '$5 or MX$90',
-    ),
-    _paid(
-        'Ticket to Ride Europe + 1912 Expansion',
-        ('Games-TTR-Open.jpeg', 'Games-TTR-Box.jpeg',),
-        'https://boardgamegeek.com/boardgameexpansion/53383/ticket-to-ride-europa-1912',
-        dedent("""\
-        Such a great game, but I now have too many games. I would be willing to sell the Europa expansion
-        separately (~$12), but I no longer have the box for it"""),
-        '$35 or MX$600',
     ),
     _paid(
         'Whirling Witchraft',
@@ -169,48 +165,18 @@ ITEMS: list[Item] = [
         '$20 or MX$350',
     ),
     _free(
-        'Three Toddler Puzzles',
-        ('Kid-Puzzle-0.jpeg', 'Kid-Puzzle-1.jpeg', 'Kid-Puzzle-2.jpeg'),
-        '',
-        dedent("""\
-        We have already received a replacement, because the first one would suddenly stop playing and shutdown. They
-        never clarified what was wrong, but the speakers, battery, and other parts might be of interest? You might
-        be able to drop in a Raspberry Pi Zero in place of the motherboard if adventurous. It doesn't look like you
-        can buy replacement boards and replacing the transistor or other shorted components is involved to salvage
-        it fully"""),
-    ),
-    _free(
-        'Assorted Velcro Sanding Discs with Drill Attachment Pad',
-        ('Home-Sanding.jpeg',),
-        'https://www.amazon.com/dp/B088CXY3X5?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1',
-        dedent("""\
-        These work ok, but I needed to resurface a wooden bowl, which required buying a stronger orbital sander"""),
-    ),
-    _free(
         'Kate Spade Macaron Mug',
         ('Home-KS-Mug-Up.jpeg', 'Home-KS-Mug-Down.jpeg',),
         '',
         '',
     ),
-    _paid(
+    _free(
         'Clek Liing Newborn Car Seat Base',
         ('Baby-CarSeatBase.jpeg',),
         'https://clekinc.com/products/liing-car-seat-base',
-        'The base is a few years old, but in great condition',
-        '$50 or MX$850',
-    ),
-    _free(
-        'Away Orange Drawstring Kids Bag',
-        ('Home-Away-Bag.jpeg',),
-        '',
-        'This came with an Away suitcase and sized smaller than most drawstring bags, but we don\'t have a use for it',
-    ),
-    _free(
-        'VIGRUE 175PCS Assorted Concrete Screws Kit',
-        ('Home-Nails.jpeg',),
-        'https://www.amazon.com/dp/B0CJT845WJ?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1',
         dedent("""\
-        We bought this last year, but ended up not needing it"""),
+        The base is a few years old, but in great condition. Can be used either as a second base for a Clek Liing seat
+            or you could buy a new Clek Liingo today and use with the base"""),
     ),
     _paid(
         'Scalpers Brown Leather Wallet',
