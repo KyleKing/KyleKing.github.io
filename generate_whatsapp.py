@@ -125,14 +125,6 @@ ITEMS: list[Item] = [
         '$18/each or $120 for all eight',
     ),
     _paid(
-        'Bobbie Organic Infant Formula (Gentle)',
-        ('Baby-Bobbie-Formula-Gentle-Big.jpeg', 'Baby-Bobbie-Formula-Gentle.jpeg',),
-        'https://www.hibobbie.com/products/bobbie-organic-gentle-infant-formula?variant=40549922046037',
-        dedent("""\
-        All unopened and good until August 2027"""),
-        '$20/each or $120 for all seven',
-    ),
-    _paid(
         'Decrypto (Limited 5th Edition Box)',
         ('Games-Decrypto-1.jpeg', 'Games-Decrypto-4.jpeg', 'Games-Decrypto-5.jpeg'),
         'https://boardgamegeek.com/boardgame/225694/decrypto',
@@ -171,6 +163,18 @@ ITEMS: list[Item] = [
         '',
     ),
     _free(
+        'Sewing Machine',
+        ('Free-Sewing-Machine.jpeg',),
+        '',
+            '',
+    ),
+    _free(
+        'Skip Hop Tummy Time Mat',
+        ('Baby-Playmat.jpeg',),
+        'https://www.amazon.com/dp/B09WJMJ1K4?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_2&th=1',
+            '',
+    ),
+    _free(
         'Clek Liing Newborn Car Seat Base',
         ('Baby-CarSeatBase.jpeg',),
         'https://clekinc.com/products/liing-car-seat-base',
@@ -185,7 +189,7 @@ ITEMS: list[Item] = [
         dedent("""\
         I received this as a gift, but I had already gotten a new wallet. Made from 100% Cow Leather.
         The wallet has the original tags, if you would like to give it as a gift"""),
-        '$20 or MX$340',
+        '$15 or MX$260',
     ),
 ]
 
