@@ -48,7 +48,7 @@ class FreeItem:
 class PaidItem:
     title: str
     image_paths: list[Path]
-    status: Literal[ItemStatus.PAID]
+    status: Literal[ItemStatus.PAID]  # PLANNED: these can be pending too?
     link: str
     description: str
     price: str
@@ -57,7 +57,9 @@ class PaidItem:
 Item = FreeItem | PaidItem
 
 
-def _free(title: str, image_names: tuple[str, ...], link: str, description: str) -> FreeItem:
+def _free(
+    title: str, image_names: tuple[str, ...], link: str, description: str
+) -> FreeItem:
     return FreeItem(
         title=title,
         image_paths=[SOURCE_DIR / img for img in image_names],
@@ -67,7 +69,24 @@ def _free(title: str, image_names: tuple[str, ...], link: str, description: str)
     )
 
 
-def _paid(title: str, image_names: tuple[str, ...], link: str, description: str, price: str) -> PaidItem:
+def _pending(
+    title: str, image_names: tuple[str, ...], link: str, description: str
+) -> FreeItem:
+    return FreeItem(
+        title=title,
+        image_paths=[SOURCE_DIR / img for img in image_names],
+        status=ItemStatus.PENDING,
+        link=link,
+        description=description,
+    )
+
+
+def _paid(
+    title: str, image_names: tuple[str, ...], link: str, description: str, price: str
+) -> PaidItem:
+    if not price:  # PLANNED: Can this be in Pydantic instead?
+        msg = f"{title!r} is PAID but has no price"
+        raise ValueError(msg)
     return PaidItem(
         title=title,
         image_paths=[SOURCE_DIR / img for img in image_names],
@@ -80,44 +99,12 @@ def _paid(title: str, image_names: tuple[str, ...], link: str, description: str,
 
 ITEMS: list[Item] = [
     _paid(
-        'Babyletto Mini Crib',
-        ('Baby-MiniCrib.jpeg', 'Baby-MiniCrib-Height.jpeg','Baby-MiniCrib-WithMattress.jpeg'),
-        '',
-        dedent("""\
-        Price doesn't include the mattress, but we can sell them together for $200"""),
-        '$150 or MX$2550',
-    ),
-    _paid(
-        'Newton Baby Mini Crib Mattress',
-        ('Baby-CribMattress.jpeg',),
-        'https://www.newtonbaby.com/products/mini-crib-mattress',
-        dedent("""\
-        Will include mattress covers, waterproof covers, and sheets"""),
-        '$100 or MX$1700',
-    ),
-    _paid(
         'Ergobaby Embrace Newborn Baby Carrier (0-12 Months, 7-25 lbs)',
         ('Baby-Carrier.jpeg',),
         'https://ergobaby.com/en-us/products/embrace-newborn-carrier',
         dedent("""\
         Soft olive color and like new. Recommended by the WireCutter"""),
         '$50 or MX$850',
-    ),
-    _paid(
-        'Bobbie Organic Infant Formula',
-        ('Baby-Bobbie-Formula-Organic-Big.jpeg', 'Baby-Bobbie-Formula-Organic.jpeg',),
-        'https://www.hibobbie.com/products/bobbie-organic-infant-formula?variant=32828253667413',
-        dedent("""\
-        All unopened and good until August 2027"""),
-        '$18/each or $120 for all eight',
-    ),
-    _paid(
-        'Bobbie Organic Infant Formula (Gentle)',
-        ('Baby-Bobbie-Formula-Gentle-Big.jpeg', 'Baby-Bobbie-Formula-Gentle.jpeg',),
-        'https://www.hibobbie.com/products/bobbie-organic-gentle-infant-formula?variant=40549922046037',
-        dedent("""\
-        All unopened and good until August 2027"""),
-        '$20/each or $120 for all seven',
     ),
     _paid(
         'Decrypto (Limited 5th Edition Box)',
@@ -133,68 +120,24 @@ ITEMS: list[Item] = [
         'https://boardgamegeek.com/boardgame/129622/love-letter',
         dedent("""\
         Played a dozen times and in very good condition!"""),
-        '$7 or MX$120',
-    ),
-    _paid(
-        'Sushi Go',
-        ('Games-SushiGo-Open.jpeg', 'Games-SushiGo-Box.jpeg'),
-        'https://boardgamegeek.com/boardgame/133473/sushi-go',
-        dedent("""\
-        Played around ten times and in very good condition!"""),
         '$5 or MX$90',
-    ),
-    _paid(
-        'Ticket to Ride Europe + 1912 Expansion',
-        ('Games-TTR-Open.jpeg', 'Games-TTR-Box.jpeg',),
-        'https://boardgamegeek.com/boardgameexpansion/53383/ticket-to-ride-europa-1912',
-        dedent("""\
-        Such a great game, but I now have too many games. I would be willing to sell the Europa expansion
-        separately (~$12), but I no longer have the box for it"""),
-        '$35 or MX$600',
-    ),
-    _free(
-        'Three Toddler Puzzles',
-        ('Kid-Puzzle-0.jpeg', 'Kid-Puzzle-1.jpeg', 'Kid-Puzzle-2.jpeg'),
-        '',
-        dedent("""\
-        We have already received a replacement, because the first one would suddenly stop playing and shutdown. They
-        never clarified what was wrong, but the speakers, battery, and other parts might be of interest? You might
-        be able to drop in a Raspberry Pi Zero in place of the motherboard if adventurous. It doesn't look like you
-        can buy replacement boards and replacing the transistor or other shorted components is involved to salvage
-        it fully"""),
-    ),
-    _free(
-        'Assorted Velcro Sanding Discs with Drill Attachment Pad',
-        ('Home-Sanding.jpeg',),
-        'https://www.amazon.com/dp/B088CXY3X5?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1',
-        dedent("""\
-        These work ok, but I needed to resurface a wooden bowl, which required buying a stronger orbital sander"""),
     ),
     _free(
         'Kate Spade Macaron Mug',
-        ('Home-KS-Mug-Up.jpeg', 'Home-KS-Mug-Down.jpeg',),
+        (
+            'Home-KS-Mug-Up.jpeg',
+            'Home-KS-Mug-Down.jpeg',
+        ),
         '',
         '',
     ),
-    _paid(
+    _free(
         'Clek Liing Newborn Car Seat Base',
         ('Baby-CarSeatBase.jpeg',),
         'https://clekinc.com/products/liing-car-seat-base',
-        'The base is a few years old, but in great condition',
-        '$50 or MX$850',
-    ),
-    _free(
-        'Away Orange Drawstring Kids Bag',
-        ('Home-Away-Bag.jpeg',),
-        '',
-        'This came with an Away suitcase and sized smaller than most drawstring bags, but we don\'t have a use for it',
-    ),
-    _free(
-        'VIGRUE 175PCS Assorted Concrete Screws Kit',
-        ('Home-Nails.jpeg',),
-        'https://www.amazon.com/dp/B0CJT845WJ?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1&th=1',
         dedent("""\
-        We bought this last year, but ended up not needing it"""),
+        The base is a few years old, but in great condition. Can be used either as a second base for a Clek Liing seat
+            or you could buy a new Clek Liingo today and use with the base"""),
     ),
     _paid(
         'Scalpers Brown Leather Wallet',
@@ -203,7 +146,7 @@ ITEMS: list[Item] = [
         dedent("""\
         I received this as a gift, but I had already gotten a new wallet. Made from 100% Cow Leather.
         The wallet has the original tags, if you would like to give it as a gift"""),
-        '$20 or MX$340',
+        '$15 or MX$260',
     ),
 ]
 
@@ -793,7 +736,9 @@ lightbox.addEventListener('close', () => { lightboxImg.src = ''; });
 
 
 def _slug(title: str) -> str:
-    return 'item-' + re.sub(r'-+', '-', re.sub(r'[^a-z0-9]+', '-', title.lower())).strip('-')
+    return 'item-' + re.sub(
+        r'-+', '-', re.sub(r'[^a-z0-9]+', '-', title.lower())
+    ).strip('-')
 
 
 def _price_html(item: Item) -> str:
@@ -870,7 +815,7 @@ def _validate(items: list[Item], root: Path) -> None:
     missing = [path for path in expected if not (root / path).is_file()]
     if missing:
         listed = '\n  '.join(path.as_posix() for path in missing)
-        msg = f'Missing images. Run process_images.py over the originals:\n  {listed}'
+        msg = f"Missing images. Run process_images.py over the originals:\n  {listed}"
         raise FileNotFoundError(msg)
 
 
@@ -961,7 +906,9 @@ def main() -> None:
     output_path = root / 'whatsapp-items.html'
     last_updated = datetime.now(UTC).astimezone()
     output_path.write_text(_generate_html(items, last_updated))
-    print(f'Generated {output_path} ({len(items)} lines, {skipped} placeholder skipped)')
+    print(
+        f"Generated {output_path} ({len(items)} lines, {skipped} placeholder skipped)"
+    )
 
 
 if __name__ == '__main__':
